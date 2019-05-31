@@ -10,7 +10,7 @@ Commerce Layer exposes a fast [REST](http://en.wikipedia.org/wiki/Representation
 
 All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure) to the following base endpoint:
 
-```text
+```http
 https://{{subdomain}}.commercelayer.io
 ```
 
@@ -22,27 +22,9 @@ Commerce Layer API is 100% compliant with the [JSON API](http://jsonapi.org/form
 
 ### Applications
 
-Commerce Layer implements the industry-standard [OAuth 2.0](https://oauth.net/2/) protocol to manage clients authorization. It defines four types of applications:
+Commerce Layer implements the industry-standard [OAuth 2.0](https://oauth.net/2/) protocol to manage clients authorization. It defines three types of applications. Which application to use depends on your specific use case. Official guides and tutorials for the most popular use cases are coming soon.
 
-{% tabs %}
-{% tab title="Channel" %}
-Best suited to create storefront channels, like an ecommerce website or application.
-{% endtab %}
-
-{% tab title="Integration" %}
-Perfect to integrate any 3rd party system, like an ERP or a CRM, that needs custom permissions.
-{% endtab %}
-
-{% tab title="Zapier" %}
-Used to authenticate our official [Zapier](https://zapier.com/) app \(currently private\) and to build any workflow.
-{% endtab %}
-
-{% tab title="Webapp" %}
-Used to authenticate users and access resources on their behalf.
-{% endtab %}
-{% endtabs %}
-
-Which application to use depends on your specific use case. Official guides and tutorials for the most popular use cases are coming soon.
+{% page-ref page="applications.md" %}
 
 ### Environments
 
