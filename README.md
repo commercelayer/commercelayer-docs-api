@@ -1,11 +1,10 @@
 ---
-description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
-  nostrud exercitation ullamco laboris nisi ut.
+description: Everything starts from here
 ---
 
 # Getting started
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut.
 
 {% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
 {% api-method-summary %}
