@@ -1,74 +1,52 @@
 ---
-description: Everything starts from here
+description: A comprehensive reference guide to Commerce Layer REST API
 ---
 
-# Getting started
+# Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut.
+Commerce Layer exposes a fast [REST](http://en.wikipedia.org/wiki/Representational_State_Transfer) API that lets you add ecommerce to your favorite tech stack. This guide is your reference for all the operations that you can perform on the API resources.
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
+### Base endpoint
 
-{% api-method-description %}
-This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure) to the following base endpoint:
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
-}
+```text
+https://{{subdomain}}.commercelayer.io
 ```
-{% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
+The `subdomain` parameter is the unique subdomain of your organization. The rest of the documentation omits the base endpoint from all the example requests.
 
-```javascript
-{
-    "message": "Ain't no cake like that."
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+### API Specification
 
+Commerce Layer API is 100% compliant with the [JSON API](http://jsonapi.org/format/) specification \(v1.0\). It supports compound documents, sparse fieldsets, resource linking, filtering, sorting, pagination and more. The JSON API community has shared some [client libraries](http://jsonapi.org/implementations/#client-libraries) that can help you get started. Official libraries and SDKs for the most popular languages are coming soon.
 
+### Applications
+
+Commerce Layer implements the industry-standard [OAuth 2.0](https://oauth.net/2/) protocol to manage clients authorization. It defines four types of applications:
+
+{% tabs %}
+{% tab title="Channel" %}
+Best suited to create storefront channels, like an ecommerce website or application.
+{% endtab %}
+
+{% tab title="Integration" %}
+Perfect to integrate any 3rd party system, like an ERP or a CRM, that needs custom permissions.
+{% endtab %}
+
+{% tab title="Zapier" %}
+Used to authenticate our official [Zapier](https://zapier.com/) app \(currently private\) and to build any workflow.
+{% endtab %}
+
+{% tab title="Webapp" %}
+Used to authenticate users and access resources on their behalf.
+{% endtab %}
+{% endtabs %}
+
+Which application to use depends on your specific use case. Official guides and tutorials for the most popular use cases are coming soon.
+
+### Environments
+
+For each organization, you can work either in **test mode** \(default\) or **live mode**. 
+
+Working in test mode is **free forever**. You can try Commerce Layer in test mode as long as you need. Test mode also provides you with a development environment after the go-live. All API calls are identical between the two environments. Use test or live application credentials to make the switch.
 

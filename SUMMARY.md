@@ -1,4 +1,7 @@
 # Table of contents
 
-* [Getting started](README.md)
+* [Introduction](README.md)
+* [Getting started](introduction.md)
+* [Applications](applications.md)
+* [Authentication](authentication.md)
 
