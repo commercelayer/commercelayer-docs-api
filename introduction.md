@@ -30,7 +30,7 @@ This is ideal for client side channel applications \(i.e. JavaScript\) that will
 
 To get an access token for a public channel application, run the following in your terminal, making sure to replace your own endpoint and credentials:
 
-```text
+```bash
 curl -X POST \
   http://your-brand.commercelayer.io/oauth/token \
   -H 'Accept: application/json' \
@@ -44,14 +44,14 @@ curl -X POST \
 
 The response will look like this:
 
-```text
+```javascript
 {
-    "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.XXXXXXXXXX.XXXXXXXXXX",
-    "token_type":"bearer",
-    "expires_in":7200,
-    "scope":"market:1234",
-    "created_at":1536152431
-  }
+  "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.XXXXXXXXXX.XXXXXXXXXX",
+  "token_type":"bearer",
+  "expires_in":7200,
+  "scope":"market:1234",
+  "created_at":1536152431
+}
 ```
 
 Take note of your access token and get ready for your first API call.
@@ -64,15 +64,95 @@ Your access token will expire in **2 hours**.
 
 As your first API call, you can get a list of SKUs. Run the following command in your terminal, making sure to replace the access token that you got in the previous step:
 
-```text
+```bash
 curl -X GET \
     http://your-brand.commercelayer.io/api/skus \
     -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.XXXXXXXXXX.XXXXXXXXXX' \
     -H 'Content-Type: application/vnd.api+json'
 ```
 
-Congratulations! 🎉   
-You just made your first API call, getting a list of SKUs from your account. 
+The response will look like this:
 
-Now, take the time to explore the rest of the reference, learn more about the available resources and become a pro! 🙌
+```javascript
+{
+  "data": [
+    {
+      "id": "1234",
+      "type": "skus",
+      "links": {
+        "self": "https://your-brand.commercelayer.io/api/skus/1234"
+      },
+      "attributes": {
+        "code": "TSHIRTMM000000FFFFFFXLXX",
+        "name": "Black Men T-shirt with White Logo (XL)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image_url": "https://img.yourbrand.com/skus/1234.png",
+        "tag_names": "Men, Black, XL",
+        "pieces_per_pack": "6",
+        "weight": "300",
+        "unit_of_weight": "gr",
+        "id": "1234",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+          "foo": "bar"
+        }
+      },
+      "relationships": {
+        "shipping_category": {
+          "links": {
+            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/shipping_category",
+            "related": "https://your-brand.commercelayer.io/api/skus/1234/shipping_category"
+          }
+        },
+        "prices": {
+          "links": {
+            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/prices",
+            "related": "https://your-brand.commercelayer.io/api/skus/1234/prices"
+          }
+        },
+        "stock_items": {
+          "links": {
+            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/stock_items",
+            "related": "https://your-brand.commercelayer.io/api/skus/1234/stock_items"
+          }
+        },
+        "delivery_lead_times": {
+          "links": {
+            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
+            "related": "https://your-brand.commercelayer.io/api/skus/1234/delivery_lead_times"
+          }
+        },
+        "sku_options": {
+          "links": {
+            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/sku_options",
+            "related": "https://your-brand.commercelayer.io/api/skus/1234/sku_options"
+          }
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "other": "... 24 skus (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 125,
+    "page_count": 5
+  },
+  "links": {
+    "first": "/api/skus?page[number]=1&page[size]=25",
+    "prev": "/api/skus?page[number]=2&page[size]=25",
+    "next": "/api/skus?page[number]=4&page[size]=25",
+    "last": "/api/skus?page[number]=5&page[size]=25"
+  }
+}
+```
+
+{% hint style="success" %}
+Congratulations! 🎉 You just made your first API call, getting a list of SKUs from your account. Now, take the time to explore the rest of the reference, learn more about the available resources and become a pro! 🙌
+{% endhint %}
 

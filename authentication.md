@@ -6,7 +6,7 @@ description: 'How to get your access token, based on OAuth 2.0 grants'
 
 All API requests must be authenticated. To get authorized, you must include a valid access token in the `Authorization` header:
 
-```text
+```http
 Authorization: Bearer {{access_token}}
 ```
 
@@ -43,12 +43,8 @@ Get an access token
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Access" type="string" required=false %}
-application/json
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="Content-Type" type="string" required=false %}
-application/json
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+`application/json`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -94,7 +90,7 @@ Your access token scope \(market\)
 {% endapi-method %}
 
 {% hint style="info" %}
-The access token scope is a string composed by `"market:" + market_id`
+The access token scope is a string composed by `"market:{{market_id}}"`
 {% endhint %}
 
 #### Example request
@@ -142,7 +138,7 @@ The OAuth 2.0 grant
 The customer email address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="customer\_password" type="string" required=true %}
+{% api-method-parameter name="password" type="string" required=true %}
 The customer password
 {% endapi-method-parameter %}
 
