@@ -5,3 +5,8 @@
 * [Applications](applications.md)
 * [Authentication](authentication.md)
 
+## Resources
+
+* [Addresses](resources/addresses.md)
+* [Geocoders](resources/geocoders.md)
+
