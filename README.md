@@ -1,3 +1,10 @@
+---
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
+  nostrud exercitation ullamco laboris nisi ut.
+---
+
 # Getting started
 
 {% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
