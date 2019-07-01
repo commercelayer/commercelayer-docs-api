@@ -20,7 +20,7 @@ Once your sample organization is ready, go to _Settings → Applications_ and ta
 
 ![](.gitbook/assets/flat-browser-image-placeholder.jpg)
 
-The base endpoint is unique for your organization. The client ID, client secret, and scope can be used to authenticate your application and get an access token. Public applications can get an access token by using the client ID only, with limited permissions. 
+The base endpoint is unique for your organization. The `client_id`, `client_secret`, and `scope` can be used to authenticate your application and get an access token. Public applications can get an access token by using the `client_id` only, with limited permissions. 
 
 {% hint style="info" %}
 This is ideal for client side channel applications \(i.e. JavaScript\) that will use our hosted checkout instead of integrating our checkout APIs.
@@ -28,16 +28,16 @@ This is ideal for client side channel applications \(i.e. JavaScript\) that will
 
 ### 3. Get an access token
 
-To get an access token for a public channel application, run the following in your terminal, making sure to replace your own endpoint and credentials:
+To get an access token for a public **channel** application, run the following in your terminal, making sure to replace your own endpoint and credentials:
 
 ```bash
 curl -X POST \
-  http://your-brand.commercelayer.io/oauth/token \
+  https://yourdomain.commercelayer.io/oauth/token \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
   "grant_type": "client_credentials",
-  "client_id": "fb5eaa2b96c3a911602872e00c3e36d03cbeb1eac28143a1f0d7cac570d2cb1d",
+  "client_id": "your-client-id",
   "scope": "market:1234"
 }'
 ```
@@ -46,11 +46,11 @@ The response will look like this:
 
 ```javascript
 {
-  "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.XXXXXXXXXX.XXXXXXXXXX",
+  "access_token":"your-access-token",
   "token_type":"bearer",
   "expires_in":7200,
   "scope":"market:1234",
-  "created_at":1536152431
+  "created_at":1234567890
 }
 ```
 
@@ -66,8 +66,8 @@ As your first API call, you can get a list of SKUs. Run the following command in
 
 ```bash
 curl -X GET \
-    http://your-brand.commercelayer.io/api/skus \
-    -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.XXXXXXXXXX.XXXXXXXXXX' \
+    http://yourdomain.commercelayer.io/api/skus \
+    -H 'Authorization: Bearer your-access-token' \
     -H 'Content-Type: application/vnd.api+json'
 ```
 
@@ -80,7 +80,7 @@ The response will look like this:
       "id": "1234",
       "type": "skus",
       "links": {
-        "self": "https://your-brand.commercelayer.io/api/skus/1234"
+        "self": "https://yourdomain.commercelayer.io/api/skus/1234"
       },
       "attributes": {
         "code": "TSHIRTMM000000FFFFFFXLXX",
@@ -102,32 +102,32 @@ The response will look like this:
       "relationships": {
         "shipping_category": {
           "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/shipping_category",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/shipping_category"
+            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/shipping_category",
+            "related": "https://yourdomain.commercelayer.io/api/skus/1234/shipping_category"
           }
         },
         "prices": {
           "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/prices",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/prices"
+            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/prices",
+            "related": "https://yourdomain.commercelayer.io/api/skus/1234/prices"
           }
         },
         "stock_items": {
           "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/stock_items",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/stock_items"
+            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/stock_items",
+            "related": "https://yourdomain.commercelayer.io/api/skus/1234/stock_items"
           }
         },
         "delivery_lead_times": {
           "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/delivery_lead_times"
+            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
+            "related": "https://yourdomain.commercelayer.io/api/skus/1234/delivery_lead_times"
           }
         },
         "sku_options": {
           "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/sku_options",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/sku_options"
+            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/sku_options",
+            "related": "https://yourdomain.commercelayer.io/api/skus/1234/sku_options"
           }
         }
       },
@@ -136,18 +136,18 @@ The response will look like this:
       }
     },
     {
-      "other": "... 24 skus (first page)"
+      "other": "... 9 skus (first page)"
     }
   ],
   "meta": {
-    "record_count": 125,
-    "page_count": 5
+    "record_count": 140,
+    "page_count": 14
   },
   "links": {
-    "first": "/api/skus?page[number]=1&page[size]=25",
-    "prev": "/api/skus?page[number]=2&page[size]=25",
-    "next": "/api/skus?page[number]=4&page[size]=25",
-    "last": "/api/skus?page[number]=5&page[size]=25"
+    "first": "/api/skus?page[number]=1&page[size]=10",
+    "prev": "/api/skus?page[number]=2&page[size]=10",
+    "next": "/api/skus?page[number]=4&page[size]=10",
+    "last": "/api/skus?page[number]=14&page[size]=10"
   }
 }
 ```

@@ -4,39 +4,28 @@ description: How to request the API to return only specific fields
 
 # Sparse fieldsets
 
-When you fetch a resource or collection, you can request the API to return only specific fields. This reduces the response payload, optimizing the performances.
+When you fetch a resource or collection, you can request the API to return only specific fields, using the `fields` query parameter. This reduces the response payload, optimizing the performances.
 
-{% hint style="info" %}
-You can request sparse fieldsets also when creating or updating resources.
+{% hint style="warning" %}
+The value of the `fields` parameter must be a comma-separated list that refers to the name\(s\) of the fields to be returned. Pay attention to avoid whitespaces before or after each comma.
 {% endhint %}
 
-{% api-method method="get" host="https://your-brand.commercelayer.io" path="/api/skus/1234?include=prices&fields\[skus\]=code,name&fields\[prices\]=formatted\_amount" %}
-{% api-method-summary %}
-Fetch a resource specific fields only
-{% endapi-method-summary %}
+### Example
 
-{% api-method-description %}
-This request fetches an SKU code and name, and the formatted amount of the related prices.
-{% endapi-method-description %}
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches an SKU code and name, and the formatted amount of the related prices:
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-`Bearer {{access_token}}`
-{% endapi-method-parameter %}
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus/1234?include=prices&fields[skus]=code,name&fields[prices]=formatted_amount \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
+```
+{% endtab %}
 
-{% api-method-parameter name="Accept" type="string" required=false %}
-`application/vnd.api+json`
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-On success, the API returns the requested fieldset.
-{% endapi-method-response-example-description %}
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning the requested fieldset: 
 
 ```javascript
 {
@@ -95,12 +84,10 @@ On success, the API returns the requested fieldset.
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endtab %}
+{% endtabs %}
 
-{% hint style="warning" %}
-The value of the `fields` parameter MUST be a comma-separated list that refers to the name\(s\) of the fields to be returned.
+{% hint style="info" %}
+You can request sparse fieldsets also when [creating](creating-resources.md) or [updating](updating-resources.md) resources.
 {% endhint %}
 

@@ -4,111 +4,99 @@ description: How to request a specific sort for the results of a collection of r
 
 # Sorting results
 
-When you fetch a collection of resources, you can request a specific sort for the results.
+When you fetch a collection of resources, you can request a specific sort for the results, using the `sort` query parameter.
 
-{% hint style="info" %}
-You can get the full list of sortable attributes from the documentation of each resource.
+{% hint style="warning" %}
+The value of the `sort` parameter must be a comma-separated list of fields. Pay attention to avoid whitespaces before or after each comma.
 {% endhint %}
 
-{% api-method method="get" host="https://your-brand.commercelayer.io" path="/api/skus/1234?sort=-created\_at,code" %}
-{% api-method-summary %}
-Get a collection of resources, sorted by specific parameters
-{% endapi-method-summary %}
+{% hint style="info" %}
+The sort order for each field is ascending unless prefixed with a `-` \(minus\) in which case it's descending.
+{% endhint %}
 
-{% api-method-description %}
-This request fetches a collection of SKUs sorted by their creation date \(descending\) and code.
-{% endapi-method-description %}
+### Example
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-`Bearer {{access_token}}`
-{% endapi-method-parameter %}
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches a collection of SKUs sorted by their creation date \(descending\) and code:
 
-{% api-method-parameter name="Accept" type="string" required=false %}
-`application/vnd.api+json`
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus?sort=-created_at,code \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
+```
+{% endtab %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-On success, the API returns the all the SKUs, sorted by the specific filter parameters.
-{% endapi-method-response-example-description %}
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning a paginated collection ****of the resource objects, sorted in the requested order:
 
 ```javascript
 {
-    "data": {
+  "data": [
+    {
+      "id": "1234",
+      "type": "skus",
+      "links": {...},
+      "attributes": {
+        "code": "TSHIRTMM000000FFFFFFXLXX",
+        "name": "Black Men T-shirt with White Logo (XL)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image_url": "https://img.yourdomain.com/skus/1234.png",
+        "tag_names": "Men, Black, XL",
+        "pieces_per_pack": "6",
+        "weight": "300",
+        "unit_of_weight": "gr",
         "id": "1234",
-        "type": "skus",
-        "links": {
-            "self": "https://spineless.commercelayer.io/api/skus/1234"
-        },
-        "attributes": {
-            "code": "TSHIRTMM000000E63E74MXXX",
-            "name": "Black Men T-shirt with Pink Logo (M)",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque in neque vitae tincidunt. In gravida eu ipsum non condimentum. Curabitur libero leo, gravida a dictum vestibulum, sollicitudin vel quam.",
-            "image_url": "https://img.commercelayer.io/skus/TSHIRTMM000000E63E74.png?fm=jpg&q=90",
-            "tag_names": "",
-            "pieces_per_pack": null,
-            "weight": null,
-            "unit_of_weight": null,
-            "inventory": null,
-            "created_at": "2019-05-14T10:36:53.711Z",
-            "updated_at": "2019-05-14T10:36:53.711Z",
-            "reference": "TSHIRTMM000000E63E74",
-            "metadata": {}
-        },
-        "relationships": {
-            "shipping_category": {
-                "links": {
-                    "self": "https://spineless.commercelayer.io/api/skus/1234/relationships/shipping_category",
-                    "related": "https://spineless.commercelayer.io/api/skus/1234/shipping_category"
-                }
-            },
-            "prices": {
-                "links": {
-                    "self": "https://spineless.commercelayer.io/api/skus/1234/relationships/prices",
-                    "related": "https://spineless.commercelayer.io/api/skus/1234/prices"
-                }
-            },
-            "stock_items": {
-                "links": {
-                    "self": "https://spineless.commercelayer.io/api/skus/1234/relationships/stock_items",
-                    "related": "https://spineless.commercelayer.io/api/skus/1234/stock_items"
-                }
-            },
-            "delivery_lead_times": {
-                "links": {
-                    "self": "https://spineless.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-                    "related": "https://spineless.commercelayer.io/api/skus/1234/delivery_lead_times"
-                }
-            },
-            "sku_options": {
-                "links": {
-                    "self": "https://spineless.commercelayer.io/api/skus/1234/relationships/sku_options",
-                    "related": "https://spineless.commercelayer.io/api/skus/1234/sku_options"
-                }
-            }
-        },
-        "meta": {
-            "mode": "test"
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+          "foo": "bar"
         }
+      },
+      "relationships": {
+        "shipping_category": {
+          "links": {...}
+        },
+        "prices": {
+          "links": {...}
+        },
+        "stock_items": {
+          "links": {...}
+        },
+        "delivery_lead_times": {
+          "links": {...}
+        },
+        "sku_options": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "other": "... 9 skus (first page)"
     }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/skus?sort=-created_at,code&page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/skus?sort=-created_at,code&page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus?sort=-created_at,code&page[number]=14&page[size]=10"
+  }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
-{% hint style="warning" %}
-The value of the `sort` parameter MUST be a comma-separated list of fields. 
-{% endhint %}
+{% page-ref page="pagination.md" %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
-The sort order for each field is ascending unless prefixed with a `-` \(minus\) in which case it's descending. By default, the API sorts ascending on the `id` of the primary resource.
+You can get the full list of sortable attributes from the documentation of each resource.
 {% endhint %}
 

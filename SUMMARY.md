@@ -3,10 +3,13 @@
 * [Introduction](README.md)
 * [Getting started](introduction.md)
 * [Applications](applications.md)
-* [Authentication](authentication.md)
+* [Authentication](authentication/README.md)
+  * [Client credentials](authentication/client-credentials.md)
+  * [Password](authentication/password.md)
+  * [Refresh token](authentication/refresh-token.md)
+  * [Authorization code](authentication/authorization-code.md)
 * [Roles and permissions](roles-and-permissions.md)
-* [Fetching resources \[ OLD \]](fetching-resources.md)
-* [Fetching resources \[ NEW \]](fetching-resources-new.md)
+* [Fetching resources](fetching-resources.md)
 * [Including associations](including-associations.md)
 * [Sparse fieldsets](sparse-fieldsets.md)
 * [Sorting results](sorting-results.md)
@@ -20,6 +23,10 @@
 
 ## Resources
 
-* [Addresses](resources/addresses.md)
-* [Geocoders](resources/geocoders.md)
+* [SKUs](resources/skus-1/README.md)
+  * [Create an SKU](resources/skus-1/create-an-sku.md)
+  * [List all the SKUs](resources/skus-1/list-all-the-skus.md)
+  * [Retrieve a SKU](resources/skus-1/retrieve-a-sku.md)
+  * [Update a SKU](resources/skus-1/update-a-sku.md)
+  * [Delete a SKU](resources/skus-1/delete-a-sku.md)
 

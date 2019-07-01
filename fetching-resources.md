@@ -2,41 +2,46 @@
 description: How to fetch single resources or collections
 ---
 
-# Fetching resources \[ OLD \]
+# Fetching resources
 
 You can fetch either single resources or collections by sending `GET` requests to the resource endpoints. 
 
-For example, the following request fetches a single SKU:
-
-```http
-GET /api/skus/1234
-```
-
-And the following request fetches a collection of SKUs:
-
-```http
-GET /api/skus
-```
-
-{% hint style="info" %}
-The "Accept" header must be `application/vnd.api+json`.
+{% hint style="warning" %}
+The **Accept** header must be `application/vnd.api+json`.
 {% endhint %}
 
-On success, the API responds with a `200 OK` status code, returning either a single resource object:
+{% page-ref page="authentication/" %}
+
+### **Examples**
+
+#### **Fetching a single SKU**
+
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches a single SKU, the one identified by the ID "1234":
+
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus/1234 \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token' 
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
 {
   "data": {
     "id": "1234",
     "type": "skus",
-    "links": {
-      "self": "https://your-brand.commercelayer.io/api/skus/1234"
-    },
+    "links": {...},
     "attributes": {
       "code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image_url": "https://img.yourbrand.com/skus/1234.png",
+      "image_url": "https://img.yourdomain.com/skus/1234.png",
       "tag_names": "Men, Black, XL",
       "pieces_per_pack": "6",
       "weight": "300",
@@ -139,34 +144,19 @@ On success, the API responds with a `200 OK` status code, returning either a sin
     },
     "relationships": {
       "shipping_category": {
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/shipping_category",
-          "related": "https://your-brand.commercelayer.io/api/skus/1234/shipping_category"
-        }
+        "links": {...}
       },
       "prices": {
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/prices",
-          "related": "https://your-brand.commercelayer.io/api/skus/1234/prices"
-        }
+        "links": {...}
       },
       "stock_items": {
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/stock_items",
-          "related": "https://your-brand.commercelayer.io/api/skus/1234/stock_items"
-        }
+        "links": {...}
       },
       "delivery_lead_times": {
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-          "related": "https://your-brand.commercelayer.io/api/skus/1234/delivery_lead_times"
-        }
+        "links": {...}
       },
       "sku_options": {
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/sku_options",
-          "related": "https://your-brand.commercelayer.io/api/skus/1234/sku_options"
-        }
+        "links": {...}
       }
     },
     "meta": {
@@ -175,8 +165,25 @@ On success, the API responds with a `200 OK` status code, returning either a sin
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
-Or a paginated collection:
+#### **Fetching a collection of SKUs**
+
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches a collection of SKUs:
+
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token' 
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning a paginated collection ****of the resource objects:
 
 ```javascript
 {
@@ -184,14 +191,12 @@ Or a paginated collection:
     {
       "id": "1234",
       "type": "skus",
-      "links": {
-        "self": "https://your-brand.commercelayer.io/api/skus/1234"
-      },
+      "links": {...},
       "attributes": {
         "code": "TSHIRTMM000000FFFFFFXLXX",
         "name": "Black Men T-shirt with White Logo (XL)",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image_url": "https://img.yourbrand.com/skus/1234.png",
+        "image_url": "https://img.yourdomain.com/skus/1234.png",
         "tag_names": "Men, Black, XL",
         "pieces_per_pack": "6",
         "weight": "300",
@@ -206,34 +211,19 @@ Or a paginated collection:
       },
       "relationships": {
         "shipping_category": {
-          "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/shipping_category",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/shipping_category"
-          }
+          "links": {...}
         },
         "prices": {
-          "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/prices",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/prices"
-          }
+          "links": {...}
         },
         "stock_items": {
-          "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/stock_items",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/stock_items"
-          }
+          "links": {...}
         },
         "delivery_lead_times": {
-          "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/delivery_lead_times"
-          }
+          "links": {...}
         },
         "sku_options": {
-          "links": {
-            "self": "https://your-brand.commercelayer.io/api/skus/1234/relationships/sku_options",
-            "related": "https://your-brand.commercelayer.io/api/skus/1234/sku_options"
-          }
+          "links": {...}
         }
       },
       "meta": {
@@ -241,25 +231,93 @@ Or a paginated collection:
       }
     },
     {
-      "other": "... 24 skus (first page)"
+      "other": "... 9 skus (first page)"
     }
   ],
   "meta": {
-    "record_count": 125,
-    "page_count": 5
+    "record_count": 140,
+    "page_count": 14
   },
   "links": {
-    "first": "/api/skus?page[number]=1&page[size]=25",
-    "prev": "/api/skus?page[number]=2&page[size]=25",
-    "next": "/api/skus?page[number]=4&page[size]=25",
-    "last": "/api/skus?page[number]=5&page[size]=25"
+    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
   }
 }
 ```
 
-You can also fetch related resources by sending a `GET` request to the "related" link. For example, the following request fetches an SKU's prices:
+{% page-ref page="pagination.md" %}
+{% endtab %}
+{% endtabs %}
 
-```http
-GET /api/skus/1234/prices
+#### Fetching related resources
+
+You can also fetch related resources by sending a `GET` request to the "related" link.
+
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches the prices of the SKU identified by the ID "1234":
+
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus/1234/prices \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: your-access-token'
 ```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning a paginated collection ****of the related resource objects:
+
+```javascript
+{
+  "data": [
+    {
+      "id": "1234",
+      "type": "prices",
+      "links": {...},
+      "attributes": {
+        "currency_code": "EUR",
+        "sku_code": "TSHIRTMM000000FFFFFFMXXX",
+        "amount_cents": 4900,
+        "amount_float": 49,
+        "formatted_amount": "€49,00",
+        "compare_at_amount_cents": 4900,
+        "compare_at_amount_float": 49,
+        "formatted_compare_at_amount": "€49,00",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": null,
+        "metadata": {}
+      },
+      "relationships": {
+        "price_list": {
+          "links": {...}
+        },
+        "sku": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "other": "... 2 prices (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 3,
+    "page_count": 1
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/skus/1234/prices?page[number]=1&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus/1234/prices?page[number]=1&page[size]=10"
+  }
+}
+```
+
+{% page-ref page="pagination.md" %}
+{% endtab %}
+{% endtabs %}
 

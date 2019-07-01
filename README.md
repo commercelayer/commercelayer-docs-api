@@ -11,10 +11,10 @@ Commerce Layer exposes a fast [REST](http://en.wikipedia.org/wiki/Representation
 All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Secure) to the following base endpoint:
 
 ```http
-https://{{subdomain}}.commercelayer.io
+https://yourdomain.commercelayer.io
 ```
 
-The `subdomain` parameter is the unique subdomain of your organization. The rest of the documentation omits the base endpoint from all the example requests.
+Where `yourdomain` is the unique subdomain of your organization. 
 
 ### API Specification
 
@@ -30,5 +30,9 @@ Commerce Layer implements the industry-standard [OAuth 2.0](https://oauth.net/2/
 
 For each organization, you can work either in **test mode** \(default\) or **live mode**. 
 
-Working in test mode is **free forever**. You can try Commerce Layer in test mode as long as you need. Test mode also provides you with a development environment after the go-live. All API calls are identical between the two environments. Use test or live application credentials to make the switch.
+{% hint style="info" %}
+Working in test mode is **free forever**. You can try Commerce Layer in test mode as long as you need.
+{% endhint %}
+
+Test mode also provides you with a development environment after the go-live. All API calls are identical between the two environments. Use test or live application credentials to make the switch.
 

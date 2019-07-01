@@ -6,39 +6,24 @@ description: How to delete a resource via API
 
 You can delete a resource by sending a `DELETE` request to the resource endpoint.
 
-{% api-method method="delete" host="https://your-brand.commercelayer.io" path="/api/skus/1234" %}
-{% api-method-summary %}
-Delete a resource
-{% endapi-method-summary %}
+{% page-ref page="authentication/" %}
 
-{% api-method-description %}
-This request deletes the resource identified by the ID "1234".
-{% endapi-method-description %}
+### Example
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-`Bearer {{access_token}}`
-{% endapi-method-parameter %}
+{% tabs %}
+{% tab title="Request" %}
+The following request deletes the resource identified by the ID "1234":
 
-{% api-method-parameter name="Accept" type="string" required=false %}
-`application/vnd.api+json`
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=204 %}
-{% api-method-response-example-description %}
-On success, the API returns no content.
-{% endapi-method-response-example-description %}
-
+```javascript
+curl -X DELETE \
+  https://yourdomain.commercelayer.io/api/skus/1234 \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% tab title="Response" %}
+On success, the API responds with a `204 No Content` status code.
+{% endtab %}
+{% endtabs %}
 

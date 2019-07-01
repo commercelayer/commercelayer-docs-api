@@ -4,35 +4,34 @@ description: How to include a resource and its associations in the same request
 
 # Including associations
 
-When you fetch a resource or a collection, you can include its associations in the same request. This reduces the number of roundtrips, optimizing the performances.
+When you fetch a resource or a collection, you can include its associations in the same request, using the `include` query parameter. This reduces the number of roundtrips, optimizing the performances. 
 
-{% api-method method="get" host="https://your-brand.commercelayer.io" path="/api/skus/1234?include=prices,stock\_items" %}
-{% api-method-summary %}
-Fetch a resource and its associations
-{% endapi-method-summary %}
+{% hint style="warning" %}
+The value of the `include` parameter must be a comma-separated list of relationship paths \([see example](including-associations.md#fetching-an-sku-and-some-of-its-associations)\). Pay attention to avoid whitespaces before or after each comma. 
+{% endhint %}
 
-{% api-method-description %}
-This request fetches a single SKU and the related prices and stock items.
-{% endapi-method-description %}
+{% hint style="info" %}
+A relationship path is a dot-separated list of relationship names \([see example](including-associations.md#using-relationship-paths)\).
+{% endhint %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-`Bearer {{access_token}}`
-{% endapi-method-parameter %}
+### Examples
 
-{% api-method-parameter name="Accept" type="string" required=false %}
-`application/vnd.api+json`
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+#### Fetching an SKU and some of its associations
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-On success, the API returns the resource object and the included associations.
-{% endapi-method-response-example-description %}
+{% tabs %}
+{% tab title="Request" %}
+The following request fetches the SKU identified by the ID "1234" and the related prices and stock items:
+
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus/1234?include=prices,stock_items \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: your-access-token' 
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning the resource object and the included associations:
 
 ```javascript
 {
@@ -76,9 +75,7 @@ On success, the API returns the resource object and the included associations.
       "data": {
         "id": "1234",
         "type": "prices",
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/prices/1234"
-        },
+        "links": {...},
         "attributes": {
           "currency_code": "EUR",
           "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -98,16 +95,10 @@ On success, the API returns the resource object and the included associations.
         },
         "relationships": {
           "price_list": {
-            "links": {
-              "self": "https://your-brand.commercelayer.io/api/prices/1234/relationships/price_list",
-              "related": "https://your-brand.commercelayer.io/api/prices/1234/price_list"
-            }
+            "links": {...}
           },
           "sku": {
-            "links": {
-              "self": "https://your-brand.commercelayer.io/api/prices/1234/relationships/sku",
-              "related": "https://your-brand.commercelayer.io/api/prices/1234/sku"
-            }
+            "links": {...}
           }
         },
         "meta": {
@@ -119,9 +110,7 @@ On success, the API returns the resource object and the included associations.
       "data": {
         "id": "1234",
         "type": "stock_items",
-        "links": {
-          "self": "https://your-brand.commercelayer.io/api/stock_items/1234"
-        },
+        "links": {...},
         "attributes": {
           "sku_code": "TSHIRTMM000000FFFFFFXLXX",
           "quantity": "100",
@@ -135,16 +124,10 @@ On success, the API returns the resource object and the included associations.
         },
         "relationships": {
           "stock_location": {
-            "links": {
-              "self": "https://your-brand.commercelayer.io/api/stock_items/1234/relationships/stock_location",
-              "related": "https://your-brand.commercelayer.io/api/stock_items/1234/stock_location"
-            }
+            "links": {...}
           },
           "sku": {
-            "links": {
-              "self": "https://your-brand.commercelayer.io/api/stock_items/1234/relationships/sku",
-              "related": "https://your-brand.commercelayer.io/api/stock_items/1234/sku"
-            }
+            "links": {...}
           }
         },
         "meta": {
@@ -155,16 +138,198 @@ On success, the API returns the resource object and the included associations.
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endtab %}
+{% endtabs %}
 
-{% hint style="warning" %}
-The value of the `include` parameter MUST be a comma-separated list of relationship paths.
-{% endhint %}
+#### Using relationship paths
+
+{% tabs %}
+{% tab title="Request" %}
+The following request features the relationship path `prices.price_list` as the value of the include parameter, where `prices` is a relationship listed under an SKU resource object, and `price_list` is a relationship listed under a price resource object:
+
+```javascript
+curl -X GET \
+  http://yourdomain.commercelayer.io/api/skus/1234?include=prices.price_list \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning the resource object and the included associations:
+
+```javascript
+{
+  "data": {
+    "id": "1234",
+    "type": "skus",
+    "links": {...},
+    "attributes": {
+      "code": "TSHIRTMM000000FFFFFFMXXX",
+      "name": "Black Men T-shirt with White Logo (M)",
+      "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.",
+      "image_url": "https://img.yourdomain.com/skus/1234.png",
+      "tag_names": "",
+      "pieces_per_pack": null,
+      "weight": null,
+      "unit_of_weight": null,
+      "inventory": null,
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {}
+    },
+    "relationships": {
+      "shipping_category": {
+        "links": {...}
+      },
+      "prices": {
+        "links": {...},
+        "data": [
+          {
+            "type": "prices",
+            "id": "1234"
+          },
+          {
+            "type": "prices",
+            "id": "5678"
+          },
+        ]
+      },
+      "stock_items": {
+        "links": {...}
+      },
+      "delivery_lead_times": {
+        "links": {...}
+      },
+      "sku_options": {
+        "links": {...}
+      }
+    },
+    "meta": {
+      "mode": "test"
+    }
+  },
+  "included": [
+    {
+      "id": "1234",
+      "type": "prices",
+      "links": {...},
+      "attributes": {
+        "currency_code": "USD",
+        "sku_code": "TSHIRTMM000000FFFFFFMXXX",
+        "amount_cents": 3480,
+        "amount_float": 34.8,
+        "formatted_amount": "$34.80",
+        "compare_at_amount_cents": 4524,
+        "compare_at_amount_float": 45.24,
+        "formatted_compare_at_amount": "$45.24",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": null,
+        "metadata": {}
+      },
+      "relationships": {
+        "price_list": {
+          "links": {...},
+          "data": {
+            "type": "price_lists",
+            "id": "1234"
+          }
+        },
+        "sku": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "id": "5678",
+      "type": "prices",
+      "links": {...},
+      "attributes": {
+        "currency_code": "EUR",
+        "sku_code": "TSHIRTMM000000FFFFFFMXXX",
+        "amount_cents": 4900,
+        "amount_float": 49,
+        "formatted_amount": "€49,00",
+        "compare_at_amount_cents": 4900,
+        "compare_at_amount_float": 49,
+        "formatted_compare_at_amount": "€49,00",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": null,
+        "metadata": {}
+      },
+      "relationships": {
+        "price_list": {
+          "links": {...},
+          "data": {
+            "type": "price_lists",
+            "id": "1234"
+          }
+        },
+        "sku": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "id": "1234",
+      "type": "price_lists",
+      "links": {...},
+      "attributes": {
+        "name": "USD Price List",
+        "currency_code": "USD",
+        "tax_included": false,
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": null,
+        "metadata": {}
+      },
+      "relationships": {
+        "prices": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    },
+    {
+      "id": "5678",
+      "type": "price_lists",
+      "links": {...},
+      "attributes": {
+        "name": "EUR Price List",
+        "currency_code": "EUR",
+        "tax_included": true,
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": null,
+        "metadata": {}
+      },
+      "relationships": {
+        "prices": {
+          "links": {...}
+        }
+      },
+      "meta": {
+        "mode": "test"
+      }
+    }
+  ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
-A relationship path is a dot-separated list of relationship names. For example, a relationship path could be `prices.price_list` where prices is a relationship listed under an SKU resource object, and price\_list is a relationship listed under a price resource object.
+You can request to include associations also when [creating](creating-resources.md) or [updating](updating-resources.md) resources.
 {% endhint %}
 
