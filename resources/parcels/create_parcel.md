@@ -10,9 +10,7 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 
 ## Request
 
-```text
-**POST** https://yourdomain.commercelayer.io**/api/parcels**
-```
+**POST** https\://yourdomain.commercelayer.io**/api/parcels**
 
 ### Arguments
 

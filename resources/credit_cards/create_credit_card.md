@@ -10,9 +10,7 @@ To create a new credit card, send a `POST` request to the `/api/credit_cards` en
 
 ## Request
 
-```text
-**POST** https://yourdomain.commercelayer.io**/api/credit_cards**
-```
+**POST** https\://yourdomain.commercelayer.io**/api/credit_cards**
 
 ### Arguments
 

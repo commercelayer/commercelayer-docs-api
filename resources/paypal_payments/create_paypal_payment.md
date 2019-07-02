@@ -10,9 +10,7 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 
 ## Request
 
-```text
-**POST** https://yourdomain.commercelayer.io**/api/paypal_payments**
-```
+**POST** https\://yourdomain.commercelayer.io**/api/paypal_payments**
 
 ### Arguments
 

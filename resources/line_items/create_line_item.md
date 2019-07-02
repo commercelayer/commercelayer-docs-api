@@ -10,9 +10,7 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 
 ## Request
 
-```text
-**POST** https://yourdomain.commercelayer.io**/api/line_items**
-```
+**POST** https\://yourdomain.commercelayer.io**/api/line_items**
 
 ### Arguments
 
