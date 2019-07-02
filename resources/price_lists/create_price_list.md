@@ -10,7 +10,7 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/price_lists**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/price_lists**
 
 ### Arguments
 

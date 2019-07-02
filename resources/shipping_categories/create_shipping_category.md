@@ -10,7 +10,7 @@ To create a new shipping category, send a `POST` request to the `/api/shipping_c
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/shipping_categories**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories**
 
 ### Arguments
 

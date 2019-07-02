@@ -10,7 +10,7 @@ To create a new wire transfer, send a `POST` request to the `/api/wire_transfers
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/wire_transfers**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers**
 
 ### Arguments
 

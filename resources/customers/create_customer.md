@@ -10,7 +10,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/customers**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customers**
 
 ### Arguments
 

@@ -10,7 +10,7 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/shipping_methods**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods**
 
 ### Arguments
 

@@ -10,7 +10,7 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 
 ## Request
 
-**POST** https://yourdomain&#46;commercelayer&#46;io**/api/line_item_options**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
 
 ### Arguments
 
