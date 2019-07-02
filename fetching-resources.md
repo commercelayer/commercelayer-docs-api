@@ -18,11 +18,11 @@ The **Accept** header must be `application/vnd.api+json`.
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches a single SKU, the one identified by the ID "1234":
+The following request fetches a single SKU, the one identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus/1234 \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' 
 ```
@@ -34,14 +34,14 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {...},
     "attributes": {
       "code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image_url": "https://img.yourdomain.com/skus/1234.png",
+      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
       "tag_names": "Men, Black, XL",
       "pieces_per_pack": "6",
       "weight": "300",
@@ -134,7 +134,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
           }
         ]
       },
-      "id": "1234",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANYREFEFERNCE",
@@ -189,19 +188,18 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "1234",
+      "id": "xYZkjABcde",
       "type": "skus",
       "links": {...},
       "attributes": {
         "code": "TSHIRTMM000000FFFFFFXLXX",
         "name": "Black Men T-shirt with White Logo (XL)",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image_url": "https://img.yourdomain.com/skus/1234.png",
+        "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
         "tag_names": "Men, Black, XL",
         "pieces_per_pack": "6",
         "weight": "300",
         "unit_of_weight": "gr",
-        "id": "1234",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
@@ -256,11 +254,11 @@ You can also fetch related resources by sending a `GET` request to the "related"
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches the prices of the SKU identified by the ID "1234":
+The following request fetches the prices of the SKU identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus/1234/prices \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: your-access-token'
 ```
@@ -273,7 +271,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "1234",
+      "id": "yzkWXfgHQS",
       "type": "prices",
       "links": {...},
       "attributes": {
@@ -311,8 +309,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 1
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/skus/1234/prices?page[number]=1&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/skus/1234/prices?page[number]=1&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices?page[number]=1&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices?page[number]=1&page[size]=10"
   }
 }
 ```

@@ -43,13 +43,14 @@ The following request tries to update the quantity of a line item with an out-of
 
 ```javascript
 curl -X PATCH \
-  https://yourdomain.commercelayer.io/api/line_items/1234 \
+  https://yourdomain.commercelayer.io/api/line_items/saDFGhjkLZ \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "line_items",
-    "id": 1234,
+    "id": "saDFGhjkLZ",
     "attributes": {
       "quantity": 100
     }
@@ -92,13 +93,14 @@ The following request tries to update a price but the ID in the url does not mat
 
 ```javascript
 curl -X PATCH \
-  https://yourdomain.commercelayer.io/api/prices/1234 \
+  https://yourdomain.commercelayer.io/api/prices/yzkWXfgHQS \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "prices",
-    "id": 4321,
+    "id": "YZkWXgfQHS",
     "attributes": {
       "amount_cents": 4900
     }
@@ -133,7 +135,7 @@ The following request tries to fetch a non existing SKU:
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus/XXXX \
+  https://yourdomain.commercelayer.io/api/skus/XxYyZzKkJj \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```

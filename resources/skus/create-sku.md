@@ -40,6 +40,7 @@ curl -X POST \
   https://yourdomain.commercelayer.io/api/skus \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "skus",
@@ -51,7 +52,7 @@ curl -X POST \
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": "1234"
+          "id": "zxcVBnMASd"
         }
       }
     }
@@ -66,10 +67,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/skus/1234"
+        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
     },
         "attributes": {
             "code": "TSHIRTMM000000FFFFFFXLXX",
@@ -88,32 +89,32 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "relationships": {
             "shipping_category": {
                 "links": {
-                    "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/shipping_category",
-                    "related": "https://yourdomain.commercelayer.io/api/skus/1234/shipping_category"
+                    "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/shipping_category",
+                    "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/shipping_category"
                 }
             },
             "prices": {
                 "links": {
-                    "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/prices",
-                    "related": "https://yourdomain.commercelayer.io/api/skus/1234/prices"
+                    "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/prices",
+                    "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices"
                 }
             },
             "stock_items": {
                 "links": {
-                    "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/stock_items",
-                    "related": "https://yourdomain.commercelayer.io/api/skus/1234/stock_items"
+                    "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/stock_items",
+                    "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/stock_items"
                 }
             },
             "delivery_lead_times": {
                 "links": {
-                    "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-                    "related": "https://yourdomain.commercelayer.io/api/skus/1234/delivery_lead_times"
+                    "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/delivery_lead_times",
+                    "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/delivery_lead_times"
                 }
             },
             "sku_options": {
                 "links": {
-                    "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/sku_options",
-                    "related": "https://yourdomain.commercelayer.io/api/skus/1234/sku_options"
+                    "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
+                    "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
                 }
             }
         },

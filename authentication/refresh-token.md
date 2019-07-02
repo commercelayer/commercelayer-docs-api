@@ -34,7 +34,8 @@ The following request tries to exchange a valid refresh token for an expired acc
 ```javascript
 curl -X POST \
   https://yourdomain.commercelayer.io/oauth/token \
-  -H 'Content-Type: application/vnd.api+json' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
   -d '{
   "grant_type": "refresh_token",
   "refresh_token": "your-refresh-token",
@@ -52,10 +53,10 @@ On success, the API responds with a `200 OK` status code, returning the requeste
     "access_token": "your-access-token",
     "token_type": "bearer",
     "expires_in": 7200,
-    "refresh_token": "your-refresh-token",
+    "refresh_token": "your-new-refresh-token",
     "scope": "market:1234",
     "created_at": 123456789,
-    "owner_id": 1234,
+    "owner_id": "zxcVBnMASd",
     "owner_type": "customer"
 }
 ```

@@ -36,16 +36,18 @@ Here below the list of all the possible arguments that you can pass with the req
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to update the description e the shipping category of the SKU identified by the ID "1234":
+The following request tries to update the description e the shipping category of the SKU identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X PATCH \
-  https://yourdomain.commercelayer.io/api/skus/1234 \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde \
+  -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "skus",
-    "id": 1234,
+    "id": "xYZkjABcde",
     "attributes": {
       "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque."
     },
@@ -53,7 +55,7 @@ curl -X PATCH \
       "shipping_category": {
     	"data": {
     	  "type": "shipping_categories",
-          "id": "1234"
+          "id": "zxcVBnMASd"
         }
       }
     }
@@ -68,16 +70,16 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/skus/1234"
+      "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
     },
     "attributes": {
       "code": "TSHIRTMM000000E63E74MXXX",
       "name": "Black Men T-shirt with Pink Logo (M)",
       "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.",
-      "image_url": "https://img.yourdomain.io/skus/TSHIRTMM000000E63E74.png?fm=jpg&q=90",
+      "image_url": "https://img.yourdomain.io/skus/xYZkjABcd.png",
       "tag_names": "",
       "pieces_per_pack": null,
       "weight": null,
@@ -90,32 +92,32 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "shipping_category": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/shipping_category",
-          "related": "https://yourdomain.commercelayer.io/api/skus/1234/shipping_category"
+          "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/shipping_category",
+          "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/shipping_category"
         }
       },
       "prices": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/prices",
-          "related": "https://yourdomain.commercelayer.io/api/skus/1234/prices"
+          "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/prices",
+          "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices"
           }
         },
         "stock_items": {
           "links": {
-            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/stock_items",
-            "related": "https://yourdomain.commercelayer.io/api/skus/1234/stock_items"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/stock_items",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/stock_items"
           }
         },
         "delivery_lead_times": {
           "links": {
-            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/delivery_lead_times",
-            "related": "https://yourdomain.commercelayer.io/api/skus/1234/delivery_lead_times"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/delivery_lead_times",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/delivery_lead_times"
           }
         },
         "sku_options": {
           "links": {
-            "self": "https://yourdomain.commercelayer.io/api/skus/1234/relationships/sku_options",
-            "related": "https://yourdomain.commercelayer.io/api/skus/1234/sku_options"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
           }
         }
       },

@@ -18,7 +18,9 @@ Where `yourdomain` is the unique subdomain of your organization.
 
 ### API Specification
 
-Commerce Layer API is 100% compliant with the [JSON API](http://jsonapi.org/format/) specification \(v1.0\). It supports compound documents, sparse fieldsets, resource linking, filtering, sorting, pagination and more. The JSON API community has shared some [client libraries](http://jsonapi.org/implementations/#client-libraries) that can help you get started. Official libraries and SDKs for the most popular languages are coming soon.
+Commerce Layer API is 100% compliant with the [JSON API](http://jsonapi.org/format/) specification \(v1.0\). It supports compound documents, sparse fieldsets, resource linking, filtering, sorting, pagination and more. The JSON API community has shared some [client libraries](http://jsonapi.org/implementations/#client-libraries) that can help you get started. 
+
+Official libraries and SDKs for the most popular languages are coming soon.
 
 ### Applications
 

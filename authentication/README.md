@@ -10,10 +10,6 @@ All API requests must be authenticated. To get authorized, you must include a va
 Authorization: Bearer your-access-token
 ```
 
-{% hint style="warning" %}
-The **Content-Type** header must be `application/vnd.api+json`.
-{% endhint %}
-
 ### Authorization flows
 
 To get an access token, you need to execute an authorization flow by using a valid application as the client. 

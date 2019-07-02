@@ -6,6 +6,10 @@ description: How to create a resource via API
 
 You can create a resource by sending a `POST` request to the resources endpoint, with a JSON payload.
 
+{% hint style="warning" %}
+The **Content-Type** header must be `application/vnd.api+json`.
+{% endhint %}
+
 {% hint style="info" %}
 You can get the list of arguments, with type and examples from the documentation of each resource.
 {% endhint %}
@@ -23,6 +27,7 @@ curl -X POST \
   https://yourdomain.commercelayer.io/api/skus \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "skus",
@@ -34,7 +39,7 @@ curl -X POST \
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": "1234"
+          "id": "zxcVBnMASd"
         }
       }
     }
@@ -49,10 +54,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/skus/1234"
+        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
     },
         "attributes": {
             "code": "TSHIRTMM000000FFFFFFXLXX",

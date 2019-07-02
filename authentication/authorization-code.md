@@ -8,8 +8,8 @@ The `authorization_code` grant type is used by **webapp** applications to exchan
 
 Unlike the other grant types, the `authorization_code` flow requires two steps:
 
-1. [Get](authorization-code.md#getting-an-authorization-code) an authorization code
-2. [Exchange](authorization-code.md#getting-an-access-token) the authorization code with an access token
+1. Get an [authorization code](authorization-code.md#getting-an-authorization-code)
+2. Exchange the authorization code with an [access token](authorization-code.md#getting-an-access-token)
 
 ## Getting an authorization code
 
@@ -36,11 +36,12 @@ The response type must be `code`.
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an authorization code, putting in scope the market identified by the ID "1234":
+The following request tries to get an authorization code, putting in scope the market identified by the number "1234":
 
 ```javascript
 curl -X GET \
   https://yourdomain.commercelayer.io/oauth/authorize?client_id=your-client-id&redirect_uri=https://yourdomain.com/redirect&scope=market:1234&response_type=code \
+  -H 'Accept: application/json' \
   -H 'Content-Type: application/json'
 ```
 {% endtab %}
@@ -80,7 +81,8 @@ The following request tries to get an access token using the `authorization_code
 ```javascript
 curl -X POST \
   https://yourdomain.commercelayer.io/oauth/token \
-  -H 'Content-Type: application/vnd.api+json' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
   -d '{
   "grant_type": "authorization_code",
   "code": "your-authorization-code",
@@ -102,7 +104,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
     "refresh_token": "your-refresh-token",
     "scope": "market:1234",
     "created_at": 123456789,
-    "owner_id": 1234,
+    "owner_id": "zxcVBnMASd",
     "owner_type": "user"
 }
 ```

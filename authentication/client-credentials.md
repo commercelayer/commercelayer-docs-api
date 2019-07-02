@@ -30,19 +30,20 @@ To get an access token using the `client_credentials` grant type, send a `POST` 
 | **scope** | `string` | Optional | Your access token scope \(market\) |
 
 {% hint style="info" %}
-The access token scope is a string composed by `"market:{{market_id}}"`, where `market_id` is the ID of the market you want to put in scope.
+The access token scope is a string composed by `"market:{{market_number}}"`, where `market_number` is the number of the market you want to put in scope.
 {% endhint %}
 
 ### Example
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an access token using the `client_credentials` grant type and putting in scope the market identified by the ID "1234":
+The following request tries to get an access token using the `client_credentials` grant type and putting in scope the market identified by the number "1234":
 
 ```javascript
 curl -X POST \
   https://yourdomain.commercelayer.io/oauth/token \
-  -H 'Content-Type: application/vnd.api+json' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
   -d '{
   "grant_type": "client_credentials",
   "client_id": "your-client-id",

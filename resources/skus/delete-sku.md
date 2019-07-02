@@ -16,12 +16,13 @@ To delete a SKU, send a `DELETE` request to the `/api/skus/{{id}}` endpoint, whe
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to delete the SKU identified by the ID "1234":
+The following request tries to delete the SKU identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X DELETE \
-  https://yourdomain.commercelayer.io/api/skus/1234 \
-  -H 'Authorization: Bearer your-access-token' \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
 ```
 {% endtab %}
 

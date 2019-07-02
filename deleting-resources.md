@@ -12,11 +12,11 @@ You can delete a resource by sending a `DELETE` request to the resource endpoint
 
 {% tabs %}
 {% tab title="Request" %}
-The following request deletes the resource identified by the ID "1234":
+The following request deletes the resource identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X DELETE \
-  https://yourdomain.commercelayer.io/api/skus/1234 \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```

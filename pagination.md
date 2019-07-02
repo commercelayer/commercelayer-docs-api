@@ -87,7 +87,7 @@ Please note that the link to the `prev` page is now missing:
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches a collection of SKUs, listed 5 per page, starting from the last page:
+The following request fetches a collection of SKUs, listed 5 per page, starting from a specific page that happens to be the last:
 
 ```javascript
 curl -X GET \

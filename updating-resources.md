@@ -6,6 +6,10 @@ description: How to update a resource via API
 
 You can update a resource by sending a `PATCH` request to the resources endpoint, with a JSON payload.
 
+{% hint style="warning" %}
+The **Content-Type** header must be `application/vnd.api+json`.
+{% endhint %}
+
 {% hint style="info" %}
 You can get the list of arguments, with type and examples from the documentation of each resource.
 {% endhint %}
@@ -20,13 +24,14 @@ The following request updates the description of an existing SKU:
 
 ```javascript
 curl -X PATCH \
-  https://yourdomain.commercelayer.io/api/skus/1234 \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
+  -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
     "type": "skus",
-    "id": 1234,
+    "id": "xYZkjABcde",
     "attributes": {
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
@@ -41,10 +46,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/skus/1234"
+        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
     },
         "attributes": {
             "code": "TSHIRTMM000000FFFFFFXLXX",

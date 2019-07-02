@@ -18,7 +18,7 @@ The following request fetches an SKU code and name, and the formatted amount of 
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus/1234?include=prices&fields[skus]=code,name&fields[prices]=formatted_amount \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde?include=prices&fields[skus]=code,name&fields[prices]=formatted_amount \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
@@ -30,7 +30,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {...},
     "attributes": {
@@ -46,7 +46,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
         "data": [
           {
             "type": "prices",
-            "id": 1234
+            "id": "yzkWXfgHQS"
           }
         ]
       },
@@ -64,7 +64,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
   "included": [
     {
       "data": {
-        "id": "1234",
+        "id": "yzkWXfgHQS",
         "type": "prices",
         "links": {...},
         "attributes": {

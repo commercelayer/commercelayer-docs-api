@@ -20,11 +20,11 @@ A relationship path is a dot-separated list of relationship names \([see example
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches the SKU identified by the ID "1234" and the related prices and stock items:
+The following request fetches the SKU identified by the ID "xYZkjABcde" and the related prices and stock items:
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus/1234?include=prices,stock_items \
+  https://yourdomain.commercelayer.io/api/skus/xYZkjABcde?include=prices,stock_items \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: your-access-token' 
 ```
@@ -36,7 +36,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {...},
     "attributes": {...},
@@ -49,7 +49,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
         "data": [
           {
             "type": "prices",
-            "id": 1234
+            "id": "yzkWXfgHQS"
           }
         ]
       },
@@ -58,7 +58,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
         "data": [
           {
             "type": "stock_items",
-            "id": 1234
+            "id": "aBmNkPQRst"
           }
         ]
       },
@@ -73,7 +73,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
   "included": [
     {
       "data": {
-        "id": "1234",
+        "id": "yzkWXfgHQS",
         "type": "prices",
         "links": {...},
         "attributes": {
@@ -85,7 +85,6 @@ On success, the API responds with a `200 OK` status code, returning the resource
           "compare_at_amount_cents": "13000",
           "compare_at_amount_float": "130.00",
           "formatted_compare_at_amount": "€130,00",
-          "id": "1234",
           "created_at": "2018-01-01T12:00:00.000Z",
           "updated_at": "2018-01-01T12:00:00.000Z",
           "reference": "ANYREFEFERNCE",
@@ -108,13 +107,12 @@ On success, the API responds with a `200 OK` status code, returning the resource
     },
     {
       "data": {
-        "id": "1234",
+        "id": "aBmNkPQRst",
         "type": "stock_items",
         "links": {...},
         "attributes": {
           "sku_code": "TSHIRTMM000000FFFFFFXLXX",
           "quantity": "100",
-          "id": "1234",
           "created_at": "2018-01-01T12:00:00.000Z",
           "updated_at": "2018-01-01T12:00:00.000Z",
           "reference": "ANYREFEFERNCE",
@@ -149,7 +147,7 @@ The following request features the relationship path `prices.price_list` as the 
 
 ```javascript
 curl -X GET \
-  http://yourdomain.commercelayer.io/api/skus/1234?include=prices.price_list \
+  http://yourdomain.commercelayer.io/api/skus/xYZkjABcde?include=prices.price_list \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
@@ -161,14 +159,14 @@ On success, the API responds with a `200 OK` status code, returning the resource
 ```javascript
 {
   "data": {
-    "id": "1234",
+    "id": "xYZkjABcde",
     "type": "skus",
     "links": {...},
     "attributes": {
       "code": "TSHIRTMM000000FFFFFFMXXX",
       "name": "Black Men T-shirt with White Logo (M)",
       "description": "Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque.",
-      "image_url": "https://img.yourdomain.com/skus/1234.png",
+      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
       "tag_names": "",
       "pieces_per_pack": null,
       "weight": null,
@@ -188,11 +186,11 @@ On success, the API responds with a `200 OK` status code, returning the resource
         "data": [
           {
             "type": "prices",
-            "id": "1234"
+            "id": "yzkWXfgHQS"
           },
           {
             "type": "prices",
-            "id": "5678"
+            "id": "WAspXYhfCV"
           },
         ]
       },
@@ -212,7 +210,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
   },
   "included": [
     {
-      "id": "1234",
+      "id": "yzkWXfgHQS",
       "type": "prices",
       "links": {...},
       "attributes": {
@@ -234,7 +232,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
           "links": {...},
           "data": {
             "type": "price_lists",
-            "id": "1234"
+            "id": "QWERtyUpBa"
           }
         },
         "sku": {
@@ -246,7 +244,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
       }
     },
     {
-      "id": "5678",
+      "id": "WAspXYhfCV",
       "type": "prices",
       "links": {...},
       "attributes": {
@@ -268,7 +266,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
           "links": {...},
           "data": {
             "type": "price_lists",
-            "id": "1234"
+            "id": "saDFGhjkLZ"
           }
         },
         "sku": {
@@ -280,7 +278,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
       }
     },
     {
-      "id": "1234",
+      "id": "QWERtyUpBa",
       "type": "price_lists",
       "links": {...},
       "attributes": {
@@ -302,7 +300,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
       }
     },
     {
-      "id": "5678",
+      "id": "saDFGhjkLZ",
       "type": "price_lists",
       "links": {...},
       "attributes": {
