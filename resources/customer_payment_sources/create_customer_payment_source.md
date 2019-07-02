@@ -19,8 +19,8 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `has_one` | required |
-| relationships.**payment_source** | `has_one` | required |
+| relationships.**customer** | `object` | required |
+| relationships.**payment_source** | `object` | required |
 
 ### Example
 
@@ -43,13 +43,13 @@ curl -X POST \
       "customer": {
         "data": {
           "type": "customers",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "payment_source": {
         "data": {
           "type": "payment_sources",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

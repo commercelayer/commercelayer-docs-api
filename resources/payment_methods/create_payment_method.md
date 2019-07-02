@@ -21,8 +21,8 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 | attributes.**price_amount_cents** | `integer` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**market** | `has_one` | required |
-| relationships.**payment_gateway** | `has_one` | required |
+| relationships.**market** | `object` | required |
+| relationships.**payment_gateway** | `object` | required |
 
 ### Example
 
@@ -47,13 +47,13 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "payment_gateway": {
         "data": {
           "type": "payment_gateways",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

@@ -22,6 +22,6 @@ A stock item object is returned as part of the response body of each successful 
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**stock_location** | `has_one` | The associated stock location. |
-| relationships.**sku** | `has_one` | The associated stock sku. |
+| relationships.**stock_location** | `object` | The associated stock location. |
+| relationships.**sku** | `object` | The associated stock sku. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

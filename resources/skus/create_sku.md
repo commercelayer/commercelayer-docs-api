@@ -27,7 +27,7 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**unit_of_weight** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**shipping_category** | `has_one` | required |
+| relationships.**shipping_category** | `object` | required |
 
 ### Example
 
@@ -52,7 +52,7 @@ curl -X POST \
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

@@ -118,13 +118,13 @@ An order object is returned as part of the response body of each successful [cre
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**market** | `has_one` | The associated market. |
-| relationships.**customer** | `has_one` | The associated customer. |
-| relationships.**shipping_address** | `has_one` | The customer's shipping address. |
-| relationships.**billing_address** | `has_one` | The customer's billing address. |
-| relationships.**available_payment_methods** | `has_many` | The available payment methods for the shipment. Useful to present the customer with a list of choices during the checkout. Only enabled payment methods are included in the list. |
-| relationships.**payment_method** | `has_one` | The associated payment method. |
-| relationships.**payment_source** | `has_one` | The associated payment source (credit card or paypal payment). |
-| relationships.**line_items** | `has_many` | The associated line items. |
-| relationships.**shipments** | `has_many` | The associated shipments (automatically generated based on the inventory model). |
+| relationships.**market** | `object` | The associated market. |
+| relationships.**customer** | `object` | The associated customer. |
+| relationships.**shipping_address** | `object` | The customer's shipping address. |
+| relationships.**billing_address** | `object` | The customer's billing address. |
+| relationships.**available_payment_methods** | `array` | The available payment methods for the shipment. Useful to present the customer with a list of choices during the checkout. Only enabled payment methods are included in the list. |
+| relationships.**payment_method** | `object` | The associated payment method. |
+| relationships.**payment_source** | `object` | The associated payment source (credit card or paypal payment). |
+| relationships.**line_items** | `array` | The associated line items. |
+| relationships.**shipments** | `array` | The associated shipments (automatically generated based on the inventory model). |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

@@ -22,9 +22,9 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | attributes.**free_over_amount_cents** | `integer` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**market** | `has_one` | required |
-| relationships.**shipping_zone** | `has_one` | required |
-| relationships.**shipping_category** | `has_one` | required |
+| relationships.**market** | `object` | required |
+| relationships.**shipping_zone** | `object` | required |
+| relationships.**shipping_category** | `object` | required |
 
 ### Example
 
@@ -49,19 +49,19 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "shipping_zone": {
         "data": {
           "type": "shipping_zones",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

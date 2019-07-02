@@ -20,7 +20,7 @@ To create a new customer group, send a `POST` request to the `/api/customer_grou
 | attributes.**name** | `string` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**price_list** | `has_one` | optional |
+| relationships.**price_list** | `object` | optional |
 
 ### Example
 

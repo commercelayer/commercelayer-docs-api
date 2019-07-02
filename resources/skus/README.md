@@ -29,9 +29,9 @@ A SKU object is returned as part of the response body of each successful [create
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**shipping_category** | `has_one` | The sku's shipping category |
-| relationships.**prices** | `has_many` | The list of prices associated with the sku. |
-| relationships.**stock_items** | `has_many` | The list of stock items associated with the sku. |
-| relationships.**delivery_lead_times** | `has_many` | The list of delivery lead times associated with the sku. |
-| relationships.**sku_options** | `has_many` | The list of sku options available for the sku. |
+| relationships.**shipping_category** | `object` | The sku's shipping category |
+| relationships.**prices** | `array` | The list of prices associated with the sku. |
+| relationships.**stock_items** | `array` | The list of stock items associated with the sku. |
+| relationships.**delivery_lead_times** | `array` | The list of delivery lead times associated with the sku. |
+| relationships.**sku_options** | `array` | The list of sku options available for the sku. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

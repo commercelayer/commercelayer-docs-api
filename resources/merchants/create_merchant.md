@@ -20,7 +20,7 @@ To create a new merchant, send a `POST` request to the `/api/merchants` endpoint
 | attributes.**name** | `string` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**address** | `has_one` | required |
+| relationships.**address** | `object` | required |
 
 ### Example
 
@@ -44,7 +44,7 @@ curl -X POST \
       "address": {
         "data": {
           "type": "addresses",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

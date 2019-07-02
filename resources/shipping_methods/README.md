@@ -32,8 +32,8 @@ A shipping method object is returned as part of the response body of each succes
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**market** | `has_one` | The market where this shipping method is available. |
-| relationships.**shipping_zone** | `has_one` | The shipping zone that is used to match the order shipping address. |
-| relationships.**shipping_category** | `has_one` | The shipping category for which this shipping method is available. |
-| relationships.**delivery_lead_time_for_shipment** | `has_one` | The delivery lead time for the associated shipment. |
+| relationships.**market** | `object` | The market where this shipping method is available. |
+| relationships.**shipping_zone** | `object` | The shipping zone that is used to match the order shipping address. |
+| relationships.**shipping_category** | `object` | The shipping category for which this shipping method is available. |
+| relationships.**delivery_lead_time_for_shipment** | `object` | The delivery lead time for the associated shipment. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

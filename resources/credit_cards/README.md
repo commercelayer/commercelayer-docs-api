@@ -34,5 +34,5 @@ A credit card object is returned as part of the response body of each successful
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**order** | `has_one` | The order associated to the credit card. If present, the credit card is set as the order's payment source. |
+| relationships.**order** | `object` | The order associated to the credit card. If present, the credit card is set as the order's payment source. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

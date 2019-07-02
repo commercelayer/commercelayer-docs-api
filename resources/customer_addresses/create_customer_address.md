@@ -19,8 +19,8 @@ To create a new customer address, send a `POST` request to the `/api/customer_ad
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `has_one` | required |
-| relationships.**address** | `has_one` | required |
+| relationships.**customer** | `object` | required |
+| relationships.**address** | `object` | required |
 
 ### Example
 
@@ -43,13 +43,13 @@ curl -X POST \
       "customer": {
         "data": {
           "type": "customers",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "address": {
         "data": {
           "type": "addresses",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

@@ -22,7 +22,7 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 | attributes.**note_to_payer** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**order** | `has_one` | required |
+| relationships.**order** | `object` | required |
 
 ### Example
 
@@ -47,7 +47,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

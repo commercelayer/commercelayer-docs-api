@@ -25,7 +25,7 @@ To create a new credit card, send a `POST` request to the `/api/credit_cards` en
 | attributes.**verification_value** | `string` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**order** | `has_one` | required |
+| relationships.**order** | `object` | required |
 
 ### Example
 
@@ -54,7 +54,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

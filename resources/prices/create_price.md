@@ -22,8 +22,8 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 | attributes.**compare_at_amount_cents** | `integer` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**price_list** | `has_one` | required |
-| relationships.**sku** | `has_one` | optional |
+| relationships.**price_list** | `object` | required |
+| relationships.**sku** | `object` | optional |
 
 ### Example
 
@@ -48,7 +48,7 @@ curl -X POST \
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

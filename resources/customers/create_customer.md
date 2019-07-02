@@ -21,7 +21,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | attributes.**password** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**customer_group** | `has_one` | optional |
+| relationships.**customer_group** | `object` | optional |
 
 ### Example
 

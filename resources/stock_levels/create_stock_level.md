@@ -21,8 +21,8 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 | attributes.**on_hold** | `boolean` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**stock_location** | `has_one` | required |
-| relationships.**inventory_model** | `has_one` | required |
+| relationships.**stock_location** | `object` | required |
+| relationships.**inventory_model** | `object` | required |
 
 ### Example
 
@@ -46,13 +46,13 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "inventory_model": {
         "data": {
           "type": "inventory_models",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

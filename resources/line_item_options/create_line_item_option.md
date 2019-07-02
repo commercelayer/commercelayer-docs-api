@@ -22,8 +22,8 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | attributes.**options** | `object` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**line_item** | `has_one` | required |
-| relationships.**sku_option** | `has_one` | required |
+| relationships.**line_item** | `object` | required |
+| relationships.**sku_option** | `object` | required |
 
 ### Example
 
@@ -48,13 +48,13 @@ curl -X POST \
       "line_item": {
         "data": {
           "type": "line_items",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "sku_option": {
         "data": {
           "type": "sku_options",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

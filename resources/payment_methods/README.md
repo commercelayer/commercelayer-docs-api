@@ -26,6 +26,6 @@ A payment method object is returned as part of the response body of each success
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**market** | `has_one` | The associated market. |
-| relationships.**payment_gateway** | `has_one` | The associated payment gateway. |
+| relationships.**market** | `object` | The associated market. |
+| relationships.**payment_gateway** | `object` | The associated payment gateway. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

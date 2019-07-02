@@ -23,9 +23,9 @@ A customer object is returned as part of the response body of each successful [c
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**customer_group** | `has_one` | The group to which this customer belongs (optional). |
-| relationships.**customer_addresses** | `has_many` | The customer's saved addresses, i.e. their address book. |
-| relationships.**customer_payment_sources** | `has_many` | The customer's saved creadit cards, i.e. their wallet. |
-| relationships.**customer_subscriptions** | `has_many` | The customer's subscriptions. |
-| relationships.**orders** | `has_many` | The customer's orders, either pending or placed. |
+| relationships.**customer_group** | `object` | The group to which this customer belongs (optional). |
+| relationships.**customer_addresses** | `array` | The customer's saved addresses, i.e. their address book. |
+| relationships.**customer_payment_sources** | `array` | The customer's saved creadit cards, i.e. their wallet. |
+| relationships.**customer_subscriptions** | `array` | The customer's subscriptions. |
+| relationships.**orders** | `array` | The customer's orders, either pending or placed. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

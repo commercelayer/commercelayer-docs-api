@@ -32,6 +32,6 @@ A line item option object is returned as part of the response body of each succe
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**line_item** | `has_one` | The associated line item. |
-| relationships.**sku_option** | `has_one` | The associated sku option. |
+| relationships.**line_item** | `object` | The associated line item. |
+| relationships.**sku_option** | `object` | The associated sku option. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

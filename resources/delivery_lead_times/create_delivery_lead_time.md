@@ -21,8 +21,8 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 | attributes.**max_hours** | `integer` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**stock_location** | `has_one` | required |
-| relationships.**shipping_method** | `has_one` | required |
+| relationships.**stock_location** | `object` | required |
+| relationships.**shipping_method** | `object` | required |
 
 ### Example
 
@@ -47,13 +47,13 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "shipping_method": {
         "data": {
           "type": "shipping_methods",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

@@ -22,7 +22,7 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 | attributes.**url** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**attachable** | `has_one` | required |
+| relationships.**attachable** | `object` | required |
 
 ### Example
 
@@ -46,7 +46,7 @@ curl -X POST \
       "attachable": {
         "data": {
           "type": "attachables",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

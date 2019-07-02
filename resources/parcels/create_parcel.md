@@ -30,7 +30,7 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 | attributes.**customs_info_required** | `boolean` | optional, default 'false' |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**shipment** | `has_one` | required |
+| relationships.**shipment** | `object` | required |
 
 ### Example
 
@@ -53,7 +53,7 @@ curl -X POST \
       "shipment": {
         "data": {
           "type": "shipments",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

@@ -35,7 +35,7 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | attributes.**billing_info** | `string` | configurable |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**geocoder** | `has_one` | optional |
+| relationships.**geocoder** | `object` | optional |
 
 ### Example
 

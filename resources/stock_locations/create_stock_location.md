@@ -21,7 +21,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | attributes.**label_format** | `string` | optional, default is 'PDF' |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**address** | `has_one` | required |
+| relationships.**address** | `object` | required |
 
 ### Example
 
@@ -45,7 +45,7 @@ curl -X POST \
       "address": {
         "data": {
           "type": "addresses",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

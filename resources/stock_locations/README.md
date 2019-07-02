@@ -22,7 +22,7 @@ A stock location object is returned as part of the response body of each success
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**address** | `has_one` | The stock location's phisical address, used as the shipping addresses "from" address. |
-| relationships.**stock_levels** | `has_many` | The associated stock levels. |
-| relationships.**stock_items** | `has_many` | The items stocked in this location. |
+| relationships.**address** | `object` | The stock location's phisical address, used as the shipping addresses "from" address. |
+| relationships.**stock_levels** | `array` | The associated stock levels. |
+| relationships.**stock_items** | `array` | The items stocked in this location. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

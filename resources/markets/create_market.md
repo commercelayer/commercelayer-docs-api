@@ -21,9 +21,9 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 | attributes.**facebook_pixel_id** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**merchant** | `has_one` | required |
-| relationships.**price_list** | `has_one` | required |
-| relationships.**inventory_model** | `has_one` | required |
+| relationships.**merchant** | `object` | required |
+| relationships.**price_list** | `object` | required |
+| relationships.**inventory_model** | `object` | required |
 
 ### Example
 
@@ -47,19 +47,19 @@ curl -X POST \
       "merchant": {
         "data": {
           "type": "merchants",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
       "inventory_model": {
         "data": {
           "type": "inventory_models",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

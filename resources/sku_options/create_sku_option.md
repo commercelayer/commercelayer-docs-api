@@ -24,7 +24,7 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 | attributes.**sku_code_regex** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**market** | `has_one` | required |
+| relationships.**market** | `object` | required |
 
 ### Example
 
@@ -48,7 +48,7 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }

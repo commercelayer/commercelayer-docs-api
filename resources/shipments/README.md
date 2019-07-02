@@ -34,12 +34,12 @@ A shipment object is returned as part of the response body of each successful [c
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**shipping_category** | `has_one` | The shipping category of the associated line items (skus). |
-| relationships.**stock_location** | `has_one` | The stock location from which the shipment is managed. |
-| relationships.**shipping_address** | `has_one` | The customer shipping address. |
-| relationships.**shipping_method** | `has_one` | The shipping method selected by the customer. |
-| relationships.**shipment_line_items** | `has_many` | The order line items assigned to the shipment. |
-| relationships.**available_shipping_methods** | `has_many` | The available shipping methods for the shipment. Useful to present the customer with a list of choices during the checkout. Only enabled shipping methods are included in the list. |
-| relationships.**parcels** | `has_many` | The parcels associated to the shipment. |
-| relationships.**attachments** | `has_many` | The attachments associated to the shipment. |
+| relationships.**shipping_category** | `object` | The shipping category of the associated line items (skus). |
+| relationships.**stock_location** | `object` | The stock location from which the shipment is managed. |
+| relationships.**shipping_address** | `object` | The customer shipping address. |
+| relationships.**shipping_method** | `object` | The shipping method selected by the customer. |
+| relationships.**shipment_line_items** | `array` | The order line items assigned to the shipment. |
+| relationships.**available_shipping_methods** | `array` | The available shipping methods for the shipment. Useful to present the customer with a list of choices during the checkout. Only enabled shipping methods are included in the list. |
+| relationships.**parcels** | `array` | The parcels associated to the shipment. |
+| relationships.**attachments** | `array` | The attachments associated to the shipment. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

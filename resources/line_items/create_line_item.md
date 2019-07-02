@@ -24,8 +24,8 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 | attributes.**image_url** | `string` | optional |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**order** | `has_one` | required |
-| relationships.**item** | `has_one` | optional |
+| relationships.**order** | `object` | required |
+| relationships.**item** | `object` | optional |
 
 ### Example
 
@@ -49,7 +49,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "zxcVBnMASd"
+          "id": resource_hashids.sample
         }
       }
     }
