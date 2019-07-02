@@ -10,7 +10,9 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/webhooks**
+```
 
 ### Arguments
 

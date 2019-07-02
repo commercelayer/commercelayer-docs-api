@@ -10,7 +10,9 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/orders**
+```
 
 ### Arguments
 

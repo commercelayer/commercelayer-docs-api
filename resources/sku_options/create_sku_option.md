@@ -10,7 +10,9 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/sku_options**
+```
 
 ### Arguments
 

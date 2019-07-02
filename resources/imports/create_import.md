@@ -10,7 +10,9 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/imports**
+```
 
 ### Arguments
 

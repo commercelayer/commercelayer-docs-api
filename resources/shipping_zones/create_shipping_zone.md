@@ -10,7 +10,9 @@ To create a new shipping zone, send a `POST` request to the `/api/shipping_zones
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/shipping_zones**
+```
 
 ### Arguments
 

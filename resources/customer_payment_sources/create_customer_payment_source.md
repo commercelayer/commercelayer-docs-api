@@ -10,7 +10,9 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/customer_payment_sources**
+```
 
 ### Arguments
 

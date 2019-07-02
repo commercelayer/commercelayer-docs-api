@@ -10,7 +10,9 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 
 ## Request
 
+```text
 **POST** https://yourdomain.commercelayer.io**/api/stock_locations**
+```
 
 ### Arguments
 
