@@ -17,13 +17,13 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | optional |
-| attributes.**amount_cents** | `integer` | required |
-| attributes.**compare_at_amount_cents** | `integer` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**price_list** | `object` | required |
-| relationships.**sku** | `object` | optional |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**amount_cents** | `integer` | Required |
+| attributes.**compare_at_amount_cents** | `integer` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**price_list** | `object` | Required |
+| relationships.**sku** | `object` | Optional |
 
 ### Example
 
@@ -48,7 +48,7 @@ curl -X POST \
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": resource_hashids.sample
+          "id": "zxcVBnMASd"
         }
       }
     }

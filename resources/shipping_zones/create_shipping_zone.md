@@ -17,15 +17,15 @@ To create a new shipping zone, send a `POST` request to the `/api/shipping_zones
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**country_code_regex** | `string` | optional |
-| attributes.**not_country_code_regex** | `string` | optional |
-| attributes.**state_code_regex** | `string` | optional |
-| attributes.**not_state_code_regex** | `string` | optional |
-| attributes.**zip_code_regex** | `string` | optional |
-| attributes.**not_zip_code_regex** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
+| attributes.**name** | `string` | Required |
+| attributes.**country_code_regex** | `string` | Optional |
+| attributes.**not_country_code_regex** | `string` | Optional |
+| attributes.**state_code_regex** | `string` | Optional |
+| attributes.**not_state_code_regex** | `string` | Optional |
+| attributes.**zip_code_regex** | `string` | Optional |
+| attributes.**not_zip_code_regex** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
 
 ### Example
 

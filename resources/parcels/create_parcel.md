@@ -17,20 +17,20 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**weight** | `float` | optional |
-| attributes.**unit_of_weight** | `string` | optional |
-| attributes.**eel_pfc** | `string` | optional |
-| attributes.**contents_type** | `string` | optional |
-| attributes.**contents_explanation** | `string` | optional |
-| attributes.**customs_certify** | `boolean` | optional |
-| attributes.**customs_signer** | `string` | optional |
-| attributes.**non_delivery_option** | `string` | optional |
-| attributes.**restriction_type** | `string` | optional |
-| attributes.**restriction_comments** | `string` | optional |
-| attributes.**customs_info_required** | `boolean` | optional, default 'false' |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**shipment** | `object` | required |
+| attributes.**weight** | `float` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**eel_pfc** | `string` | Optional |
+| attributes.**contents_type** | `string` | Optional |
+| attributes.**contents_explanation** | `string` | Optional |
+| attributes.**customs_certify** | `boolean` | Optional |
+| attributes.**customs_signer** | `string` | Optional |
+| attributes.**non_delivery_option** | `string` | Optional |
+| attributes.**restriction_type** | `string` | Optional |
+| attributes.**restriction_comments** | `string` | Optional |
+| attributes.**customs_info_required** | `boolean` | Optional, default 'false' |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**shipment** | `object` | Required |
 
 ### Example
 
@@ -53,7 +53,7 @@ curl -X POST \
       "shipment": {
         "data": {
           "type": "shipments",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

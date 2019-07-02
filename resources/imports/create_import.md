@@ -17,12 +17,12 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource_type** | `string` | required |
-| attributes.**parent_resource_id** | `integer` | required |
-| attributes.**inputs** | `object` | required |
+| attributes.**resource_type** | `string` | Required |
+| attributes.**parent_resource_id** | `integer` | Required |
+| attributes.**inputs** | `object` | Required |
 | attributes.**cleanup_records** | `boolean` |  |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
 
 ### Example
 

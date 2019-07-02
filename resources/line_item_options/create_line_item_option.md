@@ -17,13 +17,13 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | optional |
-| attributes.**quantity** | `integer` | required |
-| attributes.**options** | `object` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**line_item** | `object` | required |
-| relationships.**sku_option** | `object` | required |
+| attributes.**name** | `string` | Optional |
+| attributes.**quantity** | `integer` | Required |
+| attributes.**options** | `object` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**line_item** | `object` | Required |
+| relationships.**sku_option** | `object` | Required |
 
 ### Example
 
@@ -48,13 +48,13 @@ curl -X POST \
       "line_item": {
         "data": {
           "type": "line_items",
-          "id": resource_hashids.sample
+          "id": "yzkWXfgHQS"
         }
       }
       "sku_option": {
         "data": {
           "type": "sku_options",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
     }

@@ -17,14 +17,14 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**description** | `string` | optional |
-| attributes.**price_amount_cents** | `integer` | optional, default is '0' |
-| attributes.**delay_hours** | `integer` | optional, default is '0' |
-| attributes.**sku_code_regex** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**market** | `object` | required |
+| attributes.**name** | `string` | Required |
+| attributes.**description** | `string` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku_code_regex** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**market** | `object` | Required |
 
 ### Example
 
@@ -48,7 +48,7 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": resource_hashids.sample
+          "id": "zxcVBnMASd"
         }
       }
     }

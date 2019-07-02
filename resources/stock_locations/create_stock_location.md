@@ -17,11 +17,11 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**label_format** | `string` | optional, default is 'PDF' |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**address** | `object` | required |
+| attributes.**name** | `string` | Required |
+| attributes.**label_format** | `string` | Optional, default is 'pdf' |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**address** | `object` | Required |
 
 ### Example
 
@@ -45,7 +45,7 @@ curl -X POST \
       "address": {
         "data": {
           "type": "addresses",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

@@ -17,17 +17,17 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**code** | `string` | required |
-| attributes.**name** | `string` | required |
-| attributes.**description** | `string` | optional |
-| attributes.**image_url** | `string` | optional |
-| attributes.**tag_names** | `string` | optional |
-| attributes.**pieces_per_pack** | `integer` | optional |
-| attributes.**weight** | `float` | optional |
-| attributes.**unit_of_weight** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**shipping_category** | `object` | required |
+| attributes.**code** | `string` | Required |
+| attributes.**name** | `string` | Required |
+| attributes.**description** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**tag_names** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
+| attributes.**weight** | `float` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -52,7 +52,7 @@ curl -X POST \
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
     }

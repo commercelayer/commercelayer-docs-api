@@ -17,11 +17,11 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**topic** | `string` | required |
-| attributes.**callback_url** | `string` | required |
-| attributes.**include_resources** | `array` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
+| attributes.**topic** | `string` | Required |
+| attributes.**callback_url** | `string` | Required |
+| attributes.**include_resources** | `array` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
 
 ### Example
 

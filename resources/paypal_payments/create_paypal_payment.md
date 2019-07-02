@@ -17,12 +17,12 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**return_url** | `string` | required |
-| attributes.**cancel_url** | `string` | required |
-| attributes.**note_to_payer** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**order** | `object` | required |
+| attributes.**return_url** | `string` | Required |
+| attributes.**cancel_url** | `string` | Required |
+| attributes.**note_to_payer** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**order** | `object` | Required |
 
 ### Example
 
@@ -47,7 +47,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": resource_hashids.sample
+          "id": "saDFGhjkLZ"
         }
       }
     }

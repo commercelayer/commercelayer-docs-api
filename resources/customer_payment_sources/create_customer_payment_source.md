@@ -17,10 +17,10 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `object` | required |
-| relationships.**payment_source** | `object` | required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**customer** | `object` | Required |
+| relationships.**payment_source** | `object` | Required |
 
 ### Example
 
@@ -43,13 +43,13 @@ curl -X POST \
       "customer": {
         "data": {
           "type": "customers",
-          "id": resource_hashids.sample
+          "id": "QWERtyUpBa"
         }
       }
       "payment_source": {
         "data": {
           "type": "payment_sources",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

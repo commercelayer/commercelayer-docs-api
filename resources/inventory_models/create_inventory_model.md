@@ -17,9 +17,9 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
+| attributes.**name** | `string` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
 
 ### Example
 

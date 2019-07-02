@@ -17,15 +17,15 @@ To create a new credit card, send a `POST` request to the `/api/credit_cards` en
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**first_name** | `string` | required |
-| attributes.**last_name** | `string` | required |
-| attributes.**number** | `string` | required |
-| attributes.**month** | `string` | required |
-| attributes.**year** | `string` | required |
-| attributes.**verification_value** | `string` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**order** | `object` | required |
+| attributes.**first_name** | `string` | Required |
+| attributes.**last_name** | `string` | Required |
+| attributes.**number** | `string` | Required |
+| attributes.**month** | `string` | Required |
+| attributes.**year** | `string` | Required |
+| attributes.**verification_value** | `string` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**order** | `object` | Required |
 
 ### Example
 
@@ -54,7 +54,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
     }

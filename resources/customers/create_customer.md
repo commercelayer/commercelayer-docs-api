@@ -17,11 +17,11 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**email** | `string` | required |
-| attributes.**password** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**customer_group** | `object` | optional |
+| attributes.**email** | `string` | Required |
+| attributes.**password** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**customer_group** | `object` | Optional |
 
 ### Example
 

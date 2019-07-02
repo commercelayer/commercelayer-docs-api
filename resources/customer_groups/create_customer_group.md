@@ -17,10 +17,10 @@ To create a new customer group, send a `POST` request to the `/api/customer_grou
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**price_list** | `object` | optional |
+| attributes.**name** | `string` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**price_list** | `object` | Optional |
 
 ### Example
 

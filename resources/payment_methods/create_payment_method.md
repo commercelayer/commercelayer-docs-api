@@ -17,12 +17,12 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment_source_type** | `string` | required |
-| attributes.**price_amount_cents** | `integer` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**market** | `object` | required |
-| relationships.**payment_gateway** | `object` | required |
+| attributes.**payment_source_type** | `string` | Required |
+| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**market** | `object` | Required |
+| relationships.**payment_gateway** | `object` | Required |
 
 ### Example
 
@@ -47,13 +47,13 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": resource_hashids.sample
+          "id": "QWERtyUpBa"
         }
       }
       "payment_gateway": {
         "data": {
           "type": "payment_gateways",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

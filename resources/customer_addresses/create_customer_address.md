@@ -17,10 +17,10 @@ To create a new customer address, send a `POST` request to the `/api/customer_ad
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `object` | required |
-| relationships.**address** | `object` | required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**customer** | `object` | Required |
+| relationships.**address** | `object` | Required |
 
 ### Example
 
@@ -43,13 +43,13 @@ curl -X POST \
       "customer": {
         "data": {
           "type": "customers",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
       "address": {
         "data": {
           "type": "addresses",
-          "id": resource_hashids.sample
+          "id": "zxcVBnMASd"
         }
       }
     }

@@ -17,14 +17,14 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**price_amount_cents** | `integer` | required |
-| attributes.**free_over_amount_cents** | `integer` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**market** | `object` | required |
-| relationships.**shipping_zone** | `object` | required |
-| relationships.**shipping_category** | `object` | required |
+| attributes.**name** | `string` | Required |
+| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**free_over_amount_cents** | `integer` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**market** | `object` | Required |
+| relationships.**shipping_zone** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -49,19 +49,19 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": resource_hashids.sample
+          "id": "QWERtyUpBa"
         }
       }
       "shipping_zone": {
         "data": {
           "type": "shipping_zones",
-          "id": resource_hashids.sample
+          "id": "saDFGhjkLZ"
         }
       }
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": resource_hashids.sample
+          "id": "saDFGhjkLZ"
         }
       }
     }

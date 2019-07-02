@@ -17,25 +17,25 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**business** | `boolean` | optional, default is 'false' |
-| attributes.**first_name** | `string` | required if 'business' is 'false' |
-| attributes.**last_name** | `string` | required if 'business' is 'false' |
-| attributes.**company** | `string` | required if 'business' is 'true' |
-| attributes.**line_1** | `string` | required |
-| attributes.**line_2** | `string` | optional |
-| attributes.**city** | `string` | required |
-| attributes.**zip_code** | `string` | required |
-| attributes.**state_code** | `string` | required |
-| attributes.**country_code** | `string` | required |
-| attributes.**phone** | `string` | required |
-| attributes.**email** | `string` | optional |
-| attributes.**notes** | `string` | optional |
-| attributes.**lat** | `float` | optional |
-| attributes.**lng** | `float` | optional |
-| attributes.**billing_info** | `string` | configurable |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**geocoder** | `object` | optional |
+| attributes.**business** | `boolean` | Optional, default is 'false' |
+| attributes.**first_name** | `string` | Required if 'business' is 'false' |
+| attributes.**last_name** | `string` | Required if 'business' is 'false' |
+| attributes.**company** | `string` | Required if 'business' is 'true' |
+| attributes.**line_1** | `string` | Required |
+| attributes.**line_2** | `string` | Optional |
+| attributes.**city** | `string` | Required |
+| attributes.**zip_code** | `string` | Required |
+| attributes.**state_code** | `string` | Required |
+| attributes.**country_code** | `string` | Required |
+| attributes.**phone** | `string` | Required |
+| attributes.**email** | `string` | Optional |
+| attributes.**notes** | `string` | Optional |
+| attributes.**lat** | `float` | Optional |
+| attributes.**lng** | `float` | Optional |
+| attributes.**billing_info** | `string` | Configurable |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**geocoder** | `object` | Optional |
 
 ### Example
 

@@ -17,12 +17,12 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**description** | `string` | optional |
-| attributes.**url** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**attachable** | `object` | required |
+| attributes.**name** | `string` | Required |
+| attributes.**description** | `string` | Optional |
+| attributes.**url** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**attachable** | `object` | Required |
 
 ### Example
 
@@ -46,7 +46,7 @@ curl -X POST \
       "attachable": {
         "data": {
           "type": "attachables",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

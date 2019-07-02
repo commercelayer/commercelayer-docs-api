@@ -17,24 +17,24 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**guest** | `boolean` | optional |
-| attributes.**customer_email** | `string` | optional |
-| attributes.**customer_password** | `string` | optional |
-| attributes.**language_code** | `string` | optional, default is 'en' |
-| attributes.**shipping_country_code_lock** | `string` | optional |
-| attributes.**coupon_code** | `string` | optional |
-| attributes.**cart_url** | `string` | optional |
-| attributes.**return_url** | `string` | optional |
-| attributes.**terms_url** | `string` | optional |
-| attributes.**privacy_url** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**market** | `object` | required |
-| relationships.**customer** | `object` | optional |
-| relationships.**shipping_address** | `object` | optional |
-| relationships.**billing_address** | `object` | optional |
-| relationships.**payment_method** | `object` | optional |
-| relationships.**payment_source** | `object` | optional |
+| attributes.**guest** | `boolean` | Optional |
+| attributes.**customer_email** | `string` | Optional |
+| attributes.**customer_password** | `string` | Optional |
+| attributes.**language_code** | `string` | Optional, default is 'en' |
+| attributes.**shipping_country_code_lock** | `string` | Optional |
+| attributes.**coupon_code** | `string` | Optional |
+| attributes.**cart_url** | `string` | Optional |
+| attributes.**return_url** | `string` | Optional |
+| attributes.**terms_url** | `string` | Optional |
+| attributes.**privacy_url** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**market** | `object` | Required |
+| relationships.**customer** | `object` | Optional |
+| relationships.**shipping_address** | `object` | Optional |
+| relationships.**billing_address** | `object` | Optional |
+| relationships.**payment_method** | `object` | Optional |
+| relationships.**payment_source** | `object` | Optional |
 
 ### Example
 
@@ -57,7 +57,7 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
     }

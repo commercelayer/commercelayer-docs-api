@@ -17,9 +17,9 @@ To create a new wire transfer, send a `POST` request to the `/api/wire_transfers
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**order** | `object` | required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**order** | `object` | Required |
 
 ### Example
 
@@ -42,7 +42,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": resource_hashids.sample
+          "id": "WAspXYhfCV"
         }
       }
     }

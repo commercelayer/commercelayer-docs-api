@@ -17,12 +17,12 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**min_hours** | `integer` | required |
-| attributes.**max_hours** | `integer` | required |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**stock_location** | `object` | required |
-| relationships.**shipping_method** | `object` | required |
+| attributes.**min_hours** | `integer` | Required |
+| attributes.**max_hours** | `integer` | Required |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**stock_location** | `object` | Required |
+| relationships.**shipping_method** | `object` | Required |
 
 ### Example
 
@@ -47,13 +47,13 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
       "shipping_method": {
         "data": {
           "type": "shipping_methods",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
     }

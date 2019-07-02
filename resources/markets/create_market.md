@@ -17,13 +17,13 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**name** | `string` | required |
-| attributes.**facebook_pixel_id** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**merchant** | `object` | required |
-| relationships.**price_list** | `object` | required |
-| relationships.**inventory_model** | `object` | required |
+| attributes.**name** | `string` | Required |
+| attributes.**facebook_pixel_id** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**merchant** | `object` | Required |
+| relationships.**price_list** | `object` | Required |
+| relationships.**inventory_model** | `object` | Required |
 
 ### Example
 
@@ -47,19 +47,19 @@ curl -X POST \
       "merchant": {
         "data": {
           "type": "merchants",
-          "id": resource_hashids.sample
+          "id": "QWERtyUpBa"
         }
       }
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": resource_hashids.sample
+          "id": "aBmNkPQRst"
         }
       }
       "inventory_model": {
         "data": {
           "type": "inventory_models",
-          "id": resource_hashids.sample
+          "id": "saDFGhjkLZ"
         }
       }
     }

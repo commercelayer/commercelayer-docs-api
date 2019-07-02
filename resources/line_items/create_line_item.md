@@ -17,15 +17,15 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | optional |
-| attributes.**quantity** | `integer` | required |
-| attributes.**_update_quantity** | `integer, value is '1'` | optional |
-| attributes.**name** | `string` | optional |
-| attributes.**image_url** | `string` | optional |
-| attributes.**reference** | `string` | optional |
-| attributes.**metadata** | `object` | optional |
-| relationships.**order** | `object` | required |
-| relationships.**item** | `object` | optional |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**quantity** | `integer` | Required |
+| attributes.**_update_quantity** | `integer, value is '1'` | Optional |
+| attributes.**name** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**reference** | `string` | Optional |
+| attributes.**metadata** | `object` | Optional |
+| relationships.**order** | `object` | Required |
+| relationships.**item** | `object` | Optional |
 
 ### Example
 
@@ -49,7 +49,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": resource_hashids.sample
+          "id": "zxcVBnMASd"
         }
       }
     }
