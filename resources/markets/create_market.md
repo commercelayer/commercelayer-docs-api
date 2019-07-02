@@ -10,7 +10,7 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 
 ## Request
 
-**POST** https\://yourdomain.commercelayer.io**/api/markets**
+**POST** https://yourdomain&#46;commercelayer&#46;io**/api/markets**
 
 ### Arguments
 

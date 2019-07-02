@@ -10,7 +10,7 @@ To create a new merchant, send a `POST` request to the `/api/merchants` endpoint
 
 ## Request
 
-**POST** https\://yourdomain.commercelayer.io**/api/merchants**
+**POST** https://yourdomain&#46;commercelayer&#46;io**/api/merchants**
 
 ### Arguments
 

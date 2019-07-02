@@ -10,7 +10,7 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 
 ## Request
 
-**POST** https\://yourdomain.commercelayer.io**/api/prices**
+**POST** https://yourdomain&#46;commercelayer&#46;io**/api/prices**
 
 ### Arguments
 
