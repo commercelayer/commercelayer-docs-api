@@ -17,118 +17,24 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**number** | `integer` |  |
-| attributes.**status** | `string` |  |
-| attributes.**payment_status** | `string` |  |
-| attributes.**fulfillment_status** | `string` |  |
 | attributes.**guest** | `boolean` | optional |
-| attributes.**editable** | `boolean` |  |
-| attributes.**placeable** | `boolean` |  |
 | attributes.**customer_email** | `string` | optional |
 | attributes.**customer_password** | `string` | optional |
 | attributes.**language_code** | `string` | optional, default is 'en' |
-| attributes.**currency_code** | `string` |  |
-| attributes.**tax_included** | `boolean` |  |
-| attributes.**tax_rate** | `float` |  |
-| attributes.**freight_taxable** | `boolean` |  |
-| attributes.**country_code** | `string` |  |
 | attributes.**shipping_country_code_lock** | `string` | optional |
 | attributes.**coupon_code** | `string` | optional |
-| attributes.**subtotal_amount_cents** | `integer` |  |
-| attributes.**subtotal_amount_float** | `float` |  |
-| attributes.**formatted_subtotal_amount** | `string` |  |
-| attributes.**shipping_amount_cents** | `integer` |  |
-| attributes.**shipping_amount_float** | `float` |  |
-| attributes.**formatted_shipping_amount** | `string` |  |
-| attributes.**payment_method_amount_cents** | `integer` |  |
-| attributes.**payment_method_amount_float** | `float` |  |
-| attributes.**formatted_payment_method_amount** | `string` |  |
-| attributes.**discount_amount_cents** | `integer` |  |
-| attributes.**discount_amount_float** | `float` |  |
-| attributes.**formatted_discount_amount** | `string` |  |
-| attributes.**total_tax_amount_cents** | `integer` |  |
-| attributes.**total_tax_amount_float** | `float` |  |
-| attributes.**formatted_total_tax_amount** | `string` |  |
-| attributes.**subtotal_tax_amount_cents** | `integer` |  |
-| attributes.**subtotal_tax_amount_float** | `float` |  |
-| attributes.**formatted_subtotal_tax_amount** | `string` |  |
-| attributes.**shipping_tax_amount_cents** | `integer` |  |
-| attributes.**shipping_tax_amount_float** | `float` |  |
-| attributes.**formatted_shipping_tax_amount** | `string` |  |
-| attributes.**payment_method_tax_amount_cents** | `integer` |  |
-| attributes.**payment_method_tax_amount_float** | `float` |  |
-| attributes.**formatted_payment_method_tax_amount** | `string` |  |
-| attributes.**discount_tax_amount_cents** | `integer` |  |
-| attributes.**discount_tax_amount_float** | `float` |  |
-| attributes.**formatted_discount_tax_amount** | `string` |  |
-| attributes.**total_amount_cents** | `integer` |  |
-| attributes.**total_amount_float** | `float` |  |
-| attributes.**formatted_total_amount** | `string` |  |
-| attributes.**total_taxable_amount_cents** | `integer` |  |
-| attributes.**total_taxable_amount_float** | `float` |  |
-| attributes.**formatted_total_taxable_amount** | `string` |  |
-| attributes.**subtotal_taxable_amount_cents** | `integer` |  |
-| attributes.**subtotal_taxable_amount_float** | `float` |  |
-| attributes.**formatted_subtotal_taxable_amount** | `string` |  |
-| attributes.**shipping_taxable_amount_cents** | `integer` |  |
-| attributes.**shipping_taxable_amount_float** | `float` |  |
-| attributes.**formatted_shipping_taxable_amount** | `string` |  |
-| attributes.**payment_method_taxable_amount_cents** | `integer` |  |
-| attributes.**payment_method_taxable_amount_float** | `float` |  |
-| attributes.**formatted_payment_method_taxable_amount** | `string` |  |
-| attributes.**discount_taxable_amount_cents** | `integer` |  |
-| attributes.**discount_taxable_amount_float** | `float` |  |
-| attributes.**formatted_discount_taxable_amount** | `string` |  |
-| attributes.**total_amount_with_taxes_cents** | `integer` |  |
-| attributes.**total_amount_with_taxes_float** | `float` |  |
-| attributes.**formatted_total_amount_with_taxes** | `string` |  |
-| attributes.**fees_amount_cents** | `integer` |  |
-| attributes.**fees_amount_float** | `float` |  |
-| attributes.**formatted_fees_amount** | `string` |  |
-| attributes.**skus_count** | `integer` |  |
-| attributes.**line_item_options_count** | `integer` |  |
-| attributes.**shipments_count** | `integer` |  |
-| attributes.**payment_source_details** | `object` |  |
-| attributes.**token** | `string` |  |
 | attributes.**cart_url** | `string` | optional |
 | attributes.**return_url** | `string` | optional |
 | attributes.**terms_url** | `string` | optional |
 | attributes.**privacy_url** | `string` | optional |
-| attributes.**checkout_url** | `string` |  |
-| attributes.**_place** | `integer, value is '1'` |  |
-| attributes.**_cancel** | `integer, value is '1'` |  |
-| attributes.**_approve** | `integer, value is '1'` |  |
-| attributes.**_capture** | `integer, value is '1'` |  |
-| attributes.**_refund** | `integer, value is '1'` |  |
-| attributes.**_update_taxes** | `integer, value is '1'` |  |
-| attributes.**_billing_address_clone_id** | `integer` |  |
-| attributes.**_shipping_address_clone_id** | `integer` |  |
-| attributes.**_customer_payment_source_id** | `integer` | optional |
-| attributes.**_shipping_address_same_as_billing** | `integer, value is '1'` | optional |
-| attributes.**_billing_address_same_as_shipping** | `integer, value is '1'` | optional |
-| attributes.**_save_payment_source_to_customer_wallet** | `integer, value is '1'` | optional |
-| attributes.**_save_shipping_address_to_customer_address_book** | `integer, value is '1'` | optional |
-| attributes.**_save_billing_address_to_customer_address_book** | `integer, value is '1'` | optional |
-| attributes.**_refresh** | `integer, value is '1'` | optional |
-| attributes.**placed_at** | `datetime` |  |
-| attributes.**approved_at** | `datetime` |  |
-| attributes.**cancelled_at** | `datetime` |  |
-| attributes.**payment_updated_at** | `datetime` |  |
-| attributes.**fulfillment_updated_at** | `datetime` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**market** | `has_one` | required |
 | relationships.**customer** | `has_one` | optional |
 | relationships.**shipping_address** | `has_one` | optional |
 | relationships.**billing_address** | `has_one` | optional |
-| relationships.**available_payment_methods** | `has_many` |  |
 | relationships.**payment_method** | `has_one` | optional |
 | relationships.**payment_source** | `has_one` | optional |
-| relationships.**line_items** | `has_many` |  |
-| relationships.**shipments** | `has_many` |  |
 
 ### Example
 

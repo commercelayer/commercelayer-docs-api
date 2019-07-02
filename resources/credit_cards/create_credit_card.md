@@ -19,21 +19,10 @@ To create a new credit card, send a `POST` request to the `/api/credit_cards` en
 | **type** | `string` | Required |
 | attributes.**first_name** | `string` | required |
 | attributes.**last_name** | `string` | required |
-| attributes.**full_name** | `string` |  |
 | attributes.**number** | `string` | required |
 | attributes.**month** | `string` | required |
 | attributes.**year** | `string` | required |
-| attributes.**valid_thru** | `string` |  |
 | attributes.**verification_value** | `string` | required |
-| attributes.**card_type** | `string` | required |
-| attributes.**display_number** | `string` |  |
-| attributes.**name** | `string` |  |
-| attributes.**display_verification_value** | `string` |  |
-| attributes.**fingerprint** | `string` |  |
-| attributes.**storage_state** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**order** | `has_one` | required |

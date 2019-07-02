@@ -18,9 +18,6 @@ To create a new merchant, send a `POST` request to the `/api/merchants` endpoint
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**address** | `has_one` | required |

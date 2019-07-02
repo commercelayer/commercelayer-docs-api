@@ -20,29 +20,12 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 | attributes.**sku_code** | `string` | optional |
 | attributes.**quantity** | `integer` | required |
 | attributes.**_update_quantity** | `integer, value is '1'` | optional |
-| attributes.**currency_code** | `string` |  |
-| attributes.**unit_amount_cents** | `integer` |  |
-| attributes.**unit_amount_float** | `float` |  |
-| attributes.**formatted_unit_amount** | `string` |  |
-| attributes.**options_amount_cents** | `integer` |  |
-| attributes.**options_amount_float** | `float` |  |
-| attributes.**formatted_options_amount** | `string` |  |
-| attributes.**total_amount_cents** | `integer` |  |
-| attributes.**total_amount_float** | `float` | required |
-| attributes.**formatted_total_amount** | `string` |  |
 | attributes.**name** | `string` | optional |
 | attributes.**image_url** | `string` | optional |
-| attributes.**tax_rate** | `float` |  |
-| attributes.**tax_breakdown** | `object` |  |
-| attributes.**item_type** | `string` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**order** | `has_one` | required |
 | relationships.**item** | `has_one` | optional |
-| relationships.**line_item_options** | `has_many` |  |
 
 ### Example
 

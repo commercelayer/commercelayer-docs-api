@@ -18,14 +18,7 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**payment_source_type** | `string` | required |
-| attributes.**name** | `string` |  |
-| attributes.**disabled_at** | `datetime` | optional |
 | attributes.**price_amount_cents** | `integer` | required |
-| attributes.**price_amount_float** | `float` |  |
-| attributes.**formatted_price_amount** | `string` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**market** | `has_one` | required |

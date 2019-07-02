@@ -18,12 +18,8 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**stock_levels** | `has_many` |  |
 
 ### Example
 

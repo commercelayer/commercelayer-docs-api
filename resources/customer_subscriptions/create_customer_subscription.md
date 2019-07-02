@@ -18,12 +18,8 @@ To create a new customer subscription, send a `POST` request to the `/api/custom
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**customer_email** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `has_one` |  |
 
 ### Example
 

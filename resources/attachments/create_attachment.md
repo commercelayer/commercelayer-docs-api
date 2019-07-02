@@ -20,9 +20,6 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 | attributes.**name** | `string` | required |
 | attributes.**description** | `string` | optional |
 | attributes.**url** | `string` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**attachable** | `has_one` | required |

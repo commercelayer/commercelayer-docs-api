@@ -18,16 +18,8 @@ To create a new customer password reset, send a `POST` request to the `/api/cust
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**customer_email** | `string` | required |
-| attributes.**reset_password_token** | `string` |  |
-| attributes.**customer_password** | `string` | optional |
-| attributes.**_reset_password_token** | `string` |  |
-| attributes.**reset_password_at** | `datetime` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**customer** | `has_one` |  |
 
 ### Example
 

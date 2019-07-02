@@ -25,17 +25,9 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**pieces_per_pack** | `integer` | optional |
 | attributes.**weight** | `float` | optional |
 | attributes.**unit_of_weight** | `string` | optional |
-| attributes.**inventory** | `object` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**shipping_category** | `has_one` | required |
-| relationships.**prices** | `has_many` |  |
-| relationships.**stock_items** | `has_many` |  |
-| relationships.**delivery_lead_times** | `has_many` |  |
-| relationships.**sku_options** | `has_many` |  |
 
 ### Example
 

@@ -24,9 +24,6 @@ To create a new shipping zone, send a `POST` request to the `/api/shipping_zones
 | attributes.**not_state_code_regex** | `string` | optional |
 | attributes.**zip_code_regex** | `string` | optional |
 | attributes.**not_zip_code_regex** | `string` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 

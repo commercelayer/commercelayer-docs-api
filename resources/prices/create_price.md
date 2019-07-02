@@ -17,17 +17,9 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**currency_code** | `string` |  |
 | attributes.**sku_code** | `string` | optional |
 | attributes.**amount_cents** | `integer` | required |
-| attributes.**amount_float** | `float` | required |
-| attributes.**formatted_amount** | `string` | required |
 | attributes.**compare_at_amount_cents** | `integer` | required |
-| attributes.**compare_at_amount_float** | `float` | required |
-| attributes.**formatted_compare_at_amount** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**price_list** | `has_one` | required |

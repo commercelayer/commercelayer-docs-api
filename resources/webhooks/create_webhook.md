@@ -20,9 +20,6 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 | attributes.**topic** | `string` | required |
 | attributes.**callback_url** | `string` | required |
 | attributes.**include_resources** | `array` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 

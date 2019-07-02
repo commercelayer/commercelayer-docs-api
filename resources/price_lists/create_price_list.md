@@ -20,12 +20,8 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 | attributes.**name** | `string` | required |
 | attributes.**currency_code** | `string` | required |
 | attributes.**tax_included** | `boolean` | optional, default is 'true' |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**prices** | `has_many` |  |
 
 ### Example
 

@@ -19,9 +19,6 @@ To create a new stock item, send a `POST` request to the `/api/stock_items` endp
 | **type** | `string` | Required |
 | attributes.**sku_code** | `string` | optional |
 | attributes.**quantity** | `integer` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**stock_location** | `has_one` | required |

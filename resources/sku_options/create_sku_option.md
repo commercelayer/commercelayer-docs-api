@@ -20,14 +20,8 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 | attributes.**name** | `string` | required |
 | attributes.**description** | `string` | optional |
 | attributes.**price_amount_cents** | `integer` | optional, default is '0' |
-| attributes.**price_amount_float** | `float` |  |
-| attributes.**formatted_price_amount** | `string` |  |
 | attributes.**delay_hours** | `integer` | optional, default is '0' |
-| attributes.**delay_days** | `integer` |  |
 | attributes.**sku_code_regex** | `string` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**market** | `has_one` | required |

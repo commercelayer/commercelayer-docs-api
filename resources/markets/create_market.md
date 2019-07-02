@@ -17,12 +17,8 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**number** | `integer` |  |
 | attributes.**name** | `string` | required |
 | attributes.**facebook_pixel_id** | `string` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**merchant** | `has_one` | required |

@@ -19,19 +19,8 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 | **type** | `string` | Required |
 | attributes.**resource_type** | `string` | required |
 | attributes.**parent_resource_id** | `integer` | required |
-| attributes.**status** | `string` |  |
-| attributes.**started_at** | `datetime` |  |
-| attributes.**completed_at** | `datetime` |  |
 | attributes.**inputs** | `object` | required |
-| attributes.**errors_count** | `integer` |  |
-| attributes.**warnings_count** | `integer` |  |
-| attributes.**destroyed_count** | `integer` |  |
-| attributes.**errors_log** | `object` |  |
-| attributes.**warnings_log** | `object` |  |
 | attributes.**cleanup_records** | `boolean` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 

@@ -19,19 +19,7 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | **type** | `string` | Required |
 | attributes.**name** | `string` | optional |
 | attributes.**quantity** | `integer` | required |
-| attributes.**currency_code** | `string` |  |
-| attributes.**unit_amount_cents** | `integer` |  |
-| attributes.**unit_amount_float** | `float` |  |
-| attributes.**formatted_unit_amount** | `string` |  |
-| attributes.**total_amount_cents** | `integer` |  |
-| attributes.**total_amount_float** | `float` | required |
-| attributes.**formatted_total_amount** | `string` |  |
-| attributes.**delay_hours** | `integer` |  |
-| attributes.**delay_days** | `integer` |  |
 | attributes.**options** | `object` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**line_item** | `has_one` | required |

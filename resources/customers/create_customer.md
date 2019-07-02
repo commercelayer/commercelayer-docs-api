@@ -19,17 +19,9 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | **type** | `string` | Required |
 | attributes.**email** | `string` | required |
 | attributes.**password** | `string` | optional |
-| attributes.**status** | `string` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**customer_group** | `has_one` | optional |
-| relationships.**customer_addresses** | `has_many` |  |
-| relationships.**customer_payment_sources** | `has_many` |  |
-| relationships.**customer_subscriptions** | `has_many` |  |
-| relationships.**orders** | `has_many` |  |
 
 ### Example
 

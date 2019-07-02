@@ -21,7 +21,6 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | attributes.**first_name** | `string` | required if 'business' is 'false' |
 | attributes.**last_name** | `string` | required if 'business' is 'false' |
 | attributes.**company** | `string` | required if 'business' is 'true' |
-| attributes.**full_name** | `string` |  |
 | attributes.**line_1** | `string` | required |
 | attributes.**line_2** | `string` | optional |
 | attributes.**city** | `string` | required |
@@ -29,21 +28,11 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | attributes.**state_code** | `string` | required |
 | attributes.**country_code** | `string` | required |
 | attributes.**phone** | `string` | required |
-| attributes.**full_address** | `string` |  |
-| attributes.**name** | `string` |  |
 | attributes.**email** | `string` | optional |
 | attributes.**notes** | `string` | optional |
 | attributes.**lat** | `float` | optional |
 | attributes.**lng** | `float` | optional |
-| attributes.**is_localized** | `boolean` | optional |
-| attributes.**is_geocoded** | `boolean` | optional |
-| attributes.**provider_name** | `string` | optional |
-| attributes.**map_url** | `string` | optional |
-| attributes.**static_map_url** | `string` | optional |
 | attributes.**billing_info** | `string` | configurable |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**geocoder** | `has_one` | optional |

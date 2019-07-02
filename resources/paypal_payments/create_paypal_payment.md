@@ -20,14 +20,6 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 | attributes.**return_url** | `string` | required |
 | attributes.**cancel_url** | `string` | required |
 | attributes.**note_to_payer** | `string` | optional |
-| attributes.**paypal_payer_id** | `string` |  |
-| attributes.**name** | `string` |  |
-| attributes.**paypal_id** | `string` |  |
-| attributes.**status** | `string` |  |
-| attributes.**approval_url** | `string` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**order** | `has_one` | required |

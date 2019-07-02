@@ -17,33 +17,8 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**number** | `string` |  |
-| attributes.**status** | `string` |  |
-| attributes.**currency_code** | `string` |  |
-| attributes.**cost_amount_cents** | `integer` |  |
-| attributes.**cost_amount_float** | `float` |  |
-| attributes.**formatted_cost_amount** | `string` |  |
-| attributes.**_on_hold** | `integer, value is '1'` | optional |
-| attributes.**_picking** | `integer, value is '1'` | optional |
-| attributes.**_packing** | `integer, value is '1'` | optional |
-| attributes.**_ready_to_ship** | `integer, value is '1'` | optional |
-| attributes.**_ship** | `integer, value is '1'` | optional |
-| attributes.**_get_rates** | `integer, value is '1'` | optional |
-| attributes.**selected_rate_id** | `string` | optional |
-| attributes.**_purchase** | `integer, value is '1'` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**shipping_category** | `has_one` |  |
-| relationships.**stock_location** | `has_one` |  |
-| relationships.**shipping_address** | `has_one` |  |
-| relationships.**shipping_method** | `has_one` | optional |
-| relationships.**shipment_line_items** | `has_many` |  |
-| relationships.**available_shipping_methods** | `has_many` |  |
-| relationships.**parcels** | `has_many` |  |
-| relationships.**attachments** | `has_many` |  |
 
 ### Example
 

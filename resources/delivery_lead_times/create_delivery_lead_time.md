@@ -19,11 +19,6 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 | **type** | `string` | Required |
 | attributes.**min_hours** | `integer` | required |
 | attributes.**max_hours** | `integer` | required |
-| attributes.**min_days** | `integer` |  |
-| attributes.**max_days** | `integer` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**stock_location** | `has_one` | required |

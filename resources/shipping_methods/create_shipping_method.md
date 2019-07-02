@@ -18,26 +18,13 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | required |
-| attributes.**disabled_at** | `datetime` | optional |
-| attributes.**currency_code** | `string` |  |
 | attributes.**price_amount_cents** | `integer` | required |
-| attributes.**price_amount_float** | `float` |  |
-| attributes.**formatted_price_amount** | `string` |  |
 | attributes.**free_over_amount_cents** | `integer` | optional |
-| attributes.**free_over_amount_float** | `float` |  |
-| attributes.**formatted_free_over_amount** | `string` |  |
-| attributes.**price_amount_for_shipment_cents** | `integer` |  |
-| attributes.**price_amount_for_shipment_float** | `float` |  |
-| attributes.**formatted_price_amount_for_shipment** | `string` |  |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**market** | `has_one` | required |
 | relationships.**shipping_zone** | `has_one` | required |
 | relationships.**shipping_category** | `has_one` | required |
-| relationships.**delivery_lead_time_for_shipment** | `has_one` |  |
 
 ### Example
 

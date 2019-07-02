@@ -17,7 +17,6 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**number** | `string` |  |
 | attributes.**weight** | `float` | optional |
 | attributes.**unit_of_weight** | `string` | optional |
 | attributes.**eel_pfc** | `string` | optional |
@@ -29,24 +28,9 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 | attributes.**restriction_type** | `string` | optional |
 | attributes.**restriction_comments** | `string` | optional |
 | attributes.**customs_info_required** | `boolean` | optional, default 'false' |
-| attributes.**shipping_label_url** | `string` | optional |
-| attributes.**shipping_label_file_type** | `string` | optional |
-| attributes.**shipping_label_size** | `string` | optional |
-| attributes.**shipping_label_resolution** | `string` | optional |
-| attributes.**tracking_number** | `string` | optional |
-| attributes.**tracking_status** | `string` | optional |
-| attributes.**tracking_status_detail** | `string` | optional |
-| attributes.**tracking_status_updated_at** | `datetime` |  |
-| attributes.**tracking_details** | `string` | optional |
-| attributes.**carrier_weight_oz** | `string` |  |
-| attributes.**signed_by** | `string` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**shipment** | `has_one` | required |
-| relationships.**parcel_line_items** | `has_many` |  |
 
 ### Example
 

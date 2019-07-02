@@ -18,12 +18,8 @@ To create a new shipping category, send a `POST` request to the `/api/shipping_c
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | required |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
-| relationships.**skus** | `has_many` |  |
 
 ### Example
 

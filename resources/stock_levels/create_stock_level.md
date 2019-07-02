@@ -19,9 +19,6 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 | **type** | `string` | Required |
 | attributes.**priority** | `integer` | required |
 | attributes.**on_hold** | `boolean` | optional |
-| attributes.**id** | `string` | required |
-| attributes.**created_at** | `datetime` | required |
-| attributes.**updated_at** | `datetime` | required |
 | attributes.**reference** | `string` | optional |
 | attributes.**metadata** | `object` | optional |
 | relationships.**stock_location** | `has_one` | required |
