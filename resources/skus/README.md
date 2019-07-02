@@ -2,43 +2,36 @@
 description: The SKU object and its fields
 ---
 
-# SKUs
+# Skus
 
-SKUs describe specific product variations that are being sold. 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-A unique code identifies each SKU, that can be either the [EAN](https://en.wikipedia.org/wiki/International_Article_Number) code, the [UPC](https://en.wikipedia.org/wiki/Universal_Product_Code) or any other code format. 
+### The Sku object
 
-{% hint style="info" %}
-The SKU name, description and image URL are best suited for internal usage — **Commerce Layer is not a CMS**.
-{% endhint %}
-
-### The SKU object
-
-An SKU object is returned as part of the response body of each successful [create](create-sku.md), [list](list-all-skus.md), [retrieve](retrieve-sku.md) or [update](update-sku.md) API call. 
+A SKU object is returned as part of the response body of each successful [create](create-SKU.md), [list](list-all-SKUs.md), [retrieve](retrieve-SKU.md) or [update](update-SKU.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | **type** | `string` | `skus` |
 | **id** | `string` | The SKU unique identifier |
 | links.**self** | `string` | The SKU endpoint URL |
-| attributes.**code** | `string` | The SKU code, that uniquely identifies the SKU within the organization |
-| attributes.**name** | `string` | The internal name of the SKU |
-| attributes.**description** | `string` | An internal description of the SKU |
-| attributes.**image\_url** | `string` | The URL of an image that represents the SKU |
-| attributes.**tag\_names** | `string` | A comma-separated list of tags |
-| attributes.**pieces\_per\_pack** | `integer` | The number of pieces that compose the SKU \(this is useful to describe sets and bundles\) |
-| attributes.**weight** | `float` | The weight of the SKU \(if present, it will be used to calculate the shipping rates\) |
-| attributes.**unit\_of\_weight** | `string` | Can be one of `gr` or `oz` |
-| attributes.**inventory** | `object` | Some aggregated information about the SKU's inventory \(returned only when retrieving a single SKU with a **channel** application\) |
-| attributes.**id** | `integer` | The unique identifier for the SKU |
-| attributes.**created\_at** | `datetime` | Time at which the SKU was created |
-| attributes.**updated\_at** | `datetime` | Time at which the SKU was last updated |
-| attributes.**reference** | `string` | Your own identifier to the SKU \(this can be useful for integrating the SKU to an external system, like an ERP, a marketing tool or a CRM\) |
-| attributes.**metadata** | `object` | A set of key-value pairs that you can attach to the SKU \(this can be useful for storing additional information about the SKU in a structured format\) |
-| relationships.**shipping\_category** | `object` | The SKU shipping category |
-| relationships.**prices** | `array` | The list of prices associated with the SKU |
-| relationships.**stock\_items** | `array` | The list of stock items associated with the SKU |
-| realtionships.**delivery\_lead\_times** | `array` | The list of delivery lead times associated with the SKU |
-| relationships.**sku\_options** | `array` | The list of SKU options available for the SKU |
+| attributes.**code** | `string` | The sku code, that uniquely identifies the sku within the organization. |
+| attributes.**name** | `string` | The internal name of the sku. |
+| attributes.**description** | `string` | An internal description of the sku. |
+| attributes.**image_url** | `string` | The URL of an image that represents the sku. |
+| attributes.**tag_names** | `string` | A comma separated list of tags. |
+| attributes.**pieces_per_pack** | `integer` | The number of pieces that compose the sku. This is useful to describe sets and bundles. |
+| attributes.**weight** | `float` | The weight of the sku. If present, it will be used to calculate the shipping rates. |
+| attributes.**unit_of_weight** | `string` | Can be one of 'gr', or 'oz' |
+| attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU with a Channel application. |
+| attributes.**id** | `string` | Unique identifier for the resource (hash). |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
+| relationships.**shipping_category** | `has_one` | The sku's shipping category |
+| relationships.**prices** | `has_many` | The list of prices associated with the sku. |
+| relationships.**stock_items** | `has_many` | The list of stock items associated with the sku. |
+| relationships.**delivery_lead_times** | `has_many` | The list of delivery lead times associated with the sku. |
+| relationships.**sku_options** | `has_many` | The list of sku options available for the sku. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
-
