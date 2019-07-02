@@ -2,7 +2,7 @@
 description: How to fetch a specific SKU via API
 ---
 
-# Retrieve a SKU
+# Retrieve an SKU
 
 To fetch a single SKU, send a `GET` request to the `/api/skus/{{id}}` endpoint, where `id` is the ID of the resource that you want to retrieve.
 

@@ -2,7 +2,7 @@
 description: How to update an existing SKU via API
 ---
 
-# Update a SKU
+# Update an SKU
 
 To update an existing SKU, send a `PATCH` request to the `/api/skus/{{id}}` endpoint, where `id` is the ID of the resource that you want to update. 
 

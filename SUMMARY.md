@@ -24,9 +24,9 @@
 ## Resources
 
 * [SKUs](resources/skus/README.md)
-  * [Create an SKU](resources/skus/create-an-sku.md)
-  * [List all the SKUs](resources/skus/list-all-the-skus.md)
-  * [Retrieve a SKU](resources/skus/retrieve-a-sku.md)
-  * [Update a SKU](resources/skus/update-a-sku.md)
-  * [Delete a SKU](resources/skus/delete-a-sku.md)
+  * [Create an SKU](resources/skus/create-sku.md)
+  * [List all SKUs](resources/skus/list-all-skus.md)
+  * [Retrieve an SKU](resources/skus/retrieve-sku.md)
+  * [Update an SKU](resources/skus/update-sku.md)
+  * [Delete an SKU](resources/skus/delete-sku.md)
 

@@ -2,7 +2,7 @@
 description: How to delete a SKU via API
 ---
 
-# Delete a SKU
+# Delete an SKU
 
 To delete a SKU, send a `DELETE` request to the `/api/skus/{{id}}` endpoint, where `id` is the id of the SKU that you want to delete.
 

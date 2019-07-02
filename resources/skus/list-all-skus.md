@@ -2,7 +2,7 @@
 description: How to fetch a collection of SKUs via API
 ---
 
-# List all the SKUs
+# List all SKUs
 
 To fetch a collection of SKUs, send a `GET` request to the `/api/skus` endpoint.
 
