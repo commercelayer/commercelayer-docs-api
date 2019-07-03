@@ -46,11 +46,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "first_name": "John"
-      "last_name": "Smith"
-      "month": "10"
-      "year": "2023"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "order": {
@@ -60,7 +55,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

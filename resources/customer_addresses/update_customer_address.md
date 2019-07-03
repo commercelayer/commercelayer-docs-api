@@ -43,7 +43,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "customer": {
@@ -52,14 +51,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

@@ -46,9 +46,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "EU Market"
-      "facebook_pixel_id": "1234567890"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "merchant": {
@@ -57,20 +54,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "price_list": {
-        "data": {
-          "type": "price_lists",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "inventory_model": {
-        "data": {
-          "type": "inventory_models",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

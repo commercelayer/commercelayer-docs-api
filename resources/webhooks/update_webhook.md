@@ -44,12 +44,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "topic": "orders.place"
-      "callback_url": "https://yourapp.com/webhooks"
-      "include_resources": "[customer, shipping_address, billing_address]"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

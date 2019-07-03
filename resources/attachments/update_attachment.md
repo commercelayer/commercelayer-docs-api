@@ -45,10 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "DDT transport document"
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      "url": "https://s3.yourdomain.com/attachment.pdf"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "attachable": {
@@ -58,7 +54,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

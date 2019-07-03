@@ -46,10 +46,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX"
-      "amount_cents": "10000"
-      "compare_at_amount_cents": "13000"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "price_list": {
@@ -58,14 +54,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "sku": {
-        "data": {
-          "type": "skus",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

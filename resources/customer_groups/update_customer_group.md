@@ -43,8 +43,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": ""
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "price_list": {
@@ -54,7 +52,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

@@ -48,16 +48,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Europe (main countries)"
-      "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT"
-      "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE"
-      "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL"
-      "not_state_code_regex": "A[KLRZ]|C[AOT]"
-      "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)"
-      "not_zip_code_regex": "(?i)(JE1|JE2|JE3)"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

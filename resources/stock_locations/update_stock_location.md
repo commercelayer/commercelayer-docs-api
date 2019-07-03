@@ -44,9 +44,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Primary warehouse"
-      "label_format": "PDF"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "address": {
@@ -56,7 +53,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

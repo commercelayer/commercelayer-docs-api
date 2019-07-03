@@ -53,18 +53,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "weight": "1000"
-      "unit_of_weight": "gr"
-      "eel_pfc": "EEL"
-      "contents_type": "merchandise"
-      "contents_explanation": ""
-      "customs_certify": "false"
-      "customs_signer": "John Doe"
-      "non_delivery_option": "return"
-      "restriction_type": "none"
-      "restriction_comments": ""
-      "customs_info_required": "false"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "shipment": {
@@ -74,7 +62,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

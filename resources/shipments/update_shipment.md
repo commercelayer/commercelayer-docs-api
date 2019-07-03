@@ -50,15 +50,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "_on_hold": ""
-      "_picking": ""
-      "_packing": ""
-      "_ready_to_ship": ""
-      "_ship": ""
-      "_get_rates": ""
-      "selected_rate_id": "rate_f89e4663c3ed47ee94d37763f6d21d54"
-      "_purchase": ""
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "shipping_method": {
@@ -68,7 +59,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

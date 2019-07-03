@@ -45,9 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX"
-      "quantity": "100"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "stock_location": {
@@ -56,14 +53,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "sku": {
-        "data": {
-          "type": "skus",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

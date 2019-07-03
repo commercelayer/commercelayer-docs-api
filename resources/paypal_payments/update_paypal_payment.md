@@ -43,8 +43,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "paypal_payer_id": "ABCDEFG123456"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "order": {
@@ -54,7 +52,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

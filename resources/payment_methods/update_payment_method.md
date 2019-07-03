@@ -45,9 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "payment_source_type": "CreditCard"
-      "price_amount_cents": "0"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "market": {
@@ -56,14 +53,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "payment_gateway": {
-        "data": {
-          "type": "payment_gateways",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

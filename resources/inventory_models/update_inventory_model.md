@@ -42,10 +42,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "EU Inventory Model"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

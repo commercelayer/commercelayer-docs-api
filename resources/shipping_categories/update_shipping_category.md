@@ -42,10 +42,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Merchandise"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

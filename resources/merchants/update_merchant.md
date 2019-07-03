@@ -43,8 +43,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "The Brand Inc."
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "address": {
@@ -54,7 +52,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

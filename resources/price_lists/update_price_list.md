@@ -44,12 +44,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "EU Price list"
-      "currency_code": "EUR"
-      "tax_included": "true"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

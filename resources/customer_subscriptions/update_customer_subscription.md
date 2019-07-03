@@ -41,9 +41,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

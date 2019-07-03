@@ -58,23 +58,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "business": "false"
-      "first_name": "John"
-      "last_name": "Smith"
-      "company": "The Red Brand Inc."
-      "line_1": "2883 Geraldine Lane"
-      "line_2": "Apt.23"
-      "city": "New York"
-      "zip_code": "10013"
-      "state_code": "NY"
-      "country_code": "US"
-      "phone": "(212) 646-338-1228"
-      "email": "john@example.com"
-      "notes": "Please ring the bell twice"
-      "lat": "40.6971494"
-      "lng": "-74.2598672"
-      "billing_info": "VAT ID IT02382940977"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "geocoder": {
@@ -84,7 +67,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

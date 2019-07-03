@@ -44,9 +44,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "email": "john@example.com"
-      "password": "secret"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "customer_group": {
@@ -56,7 +53,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

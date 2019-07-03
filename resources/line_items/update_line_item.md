@@ -45,13 +45,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX"
-      "quantity": "2"
-      "name": "Black Men T-shirt with White Logo (XL)"
-      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

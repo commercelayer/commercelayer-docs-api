@@ -45,9 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "priority": "1"
-      "on_hold": "false"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "stock_location": {
@@ -56,14 +53,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "inventory_model": {
-        "data": {
-          "type": "inventory_models",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

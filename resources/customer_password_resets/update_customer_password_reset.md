@@ -43,11 +43,7 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "customer_password": "secret"
-      "_reset_password_token": "xhFfkmfybsLxzaAP6xcs"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
-    
   }
 }'
 ```

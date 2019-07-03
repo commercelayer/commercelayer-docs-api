@@ -72,32 +72,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "guest": "true"
-      "customer_email": "john@example.com"
-      "customer_password": "secret"
-      "language_code": "it"
-      "shipping_country_code_lock": "IT"
-      "coupon_code": "SUMMERDISCOUNT"
-      "cart_url": "https://yourdomain.com/cart"
-      "return_url": "https://yourdomain.com/"
-      "terms_url": "https://yourdomain.com/terms"
-      "privacy_url": "https://yourdomain.com/privacy"
-      "_place": "1"
-      "_cancel": "1"
-      "_approve": "1"
-      "_capture": "1"
-      "_refund": "1"
-      "_update_taxes": "1"
-      "_billing_address_clone_id": "1234"
-      "_shipping_address_clone_id": "1234"
-      "_customer_payment_source_id": "1234"
-      "_shipping_address_same_as_billing": "1"
-      "_billing_address_same_as_shipping": "1"
-      "_save_payment_source_to_customer_wallet": "1"
-      "_save_shipping_address_to_customer_address_book": "1"
-      "_save_billing_address_to_customer_address_book": "1"
-      "_refresh": "1"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "market": {
@@ -106,38 +80,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "customer": {
-        "data": {
-          "type": "customers",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "shipping_address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "billing_address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "payment_method": {
-        "data": {
-          "type": "payment_methods",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "payment_source": {
-        "data": {
-          "type": "payment_sources",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

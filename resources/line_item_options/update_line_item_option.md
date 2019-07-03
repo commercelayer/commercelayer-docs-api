@@ -45,10 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Embossing"
-      "quantity": "2"
-      "options": "{:embossing_text=>"Happy Birthday!"}"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "sku_option": {
@@ -58,7 +54,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

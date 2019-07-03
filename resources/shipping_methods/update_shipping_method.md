@@ -47,10 +47,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Standard shipping"
-      "price_amount_cents": "1000"
-      "free_over_amount_cents": "9900"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "market": {
@@ -59,20 +55,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "shipping_zone": {
-        "data": {
-          "type": "shipping_zones",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "shipping_category": {
-        "data": {
-          "type": "shipping_categories",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```

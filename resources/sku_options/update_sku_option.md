@@ -47,12 +47,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "name": "Embossing"
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      "price_amount_cents": "1000"
-      "delay_hours": "48"
-      "sku_code_regex": "^(A|B).*$"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "market": {
@@ -62,7 +56,6 @@ curl -X PATCH \
         }
       }
     }
-    
   }
 }'
 ```

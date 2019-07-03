@@ -45,9 +45,6 @@ curl -X PATCH \
     "id": "xYZkjABcde",
     "attributes": {
       "min_hours": "48"
-      "max_hours": "72"
-      "reference": "ANYREFEFERNCE"
-      "metadata": "{:foo=>"bar"}"
     },
     "relationships": {
       "stock_location": {
@@ -56,14 +53,7 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "shipping_method": {
-        "data": {
-          "type": "shipping_methods",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
-    
   }
 }'
 ```
