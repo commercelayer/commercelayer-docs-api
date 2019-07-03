@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of webhooks via API
+description: How to fetch a collection of webhooks via API
 ---
 
 # List all webhooks
@@ -10,10 +10,12 @@ To fetch a collection of webhooks, send a `GET` request to the `/api/webhooks` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/webhooks**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
 
 ### **Example**
 
+{% tabs %}
+{% tab title="Request" %}
 The following request fetches a collection of webhooks:
 
 ```javascript
@@ -22,7 +24,9 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
+{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -64,6 +68,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% page-ref page="../../pagination.md" %}
 
@@ -77,4 +83,3 @@ The list of webhooks can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

@@ -10,7 +10,7 @@ To delete an inventory model, send a `DELETE` request to the `/api/inventory_mod
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### Example
 
@@ -30,4 +30,3 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
-

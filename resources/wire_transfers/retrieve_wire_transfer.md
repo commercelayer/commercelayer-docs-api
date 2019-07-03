@@ -10,7 +10,7 @@ To fetch a single wire transfer, send a `GET` request to the `/api/wire_transfer
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/wire\_transfers/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers/:id**
 
 ### **Example**
 
@@ -59,4 +59,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

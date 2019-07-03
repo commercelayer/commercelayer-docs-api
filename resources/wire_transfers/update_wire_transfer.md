@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/wire\_transfers/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers/:id**
 
 ### Arguments
 
@@ -90,4 +90,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of shipping categories via API
+description: How to fetch a collection of shipping categories via API
 ---
 
 # List all shipping categories
@@ -10,10 +10,12 @@ To fetch a collection of shipping categories, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_categories**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories**
 
 ### **Example**
 
+{% tabs %}
+{% tab title="Request" %}
 The following request fetches a collection of shipping categories:
 
 ```javascript
@@ -22,7 +24,9 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
+{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -68,6 +72,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% page-ref page="../../pagination.md" %}
 
@@ -82,4 +88,3 @@ The list of shipping categories can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

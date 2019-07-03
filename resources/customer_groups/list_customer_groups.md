@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of customer groups via API
+description: How to fetch a collection of customer groups via API
 ---
 
 # List all customer groups
@@ -10,10 +10,12 @@ To fetch a collection of customer groups, send a `GET` request to the `/api/cust
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_groups**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups**
 
 ### **Example**
 
+{% tabs %}
+{% tab title="Request" %}
 The following request fetches a collection of customer groups:
 
 ```javascript
@@ -22,7 +24,9 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
+{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -74,6 +78,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% page-ref page="../../pagination.md" %}
 
@@ -88,4 +94,3 @@ The list of customer groups can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

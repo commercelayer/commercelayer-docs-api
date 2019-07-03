@@ -10,7 +10,7 @@ To fetch a single customer payment source, send a `GET` request to the `/api/cus
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources/:id**
 
 ### **Example**
 
@@ -66,4 +66,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

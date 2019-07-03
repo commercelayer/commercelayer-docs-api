@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of stock levels via API
+description: How to fetch a collection of stock levels via API
 ---
 
 # List all stock levels
@@ -10,10 +10,12 @@ To fetch a collection of stock levels, send a `GET` request to the `/api/stock_l
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_levels**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels**
 
 ### **Example**
 
+{% tabs %}
+{% tab title="Request" %}
 The following request fetches a collection of stock levels:
 
 ```javascript
@@ -22,7 +24,9 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
+{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -75,6 +79,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% page-ref page="../../pagination.md" %}
 
@@ -90,4 +96,3 @@ The list of stock levels can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

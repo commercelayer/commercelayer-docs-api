@@ -10,7 +10,7 @@ To fetch a single shipping category, send a `GET` request to the `/api/shipping_
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_categories/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories/:id**
 
 ### **Example**
 
@@ -60,4 +60,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/markets**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/markets**
 
 ### Arguments
 
@@ -18,12 +18,12 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**facebook\_pixel\_id** | `string` | Optional |
+| attributes.**facebook_pixel_id** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**merchant** | `object` | Required |
-| relationships.**price\_list** | `object` | Required |
-| relationships.**inventory\_model** | `object` | Required |
+| relationships.**price_list** | `object` | Required |
+| relationships.**inventory_model** | `object` | Required |
 
 ### Example
 
@@ -116,4 +116,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

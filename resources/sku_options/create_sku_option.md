@@ -10,7 +10,7 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/sku\_options**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
 
 ### Arguments
 
@@ -19,9 +19,9 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**price\_amount\_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay\_hours** | `integer` | Optional, default is '0' |
-| attributes.**sku\_code\_regex** | `string` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
@@ -98,4 +98,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

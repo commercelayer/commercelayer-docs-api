@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer\_password\_resets/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
 
 ### Arguments
 
@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**customer\_password** | `string` | Optional |
-| attributes.**\_reset\_password\_token** | `string` |  |
+| attributes.**customer_password** | `string` | Optional |
+| attributes.**_reset_password_token** | `string` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -90,4 +90,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

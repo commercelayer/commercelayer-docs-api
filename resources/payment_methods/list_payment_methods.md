@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of payment methods via API
+description: How to fetch a collection of payment methods via API
 ---
 
 # List all payment methods
@@ -10,10 +10,12 @@ To fetch a collection of payment methods, send a `GET` request to the `/api/paym
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/payment\_methods**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### **Example**
 
+{% tabs %}
+{% tab title="Request" %}
 The following request fetches a collection of payment methods:
 
 ```javascript
@@ -22,7 +24,9 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
+{% endtab %}
 
+{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -79,6 +83,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
   }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% page-ref page="../../pagination.md" %}
 
@@ -95,4 +101,3 @@ The list of payment methods can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

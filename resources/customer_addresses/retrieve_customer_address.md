@@ -10,7 +10,7 @@ To fetch a single customer address, send a `GET` request to the `/api/customer_a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_addresses/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses/:id**
 
 ### **Example**
 
@@ -66,4 +66,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

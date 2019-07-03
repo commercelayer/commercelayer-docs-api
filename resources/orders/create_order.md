@@ -10,7 +10,7 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/orders**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### Arguments
 
@@ -18,23 +18,23 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**guest** | `boolean` | Optional |
-| attributes.**customer\_email** | `string` | Optional |
-| attributes.**customer\_password** | `string` | Optional |
-| attributes.**language\_code** | `string` | Optional, default is 'en' |
-| attributes.**shipping\_country\_code\_lock** | `string` | Optional |
-| attributes.**coupon\_code** | `string` | Optional |
-| attributes.**cart\_url** | `string` | Optional |
-| attributes.**return\_url** | `string` | Optional |
-| attributes.**terms\_url** | `string` | Optional |
-| attributes.**privacy\_url** | `string` | Optional |
+| attributes.**customer_email** | `string` | Optional |
+| attributes.**customer_password** | `string` | Optional |
+| attributes.**language_code** | `string` | Optional, default is 'en' |
+| attributes.**shipping_country_code_lock** | `string` | Optional |
+| attributes.**coupon_code** | `string` | Optional |
+| attributes.**cart_url** | `string` | Optional |
+| attributes.**return_url** | `string` | Optional |
+| attributes.**terms_url** | `string` | Optional |
+| attributes.**privacy_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 | relationships.**customer** | `object` | Optional |
-| relationships.**shipping\_address** | `object` | Optional |
-| relationships.**billing\_address** | `object` | Optional |
-| relationships.**payment\_method** | `object` | Optional |
-| relationships.**payment\_source** | `object` | Optional |
+| relationships.**shipping_address** | `object` | Optional |
+| relationships.**billing_address** | `object` | Optional |
+| relationships.**payment_method** | `object` | Optional |
+| relationships.**payment_source** | `object` | Optional |
 
 ### Example
 
@@ -229,4 +229,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

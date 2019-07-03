@@ -10,7 +10,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock\_locations**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**label\_format** | `string` | Optional, default is 'pdf' |
+| attributes.**label_format** | `string` | Optional, default is 'pdf' |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**address** | `object` | Required |
@@ -101,4 +101,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

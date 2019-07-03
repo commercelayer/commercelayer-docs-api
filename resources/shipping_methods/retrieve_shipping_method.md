@@ -10,7 +10,7 @@ To fetch a single shipping method, send a `GET` request to the `/api/shipping_me
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_methods/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods/:id**
 
 ### **Example**
 
@@ -89,4 +89,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

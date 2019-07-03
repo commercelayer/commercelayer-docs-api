@@ -10,7 +10,7 @@ To create a new customer address, send a `POST` request to the `/api/customer_ad
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer\_addresses**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
 
 ### Arguments
 
@@ -98,4 +98,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-
