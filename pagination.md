@@ -12,93 +12,22 @@ The default page number is 1, and the default page size is 10. The maximum page 
 
 If you need to modify these default settings, use the `page` query parameter in your request.
 
-### Examples
-
-#### Requesting a specific page
+### Example
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches a collection of SKUs, listed 10 per page \(default\), starting from a specific page:
+The following request fetches the SKUs, setting the page number to 3 and the page size to 5:
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus?page[number]=9 \
+  https://yourdomain.commercelayer.io/api/skus?page[size]=5&page[number]=3 \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-The response contains the record and page counts and the links to the `first`, `prev`, `next` and `last` pages:
-
-```javascript
-{
-  "data": [...],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
-    "prev": "https://yourdomain.commercelayer.io/api/skus?page[number]=8&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=10&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
-  }
-}
-```
-{% endtab %}
-{% endtabs %}
-
-#### First page
-
-{% tabs %}
-{% tab title="Request" %}
-The following request fetches a collection of SKUs, listed 7 per page, starting from the first page \(default\):
-
-```javascript
-curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus?page[size]=7 \
-  -H 'Accept: application/vnd.api+json' \
-  -H 'Authorization: Bearer your-access-token'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-Please note that the link to the `prev` page is now missing:
-
-```javascript
-{
-  "data": [...],
-  "meta": {
-    "record_count": 140,
-    "page_count": 20
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=7",
-    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=3&page[size]=7",
-    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=20&page[size]=7"
-  }
-}
-```
-{% endtab %}
-{% endtabs %}
-
-#### Last page
-
-{% tabs %}
-{% tab title="Request" %}
-The following request fetches a collection of SKUs, listed 5 per page, starting from a specific page that happens to be the last:
-
-```javascript
-curl -X GET \
-  https://yourdomain.commercelayer.io/api/skus?page[size]=5&page[number]=28 \
-  -H 'Accept: application/vnd.api+json' \
-  -H 'Authorization: Bearer your-access-token'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-Please note that the link to the `next` page is now missing:
+On success, the API responds with a `200 OK` status code, returning the five resource objects listed in the third page \(from the 6th object to the 10th\), together with the record and page counts and the links to the `first`, `prev`, `next` and `last` page.
 
 ```javascript
 {
@@ -109,7 +38,8 @@ Please note that the link to the `next` page is now missing:
   },
   "links": {
     "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=5",
-    "prev": "https://yourdomain.commercelayer.io/api/skus?page[number]=27&page[size]=5",
+    "prev": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=5",
+    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=4&page[size]=5",
     "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=28&page[size]=5"
   }
 }

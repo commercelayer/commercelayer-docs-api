@@ -10,7 +10,7 @@ To fetch a collection of customer password resets, send a `GET` request to the `
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_password\_resets**
 
 ### **Example**
 
@@ -91,3 +91,4 @@ The list of customer password resets can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

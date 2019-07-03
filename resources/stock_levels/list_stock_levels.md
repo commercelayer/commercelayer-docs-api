@@ -10,7 +10,7 @@ To fetch a collection of stock levels, send a `GET` request to the `/api/stock_l
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_levels**
 
 ### **Example**
 
@@ -98,3 +98,4 @@ The list of stock levels can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

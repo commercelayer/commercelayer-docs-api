@@ -10,7 +10,7 @@ To fetch a collection of line item options, send a `GET` request to the `/api/li
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
+**GET** https://yourdomain.commercelayer.io**/api/line\_item\_options**
 
 ### **Example**
 
@@ -111,3 +111,4 @@ The list of line item options can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

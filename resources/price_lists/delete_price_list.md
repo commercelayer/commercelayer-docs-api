@@ -10,7 +10,7 @@ To delete a price list, send a `DELETE` request to the `/api/price_lists/:id` en
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/price_lists/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/price\_lists/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

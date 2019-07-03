@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/customer\_subscriptions/:id**
 
 ### Arguments
 
@@ -83,3 +83,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

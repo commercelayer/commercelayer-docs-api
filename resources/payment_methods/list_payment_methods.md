@@ -10,7 +10,7 @@ To fetch a collection of payment methods, send a `GET` request to the `/api/paym
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
+**GET** https://yourdomain.commercelayer.io**/api/payment\_methods**
 
 ### **Example**
 
@@ -103,3 +103,4 @@ The list of payment methods can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

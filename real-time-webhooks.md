@@ -22,7 +22,7 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 | :--- | :--- |
 | customer\_password\_resets.**create** | A customer password reset process is initiated |
 | customer\_password\_resets.**destroy** | An existing `customer_password_resets` object is deleted |
-| customer\_subscriptions.**create** | A new customer is created |
+| customer\_subscriptions.**create** | A new customer subscription is created |
 | customer\_subscriptions.**destroy** | An existing `customer_subscriptions` object is deleted |
 | customers.**create** | A new customer is created |
 | customers.**acquired**  | An existing customer status is set to `acquired` |
@@ -33,8 +33,8 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 | imports.**complete**  | An existing import status is set to `completed` |
 | imports.**destroy** | An existing `imports` object is deleted |
 | orders.**create** | A new order is created |
-| orders.**pending**  | An existing order status is set to `pending` |
-| orders.**draft** | An existing order status is set to `draft` |
+| orders.**draft**  | An existing order status is set to `draft` |
+| orders.**pending** | An existing order status is set to `pending` |
 | orders.**place** | An existing order status is set to `placed` |
 | orders.**approve** | An existing order status is set to `approved` |
 | orders.**cancel** | An existing order status is set to `cancelled` |
@@ -58,7 +58,7 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 | shipments.**destroy** | An existing `shipments` object is deleted |
 
 {% hint style="info" %}
-If the triggered request doesn't get a response from the specified endpoint, the system tries to resend it for the next 24 hours, at set intervals \(0s, 1m, 10m, 1h, 3h, 6h, 12h, 24h\).
+If the triggered request doesn't get a `2xx` response from the specified endpoint, the system tries to resend it for the next 24 hours, at set intervals \(0s, 1m, 10m, 1h, 3h, 6h, 12h, 24h\).
 {% endhint %}
 
 {% hint style="warning" %}

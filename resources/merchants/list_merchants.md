@@ -10,7 +10,7 @@ To fetch a collection of merchants, send a `GET` request to the `/api/merchants`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/merchants**
+**GET** https://yourdomain.commercelayer.io**/api/merchants**
 
 ### **Example**
 
@@ -89,3 +89,4 @@ The list of merchants can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

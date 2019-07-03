@@ -10,7 +10,7 @@ To fetch a collection of stock locations, send a `GET` request to the `/api/stoc
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_locations**
 
 ### **Example**
 
@@ -102,3 +102,4 @@ The list of stock locations can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

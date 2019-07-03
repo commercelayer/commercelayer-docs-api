@@ -2,7 +2,7 @@
 description: How to create a sku via API
 ---
 
-# Create a sku
+# Create a SKU
 
 To create a new sku, send a `POST` request to the `/api/skus` endpoint, passing the resource arguments in the request body.
 
@@ -10,7 +10,7 @@ To create a new sku, send a `POST` request to the `/api/skus` endpoint, passing 
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/skus**
+**POST** https://yourdomain.commercelayer.io**/api/skus**
 
 ### Arguments
 
@@ -20,14 +20,14 @@ To create a new sku, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
-| attributes.**tag_names** | `string` | Optional |
-| attributes.**pieces_per_pack** | `integer` | Optional |
+| attributes.**image\_url** | `string` | Optional |
+| attributes.**tag\_names** | `string` | Optional |
+| attributes.**pieces\_per\_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**unit\_of\_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping_category** | `object` | Required |
+| relationships.**shipping\_category** | `object` | Required |
 
 ### Example
 
@@ -216,3 +216,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

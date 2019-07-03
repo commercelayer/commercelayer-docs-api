@@ -10,7 +10,7 @@ To delete a customer payment source, send a `DELETE` request to the `/api/custom
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

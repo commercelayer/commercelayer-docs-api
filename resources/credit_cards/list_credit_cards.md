@@ -10,7 +10,7 @@ To fetch a collection of credit cards, send a `GET` request to the `/api/credit_
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards**
+**GET** https://yourdomain.commercelayer.io**/api/credit\_cards**
 
 ### **Example**
 
@@ -100,3 +100,4 @@ The list of credit cards can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

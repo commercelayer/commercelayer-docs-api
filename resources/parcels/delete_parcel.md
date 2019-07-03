@@ -10,7 +10,7 @@ To delete a parcel, send a `DELETE` request to the `/api/parcels/:id` endpoint, 
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

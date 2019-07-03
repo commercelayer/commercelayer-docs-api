@@ -2,7 +2,7 @@
 description: How to fetch a collection of skus via API
 ---
 
-# List all skus
+# List all SKUs
 
 To fetch a collection of skus, send a `GET` request to the `/api/skus` endpoint.
 
@@ -10,7 +10,7 @@ To fetch a collection of skus, send a `GET` request to the `/api/skus` endpoint.
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus**
+**GET** https://yourdomain.commercelayer.io**/api/skus**
 
 ### **Example**
 
@@ -121,3 +121,4 @@ The list of skus can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+
