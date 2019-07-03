@@ -15,10 +15,10 @@ The combination of stock locations and shipping categories determine the number 
 ### The shipment object
 
 A **shipment** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/shipments/create_shipment),
-[list](https://docs.commercelayer.io/resources/shipments/list_shipments),
-[retrieve](https://docs.commercelayer.io/resources/shipments/retrieve_shipment),
-or [update](https://docs.commercelayer.io/resources/shipments/update_shipment) API call.
+[create](https://docs.commercelayer.io/api/resources/shipments/create_shipment),
+[list](https://docs.commercelayer.io/api/resources/shipments/list_shipments),
+[retrieve](https://docs.commercelayer.io/api/resources/shipments/retrieve_shipment),
+or [update](https://docs.commercelayer.io/api/resources/shipments/update_shipment) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

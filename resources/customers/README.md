@@ -7,16 +7,16 @@ description: The customer object and its fields
 Customers must contain an email address and, optionally, a password.
 Registered customers can get an access token through the Password Flow to manage their data.
 Customer status can be one of "prospect," (with no orders) "acquired," (with one order) or "repeat" (with two or more orders).
-Associate a customer to a customer group if you want to assign a dedicated price list to that customer ([learn more](/api-reference/resources/customer_groups)).
+Associate a customer to a customer group if you want to assign a dedicated price list to that customer ([learn more](https://docs.commercelayer.io/api/resources/customer_groups)).
 
 
 ### The customer object
 
 A **customer** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/customers/create_customer),
-[list](https://docs.commercelayer.io/resources/customers/list_customers),
-[retrieve](https://docs.commercelayer.io/resources/customers/retrieve_customer),
-or [update](https://docs.commercelayer.io/resources/customers/update_customer) API call.
+[create](https://docs.commercelayer.io/api/resources/customers/create_customer),
+[list](https://docs.commercelayer.io/api/resources/customers/list_customers),
+[retrieve](https://docs.commercelayer.io/api/resources/customers/retrieve_customer),
+or [update](https://docs.commercelayer.io/api/resources/customers/update_customer) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

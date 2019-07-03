@@ -12,10 +12,10 @@ The object in the request body has the same format that you get when fetching th
 ### The webhook object
 
 A **webhook** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/webhooks/create_webhook),
-[list](https://docs.commercelayer.io/resources/webhooks/list_webhooks),
-[retrieve](https://docs.commercelayer.io/resources/webhooks/retrieve_webhook),
-or [update](https://docs.commercelayer.io/resources/webhooks/update_webhook) API call.
+[create](https://docs.commercelayer.io/api/resources/webhooks/create_webhook),
+[list](https://docs.commercelayer.io/api/resources/webhooks/list_webhooks),
+[retrieve](https://docs.commercelayer.io/api/resources/webhooks/retrieve_webhook),
+or [update](https://docs.commercelayer.io/api/resources/webhooks/update_webhook) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

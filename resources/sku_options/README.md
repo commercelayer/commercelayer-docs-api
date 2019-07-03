@@ -11,10 +11,10 @@ They can have a price and a delay time (e.g., preparation time) and are defined 
 ### The sku option object
 
 A **sku option** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/sku_options/create_sku_option),
-[list](https://docs.commercelayer.io/resources/sku_options/list_sku_options),
-[retrieve](https://docs.commercelayer.io/resources/sku_options/retrieve_sku_option),
-or [update](https://docs.commercelayer.io/resources/sku_options/update_sku_option) API call.
+[create](https://docs.commercelayer.io/api/resources/sku_options/create_sku_option),
+[list](https://docs.commercelayer.io/api/resources/sku_options/list_sku_options),
+[retrieve](https://docs.commercelayer.io/api/resources/sku_options/retrieve_sku_option),
+or [update](https://docs.commercelayer.io/api/resources/sku_options/update_sku_option) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

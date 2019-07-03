@@ -17,10 +17,10 @@ A typical flow is to send an email to the customer with a verification link that
 ### The customer password reset object
 
 A **customer password reset** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/customer_password_resets/create_customer_password_reset),
-[list](https://docs.commercelayer.io/resources/customer_password_resets/list_customer_password_resets),
-[retrieve](https://docs.commercelayer.io/resources/customer_password_resets/retrieve_customer_password_reset),
-or [update](https://docs.commercelayer.io/resources/customer_password_resets/update_customer_password_reset) API call.
+[create](https://docs.commercelayer.io/api/resources/customer_password_resets/create_customer_password_reset),
+[list](https://docs.commercelayer.io/api/resources/customer_password_resets/list_customer_password_resets),
+[retrieve](https://docs.commercelayer.io/api/resources/customer_password_resets/retrieve_customer_password_reset),
+or [update](https://docs.commercelayer.io/api/resources/customer_password_resets/update_customer_password_reset) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

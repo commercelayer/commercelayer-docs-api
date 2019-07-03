@@ -12,10 +12,10 @@ Customers can save their most used addresses in their address books (as customer
 ### The address object
 
 An **address** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/addresses/create_address),
-[list](https://docs.commercelayer.io/resources/addresses/list_addresses),
-[retrieve](https://docs.commercelayer.io/resources/addresses/retrieve_address),
-or [update](https://docs.commercelayer.io/resources/addresses/update_address) API call.
+[create](https://docs.commercelayer.io/api/resources/addresses/create_address),
+[list](https://docs.commercelayer.io/api/resources/addresses/list_addresses),
+[retrieve](https://docs.commercelayer.io/api/resources/addresses/retrieve_address),
+or [update](https://docs.commercelayer.io/api/resources/addresses/update_address) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

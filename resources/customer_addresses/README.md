@@ -12,10 +12,10 @@ During checkout, a logged customer can retrieve their saved addresses and use th
 ### The customer address object
 
 A **customer address** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/customer_addresses/create_customer_address),
-[list](https://docs.commercelayer.io/resources/customer_addresses/list_customer_addresses),
-[retrieve](https://docs.commercelayer.io/resources/customer_addresses/retrieve_customer_address),
-or [update](https://docs.commercelayer.io/resources/customer_addresses/update_customer_address) API call.
+[create](https://docs.commercelayer.io/api/resources/customer_addresses/create_customer_address),
+[list](https://docs.commercelayer.io/api/resources/customer_addresses/list_customer_addresses),
+[retrieve](https://docs.commercelayer.io/api/resources/customer_addresses/retrieve_customer_address),
+or [update](https://docs.commercelayer.io/api/resources/customer_addresses/update_customer_address) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

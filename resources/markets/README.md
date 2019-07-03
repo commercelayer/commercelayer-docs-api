@@ -12,10 +12,10 @@ This way, all the resources (e.g., SKUs, prices, stock items) are automatically 
 ### The market object
 
 A **market** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/markets/create_market),
-[list](https://docs.commercelayer.io/resources/markets/list_markets),
-[retrieve](https://docs.commercelayer.io/resources/markets/retrieve_market),
-or [update](https://docs.commercelayer.io/resources/markets/update_market) API call.
+[create](https://docs.commercelayer.io/api/resources/markets/create_market),
+[list](https://docs.commercelayer.io/api/resources/markets/list_markets),
+[retrieve](https://docs.commercelayer.io/api/resources/markets/retrieve_market),
+or [update](https://docs.commercelayer.io/api/resources/markets/update_market) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

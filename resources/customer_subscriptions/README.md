@@ -13,10 +13,10 @@ Let the customers manage their active subscriptions through their reserved area.
 ### The customer subscription object
 
 A **customer subscription** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/customer_subscriptions/create_customer_subscription),
-[list](https://docs.commercelayer.io/resources/customer_subscriptions/list_customer_subscriptions),
-[retrieve](https://docs.commercelayer.io/resources/customer_subscriptions/retrieve_customer_subscription),
-or [update](https://docs.commercelayer.io/resources/customer_subscriptions/update_customer_subscription) API call.
+[create](https://docs.commercelayer.io/api/resources/customer_subscriptions/create_customer_subscription),
+[list](https://docs.commercelayer.io/api/resources/customer_subscriptions/list_customer_subscriptions),
+[retrieve](https://docs.commercelayer.io/api/resources/customer_subscriptions/retrieve_customer_subscription),
+or [update](https://docs.commercelayer.io/api/resources/customer_subscriptions/update_customer_subscription) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -12,10 +12,10 @@ The related documentation is automatically generated and attached to the parcel.
 ### The parcel object
 
 A **parcel** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/parcels/create_parcel),
-[list](https://docs.commercelayer.io/resources/parcels/list_parcels),
-[retrieve](https://docs.commercelayer.io/resources/parcels/retrieve_parcel),
-or [update](https://docs.commercelayer.io/resources/parcels/update_parcel) API call.
+[create](https://docs.commercelayer.io/api/resources/parcels/create_parcel),
+[list](https://docs.commercelayer.io/api/resources/parcels/list_parcels),
+[retrieve](https://docs.commercelayer.io/api/resources/parcels/retrieve_parcel),
+or [update](https://docs.commercelayer.io/api/resources/parcels/update_parcel) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

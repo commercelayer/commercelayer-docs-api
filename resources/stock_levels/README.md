@@ -11,10 +11,10 @@ In case an SKU is available in more stock locations, it gets shipped from those 
 ### The stock level object
 
 A **stock level** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/stock_levels/create_stock_level),
-[list](https://docs.commercelayer.io/resources/stock_levels/list_stock_levels),
-[retrieve](https://docs.commercelayer.io/resources/stock_levels/retrieve_stock_level),
-or [update](https://docs.commercelayer.io/resources/stock_levels/update_stock_level) API call.
+[create](https://docs.commercelayer.io/api/resources/stock_levels/create_stock_level),
+[list](https://docs.commercelayer.io/api/resources/stock_levels/list_stock_levels),
+[retrieve](https://docs.commercelayer.io/api/resources/stock_levels/retrieve_stock_level),
+or [update](https://docs.commercelayer.io/api/resources/stock_levels/update_stock_level) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -13,10 +13,10 @@ The order object includes all the data you need. You never need to make any calc
 ### The line item object
 
 A **line item** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/line_items/create_line_item),
-[list](https://docs.commercelayer.io/resources/line_items/list_line_items),
-[retrieve](https://docs.commercelayer.io/resources/line_items/retrieve_line_item),
-or [update](https://docs.commercelayer.io/resources/line_items/update_line_item) API call.
+[create](https://docs.commercelayer.io/api/resources/line_items/create_line_item),
+[list](https://docs.commercelayer.io/api/resources/line_items/list_line_items),
+[retrieve](https://docs.commercelayer.io/api/resources/line_items/retrieve_line_item),
+or [update](https://docs.commercelayer.io/api/resources/line_items/update_line_item) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

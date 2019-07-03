@@ -11,10 +11,10 @@ Being manual payments, they are always authorized.
 ### The wire transfer object
 
 A **wire transfer** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/wire_transfers/create_wire_transfer),
-[list](https://docs.commercelayer.io/resources/wire_transfers/list_wire_transfers),
-[retrieve](https://docs.commercelayer.io/resources/wire_transfers/retrieve_wire_transfer),
-or [update](https://docs.commercelayer.io/resources/wire_transfers/update_wire_transfer) API call.
+[create](https://docs.commercelayer.io/api/resources/wire_transfers/create_wire_transfer),
+[list](https://docs.commercelayer.io/api/resources/wire_transfers/list_wire_transfers),
+[retrieve](https://docs.commercelayer.io/api/resources/wire_transfers/retrieve_wire_transfer),
+or [update](https://docs.commercelayer.io/api/resources/wire_transfers/update_wire_transfer) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

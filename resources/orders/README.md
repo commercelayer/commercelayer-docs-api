@@ -14,10 +14,10 @@ Canceling an order automatically voids its payment source's authorization.
 ### The order object
 
 An **order** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/orders/create_order),
-[list](https://docs.commercelayer.io/resources/orders/list_orders),
-[retrieve](https://docs.commercelayer.io/resources/orders/retrieve_order),
-or [update](https://docs.commercelayer.io/resources/orders/update_order) API call.
+[create](https://docs.commercelayer.io/api/resources/orders/create_order),
+[list](https://docs.commercelayer.io/api/resources/orders/list_orders),
+[retrieve](https://docs.commercelayer.io/api/resources/orders/retrieve_order),
+or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

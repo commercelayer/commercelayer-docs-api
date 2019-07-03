@@ -11,10 +11,10 @@ This is useful if you ship from many stock locations or offer more shipping meth
 ### The delivery lead time object
 
 A **delivery lead time** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/delivery_lead_times/create_delivery_lead_time),
-[list](https://docs.commercelayer.io/resources/delivery_lead_times/list_delivery_lead_times),
-[retrieve](https://docs.commercelayer.io/resources/delivery_lead_times/retrieve_delivery_lead_time),
-or [update](https://docs.commercelayer.io/resources/delivery_lead_times/update_delivery_lead_time) API call.
+[create](https://docs.commercelayer.io/api/resources/delivery_lead_times/create_delivery_lead_time),
+[list](https://docs.commercelayer.io/api/resources/delivery_lead_times/list_delivery_lead_times),
+[retrieve](https://docs.commercelayer.io/api/resources/delivery_lead_times/retrieve_delivery_lead_time),
+or [update](https://docs.commercelayer.io/api/resources/delivery_lead_times/update_delivery_lead_time) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -12,10 +12,10 @@ The SKU name, description and image URL are best suited for internal usage (Comm
 ### The sku object
 
 A **sku** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/skus/create_sku),
-[list](https://docs.commercelayer.io/resources/skus/list_skus),
-[retrieve](https://docs.commercelayer.io/resources/skus/retrieve_sku),
-or [update](https://docs.commercelayer.io/resources/skus/update_sku) API call.
+[create](https://docs.commercelayer.io/api/resources/skus/create_sku),
+[list](https://docs.commercelayer.io/api/resources/skus/list_skus),
+[retrieve](https://docs.commercelayer.io/api/resources/skus/retrieve_sku),
+or [update](https://docs.commercelayer.io/api/resources/skus/update_sku) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

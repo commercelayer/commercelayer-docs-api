@@ -11,10 +11,10 @@ The SKU options cost is automatically added to the line item's amount.
 ### The line item option object
 
 A **line item option** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/line_item_options/create_line_item_option),
-[list](https://docs.commercelayer.io/resources/line_item_options/list_line_item_options),
-[retrieve](https://docs.commercelayer.io/resources/line_item_options/retrieve_line_item_option),
-or [update](https://docs.commercelayer.io/resources/line_item_options/update_line_item_option) API call.
+[create](https://docs.commercelayer.io/api/resources/line_item_options/create_line_item_option),
+[list](https://docs.commercelayer.io/api/resources/line_item_options/list_line_item_options),
+[retrieve](https://docs.commercelayer.io/api/resources/line_item_options/retrieve_line_item_option),
+or [update](https://docs.commercelayer.io/api/resources/line_item_options/update_line_item_option) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

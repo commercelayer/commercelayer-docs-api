@@ -14,10 +14,10 @@ In case, after the import is complete you also get the number of destroyed recor
 ### The import object
 
 An **import** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/imports/create_import),
-[list](https://docs.commercelayer.io/resources/imports/list_imports),
-[retrieve](https://docs.commercelayer.io/resources/imports/retrieve_import),
-or [update](https://docs.commercelayer.io/resources/imports/update_import) API call.
+[create](https://docs.commercelayer.io/api/resources/imports/create_import),
+[list](https://docs.commercelayer.io/api/resources/imports/list_imports),
+[retrieve](https://docs.commercelayer.io/api/resources/imports/retrieve_import),
+or [update](https://docs.commercelayer.io/api/resources/imports/update_import) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -12,10 +12,10 @@ If an order contains line items from two or more stock locations, the order is s
 ### The inventory model object
 
 An **inventory model** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/inventory_models/create_inventory_model),
-[list](https://docs.commercelayer.io/resources/inventory_models/list_inventory_models),
-[retrieve](https://docs.commercelayer.io/resources/inventory_models/retrieve_inventory_model),
-or [update](https://docs.commercelayer.io/resources/inventory_models/update_inventory_model) API call.
+[create](https://docs.commercelayer.io/api/resources/inventory_models/create_inventory_model),
+[list](https://docs.commercelayer.io/api/resources/inventory_models/list_inventory_models),
+[retrieve](https://docs.commercelayer.io/api/resources/inventory_models/retrieve_inventory_model),
+or [update](https://docs.commercelayer.io/api/resources/inventory_models/update_inventory_model) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

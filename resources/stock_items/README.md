@@ -13,10 +13,10 @@ When an order is canceled, or a return is approved, the stock item quantities ge
 ### The stock item object
 
 A **stock item** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/stock_items/create_stock_item),
-[list](https://docs.commercelayer.io/resources/stock_items/list_stock_items),
-[retrieve](https://docs.commercelayer.io/resources/stock_items/retrieve_stock_item),
-or [update](https://docs.commercelayer.io/resources/stock_items/update_stock_item) API call.
+[create](https://docs.commercelayer.io/api/resources/stock_items/create_stock_item),
+[list](https://docs.commercelayer.io/api/resources/stock_items/list_stock_items),
+[retrieve](https://docs.commercelayer.io/api/resources/stock_items/retrieve_stock_item),
+or [update](https://docs.commercelayer.io/api/resources/stock_items/update_stock_item) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

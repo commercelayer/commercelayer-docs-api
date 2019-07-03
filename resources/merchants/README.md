@@ -11,10 +11,10 @@ Tax calculators use the merchant's address (and the shipping address) to determi
 ### The merchant object
 
 A **merchant** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/merchants/create_merchant),
-[list](https://docs.commercelayer.io/resources/merchants/list_merchants),
-[retrieve](https://docs.commercelayer.io/resources/merchants/retrieve_merchant),
-or [update](https://docs.commercelayer.io/resources/merchants/update_merchant) API call.
+[create](https://docs.commercelayer.io/api/resources/merchants/create_merchant),
+[list](https://docs.commercelayer.io/api/resources/merchants/list_merchants),
+[retrieve](https://docs.commercelayer.io/api/resources/merchants/retrieve_merchant),
+or [update](https://docs.commercelayer.io/api/resources/merchants/update_merchant) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

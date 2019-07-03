@@ -12,10 +12,10 @@ Customers can save their most used addresses in their address books (as customer
 ### The attachment object
 
 An **attachment** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/attachments/create_attachment),
-[list](https://docs.commercelayer.io/resources/attachments/list_attachments),
-[retrieve](https://docs.commercelayer.io/resources/attachments/retrieve_attachment),
-or [update](https://docs.commercelayer.io/resources/attachments/update_attachment) API call.
+[create](https://docs.commercelayer.io/api/resources/attachments/create_attachment),
+[list](https://docs.commercelayer.io/api/resources/attachments/list_attachments),
+[retrieve](https://docs.commercelayer.io/api/resources/attachments/retrieve_attachment),
+or [update](https://docs.commercelayer.io/api/resources/attachments/update_attachment) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

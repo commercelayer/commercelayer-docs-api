@@ -11,10 +11,10 @@ When you create a line item, it gets the price associated with the order's the p
 ### The price object
 
 A **price** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/prices/create_price),
-[list](https://docs.commercelayer.io/resources/prices/list_prices),
-[retrieve](https://docs.commercelayer.io/resources/prices/retrieve_price),
-or [update](https://docs.commercelayer.io/resources/prices/update_price) API call.
+[create](https://docs.commercelayer.io/api/resources/prices/create_price),
+[list](https://docs.commercelayer.io/api/resources/prices/list_prices),
+[retrieve](https://docs.commercelayer.io/api/resources/prices/retrieve_price),
+or [update](https://docs.commercelayer.io/api/resources/prices/update_price) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

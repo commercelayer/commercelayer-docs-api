@@ -11,10 +11,10 @@ Each shipping method can have a price and can be free over a specific order's am
 ### The shipping method object
 
 A **shipping method** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/shipping_methods/create_shipping_method),
-[list](https://docs.commercelayer.io/resources/shipping_methods/list_shipping_methods),
-[retrieve](https://docs.commercelayer.io/resources/shipping_methods/retrieve_shipping_method),
-or [update](https://docs.commercelayer.io/resources/shipping_methods/update_shipping_method) API call.
+[create](https://docs.commercelayer.io/api/resources/shipping_methods/create_shipping_method),
+[list](https://docs.commercelayer.io/api/resources/shipping_methods/list_shipping_methods),
+[retrieve](https://docs.commercelayer.io/api/resources/shipping_methods/retrieve_shipping_method),
+or [update](https://docs.commercelayer.io/api/resources/shipping_methods/update_shipping_method) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

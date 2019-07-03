@@ -12,10 +12,10 @@ You can use customer groups to manage B2B customers, B2C loyalty programs, and m
 ### The customer group object
 
 A **customer group** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/customer_groups/create_customer_group),
-[list](https://docs.commercelayer.io/resources/customer_groups/list_customer_groups),
-[retrieve](https://docs.commercelayer.io/resources/customer_groups/retrieve_customer_group),
-or [update](https://docs.commercelayer.io/resources/customer_groups/update_customer_group) API call.
+[create](https://docs.commercelayer.io/api/resources/customer_groups/create_customer_group),
+[list](https://docs.commercelayer.io/api/resources/customer_groups/list_customer_groups),
+[retrieve](https://docs.commercelayer.io/api/resources/customer_groups/retrieve_customer_group),
+or [update](https://docs.commercelayer.io/api/resources/customer_groups/update_customer_group) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

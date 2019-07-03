@@ -11,10 +11,10 @@ Create more price lists if you need to manage international business models or B
 ### The price list object
 
 A **price list** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/price_lists/create_price_list),
-[list](https://docs.commercelayer.io/resources/price_lists/list_price_lists),
-[retrieve](https://docs.commercelayer.io/resources/price_lists/retrieve_price_list),
-or [update](https://docs.commercelayer.io/resources/price_lists/update_price_list) API call.
+[create](https://docs.commercelayer.io/api/resources/price_lists/create_price_list),
+[list](https://docs.commercelayer.io/api/resources/price_lists/list_price_lists),
+[retrieve](https://docs.commercelayer.io/api/resources/price_lists/retrieve_price_list),
+or [update](https://docs.commercelayer.io/api/resources/price_lists/update_price_list) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

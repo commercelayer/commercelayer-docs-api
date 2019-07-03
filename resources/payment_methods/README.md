@@ -11,10 +11,10 @@ They can have a price and must be present before placing an order ([learn more](
 ### The payment method object
 
 A **payment method** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/resources/payment_methods/create_payment_method),
-[list](https://docs.commercelayer.io/resources/payment_methods/list_payment_methods),
-[retrieve](https://docs.commercelayer.io/resources/payment_methods/retrieve_payment_method),
-or [update](https://docs.commercelayer.io/resources/payment_methods/update_payment_method) API call.
+[create](https://docs.commercelayer.io/api/resources/payment_methods/create_payment_method),
+[list](https://docs.commercelayer.io/api/resources/payment_methods/list_payment_methods),
+[retrieve](https://docs.commercelayer.io/api/resources/payment_methods/retrieve_payment_method),
+or [update](https://docs.commercelayer.io/api/resources/payment_methods/update_payment_method) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
