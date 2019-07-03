@@ -55,28 +55,28 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "inventory_models",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
     },
     "attributes": {
-        "name": "EU Inventory Model",
-        "created_at": "2018-01-01T12:00:00.000Z",
-        "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
-        "metadata": {
-  "foo": "bar"
-},
+      "name": "EU Inventory Model",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
     },
     "relationships": {
-        "stock_levels": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
-              "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
-          }
-        },
-      },
-      "meta": {
-          "mode": "test"
+      "stock_levels": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/relationships/stock_levels",
+          "related": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/stock_levels"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
+    }
   }
 }
 ```

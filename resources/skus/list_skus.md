@@ -33,6 +33,40 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "code": "TSHIRTMM000000FFFFFFXLXX",
+      "name": "Black Men T-shirt with White Logo (XL)",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
+      "tag_names": "Men, Black, XL",
+      "pieces_per_pack": "6",
+      "weight": "300",
+      "unit_of_weight": "gr",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 SKUs (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "skus",
       "links": {

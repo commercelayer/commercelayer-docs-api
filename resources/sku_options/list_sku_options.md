@@ -33,6 +33,40 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "name": "Embossing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price_amount_cents": "1000",
+      "price_amount_float": "10.00",
+      "formatted_price_amount": "€10,00",
+      "delay_hours": "48",
+      "delay_days": "2",
+      "sku_code_regex": "^(A|B).*$",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 sku options (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "sku_options",
       "links": {

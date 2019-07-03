@@ -33,6 +33,33 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 customer addresses (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "customer_addresses",
       "links": {

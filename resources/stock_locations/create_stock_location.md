@@ -63,41 +63,41 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "stock_locations",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
     },
     "attributes": {
-        "name": "Primary warehouse",
-        "label_format": "PDF",
-        "created_at": "2018-01-01T12:00:00.000Z",
-        "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
-        "metadata": {
-  "foo": "bar"
-},
+      "name": "Primary warehouse",
+      "label_format": "PDF",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
     },
     "relationships": {
-        "address": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/address",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
-          }
-        },
-        "stock_levels": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
-          }
-        },
-        "stock_items": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_items",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_items"
-          }
-        },
+      "address": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/address",
+          "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/address"
+        }
       },
-      "meta": {
-          "mode": "test"
+      "stock_levels": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_levels",
+          "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_levels"
+        }
+      },
+      "stock_items": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_items",
+          "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_items"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
+    }
   }
 }
 ```

@@ -33,6 +33,38 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "number": "#1234/S/001",
+      "status": "draft",
+      "currency_code": "EUR",
+      "cost_amount_cents": "1000",
+      "cost_amount_float": "10.00",
+      "formatted_cost_amount": "€10,00",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 shipments (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/shipments?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/shipments?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/shipments?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "shipments",
       "links": {

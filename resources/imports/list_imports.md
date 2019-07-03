@@ -33,6 +33,67 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "resource_type": "skus",
+      "parent_resource_id": "1234",
+      "status": "started",
+      "started_at": "2018-01-01T12:00:00.000Z",
+      "completed_at": "2018-01-01T12:00:00.000Z",
+      "inputs": [
+        {
+          "code": "ABC",
+          "name": "Foo"
+        },
+        {
+          "code": "DEF",
+          "name": "Bar"
+        }
+      ],
+      "errors_count": "3",
+      "warnings_count": "1",
+      "destroyed_count": "99",
+      "errors_log": [
+        {
+          "code:ABC": {
+            "name": [
+              "has already been taken"
+            ]
+          }
+        }
+      ],
+      "warnings_log": [
+        {
+          "code:ABC": [
+            "could not be deleted"
+          ]
+        }
+      ],
+      "cleanup_records": "true",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 imports (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/imports?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/imports?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/imports?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "imports",
       "links": {

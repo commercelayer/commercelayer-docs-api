@@ -98,51 +98,51 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "addresses",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde"
     },
     "attributes": {
-        "business": "false",
-        "first_name": "John",
-        "last_name": "Smith",
-        "company": "The Red Brand Inc.",
-        "full_name": "John Smith",
-        "line_1": "2883 Geraldine Lane",
-        "line_2": "Apt.23",
-        "city": "New York",
-        "zip_code": "10013",
-        "state_code": "NY",
-        "country_code": "US",
-        "phone": "(212) 646-338-1228",
-        "full_address": "2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
-        "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
-        "email": "john@example.com",
-        "notes": "Please ring the bell twice",
-        "lat": "40.6971494",
-        "lng": "-74.2598672",
-        "is_localized": "true",
-        "is_geocoded": "true",
-        "provider_name": "google",
-        "map_url": "https://www.google.com/maps/search/?api=1&query=40.6971494,-74.2598672",
-        "static_map_url": "https://maps.googleapis.com/maps/api/staticmap?center=40.6971494,-74.2598672&size=640x320&zoom=15",
-        "billing_info": "VAT ID IT02382940977",
-        "created_at": "2018-01-01T12:00:00.000Z",
-        "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
-        "metadata": {
-  "foo": "bar"
-},
+      "business": "false",
+      "first_name": "John",
+      "last_name": "Smith",
+      "company": "The Red Brand Inc.",
+      "full_name": "John Smith",
+      "line_1": "2883 Geraldine Lane",
+      "line_2": "Apt.23",
+      "city": "New York",
+      "zip_code": "10013",
+      "state_code": "NY",
+      "country_code": "US",
+      "phone": "(212) 646-338-1228",
+      "full_address": "2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
+      "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
+      "email": "john@example.com",
+      "notes": "Please ring the bell twice",
+      "lat": "40.6971494",
+      "lng": "-74.2598672",
+      "is_localized": "true",
+      "is_geocoded": "true",
+      "provider_name": "google",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=40.6971494,-74.2598672",
+      "static_map_url": "https://maps.googleapis.com/maps/api/staticmap?center=40.6971494,-74.2598672&size=640x320&zoom=15",
+      "billing_info": "VAT ID IT02382940977",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
     },
     "relationships": {
-        "geocoder": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde/relationships/geocoder",
-              "related": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde/geocoder"
-          }
-        },
-      },
-      "meta": {
-          "mode": "test"
+      "geocoder": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/addresses/{{address_id}}/relationships/geocoder",
+          "related": "https://{{subdomain}}.commercelayer.io/api/addresses/{{address_id}}/geocoder"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
+    }
   }
 }
 ```

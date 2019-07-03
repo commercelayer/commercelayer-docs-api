@@ -33,6 +33,35 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "customer_email": "john@example.com",
+      "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
+      "reset_password_at": "2018-01-01T12:00:00.000Z",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 customer password resets (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "customer_password_resets",
       "links": {
