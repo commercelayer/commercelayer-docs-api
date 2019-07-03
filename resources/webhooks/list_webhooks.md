@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of webhooks via API
+description: How to fetch a list of webhooks via API
 ---
 
 # List all webhooks

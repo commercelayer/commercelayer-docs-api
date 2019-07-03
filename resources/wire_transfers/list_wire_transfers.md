@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of wire transfers via API
+description: How to fetch a list of wire transfers via API
 ---
 
 # List all wire transfers

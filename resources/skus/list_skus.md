@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of SKUs via API
+description: How to fetch a list of SKUs via API
 ---
 
 # List all SKUs

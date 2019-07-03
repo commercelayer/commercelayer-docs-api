@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of delivery lead times via API
+description: How to fetch a list of delivery lead times via API
 ---
 
 # List all delivery lead times

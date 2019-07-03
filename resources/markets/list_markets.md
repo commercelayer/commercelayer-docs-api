@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of markets via API
+description: How to fetch a list of markets via API
 ---
 
 # List all markets

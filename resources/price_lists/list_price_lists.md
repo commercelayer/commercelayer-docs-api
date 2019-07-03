@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of price lists via API
+description: How to fetch a list of price lists via API
 ---
 
 # List all price lists

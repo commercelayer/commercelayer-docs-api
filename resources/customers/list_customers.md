@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customers via API
+description: How to fetch a list of customers via API
 ---
 
 # List all customers

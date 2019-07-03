@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of line item options via API
+description: How to fetch a list of line item options via API
 ---
 
 # List all line item options

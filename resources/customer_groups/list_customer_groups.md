@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customer groups via API
+description: How to fetch a list of customer groups via API
 ---
 
 # List all customer groups

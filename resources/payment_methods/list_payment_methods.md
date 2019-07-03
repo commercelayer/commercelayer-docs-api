@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of payment methods via API
+description: How to fetch a list of payment methods via API
 ---
 
 # List all payment methods

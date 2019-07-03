@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of stock levels via API
+description: How to fetch a list of stock levels via API
 ---
 
 # List all stock levels

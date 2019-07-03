@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of merchants via API
+description: How to fetch a list of merchants via API
 ---
 
 # List all merchants

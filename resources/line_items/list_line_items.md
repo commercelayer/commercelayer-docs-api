@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of line items via API
+description: How to fetch a list of line items via API
 ---
 
 # List all line items

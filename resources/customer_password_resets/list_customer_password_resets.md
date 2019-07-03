@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customer password resets via API
+description: How to fetch a list of customer password resets via API
 ---
 
 # List all customer password resets

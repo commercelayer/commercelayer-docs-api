@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of orders via API
+description: How to fetch a list of orders via API
 ---
 
 # List all orders

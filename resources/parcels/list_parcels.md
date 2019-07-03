@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of parcels via API
+description: How to fetch a list of parcels via API
 ---
 
 # List all parcels

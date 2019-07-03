@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of addresses via API
+description: How to fetch a list of addresses via API
 ---
 
 # List all addresses

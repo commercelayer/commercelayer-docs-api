@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of attachments via API
+description: How to fetch a list of attachments via API
 ---
 
 # List all attachments

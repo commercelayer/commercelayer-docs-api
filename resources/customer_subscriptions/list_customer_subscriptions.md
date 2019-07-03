@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customer subscriptions via API
+description: How to fetch a list of customer subscriptions via API
 ---
 
 # List all customer subscriptions

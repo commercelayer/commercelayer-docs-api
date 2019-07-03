@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of imports via API
+description: How to fetch a list of imports via API
 ---
 
 # List all imports

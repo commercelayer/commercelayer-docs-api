@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of stock items via API
+description: How to fetch a list of stock items via API
 ---
 
 # List all stock items

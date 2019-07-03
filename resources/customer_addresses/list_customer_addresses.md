@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customer addresses via API
+description: How to fetch a list of customer addresses via API
 ---
 
 # List all customer addresses

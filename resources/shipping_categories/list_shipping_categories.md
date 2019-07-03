@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of shipping categories via API
+description: How to fetch a list of shipping categories via API
 ---
 
 # List all shipping categories

@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of paypal payments via API
+description: How to fetch a list of paypal payments via API
 ---
 
 # List all paypal payments

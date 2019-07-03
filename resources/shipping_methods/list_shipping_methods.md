@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of shipping methods via API
+description: How to fetch a list of shipping methods via API
 ---
 
 # List all shipping methods

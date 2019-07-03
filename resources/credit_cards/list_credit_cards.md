@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of credit cards via API
+description: How to fetch a list of credit cards via API
 ---
 
 # List all credit cards

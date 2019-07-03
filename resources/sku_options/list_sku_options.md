@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of sku options via API
+description: How to fetch a list of sku options via API
 ---
 
 # List all sku options

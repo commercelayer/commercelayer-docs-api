@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of customer payment sources via API
+description: How to fetch a list of customer payment sources via API
 ---
 
 # List all customer payment sources

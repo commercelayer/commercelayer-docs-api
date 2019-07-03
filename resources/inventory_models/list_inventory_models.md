@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of inventory models via API
+description: How to fetch a list of inventory models via API
 ---
 
 # List all inventory models

@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of stock locations via API
+description: How to fetch a list of stock locations via API
 ---
 
 # List all stock locations

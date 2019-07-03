@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of shipping zones via API
+description: How to fetch a list of shipping zones via API
 ---
 
 # List all shipping zones

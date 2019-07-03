@@ -1,5 +1,5 @@
 ---
-description: How to fetch a collection of shipments via API
+description: How to fetch a list of shipments via API
 ---
 
 # List all shipments
