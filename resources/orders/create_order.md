@@ -148,7 +148,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "skus_count": "2"
         "line_item_options_count": "1"
         "shipments_count": "1"
-        "payment_source_details": ""
+        "payment_source_details": "null"
         "token": "1c0994cc4e996e8c6ee56a2198f66f3c"
         "cart_url": "https://yourbrand.com/cart"
         "return_url": "https://yourbrand.com/"
@@ -163,7 +163,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "created_at": "2018-01-01T12:00:00.000Z"
         "updated_at": "2018-01-01T12:00:00.000Z"
         "reference": "ANYREFEFERNCE"
-        "metadata": "{:foo=>"bar"}"
+        "metadata": "{
+  "foo": "bar"
+}"
     },
     "relationships": {
         "market": {
