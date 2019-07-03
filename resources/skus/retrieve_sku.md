@@ -46,6 +46,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "pieces_per_pack": "6"
       "weight": "300"
       "unit_of_weight": "gr"
+      "inventory": "{:available=>true, :quantity=>10, :levels=>[{:quantity=>4, :delivery_lead_times=>[{:shipping_method=>{:name=>"Standard Shipping", :reference=>nil, :price_amount_cents=>700, :free_over_amount_cents=>9900, :formatted_price_amount=>"€7,00", :formatted_free_over_amount=>"€99,00"}, :min=>{:hours=>72, :days=>3}, :max=>{:hours=>120, :days=>5}}, {:shipping_method=>{:name=>"Express Delivery", :reference=>nil, :price_amount_cents=>1200, :free_over_amount_cents=>nil, :formatted_price_amount=>"€12,00", :formatted_free_over_amount=>nil}, :min=>{:hours=>48, :days=>2}, :max=>{:hours=>72, :days=>3}}]}, {:quantity=>6, :delivery_lead_times=>[{:shipping_method=>{:name=>"Standard Shipping", :reference=>nil, :price_amount_cents=>700, :free_over_amount_cents=>9900, :formatted_price_amount=>"€7,00", :formatted_free_over_amount=>"€99,00"}, :min=>{:hours=>96, :days=>4}, :max=>{:hours=>144, :days=>6}}, {:shipping_method=>{:name=>"Express Delivery", :reference=>nil, :price_amount_cents=>1200, :free_over_amount_cents=>nil, :formatted_price_amount=>"€12,00", :formatted_free_over_amount=>nil}, :min=>{:hours=>72, :days=>3}, :max=>{:hours=>96, :days=>4}}]}]}"
       "created_at": "2018-01-01T12:00:00.000Z"
       "updated_at": "2018-01-01T12:00:00.000Z"
       "reference": "ANYREFEFERNCE"
