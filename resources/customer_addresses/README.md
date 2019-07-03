@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The customer address object
 
-A **customer_address** object is returned as part of the response body of each successful [create](create-customer address.md), [list](list-all-customer addresses.md), [retrieve](retrieve-customer address.md) or [update](update-customer address.md) API call.
+A **customer address** object is returned as part of the response body of each successful [create](create-customer address.md), [list](list-all-customer addresses.md), [retrieve](retrieve-customer address.md) or [update](update-customer address.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The customer group object
 
-A **customer_group** object is returned as part of the response body of each successful [create](create-customer group.md), [list](list-all-customer groups.md), [retrieve](retrieve-customer group.md) or [update](update-customer group.md) API call.
+A **customer group** object is returned as part of the response body of each successful [create](create-customer group.md), [list](list-all-customer groups.md), [retrieve](retrieve-customer group.md) or [update](update-customer group.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

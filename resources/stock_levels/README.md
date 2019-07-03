@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The stock level object
 
-A **stock_level** object is returned as part of the response body of each successful [create](create-stock level.md), [list](list-all-stock levels.md), [retrieve](retrieve-stock level.md) or [update](update-stock level.md) API call.
+A **stock level** object is returned as part of the response body of each successful [create](create-stock level.md), [list](list-all-stock levels.md), [retrieve](retrieve-stock level.md) or [update](update-stock level.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

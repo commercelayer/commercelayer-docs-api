@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The sku option object
 
-A **sku_option** object is returned as part of the response body of each successful [create](create-sku option.md), [list](list-all-sku options.md), [retrieve](retrieve-sku option.md) or [update](update-sku option.md) API call.
+A **sku option** object is returned as part of the response body of each successful [create](create-sku option.md), [list](list-all-sku options.md), [retrieve](retrieve-sku option.md) or [update](update-sku option.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

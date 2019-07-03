@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The customer password reset object
 
-A **customer_password_reset** object is returned as part of the response body of each successful [create](create-customer password reset.md), [list](list-all-customer password resets.md), [retrieve](retrieve-customer password reset.md) or [update](update-customer password reset.md) API call.
+A **customer password reset** object is returned as part of the response body of each successful [create](create-customer password reset.md), [list](list-all-customer password resets.md), [retrieve](retrieve-customer password reset.md) or [update](update-customer password reset.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

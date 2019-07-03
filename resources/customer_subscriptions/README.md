@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The customer subscription object
 
-A **customer_subscription** object is returned as part of the response body of each successful [create](create-customer subscription.md), [list](list-all-customer subscriptions.md), [retrieve](retrieve-customer subscription.md) or [update](update-customer subscription.md) API call.
+A **customer subscription** object is returned as part of the response body of each successful [create](create-customer subscription.md), [list](list-all-customer subscriptions.md), [retrieve](retrieve-customer subscription.md) or [update](update-customer subscription.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

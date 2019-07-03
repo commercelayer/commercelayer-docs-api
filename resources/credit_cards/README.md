@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The credit card object
 
-A **credit_card** object is returned as part of the response body of each successful [create](create-credit card.md), [list](list-all-credit cards.md), [retrieve](retrieve-credit card.md) or [update](update-credit card.md) API call.
+A **credit card** object is returned as part of the response body of each successful [create](create-credit card.md), [list](list-all-credit cards.md), [retrieve](retrieve-credit card.md) or [update](update-credit card.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

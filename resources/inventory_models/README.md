@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The inventory model object
 
-An **inventory_model** object is returned as part of the response body of each successful [create](create-inventory model.md), [list](list-all-inventory models.md), [retrieve](retrieve-inventory model.md) or [update](update-inventory model.md) API call.
+An **inventory model** object is returned as part of the response body of each successful [create](create-inventory model.md), [list](list-all-inventory models.md), [retrieve](retrieve-inventory model.md) or [update](update-inventory model.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

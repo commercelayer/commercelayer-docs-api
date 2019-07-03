@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The shipping method object
 
-A **shipping_method** object is returned as part of the response body of each successful [create](create-shipping method.md), [list](list-all-shipping methods.md), [retrieve](retrieve-shipping method.md) or [update](update-shipping method.md) API call.
+A **shipping method** object is returned as part of the response body of each successful [create](create-shipping method.md), [list](list-all-shipping methods.md), [retrieve](retrieve-shipping method.md) or [update](update-shipping method.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

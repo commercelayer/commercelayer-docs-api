@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The shipping zone object
 
-A **shipping_zone** object is returned as part of the response body of each successful [create](create-shipping zone.md), [list](list-all-shipping zones.md), [retrieve](retrieve-shipping zone.md) or [update](update-shipping zone.md) API call.
+A **shipping zone** object is returned as part of the response body of each successful [create](create-shipping zone.md), [list](list-all-shipping zones.md), [retrieve](retrieve-shipping zone.md) or [update](update-shipping zone.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

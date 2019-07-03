@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The payment method object
 
-A **payment_method** object is returned as part of the response body of each successful [create](create-payment method.md), [list](list-all-payment methods.md), [retrieve](retrieve-payment method.md) or [update](update-payment method.md) API call.
+A **payment method** object is returned as part of the response body of each successful [create](create-payment method.md), [list](list-all-payment methods.md), [retrieve](retrieve-payment method.md) or [update](update-payment method.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

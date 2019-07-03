@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The customer payment source object
 
-A **customer_payment_source** object is returned as part of the response body of each successful [create](create-customer payment source.md), [list](list-all-customer payment sources.md), [retrieve](retrieve-customer payment source.md) or [update](update-customer payment source.md) API call.
+A **customer payment source** object is returned as part of the response body of each successful [create](create-customer payment source.md), [list](list-all-customer payment sources.md), [retrieve](retrieve-customer payment source.md) or [update](update-customer payment source.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

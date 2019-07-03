@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The wire transfer object
 
-A **wire_transfer** object is returned as part of the response body of each successful [create](create-wire transfer.md), [list](list-all-wire transfers.md), [retrieve](retrieve-wire transfer.md) or [update](update-wire transfer.md) API call.
+A **wire transfer** object is returned as part of the response body of each successful [create](create-wire transfer.md), [list](list-all-wire transfers.md), [retrieve](retrieve-wire transfer.md) or [update](update-wire transfer.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

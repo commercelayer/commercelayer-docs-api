@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The line item object
 
-A **line_item** object is returned as part of the response body of each successful [create](create-line item.md), [list](list-all-line items.md), [retrieve](retrieve-line item.md) or [update](update-line item.md) API call.
+A **line item** object is returned as part of the response body of each successful [create](create-line item.md), [list](list-all-line items.md), [retrieve](retrieve-line item.md) or [update](update-line item.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

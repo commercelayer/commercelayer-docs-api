@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The stock location object
 
-A **stock_location** object is returned as part of the response body of each successful [create](create-stock location.md), [list](list-all-stock locations.md), [retrieve](retrieve-stock location.md) or [update](update-stock location.md) API call.
+A **stock location** object is returned as part of the response body of each successful [create](create-stock location.md), [list](list-all-stock locations.md), [retrieve](retrieve-stock location.md) or [update](update-stock location.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

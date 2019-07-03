@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The stock item object
 
-A **stock_item** object is returned as part of the response body of each successful [create](create-stock item.md), [list](list-all-stock items.md), [retrieve](retrieve-stock item.md) or [update](update-stock item.md) API call.
+A **stock item** object is returned as part of the response body of each successful [create](create-stock item.md), [list](list-all-stock items.md), [retrieve](retrieve-stock item.md) or [update](update-stock item.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

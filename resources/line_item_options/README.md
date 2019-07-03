@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The line item option object
 
-A **line_item_option** object is returned as part of the response body of each successful [create](create-line item option.md), [list](list-all-line item options.md), [retrieve](retrieve-line item option.md) or [update](update-line item option.md) API call.
+A **line item option** object is returned as part of the response body of each successful [create](create-line item option.md), [list](list-all-line item options.md), [retrieve](retrieve-line item option.md) or [update](update-line item option.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

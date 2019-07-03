@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The price list object
 
-A **price_list** object is returned as part of the response body of each successful [create](create-price list.md), [list](list-all-price lists.md), [retrieve](retrieve-price list.md) or [update](update-price list.md) API call.
+A **price list** object is returned as part of the response body of each successful [create](create-price list.md), [list](list-all-price lists.md), [retrieve](retrieve-price list.md) or [update](update-price list.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

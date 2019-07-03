@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The shipping category object
 
-A **shipping_category** object is returned as part of the response body of each successful [create](create-shipping category.md), [list](list-all-shipping categories.md), [retrieve](retrieve-shipping category.md) or [update](update-shipping category.md) API call.
+A **shipping category** object is returned as part of the response body of each successful [create](create-shipping category.md), [list](list-all-shipping categories.md), [retrieve](retrieve-shipping category.md) or [update](update-shipping category.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

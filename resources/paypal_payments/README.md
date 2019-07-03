@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The paypal payment object
 
-A **paypal_payment** object is returned as part of the response body of each successful [create](create-paypal payment.md), [list](list-all-paypal payments.md), [retrieve](retrieve-paypal payment.md) or [update](update-paypal payment.md) API call.
+A **paypal payment** object is returned as part of the response body of each successful [create](create-paypal payment.md), [list](list-all-paypal payments.md), [retrieve](retrieve-paypal payment.md) or [update](update-paypal payment.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

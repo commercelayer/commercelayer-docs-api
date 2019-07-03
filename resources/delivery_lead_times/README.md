@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The delivery lead time object
 
-A **delivery_lead_time** object is returned as part of the response body of each successful [create](create-delivery lead time.md), [list](list-all-delivery lead times.md), [retrieve](retrieve-delivery lead time.md) or [update](update-delivery lead time.md) API call.
+A **delivery lead time** object is returned as part of the response body of each successful [create](create-delivery lead time.md), [list](list-all-delivery lead times.md), [retrieve](retrieve-delivery lead time.md) or [update](update-delivery lead time.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
