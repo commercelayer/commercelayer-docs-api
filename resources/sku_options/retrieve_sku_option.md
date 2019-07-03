@@ -1,10 +1,10 @@
 ---
-description: How to fetch a specific SKU via API
+description: How to fetch a specific sku option via API
 ---
 
-# Retrieve an SKU
+# Retrieve a sku option
 
-To fetch a single SKU, send a `GET` request to the `/api/sku_options/:id` endpoint, where `id` is the ID of the resource that you want to retrieve.
+To fetch a single sku option, send a `GET` request to the `/api/sku_options/:id` endpoint, where `id` is the ID of the resource that you want to retrieve.
 
 {% page-ref page="../../fetching-resources.md" %}
 
@@ -16,7 +16,7 @@ To fetch a single SKU, send a `GET` request to the `/api/sku_options/:id` endpoi
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches the SKU identified by the id "xYZkjABcde":
+The following request fetches the sku option identified by the id "xYZkjABcde":
 
 ```javascript
 curl -X GET \

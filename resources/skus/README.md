@@ -1,5 +1,5 @@
 ---
-description: The SKU object and its fields
+description: The sku object and its fields
 ---
 
 # Skus
@@ -9,9 +9,9 @@ A unique code identifies each SKU, that can be either the EAN code, the UPC or a
 The SKU name, description and image URL are best suited for internal usage (Commerce Layer is not a CMS).
 
 
-### The SKU object
+### The sku object
 
-An **SKU** object is returned as part of the response body of each successful
+A **sku** object is returned as part of the response body of each successful
 [create](https://docs.commercelayer.io/resources/skus/create_sku),
 [list](https://docs.commercelayer.io/resources/skus/list_skus),
 [retrieve](https://docs.commercelayer.io/resources/skus/retrieve_sku),
@@ -20,8 +20,8 @@ or [update](https://docs.commercelayer.io/resources/skus/update_sku) API call.
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | **type** | `string` | `skus` |
-| **id** | `string` | The SKU unique identifier |
-| links.**self** | `string` | The SKU endpoint URL |
+| **id** | `string` | The sku unique identifier |
+| links.**self** | `string` | The sku endpoint URL |
 | attributes.**code** | `string` | The SKU code, that uniquely identifies the SKU within the organization. |
 | attributes.**name** | `string` | The internal name of the . |
 | attributes.**description** | `string` | An internal description of the SKU. |

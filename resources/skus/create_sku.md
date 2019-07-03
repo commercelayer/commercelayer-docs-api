@@ -1,10 +1,10 @@
 ---
-description: How to create an SKU via API
+description: How to create a sku via API
 ---
 
-# Create an SKU
+# Create a sku
 
-To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing the resource arguments in the request body.
+To create a new sku, send a `POST` request to the `/api/skus` endpoint, passing the resource arguments in the request body.
 
 {% page-ref page="../../creating-resources.md" %}
 
@@ -33,7 +33,7 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 
 {% tabs %}
 {% tab title="Request" %}
-The following request creates a new SKU:
+The following request creates a new sku:
 
 ```javascript
 curl -X POST \
@@ -62,7 +62,7 @@ curl -X POST \
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `SKU` object:
+On success, the API responds with a `201 Created` status code, returning the created `sku` object:
 
 ```javascript
 {

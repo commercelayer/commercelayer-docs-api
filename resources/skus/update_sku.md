@@ -1,10 +1,10 @@
 ---
-description: How to update an existing SKU via API
+description: How to update an existing sku via API
 ---
 
-# Update an SKU
+# Update a sku
 
-To update an existing SKU, send a `PATCH` request to the `/api/skus/:id` endpoint, where `id` is the ID of the resource that you want to update.
+To update an existing sku, send a `PATCH` request to the `/api/skus/:id` endpoint, where `id` is the ID of the resource that you want to update.
 
 Here below the list of all the possible arguments that you can pass with the request body.
 
@@ -36,7 +36,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 {% tabs %}
 {% tab title="Request" %}
-The following request updates the SKU identified by the ID "xYZkjABcde":
+The following request updates the sku identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X PATCH \
