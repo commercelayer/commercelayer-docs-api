@@ -10,7 +10,11 @@ In case an SKU is available in more stock locations, it gets shipped from those 
 
 ### The stock level object
 
-A **stock level** object is returned as part of the response body of each successful [create](create-stock level.md), [list](list-all-stock levels.md), [retrieve](retrieve-stock level.md) or [update](update-stock level.md) API call.
+A **stock level** object is returned as part of the response body of each successful
+/api-reference/resources/stock_levels/create_stock_level,
+/api-reference/resources/stock_levels/list_stock_levels,
+/api-reference/resources/stock_levels/retrieve_stock_level,
+or /api-reference/resources/stock_levels/update_stock_level API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

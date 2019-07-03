@@ -12,7 +12,11 @@ The order object includes all the data you need. You never need to make any calc
 
 ### The line item object
 
-A **line item** object is returned as part of the response body of each successful [create](create-line item.md), [list](list-all-line items.md), [retrieve](retrieve-line item.md) or [update](update-line item.md) API call.
+A **line item** object is returned as part of the response body of each successful
+/api-reference/resources/line_items/create_line_item,
+/api-reference/resources/line_items/list_line_items,
+/api-reference/resources/line_items/retrieve_line_item,
+or /api-reference/resources/line_items/update_line_item API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

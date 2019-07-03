@@ -10,7 +10,11 @@ When you create a line item, it gets the price associated with the order's the p
 
 ### The price object
 
-A **price** object is returned as part of the response body of each successful [create](create-price.md), [list](list-all-prices.md), [retrieve](retrieve-price.md) or [update](update-price.md) API call.
+A **price** object is returned as part of the response body of each successful
+/api-reference/resources/prices/create_price,
+/api-reference/resources/prices/list_prices,
+/api-reference/resources/prices/retrieve_price,
+or /api-reference/resources/prices/update_price API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -11,7 +11,11 @@ During checkout, a logged customer can retrieve their saved addresses and use th
 
 ### The customer address object
 
-A **customer address** object is returned as part of the response body of each successful [create](create-customer address.md), [list](list-all-customer addresses.md), [retrieve](retrieve-customer address.md) or [update](update-customer address.md) API call.
+A **customer address** object is returned as part of the response body of each successful
+/api-reference/resources/customer_addresses/create_customer_address,
+/api-reference/resources/customer_addresses/list_customer_addresses,
+/api-reference/resources/customer_addresses/retrieve_customer_address,
+or /api-reference/resources/customer_addresses/update_customer_address API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

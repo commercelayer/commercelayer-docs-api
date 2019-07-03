@@ -10,7 +10,11 @@ Each shipping method can have a price and can be free over a specific order's am
 
 ### The shipping method object
 
-A **shipping method** object is returned as part of the response body of each successful [create](create-shipping method.md), [list](list-all-shipping methods.md), [retrieve](retrieve-shipping method.md) or [update](update-shipping method.md) API call.
+A **shipping method** object is returned as part of the response body of each successful
+/api-reference/resources/shipping_methods/create_shipping_method,
+/api-reference/resources/shipping_methods/list_shipping_methods,
+/api-reference/resources/shipping_methods/retrieve_shipping_method,
+or /api-reference/resources/shipping_methods/update_shipping_method API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

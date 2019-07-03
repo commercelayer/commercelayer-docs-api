@@ -13,7 +13,11 @@ In case, after the import is complete you also get the number of destroyed recor
 
 ### The import object
 
-An **import** object is returned as part of the response body of each successful [create](create-import.md), [list](list-all-imports.md), [retrieve](retrieve-import.md) or [update](update-import.md) API call.
+An **import** object is returned as part of the response body of each successful
+/api-reference/resources/imports/create_import,
+/api-reference/resources/imports/list_imports,
+/api-reference/resources/imports/retrieve_import,
+or /api-reference/resources/imports/update_import API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

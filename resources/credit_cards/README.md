@@ -10,7 +10,11 @@ Customers can save their credit cards in their wallets (as customer payment sour
 
 ### The credit card object
 
-A **credit card** object is returned as part of the response body of each successful [create](create-credit card.md), [list](list-all-credit cards.md), [retrieve](retrieve-credit card.md) or [update](update-credit card.md) API call.
+A **credit card** object is returned as part of the response body of each successful
+/api-reference/resources/credit_cards/create_credit_card,
+/api-reference/resources/credit_cards/list_credit_cards,
+/api-reference/resources/credit_cards/retrieve_credit_card,
+or /api-reference/resources/credit_cards/update_credit_card API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

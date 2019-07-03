@@ -6,12 +6,16 @@ description: The inventory model object and its fields
 
 An inventory model defines a list of stock locations ordered by priority.
 The order determines how the availability of SKUs gets calculated within a market.
-If an order contains line items from two or more stock locations, the order is split into two or more shipments, one for each location (<a href="/glossary/inventory_model/">learn more</a>).
+If an order contains line items from two or more stock locations, the order is split into two or more shipments, one for each location ([learn more](https://commercelayer.io/glossary/inventory_model/)).
 
 
 ### The inventory model object
 
-An **inventory model** object is returned as part of the response body of each successful [create](create-inventory model.md), [list](list-all-inventory models.md), [retrieve](retrieve-inventory model.md) or [update](update-inventory model.md) API call.
+An **inventory model** object is returned as part of the response body of each successful
+/api-reference/resources/inventory_models/create_inventory_model,
+/api-reference/resources/inventory_models/list_inventory_models,
+/api-reference/resources/inventory_models/retrieve_inventory_model,
+or /api-reference/resources/inventory_models/update_inventory_model API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

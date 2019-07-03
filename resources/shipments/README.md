@@ -14,7 +14,11 @@ The combination of stock locations and shipping categories determine the number 
 
 ### The shipment object
 
-A **shipment** object is returned as part of the response body of each successful [create](create-shipment.md), [list](list-all-shipments.md), [retrieve](retrieve-shipment.md) or [update](update-shipment.md) API call.
+A **shipment** object is returned as part of the response body of each successful
+/api-reference/resources/shipments/create_shipment,
+/api-reference/resources/shipments/list_shipments,
+/api-reference/resources/shipments/retrieve_shipment,
+or /api-reference/resources/shipments/update_shipment API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

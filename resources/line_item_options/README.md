@@ -10,7 +10,11 @@ The SKU options cost is automatically added to the line item's amount.
 
 ### The line item option object
 
-A **line item option** object is returned as part of the response body of each successful [create](create-line item option.md), [list](list-all-line item options.md), [retrieve](retrieve-line item option.md) or [update](update-line item option.md) API call.
+A **line item option** object is returned as part of the response body of each successful
+/api-reference/resources/line_item_options/create_line_item_option,
+/api-reference/resources/line_item_options/list_line_item_options,
+/api-reference/resources/line_item_options/retrieve_line_item_option,
+or /api-reference/resources/line_item_options/update_line_item_option API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

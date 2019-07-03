@@ -11,7 +11,11 @@ You can use customer groups to manage B2B customers, B2C loyalty programs, and m
 
 ### The customer group object
 
-A **customer group** object is returned as part of the response body of each successful [create](create-customer group.md), [list](list-all-customer groups.md), [retrieve](retrieve-customer group.md) or [update](update-customer group.md) API call.
+A **customer group** object is returned as part of the response body of each successful
+/api-reference/resources/customer_groups/create_customer_group,
+/api-reference/resources/customer_groups/list_customer_groups,
+/api-reference/resources/customer_groups/retrieve_customer_group,
+or /api-reference/resources/customer_groups/update_customer_group API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

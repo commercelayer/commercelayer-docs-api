@@ -16,7 +16,11 @@ A typical flow is to send an email to the customer with a verification link that
 
 ### The customer password reset object
 
-A **customer password reset** object is returned as part of the response body of each successful [create](create-customer password reset.md), [list](list-all-customer password resets.md), [retrieve](retrieve-customer password reset.md) or [update](update-customer password reset.md) API call.
+A **customer password reset** object is returned as part of the response body of each successful
+/api-reference/resources/customer_password_resets/create_customer_password_reset,
+/api-reference/resources/customer_password_resets/list_customer_password_resets,
+/api-reference/resources/customer_password_resets/retrieve_customer_password_reset,
+or /api-reference/resources/customer_password_resets/update_customer_password_reset API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

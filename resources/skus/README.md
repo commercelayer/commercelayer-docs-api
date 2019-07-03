@@ -11,7 +11,11 @@ The SKU name, description and image URL are best suited for internal usage (Comm
 
 ### The SKU object
 
-An **SKU** object is returned as part of the response body of each successful [create](create-SKU.md), [list](list-all-SKUs.md), [retrieve](retrieve-SKU.md) or [update](update-SKU.md) API call.
+An **SKU** object is returned as part of the response body of each successful
+/api-reference/resources/skus/create_sku,
+/api-reference/resources/skus/list_skus,
+/api-reference/resources/skus/retrieve_sku,
+or /api-reference/resources/skus/update_sku API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -11,7 +11,11 @@ Customers can save their most used addresses in their address books (as customer
 
 ### The address object
 
-An **address** object is returned as part of the response body of each successful [create](create-address.md), [list](list-all-addresses.md), [retrieve](retrieve-address.md) or [update](update-address.md) API call.
+An **address** object is returned as part of the response body of each successful
+/api-reference/resources/addresses/create_address,
+/api-reference/resources/addresses/list_addresses,
+/api-reference/resources/addresses/retrieve_address,
+or /api-reference/resources/addresses/update_address API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

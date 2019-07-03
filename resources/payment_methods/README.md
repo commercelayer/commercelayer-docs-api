@@ -10,7 +10,11 @@ They can have a price and must be present before placing an order ([learn more](
 
 ### The payment method object
 
-A **payment method** object is returned as part of the response body of each successful [create](create-payment method.md), [list](list-all-payment methods.md), [retrieve](retrieve-payment method.md) or [update](update-payment method.md) API call.
+A **payment method** object is returned as part of the response body of each successful
+/api-reference/resources/payment_methods/create_payment_method,
+/api-reference/resources/payment_methods/list_payment_methods,
+/api-reference/resources/payment_methods/retrieve_payment_method,
+or /api-reference/resources/payment_methods/update_payment_method API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -12,7 +12,11 @@ Let the customers manage their active subscriptions through their reserved area.
 
 ### The customer subscription object
 
-A **customer subscription** object is returned as part of the response body of each successful [create](create-customer subscription.md), [list](list-all-customer subscriptions.md), [retrieve](retrieve-customer subscription.md) or [update](update-customer subscription.md) API call.
+A **customer subscription** object is returned as part of the response body of each successful
+/api-reference/resources/customer_subscriptions/create_customer_subscription,
+/api-reference/resources/customer_subscriptions/list_customer_subscriptions,
+/api-reference/resources/customer_subscriptions/retrieve_customer_subscription,
+or /api-reference/resources/customer_subscriptions/update_customer_subscription API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

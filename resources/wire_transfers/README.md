@@ -10,7 +10,11 @@ Being manual payments, they are always authorized.
 
 ### The wire transfer object
 
-A **wire transfer** object is returned as part of the response body of each successful [create](create-wire transfer.md), [list](list-all-wire transfers.md), [retrieve](retrieve-wire transfer.md) or [update](update-wire transfer.md) API call.
+A **wire transfer** object is returned as part of the response body of each successful
+/api-reference/resources/wire_transfers/create_wire_transfer,
+/api-reference/resources/wire_transfers/list_wire_transfers,
+/api-reference/resources/wire_transfers/retrieve_wire_transfer,
+or /api-reference/resources/wire_transfers/update_wire_transfer API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

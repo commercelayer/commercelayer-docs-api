@@ -13,7 +13,11 @@ Canceling an order automatically voids its payment source's authorization.
 
 ### The order object
 
-An **order** object is returned as part of the response body of each successful [create](create-order.md), [list](list-all-orders.md), [retrieve](retrieve-order.md) or [update](update-order.md) API call.
+An **order** object is returned as part of the response body of each successful
+/api-reference/resources/orders/create_order,
+/api-reference/resources/orders/list_orders,
+/api-reference/resources/orders/retrieve_order,
+or /api-reference/resources/orders/update_order API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

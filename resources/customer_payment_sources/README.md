@@ -10,7 +10,11 @@ During checkout, a logged customer can retrieve their saved cards and use them t
 
 ### The customer payment source object
 
-A **customer payment source** object is returned as part of the response body of each successful [create](create-customer payment source.md), [list](list-all-customer payment sources.md), [retrieve](retrieve-customer payment source.md) or [update](update-customer payment source.md) API call.
+A **customer payment source** object is returned as part of the response body of each successful
+/api-reference/resources/customer_payment_sources/create_customer_payment_source,
+/api-reference/resources/customer_payment_sources/list_customer_payment_sources,
+/api-reference/resources/customer_payment_sources/retrieve_customer_payment_source,
+or /api-reference/resources/customer_payment_sources/update_customer_payment_source API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

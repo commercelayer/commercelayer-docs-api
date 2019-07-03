@@ -5,12 +5,16 @@ description: The delivery lead time object and its fields
 # Delivery lead times
 
 Delivery lead times provide customers with detailed information about their shipments.
-This is useful if you ship from many stock locations or offer more shipping method options within a market (<a href="/glossary/delivery_lead_time/">learn more</a>).
+This is useful if you ship from many stock locations or offer more shipping method options within a market ([learn more](https://commercelayer.io/glossary/delivery_lead_time/)).
 
 
 ### The delivery lead time object
 
-A **delivery lead time** object is returned as part of the response body of each successful [create](create-delivery lead time.md), [list](list-all-delivery lead times.md), [retrieve](retrieve-delivery lead time.md) or [update](update-delivery lead time.md) API call.
+A **delivery lead time** object is returned as part of the response body of each successful
+/api-reference/resources/delivery_lead_times/create_delivery_lead_time,
+/api-reference/resources/delivery_lead_times/list_delivery_lead_times,
+/api-reference/resources/delivery_lead_times/retrieve_delivery_lead_time,
+or /api-reference/resources/delivery_lead_times/update_delivery_lead_time API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
