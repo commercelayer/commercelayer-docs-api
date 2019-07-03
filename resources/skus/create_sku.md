@@ -1,8 +1,8 @@
 ---
-description: How to create a SKU via API
+description: How to create an SKU via API
 ---
 
-# Create a SKU
+# Create an SKU
 
 To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing the resource arguments in the request body.
 

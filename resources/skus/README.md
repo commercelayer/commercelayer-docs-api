@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### The SKU object
 
-A **sku** object is returned as part of the response body of each successful [create](create-SKU.md), [list](list-all-SKUs.md), [retrieve](retrieve-SKU.md) or [update](update-SKU.md) API call.
+An **sku** object is returned as part of the response body of each successful [create](create-SKU.md), [list](list-all-SKUs.md), [retrieve](retrieve-SKU.md) or [update](update-SKU.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
