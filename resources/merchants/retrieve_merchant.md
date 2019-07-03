@@ -30,35 +30,7 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-{
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "merchants",
-    "links": {
-      "self": "https://yourdomein.commercelayer.io/api/merchants/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "The Brand Inc.",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      },
-    },
-    "relationships": {
-      "address": {
-        "links": {
-            "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/address",
-            "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/address"
-        }
-      },
-    },
-    "meta": {
-      "mode": "test"
-    }
-  }
-}
+"merchants"
 ```
 {% endtab %}
 {% endtabs %}

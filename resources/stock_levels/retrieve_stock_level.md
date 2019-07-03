@@ -30,42 +30,7 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-{
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "stock_levels",
-    "links": {
-      "self": "https://yourdomein.commercelayer.io/api/stock_levels/xYZkjABcde"
-    },
-    "attributes": {
-      "priority": "1",
-      "on_hold": "false",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      },
-    },
-    "relationships": {
-      "stock_location": {
-        "links": {
-            "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
-            "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
-        }
-      },
-      "inventory_model": {
-        "links": {
-            "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
-            "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
-        }
-      },
-    },
-    "meta": {
-      "mode": "test"
-    }
-  }
-}
+"stock_levels"
 ```
 {% endtab %}
 {% endtabs %}

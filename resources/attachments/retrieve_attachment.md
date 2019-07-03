@@ -30,37 +30,7 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-{
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "attachments",
-    "links": {
-      "self": "https://yourdomein.commercelayer.io/api/attachments/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "DDT transport document",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "url": "https://s3.yourbrand.com/attachment.pdf",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      },
-    },
-    "relationships": {
-      "attachable": {
-        "links": {
-            "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/relationships/attachable",
-            "related": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/attachable"
-        }
-      },
-    },
-    "meta": {
-      "mode": "test"
-    }
-  }
-}
+"attachments"
 ```
 {% endtab %}
 {% endtabs %}

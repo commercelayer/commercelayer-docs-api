@@ -30,37 +30,7 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-{
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "price_lists",
-    "links": {
-      "self": "https://yourdomein.commercelayer.io/api/price_lists/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "EU Price list",
-      "currency_code": "EUR",
-      "tax_included": "true",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      },
-    },
-    "relationships": {
-      "prices": {
-        "links": {
-            "self": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde/relationships/prices",
-            "related": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde/prices"
-        }
-      },
-    },
-    "meta": {
-      "mode": "test"
-    }
-  }
-}
+"price_lists"
 ```
 {% endtab %}
 {% endtabs %}
