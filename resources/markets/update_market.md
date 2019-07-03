@@ -87,15 +87,15 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde"
     },
     "attributes": {
-        "number": "1234"
-        "name": "EU Market"
-        "facebook_pixel_id": "1234567890"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "number": "1234",
+        "name": "EU Market",
+        "facebook_pixel_id": "1234567890",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
         "merchant": {
@@ -103,19 +103,19 @@ On success, the API responds with a `200 OK` status code, returning the updated 
               "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/merchant",
               "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/merchant"
           }
-        }
+        },
         "price_list": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/price_list",
               "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/price_list"
           }
-        }
+        },
         "inventory_model": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
               "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
           }
-        }
+        },
       },
       "meta": {
           "mode": "test"

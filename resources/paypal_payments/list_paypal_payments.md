@@ -39,20 +39,20 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
       },
       "attributes": {
-        "return_url": "https://yourbrand.com/thankyou"
-        "cancel_url": "https://yourbrand.com/checkout/payment"
-        "note_to_payer": "Thank you for shopping with us!"
-        "paypal_payer_id": "ABCDEFG123456"
-        "name": "ABCDEFG123456"
-        "paypal_id": "1234567890"
-        "status": "created"
-        "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "return_url": "https://yourbrand.com/thankyou",
+        "cancel_url": "https://yourbrand.com/checkout/payment",
+        "note_to_payer": "Thank you for shopping with us!",
+        "paypal_payer_id": "ABCDEFG123456",
+        "name": "ABCDEFG123456",
+        "paypal_id": "1234567890",
+        "status": "created",
+        "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
       },
       "relationships": {
         "order": {
@@ -60,7 +60,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
               "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/order",
               "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/order"
           }
-        }
+        },
       },
       "meta": {
         "mode": "test"

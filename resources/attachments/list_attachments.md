@@ -39,15 +39,15 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
       },
       "attributes": {
-        "name": "DDT transport document"
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        "url": "https://s3.yourbrand.com/attachment.pdf"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "name": "DDT transport document",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "url": "https://s3.yourbrand.com/attachment.pdf",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
       },
       "relationships": {
         "attachable": {
@@ -55,7 +55,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
               "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/relationships/attachable",
               "related": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/attachable"
           }
-        }
+        },
       },
       "meta": {
         "mode": "test"

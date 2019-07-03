@@ -38,13 +38,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
     },
     "attributes": {
-      "customer_email": ""
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "customer_email": "",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "customer": {
@@ -52,7 +52,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/relationships/customer",
             "related": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/customer"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

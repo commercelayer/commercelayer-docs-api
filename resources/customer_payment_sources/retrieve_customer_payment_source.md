@@ -38,13 +38,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/customer_payment_sources/xYZkjABcde"
     },
     "attributes": {
-      "name": "XXXX-XXXX-XXXX-1111"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "name": "XXXX-XXXX-XXXX-1111",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "customer": {
@@ -52,13 +52,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/customer",
             "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/customer"
         }
-      }
+      },
       "payment_source": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/payment_source",
             "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/payment_source"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

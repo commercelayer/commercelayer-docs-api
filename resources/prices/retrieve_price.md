@@ -38,20 +38,20 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/prices/xYZkjABcde"
     },
     "attributes": {
-      "currency_code": "EUR"
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX"
-      "amount_cents": "10000"
-      "amount_float": "100.0"
-      "formatted_amount": "€100,00"
-      "compare_at_amount_cents": "13000"
-      "compare_at_amount_float": "130.00"
-      "formatted_compare_at_amount": "€130,00"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "currency_code": "EUR",
+      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "amount_cents": "10000",
+      "amount_float": "100.0",
+      "formatted_amount": "€100,00",
+      "compare_at_amount_cents": "13000",
+      "compare_at_amount_float": "130.00",
+      "formatted_compare_at_amount": "€130,00",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "price_list": {
@@ -59,13 +59,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/price_list",
             "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/price_list"
         }
-      }
+      },
       "sku": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/sku",
             "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/sku"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

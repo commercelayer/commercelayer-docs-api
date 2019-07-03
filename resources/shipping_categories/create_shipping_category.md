@@ -58,13 +58,13 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
     },
     "attributes": {
-        "name": "Merchandise"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "name": "Merchandise",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
         "skus": {
@@ -72,7 +72,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
               "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
               "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
           }
-        }
+        },
       },
       "meta": {
           "mode": "test"

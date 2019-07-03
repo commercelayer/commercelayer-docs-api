@@ -66,15 +66,15 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
     },
     "attributes": {
-        "customer_email": "john@example.com"
-        "reset_password_token": "xhFfkmfybsLxzaAP6xcs"
-        "reset_password_at": "2018-01-01T12:00:00.000Z"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "customer_email": "john@example.com",
+        "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
+        "reset_password_at": "2018-01-01T12:00:00.000Z",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
         "customer": {
@@ -82,7 +82,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
               "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/relationships/customer",
               "related": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/customer"
           }
-        }
+        },
       },
       "meta": {
           "mode": "test"

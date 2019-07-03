@@ -38,13 +38,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/inventory_models/xYZkjABcde"
     },
     "attributes": {
-      "name": "EU Inventory Model"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "name": "EU Inventory Model",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "stock_levels": {
@@ -52,7 +52,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
             "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

@@ -38,18 +38,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/payment_methods/xYZkjABcde"
     },
     "attributes": {
-      "payment_source_type": "CreditCard"
-      "name": "Credit Card"
-      "disabled_at": "2018-01-01T12:00:00.000Z"
-      "price_amount_cents": "0"
-      "price_amount_float": "0.0"
-      "formatted_price_amount": "€0,00"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "payment_source_type": "CreditCard",
+      "name": "Credit Card",
+      "disabled_at": "2018-01-01T12:00:00.000Z",
+      "price_amount_cents": "0",
+      "price_amount_float": "0.0",
+      "formatted_price_amount": "€0,00",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "market": {
@@ -57,13 +57,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/market",
             "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/market"
         }
-      }
+      },
       "payment_gateway": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/payment_gateway",
             "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/payment_gateway"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

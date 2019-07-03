@@ -66,14 +66,14 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
     },
     "attributes": {
-        "name": "Primary warehouse"
-        "label_format": "PDF"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "name": "Primary warehouse",
+        "label_format": "PDF",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
         "address": {
@@ -81,19 +81,19 @@ On success, the API responds with a `201 Created` status code, returning the cre
               "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/address",
               "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
           }
-        }
+        },
         "stock_levels": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
               "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
           }
-        }
+        },
         "stock_items": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_items",
               "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_items"
           }
-        }
+        },
       },
       "meta": {
           "mode": "test"

@@ -38,13 +38,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/customer_addresses/xYZkjABcde"
     },
     "attributes": {
-      "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "customer": {
@@ -52,13 +52,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/customer",
             "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/customer"
         }
-      }
+      },
       "address": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/address",
             "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/address"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

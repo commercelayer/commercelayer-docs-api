@@ -80,14 +80,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
     },
     "attributes": {
-        "priority": "1"
-        "on_hold": "false"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "priority": "1",
+        "on_hold": "false",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
         "stock_location": {
@@ -95,13 +95,13 @@ On success, the API responds with a `200 OK` status code, returning the updated 
               "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
               "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
           }
-        }
+        },
         "inventory_model": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
               "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
           }
-        }
+        },
       },
       "meta": {
           "mode": "test"

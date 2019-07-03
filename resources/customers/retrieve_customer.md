@@ -38,14 +38,14 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomein.commercelayer.io/api/customers/xYZkjABcde"
     },
     "attributes": {
-      "email": "john@example.com"
-      "status": "prospect"
-      "created_at": "2018-01-01T12:00:00.000Z"
-      "updated_at": "2018-01-01T12:00:00.000Z"
-      "reference": "ANYREFEFERNCE"
+      "email": "john@example.com",
+      "status": "prospect",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
       "metadata": {
   "foo": "bar"
-}
+},
     },
     "relationships": {
       "customer_group": {
@@ -53,31 +53,31 @@ On success, the API responds with a `200 OK` status code, returning a single res
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_group",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_group"
         }
-      }
+      },
       "customer_addresses": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_addresses",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_addresses"
         }
-      }
+      },
       "customer_payment_sources": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_payment_sources",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_payment_sources"
         }
-      }
+      },
       "customer_subscriptions": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_subscriptions",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_subscriptions"
         }
-      }
+      },
       "orders": {
         "links": {
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/orders",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/orders"
         }
-      }
+      },
     },
     "meta": {
       "mode": "test"

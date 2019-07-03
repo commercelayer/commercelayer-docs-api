@@ -39,14 +39,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
       },
       "attributes": {
-        "sku_code": "TSHIRTMM000000FFFFFFXLXX"
-        "quantity": "100"
-        "created_at": "2018-01-01T12:00:00.000Z"
-        "updated_at": "2018-01-01T12:00:00.000Z"
-        "reference": "ANYREFEFERNCE"
+        "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+        "quantity": "100",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
         "metadata": {
   "foo": "bar"
-}
+},
       },
       "relationships": {
         "stock_location": {
@@ -54,13 +54,13 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
               "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/stock_location",
               "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/stock_location"
           }
-        }
+        },
         "sku": {
           "links": {
               "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/sku",
               "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/sku"
           }
-        }
+        },
       },
       "meta": {
         "mode": "test"
