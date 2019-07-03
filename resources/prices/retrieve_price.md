@@ -10,7 +10,7 @@ To fetch a single price, send a `GET` request to the `/api/prices/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/prices/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
 
 ### **Example**
 

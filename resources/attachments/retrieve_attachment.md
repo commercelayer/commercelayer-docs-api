@@ -10,7 +10,7 @@ To fetch a single attachment, send a `GET` request to the `/api/attachments/:id`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/attachments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/attachments/:id**
 
 ### **Example**
 

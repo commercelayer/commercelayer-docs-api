@@ -10,7 +10,7 @@ To fetch a single order, send a `GET` request to the `/api/orders/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
 
 ### **Example**
 

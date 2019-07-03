@@ -10,7 +10,7 @@ To fetch a single shipping zone, send a `GET` request to the `/api/shipping_zone
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
 
 ### **Example**
 

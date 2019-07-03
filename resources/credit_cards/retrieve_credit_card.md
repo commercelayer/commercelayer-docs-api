@@ -10,7 +10,7 @@ To fetch a single credit card, send a `GET` request to the `/api/credit_cards/:i
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/credit_cards/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards/:id**
 
 ### **Example**
 
