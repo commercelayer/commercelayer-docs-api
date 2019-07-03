@@ -10,19 +10,19 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
+**POST** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**min_hours** | `integer` | Required |
-| attributes.**max_hours** | `integer` | Required |
+| attributes.**min\_hours** | `integer` | Required |
+| attributes.**max\_hours** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**shipping_method** | `object` | Required |
+| relationships.**stock\_location** | `object` | Required |
+| relationships.**shipping\_method** | `object` | Required |
 
 ### Example
 
@@ -71,39 +71,40 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "delivery_lead_times",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde"
     },
     "attributes": {
-      "min_hours": "48",
-      "max_hours": "72",
-      "min_days": "2",
-      "max_days": "3",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "min_hours": "48",
+        "max_hours": "72",
+        "min_days": "2",
+        "max_days": "3",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "stock_location": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/stock_location"
-        }
+        "stock_location": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/stock_location",
+              "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/stock_location"
+          }
+        },
+        "shipping_method": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/shipping_method",
+              "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/shipping_method"
+          }
+        },
       },
-      "shipping_method": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/shipping_method",
-          "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/shipping_method"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

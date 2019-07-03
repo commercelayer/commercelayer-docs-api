@@ -8,10 +8,10 @@ Commerce Layer is free for developers, and it will be forever. So the best way t
 
 These are the basic four steps to get started:
 
-1. Create a [test environment](introduction.md#create-a-test-environment)
-2. Get your [credentials](introduction.md#get-your-credentials)
-3. Get an [access token](introduction.md#get-an-access-token)
-4. Make your first [API call](introduction.md#make-your-first-api-call)
+1. Create a [test environment](getting-started.md#create-a-test-environment)
+2. Get your [credentials](getting-started.md#get-your-credentials)
+3. Get an [access token](getting-started.md#get-an-access-token)
+4. Make your first [API call](getting-started.md#make-your-first-api-call)
 
 ### Create a test environment
 

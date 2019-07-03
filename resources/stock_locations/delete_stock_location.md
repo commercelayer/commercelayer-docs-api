@@ -10,7 +10,7 @@ To delete a stock location, send a `DELETE` request to the `/api/stock_locations
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/stock\_locations/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

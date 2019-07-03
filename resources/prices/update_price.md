@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/prices/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
-| attributes.**amount_cents** | `integer` | Required |
-| attributes.**compare_at_amount_cents** | `integer` | Required |
+| attributes.**sku\_code** | `string` | Optional |
+| attributes.**amount\_cents** | `integer` | Required |
+| attributes.**compare\_at\_amount\_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price_list** | `object` | Required |
+| relationships.**price\_list** | `object` | Required |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -79,43 +79,44 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "prices",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
     },
     "attributes": {
-      "currency_code": "EUR",
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "amount_cents": "10000",
-      "amount_float": "100.0",
-      "formatted_amount": "€100,00",
-      "compare_at_amount_cents": "13000",
-      "compare_at_amount_float": "130.00",
-      "formatted_compare_at_amount": "€130,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "currency_code": "EUR",
+        "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+        "amount_cents": "10000",
+        "amount_float": "100.0",
+        "formatted_amount": "€100,00",
+        "compare_at_amount_cents": "13000",
+        "compare_at_amount_float": "130.00",
+        "formatted_compare_at_amount": "€130,00",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "price_list": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/price_list"
-        }
+        "price_list": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/price_list",
+              "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/price_list"
+          }
+        },
+        "sku": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/sku",
+              "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/sku"
+          }
+        },
       },
-      "sku": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/sku"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

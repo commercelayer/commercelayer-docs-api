@@ -10,17 +10,17 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/imports**
+**POST** https://yourdomain.commercelayer.io**/api/imports**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource_type** | `string` | Required |
-| attributes.**parent_resource_id** | `integer` | Required |
+| attributes.**resource\_type** | `string` | Required |
+| attributes.**parent\_resource\_id** | `integer` | Required |
 | attributes.**inputs** | `object` | Required |
-| attributes.**cleanup_records** | `boolean` |  |
+| attributes.**cleanup\_records** | `boolean` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -60,58 +60,59 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "imports",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/imports/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/imports/xYZkjABcde"
     },
     "attributes": {
-      "resource_type": "skus",
-      "parent_resource_id": "1234",
-      "status": "started",
-      "started_at": "2018-01-01T12:00:00.000Z",
-      "completed_at": "2018-01-01T12:00:00.000Z",
-      "inputs": [
-        {
-          "code": "ABC",
-          "name": "Foo"
-        },
-        {
-          "code": "DEF",
-          "name": "Bar"
-        }
-      ],
-      "errors_count": "3",
-      "warnings_count": "1",
-      "destroyed_count": "99",
-      "errors_log": [
-        {
-          "code:ABC": {
-            "name": [
-              "has already been taken"
-            ]
-          }
-        }
-      ],
-      "warnings_log": [
-        {
-          "code:ABC": [
-            "could not be deleted"
-          ]
-        }
-      ],
-      "cleanup_records": "true",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "resource_type": "skus",
+        "parent_resource_id": "1234",
+        "status": "started",
+        "started_at": "2018-01-01T12:00:00.000Z",
+        "completed_at": "2018-01-01T12:00:00.000Z",
+        "inputs": [
+  {
+    "code": "ABC",
+    "name": "Foo"
+  },
+  {
+    "code": "DEF",
+    "name": "Bar"
+  }
+],
+        "errors_count": "3",
+        "warnings_count": "1",
+        "destroyed_count": "99",
+        "errors_log": [
+  {
+    "code:ABC": {
+      "name": [
+        "has already been taken"
+      ]
+    }
+  }
+],
+        "warnings_log": [
+  {
+    "code:ABC": [
+      "could not be deleted"
+    ]
+  }
+],
+        "cleanup_records": "true",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-    },
-    "meta": {
-      "mode": "test"
-    }
+      },
+      "meta": {
+          "mode": "test"
+      }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

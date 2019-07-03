@@ -10,7 +10,7 @@ To fetch a single stock item, send a `GET` request to the `/api/stock_items/:id`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
 
 ### **Example**
 
@@ -32,40 +32,17 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "stock_items",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
-    },
-    "attributes": {
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "quantity": "100",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "stock_location": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/stock_location"
-        }
-      },
-      "sku": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/sku"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+    "quantity": "100",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

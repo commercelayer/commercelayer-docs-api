@@ -10,7 +10,7 @@ To fetch a single price, send a `GET` request to the `/api/prices/:id` endpoint,
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
+**GET** https://yourdomain.commercelayer.io**/api/prices/:id**
 
 ### **Example**
 
@@ -32,46 +32,23 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "prices",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
-    },
-    "attributes": {
-      "currency_code": "EUR",
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "amount_cents": "10000",
-      "amount_float": "100.0",
-      "formatted_amount": "€100,00",
-      "compare_at_amount_cents": "13000",
-      "compare_at_amount_float": "130.00",
-      "formatted_compare_at_amount": "€130,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "price_list": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/price_list"
-        }
-      },
-      "sku": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/sku"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "currency_code": "EUR",
+    "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+    "amount_cents": "10000",
+    "amount_float": "100.0",
+    "formatted_amount": "€100,00",
+    "compare_at_amount_cents": "13000",
+    "compare_at_amount_float": "130.00",
+    "formatted_compare_at_amount": "€130,00",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

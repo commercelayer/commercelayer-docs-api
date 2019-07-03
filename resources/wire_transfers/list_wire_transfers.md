@@ -10,7 +10,7 @@ To fetch a collection of wire transfers, send a `GET` request to the `/api/wire_
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers**
+**GET** https://yourdomain.commercelayer.io**/api/wire\_transfers**
 
 ### **Example**
 
@@ -30,32 +30,6 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
-{
-  "data": [
-    {
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 wire transfers (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=14&page[size]=10"
-  }
-}
-
-
 {
   "data": [
     {
@@ -114,3 +88,4 @@ The list of wire transfers can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

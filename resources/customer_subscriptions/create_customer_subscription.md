@@ -10,14 +10,14 @@ To create a new customer subscription, send a `POST` request to the `/api/custom
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions**
+**POST** https://yourdomain.commercelayer.io**/api/customer\_subscriptions**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer_email** | `string` | Required |
+| attributes.**customer\_email** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -55,30 +55,31 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "customer_subscriptions",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
     },
     "attributes": {
-      "customer_email": null,
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "customer_email": "",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "customer": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
-        }
+        "customer": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/relationships/customer",
+              "related": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/customer"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

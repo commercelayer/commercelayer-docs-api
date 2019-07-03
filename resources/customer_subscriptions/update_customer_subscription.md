@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/customer\_subscriptions/:id**
 
 ### Arguments
 
@@ -59,30 +59,31 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "customer_subscriptions",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
     },
     "attributes": {
-      "customer_email": null,
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "customer_email": "",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "customer": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
-        }
+        "customer": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/relationships/customer",
+              "related": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/customer"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

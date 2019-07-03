@@ -10,16 +10,16 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
+**POST** https://yourdomain.commercelayer.io**/api/paypal\_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**return_url** | `string` | Required |
-| attributes.**cancel_url** | `string` | Required |
-| attributes.**note_to_payer** | `string` | Optional |
+| attributes.**return\_url** | `string` | Required |
+| attributes.**cancel\_url** | `string` | Required |
+| attributes.**note\_to\_payer** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
@@ -65,37 +65,38 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "paypal_payments",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
     },
     "attributes": {
-      "return_url": "https://yourbrand.com/thankyou",
-      "cancel_url": "https://yourbrand.com/checkout/payment",
-      "note_to_payer": "Thank you for shopping with us!",
-      "paypal_payer_id": "ABCDEFG123456",
-      "name": "ABCDEFG123456",
-      "paypal_id": "1234567890",
-      "status": "created",
-      "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "return_url": "https://yourbrand.com/thankyou",
+        "cancel_url": "https://yourbrand.com/checkout/payment",
+        "note_to_payer": "Thank you for shopping with us!",
+        "paypal_payer_id": "ABCDEFG123456",
+        "name": "ABCDEFG123456",
+        "paypal_id": "1234567890",
+        "status": "created",
+        "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "order": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/relationships/order",
-          "related": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/order"
-        }
+        "order": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/order",
+              "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/order"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

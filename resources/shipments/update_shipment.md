@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,17 +20,17 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**_on_hold** | `integer, value is '1'` | Optional |
-| attributes.**_picking** | `integer, value is '1'` | Optional |
-| attributes.**_packing** | `integer, value is '1'` | Optional |
-| attributes.**_ready_to_ship** | `integer, value is '1'` | Optional |
-| attributes.**_ship** | `integer, value is '1'` | Optional |
-| attributes.**_get_rates** | `integer, value is '1'` | Optional |
-| attributes.**selected_rate_id** | `string` | Optional |
-| attributes.**_purchase** | `integer, value is '1'` | Optional |
+| attributes.**\_on\_hold** | `integer, value is '1'` | Optional |
+| attributes.**\_picking** | `integer, value is '1'` | Optional |
+| attributes.**\_packing** | `integer, value is '1'` | Optional |
+| attributes.**\_ready\_to\_ship** | `integer, value is '1'` | Optional |
+| attributes.**\_ship** | `integer, value is '1'` | Optional |
+| attributes.**\_get\_rates** | `integer, value is '1'` | Optional |
+| attributes.**selected\_rate\_id** | `string` | Optional |
+| attributes.**\_purchase** | `integer, value is '1'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping_method** | `object` | Optional |
+| relationships.**shipping\_method** | `object` | Optional |
 
 ### Example
 
@@ -82,77 +82,78 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "shipments",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde"
     },
     "attributes": {
-      "number": "#1234/S/001",
-      "status": "draft",
-      "currency_code": "EUR",
-      "cost_amount_cents": "1000",
-      "cost_amount_float": "10.00",
-      "formatted_cost_amount": "€10,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "number": "#1234/S/001",
+        "status": "draft",
+        "currency_code": "EUR",
+        "cost_amount_cents": "1000",
+        "cost_amount_float": "10.00",
+        "formatted_cost_amount": "€10,00",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "shipping_category": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_category",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_category"
-        }
+        "shipping_category": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_category",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_category"
+          }
+        },
+        "stock_location": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_location",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_location"
+          }
+        },
+        "shipping_address": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_address",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_address"
+          }
+        },
+        "shipping_method": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_method",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_method"
+          }
+        },
+        "shipment_line_items": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipment_line_items",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipment_line_items"
+          }
+        },
+        "available_shipping_methods": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/available_shipping_methods",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/available_shipping_methods"
+          }
+        },
+        "parcels": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/parcels",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/parcels"
+          }
+        },
+        "attachments": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/attachments",
+              "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/attachments"
+          }
+        },
       },
-      "stock_location": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/stock_location"
-        }
-      },
-      "shipping_address": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_address",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_address"
-        }
-      },
-      "shipping_method": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_method",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_method"
-        }
-      },
-      "shipment_line_items": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipment_line_items",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipment_line_items"
-        }
-      },
-      "available_shipping_methods": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/available_shipping_methods",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/available_shipping_methods"
-        }
-      },
-      "parcels": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/parcels",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/parcels"
-        }
-      },
-      "attachments": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/attachments",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/attachments"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To fetch a single market, send a `GET` request to the `/api/markets/:id` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
+**GET** https://yourdomain.commercelayer.io**/api/markets/:id**
 
 ### **Example**
 
@@ -32,47 +32,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "markets",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde"
-    },
-    "attributes": {
-      "number": 1234,
-      "name": "EU Market",
-      "facebook_pixel_id": "1234567890",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "merchant": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/merchant",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/merchant"
-        }
-      },
-      "price_list": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/price_list"
-        }
-      },
-      "inventory_model": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/inventory_model",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/inventory_model"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "number": 1234,
+    "name": "EU Market",
+    "facebook_pixel_id": "1234567890",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

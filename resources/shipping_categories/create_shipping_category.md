@@ -10,7 +10,7 @@ To create a new shipping category, send a `POST` request to the `/api/shipping_c
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories**
+**POST** https://yourdomain.commercelayer.io**/api/shipping\_categories**
 
 ### Arguments
 
@@ -55,30 +55,31 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "shipping_categories",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
     },
     "attributes": {
-      "name": "Merchandise",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "name": "Merchandise",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "skus": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/relationships/skus",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/skus"
-        }
+        "skus": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
+              "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To fetch a single customer password reset, send a `GET` request to the `/api/cus
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_password\_resets/:id**
 
 ### **Example**
 
@@ -32,35 +32,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "customer_password_resets",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
-    },
-    "attributes": {
-      "customer_email": "john@example.com",
-      "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
-      "reset_password_at": "2018-01-01T12:00:00.000Z",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "customer": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/customer"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "customer_email": "john@example.com",
+    "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
+    "reset_password_at": "2018-01-01T12:00:00.000Z",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

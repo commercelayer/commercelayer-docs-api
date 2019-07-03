@@ -10,7 +10,7 @@ To fetch a single attachment, send a `GET` request to the `/api/attachments/:id`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/attachments/:id**
+**GET** https://yourdomain.commercelayer.io**/api/attachments/:id**
 
 ### **Example**
 
@@ -32,35 +32,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "attachments",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "DDT transport document",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "url": "https://s3.yourbrand.com/attachment.pdf",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "attachable": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/relationships/attachable",
-          "related": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/attachable"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "name": "DDT transport document",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "url": "https://s3.yourbrand.com/attachment.pdf",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,19 +10,19 @@ To create a new stock item, send a `POST` request to the `/api/stock_items` endp
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_items**
+**POST** https://yourdomain.commercelayer.io**/api/stock\_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**sku** | `object` | Required, if not set through the sku_code attribute |
+| relationships.**stock\_location** | `object` | Required |
+| relationships.**sku** | `object` | Required, if not set through the sku\_code attribute |
 
 ### Example
 
@@ -64,37 +64,38 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "stock_items",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
     },
     "attributes": {
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "quantity": "100",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+        "quantity": "100",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "stock_location": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/stock_location"
-        }
+        "stock_location": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/stock_location",
+              "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/stock_location"
+          }
+        },
+        "sku": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/sku",
+              "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/sku"
+          }
+        },
       },
-      "sku": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/sku"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

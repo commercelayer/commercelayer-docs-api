@@ -10,7 +10,7 @@ To fetch a single price list, send a `GET` request to the `/api/price_lists/:id`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/price_lists/:id**
+**GET** https://yourdomain.commercelayer.io**/api/price\_lists/:id**
 
 ### **Example**
 
@@ -32,35 +32,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "price_lists",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "EU Price list",
-      "currency_code": "EUR",
-      "tax_included": "true",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "prices": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}/relationships/prices",
-          "related": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}/prices"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "name": "EU Price list",
+    "currency_code": "EUR",
+    "tax_included": "true",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

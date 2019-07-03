@@ -10,7 +10,7 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
+**POST** https://yourdomain.commercelayer.io**/api/sku\_options**
 
 ### Arguments
 
@@ -19,9 +19,9 @@ To create a new sku option, send a `POST` request to the `/api/sku_options` endp
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay_hours** | `integer` | Optional, default is '0' |
-| attributes.**sku_code_regex** | `string` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay\_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku\_code\_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
@@ -66,37 +66,38 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "sku_options",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
     },
     "attributes": {
-      "name": "Embossing",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "price_amount_cents": "1000",
-      "price_amount_float": "10.00",
-      "formatted_price_amount": "€10,00",
-      "delay_hours": "48",
-      "delay_days": "2",
-      "sku_code_regex": "^(A|B).*$",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "name": "Embossing",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price_amount_cents": "1000",
+        "price_amount_float": "10.00",
+        "formatted_price_amount": "€10,00",
+        "delay_hours": "48",
+        "delay_days": "2",
+        "sku_code_regex": "^(A|B).*$",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "market": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/relationships/market",
-          "related": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/market"
-        }
+        "market": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/market",
+              "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/market"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

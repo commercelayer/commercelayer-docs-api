@@ -10,7 +10,7 @@ To fetch a single stock level, send a `GET` request to the `/api/stock_levels/:i
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_levels/:id**
 
 ### **Example**
 
@@ -32,40 +32,17 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "stock_levels",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
-    },
-    "attributes": {
-      "priority": "1",
-      "on_hold": "false",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "stock_location": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/stock_location"
-        }
-      },
-      "inventory_model": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/inventory_model",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/inventory_model"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "priority": "1",
+    "on_hold": "false",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

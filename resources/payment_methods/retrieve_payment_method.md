@@ -10,7 +10,7 @@ To fetch a single payment method, send a `GET` request to the `/api/payment_meth
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
+**GET** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
 
 ### **Example**
 
@@ -32,44 +32,21 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "payment_methods",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde"
-    },
-    "attributes": {
-      "payment_source_type": "CreditCard",
-      "name": "Credit Card",
-      "disabled_at": "2018-01-01T12:00:00.000Z",
-      "price_amount_cents": "0",
-      "price_amount_float": "0.0",
-      "formatted_price_amount": "€0,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "market": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/market",
-          "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/market"
-        }
-      },
-      "payment_gateway": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/payment_gateway",
-          "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/payment_gateway"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "payment_source_type": "CreditCard",
+    "name": "Credit Card",
+    "disabled_at": "2018-01-01T12:00:00.000Z",
+    "price_amount_cents": "0",
+    "price_amount_float": "0.0",
+    "formatted_price_amount": "€0,00",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

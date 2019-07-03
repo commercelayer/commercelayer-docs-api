@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### Arguments
 
@@ -21,16 +21,16 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit_of_weight** | `string` | Optional |
-| attributes.**eel_pfc** | `string` | Optional |
-| attributes.**contents_type** | `string` | Optional |
-| attributes.**contents_explanation** | `string` | Optional |
-| attributes.**customs_certify** | `boolean` | Optional |
-| attributes.**customs_signer** | `string` | Optional |
-| attributes.**non_delivery_option** | `string` | Optional |
-| attributes.**restriction_type** | `string` | Optional |
-| attributes.**restriction_comments** | `string` | Optional |
-| attributes.**customs_info_required** | `boolean` | Optional, default 'false' |
+| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**eel\_pfc** | `string` | Optional |
+| attributes.**contents\_type** | `string` | Optional |
+| attributes.**contents\_explanation** | `string` | Optional |
+| attributes.**customs\_certify** | `boolean` | Optional |
+| attributes.**customs\_signer** | `string` | Optional |
+| attributes.**non\_delivery\_option** | `string` | Optional |
+| attributes.**restriction\_type** | `string` | Optional |
+| attributes.**restriction\_comments** | `string` | Optional |
+| attributes.**customs\_info\_required** | `boolean` | Optional, default 'false' |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipment** | `object` | Required |
@@ -88,58 +88,59 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "parcels",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde"
     },
     "attributes": {
-      "number": "#1234/S/001/P/001",
-      "weight": "1000",
-      "unit_of_weight": "gr",
-      "eel_pfc": "EEL",
-      "contents_type": "merchandise",
-      "contents_explanation": "",
-      "customs_certify": "false",
-      "customs_signer": "John Doe",
-      "non_delivery_option": "return",
-      "restriction_type": "none",
-      "restriction_comments": "",
-      "customs_info_required": "false",
-      "shipping_label_url": "https://bucket.s3-us-west-2.amazonaws.com/files/postage_label/20180101/123.pdf",
-      "shipping_label_file_type": "application/pdf",
-      "shipping_label_size": "4x7",
-      "shipping_label_resolution": "200",
-      "tracking_number": "1Z4V2A000000000000",
-      "tracking_status": "delivered",
-      "tracking_status_detail": "arrived_at_destination",
-      "tracking_status_updated_at": "2018-01-01T12:00:00.000Z",
-      "tracking_details": "",
-      "carrier_weight_oz": "42.32",
-      "signed_by": "John Smith",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "number": "#1234/S/001/P/001",
+        "weight": "1000",
+        "unit_of_weight": "gr",
+        "eel_pfc": "EEL",
+        "contents_type": "merchandise",
+        "contents_explanation": "",
+        "customs_certify": "false",
+        "customs_signer": "John Doe",
+        "non_delivery_option": "return",
+        "restriction_type": "none",
+        "restriction_comments": "",
+        "customs_info_required": "false",
+        "shipping_label_url": "https://bucket.s3-us-west-2.amazonaws.com/files/postage_label/20180101/123.pdf",
+        "shipping_label_file_type": "application/pdf",
+        "shipping_label_size": "4x7",
+        "shipping_label_resolution": "200",
+        "tracking_number": "1Z4V2A000000000000",
+        "tracking_status": "delivered",
+        "tracking_status_detail": "arrived_at_destination",
+        "tracking_status_updated_at": "2018-01-01T12:00:00.000Z",
+        "tracking_details": "",
+        "carrier_weight_oz": "42.32",
+        "signed_by": "John Smith",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "shipment": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/relationships/shipment",
-          "related": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/shipment"
-        }
+        "shipment": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/shipment",
+              "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/shipment"
+          }
+        },
+        "parcel_line_items": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/parcel_line_items",
+              "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/parcel_line_items"
+          }
+        },
       },
-      "parcel_line_items": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/relationships/parcel_line_items",
-          "related": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/parcel_line_items"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

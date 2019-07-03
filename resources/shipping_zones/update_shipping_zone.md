@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/shipping\_zones/:id**
 
 ### Arguments
 
@@ -21,12 +21,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**country_code_regex** | `string` | Optional |
-| attributes.**not_country_code_regex** | `string` | Optional |
-| attributes.**state_code_regex** | `string` | Optional |
-| attributes.**not_state_code_regex** | `string` | Optional |
-| attributes.**zip_code_regex** | `string` | Optional |
-| attributes.**not_zip_code_regex** | `string` | Optional |
+| attributes.**country\_code\_regex** | `string` | Optional |
+| attributes.**not\_country\_code\_regex** | `string` | Optional |
+| attributes.**state\_code\_regex** | `string` | Optional |
+| attributes.**not\_state\_code\_regex** | `string` | Optional |
+| attributes.**zip\_code\_regex** | `string` | Optional |
+| attributes.**not\_zip\_code\_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -73,30 +73,31 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "shipping_zones",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/shipping_zones/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/shipping_zones/xYZkjABcde"
     },
     "attributes": {
-      "name": "Europe (main countries)",
-      "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
-      "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
-      "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
-      "not_state_code_regex": "A[KLRZ]|C[AOT]",
-      "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
-      "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "name": "Europe (main countries)",
+        "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
+        "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
+        "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
+        "not_state_code_regex": "A[KLRZ]|C[AOT]",
+        "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
+        "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-    },
-    "meta": {
-      "mode": "test"
-    }
+      },
+      "meta": {
+          "mode": "test"
+      }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Arguments
 
@@ -23,14 +23,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
-| attributes.**tag_names** | `string` | Optional |
-| attributes.**pieces_per_pack** | `integer` | Optional |
+| attributes.**image\_url** | `string` | Optional |
+| attributes.**tag\_names** | `string` | Optional |
+| attributes.**pieces\_per\_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**unit\_of\_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping_category** | `object` | Required |
+| relationships.**shipping\_category** | `object` | Required |
 
 ### Example
 
@@ -82,61 +82,62 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "skus",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
     },
     "attributes": {
-      "code": "TSHIRTMM000000FFFFFFXLXX",
-      "name": "Black Men T-shirt with White Logo (XL)",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
-      "tag_names": "Men, Black, XL",
-      "pieces_per_pack": "6",
-      "weight": "300",
-      "unit_of_weight": "gr",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "code": "TSHIRTMM000000FFFFFFXLXX",
+        "name": "Black Men T-shirt with White Logo (XL)",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
+        "tag_names": "Men, Black, XL",
+        "pieces_per_pack": "6",
+        "weight": "300",
+        "unit_of_weight": "gr",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "shipping_category": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/shipping_category",
-          "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/shipping_category"
-        }
+        "shipping_category": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/shipping_category",
+              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/shipping_category"
+          }
+        },
+        "prices": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/prices",
+              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices"
+          }
+        },
+        "stock_items": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/stock_items",
+              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/stock_items"
+          }
+        },
+        "delivery_lead_times": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/delivery_lead_times",
+              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/delivery_lead_times"
+          }
+        },
+        "sku_options": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
+              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
+          }
+        },
       },
-      "prices": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/prices",
-          "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/prices"
-        }
-      },
-      "stock_items": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/stock_items",
-          "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/stock_items"
-        }
-      },
-      "delivery_lead_times": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/delivery_lead_times",
-          "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/delivery_lead_times"
-        }
-      },
-      "sku_options": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/sku_options",
-          "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/sku_options"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

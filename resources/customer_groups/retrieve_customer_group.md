@@ -10,7 +10,7 @@ To fetch a single customer group, send a `GET` request to the `/api/customer_gro
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups/:id**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_groups/:id**
 
 ### **Example**
 
@@ -32,39 +32,16 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
-    "type": "customer_groups",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde"
-    },
-    "attributes": {
-      "name": null,
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "price_list": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
-        }
-      },
-      "customers": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+    "name": null,
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/customers**
+**POST** https://yourdomain.commercelayer.io**/api/customers**
 
 ### Arguments
 
@@ -21,7 +21,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | attributes.**password** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**customer_group** | `object` | Optional |
+| relationships.**customer\_group** | `object` | Optional |
 
 ### Example
 
@@ -57,55 +57,56 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "customers",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde"
     },
     "attributes": {
-      "email": "john@example.com",
-      "status": "prospect",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "email": "john@example.com",
+        "status": "prospect",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "customer_group": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_group",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_group"
-        }
+        "customer_group": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_group",
+              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_group"
+          }
+        },
+        "customer_addresses": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_addresses",
+              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_addresses"
+          }
+        },
+        "customer_payment_sources": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_payment_sources",
+              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_payment_sources"
+          }
+        },
+        "customer_subscriptions": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_subscriptions",
+              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_subscriptions"
+          }
+        },
+        "orders": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/orders",
+              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/orders"
+          }
+        },
       },
-      "customer_addresses": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_addresses",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_addresses"
-        }
-      },
-      "customer_payment_sources": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_payment_sources",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_payment_sources"
-        }
-      },
-      "customer_subscriptions": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_subscriptions",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_subscriptions"
-        }
-      },
-      "orders": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/orders",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/orders"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/markets**
+**POST** https://yourdomain.commercelayer.io**/api/markets**
 
 ### Arguments
 
@@ -18,12 +18,12 @@ To create a new market, send a `POST` request to the `/api/markets` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**facebook_pixel_id** | `string` | Optional |
+| attributes.**facebook\_pixel\_id** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**merchant** | `object` | Required |
-| relationships.**price_list** | `object` | Required |
-| relationships.**inventory_model** | `object` | Required |
+| relationships.**price\_list** | `object` | Required |
+| relationships.**inventory\_model** | `object` | Required |
 
 ### Example
 
@@ -77,44 +77,45 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "markets",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde"
     },
     "attributes": {
-      "number": 1234,
-      "name": "EU Market",
-      "facebook_pixel_id": "1234567890",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "number": "1234",
+        "name": "EU Market",
+        "facebook_pixel_id": "1234567890",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "merchant": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/merchant",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/merchant"
-        }
+        "merchant": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/merchant",
+              "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/merchant"
+          }
+        },
+        "price_list": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/price_list",
+              "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/price_list"
+          }
+        },
+        "inventory_model": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
+              "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
+          }
+        },
       },
-      "price_list": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/price_list"
-        }
-      },
-      "inventory_model": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/inventory_model",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/inventory_model"
-        }
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+

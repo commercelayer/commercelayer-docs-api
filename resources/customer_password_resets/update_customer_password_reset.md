@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/customer\_password\_resets/:id**
 
 ### Arguments
 
@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**customer_password** | `string` | Optional |
-| attributes.**_reset_password_token** | `string` |  |
+| attributes.**customer\_password** | `string` | Optional |
+| attributes.**\_reset\_password\_token** | `string` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -63,32 +63,33 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "customer_password_resets",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
+        "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
     },
     "attributes": {
-      "customer_email": "john@example.com",
-      "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
-      "reset_password_at": "2018-01-01T12:00:00.000Z",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
+        "customer_email": "john@example.com",
+        "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
+        "reset_password_at": "2018-01-01T12:00:00.000Z",
+        "created_at": "2018-01-01T12:00:00.000Z",
+        "updated_at": "2018-01-01T12:00:00.000Z",
+        "reference": "ANYREFEFERNCE",
+        "metadata": {
+  "foo": "bar"
+},
     },
     "relationships": {
-      "customer": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/customer"
-        }
+        "customer": {
+          "links": {
+              "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/relationships/customer",
+              "related": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/customer"
+          }
+        },
+      },
+      "meta": {
+          "mode": "test"
       }
-    },
-    "meta": {
-      "mode": "test"
-    }
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
+
