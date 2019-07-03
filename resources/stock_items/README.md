@@ -4,7 +4,11 @@ description: The stock item object and its fields
 
 # Stock items
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A stock item keeps the available inventory of an SKU in a given stock location.
+When you create a line item, the associated SKU must be available in one of the market's stock locations.
+When you place an order, the stock item quantities get decremented.
+When an order is canceled, or a return is approved, the stock item quantities get incremented.
+
 
 ### The stock item object
 

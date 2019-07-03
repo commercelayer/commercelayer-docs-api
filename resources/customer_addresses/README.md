@@ -4,7 +4,10 @@ description: The customer address object and its fields
 
 # Customer addresses
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Customer addresses are association models that link customers to addresses.
+Creating a customer address means adding an address to a customer's wallet.
+During checkout, a logged customer can retrieve their saved addresses and use them as the order shipping or billing addresses.
+
 
 ### The customer address object
 

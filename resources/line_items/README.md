@@ -4,7 +4,11 @@ description: The line item object and its fields
 
 # Line items
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Create a line item if you want to add an SKU to an order.
+Other types of line items are automatically created to add a shipping cost to the order or to apply a discount.
+The sum of all line item amounts makes the order's total, split into subtotal, taxes, and discount.
+The order object includes all the data you need. You never need to make any calculation on your application.
+
 
 ### The line item object
 

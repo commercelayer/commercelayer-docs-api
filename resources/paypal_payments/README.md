@@ -4,7 +4,16 @@ description: The paypal payment object and its fields
 
 # Paypal payments
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+PayPal payments can be created and associated to an order in a few steps:
+
+  1. Create a Paypal payment, passing a valid return url and cancel url
+  2. Get the approval url from the response
+  3. Redirect the customer to the approval url
+  4. Get the Payer ID from the return url parameters
+  5. Update the Paypal payment with the Payer ID
+
+PayPal payments are one-time payment sources and cannot be saved in customer wallets.
+
 
 ### The paypal payment object
 

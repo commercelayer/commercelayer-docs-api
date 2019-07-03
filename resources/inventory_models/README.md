@@ -4,7 +4,10 @@ description: The inventory model object and its fields
 
 # Inventory models
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+An inventory model defines a list of stock locations ordered by priority.
+The order determines how the availability of SKUs gets calculated within a market.
+If an order contains line items from two or more stock locations, the order is split into two or more shipments, one for each location (<a href="/glossary/inventory_model/">learn more</a>).
+
 
 ### The inventory model object
 

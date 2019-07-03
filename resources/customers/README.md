@@ -4,7 +4,11 @@ description: The customer object and its fields
 
 # Customers
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Customers must contain an email address and, optionally, a password.
+Registered customers can get an access token through the Password Flow to manage their data.
+Customer status can be one of "prospect," (with no orders) "acquired," (with one order) or "repeat" (with two or more orders).
+Associate a customer to a customer group if you want to assign a dedicated price list to that customer (<a href="/api/reference/customer_groups/">learn more</a>).
+
 
 ### The customer object
 

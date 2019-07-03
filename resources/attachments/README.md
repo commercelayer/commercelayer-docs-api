@@ -4,7 +4,10 @@ description: The attachment object and its fields
 
 # Attachments
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Addresses can be associated to orders as their shipping or billing addresses.
+Add a Google or Bing geocoder to a market if you want its addresses to be automatically geocoded.
+Customers can save their most used addresses in their address books (as customer addresses).
+
 
 ### The attachment object
 

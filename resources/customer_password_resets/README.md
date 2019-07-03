@@ -4,7 +4,15 @@ description: The customer password reset object and its fields
 
 # Customer password resets
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Customer passwords can be reset in three steps:
+
+1. Create a new customer password reset with the email of the customer.
+2. Get the reset password token from the response.
+3. Update the customer password reset resource passing the token and the new password.
+
+It's your responsibility to verify the customer's identity before third step.
+A typical flow is to send an email to the customer with a verification link that includes the reset password token.
+
 
 ### The customer password reset object
 

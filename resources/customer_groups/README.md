@@ -4,7 +4,10 @@ description: The customer group object and its fields
 
 # Customer groups
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A customer group is a resource that can be used to organize customers into groups.
+When you associate a price list to a customer group, all the customers belonging to that group get its price list, overridining the one defined at market level.
+You can use customer groups to manage B2B customers, B2C loyalty programs, and more.
+
 
 ### The customer group object
 

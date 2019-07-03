@@ -4,7 +4,11 @@ description: The customer subscription object and its fields
 
 # Customer subscriptions
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Customer subscriptions are simple resources that you can use to track newsletter registrations.
+Populate the reference with any key that makes sense to your business domain.
+Send the subscriptions to any third party tool or CRM for marketing and segmentation.
+Let the customers manage their active subscriptions through their reserved area.
+
 
 ### The customer subscription object
 

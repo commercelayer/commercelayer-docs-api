@@ -4,7 +4,12 @@ description: The order object and its fields
 
 # Orders
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Orders get created in a "draft" status and become "pending" when they have a customer and some line items.
+Draft orders act as shopping carts. Pending orders can be recovered when abandoned.
+When an order is placed, it can either get "approved" or "canceled".
+An approved order becomes "fulfilled" when paid and shipped.
+Canceling an order automatically voids its payment source's authorization.
+
 
 ### The order object
 

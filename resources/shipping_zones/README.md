@@ -4,7 +4,9 @@ description: The shipping zone object and its fields
 
 # Shipping zones
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Shipping zones determine the available shipping methods for a given shipping address.
+The match is evaluated against a set of regular expressions on the address country, state or zip code ([learn more](https://commercelayer.io/glossary/shipping_zone/)).
+
 
 ### The shipping zone object
 

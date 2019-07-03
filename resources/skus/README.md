@@ -4,7 +4,10 @@ description: The SKU object and its fields
 
 # Skus
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+SKUs describe specific product variations that are being sold.
+A unique code identifies each SKU, that can be either the EAN code, the UPC or any other code format.
+The SKU name, description and image URL are best suited for internal usage (Commerce Layer is not a CMS).
+
 
 ### The SKU object
 

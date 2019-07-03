@@ -4,7 +4,9 @@ description: The merchant object and its fields
 
 # Merchants
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A merchant is the fiscal representative that is selling in a specific market.
+Tax calculators use the merchant's address (and the shipping address) to determine the tax rate for an order ([learn more](https://commercelayer.io/glossary/merchant/)).
+
 
 ### The merchant object
 

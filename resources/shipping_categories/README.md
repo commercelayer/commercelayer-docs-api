@@ -4,7 +4,9 @@ description: The shipping category object and its fields
 
 # Shipping categories
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Shipping categories determine which shipping methods are available for the associated SKUs.
+An order is split into more shipments if it contains line items belonging to more than one shipping category ([learn more](https://commercelayer.io/glossary/shipping_category/)).
+
 
 ### The shipping category object
 
