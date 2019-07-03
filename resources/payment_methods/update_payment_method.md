@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment_source_type** | `string` | Required |
-| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**payment\_source\_type** | `string` | Required |
+| attributes.**price\_amount\_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**payment_gateway** | `object` | Required |
+| relationships.**payment\_gateway** | `object` | Required |
 
 ### Example
 
@@ -113,3 +113,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To delete a credit card, send a `DELETE` request to the `/api/credit_cards/:id` 
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/credit\_cards/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

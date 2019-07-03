@@ -10,7 +10,7 @@ To fetch a collection of addresses, send a `GET` request to the `/api/addresses`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/addresses**
+**GET** https://yourdomain.commercelayer.io**/api/addresses**
 
 ### **Example**
 
@@ -97,7 +97,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 
 {% page-ref page="../../pagination.md" %}
-
 {% endtab %}
 {% endtabs %}
 
@@ -113,3 +112,4 @@ The list of addresses can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

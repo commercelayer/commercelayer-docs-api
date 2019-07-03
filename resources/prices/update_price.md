@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/prices/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
-| attributes.**amount_cents** | `integer` | Required |
-| attributes.**compare_at_amount_cents** | `integer` | Required |
+| attributes.**sku\_code** | `string` | Optional |
+| attributes.**amount\_cents** | `integer` | Required |
+| attributes.**compare\_at\_amount\_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price_list** | `object` | Required |
+| relationships.**price\_list** | `object` | Required |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -117,3 +117,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

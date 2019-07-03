@@ -10,7 +10,7 @@ To create a new customer group, send a `POST` request to the `/api/customer_grou
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups**
+**POST** https://yourdomain.commercelayer.io**/api/customer\_groups**
 
 ### Arguments
 
@@ -20,7 +20,7 @@ To create a new customer group, send a `POST` request to the `/api/customer_grou
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price_list** | `object` | Optional |
+| relationships.**price\_list** | `object` | Optional |
 
 ### Example
 
@@ -87,3 +87,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**min_hours** | `integer` | Required |
-| attributes.**max_hours** | `integer` | Required |
+| attributes.**min\_hours** | `integer` | Required |
+| attributes.**max\_hours** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**shipping_method** | `object` | Required |
+| relationships.**stock\_location** | `object` | Required |
+| relationships.**shipping\_method** | `object` | Required |
 
 ### Example
 
@@ -111,3 +111,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

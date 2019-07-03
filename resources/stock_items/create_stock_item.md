@@ -10,19 +10,19 @@ To create a new stock item, send a `POST` request to the `/api/stock_items` endp
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_items**
+**POST** https://yourdomain.commercelayer.io**/api/stock\_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**sku** | `object` | Required, if not set through the sku_code attribute |
+| relationships.**stock\_location** | `object` | Required |
+| relationships.**sku** | `object` | Required, if not set through the sku\_code attribute |
 
 ### Example
 
@@ -96,3 +96,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

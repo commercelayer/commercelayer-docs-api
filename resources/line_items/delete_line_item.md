@@ -10,7 +10,7 @@ To delete a line item, send a `DELETE` request to the `/api/line_items/:id` endp
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/line_items/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/line\_items/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

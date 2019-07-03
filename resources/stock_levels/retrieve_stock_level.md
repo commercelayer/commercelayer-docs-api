@@ -10,7 +10,7 @@ To fetch a single stock level, send a `GET` request to the `/api/stock_levels/:i
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_levels/:id**
 
 ### **Example**
 
@@ -67,3 +67,4 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
+

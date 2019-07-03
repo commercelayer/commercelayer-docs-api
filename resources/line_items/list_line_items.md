@@ -10,12 +10,10 @@ To fetch a collection of line items, send a `GET` request to the `/api/line_item
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
+**GET** https://yourdomain.commercelayer.io**/api/line\_items**
 
 ### **Example**
 
-{% tabs %}
-{% tab title="Request" %}
 The following request fetches a collection of line items:
 
 ```javascript
@@ -24,9 +22,7 @@ curl -X GET \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
-{% endtab %}
 
-{% tab title="Response" %}
 On success, the API responds with a `200 OK` status code, returning a paginated collection of resource objects:
 
 ```javascript
@@ -103,9 +99,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 {% page-ref page="../../pagination.md" %}
 
-{% endtab %}
-{% endtabs %}
-
 ### Sortable attributes
 
 The list of line items can be sorted by the following attributes:
@@ -118,3 +111,4 @@ The list of line items can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+
