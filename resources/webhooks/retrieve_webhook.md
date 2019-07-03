@@ -45,8 +45,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANYREFEFERNCE",
       "metadata": {
-                "foo": "bar"
-              },
+        "foo": "bar"
+        },
     },
     "relationships": {
     },
