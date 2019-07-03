@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{import_id}}",
+    "id": "xYZkjABcde",
     "type": "imports",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/imports/{{import_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/imports/xYZkjABcde"
     },
     "attributes": {
       "resource_type": "skus",

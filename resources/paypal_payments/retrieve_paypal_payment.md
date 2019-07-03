@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{paypal_payment_id}}",
+    "id": "xYZkjABcde",
     "type": "paypal_payments",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
     },
     "attributes": {
       "return_url": "https://yourbrand.com/thankyou",
@@ -56,8 +56,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "relationships": {
       "order": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/relationships/order",
-          "related": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/order"
+          "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/order",
+          "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/order"
         }
       }
     },

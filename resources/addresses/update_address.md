@@ -95,10 +95,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{address_id}}",
+    "id": "xYZkjABcde",
     "type": "addresses",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/addresses/{{address_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde"
     },
     "attributes": {
       "business": "false",
@@ -135,8 +135,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "geocoder": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/addresses/{{address_id}}/relationships/geocoder",
-          "related": "https://{{subdomain}}.commercelayer.io/api/addresses/{{address_id}}/geocoder"
+          "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde/relationships/geocoder",
+          "related": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde/geocoder"
         }
       }
     },

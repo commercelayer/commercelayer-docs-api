@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{credit_card_id}}",
+      "id": "xYZkjABcde",
       "type": "credit_cards",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde"
       },
       "attributes": {
         "first_name": "John",
@@ -60,8 +60,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "order": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/relationships/order",
-            "related": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/order"
+            "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde/relationships/order",
+            "related": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde/order"
           }
         }
       },
@@ -78,9 +78,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/credit_cards?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/credit_cards?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/credit_cards?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/credit_cards?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/credit_cards?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/credit_cards?page[number]=14&page[size]=10"
   }
 }
 ```

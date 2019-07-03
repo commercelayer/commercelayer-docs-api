@@ -58,10 +58,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{shipping_category_id}}",
+    "id": "xYZkjABcde",
     "type": "shipping_categories",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
     },
     "attributes": {
       "name": "Merchandise",
@@ -75,8 +75,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "skus": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/relationships/skus",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/skus"
+          "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
+          "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
         }
       }
     },

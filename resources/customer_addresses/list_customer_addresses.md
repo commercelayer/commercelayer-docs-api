@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{customer_address_id}}",
+      "id": "xYZkjABcde",
       "type": "customer_addresses",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde"
       },
       "attributes": {
         "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
@@ -50,14 +50,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "customer": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/relationships/customer",
-            "related": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/customer"
+            "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/customer",
+            "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/customer"
           }
         },
         "address": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/relationships/address",
-            "related": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/address"
+            "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/address",
+            "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/address"
           }
         }
       },
@@ -74,9 +74,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
   }
 }
 ```

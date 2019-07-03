@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{sku_id}}",
+      "id": "xYZkjABcde",
       "type": "skus",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
       },
       "attributes": {
         "code": "TSHIRTMM000000FFFFFFXLXX",
@@ -57,32 +57,32 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "shipping_category": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/shipping_category",
-            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/shipping_category"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/shipping_category",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/shipping_category"
           }
         },
         "prices": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/prices",
-            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/prices"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/prices",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices"
           }
         },
         "stock_items": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/stock_items",
-            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/stock_items"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/stock_items",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/stock_items"
           }
         },
         "delivery_lead_times": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/delivery_lead_times",
-            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/delivery_lead_times"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/delivery_lead_times",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/delivery_lead_times"
           }
         },
         "sku_options": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/sku_options",
-            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/sku_options"
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
           }
         }
       },
@@ -99,9 +99,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
   }
 }
 ```

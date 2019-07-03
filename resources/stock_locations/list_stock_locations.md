@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{stock_location_id}}",
+      "id": "xYZkjABcde",
       "type": "stock_locations",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
       },
       "attributes": {
         "name": "Primary warehouse",
@@ -51,20 +51,20 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "address": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/address",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/address"
+            "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/address",
+            "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
           }
         },
         "stock_levels": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_levels",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_levels"
+            "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
+            "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
           }
         },
         "stock_items": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_items",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_items"
+            "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_items",
+            "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_items"
           }
         }
       },
@@ -81,9 +81,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=14&page[size]=10"
   }
 }
 ```

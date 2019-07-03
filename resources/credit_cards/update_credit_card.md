@@ -71,10 +71,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{credit_card_id}}",
+    "id": "xYZkjABcde",
     "type": "credit_cards",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde"
     },
     "attributes": {
       "first_name": "John",
@@ -98,8 +98,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "order": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/relationships/order",
-          "related": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/order"
+          "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde/relationships/order",
+          "related": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde/order"
         }
       }
     },

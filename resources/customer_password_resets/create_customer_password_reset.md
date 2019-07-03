@@ -52,10 +52,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{customer_password_reset_id}}",
+    "id": "xYZkjABcde",
     "type": "customer_password_resets",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
     },
     "attributes": {
       "customer_email": "john@example.com",
@@ -71,8 +71,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "customer": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/customer"
+          "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/relationships/customer",
+          "related": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/customer"
         }
       }
     },

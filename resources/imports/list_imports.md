@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{import_id}}",
+      "id": "xYZkjABcde",
       "type": "imports",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/imports/{{import_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/imports/xYZkjABcde"
       },
       "attributes": {
         "resource_type": "skus",
@@ -96,9 +96,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/imports?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/imports?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/imports?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/imports?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/imports?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/imports?page[number]=14&page[size]=10"
   }
 }
 ```

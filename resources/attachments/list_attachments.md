@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{attachment_id}}",
+      "id": "xYZkjABcde",
       "type": "attachments",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
       },
       "attributes": {
         "name": "DDT transport document",
@@ -52,8 +52,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "attachable": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/relationships/attachable",
-            "related": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/attachable"
+            "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/relationships/attachable",
+            "related": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/attachable"
           }
         }
       },
@@ -70,9 +70,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/attachments?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/attachments?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/attachments?page[number]=14&page[size]=10"
   }
 }
 ```

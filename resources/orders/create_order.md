@@ -72,10 +72,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{order_id}}",
+    "id": "xYZkjABcde",
     "type": "orders",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde"
     },
     "attributes": {
       "number": 1234,
@@ -170,56 +170,56 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "market": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/market",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/market"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/market",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/market"
         }
       },
       "customer": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/customer"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/customer",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/customer"
         }
       },
       "shipping_address": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/shipping_address",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/shipping_address"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/shipping_address",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/shipping_address"
         }
       },
       "billing_address": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/billing_address",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/billing_address"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/billing_address",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/billing_address"
         }
       },
       "available_payment_methods": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/available_payment_methods",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/available_payment_methods"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/available_payment_methods",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/available_payment_methods"
         }
       },
       "payment_method": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/payment_method",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/payment_method"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/payment_method",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/payment_method"
         }
       },
       "payment_source": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/payment_source",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/payment_source"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/payment_source",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/payment_source"
         }
       },
       "line_items": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/line_items",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/line_items"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/line_items",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/line_items"
         }
       },
       "shipments": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/relationships/shipments",
-          "related": "https://{{subdomain}}.commercelayer.io/api/orders/{{order_id}}/shipments"
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/shipments",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/shipments"
         }
       }
     },

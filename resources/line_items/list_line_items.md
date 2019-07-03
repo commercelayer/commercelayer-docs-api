@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{line_item_id}}",
+      "id": "xYZkjABcde",
       "type": "line_items",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde"
       },
       "attributes": {
         "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -83,20 +83,20 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "order": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/order",
-            "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/order"
+            "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/order",
+            "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/order"
           }
         },
         "item": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/item",
-            "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/item"
+            "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/item",
+            "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/item"
           }
         },
         "line_item_options": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/line_item_options",
-            "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/line_item_options"
+            "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/line_item_options",
+            "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/line_item_options"
           }
         }
       },
@@ -113,9 +113,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/line_items?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/line_items?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/line_items?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/line_items?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/line_items?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/line_items?page[number]=14&page[size]=10"
   }
 }
 ```

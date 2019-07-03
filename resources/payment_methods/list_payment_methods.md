@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{payment_method_id}}",
+      "id": "xYZkjABcde",
       "type": "payment_methods",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde"
       },
       "attributes": {
         "payment_source_type": "CreditCard",
@@ -55,14 +55,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "market": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/market",
-            "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/market"
+            "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/market",
+            "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/market"
           }
         },
         "payment_gateway": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/payment_gateway",
-            "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/payment_gateway"
+            "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/payment_gateway",
+            "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/payment_gateway"
           }
         }
       },
@@ -79,9 +79,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=14&page[size]=10"
   }
 }
 ```

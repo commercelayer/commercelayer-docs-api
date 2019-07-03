@@ -85,10 +85,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{parcel_id}}",
+    "id": "xYZkjABcde",
     "type": "parcels",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde"
     },
     "attributes": {
       "number": "#1234/S/001/P/001",
@@ -124,14 +124,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "shipment": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/relationships/shipment",
-          "related": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/shipment"
+          "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/shipment",
+          "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/shipment"
         }
       },
       "parcel_line_items": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/relationships/parcel_line_items",
-          "related": "https://{{subdomain}}.commercelayer.io/api/parcels/{{parcel_id}}/parcel_line_items"
+          "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/parcel_line_items",
+          "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/parcel_line_items"
         }
       }
     },

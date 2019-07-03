@@ -63,10 +63,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{price_id}}",
+    "id": "xYZkjABcde",
     "type": "prices",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
     },
     "attributes": {
       "currency_code": "EUR",
@@ -87,14 +87,14 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "price_list": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/price_list"
+          "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/price_list",
+          "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/price_list"
         }
       },
       "sku": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/sku"
+          "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/sku",
+          "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/sku"
         }
       }
     },

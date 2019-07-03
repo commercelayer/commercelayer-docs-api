@@ -52,10 +52,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{customer_subscription_id}}",
+    "id": "xYZkjABcde",
     "type": "customer_subscriptions",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
     },
     "attributes": {
       "customer_email": null,
@@ -69,8 +69,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "customer": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
+          "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/relationships/customer",
+          "related": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde/customer"
         }
       }
     },

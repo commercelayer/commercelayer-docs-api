@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{customer_id}}",
+    "id": "xYZkjABcde",
     "type": "customers",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde"
     },
     "attributes": {
       "email": "john@example.com",
@@ -50,32 +50,32 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "relationships": {
       "customer_group": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_group",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_group"
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_group",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_group"
         }
       },
       "customer_addresses": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_addresses",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_addresses"
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_addresses",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_addresses"
         }
       },
       "customer_payment_sources": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_payment_sources",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_payment_sources"
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_payment_sources",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_payment_sources"
         }
       },
       "customer_subscriptions": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_subscriptions",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_subscriptions"
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_subscriptions",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_subscriptions"
         }
       },
       "orders": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/orders",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/orders"
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/orders",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/orders"
         }
       }
     },

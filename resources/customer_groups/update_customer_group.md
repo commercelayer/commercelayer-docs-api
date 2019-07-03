@@ -65,10 +65,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{customer_group_id}}",
+    "id": "xYZkjABcde",
     "type": "customer_groups",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde"
     },
     "attributes": {
       "name": null,
@@ -82,14 +82,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "price_list": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
+          "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/price_list",
+          "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/price_list"
         }
       },
       "customers": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
+          "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/customers",
+          "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/customers"
         }
       }
     },

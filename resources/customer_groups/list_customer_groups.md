@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{customer_group_id}}",
+      "id": "xYZkjABcde",
       "type": "customer_groups",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde"
       },
       "attributes": {
         "name": null,
@@ -50,14 +50,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "price_list": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
-            "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
+            "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/price_list",
+            "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/price_list"
           }
         },
         "customers": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
-            "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
+            "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/customers",
+            "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/customers"
           }
         }
       },
@@ -74,9 +74,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/customer_groups?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/customer_groups?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/customer_groups?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/customer_groups?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/customer_groups?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/customer_groups?page[number]=14&page[size]=10"
   }
 }
 ```

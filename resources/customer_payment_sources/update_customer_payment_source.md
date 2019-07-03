@@ -70,10 +70,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{customer_payment_source_id}}",
+    "id": "xYZkjABcde",
     "type": "customer_payment_sources",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde"
     },
     "attributes": {
       "name": "XXXX-XXXX-XXXX-1111",
@@ -87,14 +87,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "customer": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/customer"
+          "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/customer",
+          "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/customer"
         }
       },
       "payment_source": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/payment_source",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/payment_source"
+          "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/payment_source",
+          "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/payment_source"
         }
       }
     },

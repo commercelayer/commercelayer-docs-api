@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{delivery_lead_time_id}}",
+      "id": "xYZkjABcde",
       "type": "delivery_lead_times",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde"
       },
       "attributes": {
         "min_hours": "48",
@@ -53,14 +53,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "stock_location": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/stock_location",
-            "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/stock_location"
+            "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/stock_location",
+            "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/stock_location"
           }
         },
         "shipping_method": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/shipping_method",
-            "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/shipping_method"
+            "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/shipping_method",
+            "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/shipping_method"
           }
         }
       },
@@ -77,9 +77,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=14&page[size]=10"
   }
 }
 ```

@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{shipping_category_id}}",
+      "id": "xYZkjABcde",
       "type": "shipping_categories",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
       },
       "attributes": {
         "name": "Merchandise",
@@ -50,8 +50,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "skus": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/relationships/skus",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/skus"
+            "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
+            "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
           }
         }
       },
@@ -68,9 +68,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=14&page[size]=10"
   }
 }
 ```

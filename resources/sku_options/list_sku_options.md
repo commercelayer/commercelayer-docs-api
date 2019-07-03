@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{sku_option_id}}",
+      "id": "xYZkjABcde",
       "type": "sku_options",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
       },
       "attributes": {
         "name": "Embossing",
@@ -57,8 +57,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "market": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/relationships/market",
-            "related": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/market"
+            "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/market",
+            "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/market"
           }
         }
       },
@@ -75,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
   }
 }
 ```

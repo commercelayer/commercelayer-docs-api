@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{sku_option_id}}",
+    "id": "xYZkjABcde",
     "type": "sku_options",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
     },
     "attributes": {
       "name": "Embossing",
@@ -56,8 +56,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "relationships": {
       "market": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/relationships/market",
-          "related": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/market"
+          "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/market",
+          "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/market"
         }
       }
     },

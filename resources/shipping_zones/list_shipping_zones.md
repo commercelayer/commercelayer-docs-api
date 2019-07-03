@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{shipping_zone_id}}",
+      "id": "xYZkjABcde",
       "type": "shipping_zones",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/shipping_zones/{{shipping_zone_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/shipping_zones/xYZkjABcde"
       },
       "attributes": {
         "name": "Europe (main countries)",
@@ -68,9 +68,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/shipping_zones?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/shipping_zones?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/shipping_zones?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=14&page[size]=10"
   }
 }
 ```

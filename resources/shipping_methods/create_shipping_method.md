@@ -76,10 +76,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{shipping_method_id}}",
+    "id": "xYZkjABcde",
     "type": "shipping_methods",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde"
     },
     "attributes": {
       "name": "Standard shipping",
@@ -104,26 +104,26 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "market": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/relationships/market",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/market"
+          "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/market",
+          "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/market"
         }
       },
       "shipping_zone": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/relationships/shipping_zone",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/shipping_zone"
+          "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/shipping_zone",
+          "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/shipping_zone"
         }
       },
       "shipping_category": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/relationships/shipping_category",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/shipping_category"
+          "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/shipping_category",
+          "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/shipping_category"
         }
       },
       "delivery_lead_time_for_shipment": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/relationships/delivery_lead_time_for_shipment",
-          "related": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}/delivery_lead_time_for_shipment"
+          "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/delivery_lead_time_for_shipment",
+          "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/delivery_lead_time_for_shipment"
         }
       }
     },

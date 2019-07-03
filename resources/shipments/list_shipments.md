@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{shipment_id}}",
+      "id": "xYZkjABcde",
       "type": "shipments",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde"
       },
       "attributes": {
         "number": "#1234/S/001",
@@ -55,50 +55,50 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "shipping_category": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_category",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_category"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_category",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_category"
           }
         },
         "stock_location": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/stock_location",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/stock_location"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_location",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_location"
           }
         },
         "shipping_address": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_address",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_address"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_address",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_address"
           }
         },
         "shipping_method": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipping_method",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipping_method"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_method",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_method"
           }
         },
         "shipment_line_items": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/shipment_line_items",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/shipment_line_items"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipment_line_items",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipment_line_items"
           }
         },
         "available_shipping_methods": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/available_shipping_methods",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/available_shipping_methods"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/available_shipping_methods",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/available_shipping_methods"
           }
         },
         "parcels": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/parcels",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/parcels"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/parcels",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/parcels"
           }
         },
         "attachments": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/relationships/attachments",
-            "related": "https://{{subdomain}}.commercelayer.io/api/shipments/{{shipment_id}}/attachments"
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/attachments"
           }
         }
       },
@@ -115,9 +115,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/shipments?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/shipments?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/shipments?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/shipments?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/shipments?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/shipments?page[number]=14&page[size]=10"
   }
 }
 ```

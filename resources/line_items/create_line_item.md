@@ -64,10 +64,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{line_item_id}}",
+    "id": "xYZkjABcde",
     "type": "line_items",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde"
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -114,20 +114,20 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "order": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/order",
-          "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/order"
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/order",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/order"
         }
       },
       "item": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/item",
-          "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/item"
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/item",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/item"
         }
       },
       "line_item_options": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/relationships/line_item_options",
-          "related": "https://{{subdomain}}.commercelayer.io/api/line_items/{{line_item_id}}/line_item_options"
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/line_item_options",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/line_item_options"
         }
       }
     },

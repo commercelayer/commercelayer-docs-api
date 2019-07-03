@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{line_item_option_id}}",
+      "id": "xYZkjABcde",
       "type": "line_item_options",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde"
       },
       "attributes": {
         "name": "Embossing",
@@ -63,14 +63,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "line_item": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/relationships/line_item",
-            "related": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/line_item"
+            "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/relationships/line_item",
+            "related": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/line_item"
           }
         },
         "sku_option": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/relationships/sku_option",
-            "related": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/sku_option"
+            "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/relationships/sku_option",
+            "related": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/sku_option"
           }
         }
       },
@@ -87,9 +87,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/line_item_options?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/line_item_options?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/line_item_options?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/line_item_options?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/line_item_options?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/line_item_options?page[number]=14&page[size]=10"
   }
 }
 ```

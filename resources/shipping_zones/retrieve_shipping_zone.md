@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{shipping_zone_id}}",
+    "id": "xYZkjABcde",
     "type": "shipping_zones",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_zones/{{shipping_zone_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/shipping_zones/xYZkjABcde"
     },
     "attributes": {
       "name": "Europe (main countries)",

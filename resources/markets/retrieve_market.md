@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{market_id}}",
+    "id": "xYZkjABcde",
     "type": "markets",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde"
     },
     "attributes": {
       "number": 1234,
@@ -51,20 +51,20 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "relationships": {
       "merchant": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/merchant",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/merchant"
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/merchant",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/merchant"
         }
       },
       "price_list": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/price_list",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/price_list"
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/price_list",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/price_list"
         }
       },
       "inventory_model": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/relationships/inventory_model",
-          "related": "https://{{subdomain}}.commercelayer.io/api/markets/{{market_id}}/inventory_model"
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
         }
       }
     },

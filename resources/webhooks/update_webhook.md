@@ -62,10 +62,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{webhook_id}}",
+    "id": "xYZkjABcde",
     "type": "webhooks",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/webhooks/{{webhook_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/webhooks/xYZkjABcde"
     },
     "attributes": {
       "topic": "orders.place",

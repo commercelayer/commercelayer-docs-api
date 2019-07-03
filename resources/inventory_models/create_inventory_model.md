@@ -52,10 +52,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{inventory_model_id}}",
+    "id": "xYZkjABcde",
     "type": "inventory_models",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
     },
     "attributes": {
       "name": "EU Inventory Model",
@@ -69,8 +69,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "stock_levels": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/relationships/stock_levels",
-          "related": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/stock_levels"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
         }
       }
     },

@@ -61,10 +61,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{attachment_id}}",
+    "id": "xYZkjABcde",
     "type": "attachments",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
     },
     "attributes": {
       "name": "DDT transport document",
@@ -80,8 +80,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "attachable": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/relationships/attachable",
-          "related": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/attachable"
+          "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/relationships/attachable",
+          "related": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/attachable"
         }
       }
     },

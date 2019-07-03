@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{inventory_model_id}}",
+      "id": "xYZkjABcde",
       "type": "inventory_models",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
       },
       "attributes": {
         "name": "EU Inventory Model",
@@ -50,8 +50,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "stock_levels": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/relationships/stock_levels",
-            "related": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/stock_levels"
+            "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
+            "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
           }
         }
       },
@@ -68,9 +68,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=14&page[size]=10"
   }
 }
 ```

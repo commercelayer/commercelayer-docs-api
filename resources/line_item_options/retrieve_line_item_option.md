@@ -32,10 +32,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "id": "{{line_item_option_id}}",
+    "id": "xYZkjABcde",
     "type": "line_item_options",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde"
     },
     "attributes": {
       "name": "Embossing",
@@ -62,14 +62,14 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "relationships": {
       "line_item": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/relationships/line_item",
-          "related": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/line_item"
+          "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/relationships/line_item",
+          "related": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/line_item"
         }
       },
       "sku_option": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/relationships/sku_option",
-          "related": "https://{{subdomain}}.commercelayer.io/api/line_item_options/{{line_item_option_id}}/sku_option"
+          "self": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/relationships/sku_option",
+          "related": "https://yourdomain.commercelayer.io/api/line_item_options/xYZkjABcde/sku_option"
         }
       }
     },

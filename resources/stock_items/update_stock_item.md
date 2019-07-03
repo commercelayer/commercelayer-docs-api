@@ -74,10 +74,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "{{stock_item_id}}",
+    "id": "xYZkjABcde",
     "type": "stock_items",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -92,14 +92,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "stock_location": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/stock_location",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/stock_location"
+          "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/stock_location",
+          "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/stock_location"
         }
       },
       "sku": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/sku",
-          "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/sku"
+          "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/sku",
+          "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/sku"
         }
       }
     },

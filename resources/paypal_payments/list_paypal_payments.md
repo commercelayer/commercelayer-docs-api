@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{paypal_payment_id}}",
+      "id": "xYZkjABcde",
       "type": "paypal_payments",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
       },
       "attributes": {
         "return_url": "https://yourbrand.com/thankyou",
@@ -57,8 +57,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "order": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/relationships/order",
-            "related": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}/order"
+            "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/order",
+            "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/order"
           }
         }
       },
@@ -75,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/paypal_payments?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/paypal_payments?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/paypal_payments?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/paypal_payments?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/paypal_payments?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/paypal_payments?page[number]=14&page[size]=10"
   }
 }
 ```

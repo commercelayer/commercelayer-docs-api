@@ -55,10 +55,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{price_list_id}}",
+    "id": "xYZkjABcde",
     "type": "price_lists",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde"
     },
     "attributes": {
       "name": "EU Price list",
@@ -74,8 +74,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "prices": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}/relationships/prices",
-          "related": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}/prices"
+          "self": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde/relationships/prices",
+          "related": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde/prices"
         }
       }
     },

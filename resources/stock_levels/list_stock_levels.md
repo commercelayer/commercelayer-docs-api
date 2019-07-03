@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{stock_level_id}}",
+      "id": "xYZkjABcde",
       "type": "stock_levels",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
       },
       "attributes": {
         "priority": "1",
@@ -51,14 +51,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "stock_location": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/stock_location",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/stock_location"
+            "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
+            "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
           }
         },
         "inventory_model": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/inventory_model",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/inventory_model"
+            "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
+            "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
           }
         }
       },
@@ -75,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=14&page[size]=10"
   }
 }
 ```

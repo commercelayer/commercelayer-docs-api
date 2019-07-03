@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{customer_password_reset_id}}",
+      "id": "xYZkjABcde",
       "type": "customer_password_resets",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
       },
       "attributes": {
         "customer_email": "john@example.com",
@@ -52,8 +52,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "customer": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/relationships/customer",
-            "related": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}/customer"
+            "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/relationships/customer",
+            "related": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde/customer"
           }
         }
       },
@@ -70,9 +70,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/customer_password_resets?page[number]=14&page[size]=10"
   }
 }
 ```

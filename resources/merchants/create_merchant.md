@@ -59,10 +59,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "{{merchant_id}}",
+    "id": "xYZkjABcde",
     "type": "merchants",
     "links": {
-      "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}"
+      "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde"
     },
     "attributes": {
       "name": "The Brand Inc.",
@@ -76,8 +76,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "address": {
         "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/relationships/address",
-          "related": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/address"
+          "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/address",
+          "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/address"
         }
       }
     },

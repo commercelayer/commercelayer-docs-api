@@ -33,10 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "id": "{{stock_item_id}}",
+      "id": "xYZkjABcde",
       "type": "stock_items",
       "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}"
+        "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
       },
       "attributes": {
         "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -51,14 +51,14 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "relationships": {
         "stock_location": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/stock_location",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/stock_location"
+            "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/stock_location",
+            "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/stock_location"
           }
         },
         "sku": {
           "links": {
-            "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/relationships/sku",
-            "related": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}/sku"
+            "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/sku",
+            "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/sku"
           }
         }
       },
@@ -75,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://{{subdomain}}.commercelayer.io/api/stock_items?page[number]=1&page[size]=10",
-    "next": "https://{{subdomain}}.commercelayer.io/api/stock_items?page[number]=2&page[size]=10",
-    "last": "https://{{subdomain}}.commercelayer.io/api/stock_items?page[number]=14&page[size]=10"
+    "first": "https://yourdomain.commercelayer.io/api/stock_items?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/stock_items?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/stock_items?page[number]=14&page[size]=10"
   }
 }
 ```
