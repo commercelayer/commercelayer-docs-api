@@ -1,10 +1,10 @@
 ---
-description: How to fetch a collection of sku options via API
+description: How to fetch a collection of SKUs via API
 ---
 
-# List all sku options
+# List all SKUs
 
-To fetch a collection of sku options, send a `GET` request to the `/api/sku_options` endpoint.
+To fetch a collection of SKUs, send a `GET` request to the `/api/sku_options` endpoint.
 
 {% page-ref page="../../fetching-resources.md" %}
 
@@ -16,7 +16,7 @@ To fetch a collection of sku options, send a `GET` request to the `/api/sku_opti
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches a collection of sku options:
+The following request fetches a collection of SKUs:
 
 ```javascript
 curl -X GET \
@@ -88,7 +88,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 ### Sortable attributes
 
-The list of sku options can be sorted by the following attributes:
+The list of SKUs can be sorted by the following attributes:
 
 * `name`
 * `price_amount_cents`
