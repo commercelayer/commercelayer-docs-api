@@ -185,7 +185,7 @@
 	* [Retrieve a sku option](resources/sku_options/retrieve_sku_option.md)
 	* [Update a sku option](resources/sku_options/update_sku_option.md)
 	* [Delete a sku option](resources/sku_options/delete_sku_option.md)
-* [Skus](resources/skus/README.md)
+* [SKUs](resources/skus/README.md)
 	* [Create an SKU](resources/skus/create_sku.md)
 	* [List all SKUs](resources/skus/list_skus.md)
 	* [Retrieve an SKU](resources/skus/retrieve_sku.md)
