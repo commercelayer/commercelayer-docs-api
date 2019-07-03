@@ -125,7 +125,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "reference": "ANYREFEFERNCE",
       "metadata": {
         "foo": "bar"
-        },
+      },
     },
     "relationships": {
       "market": {
