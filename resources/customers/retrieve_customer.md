@@ -31,57 +31,55 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "customers",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde"
-    },
-    "attributes": {
-      "email": "john@example.com",
-      "status": "prospect",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "customer_group": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_group",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_group"
-        }
-      },
-      "customer_addresses": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_addresses",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_addresses"
-        }
-      },
-      "customer_payment_sources": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_payment_sources",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_payment_sources"
-        }
-      },
-      "customer_subscriptions": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_subscriptions",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_subscriptions"
-        }
-      },
-      "orders": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/orders",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/orders"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+  "id": "{{customer_id}}",
+  "type": "customers",
+  "links": {
+    "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}"
+  },
+  "attributes": {
+    "email": "john@example.com",
+    "status": "prospect",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
+  },
+  "relationships": {
+    "customer_group": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_group",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_group"
+      }
+    },
+    "customer_addresses": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_addresses",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_addresses"
+      }
+    },
+    "customer_payment_sources": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_payment_sources",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_payment_sources"
+      }
+    },
+    "customer_subscriptions": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_subscriptions",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_subscriptions"
+      }
+    },
+    "orders": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/orders",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/orders"
+      }
+    }
+  },
+  "meta": {
+    "mode": "test"
   }
 }
 ```

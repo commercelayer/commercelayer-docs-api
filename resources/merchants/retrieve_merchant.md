@@ -31,32 +31,30 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "merchants",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde"
-    },
-    "attributes": {
-      "name": "The Brand Inc.",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "address": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/relationships/address",
-          "related": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/address"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+  "id": "{{merchant_id}}",
+  "type": "merchants",
+  "links": {
+    "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}"
+  },
+  "attributes": {
+    "name": "The Brand Inc.",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
+  },
+  "relationships": {
+    "address": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/relationships/address",
+        "related": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}/address"
+      }
+    }
+  },
+  "meta": {
+    "mode": "test"
   }
 }
 ```

@@ -31,31 +31,29 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "wire_transfers",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/wire_transfers/xYZkjABcde"
-    },
-    "attributes": {
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "order": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/relationships/order",
-          "related": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/order"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+  "id": "{{wire_transfer_id}}",
+  "type": "wire_transfers",
+  "links": {
+    "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}"
+  },
+  "attributes": {
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
+  },
+  "relationships": {
+    "order": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/relationships/order",
+        "related": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/order"
+      }
+    }
+  },
+  "meta": {
+    "mode": "test"
   }
 }
 ```

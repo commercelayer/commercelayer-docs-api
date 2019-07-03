@@ -31,32 +31,30 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "data": {
-    "id": "xYZkjABcde",
-    "type": "customer_subscriptions",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_subscriptions/xYZkjABcde"
-    },
-    "attributes": {
-      "customer_email": null,
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    "relationships": {
-      "customer": {
-        "links": {
-          "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
-          "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
-        }
-      }
-    },
-    "meta": {
-      "mode": "test"
+  "id": "{{customer_subscription_id}}",
+  "type": "customer_subscriptions",
+  "links": {
+    "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}"
+  },
+  "attributes": {
+    "customer_email": null,
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
     }
+  },
+  "relationships": {
+    "customer": {
+      "links": {
+        "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
+        "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
+      }
+    }
+  },
+  "meta": {
+    "mode": "test"
   }
 }
 ```
