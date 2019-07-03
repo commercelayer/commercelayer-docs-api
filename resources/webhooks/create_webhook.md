@@ -42,15 +42,13 @@ curl -X POST \
       "topic": "orders.place"
       "callback_url": "https://yourapp.com/webhooks"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `webhook` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

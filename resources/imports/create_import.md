@@ -44,15 +44,13 @@ curl -X POST \
       "parent_resource_id": "1234"
       "inputs": "[{:code=>"ABC", :name=>"Foo"}, {:code=>"DEF", :name=>"Bar"}]"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `import` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

@@ -39,15 +39,13 @@ curl -X POST \
     "attributes": {
       "name": "EU Inventory Model"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `inventory model` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

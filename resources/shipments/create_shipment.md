@@ -37,15 +37,13 @@ curl -X POST \
     "type": "shipments",
     "attributes": {
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `shipment` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

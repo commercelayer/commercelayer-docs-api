@@ -45,15 +45,13 @@ curl -X POST \
     "attributes": {
       "name": "Europe (main countries)"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `shipping zone` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

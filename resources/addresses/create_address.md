@@ -68,7 +68,7 @@ curl -X POST \
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `address` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

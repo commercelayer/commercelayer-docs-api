@@ -42,15 +42,13 @@ curl -X POST \
       "name": "EU Price list"
       "currency_code": "EUR"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `price list` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

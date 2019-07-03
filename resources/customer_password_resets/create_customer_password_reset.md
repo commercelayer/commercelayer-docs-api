@@ -39,15 +39,13 @@ curl -X POST \
     "attributes": {
       "customer_email": "john@example.com"
     },
-    "relationships": {
-    }
   }
 }'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `201 Created` status code, returning the created `customer password reset` object:
+On success, the API responds with a `201 Created` status code, returning the created resource object:
 
 ```javascript
 {

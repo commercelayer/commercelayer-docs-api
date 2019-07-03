@@ -43,8 +43,7 @@ curl -X PATCH \
       "reference": "ANYREFEFERNCE"
       "metadata": "{:foo=>"bar"}"
     },
-    "relationships": {
-    }
+    
   }
 }'
 ```
