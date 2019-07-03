@@ -30,7 +30,18 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-"customer_password_resets"
+{
+  "customer_email": "john@example.com",
+  "reset_password_token": "xhFfkmfybsLxzaAP6xcs",
+  "reset_password_at": "2018-01-01T12:00:00.000Z",
+  "id": "XAyRWNUzyN",
+  "created_at": "2018-01-01T12:00:00.000Z",
+  "updated_at": "2018-01-01T12:00:00.000Z",
+  "reference": "ANYREFEFERNCE",
+  "metadata": {
+    "foo": "bar"
+  }
+}
 ```
 {% endtab %}
 {% endtabs %}

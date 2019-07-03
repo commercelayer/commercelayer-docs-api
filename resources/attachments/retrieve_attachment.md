@@ -30,7 +30,18 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-"attachments"
+{
+  "name": "DDT transport document",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "url": "https://s3.yourbrand.com/attachment.pdf",
+  "id": "XAyRWNUzyN",
+  "created_at": "2018-01-01T12:00:00.000Z",
+  "updated_at": "2018-01-01T12:00:00.000Z",
+  "reference": "ANYREFEFERNCE",
+  "metadata": {
+    "foo": "bar"
+  }
+}
 ```
 {% endtab %}
 {% endtabs %}

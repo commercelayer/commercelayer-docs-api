@@ -30,7 +30,27 @@ curl -X GET \
 On success, the API responds with a `200 OK` status code, returning a single resource object:
 
 ```javascript
-"shipping_methods"
+{
+  "name": "Standard shipping",
+  "disabled_at": "2018-01-01T12:00:00.000Z",
+  "currency_code": "EUR",
+  "price_amount_cents": "1000",
+  "price_amount_float": "10.00",
+  "formatted_price_amount": "€10,00",
+  "free_over_amount_cents": "9900",
+  "free_over_amount_float": "99.00",
+  "formatted_free_over_amount": "€99,00",
+  "price_amount_for_shipment_cents": "0",
+  "price_amount_for_shipment_float": "0.0",
+  "formatted_price_amount_for_shipment": "€0,00",
+  "id": "XAyRWNUzyN",
+  "created_at": "2018-01-01T12:00:00.000Z",
+  "updated_at": "2018-01-01T12:00:00.000Z",
+  "reference": "ANYREFEFERNCE",
+  "metadata": {
+    "foo": "bar"
+  }
+}
 ```
 {% endtab %}
 {% endtabs %}
