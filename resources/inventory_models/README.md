@@ -12,10 +12,10 @@ If an order contains line items from two or more stock locations, the order is s
 ### The inventory model object
 
 An **inventory model** object is returned as part of the response body of each successful
-/api-reference/resources/inventory_models/create_inventory_model,
-/api-reference/resources/inventory_models/list_inventory_models,
-/api-reference/resources/inventory_models/retrieve_inventory_model,
-or /api-reference/resources/inventory_models/update_inventory_model API call.
+[create](/api-reference/resources/inventory_models/create_inventory_model),
+[list](/api-reference/resources/inventory_models/list_inventory_models),
+[retrieve](/api-reference/resources/inventory_models/retrieve_inventory_model),
+or [update](/api-reference/resources/inventory_models/update_inventory_model) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

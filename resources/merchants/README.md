@@ -11,10 +11,10 @@ Tax calculators use the merchant's address (and the shipping address) to determi
 ### The merchant object
 
 A **merchant** object is returned as part of the response body of each successful
-/api-reference/resources/merchants/create_merchant,
-/api-reference/resources/merchants/list_merchants,
-/api-reference/resources/merchants/retrieve_merchant,
-or /api-reference/resources/merchants/update_merchant API call.
+[create](/api-reference/resources/merchants/create_merchant),
+[list](/api-reference/resources/merchants/list_merchants),
+[retrieve](/api-reference/resources/merchants/retrieve_merchant),
+or [update](/api-reference/resources/merchants/update_merchant) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

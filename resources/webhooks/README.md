@@ -12,10 +12,10 @@ The object in the request body has the same format that you get when fetching th
 ### The webhook object
 
 A **webhook** object is returned as part of the response body of each successful
-/api-reference/resources/webhooks/create_webhook,
-/api-reference/resources/webhooks/list_webhooks,
-/api-reference/resources/webhooks/retrieve_webhook,
-or /api-reference/resources/webhooks/update_webhook API call.
+[create](/api-reference/resources/webhooks/create_webhook),
+[list](/api-reference/resources/webhooks/list_webhooks),
+[retrieve](/api-reference/resources/webhooks/retrieve_webhook),
+or [update](/api-reference/resources/webhooks/update_webhook) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -11,10 +11,10 @@ The match is evaluated against a set of regular expressions on the address count
 ### The shipping zone object
 
 A **shipping zone** object is returned as part of the response body of each successful
-/api-reference/resources/shipping_zones/create_shipping_zone,
-/api-reference/resources/shipping_zones/list_shipping_zones,
-/api-reference/resources/shipping_zones/retrieve_shipping_zone,
-or /api-reference/resources/shipping_zones/update_shipping_zone API call.
+[create](/api-reference/resources/shipping_zones/create_shipping_zone),
+[list](/api-reference/resources/shipping_zones/list_shipping_zones),
+[retrieve](/api-reference/resources/shipping_zones/retrieve_shipping_zone),
+or [update](/api-reference/resources/shipping_zones/update_shipping_zone) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

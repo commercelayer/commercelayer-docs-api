@@ -13,10 +13,10 @@ Associate a customer to a customer group if you want to assign a dedicated price
 ### The customer object
 
 A **customer** object is returned as part of the response body of each successful
-/api-reference/resources/customers/create_customer,
-/api-reference/resources/customers/list_customers,
-/api-reference/resources/customers/retrieve_customer,
-or /api-reference/resources/customers/update_customer API call.
+[create](/api-reference/resources/customers/create_customer),
+[list](/api-reference/resources/customers/list_customers),
+[retrieve](/api-reference/resources/customers/retrieve_customer),
+or [update](/api-reference/resources/customers/update_customer) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

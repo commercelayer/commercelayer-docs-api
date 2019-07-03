@@ -12,10 +12,10 @@ Customers can save their most used addresses in their address books (as customer
 ### The attachment object
 
 An **attachment** object is returned as part of the response body of each successful
-/api-reference/resources/attachments/create_attachment,
-/api-reference/resources/attachments/list_attachments,
-/api-reference/resources/attachments/retrieve_attachment,
-or /api-reference/resources/attachments/update_attachment API call.
+[create](/api-reference/resources/attachments/create_attachment),
+[list](/api-reference/resources/attachments/list_attachments),
+[retrieve](/api-reference/resources/attachments/retrieve_attachment),
+or [update](/api-reference/resources/attachments/update_attachment) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

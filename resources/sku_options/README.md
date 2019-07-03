@@ -11,10 +11,10 @@ They can have a price and a delay time (e.g., preparation time) and are defined 
 ### The sku option object
 
 A **sku option** object is returned as part of the response body of each successful
-/api-reference/resources/sku_options/create_sku_option,
-/api-reference/resources/sku_options/list_sku_options,
-/api-reference/resources/sku_options/retrieve_sku_option,
-or /api-reference/resources/sku_options/update_sku_option API call.
+[create](/api-reference/resources/sku_options/create_sku_option),
+[list](/api-reference/resources/sku_options/list_sku_options),
+[retrieve](/api-reference/resources/sku_options/retrieve_sku_option),
+or [update](/api-reference/resources/sku_options/update_sku_option) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

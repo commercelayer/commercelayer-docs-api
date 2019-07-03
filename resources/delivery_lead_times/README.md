@@ -11,10 +11,10 @@ This is useful if you ship from many stock locations or offer more shipping meth
 ### The delivery lead time object
 
 A **delivery lead time** object is returned as part of the response body of each successful
-/api-reference/resources/delivery_lead_times/create_delivery_lead_time,
-/api-reference/resources/delivery_lead_times/list_delivery_lead_times,
-/api-reference/resources/delivery_lead_times/retrieve_delivery_lead_time,
-or /api-reference/resources/delivery_lead_times/update_delivery_lead_time API call.
+[create](/api-reference/resources/delivery_lead_times/create_delivery_lead_time),
+[list](/api-reference/resources/delivery_lead_times/list_delivery_lead_times),
+[retrieve](/api-reference/resources/delivery_lead_times/retrieve_delivery_lead_time),
+or [update](/api-reference/resources/delivery_lead_times/update_delivery_lead_time) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

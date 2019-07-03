@@ -11,10 +11,10 @@ Create more price lists if you need to manage international business models or B
 ### The price list object
 
 A **price list** object is returned as part of the response body of each successful
-/api-reference/resources/price_lists/create_price_list,
-/api-reference/resources/price_lists/list_price_lists,
-/api-reference/resources/price_lists/retrieve_price_list,
-or /api-reference/resources/price_lists/update_price_list API call.
+[create](/api-reference/resources/price_lists/create_price_list),
+[list](/api-reference/resources/price_lists/list_price_lists),
+[retrieve](/api-reference/resources/price_lists/retrieve_price_list),
+or [update](/api-reference/resources/price_lists/update_price_list) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -12,10 +12,10 @@ This way, all the resources (e.g., SKUs, prices, stock items) are automatically 
 ### The market object
 
 A **market** object is returned as part of the response body of each successful
-/api-reference/resources/markets/create_market,
-/api-reference/resources/markets/list_markets,
-/api-reference/resources/markets/retrieve_market,
-or /api-reference/resources/markets/update_market API call.
+[create](/api-reference/resources/markets/create_market),
+[list](/api-reference/resources/markets/list_markets),
+[retrieve](/api-reference/resources/markets/retrieve_market),
+or [update](/api-reference/resources/markets/update_market) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

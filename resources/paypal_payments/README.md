@@ -18,10 +18,10 @@ PayPal payments are one-time payment sources and cannot be saved in customer wal
 ### The paypal payment object
 
 A **paypal payment** object is returned as part of the response body of each successful
-/api-reference/resources/paypal_payments/create_paypal_payment,
-/api-reference/resources/paypal_payments/list_paypal_payments,
-/api-reference/resources/paypal_payments/retrieve_paypal_payment,
-or /api-reference/resources/paypal_payments/update_paypal_payment API call.
+[create](/api-reference/resources/paypal_payments/create_paypal_payment),
+[list](/api-reference/resources/paypal_payments/list_paypal_payments),
+[retrieve](/api-reference/resources/paypal_payments/retrieve_paypal_payment),
+or [update](/api-reference/resources/paypal_payments/update_paypal_payment) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

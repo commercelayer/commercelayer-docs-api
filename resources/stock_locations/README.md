@@ -11,10 +11,10 @@ The stock location's address is the "from" address on the shipping labels ([lear
 ### The stock location object
 
 A **stock location** object is returned as part of the response body of each successful
-/api-reference/resources/stock_locations/create_stock_location,
-/api-reference/resources/stock_locations/list_stock_locations,
-/api-reference/resources/stock_locations/retrieve_stock_location,
-or /api-reference/resources/stock_locations/update_stock_location API call.
+[create](/api-reference/resources/stock_locations/create_stock_location),
+[list](/api-reference/resources/stock_locations/list_stock_locations),
+[retrieve](/api-reference/resources/stock_locations/retrieve_stock_location),
+or [update](/api-reference/resources/stock_locations/update_stock_location) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

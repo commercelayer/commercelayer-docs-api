@@ -12,10 +12,10 @@ The related documentation is automatically generated and attached to the parcel.
 ### The parcel object
 
 A **parcel** object is returned as part of the response body of each successful
-/api-reference/resources/parcels/create_parcel,
-/api-reference/resources/parcels/list_parcels,
-/api-reference/resources/parcels/retrieve_parcel,
-or /api-reference/resources/parcels/update_parcel API call.
+[create](/api-reference/resources/parcels/create_parcel),
+[list](/api-reference/resources/parcels/list_parcels),
+[retrieve](/api-reference/resources/parcels/retrieve_parcel),
+or [update](/api-reference/resources/parcels/update_parcel) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

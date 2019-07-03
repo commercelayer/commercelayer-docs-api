@@ -11,10 +11,10 @@ An order is split into more shipments if it contains line items belonging to mor
 ### The shipping category object
 
 A **shipping category** object is returned as part of the response body of each successful
-/api-reference/resources/shipping_categories/create_shipping_category,
-/api-reference/resources/shipping_categories/list_shipping_categories,
-/api-reference/resources/shipping_categories/retrieve_shipping_category,
-or /api-reference/resources/shipping_categories/update_shipping_category API call.
+[create](/api-reference/resources/shipping_categories/create_shipping_category),
+[list](/api-reference/resources/shipping_categories/list_shipping_categories),
+[retrieve](/api-reference/resources/shipping_categories/retrieve_shipping_category),
+or [update](/api-reference/resources/shipping_categories/update_shipping_category) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
