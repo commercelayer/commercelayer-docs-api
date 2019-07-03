@@ -13,10 +13,10 @@ Let the customers manage their active subscriptions through their reserved area.
 ### The customer subscription object
 
 A **customer subscription** object is returned as part of the response body of each successful
-[create](/api-reference/resources/customer_subscriptions/create_customer_subscription),
-[list](/api-reference/resources/customer_subscriptions/list_customer_subscriptions),
-[retrieve](/api-reference/resources/customer_subscriptions/retrieve_customer_subscription),
-or [update](/api-reference/resources/customer_subscriptions/update_customer_subscription) API call.
+[create](https://docs.commercelayer.io/resources/customer_subscriptions/create_customer_subscription),
+[list](https://docs.commercelayer.io/resources/customer_subscriptions/list_customer_subscriptions),
+[retrieve](https://docs.commercelayer.io/resources/customer_subscriptions/retrieve_customer_subscription),
+or [update](https://docs.commercelayer.io/resources/customer_subscriptions/update_customer_subscription) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ or [update](/api-reference/resources/customer_subscriptions/update_customer_subs
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer** | `object` | The associated customer. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

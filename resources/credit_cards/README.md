@@ -11,10 +11,10 @@ Customers can save their credit cards in their wallets (as customer payment sour
 ### The credit card object
 
 A **credit card** object is returned as part of the response body of each successful
-[create](/api-reference/resources/credit_cards/create_credit_card),
-[list](/api-reference/resources/credit_cards/list_credit_cards),
-[retrieve](/api-reference/resources/credit_cards/retrieve_credit_card),
-or [update](/api-reference/resources/credit_cards/update_credit_card) API call.
+[create](https://docs.commercelayer.io/resources/credit_cards/create_credit_card),
+[list](https://docs.commercelayer.io/resources/credit_cards/list_credit_cards),
+[retrieve](https://docs.commercelayer.io/resources/credit_cards/retrieve_credit_card),
+or [update](https://docs.commercelayer.io/resources/credit_cards/update_credit_card) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -38,7 +38,7 @@ or [update](/api-reference/resources/credit_cards/update_credit_card) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**order** | `object` | The order associated to the credit card. If present, the credit card is set as the order's payment source. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

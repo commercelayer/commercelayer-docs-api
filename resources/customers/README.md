@@ -13,10 +13,10 @@ Associate a customer to a customer group if you want to assign a dedicated price
 ### The customer object
 
 A **customer** object is returned as part of the response body of each successful
-[create](/api-reference/resources/customers/create_customer),
-[list](/api-reference/resources/customers/list_customers),
-[retrieve](/api-reference/resources/customers/retrieve_customer),
-or [update](/api-reference/resources/customers/update_customer) API call.
+[create](https://docs.commercelayer.io/resources/customers/create_customer),
+[list](https://docs.commercelayer.io/resources/customers/list_customers),
+[retrieve](https://docs.commercelayer.io/resources/customers/retrieve_customer),
+or [update](https://docs.commercelayer.io/resources/customers/update_customer) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@ or [update](/api-reference/resources/customers/update_customer) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer_group** | `object` | The group to which this customer belongs (optional). |
 | relationships.**customer_addresses** | `array` | The customer's saved addresses, i.e. their address book. |

@@ -11,10 +11,10 @@ An order is split into more shipments if it contains line items belonging to mor
 ### The shipping category object
 
 A **shipping category** object is returned as part of the response body of each successful
-[create](/api-reference/resources/shipping_categories/create_shipping_category),
-[list](/api-reference/resources/shipping_categories/list_shipping_categories),
-[retrieve](/api-reference/resources/shipping_categories/retrieve_shipping_category),
-or [update](/api-reference/resources/shipping_categories/update_shipping_category) API call.
+[create](https://docs.commercelayer.io/resources/shipping_categories/create_shipping_category),
+[list](https://docs.commercelayer.io/resources/shipping_categories/list_shipping_categories),
+[retrieve](https://docs.commercelayer.io/resources/shipping_categories/retrieve_shipping_category),
+or [update](https://docs.commercelayer.io/resources/shipping_categories/update_shipping_category) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ or [update](/api-reference/resources/shipping_categories/update_shipping_categor
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**skus** | `array` | The associated skus. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

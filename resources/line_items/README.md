@@ -13,10 +13,10 @@ The order object includes all the data you need. You never need to make any calc
 ### The line item object
 
 A **line item** object is returned as part of the response body of each successful
-[create](/api-reference/resources/line_items/create_line_item),
-[list](/api-reference/resources/line_items/list_line_items),
-[retrieve](/api-reference/resources/line_items/retrieve_line_item),
-or [update](/api-reference/resources/line_items/update_line_item) API call.
+[create](https://docs.commercelayer.io/resources/line_items/create_line_item),
+[list](https://docs.commercelayer.io/resources/line_items/list_line_items),
+[retrieve](https://docs.commercelayer.io/resources/line_items/retrieve_line_item),
+or [update](https://docs.commercelayer.io/resources/line_items/update_line_item) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -44,7 +44,7 @@ or [update](/api-reference/resources/line_items/update_line_item) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**order** | `object` | The associated order. |
 | relationships.**item** | `object` | The polymorphic item associated to the line item. Can be a sku, a shipment, a payment_method or a promotion. |

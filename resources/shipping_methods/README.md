@@ -11,10 +11,10 @@ Each shipping method can have a price and can be free over a specific order's am
 ### The shipping method object
 
 A **shipping method** object is returned as part of the response body of each successful
-[create](/api-reference/resources/shipping_methods/create_shipping_method),
-[list](/api-reference/resources/shipping_methods/list_shipping_methods),
-[retrieve](/api-reference/resources/shipping_methods/retrieve_shipping_method),
-or [update](/api-reference/resources/shipping_methods/update_shipping_method) API call.
+[create](https://docs.commercelayer.io/resources/shipping_methods/create_shipping_method),
+[list](https://docs.commercelayer.io/resources/shipping_methods/list_shipping_methods),
+[retrieve](https://docs.commercelayer.io/resources/shipping_methods/retrieve_shipping_method),
+or [update](https://docs.commercelayer.io/resources/shipping_methods/update_shipping_method) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ or [update](/api-reference/resources/shipping_methods/update_shipping_method) AP
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**market** | `object` | The market where this shipping method is available. |
 | relationships.**shipping_zone** | `object` | The shipping zone that is used to match the order shipping address. |

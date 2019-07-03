@@ -11,10 +11,10 @@ They can have a price and must be present before placing an order ([learn more](
 ### The payment method object
 
 A **payment method** object is returned as part of the response body of each successful
-[create](/api-reference/resources/payment_methods/create_payment_method),
-[list](/api-reference/resources/payment_methods/list_payment_methods),
-[retrieve](/api-reference/resources/payment_methods/retrieve_payment_method),
-or [update](/api-reference/resources/payment_methods/update_payment_method) API call.
+[create](https://docs.commercelayer.io/resources/payment_methods/create_payment_method),
+[list](https://docs.commercelayer.io/resources/payment_methods/list_payment_methods),
+[retrieve](https://docs.commercelayer.io/resources/payment_methods/retrieve_payment_method),
+or [update](https://docs.commercelayer.io/resources/payment_methods/update_payment_method) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ or [update](/api-reference/resources/payment_methods/update_payment_method) API 
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**market** | `object` | The associated market. |
 | relationships.**payment_gateway** | `object` | The associated payment gateway. |

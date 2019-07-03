@@ -17,10 +17,10 @@ A typical flow is to send an email to the customer with a verification link that
 ### The customer password reset object
 
 A **customer password reset** object is returned as part of the response body of each successful
-[create](/api-reference/resources/customer_password_resets/create_customer_password_reset),
-[list](/api-reference/resources/customer_password_resets/list_customer_password_resets),
-[retrieve](/api-reference/resources/customer_password_resets/retrieve_customer_password_reset),
-or [update](/api-reference/resources/customer_password_resets/update_customer_password_reset) API call.
+[create](https://docs.commercelayer.io/resources/customer_password_resets/create_customer_password_reset),
+[list](https://docs.commercelayer.io/resources/customer_password_resets/list_customer_password_resets),
+[retrieve](https://docs.commercelayer.io/resources/customer_password_resets/retrieve_customer_password_reset),
+or [update](https://docs.commercelayer.io/resources/customer_password_resets/update_customer_password_reset) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ or [update](/api-reference/resources/customer_password_resets/update_customer_pa
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer** | `object` | The customer that requires a password reset. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

@@ -11,10 +11,10 @@ The match is evaluated against a set of regular expressions on the address count
 ### The shipping zone object
 
 A **shipping zone** object is returned as part of the response body of each successful
-[create](/api-reference/resources/shipping_zones/create_shipping_zone),
-[list](/api-reference/resources/shipping_zones/list_shipping_zones),
-[retrieve](/api-reference/resources/shipping_zones/retrieve_shipping_zone),
-or [update](/api-reference/resources/shipping_zones/update_shipping_zone) API call.
+[create](https://docs.commercelayer.io/resources/shipping_zones/create_shipping_zone),
+[list](https://docs.commercelayer.io/resources/shipping_zones/list_shipping_zones),
+[retrieve](https://docs.commercelayer.io/resources/shipping_zones/retrieve_shipping_zone),
+or [update](https://docs.commercelayer.io/resources/shipping_zones/update_shipping_zone) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -31,6 +31,6 @@ or [update](/api-reference/resources/shipping_zones/update_shipping_zone) API ca
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

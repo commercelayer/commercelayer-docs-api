@@ -12,10 +12,10 @@ The related documentation is automatically generated and attached to the parcel.
 ### The parcel object
 
 A **parcel** object is returned as part of the response body of each successful
-[create](/api-reference/resources/parcels/create_parcel),
-[list](/api-reference/resources/parcels/list_parcels),
-[retrieve](/api-reference/resources/parcels/retrieve_parcel),
-or [update](/api-reference/resources/parcels/update_parcel) API call.
+[create](https://docs.commercelayer.io/resources/parcels/create_parcel),
+[list](https://docs.commercelayer.io/resources/parcels/list_parcels),
+[retrieve](https://docs.commercelayer.io/resources/parcels/retrieve_parcel),
+or [update](https://docs.commercelayer.io/resources/parcels/update_parcel) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -48,7 +48,7 @@ or [update](/api-reference/resources/parcels/update_parcel) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**shipment** | `object` | The associated shipment. |
 | relationships.**parcel_line_items** | `array` | The line items in this parcel (a subset of the shipment line items) |

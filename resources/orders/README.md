@@ -14,10 +14,10 @@ Canceling an order automatically voids its payment source's authorization.
 ### The order object
 
 An **order** object is returned as part of the response body of each successful
-[create](/api-reference/resources/orders/create_order),
-[list](/api-reference/resources/orders/list_orders),
-[retrieve](/api-reference/resources/orders/retrieve_order),
-or [update](/api-reference/resources/orders/update_order) API call.
+[create](https://docs.commercelayer.io/resources/orders/create_order),
+[list](https://docs.commercelayer.io/resources/orders/list_orders),
+[retrieve](https://docs.commercelayer.io/resources/orders/retrieve_order),
+or [update](https://docs.commercelayer.io/resources/orders/update_order) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -125,7 +125,7 @@ or [update](/api-reference/resources/orders/update_order) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**market** | `object` | The associated market. |
 | relationships.**customer** | `object` | The associated customer. |

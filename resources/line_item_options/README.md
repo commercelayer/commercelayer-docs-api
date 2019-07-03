@@ -11,10 +11,10 @@ The SKU options cost is automatically added to the line item's amount.
 ### The line item option object
 
 A **line item option** object is returned as part of the response body of each successful
-[create](/api-reference/resources/line_item_options/create_line_item_option),
-[list](/api-reference/resources/line_item_options/list_line_item_options),
-[retrieve](/api-reference/resources/line_item_options/retrieve_line_item_option),
-or [update](/api-reference/resources/line_item_options/update_line_item_option) API call.
+[create](https://docs.commercelayer.io/resources/line_item_options/create_line_item_option),
+[list](https://docs.commercelayer.io/resources/line_item_options/list_line_item_options),
+[retrieve](https://docs.commercelayer.io/resources/line_item_options/retrieve_line_item_option),
+or [update](https://docs.commercelayer.io/resources/line_item_options/update_line_item_option) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ or [update](/api-reference/resources/line_item_options/update_line_item_option) 
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**line_item** | `object` | The associated line item. |
 | relationships.**sku_option** | `object` | The associated sku option. |

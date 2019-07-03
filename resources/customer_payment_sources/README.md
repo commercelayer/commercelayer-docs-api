@@ -11,10 +11,10 @@ During checkout, a logged customer can retrieve their saved cards and use them t
 ### The customer payment source object
 
 A **customer payment source** object is returned as part of the response body of each successful
-[create](/api-reference/resources/customer_payment_sources/create_customer_payment_source),
-[list](/api-reference/resources/customer_payment_sources/list_customer_payment_sources),
-[retrieve](/api-reference/resources/customer_payment_sources/retrieve_customer_payment_source),
-or [update](/api-reference/resources/customer_payment_sources/update_customer_payment_source) API call.
+[create](https://docs.commercelayer.io/resources/customer_payment_sources/create_customer_payment_source),
+[list](https://docs.commercelayer.io/resources/customer_payment_sources/list_customer_payment_sources),
+[retrieve](https://docs.commercelayer.io/resources/customer_payment_sources/retrieve_customer_payment_source),
+or [update](https://docs.commercelayer.io/resources/customer_payment_sources/update_customer_payment_source) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ or [update](/api-reference/resources/customer_payment_sources/update_customer_pa
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer** | `object` | The associated customer. |
 | relationships.**payment_source** | `object` | The associated payment source (i.e. credit card). |

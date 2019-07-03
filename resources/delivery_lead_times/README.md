@@ -11,10 +11,10 @@ This is useful if you ship from many stock locations or offer more shipping meth
 ### The delivery lead time object
 
 A **delivery lead time** object is returned as part of the response body of each successful
-[create](/api-reference/resources/delivery_lead_times/create_delivery_lead_time),
-[list](/api-reference/resources/delivery_lead_times/list_delivery_lead_times),
-[retrieve](/api-reference/resources/delivery_lead_times/retrieve_delivery_lead_time),
-or [update](/api-reference/resources/delivery_lead_times/update_delivery_lead_time) API call.
+[create](https://docs.commercelayer.io/resources/delivery_lead_times/create_delivery_lead_time),
+[list](https://docs.commercelayer.io/resources/delivery_lead_times/list_delivery_lead_times),
+[retrieve](https://docs.commercelayer.io/resources/delivery_lead_times/retrieve_delivery_lead_time),
+or [update](https://docs.commercelayer.io/resources/delivery_lead_times/update_delivery_lead_time) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ or [update](/api-reference/resources/delivery_lead_times/update_delivery_lead_ti
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**stock_location** | `object` | The associated stock location. |
 | relationships.**shipping_method** | `object` | The associated shipping method. |

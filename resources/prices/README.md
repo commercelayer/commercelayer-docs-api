@@ -11,10 +11,10 @@ When you create a line item, it gets the price associated with the order's the p
 ### The price object
 
 A **price** object is returned as part of the response body of each successful
-[create](/api-reference/resources/prices/create_price),
-[list](/api-reference/resources/prices/list_prices),
-[retrieve](/api-reference/resources/prices/retrieve_price),
-or [update](/api-reference/resources/prices/update_price) API call.
+[create](https://docs.commercelayer.io/resources/prices/create_price),
+[list](https://docs.commercelayer.io/resources/prices/list_prices),
+[retrieve](https://docs.commercelayer.io/resources/prices/retrieve_price),
+or [update](https://docs.commercelayer.io/resources/prices/update_price) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ or [update](/api-reference/resources/prices/update_price) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**price_list** | `object` | The associated price list. |
 | relationships.**sku** | `object` | The associated sku. When creating a price, either a sku relationship or a valid sku_code must be present. |

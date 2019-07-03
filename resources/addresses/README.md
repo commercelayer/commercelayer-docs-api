@@ -12,10 +12,10 @@ Customers can save their most used addresses in their address books (as customer
 ### The address object
 
 An **address** object is returned as part of the response body of each successful
-[create](/api-reference/resources/addresses/create_address),
-[list](/api-reference/resources/addresses/list_addresses),
-[retrieve](/api-reference/resources/addresses/retrieve_address),
-or [update](/api-reference/resources/addresses/update_address) API call.
+[create](https://docs.commercelayer.io/resources/addresses/create_address),
+[list](https://docs.commercelayer.io/resources/addresses/list_addresses),
+[retrieve](https://docs.commercelayer.io/resources/addresses/retrieve_address),
+or [update](https://docs.commercelayer.io/resources/addresses/update_address) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
@@ -49,7 +49,7 @@ or [update](/api-reference/resources/addresses/update_address) API call.
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for intergrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
+| attributes.**reference** | `string` | A string that you can use to add your own identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool or a CRM. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**geocoder** | `object` | The geocoder attached to the address, to be used for geocoding. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
