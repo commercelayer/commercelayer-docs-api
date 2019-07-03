@@ -121,6 +121,3 @@ The list of SKUs can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-
-
-
