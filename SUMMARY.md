@@ -179,7 +179,7 @@
 	* [Retrieve a shipping zone](resources/shipping_zones/retrieve_shipping_zone.md)
 	* [Update a shipping zone](resources/shipping_zones/update_shipping_zone.md)
 	* [Delete a shipping zone](resources/shipping_zones/delete_shipping_zone.md)
-* [Sku options](resources/sku_options/README.md)
+* [SKU options](resources/sku_options/README.md)
 	* [Create a sku option](resources/sku_options/create_sku_option.md)
 	* [List all sku options](resources/sku_options/list_sku_options.md)
 	* [Retrieve a sku option](resources/sku_options/retrieve_sku_option.md)

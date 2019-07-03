@@ -77,10 +77,10 @@ curl -X PATCH \
       "language_code": "it"
       "shipping_country_code_lock": "IT"
       "coupon_code": "SUMMERDISCOUNT"
-      "cart_url": "https://yourbrand.com/cart"
-      "return_url": "https://yourbrand.com/"
-      "terms_url": "https://yourbrand.com/terms"
-      "privacy_url": "https://yourbrand.com/privacy"
+      "cart_url": "https://yourdomain.com/cart"
+      "return_url": "https://yourdomain.com/"
+      "terms_url": "https://yourdomain.com/terms"
+      "privacy_url": "https://yourdomain.com/privacy"
       "_place": "1"
       "_cancel": "1"
       "_approve": "1"
@@ -226,11 +226,11 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "shipments_count": "1",
       "payment_source_details": null,
       "token": "1c0994cc4e996e8c6ee56a2198f66f3c",
-      "cart_url": "https://yourbrand.com/cart",
-      "return_url": "https://yourbrand.com/",
-      "terms_url": "https://yourbrand.com/terms",
-      "privacy_url": "https://yourbrand.com/privacy",
-      "checkout_url": "https://commerce.yourbrand.com/checkout/1c0994cc4e996e8c6ee56a2198f66f3c",
+      "cart_url": "https://yourdomain.com/cart",
+      "return_url": "https://yourdomain.com/",
+      "terms_url": "https://yourdomain.com/terms",
+      "privacy_url": "https://yourdomain.com/privacy",
+      "checkout_url": "https://yourdomain.commercelayer.io/checkout/1c0994cc4e996e8c6ee56a2198f66f3c",
       "placed_at": "2018-01-01T12:00:00.000Z",
       "approved_at": "2018-01-01T12:00:00.000Z",
       "cancelled_at": "2018-01-01T12:00:00.000Z",

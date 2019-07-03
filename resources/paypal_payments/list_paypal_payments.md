@@ -39,8 +39,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
       },
       "attributes": {
-        "return_url": "https://yourbrand.com/thankyou",
-        "cancel_url": "https://yourbrand.com/checkout/payment",
+        "return_url": "https://yourdomain.com/thankyou",
+        "cancel_url": "https://yourdomain.com/checkout/payment",
         "note_to_payer": "Thank you for shopping with us!",
         "paypal_payer_id": "ABCDEFG123456",
         "name": "ABCDEFG123456",

@@ -83,7 +83,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "total_amount_float": "188.0",
       "formatted_total_amount": "€188,00",
       "name": "Black Men T-shirt with White Logo (XL)",
-      "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
+      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
       "tax_rate": "0.22",
       "tax_breakdown": {
         "id": "1234",

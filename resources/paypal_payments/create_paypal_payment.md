@@ -40,8 +40,8 @@ curl -X POST \
   "data": {
     "type": "paypal_payments",
     "attributes": {
-      "return_url": "https://yourbrand.com/thankyou"
-      "cancel_url": "https://yourbrand.com/checkout/payment"
+      "return_url": "https://yourdomain.com/thankyou"
+      "cancel_url": "https://yourdomain.com/checkout/payment"
     },
     "relationships": {
       "order": {
@@ -68,8 +68,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
     },
     "attributes": {
-      "return_url": "https://yourbrand.com/thankyou",
-      "cancel_url": "https://yourbrand.com/checkout/payment",
+      "return_url": "https://yourdomain.com/thankyou",
+      "cancel_url": "https://yourdomain.com/checkout/payment",
       "note_to_payer": "Thank you for shopping with us!",
       "paypal_payer_id": "ABCDEFG123456",
       "name": "ABCDEFG123456",

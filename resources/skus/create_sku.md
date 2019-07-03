@@ -76,7 +76,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
+      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
       "tag_names": "Men, Black, XL",
       "pieces_per_pack": "6",
       "weight": "300",

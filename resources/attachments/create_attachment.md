@@ -69,7 +69,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "attributes": {
       "name": "DDT transport document",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "url": "https://s3.yourbrand.com/attachment.pdf",
+      "url": "https://s3.yourdomain.com/attachment.pdf",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANYREFEFERNCE",
