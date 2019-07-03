@@ -1,5 +1,5 @@
 ---
-description: How to fetch a list of addresses via API
+description: How to fetch a collection of addresses via API
 ---
 
 # List all addresses
@@ -112,4 +112,3 @@ The list of addresses can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-
