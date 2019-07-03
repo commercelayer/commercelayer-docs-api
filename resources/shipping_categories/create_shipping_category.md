@@ -1,8 +1,8 @@
 ---
-description: How to create A shipping category via API
+description: How to create a shipping category via API
 ---
 
-# Create A shipping category
+# Create a shipping category
 
 To create a new shipping category, send a `POST` request to the `/api/shipping_categories` endpoint, passing the resource arguments in the request body.
 

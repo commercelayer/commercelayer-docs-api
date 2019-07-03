@@ -6,13 +6,13 @@ description: The stock item object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Stock item object
+### The stock item object
 
-A stock item object is returned as part of the response body of each successful [create](create-stock item.md), [list](list-all-stock items.md), [retrieve](retrieve-stock item.md) or [update](update-stock item.md) API call.
+A **stock_item** object is returned as part of the response body of each successful [create](create-stock item.md), [list](list-all-stock items.md), [retrieve](retrieve-stock item.md) or [update](update-stock item.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `stock items` |
+| **type** | `string` | `stock_items` |
 | **id** | `string` | The stock item unique identifier |
 | links.**self** | `string` | The stock item endpoint URL |
 | attributes.**sku_code** | `string` | The code of the associated sku. |

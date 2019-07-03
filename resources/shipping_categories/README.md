@@ -6,13 +6,13 @@ description: The shipping category object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Shipping category object
+### The shipping category object
 
-A shipping category object is returned as part of the response body of each successful [create](create-shipping category.md), [list](list-all-shipping categories.md), [retrieve](retrieve-shipping category.md) or [update](update-shipping category.md) API call.
+A **shipping_category** object is returned as part of the response body of each successful [create](create-shipping category.md), [list](list-all-shipping categories.md), [retrieve](retrieve-shipping category.md) or [update](update-shipping category.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `shipping categories` |
+| **type** | `string` | `shipping_categories` |
 | **id** | `string` | The shipping category unique identifier |
 | links.**self** | `string` | The shipping category endpoint URL |
 | attributes.**name** | `string` | The shipping category name. |

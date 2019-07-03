@@ -6,13 +6,13 @@ description: The shipping zone object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Shipping zone object
+### The shipping zone object
 
-A shipping zone object is returned as part of the response body of each successful [create](create-shipping zone.md), [list](list-all-shipping zones.md), [retrieve](retrieve-shipping zone.md) or [update](update-shipping zone.md) API call.
+A **shipping_zone** object is returned as part of the response body of each successful [create](create-shipping zone.md), [list](list-all-shipping zones.md), [retrieve](retrieve-shipping zone.md) or [update](update-shipping zone.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `shipping zones` |
+| **type** | `string` | `shipping_zones` |
 | **id** | `string` | The shipping zone unique identifier |
 | links.**self** | `string` | The shipping zone endpoint URL |
 | attributes.**name** | `string` | The shipping zone's internal name. |

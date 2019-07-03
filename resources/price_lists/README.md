@@ -6,13 +6,13 @@ description: The price list object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Price list object
+### The price list object
 
-A price list object is returned as part of the response body of each successful [create](create-price list.md), [list](list-all-price lists.md), [retrieve](retrieve-price list.md) or [update](update-price list.md) API call.
+A **price_list** object is returned as part of the response body of each successful [create](create-price list.md), [list](list-all-price lists.md), [retrieve](retrieve-price list.md) or [update](update-price list.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `price lists` |
+| **type** | `string` | `price_lists` |
 | **id** | `string` | The price list unique identifier |
 | links.**self** | `string` | The price list endpoint URL |
 | attributes.**name** | `string` | The market's internal name |

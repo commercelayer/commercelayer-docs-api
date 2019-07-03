@@ -1,8 +1,8 @@
 ---
-description: How to create An import via API
+description: How to create an import via API
 ---
 
-# Create An import
+# Create an import
 
 To create a new import, send a `POST` request to the `/api/imports` endpoint, passing the resource arguments in the request body.
 

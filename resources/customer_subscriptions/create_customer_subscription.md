@@ -1,8 +1,8 @@
 ---
-description: How to create A customer subscription via API
+description: How to create a customer subscription via API
 ---
 
-# Create A customer subscription
+# Create a customer subscription
 
 To create a new customer subscription, send a `POST` request to the `/api/customer_subscriptions` endpoint, passing the resource arguments in the request body.
 

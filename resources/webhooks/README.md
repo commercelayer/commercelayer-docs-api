@@ -6,9 +6,9 @@ description: The webhook object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Webhook object
+### The webhook object
 
-A webhook object is returned as part of the response body of each successful [create](create-webhook.md), [list](list-all-webhooks.md), [retrieve](retrieve-webhook.md) or [update](update-webhook.md) API call.
+A **webhook** object is returned as part of the response body of each successful [create](create-webhook.md), [list](list-all-webhooks.md), [retrieve](retrieve-webhook.md) or [update](update-webhook.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |

@@ -1,8 +1,8 @@
 ---
-description: How to create A stock level via API
+description: How to create a stock level via API
 ---
 
-# Create A stock level
+# Create a stock level
 
 To create a new stock level, send a `POST` request to the `/api/stock_levels` endpoint, passing the resource arguments in the request body.
 
@@ -46,13 +46,13 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
       "inventory_model": {
         "data": {
           "type": "inventory_models",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
     }

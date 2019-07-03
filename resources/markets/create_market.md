@@ -1,8 +1,8 @@
 ---
-description: How to create A market via API
+description: How to create a market via API
 ---
 
-# Create A market
+# Create a market
 
 To create a new market, send a `POST` request to the `/api/markets` endpoint, passing the resource arguments in the request body.
 
@@ -53,13 +53,13 @@ curl -X POST \
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
       "inventory_model": {
         "data": {
           "type": "inventory_models",
-          "id": "saDFGhjkLZ"
+          "id": "QWERtyUpBa"
         }
       }
     }

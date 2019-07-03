@@ -1,8 +1,8 @@
 ---
-description: How to create A credit card via API
+description: How to create a credit card via API
 ---
 
-# Create A credit card
+# Create a credit card
 
 To create a new credit card, send a `POST` request to the `/api/credit_cards` endpoint, passing the resource arguments in the request body.
 
@@ -54,7 +54,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
     }

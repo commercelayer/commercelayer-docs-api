@@ -1,8 +1,8 @@
 ---
-description: How to create A merchant via API
+description: How to create a merchant via API
 ---
 
-# Create A merchant
+# Create a merchant
 
 To create a new merchant, send a `POST` request to the `/api/merchants` endpoint, passing the resource arguments in the request body.
 
@@ -44,7 +44,7 @@ curl -X POST \
       "address": {
         "data": {
           "type": "addresses",
-          "id": "yzkWXfgHQS"
+          "id": "QWERtyUpBa"
         }
       }
     }

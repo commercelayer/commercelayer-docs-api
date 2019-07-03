@@ -1,8 +1,8 @@
 ---
-description: How to create A customer payment source via API
+description: How to create a customer payment source via API
 ---
 
-# Create A customer payment source
+# Create a customer payment source
 
 To create a new customer payment source, send a `POST` request to the `/api/customer_payment_sources` endpoint, passing the resource arguments in the request body.
 
@@ -49,7 +49,7 @@ curl -X POST \
       "payment_source": {
         "data": {
           "type": "payment_sources",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

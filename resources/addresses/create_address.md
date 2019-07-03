@@ -1,8 +1,8 @@
 ---
-description: How to create An address via API
+description: How to create an address via API
 ---
 
-# Create An address
+# Create an address
 
 To create a new address, send a `POST` request to the `/api/addresses` endpoint, passing the resource arguments in the request body.
 

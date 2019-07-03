@@ -1,8 +1,8 @@
 ---
-description: How to create A sku option via API
+description: How to create a sku option via API
 ---
 
-# Create A sku option
+# Create a sku option
 
 To create a new sku option, send a `POST` request to the `/api/sku_options` endpoint, passing the resource arguments in the request body.
 
@@ -48,7 +48,7 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": "zxcVBnMASd"
+          "id": "QWERtyUpBa"
         }
       }
     }

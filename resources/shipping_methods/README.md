@@ -6,13 +6,13 @@ description: The shipping method object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Shipping method object
+### The shipping method object
 
-A shipping method object is returned as part of the response body of each successful [create](create-shipping method.md), [list](list-all-shipping methods.md), [retrieve](retrieve-shipping method.md) or [update](update-shipping method.md) API call.
+A **shipping_method** object is returned as part of the response body of each successful [create](create-shipping method.md), [list](list-all-shipping methods.md), [retrieve](retrieve-shipping method.md) or [update](update-shipping method.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `shipping methods` |
+| **type** | `string` | `shipping_methods` |
 | **id** | `string` | The shipping method unique identifier |
 | links.**self** | `string` | The shipping method endpoint URL |
 | attributes.**name** | `string` | The shipping method's name |

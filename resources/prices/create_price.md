@@ -1,8 +1,8 @@
 ---
-description: How to create A price via API
+description: How to create a price via API
 ---
 
-# Create A price
+# Create a price
 
 To create a new price, send a `POST` request to the `/api/prices` endpoint, passing the resource arguments in the request body.
 
@@ -48,7 +48,7 @@ curl -X POST \
       "price_list": {
         "data": {
           "type": "price_lists",
-          "id": "zxcVBnMASd"
+          "id": "QWERtyUpBa"
         }
       }
     }

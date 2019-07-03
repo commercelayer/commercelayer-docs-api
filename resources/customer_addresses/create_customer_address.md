@@ -1,8 +1,8 @@
 ---
-description: How to create A customer address via API
+description: How to create a customer address via API
 ---
 
-# Create A customer address
+# Create a customer address
 
 To create a new customer address, send a `POST` request to the `/api/customer_addresses` endpoint, passing the resource arguments in the request body.
 
@@ -43,13 +43,13 @@ curl -X POST \
       "customer": {
         "data": {
           "type": "customers",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
       "address": {
         "data": {
           "type": "addresses",
-          "id": "zxcVBnMASd"
+          "id": "QWERtyUpBa"
         }
       }
     }

@@ -1,8 +1,8 @@
 ---
-description: How to create A shipment via API
+description: How to create a shipment via API
 ---
 
-# Create A shipment
+# Create a shipment
 
 To create a new shipment, send a `POST` request to the `/api/shipments` endpoint, passing the resource arguments in the request body.
 

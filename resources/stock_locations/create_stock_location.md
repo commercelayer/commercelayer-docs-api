@@ -1,8 +1,8 @@
 ---
-description: How to create A stock location via API
+description: How to create a stock location via API
 ---
 
-# Create A stock location
+# Create a stock location
 
 To create a new stock location, send a `POST` request to the `/api/stock_locations` endpoint, passing the resource arguments in the request body.
 
@@ -45,7 +45,7 @@ curl -X POST \
       "address": {
         "data": {
           "type": "addresses",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

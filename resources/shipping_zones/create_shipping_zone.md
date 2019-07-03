@@ -1,8 +1,8 @@
 ---
-description: How to create A shipping zone via API
+description: How to create a shipping zone via API
 ---
 
-# Create A shipping zone
+# Create a shipping zone
 
 To create a new shipping zone, send a `POST` request to the `/api/shipping_zones` endpoint, passing the resource arguments in the request body.
 

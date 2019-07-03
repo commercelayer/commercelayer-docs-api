@@ -1,8 +1,8 @@
 ---
-description: How to create A stock item via API
+description: How to create a stock item via API
 ---
 
-# Create A stock item
+# Create a stock item
 
 To create a new stock item, send a `POST` request to the `/api/stock_items` endpoint, passing the resource arguments in the request body.
 
@@ -46,7 +46,7 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

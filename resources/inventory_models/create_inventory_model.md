@@ -1,8 +1,8 @@
 ---
-description: How to create An inventory model via API
+description: How to create an inventory model via API
 ---
 
-# Create An inventory model
+# Create an inventory model
 
 To create a new inventory model, send a `POST` request to the `/api/inventory_models` endpoint, passing the resource arguments in the request body.
 

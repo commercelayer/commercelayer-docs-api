@@ -1,8 +1,8 @@
 ---
-description: How to create An order via API
+description: How to create an order via API
 ---
 
-# Create An order
+# Create an order
 
 To create a new order, send a `POST` request to the `/api/orders` endpoint, passing the resource arguments in the request body.
 
@@ -57,7 +57,7 @@ curl -X POST \
       "market": {
         "data": {
           "type": "markets",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
     }

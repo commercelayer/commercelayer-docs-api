@@ -1,8 +1,8 @@
 ---
-description: How to create A customer via API
+description: How to create a customer via API
 ---
 
-# Create A customer
+# Create a customer
 
 To create a new customer, send a `POST` request to the `/api/customers` endpoint, passing the resource arguments in the request body.
 

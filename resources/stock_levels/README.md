@@ -6,13 +6,13 @@ description: The stock level object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Stock level object
+### The stock level object
 
-A stock level object is returned as part of the response body of each successful [create](create-stock level.md), [list](list-all-stock levels.md), [retrieve](retrieve-stock level.md) or [update](update-stock level.md) API call.
+A **stock_level** object is returned as part of the response body of each successful [create](create-stock level.md), [list](list-all-stock levels.md), [retrieve](retrieve-stock level.md) or [update](update-stock level.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `stock levels` |
+| **type** | `string` | `stock_levels` |
 | **id** | `string` | The stock level unique identifier |
 | links.**self** | `string` | The stock level endpoint URL |
 | attributes.**priority** | `integer` | The stock location priority within the associated invetory model. |

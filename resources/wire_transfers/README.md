@@ -6,13 +6,13 @@ description: The wire transfer object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Wire transfer object
+### The wire transfer object
 
-A wire transfer object is returned as part of the response body of each successful [create](create-wire transfer.md), [list](list-all-wire transfers.md), [retrieve](retrieve-wire transfer.md) or [update](update-wire transfer.md) API call.
+A **wire_transfer** object is returned as part of the response body of each successful [create](create-wire transfer.md), [list](list-all-wire transfers.md), [retrieve](retrieve-wire transfer.md) or [update](update-wire transfer.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `wire transfers` |
+| **type** | `string` | `wire_transfers` |
 | **id** | `string` | The wire transfer unique identifier |
 | links.**self** | `string` | The wire transfer endpoint URL |
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |

@@ -1,8 +1,8 @@
 ---
-description: How to create A paypal payment via API
+description: How to create a paypal payment via API
 ---
 
-# Create A paypal payment
+# Create a paypal payment
 
 To create a new paypal payment, send a `POST` request to the `/api/paypal_payments` endpoint, passing the resource arguments in the request body.
 
@@ -47,7 +47,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "saDFGhjkLZ"
+          "id": "QWERtyUpBa"
         }
       }
     }

@@ -1,8 +1,8 @@
 ---
-description: How to create A price list via API
+description: How to create a price list via API
 ---
 
-# Create A price list
+# Create a price list
 
 To create a new price list, send a `POST` request to the `/api/price_lists` endpoint, passing the resource arguments in the request body.
 

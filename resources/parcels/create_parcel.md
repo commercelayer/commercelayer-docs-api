@@ -1,8 +1,8 @@
 ---
-description: How to create A parcel via API
+description: How to create a parcel via API
 ---
 
-# Create A parcel
+# Create a parcel
 
 To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, passing the resource arguments in the request body.
 
@@ -53,7 +53,7 @@ curl -X POST \
       "shipment": {
         "data": {
           "type": "shipments",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

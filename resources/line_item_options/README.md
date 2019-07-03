@@ -6,13 +6,13 @@ description: The line item option object and its fields
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### The Line item option object
+### The line item option object
 
-A line item option object is returned as part of the response body of each successful [create](create-line item option.md), [list](list-all-line item options.md), [retrieve](retrieve-line item option.md) or [update](update-line item option.md) API call.
+A **line_item_option** object is returned as part of the response body of each successful [create](create-line item option.md), [list](list-all-line item options.md), [retrieve](retrieve-line item option.md) or [update](update-line item option.md) API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `line item options` |
+| **type** | `string` | `line_item_options` |
 | **id** | `string` | The line item option unique identifier |
 | links.**self** | `string` | The line item option endpoint URL |
 | attributes.**name** | `string` | The name of the line item option. When blank, it gets populated with the name of the associated sku option. |

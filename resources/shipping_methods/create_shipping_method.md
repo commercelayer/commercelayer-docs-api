@@ -1,8 +1,8 @@
 ---
-description: How to create A shipping method via API
+description: How to create a shipping method via API
 ---
 
-# Create A shipping method
+# Create a shipping method
 
 To create a new shipping method, send a `POST` request to the `/api/shipping_methods` endpoint, passing the resource arguments in the request body.
 
@@ -55,13 +55,13 @@ curl -X POST \
       "shipping_zone": {
         "data": {
           "type": "shipping_zones",
-          "id": "saDFGhjkLZ"
+          "id": "QWERtyUpBa"
         }
       }
       "shipping_category": {
         "data": {
           "type": "shipping_categories",
-          "id": "saDFGhjkLZ"
+          "id": "QWERtyUpBa"
         }
       }
     }

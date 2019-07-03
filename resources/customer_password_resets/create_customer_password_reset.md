@@ -1,8 +1,8 @@
 ---
-description: How to create A customer password reset via API
+description: How to create a customer password reset via API
 ---
 
-# Create A customer password reset
+# Create a customer password reset
 
 To create a new customer password reset, send a `POST` request to the `/api/customer_password_resets` endpoint, passing the resource arguments in the request body.
 

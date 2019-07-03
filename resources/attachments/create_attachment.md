@@ -1,8 +1,8 @@
 ---
-description: How to create An attachment via API
+description: How to create an attachment via API
 ---
 
-# Create An attachment
+# Create an attachment
 
 To create a new attachment, send a `POST` request to the `/api/attachments` endpoint, passing the resource arguments in the request body.
 
@@ -46,7 +46,7 @@ curl -X POST \
       "attachable": {
         "data": {
           "type": "attachables",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

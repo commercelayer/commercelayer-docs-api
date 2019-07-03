@@ -1,8 +1,8 @@
 ---
-description: How to create A line item option via API
+description: How to create a line item option via API
 ---
 
-# Create A line item option
+# Create a line item option
 
 To create a new line item option, send a `POST` request to the `/api/line_item_options` endpoint, passing the resource arguments in the request body.
 
@@ -48,13 +48,13 @@ curl -X POST \
       "line_item": {
         "data": {
           "type": "line_items",
-          "id": "yzkWXfgHQS"
+          "id": "QWERtyUpBa"
         }
       }
       "sku_option": {
         "data": {
           "type": "sku_options",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
     }

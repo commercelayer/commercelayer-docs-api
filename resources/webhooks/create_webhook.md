@@ -1,8 +1,8 @@
 ---
-description: How to create A webhook via API
+description: How to create a webhook via API
 ---
 
-# Create A webhook
+# Create a webhook
 
 To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, passing the resource arguments in the request body.
 

@@ -1,8 +1,8 @@
 ---
-description: How to create A wire transfer via API
+description: How to create a wire transfer via API
 ---
 
-# Create A wire transfer
+# Create a wire transfer
 
 To create a new wire transfer, send a `POST` request to the `/api/wire_transfers` endpoint, passing the resource arguments in the request body.
 
@@ -42,7 +42,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

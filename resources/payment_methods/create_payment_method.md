@@ -1,8 +1,8 @@
 ---
-description: How to create A payment method via API
+description: How to create a payment method via API
 ---
 
-# Create A payment method
+# Create a payment method
 
 To create a new payment method, send a `POST` request to the `/api/payment_methods` endpoint, passing the resource arguments in the request body.
 
@@ -53,7 +53,7 @@ curl -X POST \
       "payment_gateway": {
         "data": {
           "type": "payment_gateways",
-          "id": "WAspXYhfCV"
+          "id": "QWERtyUpBa"
         }
       }
     }

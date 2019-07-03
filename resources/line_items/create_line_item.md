@@ -1,8 +1,8 @@
 ---
-description: How to create A line item via API
+description: How to create a line item via API
 ---
 
-# Create A line item
+# Create a line item
 
 To create a new line item, send a `POST` request to the `/api/line_items` endpoint, passing the resource arguments in the request body.
 
@@ -49,7 +49,7 @@ curl -X POST \
       "order": {
         "data": {
           "type": "orders",
-          "id": "zxcVBnMASd"
+          "id": "QWERtyUpBa"
         }
       }
     }

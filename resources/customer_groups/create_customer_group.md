@@ -1,8 +1,8 @@
 ---
-description: How to create A customer group via API
+description: How to create a customer group via API
 ---
 
-# Create A customer group
+# Create a customer group
 
 To create a new customer group, send a `POST` request to the `/api/customer_groups` endpoint, passing the resource arguments in the request body.
 

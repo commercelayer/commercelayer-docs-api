@@ -1,8 +1,8 @@
 ---
-description: How to create A delivery lead time via API
+description: How to create a delivery lead time via API
 ---
 
-# Create A delivery lead time
+# Create a delivery lead time
 
 To create a new delivery lead time, send a `POST` request to the `/api/delivery_lead_times` endpoint, passing the resource arguments in the request body.
 
@@ -47,13 +47,13 @@ curl -X POST \
       "stock_location": {
         "data": {
           "type": "stock_locations",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
       "shipping_method": {
         "data": {
           "type": "shipping_methods",
-          "id": "aBmNkPQRst"
+          "id": "QWERtyUpBa"
         }
       }
     }
