@@ -73,34 +73,34 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "id": "xYZkjABcde",
     "type": "customer_payment_sources",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde"
     },
     "attributes": {
-        "name": "XXXX-XXXX-XXXX-1111",
-        "created_at": "2018-01-01T12:00:00.000Z",
-        "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
-        "metadata": {
-  "foo": "bar"
-},
+      "name": "XXXX-XXXX-XXXX-1111",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
     },
     "relationships": {
-        "customer": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/customer",
-              "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/customer"
-          }
-        },
-        "payment_source": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/payment_source",
-              "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/payment_source"
-          }
-        },
+      "customer": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/customer",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/customer"
+        }
       },
-      "meta": {
-          "mode": "test"
+      "payment_source": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/payment_source",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/payment_source"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
+    }
   }
 }
 ```

@@ -32,19 +32,37 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```javascript
 {
   "data": {
-    "name": "Embossing",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "price_amount_cents": "1000",
-    "price_amount_float": "10.00",
-    "formatted_price_amount": "€10,00",
-    "delay_hours": "48",
-    "delay_days": "2",
-    "sku_code_regex": "^(A|B).*$",
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
+    "id": "xYZkjABcde",
+    "type": "sku_options",
+    "links": {
+      "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
+    },
+    "attributes": {
+      "name": "Embossing",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price_amount_cents": "1000",
+      "price_amount_float": "10.00",
+      "formatted_price_amount": "€10,00",
+      "delay_hours": "48",
+      "delay_days": "2",
+      "sku_code_regex": "^(A|B).*$",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    "relationships": {
+      "market": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/relationships/market",
+          "related": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/market"
+        }
+      }
+    },
+    "meta": {
+      "mode": "test"
     }
   }
 }

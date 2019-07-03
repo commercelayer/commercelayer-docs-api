@@ -33,6 +33,40 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "currency_code": "EUR",
+      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "amount_cents": "10000",
+      "amount_float": "100.0",
+      "formatted_amount": "€100,00",
+      "compare_at_amount_cents": "13000",
+      "compare_at_amount_float": "130.00",
+      "formatted_compare_at_amount": "€130,00",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 prices (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/prices?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/prices?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/prices?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "prices",
       "links": {

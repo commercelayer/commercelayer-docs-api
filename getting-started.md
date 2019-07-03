@@ -13,7 +13,7 @@ These are the basic four steps to get started:
 3. Get an [access token](getting-started.md#get-an-access-token)
 4. Make your first [API call](getting-started.md#make-your-first-api-call)
 
-### Create a test environment
+## Create a test environment
 
 After signup, you are prompted to create a sample organization with test data. This is the fastest way to get your feet wet and start playing with the API in test mode.
 
@@ -21,19 +21,19 @@ After signup, you are prompted to create a sample organization with test data. T
 
 Your sample organization gets populated with everything you need to place your first test order. Take a look at SKUs, inventory, prices, and settings to get a better idea of how it works.
 
-### Get your credentials
+## Get your credentials
 
 Once your sample organization is ready, go to _Settings → Applications_ and take note of your API credentials.
 
 ![](.gitbook/assets/channel-v3b.jpg)
 
-The base endpoint is unique for your organization. The `client_id`, `client_secret`, and `scope` can be used to authenticate your application and get an access token. Public applications can get an access token by using the `client_id` only, with limited permissions. 
+The base endpoint is unique for your organization. The `client_id`, `client_secret`, and `scope` can be used to authenticate your application and get an access token. Public applications can get an access token by using the `client_id` only, with limited permissions.
 
 {% hint style="info" %}
 This is ideal for client side channel applications \(i.e. JavaScript\) that will use our hosted checkout instead of integrating our checkout APIs.
 {% endhint %}
 
-### Get an access token
+## Get an access token
 
 To get an access token for a public **channel** application, run the following in your terminal, making sure to replace your own endpoint and credentials:
 
@@ -67,7 +67,7 @@ Take note of your access token and get ready for your first API call.
 Your access token will expire in **2 hours**.
 {% endhint %}
 
-### Make your first API call
+## Make your first API call
 
 As your first API call, you can get a list of SKUs. Run the following command in your terminal, making sure to replace the access token that you got in the previous step:
 

@@ -33,6 +33,39 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
+      "name": "Europe (main countries)",
+      "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
+      "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
+      "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
+      "not_state_code_regex": "A[KLRZ]|C[AOT]",
+      "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
+      "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    {
+      "other": "... 9 shipping zones (first page)"
+    }
+  ],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/shipping_zones?page[number]=14&page[size]=10"
+  }
+}
+
+
+{
+  "data": [
+    {
       "id": "xYZkjABcde",
       "type": "shipping_zones",
       "links": {

@@ -56,34 +56,34 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "id": "xYZkjABcde",
     "type": "customer_groups",
     "links": {
-        "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde"
     },
     "attributes": {
-        "name": "",
-        "created_at": "2018-01-01T12:00:00.000Z",
-        "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
-        "metadata": {
-  "foo": "bar"
-},
+      "name": null,
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
     },
     "relationships": {
-        "price_list": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/price_list",
-              "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/price_list"
-          }
-        },
-        "customers": {
-          "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/customers",
-              "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/customers"
-          }
-        },
+      "price_list": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
+        }
       },
-      "meta": {
-          "mode": "test"
+      "customers": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
+    }
   }
 }
 ```
