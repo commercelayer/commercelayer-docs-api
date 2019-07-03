@@ -10,7 +10,7 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/attachments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
 
 ### Arguments
 
@@ -61,10 +61,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{attachment_id}}",
     "type": "attachments",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}"
     },
     "attributes": {
       "name": "DDT transport document",
@@ -93,4 +93,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

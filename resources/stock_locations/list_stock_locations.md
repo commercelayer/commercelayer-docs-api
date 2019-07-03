@@ -10,7 +10,7 @@ To fetch a collection of stock locations, send a `GET` request to the `/api/stoc
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_locations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### **Example**
 
@@ -33,38 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "Primary warehouse",
-      "label_format": "PDF",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 stock locations (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{stock_location_id}}",
       "type": "stock_locations",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}"
       },
       "attributes": {
         "name": "Primary warehouse",
@@ -73,35 +45,35 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "address": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/address",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
+            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/address",
+            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/address"
           }
         },
         "stock_levels": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
+            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_levels",
+            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_levels"
           }
         },
         "stock_items": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_items",
-              "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_items"
+            "self": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/relationships/stock_items",
+            "related": "https://{{subdomain}}.commercelayer.io/api/stock_locations/{{stock_location_id}}/stock_items"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 stock locations (first page)"
+      "other": "... 9 stock_locations (first page)"
     }
   ],
   "meta": {
@@ -109,9 +81,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/stock_locations?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/stock_locations?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -130,4 +102,3 @@ The list of stock locations can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

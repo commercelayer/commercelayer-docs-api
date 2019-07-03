@@ -10,7 +10,7 @@ To fetch a collection of wire transfers, send a `GET` request to the `/api/wire_
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/wire\_transfers**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers**
 
 ### **Example**
 
@@ -33,59 +33,33 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 wire transfers (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{wire_transfer_id}}",
       "type": "wire_transfers",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/wire_transfers/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}"
       },
       "attributes": {
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "order": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/wire_transfers/xYZkjABcde/relationships/order",
-              "related": "https://yourdomain.commercelayer.io/api/wire_transfers/xYZkjABcde/order"
+            "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/relationships/order",
+            "related": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/order"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 wire transfers (first page)"
+      "other": "... 9 wire_transfers (first page)"
     }
   ],
   "meta": {
@@ -93,9 +67,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/wire_transfers?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/wire_transfers?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/wire_transfers?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/wire_transfers?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -114,4 +88,3 @@ The list of wire transfers can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

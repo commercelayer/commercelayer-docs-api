@@ -10,7 +10,7 @@ To fetch a collection of sku options, send a `GET` request to the `/api/sku_opti
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_options**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
 
 ### **Example**
 
@@ -33,44 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "Embossing",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "price_amount_cents": "1000",
-      "price_amount_float": "10.00",
-      "formatted_price_amount": "€10,00",
-      "delay_hours": "48",
-      "delay_days": "2",
-      "sku_code_regex": "^(A|B).*$",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 sku options (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{sku_option_id}}",
       "type": "sku_options",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}"
       },
       "attributes": {
         "name": "Embossing",
@@ -85,23 +51,23 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "market": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/market",
-              "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/market"
+            "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/relationships/market",
+            "related": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}/market"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 sku options (first page)"
+      "other": "... 9 sku_options (first page)"
     }
   ],
   "meta": {
@@ -109,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/sku_options?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -133,4 +99,3 @@ The list of sku options can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

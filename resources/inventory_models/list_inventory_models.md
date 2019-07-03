@@ -10,7 +10,7 @@ To fetch a collection of inventory models, send a `GET` request to the `/api/inv
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_models**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
 
 ### **Example**
 
@@ -33,37 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "EU Inventory Model",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 inventory models (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{inventory_model_id}}",
       "type": "inventory_models",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}"
       },
       "attributes": {
         "name": "EU Inventory Model",
@@ -71,23 +44,23 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "stock_levels": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
-              "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
+            "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/relationships/stock_levels",
+            "related": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}/stock_levels"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 inventory models (first page)"
+      "other": "... 9 inventory_models (first page)"
     }
   ],
   "meta": {
@@ -95,9 +68,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/inventory_models?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/inventory_models?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -117,4 +90,3 @@ The list of inventory models can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

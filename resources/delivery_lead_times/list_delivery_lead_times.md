@@ -10,7 +10,7 @@ To fetch a collection of delivery lead times, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### **Example**
 
@@ -33,40 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "min_hours": "48",
-      "max_hours": "72",
-      "min_days": "2",
-      "max_days": "3",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 delivery lead times (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{delivery_lead_time_id}}",
       "type": "delivery_lead_times",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}"
       },
       "attributes": {
         "min_hours": "48",
@@ -77,29 +47,29 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "stock_location": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/stock_location",
-              "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/stock_location"
+            "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/stock_location",
+            "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/stock_location"
           }
         },
         "shipping_method": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/shipping_method",
-              "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/shipping_method"
+            "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/shipping_method",
+            "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/shipping_method"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 delivery lead times (first page)"
+      "other": "... 9 delivery_lead_times (first page)"
     }
   ],
   "meta": {
@@ -107,9 +77,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/delivery_lead_times?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -130,4 +100,3 @@ The list of delivery lead times can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

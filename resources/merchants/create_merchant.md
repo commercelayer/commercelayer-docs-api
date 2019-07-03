@@ -10,7 +10,7 @@ To create a new merchant, send a `POST` request to the `/api/merchants` endpoint
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/merchants**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/merchants**
 
 ### Arguments
 
@@ -59,10 +59,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{merchant_id}}",
     "type": "merchants",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/merchants/{{merchant_id}}"
     },
     "attributes": {
       "name": "The Brand Inc.",
@@ -89,4 +89,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

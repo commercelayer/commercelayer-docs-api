@@ -10,7 +10,7 @@ To fetch a collection of customer payment sources, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources**
 
 ### **Example**
 
@@ -33,37 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "XXXX-XXXX-XXXX-1111",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 customer payment sources (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{customer_payment_source_id}}",
       "type": "customer_payment_sources",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}"
       },
       "attributes": {
         "name": "XXXX-XXXX-XXXX-1111",
@@ -71,29 +44,29 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "customer": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/customer",
-              "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/customer"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/customer",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/customer"
           }
         },
         "payment_source": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/relationships/payment_source",
-              "related": "https://yourdomain.commercelayer.io/api/customer_payment_sources/xYZkjABcde/payment_source"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/relationships/payment_source",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources/{{customer_payment_source_id}}/payment_source"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 customer payment sources (first page)"
+      "other": "... 9 customer_payment_sources (first page)"
     }
   ],
   "meta": {
@@ -101,9 +74,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customer_payment_sources?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/customer_payment_sources?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -122,4 +95,3 @@ The list of customer payment sources can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

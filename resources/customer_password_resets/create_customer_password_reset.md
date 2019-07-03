@@ -10,14 +10,14 @@ To create a new customer password reset, send a `POST` request to the `/api/cust
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer\_password\_resets**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer\_email** | `string` | Required |
+| attributes.**customer_email** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -52,10 +52,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{customer_password_reset_id}}",
     "type": "customer_password_resets",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_password_resets/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/customer_password_resets/{{customer_password_reset_id}}"
     },
     "attributes": {
       "customer_email": "john@example.com",
@@ -84,4 +84,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer\_addresses/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses/:id**
 
 ### Arguments
 
@@ -70,10 +70,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{customer_address_id}}",
     "type": "customer_addresses",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}"
     },
     "attributes": {
       "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
@@ -106,4 +106,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

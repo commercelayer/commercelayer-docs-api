@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipping\_methods/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods/:id**
 
 ### Arguments
 
@@ -21,13 +21,13 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**price\_amount\_cents** | `integer` | Required |
-| attributes.**free\_over\_amount\_cents** | `integer` | Optional |
+| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**free_over_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**shipping\_zone** | `object` | Required |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_zone** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -83,10 +83,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{shipping_method_id}}",
     "type": "shipping_methods",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}"
     },
     "attributes": {
       "name": "Standard shipping",
@@ -142,4 +142,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

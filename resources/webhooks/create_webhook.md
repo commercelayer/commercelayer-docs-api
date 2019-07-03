@@ -10,7 +10,7 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/webhooks**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
 
 ### Arguments
 
@@ -18,8 +18,8 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**topic** | `string` | Required |
-| attributes.**callback\_url** | `string` | Required |
-| attributes.**include\_resources** | `array` | Optional |
+| attributes.**callback_url** | `string` | Required |
+| attributes.**include_resources** | `array` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -55,10 +55,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{webhook_id}}",
     "type": "webhooks",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/webhooks/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/webhooks/{{webhook_id}}"
     },
     "attributes": {
       "topic": "orders.place",
@@ -81,4 +81,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

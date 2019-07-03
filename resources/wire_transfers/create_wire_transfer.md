@@ -10,7 +10,7 @@ To create a new wire transfer, send a `POST` request to the `/api/wire_transfers
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/wire\_transfers**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers**
 
 ### Arguments
 
@@ -57,10 +57,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{wire_transfer_id}}",
     "type": "wire_transfers",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/wire_transfers/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}"
     },
     "attributes": {
       "created_at": "2018-01-01T12:00:00.000Z",
@@ -86,4 +86,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

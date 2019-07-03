@@ -10,19 +10,19 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/payment\_methods**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment\_source\_type** | `string` | Required |
-| attributes.**price\_amount\_cents** | `integer` | Required |
+| attributes.**payment_source_type** | `string` | Required |
+| attributes.**price_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**payment\_gateway** | `object` | Required |
+| relationships.**payment_gateway** | `object` | Required |
 
 ### Example
 
@@ -68,10 +68,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{payment_method_id}}",
     "type": "payment_methods",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}"
     },
     "attributes": {
       "payment_source_type": "CreditCard",
@@ -109,4 +109,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

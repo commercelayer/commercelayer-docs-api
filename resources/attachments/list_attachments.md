@@ -10,7 +10,7 @@ To fetch a collection of attachments, send a `GET` request to the `/api/attachme
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/attachments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
 
 ### **Example**
 
@@ -33,39 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "DDT transport document",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "url": "https://s3.yourbrand.com/attachment.pdf",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 attachments (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/attachments?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/attachments?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/attachments?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{attachment_id}}",
       "type": "attachments",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}"
       },
       "attributes": {
         "name": "DDT transport document",
@@ -75,16 +46,16 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "attachable": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/relationships/attachable",
-              "related": "https://yourdomain.commercelayer.io/api/attachments/xYZkjABcde/attachable"
+            "self": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/relationships/attachable",
+            "related": "https://{{subdomain}}.commercelayer.io/api/attachments/{{attachment_id}}/attachable"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
@@ -99,9 +70,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/attachments?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/attachments?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/attachments?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/attachments?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -120,4 +91,3 @@ The list of attachments can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

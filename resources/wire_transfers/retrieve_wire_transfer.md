@@ -10,7 +10,7 @@ To fetch a single wire transfer, send a `GET` request to the `/api/wire_transfer
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/wire\_transfers/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers/:id**
 
 ### **Example**
 
@@ -31,32 +31,33 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{wire_transfer_id}}",
-  "type": "wire_transfers",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}"
-  },
-  "attributes": {
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
-    }
-  },
-  "relationships": {
-    "order": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/relationships/order",
-        "related": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/order"
+  "data": {
+    "id": "{{wire_transfer_id}}",
+    "type": "wire_transfers",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}"
+    },
+    "attributes": {
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
       }
+    },
+    "relationships": {
+      "order": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/relationships/order",
+          "related": "https://{{subdomain}}.commercelayer.io/api/wire_transfers/{{wire_transfer_id}}/order"
+        }
+      }
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-

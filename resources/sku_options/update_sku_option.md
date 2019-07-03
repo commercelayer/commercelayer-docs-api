@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku\_options/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### Arguments
 
@@ -22,9 +22,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**price\_amount\_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay\_hours** | `integer` | Optional, default is '0' |
-| attributes.**sku\_code\_regex** | `string` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
@@ -73,10 +73,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{sku_option_id}}",
     "type": "sku_options",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/sku_options/{{sku_option_id}}"
     },
     "attributes": {
       "name": "Embossing",
@@ -110,4 +110,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

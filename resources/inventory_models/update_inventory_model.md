@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### Arguments
 
@@ -58,10 +58,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{inventory_model_id}}",
     "type": "inventory_models",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/inventory_models/{{inventory_model_id}}"
     },
     "attributes": {
       "name": "EU Inventory Model",
@@ -88,4 +88,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

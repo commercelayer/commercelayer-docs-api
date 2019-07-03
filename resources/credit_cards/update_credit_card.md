@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/credit\_cards/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards/:id**
 
 ### Arguments
 
@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**first\_name** | `string` | Required |
-| attributes.**last\_name** | `string` | Required |
+| attributes.**first_name** | `string` | Required |
+| attributes.**last_name** | `string` | Required |
 | attributes.**month** | `string` | Required |
 | attributes.**year** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
@@ -71,10 +71,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{credit_card_id}}",
     "type": "credit_cards",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
     },
     "attributes": {
       "first_name": "John",
@@ -111,4 +111,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

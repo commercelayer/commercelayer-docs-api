@@ -10,7 +10,7 @@ To fetch a single credit card, send a `GET` request to the `/api/credit_cards/:i
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/credit\_cards/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards/:id**
 
 ### **Example**
 
@@ -31,43 +31,44 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{credit_card_id}}",
-  "type": "credit_cards",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
-  },
-  "attributes": {
-    "first_name": "John",
-    "last_name": "Smith",
-    "full_name": "John Smith",
-    "month": "10",
-    "year": "2023",
-    "valid_thru": "10/2023",
-    "card_type": "visa",
-    "display_number": "XXXX-XXXX-XXXX-1111",
-    "name": "XXXX-XXXX-XXXX-1111",
-    "fingerprint": "9abc5b0ef273e53749068820b3a30640b838",
-    "storage_state": "cached",
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
-    }
-  },
-  "relationships": {
-    "order": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/relationships/order",
-        "related": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/order"
+  "data": {
+    "id": "{{credit_card_id}}",
+    "type": "credit_cards",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
+    },
+    "attributes": {
+      "first_name": "John",
+      "last_name": "Smith",
+      "full_name": "John Smith",
+      "month": "10",
+      "year": "2023",
+      "valid_thru": "10/2023",
+      "card_type": "visa",
+      "display_number": "XXXX-XXXX-XXXX-1111",
+      "name": "XXXX-XXXX-XXXX-1111",
+      "fingerprint": "9abc5b0ef273e53749068820b3a30640b838",
+      "storage_state": "cached",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
       }
+    },
+    "relationships": {
+      "order": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/relationships/order",
+          "related": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}/order"
+        }
+      }
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-

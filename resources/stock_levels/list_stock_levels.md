@@ -10,7 +10,7 @@ To fetch a collection of stock levels, send a `GET` request to the `/api/stock_l
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_levels**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels**
 
 ### **Example**
 
@@ -33,38 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "priority": "1",
-      "on_hold": "false",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 stock levels (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{stock_level_id}}",
       "type": "stock_levels",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}"
       },
       "attributes": {
         "priority": "1",
@@ -73,29 +45,29 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "stock_location": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
-              "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
+            "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/stock_location",
+            "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/stock_location"
           }
         },
         "inventory_model": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
-              "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
+            "self": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/relationships/inventory_model",
+            "related": "https://{{subdomain}}.commercelayer.io/api/stock_levels/{{stock_level_id}}/inventory_model"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 stock levels (first page)"
+      "other": "... 9 stock_levels (first page)"
     }
   ],
   "meta": {
@@ -103,9 +75,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/stock_levels?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/stock_levels?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -126,4 +98,3 @@ The list of stock levels can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

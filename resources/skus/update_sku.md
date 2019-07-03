@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/skus/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Arguments
 
@@ -23,14 +23,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**tag\_names** | `string` | Optional |
-| attributes.**pieces\_per\_pack** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**tag_names** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -79,10 +79,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{sku_id}}",
     "type": "skus",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}"
     },
     "attributes": {
       "code": "TSHIRTMM000000FFFFFFXLXX",
@@ -93,6 +93,94 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "pieces_per_pack": "6",
       "weight": "300",
       "unit_of_weight": "gr",
+      "inventory": {
+        "available": true,
+        "quantity": 10,
+        "levels": [
+          {
+            "quantity": 4,
+            "delivery_lead_times": [
+              {
+                "shipping_method": {
+                  "name": "Standard Shipping",
+                  "reference": null,
+                  "price_amount_cents": 700,
+                  "free_over_amount_cents": 9900,
+                  "formatted_price_amount": "€7,00",
+                  "formatted_free_over_amount": "€99,00"
+                },
+                "min": {
+                  "hours": 72,
+                  "days": 3
+                },
+                "max": {
+                  "hours": 120,
+                  "days": 5
+                }
+              },
+              {
+                "shipping_method": {
+                  "name": "Express Delivery",
+                  "reference": null,
+                  "price_amount_cents": 1200,
+                  "free_over_amount_cents": null,
+                  "formatted_price_amount": "€12,00",
+                  "formatted_free_over_amount": null
+                },
+                "min": {
+                  "hours": 48,
+                  "days": 2
+                },
+                "max": {
+                  "hours": 72,
+                  "days": 3
+                }
+              }
+            ]
+          },
+          {
+            "quantity": 6,
+            "delivery_lead_times": [
+              {
+                "shipping_method": {
+                  "name": "Standard Shipping",
+                  "reference": null,
+                  "price_amount_cents": 700,
+                  "free_over_amount_cents": 9900,
+                  "formatted_price_amount": "€7,00",
+                  "formatted_free_over_amount": "€99,00"
+                },
+                "min": {
+                  "hours": 96,
+                  "days": 4
+                },
+                "max": {
+                  "hours": 144,
+                  "days": 6
+                }
+              },
+              {
+                "shipping_method": {
+                  "name": "Express Delivery",
+                  "reference": null,
+                  "price_amount_cents": 1200,
+                  "free_over_amount_cents": null,
+                  "formatted_price_amount": "€12,00",
+                  "formatted_free_over_amount": null
+                },
+                "min": {
+                  "hours": 72,
+                  "days": 3
+                },
+                "max": {
+                  "hours": 96,
+                  "days": 4
+                }
+              }
+            ]
+          }
+        ]
+      },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANYREFEFERNCE",
@@ -140,4 +228,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

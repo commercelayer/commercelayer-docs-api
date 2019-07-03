@@ -10,7 +10,7 @@ To fetch a collection of shipping categories, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_categories**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories**
 
 ### **Example**
 
@@ -33,37 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "Merchandise",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 shipping categories (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{shipping_category_id}}",
       "type": "shipping_categories",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}"
       },
       "attributes": {
         "name": "Merchandise",
@@ -71,23 +44,23 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "skus": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
-              "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
+            "self": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/relationships/skus",
+            "related": "https://{{subdomain}}.commercelayer.io/api/shipping_categories/{{shipping_category_id}}/skus"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 shipping categories (first page)"
+      "other": "... 9 shipping_categories (first page)"
     }
   ],
   "meta": {
@@ -95,9 +68,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/shipping_categories?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/shipping_categories?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -117,4 +90,3 @@ The list of shipping categories can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

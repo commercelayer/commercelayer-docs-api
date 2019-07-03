@@ -10,17 +10,17 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/imports**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/imports**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource\_type** | `string` | Required |
-| attributes.**parent\_resource\_id** | `integer` | Required |
+| attributes.**resource_type** | `string` | Required |
+| attributes.**parent_resource_id** | `integer` | Required |
 | attributes.**inputs** | `object` | Required |
-| attributes.**cleanup\_records** | `boolean` |  |
+| attributes.**cleanup_records** | `boolean` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -57,10 +57,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{import_id}}",
     "type": "imports",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/imports/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/imports/{{import_id}}"
     },
     "attributes": {
       "resource_type": "skus",
@@ -115,4 +115,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

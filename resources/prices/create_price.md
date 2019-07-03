@@ -10,19 +10,19 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/prices**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/prices**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
-| attributes.**amount\_cents** | `integer` | Required |
-| attributes.**compare\_at\_amount\_cents** | `integer` | Required |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**amount_cents** | `integer` | Required |
+| attributes.**compare_at_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price\_list** | `object` | Required |
+| relationships.**price_list** | `object` | Required |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -63,10 +63,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{price_id}}",
     "type": "prices",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}"
     },
     "attributes": {
       "currency_code": "EUR",
@@ -106,4 +106,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

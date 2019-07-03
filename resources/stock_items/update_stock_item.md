@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Required |
-| relationships.**sku** | `object` | Required, if not set through the sku\_code attribute |
+| relationships.**stock_location** | `object` | Required |
+| relationships.**sku** | `object` | Required, if not set through the sku_code attribute |
 
 ### Example
 
@@ -74,10 +74,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{stock_item_id}}",
     "type": "stock_items",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/stock_items/{{stock_item_id}}"
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
@@ -111,4 +111,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

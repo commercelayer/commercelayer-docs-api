@@ -10,7 +10,7 @@ To fetch a collection of customers, send a `GET` request to the `/api/customers`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customers**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers**
 
 ### **Example**
 
@@ -33,38 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "email": "john@example.com",
-      "status": "prospect",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 customers (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customers?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customers?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customers?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{customer_id}}",
       "type": "customers",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}"
       },
       "attributes": {
         "email": "john@example.com",
@@ -73,40 +45,40 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "customer_group": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_group",
-              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_group"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_group",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_group"
           }
         },
         "customer_addresses": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_addresses",
-              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_addresses"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_addresses",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_addresses"
           }
         },
         "customer_payment_sources": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_payment_sources",
-              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_payment_sources"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_payment_sources",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_payment_sources"
           }
         },
         "customer_subscriptions": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/customer_subscriptions",
-              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/customer_subscriptions"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/customer_subscriptions",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/customer_subscriptions"
           }
         },
         "orders": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/orders",
-              "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/orders"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/relationships/orders",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customers/{{customer_id}}/orders"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
@@ -121,9 +93,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customers?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customers?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customers?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/customers?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/customers?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/customers?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -142,4 +114,3 @@ The list of customers can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

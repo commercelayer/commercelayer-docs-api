@@ -10,7 +10,7 @@ To fetch a collection of SKUs, send a `GET` request to the `/api/skus` endpoint.
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus**
 
 ### **Example**
 
@@ -33,44 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "code": "TSHIRTMM000000FFFFFFXLXX",
-      "name": "Black Men T-shirt with White Logo (XL)",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png",
-      "tag_names": "Men, Black, XL",
-      "pieces_per_pack": "6",
-      "weight": "300",
-      "unit_of_weight": "gr",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 SKUs (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{sku_id}}",
       "type": "skus",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}"
       },
       "attributes": {
         "code": "TSHIRTMM000000FFFFFFXLXX",
@@ -85,47 +51,47 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "shipping_category": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/shipping_category",
-              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/shipping_category"
+            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/shipping_category",
+            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/shipping_category"
           }
         },
         "prices": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/prices",
-              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/prices"
+            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/prices",
+            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/prices"
           }
         },
         "stock_items": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/stock_items",
-              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/stock_items"
+            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/stock_items",
+            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/stock_items"
           }
         },
         "delivery_lead_times": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/delivery_lead_times",
-              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/delivery_lead_times"
+            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/delivery_lead_times",
+            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/delivery_lead_times"
           }
         },
         "sku_options": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
-              "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
+            "self": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/relationships/sku_options",
+            "related": "https://{{subdomain}}.commercelayer.io/api/skus/{{sku_id}}/sku_options"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 SKUs (first page)"
+      "other": "... 9 skus (first page)"
     }
   ],
   "meta": {
@@ -133,9 +99,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/skus?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -155,4 +121,3 @@ The list of SKUs can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/paypal\_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments/:id**
 
 ### Arguments
 
@@ -20,7 +20,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**paypal\_payer\_id** | `string` |  |
+| attributes.**paypal_payer_id** | `string` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
@@ -65,10 +65,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{paypal_payment_id}}",
     "type": "paypal_payments",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/paypal_payments/{{paypal_payment_id}}"
     },
     "attributes": {
       "return_url": "https://yourbrand.com/thankyou",
@@ -102,4 +102,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

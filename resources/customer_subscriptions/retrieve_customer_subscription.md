@@ -10,7 +10,7 @@ To fetch a single customer subscription, send a `GET` request to the `/api/custo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_subscriptions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
 
 ### **Example**
 
@@ -31,33 +31,34 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{customer_subscription_id}}",
-  "type": "customer_subscriptions",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}"
-  },
-  "attributes": {
-    "customer_email": null,
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
-    }
-  },
-  "relationships": {
-    "customer": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
-        "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
+  "data": {
+    "id": "{{customer_subscription_id}}",
+    "type": "customer_subscriptions",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}"
+    },
+    "attributes": {
+      "customer_email": null,
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
       }
+    },
+    "relationships": {
+      "customer": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/relationships/customer",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_subscriptions/{{customer_subscription_id}}/customer"
+        }
+      }
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-

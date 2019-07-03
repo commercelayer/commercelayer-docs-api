@@ -10,7 +10,7 @@ To fetch a single customer group, send a `GET` request to the `/api/customer_gro
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_groups/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups/:id**
 
 ### **Example**
 
@@ -31,39 +31,40 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{customer_group_id}}",
-  "type": "customer_groups",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}"
-  },
-  "attributes": {
-    "name": null,
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
-    }
-  },
-  "relationships": {
-    "price_list": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
-        "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
+  "data": {
+    "id": "{{customer_group_id}}",
+    "type": "customer_groups",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}"
+    },
+    "attributes": {
+      "name": null,
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
       }
     },
-    "customers": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
-        "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
+    "relationships": {
+      "price_list": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/price_list",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/price_list"
+        }
+      },
+      "customers": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/relationships/customers",
+          "related": "https://{{subdomain}}.commercelayer.io/api/customer_groups/{{customer_group_id}}/customers"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-

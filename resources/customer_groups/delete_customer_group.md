@@ -10,7 +10,7 @@ To delete a customer group, send a `DELETE` request to the `/api/customer_groups
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/customer\_groups/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups/:id**
 
 ### Example
 
@@ -30,4 +30,3 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To fetch a collection of prices, send a `GET` request to the `/api/prices` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/prices**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/prices**
 
 ### **Example**
 
@@ -33,44 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "currency_code": "EUR",
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "amount_cents": "10000",
-      "amount_float": "100.0",
-      "formatted_amount": "€100,00",
-      "compare_at_amount_cents": "13000",
-      "compare_at_amount_float": "130.00",
-      "formatted_compare_at_amount": "€130,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 prices (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/prices?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/prices?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/prices?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{price_id}}",
       "type": "prices",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}"
       },
       "attributes": {
         "currency_code": "EUR",
@@ -85,22 +51,22 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "price_list": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/price_list",
-              "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/price_list"
+            "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/price_list",
+            "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/price_list"
           }
         },
         "sku": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/sku",
-              "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/sku"
+            "self": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/relationships/sku",
+            "related": "https://{{subdomain}}.commercelayer.io/api/prices/{{price_id}}/sku"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
@@ -115,9 +81,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/prices?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/prices?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/prices?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/prices?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/prices?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/prices?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -138,4 +104,3 @@ The list of prices can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

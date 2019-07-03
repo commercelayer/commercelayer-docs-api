@@ -10,7 +10,7 @@ To fetch a collection of payment methods, send a `GET` request to the `/api/paym
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/payment\_methods**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### **Example**
 
@@ -33,42 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "payment_source_type": "CreditCard",
-      "name": "Credit Card",
-      "disabled_at": "2018-01-01T12:00:00.000Z",
-      "price_amount_cents": "0",
-      "price_amount_float": "0.0",
-      "formatted_price_amount": "€0,00",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 payment methods (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{payment_method_id}}",
       "type": "payment_methods",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}"
       },
       "attributes": {
         "payment_source_type": "CreditCard",
@@ -81,29 +49,29 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "market": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/market",
-              "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/market"
+            "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/market",
+            "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/market"
           }
         },
         "payment_gateway": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/payment_gateway",
-              "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/payment_gateway"
+            "self": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/relationships/payment_gateway",
+            "related": "https://{{subdomain}}.commercelayer.io/api/payment_methods/{{payment_method_id}}/payment_gateway"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 payment methods (first page)"
+      "other": "... 9 payment_methods (first page)"
     }
   ],
   "meta": {
@@ -111,9 +79,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/payment_methods?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/payment_methods?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -135,4 +103,3 @@ The list of payment methods can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

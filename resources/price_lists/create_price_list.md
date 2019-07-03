@@ -10,7 +10,7 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/price\_lists**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/price_lists**
 
 ### Arguments
 
@@ -18,8 +18,8 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**currency\_code** | `string` | Required |
-| attributes.**tax\_included** | `boolean` | Optional, default is 'true' |
+| attributes.**currency_code** | `string` | Required |
+| attributes.**tax_included** | `boolean` | Optional, default is 'true' |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -55,10 +55,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{price_list_id}}",
     "type": "price_lists",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/price_lists/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/price_lists/{{price_list_id}}"
     },
     "attributes": {
       "name": "EU Price list",
@@ -87,4 +87,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

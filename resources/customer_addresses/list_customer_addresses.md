@@ -10,7 +10,7 @@ To fetch a collection of customer addresses, send a `GET` request to the `/api/c
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_addresses**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
 
 ### **Example**
 
@@ -33,37 +33,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {
   "data": [
     {
-      "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
-      "created_at": "2018-01-01T12:00:00.000Z",
-      "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
-      "metadata": {
-        "foo": "bar"
-      }
-    },
-    {
-      "other": "... 9 customer addresses (first page)"
-    }
-  ],
-  "meta": {
-    "record_count": 140,
-    "page_count": 14
-  },
-  "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
-  }
-}
-
-
-{
-  "data": [
-    {
-      "id": "xYZkjABcde",
+      "id": "{{customer_address_id}}",
       "type": "customer_addresses",
       "links": {
-        "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde"
+        "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}"
       },
       "attributes": {
         "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
@@ -71,29 +44,29 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANYREFEFERNCE",
         "metadata": {
-  "foo": "bar"
-},
+          "foo": "bar"
+        }
       },
       "relationships": {
         "customer": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/customer",
-              "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/customer"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/relationships/customer",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/customer"
           }
         },
         "address": {
           "links": {
-              "self": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/relationships/address",
-              "related": "https://yourdomain.commercelayer.io/api/customer_addresses/xYZkjABcde/address"
+            "self": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/relationships/address",
+            "related": "https://{{subdomain}}.commercelayer.io/api/customer_addresses/{{customer_address_id}}/address"
           }
-        },
+        }
       },
       "meta": {
         "mode": "test"
       }
     },
     {
-      "other": "... 9 customer addresses (first page)"
+      "other": "... 9 customer_addresses (first page)"
     }
   ],
   "meta": {
@@ -101,9 +74,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
     "page_count": 14
   },
   "links": {
-    "first": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
-    "next": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
-    "last": "https://yourdomain.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
+    "first": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=1&page[size]=10",
+    "next": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=2&page[size]=10",
+    "last": "https://{{subdomain}}.commercelayer.io/api/customer_addresses?page[number]=14&page[size]=10"
   }
 }
 ```
@@ -122,4 +95,3 @@ The list of customer addresses can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

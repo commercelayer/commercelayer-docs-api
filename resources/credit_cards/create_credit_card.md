@@ -10,19 +10,19 @@ To create a new credit card, send a `POST` request to the `/api/credit_cards` en
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/credit\_cards**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/credit_cards**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**first\_name** | `string` | Required |
-| attributes.**last\_name** | `string` | Required |
+| attributes.**first_name** | `string` | Required |
+| attributes.**last_name** | `string` | Required |
 | attributes.**number** | `string` | Required |
 | attributes.**month** | `string` | Required |
 | attributes.**year** | `string` | Required |
-| attributes.**verification\_value** | `string` | Required |
+| attributes.**verification_value** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
@@ -69,10 +69,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{credit_card_id}}",
     "type": "credit_cards",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/credit_cards/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/credit_cards/{{credit_card_id}}"
     },
     "attributes": {
       "first_name": "John",
@@ -109,4 +109,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/shipping\_methods**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods**
 
 ### Arguments
 
@@ -18,13 +18,13 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**price\_amount\_cents** | `integer` | Required |
-| attributes.**free\_over\_amount\_cents** | `integer` | Optional |
+| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**free_over_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**shipping\_zone** | `object` | Required |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_zone** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -76,10 +76,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```javascript
 {
   "data": {
-    "id": "xYZkjABcde",
+    "id": "{{shipping_method_id}}",
     "type": "shipping_methods",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde"
+      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_methods/{{shipping_method_id}}"
     },
     "attributes": {
       "name": "Standard shipping",
@@ -135,4 +135,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

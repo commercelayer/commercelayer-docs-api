@@ -10,7 +10,7 @@ To fetch a single delivery lead time, send a `GET` request to the `/api/delivery
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### **Example**
 
@@ -31,42 +31,43 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{delivery_lead_time_id}}",
-  "type": "delivery_lead_times",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}"
-  },
-  "attributes": {
-    "min_hours": "48",
-    "max_hours": "72",
-    "min_days": "2",
-    "max_days": "3",
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
-    }
-  },
-  "relationships": {
-    "stock_location": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/stock_location",
-        "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/stock_location"
+  "data": {
+    "id": "{{delivery_lead_time_id}}",
+    "type": "delivery_lead_times",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}"
+    },
+    "attributes": {
+      "min_hours": "48",
+      "max_hours": "72",
+      "min_days": "2",
+      "max_days": "3",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
       }
     },
-    "shipping_method": {
-      "links": {
-        "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/shipping_method",
-        "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/shipping_method"
+    "relationships": {
+      "stock_location": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/stock_location",
+          "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/stock_location"
+        }
+      },
+      "shipping_method": {
+        "links": {
+          "self": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/relationships/shipping_method",
+          "related": "https://{{subdomain}}.commercelayer.io/api/delivery_lead_times/{{delivery_lead_time_id}}/shipping_method"
+        }
       }
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-

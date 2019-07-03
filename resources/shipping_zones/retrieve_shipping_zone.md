@@ -10,7 +10,7 @@ To fetch a single shipping zone, send a `GET` request to the `/api/shipping_zone
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_zones/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
 
 ### **Example**
 
@@ -31,33 +31,34 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "id": "{{shipping_zone_id}}",
-  "type": "shipping_zones",
-  "links": {
-    "self": "https://{{subdomain}}.commercelayer.io/api/shipping_zones/{{shipping_zone_id}}"
-  },
-  "attributes": {
-    "name": "Europe (main countries)",
-    "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
-    "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
-    "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
-    "not_state_code_regex": "A[KLRZ]|C[AOT]",
-    "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
-    "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
-    "created_at": "2018-01-01T12:00:00.000Z",
-    "updated_at": "2018-01-01T12:00:00.000Z",
-    "reference": "ANYREFEFERNCE",
-    "metadata": {
-      "foo": "bar"
+  "data": {
+    "id": "{{shipping_zone_id}}",
+    "type": "shipping_zones",
+    "links": {
+      "self": "https://{{subdomain}}.commercelayer.io/api/shipping_zones/{{shipping_zone_id}}"
+    },
+    "attributes": {
+      "name": "Europe (main countries)",
+      "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
+      "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
+      "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
+      "not_state_code_regex": "A[KLRZ]|C[AOT]",
+      "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
+      "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
+      "created_at": "2018-01-01T12:00:00.000Z",
+      "updated_at": "2018-01-01T12:00:00.000Z",
+      "reference": "ANYREFEFERNCE",
+      "metadata": {
+        "foo": "bar"
+      }
+    },
+    "relationships": {
+    },
+    "meta": {
+      "mode": "test"
     }
-  },
-  "relationships": {
-  },
-  "meta": {
-    "mode": "test"
   }
 }
 ```
 {% endtab %}
 {% endtabs %}
-
