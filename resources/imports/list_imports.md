@@ -79,6 +79,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 
 {% page-ref page="../../pagination.md" %}
+
 {% endtab %}
 {% endtabs %}
 
