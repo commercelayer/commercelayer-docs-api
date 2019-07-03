@@ -31,16 +31,17 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "min_hours": "48",
-  "max_hours": "72",
-  "min_days": "2",
-  "max_days": "3",
-  "id": "XAyRWNUzyN",
-  "created_at": "2018-01-01T12:00:00.000Z",
-  "updated_at": "2018-01-01T12:00:00.000Z",
-  "reference": "ANYREFEFERNCE",
-  "metadata": {
-    "foo": "bar"
+  "data": {
+    "min_hours": "48",
+    "max_hours": "72",
+    "min_days": "2",
+    "max_days": "3",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
+    }
   }
 }
 ```

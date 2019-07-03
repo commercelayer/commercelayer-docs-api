@@ -31,18 +31,19 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "number": "#1234/S/001",
-  "status": "draft",
-  "currency_code": "EUR",
-  "cost_amount_cents": "1000",
-  "cost_amount_float": "10.00",
-  "formatted_cost_amount": "€10,00",
-  "id": "XAyRWNUzyN",
-  "created_at": "2018-01-01T12:00:00.000Z",
-  "updated_at": "2018-01-01T12:00:00.000Z",
-  "reference": "ANYREFEFERNCE",
-  "metadata": {
-    "foo": "bar"
+  "data": {
+    "number": "#1234/S/001",
+    "status": "draft",
+    "currency_code": "EUR",
+    "cost_amount_cents": "1000",
+    "cost_amount_float": "10.00",
+    "formatted_cost_amount": "€10,00",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
+    }
   }
 }
 ```

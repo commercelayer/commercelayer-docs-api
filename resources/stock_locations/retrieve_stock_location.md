@@ -31,14 +31,15 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "name": "Primary warehouse",
-  "label_format": "PDF",
-  "id": "XAyRWNUzyN",
-  "created_at": "2018-01-01T12:00:00.000Z",
-  "updated_at": "2018-01-01T12:00:00.000Z",
-  "reference": "ANYREFEFERNCE",
-  "metadata": {
-    "foo": "bar"
+  "data": {
+    "name": "Primary warehouse",
+    "label_format": "PDF",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
+    }
   }
 }
 ```

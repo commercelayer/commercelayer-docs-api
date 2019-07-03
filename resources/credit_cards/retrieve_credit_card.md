@@ -31,23 +31,24 @@ On success, the API responds with a `200 OK` status code, returning a single res
 
 ```javascript
 {
-  "first_name": "John",
-  "last_name": "Smith",
-  "full_name": "John Smith",
-  "month": "10",
-  "year": "2023",
-  "valid_thru": "10/2023",
-  "card_type": "visa",
-  "display_number": "XXXX-XXXX-XXXX-1111",
-  "name": "XXXX-XXXX-XXXX-1111",
-  "fingerprint": "9abc5b0ef273e53749068820b3a30640b838",
-  "storage_state": "cached",
-  "id": "XAyRWNUzyN",
-  "created_at": "2018-01-01T12:00:00.000Z",
-  "updated_at": "2018-01-01T12:00:00.000Z",
-  "reference": "ANYREFEFERNCE",
-  "metadata": {
-    "foo": "bar"
+  "data": {
+    "first_name": "John",
+    "last_name": "Smith",
+    "full_name": "John Smith",
+    "month": "10",
+    "year": "2023",
+    "valid_thru": "10/2023",
+    "card_type": "visa",
+    "display_number": "XXXX-XXXX-XXXX-1111",
+    "name": "XXXX-XXXX-XXXX-1111",
+    "fingerprint": "9abc5b0ef273e53749068820b3a30640b838",
+    "storage_state": "cached",
+    "created_at": "2018-01-01T12:00:00.000Z",
+    "updated_at": "2018-01-01T12:00:00.000Z",
+    "reference": "ANYREFEFERNCE",
+    "metadata": {
+      "foo": "bar"
+    }
   }
 }
 ```
