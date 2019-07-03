@@ -65,9 +65,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "created_at": "2018-01-01T12:00:00.000Z"
         "updated_at": "2018-01-01T12:00:00.000Z"
         "reference": "ANYREFEFERNCE"
-        "metadata": "{
+        "metadata": {
   "foo": "bar"
-}"
+}
     },
     "relationships": {
         "shipping_category": {

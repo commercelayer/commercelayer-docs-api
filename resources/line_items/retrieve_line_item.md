@@ -53,7 +53,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "name": "Black Men T-shirt with White Logo (XL)"
       "image_url": "https://img.yourbrand.com/skus/xYZkjABcde.png"
       "tax_rate": "0.22"
-      "tax_breakdown": "{
+      "tax_breakdown": {
   "id": "1234",
   "city_amount": "0.0",
   "state_amount": 6.6,
@@ -70,14 +70,14 @@ On success, the API responds with a `200 OK` status code, returning a single res
   "county_taxable_amount": 139.0,
   "special_district_amount": 0.7,
   "special_district_taxable_amount": 139.0
-}"
+}
       "item_type": "sku"
       "created_at": "2018-01-01T12:00:00.000Z"
       "updated_at": "2018-01-01T12:00:00.000Z"
       "reference": "ANYREFEFERNCE"
-      "metadata": "{
+      "metadata": {
   "foo": "bar"
-}"
+}
     },
     "relationships": {
       "order": {

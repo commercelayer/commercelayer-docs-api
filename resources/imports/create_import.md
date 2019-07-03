@@ -68,7 +68,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "status": "started"
         "started_at": "2018-01-01T12:00:00.000Z"
         "completed_at": "2018-01-01T12:00:00.000Z"
-        "inputs": "[
+        "inputs": [
   {
     "code": "ABC",
     "name": "Foo"
@@ -77,11 +77,11 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "code": "DEF",
     "name": "Bar"
   }
-]"
+]
         "errors_count": "3"
         "warnings_count": "1"
         "destroyed_count": "99"
-        "errors_log": "[
+        "errors_log": [
   {
     "code:ABC": {
       "name": [
@@ -89,21 +89,21 @@ On success, the API responds with a `201 Created` status code, returning the cre
       ]
     }
   }
-]"
-        "warnings_log": "[
+]
+        "warnings_log": [
   {
     "code:ABC": [
       "could not be deleted"
     ]
   }
-]"
+]
         "cleanup_records": "true"
         "created_at": "2018-01-01T12:00:00.000Z"
         "updated_at": "2018-01-01T12:00:00.000Z"
         "reference": "ANYREFEFERNCE"
-        "metadata": "{
+        "metadata": {
   "foo": "bar"
-}"
+}
     },
     "relationships": {
       },
