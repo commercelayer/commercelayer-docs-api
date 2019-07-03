@@ -26,8 +26,6 @@ Official libraries and SDKs for the most popular languages are coming soon.
 
 Commerce Layer implements the industry-standard [OAuth 2.0](https://oauth.net/2/) protocol to manage clients authorization. It defines three types of applications. Which application to use depends on your specific use case. Official guides and tutorials for the most popular use cases are coming soon.
 
-{% page-ref page="applications.md" %}
-
 ### Environments
 
 For each organization, you can work either in **test mode** \(default\) or **live mode**. 

@@ -6,8 +6,6 @@ description: How to set specific permitted actions for each resource
 
 Commerce Layer supports a granular access control system on a resource level. Each access token gets a specific set of permissions. The client and the [authorization flow](authentication/#authorization-flows) determine your permitted actions for each resource.
 
-{% page-ref page="applications.md" %}
-
 ### Channel
 
 **Channel** applications support `client_credentials`, `password` and `refresh_token` grant types. If public access is enabled, they can authenticate without the `client_secret`. In such cases, the access tokens that they get have limited permissions on sensitive data.

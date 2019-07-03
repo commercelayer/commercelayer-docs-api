@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [Getting started](getting-started.md)
-* [Applications](applications.md)
 * [Authentication](authentication/README.md)
   * [Client credentials](authentication/client-credentials.md)
   * [Password](authentication/password.md)
