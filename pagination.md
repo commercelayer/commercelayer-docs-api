@@ -6,8 +6,23 @@ description: How paginated results work
 
 When you fetch a collection of resources, you get paginated results. The response contains the record and page counts in the `meta` attribute and the URLs of the other pages in the `links` attribute.
 
+```javascript
+{
+  "data": [...],
+  "meta": {
+    "record_count": 140,
+    "page_count": 14
+  },
+  "links": {
+    "first": "https://yourdomain.commercelayer.io/api/skus?page[number]=1&page[size]=10",
+    "next": "https://yourdomain.commercelayer.io/api/skus?page[number]=2&page[size]=10",
+    "last": "https://yourdomain.commercelayer.io/api/skus?page[number]=14&page[size]=10"
+  }
+}
+```
+
 {% hint style="info" %}
-The default page number is 1, and the default page size is 10. The maximum page size allowed is 25, but we recommend to use a lower value unless strictly necessary.
+The default page number is **1** \(consequently, the link to the `prev` page is missing\), and the default page size is **10**. The maximum page size allowed is **25**, but we recommend to use a lower value unless strictly necessary.
 {% endhint %}
 
 If you need to modify these default settings, use the `page` query parameter in your request.
@@ -31,7 +46,48 @@ On success, the API responds with a `200 OK` status code, returning the five res
 
 ```javascript
 {
-  "data": [...],
+  "data": [
+    {
+      "id": "xYZkjABcde",
+      "type": "skus",
+      "links": {...},
+      "attributes": {...},
+      "relationships": {...},
+      "meta": {...}
+    },
+                  {
+      "id": "yzkWXfgHQS",
+      "type": "skus",
+      "links": {...},
+      "attributes": {...},
+      "relationships": {...},
+      "meta": {...}   
+    },
+    {
+      "id": "aBmNkPQRst",
+      "type": "skus",
+      "links": {...},
+      "attributes": {...},
+      "relationships": {...},
+      "meta": {...}
+    },
+    {
+      "id": "WAspXYhfCV",
+      "type": "skus",
+      "links": {...},
+      "attributes": {...},
+      "relationships": {...},
+      "meta": {...}
+    },
+    {
+      "id": "QWERtyUpBa",
+      "type": "skus",
+      "links": {...},
+      "attributes": {...},
+      "relationships": {...},
+      "meta": {...}
+    }       
+  ],
   "meta": {
     "record_count": 140,
     "page_count": 28
