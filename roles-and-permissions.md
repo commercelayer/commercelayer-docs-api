@@ -6,35 +6,38 @@ description: How to set specific permitted actions for each resource
 
 Commerce Layer supports a granular access control system on a resource level. Each access token gets a specific set of permissions. The client and the [authorization flow](authentication/#authorization-flows) determine your permitted actions for each resource.
 
-### Channel
+### Sales channel
 
-**Channel** applications support `client_credentials`, `password` and `refresh_token` grant types. If public access is enabled, they can authenticate without the `client_secret`. In such cases, the access tokens that they get have limited permissions on sensitive data.
+**Sales channel** applications support `client_credentials`, `password` and `refresh_token` grant types. Given their limited permissions, they can be safely used in client-side applications.
 
 #### Client credentials
 
-**Channel** applications that authenticate through `client_credentials` get the following permissions. The green icons ✅ show the ones that are granted with public access enabled.
+**Sales channel** applications that authenticate through `client_credentials` get the following permissions.
+
+{% hint style="danger" %}
+For security reasons **sales channel** applications can read resource lists only for `skus`, `sku_options` and `prices`. Getting a list for all the other resources is not allowed. For example, a sales channel is authorized to get `/api/orders/xYZkjABcde` but not `/api/orders` endpoint.
+{% endhint %}
 
 |  | Create | Read | Update | Delete | Restrictions |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **SKUs** |  | ✅  |  |  | Skus with stock items in the market stock locations and a price in the market's price list. |
+| **SKUs** |  | ✅  |  |  | SKUs with stock items in the market inventory model and a price in the market price list. |
+| **SKU options** |  | ✅ |  |  |  |
 | **Prices** |  | ✅ |  |  | Prices associated to the market price list. |
-| **Stock items** | \*\*\*\* | ✅ |  |  | Stock items associated to the market stock locations. |
-| **Delivery lead times** | \*\*\*\* | ✅ |  |  | Delivery lead times associated to the market stock locations. |
-| **Orders** | ✅ | ✅ | ☑  |  | Orders associated to the market scope. Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending". Order lists are limited to one result. |
-| **Line items** | ✅ | ✅ | ✅ | ✅ | Line items belonging to "draft" or "pending" orders, in the market scope. |
-| **Addresses** | ☑  | ☑ | ☑ | ☑ |  |
-| **Shipping methods** | \*\*\*\* | ✅ |  |  | Shipping methods associated to the market scope. |
-| **Shipments** |  | ☑ | ☑ |  | Shipments associated to "draft" or "pending" orders, in the market scope. |
-| **Payment methods** | \*\*\*\* | ✅ |  |  | Payment methods associated to the market scope. |
-| **Credit cards** | ☑ | ☑ | ☑ |  | Credit cards associated to "draft" or "pending" orders, in the market scope. |
-| **Paypal payments** | ☑ | ☑ | ☑ |  | Paypal payments associated to "draft" or "pending" orders, in the market scope. |
+| **Orders** | ✅ | ✅ |  ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
+| **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Addresses** | ✅  | ✅ | ✅ | ✅ | Single resource only. |
+| **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated to "draft", "pending" or "placed" orders \(single resource only\). |
+| **Shipping methods** |  | ✅ |  |  | Single resource or as shipment available shipping methods. |
+| **Payment methods** |  | ✅ |  |  | Single resource or as order available payment methods. |
+| **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Customers** | ✅ |  |  |  |  |
 | **Customer subscriptions** | ✅ |  |  |  |  |
-| **Customer password resets** | ☑ | ☑ | ☑ | ☑ |  |
+| **Customer password resets** | ✅ | ✅ | ✅ |  | Single resource only. |
 
 #### Password
 
-**Channel** applications can authenticate a customer through the `password` flow. The access tokens that they get include the sum of the client permissions plus the ones below.
+**Sales channel** applications can authenticate a customer through the `password` flow. The access tokens that they get include the sum of the client permissions plus the ones below.
 
 |  | Create | Read | Update | Delete | Restrictions |
 | :--- | :--- | :--- | :--- | :--- | :--- |
