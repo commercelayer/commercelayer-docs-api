@@ -23,19 +23,15 @@ Your sample organization gets populated with everything you need to place your f
 
 ## Get your credentials
 
-Once your sample organization is ready, go to _Settings → Applications_ and take note of your API credentials.
+Once your sample organization is ready, go to _Settings → Applications_ and take note of your **sales channel** API credentials.
 
 ![](.gitbook/assets/channel-v3b.jpg)
 
-The base endpoint is unique for your organization. The `client_id`, `client_secret`, and `scope` can be used to authenticate your application and get an access token. Public applications can get an access token by using the `client_id` only, with limited permissions.
-
-{% hint style="info" %}
-This is ideal for client side channel applications \(i.e. JavaScript\) that will use our hosted checkout instead of integrating our checkout APIs.
-{% endhint %}
+The base endpoint is unique for your organization. The `client_id` and `scope` can be used to authenticate your application and get an access token. 
 
 ## Get an access token
 
-To get an access token for a public **channel** application, run the following in your terminal, making sure to replace your own endpoint and credentials:
+To get an access token for a **sales channel** application, run the following in your terminal, making sure to replace your own endpoint and credentials:
 
 ```bash
 curl -X POST \
