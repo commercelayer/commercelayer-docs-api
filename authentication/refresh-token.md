@@ -6,7 +6,7 @@ description: How to execute the authorization flow and get your access token
 
 The `refresh_token` grant type is used by clients to exchange a refresh token for an expired access token. 
 
-**Channel** applications can use the `refresh_token` grant type to refresh a customer's access token with a "remember me" option.
+**Sales channel** applications can use the `refresh_token` grant type to refresh a customer's access token with a "remember me" option.
 
 ## Getting an access token
 

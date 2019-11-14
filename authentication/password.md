@@ -4,7 +4,7 @@ description: How to execute the authorization flow and get your access token
 
 # Password
 
-The `password` grant type is used by **channel** applications to exchange a customer credentials for an access token \(i.e. to get a "logged" access token\).
+The `password` grant type is used by **Sales channel** applications to exchange a customer credentials for an access token \(i.e. to get a "logged" access token\).
 
 {% hint style="info" %}
 By including a market `scope` in the access token request, all the resources \(e.g. SKUs, prices, stock items\) that you fetch are automatically filtered.

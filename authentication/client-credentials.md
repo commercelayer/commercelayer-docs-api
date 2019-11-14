@@ -4,7 +4,7 @@ description: How to execute the authorization flow and get your access token
 
 # Client credentials
 
-**Channel** applications use the `client_credentials` grant type to get a "guest" access token. 
+**Sales channel** applications use the `client_credentials` grant type to get a "guest" access token. 
 
 **Integration** applications use the `client_credentials` grant type to get an access token for themselves. 
 

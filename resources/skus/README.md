@@ -23,7 +23,7 @@ A **sku** object is returned as part of the response body of each successful [cr
 | attributes.**pieces\_per\_pack** | `integer` | The number of pieces that compose the SKU. This is useful to describe sets and bundles. |
 | attributes.**weight** | `float` | The weight of the SKU. If present, it will be used to calculate the shipping rates. |
 | attributes.**unit\_of\_weight** | `string` | Can be one of 'gr', or 'oz' |
-| attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU with a Channel application. |
+| attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU with a Sales channel application. |
 | attributes.**id** | `string` | Unique identifier for the resource \(hash\). |
 | attributes.**created\_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
