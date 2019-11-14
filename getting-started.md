@@ -25,7 +25,7 @@ Your sample organization gets populated with everything you need to place your f
 
 Once your sample organization is ready, go to _Settings → Applications_ and take note of your **sales channel** API credentials.
 
-![](.gitbook/assets/channel-v3b.jpg)
+![](.gitbook/assets/sales-channel.jpg)
 
 The base endpoint is unique for your organization. The `client_id` and `scope` can be used to authenticate your application and get an access token. 
 

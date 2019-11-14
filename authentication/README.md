@@ -16,7 +16,7 @@ To get an access token, you need to execute an authorization flow by using a val
 
 The authorization flow depends on the [grant type](https://oauth.net/2/grant-types/) as described in the table below:
 
-| Grant type | Channel | Integration | Webapp |
+| Grant type | Sales channel | Integration | Webapp |
 | :--- | :--- | :--- | :--- |
 | **Client credentials** | ✅ | ✅ |  |
 | **Password** | ✅ |  |  |
