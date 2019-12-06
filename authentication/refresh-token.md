@@ -23,9 +23,10 @@ To get an access token using the `refresh_token` grant type, send a `POST` reque
 | **grant\_type** | `string` | Required | `refresh_token` |
 | **refresh\_token** | `string` | Required | A valid `refresh_token` |
 | **client\_id** | `string` | Required | Your application `client_id` |
-| **client\_secret** | `string` | Optional | Your application `client_secret` |
 
 ### Example
+
+#### Sales channel
 
 {% tabs %}
 {% tab title="Request" %}
@@ -39,8 +40,7 @@ curl -X POST \
   -d '{
   "grant_type": "refresh_token",
   "refresh_token": "your-refresh-token",
-  "client_id": "your-client-id",
-  "client_secret": "your-client-secret"
+  "client_id": "your-client-id"
 }'
 ```
 {% endtab %}

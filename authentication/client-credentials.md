@@ -33,11 +33,51 @@ To get an access token using the `client_credentials` grant type, send a `POST` 
 The access token scope is a string composed by `"market:{{market_number}}"`, where `market_number` is the number of the market you want to put in scope.
 {% endhint %}
 
-### Example
+{% hint style="warning" %}
+**Sales channel** applications don't require the `client_secret` argument.
+{% endhint %}
+
+### Examples
+
+#### Sales channel
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an access token using the `client_credentials` grant type and putting in scope the market identified by the number "1234":
+The following request tries to get an access token for a sales channel application, using the `client_credentials` grant type and putting in scope the market identified by the number "1234":
+
+```bash
+curl -X POST \
+  https://yourdomain.commercelayer.io/oauth/token \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "grant_type": "client_credentials",
+  "client_id": "your-client-id",
+  "scope": "market:1234"
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning the requested access token:
+
+```javascript
+{
+  "access_token": "your-access-token",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "scope": "market:1234",
+  "created_at": 123456789
+}
+```
+{% endtab %}
+{% endtabs %}
+
+#### Integration
+
+{% tabs %}
+{% tab title="Request" %}
+The following request tries to get an access token for an integration application, using the `client_credentials` grant type and putting in scope the market identified by the number "1234":
 
 ```javascript
 curl -X POST \
@@ -47,8 +87,7 @@ curl -X POST \
   -d '{
   "grant_type": "client_credentials",
   "client_id": "your-client-id",
-  "client_secret": "your-client-secret",
-  "scope": "market:1234"
+  "client_secret": "your-client-secret"
 }'
 ```
 {% endtab %}

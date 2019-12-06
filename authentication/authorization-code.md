@@ -34,6 +34,8 @@ The response type must be `code`.
 
 ### Example
 
+#### Webapp
+
 {% tabs %}
 {% tab title="Request" %}
 The following request tries to get an authorization code, putting in scope the market identified by the number "1234":
@@ -74,9 +76,11 @@ To get an access token using the `authorization_code` grant type, send a `POST` 
 
 ### Example
 
+#### Webapp
+
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an access token using the `authorization_code` grant type with the code you got from the previous step:
+The following request tries to get an access token for a webapp application, using the `authorization_code` grant type with the code you got from the previous step:
 
 ```javascript
 curl -X POST \

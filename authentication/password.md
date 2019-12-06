@@ -26,7 +26,6 @@ To get an access token using the `password` grant type, send a `POST` request to
 | **username** | `string` | Required | The customer email address |
 | **password** | `string` | Required | The customer password |
 | **client\_id** | `string` | Required | Your application `client_id` |
-| **client\_secret** | `string` | Optional | Your application `client_secret` |
 | **scope** | `string` | Optional | Your access token scope \(market\) |
 
 {% hint style="info" %}
@@ -35,9 +34,11 @@ The access token scope is a string composed by `"market:{{market_number}}"`, whe
 
 ### Example
 
+#### Sales channel
+
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an access token using the `password` grant type for a specific user, putting in scope the market identified by the number "1234":
+The following request tries to get an access token for a sales channel application, using the `password` grant type for a specific user, putting in scope the market identified by the number "1234":
 
 ```javascript
 curl -X POST \
@@ -49,7 +50,6 @@ curl -X POST \
   "username": "john@example.com",
   "password": "secret",
   "client_id": "your-client-id",
-  "client_secret": "your-client-secret",
   "scope": "market:1234"
 }'
 ```
