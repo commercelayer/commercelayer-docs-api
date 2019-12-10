@@ -11,6 +11,10 @@ Unlike the other grant types, the `authorization_code` flow requires two steps:
 1. Get an [authorization code](authorization-code.md#getting-an-authorization-code)
 2. Exchange the authorization code with an [access token](authorization-code.md#getting-an-access-token)
 
+{% hint style="warning" %}
+For security reasons, authorization codes expire after **10 minutes**.
+{% endhint %}
+
 ## Getting an authorization code
 
 To get an authorization code, send a `GET` request to the `/oauth/authorize` endpoint ****with the application credentials and the response type as query parameters.
