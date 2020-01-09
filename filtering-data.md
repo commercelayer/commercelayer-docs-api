@@ -50,7 +50,7 @@ You can find here below the complete list of all possible predicates:
 | `*_blank` | The attribute is null or empty | `filter[q][description_blank]=true` |
 | `*_null` | The attribute is null | `filter[q][reference_null]=true` |
 | `*_not_null` | The attribute is not null | `filter[q][reference_not_null]=false` |
-| `*_in` | The attribute matches none of the filter values \(comma-separated\) | `filter[q][status_in]=placed,pending` |
+| `*_in` | The attribute matches any of the filter values \(comma-separated\) | `filter[q][status_in]=placed,pending` |
 | `*_not_in` | The attribute matches none of the filter values \(comma-separated\) | `filter[q][status_not_in]=approved,cancelled` |
 | `*_lt_any` | The attribute is less than any of the filter values \(comma-separated\) | `filter[q][amount_cents_lt_any]=1500,700,3400` |
 | `*_lteq_any` | The attribute is less than or equal to any of the filter values \(comma-separated\) | `filter[q][amount_cents_lteq_any]=1500,700,3400` |
