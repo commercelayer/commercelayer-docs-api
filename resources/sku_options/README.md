@@ -1,5 +1,5 @@
 ---
-description: The sku option object and its fields
+description: The SKU option object and its fields
 ---
 
 # Sku options
@@ -8,9 +8,9 @@ SKU options represent any personalization or feature that customers can add to s
 They can have a price and a delay time (e.g., preparation time) and are defined by Market.
 
 
-### The sku option object
+### The SKU option object
 
-A **sku option** object is returned as part of the response body of each successful
+A **SKU option** object is returned as part of the response body of each successful
 [create](https://docs.commercelayer.io/api/resources/sku_options/create_sku_option),
 [list](https://docs.commercelayer.io/api/resources/sku_options/list_sku_options),
 [retrieve](https://docs.commercelayer.io/api/resources/sku_options/retrieve_sku_option),
@@ -19,8 +19,8 @@ or [update](https://docs.commercelayer.io/api/resources/sku_options/update_sku_o
 | Field | Type | Description |
 | :--- | :--- | :--- |
 | **type** | `string` | `sku_options` |
-| **id** | `string` | The sku option unique identifier |
-| links.**self** | `string` | The sku option endpoint URL |
+| **id** | `string` | The SKU option unique identifier |
+| links.**self** | `string` | The SKU option endpoint URL |
 | attributes.**name** | `string` | The marsku option's internal name |
 | attributes.**description** | `string` | An internal description of the sku option. |
 | attributes.**price_amount_cents** | `integer` | The price of this shipping method, in cents. |

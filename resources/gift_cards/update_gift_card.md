@@ -23,8 +23,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**currency_code** | `string` | Required |
 | attributes.**balance_cents** | `integer` | Required |
 | attributes.**balance_max_cents** | `string` | Optional |
-| attributes.**single_use** | `` | Optional, default is 'false' |
-| attributes.**rechargeable** | `` | Optional, default is 'true' |
+| attributes.**single_use** | `boolean` | Optional, default is 'false' |
+| attributes.**rechargeable** | `boolean` | Optional, default is 'true' |
 | attributes.**image_url** | `string` | Optional |
 | attributes.**expires_at** | `datetime` | Optional, default is 'null' |
 | attributes.**reference_origin** | `string` | Optional |

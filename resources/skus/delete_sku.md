@@ -1,10 +1,10 @@
 ---
-description: How to delete an existing sku via API
+description: How to delete an existing SKU via API
 ---
 
-# Delete a sku
+# Delete a SKU
 
-To delete a sku, send a `DELETE` request to the `/api/skus/:id` endpoint, where `id` is the id of the sku that you want to delete.
+To delete a SKU, send a `DELETE` request to the `/api/skus/:id` endpoint, where `id` is the id of the SKU that you want to delete.
 
 {% page-ref page="../../deleting-resources.md" %}
 
@@ -16,7 +16,7 @@ To delete a sku, send a `DELETE` request to the `/api/skus/:id` endpoint, where 
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to delete the sku identified by the ID "xYZkjABcde":
+The following request tries to delete the SKU identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X DELETE \

@@ -1,10 +1,10 @@
 ---
-description: How to fetch a collection of skus via API
+description: How to fetch a collection of SKUs via API
 ---
 
-# List all skus
+# List all SKUs
 
-To fetch a collection of skus, send a `GET` request to the `/api/skus` endpoint.
+To fetch a collection of SKUs, send a `GET` request to the `/api/skus` endpoint.
 
 {% page-ref page="../../fetching-resources.md" %}
 
@@ -16,7 +16,7 @@ To fetch a collection of skus, send a `GET` request to the `/api/skus` endpoint.
 
 {% tabs %}
 {% tab title="Request" %}
-The following request fetches a collection of skus:
+The following request fetches a collection of SKUs:
 
 ```javascript
 curl -X GET \
@@ -112,7 +112,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 ### Sortable attributes
 
-The list of skus can be sorted by the following attributes:
+The list of SKUs can be sorted by the following attributes:
 
 * `code`
 * `id`

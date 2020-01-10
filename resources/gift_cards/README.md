@@ -32,8 +32,8 @@ or [update](https://docs.commercelayer.io/api/resources/gift_cards/update_gift_c
 | attributes.**balance_max_float** | `float` | The gift card balance max, float. |
 | attributes.**formatted_balance_max** | `string` | The gift card balance max, formatted. |
 | attributes.**balance_log** | `object` | The gift card balance log. Tracks all the gift card transactions. |
-| attributes.**single_use** | `` | Indicates if the gift card can be used only one. |
-| attributes.**rechargeable** | `` | Indicates if the gift card can be recharged. |
+| attributes.**single_use** | `boolean` | Indicates if the gift card can be used only one. |
+| attributes.**rechargeable** | `boolean` | Indicates if the gift card can be recharged. |
 | attributes.**image_url** | `string` | The URL of an image that represents the gift card. |
 | attributes.**expires_at** | `datetime` | Time at which the gift card will expire. |
 | attributes.**reference_origin** | `string` | A string that you can use to specify the origin of the resource reference. This can be useful for integrating this resource type to more external systems. |
