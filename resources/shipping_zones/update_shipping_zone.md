@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipping\_zones/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
 
 ### Arguments
 
@@ -21,12 +21,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**country\_code\_regex** | `string` | Optional |
-| attributes.**not\_country\_code\_regex** | `string` | Optional |
-| attributes.**state\_code\_regex** | `string` | Optional |
-| attributes.**not\_state\_code\_regex** | `string` | Optional |
-| attributes.**zip\_code\_regex** | `string` | Optional |
-| attributes.**not\_zip\_code\_regex** | `string` | Optional |
+| attributes.**country_code_regex** | `string` | Optional |
+| attributes.**not_country_code_regex** | `string` | Optional |
+| attributes.**state_code_regex** | `string` | Optional |
+| attributes.**not_state_code_regex** | `string` | Optional |
+| attributes.**zip_code_regex** | `string` | Optional |
+| attributes.**not_zip_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -75,7 +75,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -90,4 +90,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

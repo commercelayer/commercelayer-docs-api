@@ -10,7 +10,7 @@ To create a new customer address, send a `POST` request to the `/api/customer_ad
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer\_addresses**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
 
 ### Arguments
 
@@ -73,7 +73,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -100,4 +100,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To fetch a collection of customer groups, send a `GET` request to the `/api/cust
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_groups**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups**
 
 ### **Example**
 
@@ -42,7 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "name": null,
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -96,4 +96,3 @@ The list of customer groups can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

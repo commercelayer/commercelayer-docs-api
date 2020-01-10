@@ -10,14 +10,14 @@ To create a new customer subscription, send a `POST` request to the `/api/custom
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer\_subscriptions**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer\_email** | `string` | Required |
+| attributes.**customer_email** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -59,7 +59,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "customer_email": "john@example.com",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -80,4 +80,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

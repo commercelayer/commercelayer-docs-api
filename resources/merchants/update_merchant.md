@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/merchants/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/merchants/:id**
 
 ### Arguments
 
@@ -72,7 +72,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "name": "The Brand Inc.",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -93,4 +93,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

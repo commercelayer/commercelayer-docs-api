@@ -2,7 +2,7 @@
 description: How to update an existing sku option via API
 ---
 
-# Update a SKU option
+# Update a sku option
 
 To update an existing sku option, send a `PATCH` request to the `/api/sku_options/:id` endpoint, where `id` is the ID of the resource that you want to update.
 
@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku\_options/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### Arguments
 
@@ -22,9 +22,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**price\_amount\_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay\_hours** | `integer` | Optional, default is '0' |
-| attributes.**sku\_code\_regex** | `string` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
@@ -83,7 +83,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "sku_code_regex": "^(A|B).*$",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -104,4 +104,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -2,7 +2,7 @@
 description: How to fetch a specific sku via API
 ---
 
-# Retrieve a SKU
+# Retrieve a sku
 
 To fetch a single sku, send a `GET` request to the `/api/skus/:id` endpoint, where `id` is the ID of the resource that you want to retrieve.
 
@@ -10,7 +10,7 @@ To fetch a single sku, send a `GET` request to the `/api/skus/:id` endpoint, whe
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### **Example**
 
@@ -136,7 +136,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -181,4 +181,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

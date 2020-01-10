@@ -10,7 +10,7 @@ To fetch a collection of prices, send a `GET` request to the `/api/prices` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/prices**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/prices**
 
 ### **Example**
 
@@ -49,7 +49,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "formatted_compare_at_amount": "€130,00",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -104,4 +104,3 @@ The list of prices can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

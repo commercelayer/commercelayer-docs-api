@@ -10,7 +10,7 @@ To fetch a collection of markets, send a `GET` request to the `/api/markets` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets**
 
 ### **Example**
 
@@ -42,9 +42,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "number": 1234,
         "name": "EU Market",
         "facebook_pixel_id": "1234567890",
+        "checkout_url": "https://checkout.yourbrand.com/:order_id",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -104,4 +105,3 @@ The list of markets can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

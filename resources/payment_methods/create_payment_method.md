@@ -10,19 +10,19 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/payment\_methods**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment\_source\_type** | `string` | Required |
-| attributes.**price\_amount\_cents** | `integer` | Required |
+| attributes.**payment_source_type** | `string` | Required |
+| attributes.**price_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**payment\_gateway** | `object` | Required |
+| relationships.**payment_gateway** | `object` | Required |
 
 ### Example
 
@@ -82,7 +82,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "formatted_price_amount": "€0,00",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -109,4 +109,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

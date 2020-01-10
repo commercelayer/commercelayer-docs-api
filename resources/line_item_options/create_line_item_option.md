@@ -10,7 +10,7 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/line\_item\_options**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
 
 ### Arguments
 
@@ -22,8 +22,8 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | attributes.**options** | `object` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**line\_item** | `object` | Required |
-| relationships.**sku\_option** | `object` | Required |
+| relationships.**line_item** | `object` | Required |
+| relationships.**sku_option** | `object` | Required |
 
 ### Example
 
@@ -91,7 +91,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -118,4 +118,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

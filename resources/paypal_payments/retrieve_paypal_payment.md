@@ -10,7 +10,7 @@ To fetch a single paypal payment, send a `GET` request to the `/api/paypal_payme
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/paypal\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments/:id**
 
 ### **Example**
 
@@ -41,14 +41,14 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "return_url": "https://yourdomain.com/thankyou",
       "cancel_url": "https://yourdomain.com/checkout/payment",
       "note_to_payer": "Thank you for shopping with us!",
-      "paypal_payer_id": "ABCDEFG123456",
-      "name": "ABCDEFG123456",
+      "paypal_payer_id": "ABCDEFGHG123456",
+      "name": "ABCDEFGHG123456",
       "paypal_id": "1234567890",
       "status": "created",
-      "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG",
+      "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFGHG",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -69,4 +69,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

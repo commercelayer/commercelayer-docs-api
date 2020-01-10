@@ -10,7 +10,7 @@ To fetch a single stock location, send a `GET` request to the `/api/stock_locati
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_locations/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations/:id**
 
 ### **Example**
 
@@ -40,9 +40,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "attributes": {
       "name": "Primary warehouse",
       "label_format": "PDF",
+      "suppress_etd": "false",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -75,4 +76,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

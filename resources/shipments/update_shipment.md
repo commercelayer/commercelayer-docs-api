@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,17 +20,17 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**\_on\_hold** | `integer, value is '1'` | Optional |
-| attributes.**\_picking** | `integer, value is '1'` | Optional |
-| attributes.**\_packing** | `integer, value is '1'` | Optional |
-| attributes.**\_ready\_to\_ship** | `integer, value is '1'` | Optional |
-| attributes.**\_ship** | `integer, value is '1'` | Optional |
-| attributes.**\_get\_rates** | `integer, value is '1'` | Optional |
-| attributes.**selected\_rate\_id** | `string` | Optional |
-| attributes.**\_purchase** | `integer, value is '1'` | Optional |
+| attributes.**_on_hold** | `integer, value is '1'` | Optional |
+| attributes.**_picking** | `integer, value is '1'` | Optional |
+| attributes.**_packing** | `integer, value is '1'` | Optional |
+| attributes.**_ready_to_ship** | `integer, value is '1'` | Optional |
+| attributes.**_ship** | `integer, value is '1'` | Optional |
+| attributes.**_get_rates** | `integer, value is '1'` | Optional |
+| attributes.**selected_rate_id** | `string` | Optional |
+| attributes.**_purchase** | `integer, value is '1'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_method** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 
@@ -82,14 +82,21 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "cost_amount_cents": "1000",
       "cost_amount_float": "10.00",
       "formatted_cost_amount": "€10,00",
+      "skus_count": "2",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
     },
     "relationships": {
+      "order": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/order",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/order"
+        }
+      },
       "shipping_category": {
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_category",
@@ -147,4 +154,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

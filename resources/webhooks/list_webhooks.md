@@ -10,7 +10,7 @@ To fetch a collection of webhooks, send a `GET` request to the `/api/webhooks` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/webhooks**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
 
 ### **Example**
 
@@ -44,7 +44,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "include_resources": "[customer, shipping_address, billing_address]",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -85,4 +85,3 @@ The list of webhooks can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

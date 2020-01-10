@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment\_source\_type** | `string` | Required |
-| attributes.**price\_amount\_cents** | `integer` | Required |
+| attributes.**payment_source_type** | `string` | Required |
+| attributes.**price_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**payment\_gateway** | `object` | Required |
+| relationships.**payment_gateway** | `object` | Required |
 
 ### Example
 
@@ -79,7 +79,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "formatted_price_amount": "€0,00",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -106,4 +106,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To fetch a collection of shipments, send a `GET` request to the `/api/shipments`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
 
 ### **Example**
 
@@ -45,14 +45,21 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "cost_amount_cents": "1000",
         "cost_amount_float": "10.00",
         "formatted_cost_amount": "€10,00",
+        "skus_count": "2",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
       },
       "relationships": {
+        "order": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/order",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/order"
+          }
+        },
         "shipping_category": {
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_category",
@@ -137,4 +144,3 @@ The list of shipments can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

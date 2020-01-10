@@ -10,7 +10,7 @@ To fetch a single attachment, send a `GET` request to the `/api/attachments/:id`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/attachments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/attachments/:id**
 
 ### **Example**
 
@@ -43,7 +43,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "url": "https://s3.yourdomain.com/attachment.pdf",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -64,4 +64,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

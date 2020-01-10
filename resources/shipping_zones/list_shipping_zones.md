@@ -10,7 +10,7 @@ To fetch a collection of shipping zones, send a `GET` request to the `/api/shipp
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_zones**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones**
 
 ### **Example**
 
@@ -48,7 +48,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -90,4 +90,3 @@ The list of shipping zones can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

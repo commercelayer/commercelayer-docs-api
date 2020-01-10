@@ -10,16 +10,16 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/paypal\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**return\_url** | `string` | Required |
-| attributes.**cancel\_url** | `string` | Required |
-| attributes.**note\_to\_payer** | `string` | Optional |
+| attributes.**return_url** | `string` | Required |
+| attributes.**cancel_url** | `string` | Required |
+| attributes.**note_to_payer** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
@@ -71,14 +71,14 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "return_url": "https://yourdomain.com/thankyou",
       "cancel_url": "https://yourdomain.com/checkout/payment",
       "note_to_payer": "Thank you for shopping with us!",
-      "paypal_payer_id": "ABCDEFG123456",
-      "name": "ABCDEFG123456",
+      "paypal_payer_id": "ABCDEFGHG123456",
+      "name": "ABCDEFGHG123456",
       "paypal_id": "1234567890",
       "status": "created",
-      "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFG",
+      "approval_url": "https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-1234567890ABCDEFGHG",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -99,4 +99,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

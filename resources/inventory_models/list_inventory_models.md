@@ -10,7 +10,7 @@ To fetch a collection of inventory models, send a `GET` request to the `/api/inv
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_models**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
 
 ### **Example**
 
@@ -42,7 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "name": "EU Inventory Model",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -90,4 +90,3 @@ The list of inventory models can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

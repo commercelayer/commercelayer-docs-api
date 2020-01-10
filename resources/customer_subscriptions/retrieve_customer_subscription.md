@@ -10,7 +10,7 @@ To fetch a single customer subscription, send a `GET` request to the `/api/custo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_subscriptions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
 
 ### **Example**
 
@@ -41,7 +41,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "customer_email": "john@example.com",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -62,4 +62,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

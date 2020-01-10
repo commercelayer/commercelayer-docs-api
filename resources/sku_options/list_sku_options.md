@@ -2,7 +2,7 @@
 description: How to fetch a collection of sku options via API
 ---
 
-# List all SKU options
+# List all sku options
 
 To fetch a collection of sku options, send a `GET` request to the `/api/sku_options` endpoint.
 
@@ -10,7 +10,7 @@ To fetch a collection of sku options, send a `GET` request to the `/api/sku_opti
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_options**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
 
 ### **Example**
 
@@ -49,7 +49,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "sku_code_regex": "^(A|B).*$",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -99,4 +99,3 @@ The list of sku options can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

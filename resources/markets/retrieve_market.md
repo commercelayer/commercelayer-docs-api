@@ -10,7 +10,7 @@ To fetch a single market, send a `GET` request to the `/api/markets/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### **Example**
 
@@ -41,9 +41,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "number": 1234,
       "name": "EU Market",
       "facebook_pixel_id": "1234567890",
+      "checkout_url": "https://checkout.yourbrand.com/:order_id",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -76,4 +77,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

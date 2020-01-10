@@ -10,7 +10,7 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/shipments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
 
 ### Arguments
 
@@ -19,6 +19,7 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
+| relationships.**order** | `object` | Required |
 
 ### Example
 
@@ -37,6 +38,14 @@ curl -X POST \
     "type": "shipments",
     "attributes": {
     },
+    "relationships": {
+      "order": {
+        "data": {
+          "type": "orders",
+          "id": "QWERtyUpBa"
+        }
+      }
+    }
   }
 }'
 ```
@@ -60,14 +69,21 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "cost_amount_cents": "1000",
       "cost_amount_float": "10.00",
       "formatted_cost_amount": "€10,00",
+      "skus_count": "2",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
     },
     "relationships": {
+      "order": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/order",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/order"
+        }
+      },
       "shipping_category": {
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipping_category",
@@ -125,4 +141,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

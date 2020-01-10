@@ -10,7 +10,7 @@ To fetch a single parcel, send a `GET` request to the `/api/parcels/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/parcels/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### **Example**
 
@@ -63,7 +63,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "signed_by": "John Smith",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -90,4 +90,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

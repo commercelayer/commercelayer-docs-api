@@ -10,7 +10,7 @@ To fetch a single delivery lead time, send a `GET` request to the `/api/delivery
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### **Example**
 
@@ -44,7 +44,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "max_days": "3",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -71,4 +71,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

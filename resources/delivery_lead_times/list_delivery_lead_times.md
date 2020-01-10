@@ -10,7 +10,7 @@ To fetch a collection of delivery lead times, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### **Example**
 
@@ -45,7 +45,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "max_days": "3",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -100,4 +100,3 @@ The list of delivery lead times can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

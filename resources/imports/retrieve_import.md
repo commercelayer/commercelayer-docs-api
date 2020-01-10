@@ -10,7 +10,7 @@ To fetch a single import, send a `GET` request to the `/api/imports/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/imports/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/imports/:id**
 
 ### **Example**
 
@@ -75,7 +75,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "cleanup_records": "true",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -90,4 +90,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

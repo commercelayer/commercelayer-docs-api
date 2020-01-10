@@ -10,7 +10,7 @@ To fetch a single price list, send a `GET` request to the `/api/price_lists/:id`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/price\_lists/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/price_lists/:id**
 
 ### **Example**
 
@@ -43,7 +43,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "tax_included": "true",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -64,4 +64,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

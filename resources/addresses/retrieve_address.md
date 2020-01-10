@@ -10,7 +10,7 @@ To fetch a single address, send a `GET` request to the `/api/addresses/:id` endp
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/addresses/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### **Example**
 
@@ -64,7 +64,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "billing_info": "VAT ID IT02382940977",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -85,4 +85,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

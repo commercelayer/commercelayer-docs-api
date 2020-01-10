@@ -10,7 +10,7 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/attachments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
 
 ### Arguments
 
@@ -72,7 +72,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "url": "https://s3.yourdomain.com/attachment.pdf",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -93,4 +93,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

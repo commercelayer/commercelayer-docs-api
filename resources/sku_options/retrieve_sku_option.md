@@ -2,7 +2,7 @@
 description: How to fetch a specific sku option via API
 ---
 
-# Retrieve a SKU option
+# Retrieve a sku option
 
 To fetch a single sku option, send a `GET` request to the `/api/sku_options/:id` endpoint, where `id` is the ID of the resource that you want to retrieve.
 
@@ -10,7 +10,7 @@ To fetch a single sku option, send a `GET` request to the `/api/sku_options/:id`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_options/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### **Example**
 
@@ -48,7 +48,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "sku_code_regex": "^(A|B).*$",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -69,4 +69,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

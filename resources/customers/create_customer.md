@@ -10,7 +10,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customers**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customers**
 
 ### Arguments
 
@@ -21,7 +21,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | attributes.**password** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**customer\_group** | `object` | Optional |
+| relationships.**customer_group** | `object` | Optional |
 
 ### Example
 
@@ -64,7 +64,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "status": "prospect",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -109,4 +109,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock\_locations**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### Arguments
 
@@ -18,7 +18,8 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**label\_format** | `string` | Optional, default is 'pdf' |
+| attributes.**label_format** | `string` | Optional, default is 'pdf' |
+| attributes.**suppress_etd** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**address** | `object` | Required |
@@ -68,9 +69,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "attributes": {
       "name": "Primary warehouse",
       "label_format": "PDF",
+      "suppress_etd": "false",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -103,4 +105,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

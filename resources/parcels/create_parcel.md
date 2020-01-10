@@ -10,7 +10,7 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/parcels**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/parcels**
 
 ### Arguments
 
@@ -18,16 +18,16 @@ To create a new parcel, send a `POST` request to the `/api/parcels` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
-| attributes.**eel\_pfc** | `string` | Optional |
-| attributes.**contents\_type** | `string` | Optional |
-| attributes.**contents\_explanation** | `string` | Optional |
-| attributes.**customs\_certify** | `boolean` | Optional |
-| attributes.**customs\_signer** | `string` | Optional |
-| attributes.**non\_delivery\_option** | `string` | Optional |
-| attributes.**restriction\_type** | `string` | Optional |
-| attributes.**restriction\_comments** | `string` | Optional |
-| attributes.**customs\_info\_required** | `boolean` | Optional, default 'false' |
+| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**eel_pfc** | `string` | Optional |
+| attributes.**contents_type** | `string` | Optional |
+| attributes.**contents_explanation** | `string` | Optional |
+| attributes.**customs_certify** | `boolean` | Optional |
+| attributes.**customs_signer** | `string` | Optional |
+| attributes.**non_delivery_option** | `string` | Optional |
+| attributes.**restriction_type** | `string` | Optional |
+| attributes.**restriction_comments** | `string` | Optional |
+| attributes.**customs_info_required** | `boolean` | Optional, default 'false' |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipment** | `object` | Required |
@@ -99,7 +99,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "signed_by": "John Smith",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -126,4 +126,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

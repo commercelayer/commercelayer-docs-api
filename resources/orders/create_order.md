@@ -10,7 +10,7 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/orders**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### Arguments
 
@@ -18,23 +18,25 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**guest** | `boolean` | Optional |
-| attributes.**customer\_email** | `string` | Optional |
-| attributes.**customer\_password** | `string` | Optional |
-| attributes.**language\_code** | `string` | Optional, default is 'en' |
-| attributes.**shipping\_country\_code\_lock** | `string` | Optional |
-| attributes.**coupon\_code** | `string` | Optional |
-| attributes.**cart\_url** | `string` | Optional |
-| attributes.**return\_url** | `string` | Optional |
-| attributes.**terms\_url** | `string` | Optional |
-| attributes.**privacy\_url** | `string` | Optional |
+| attributes.**customer_email** | `string` | Optional |
+| attributes.**customer_password** | `string` | Optional |
+| attributes.**language_code** | `string` | Optional, default is 'en' |
+| attributes.**shipping_country_code_lock** | `string` | Optional |
+| attributes.**coupon_code** | `string` | Optional |
+| attributes.**gift_card_code** | `string` | Optional |
+| attributes.**gift_card_or_coupon_code** | `string` | Optional |
+| attributes.**cart_url** | `string` | Optional |
+| attributes.**return_url** | `string` | Optional |
+| attributes.**terms_url** | `string` | Optional |
+| attributes.**privacy_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 | relationships.**customer** | `object` | Optional |
-| relationships.**shipping\_address** | `object` | Optional |
-| relationships.**billing\_address** | `object` | Optional |
-| relationships.**payment\_method** | `object` | Optional |
-| relationships.**payment\_source** | `object` | Optional |
+| relationships.**shipping_address** | `object` | Optional |
+| relationships.**billing_address** | `object` | Optional |
+| relationships.**payment_method** | `object` | Optional |
+| relationships.**payment_source** | `object` | Optional |
 
 ### Example
 
@@ -91,9 +93,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "tax_included": "true",
       "tax_rate": "0.22",
       "freight_taxable": "true",
+      "requires_billing_info": "false",
       "country_code": "IT",
       "shipping_country_code_lock": "IT",
       "coupon_code": "SUMMERDISCOUNT",
+      "gift_card_code": "cc92c23e-967e-48b2-a323-59add603301f",
+      "gift_card_or_coupon_code": "cc92c23e-967e-48b2-a323-59add603301f",
       "subtotal_amount_cents": "5000",
       "subtotal_amount_float": "50.0",
       "formatted_subtotal_amount": "€50,00",
@@ -106,6 +111,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "discount_amount_cents": "-500",
       "discount_amount_float": "-5.0",
       "formatted_discount_amount": "-€5,00",
+      "adjustment_amount_cents": "1500",
+      "adjustment_amount_float": "15.0",
+      "formatted_adjustment_amount": "€15,00",
+      "gift_card_amount_cents": "1500",
+      "gift_card_amount_float": "15.0",
+      "formatted_gift_card_amount": "€15,00",
       "total_tax_amount_cents": "1028",
       "total_tax_amount_float": "10.28",
       "formatted_total_tax_amount": "€10,28",
@@ -121,6 +132,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "discount_tax_amount_cents": "-90",
       "discount_tax_amount_float": "-0.9",
       "formatted_discount_tax_amount": "-€0,90",
+      "adjustment_tax_amount_cents": "900",
+      "adjustment_tax_amount_float": "9.0",
+      "formatted_adjustment_tax_amount": "€9,00",
       "total_amount_cents": "5700",
       "total_amount_float": "57.0",
       "formatted_total_amount": "€57,00",
@@ -139,6 +153,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "discount_taxable_amount_cents": "-410",
       "discount_taxable_amount_float": "-4.10",
       "formatted_discount_taxable_amount": "-€4,10",
+      "adjustment_taxable_amount_cents": "120",
+      "adjustment_taxable_amount_float": "1.20",
+      "formatted_adjustment_taxable_amount": "€1,20",
       "total_amount_with_taxes_cents": "5700",
       "total_amount_with_taxes_float": "57.00",
       "formatted_total_amount_with_taxes": "€57,00",
@@ -162,7 +179,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "fulfillment_updated_at": "2018-01-01T12:00:00.000Z",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -231,4 +248,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

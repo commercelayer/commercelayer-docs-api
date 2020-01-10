@@ -2,7 +2,7 @@
 description: How to update an existing sku via API
 ---
 
-# Update a SKU
+# Update a sku
 
 To update an existing sku, send a `PATCH` request to the `/api/skus/:id` endpoint, where `id` is the ID of the resource that you want to update.
 
@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/skus/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Arguments
 
@@ -23,14 +23,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**tag\_names** | `string` | Optional |
-| attributes.**pieces\_per\_pack** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**tag_names** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -174,7 +174,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
-      "reference": "ANYREFEFERNCE",
+      "reference": "ANY-EXTERNAL-REFEFERNCE",
       "metadata": {
         "foo": "bar"
       }
@@ -219,4 +219,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

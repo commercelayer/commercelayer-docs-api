@@ -10,7 +10,7 @@ To fetch a collection of customer password resets, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_password\_resets**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets**
 
 ### **Example**
 
@@ -44,7 +44,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "reset_password_at": "2018-01-01T12:00:00.000Z",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
-        "reference": "ANYREFEFERNCE",
+        "reference": "ANY-EXTERNAL-REFEFERNCE",
         "metadata": {
           "foo": "bar"
         }
@@ -91,4 +91,3 @@ The list of customer password resets can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-
