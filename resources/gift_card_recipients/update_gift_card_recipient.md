@@ -48,12 +48,6 @@ curl -X PATCH \
       "email": "john@example.com"
     },
     "relationships": {
-      "customer": {
-        "data": {
-          "type": "customers",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

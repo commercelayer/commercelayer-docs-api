@@ -54,13 +54,13 @@ curl -X PATCH \
           "type": "markets",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "shipping_zone": {
         "data": {
           "type": "shipping_zones",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "shipping_category": {
         "data": {
           "type": "shipping_categories",

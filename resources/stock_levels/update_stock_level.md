@@ -52,7 +52,7 @@ curl -X PATCH \
           "type": "stock_locations",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "inventory_model": {
         "data": {
           "type": "inventory_models",

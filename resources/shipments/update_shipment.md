@@ -51,12 +51,6 @@ curl -X PATCH \
     "attributes": {
     },
     "relationships": {
-      "shipping_method": {
-        "data": {
-          "type": "shipping_methods",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

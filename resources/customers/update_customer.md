@@ -46,12 +46,6 @@ curl -X PATCH \
       "email": "john@example.com"
     },
     "relationships": {
-      "customer_group": {
-        "data": {
-          "type": "customer_groups",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

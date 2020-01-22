@@ -58,18 +58,6 @@ curl -X PATCH \
       "currency_code": "EUR"
     },
     "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "gift_card_recipient": {
-        "data": {
-          "type": "gift_card_recipients",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

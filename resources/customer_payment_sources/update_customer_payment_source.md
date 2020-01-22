@@ -49,7 +49,7 @@ curl -X PATCH \
           "type": "customers",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "payment_source": {
         "data": {
           "type": "payment_sources",

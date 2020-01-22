@@ -45,7 +45,7 @@ curl -X POST \
           "type": "customers",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "payment_source": {
         "data": {
           "type": "payment_sources",

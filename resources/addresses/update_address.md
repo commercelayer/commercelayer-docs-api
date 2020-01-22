@@ -60,12 +60,6 @@ curl -X PATCH \
       "line_1": "2883 Geraldine Lane"
     },
     "relationships": {
-      "geocoder": {
-        "data": {
-          "type": "geocoders",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

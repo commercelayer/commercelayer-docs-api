@@ -50,7 +50,7 @@ curl -X POST \
           "type": "line_items",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "sku_option": {
         "data": {
           "type": "sku_options",

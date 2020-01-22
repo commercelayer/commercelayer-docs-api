@@ -49,7 +49,7 @@ curl -X PATCH \
           "type": "customers",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "address": {
         "data": {
           "type": "addresses",

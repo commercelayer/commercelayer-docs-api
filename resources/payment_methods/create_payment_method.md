@@ -49,7 +49,7 @@ curl -X POST \
           "type": "markets",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "payment_gateway": {
         "data": {
           "type": "payment_gateways",

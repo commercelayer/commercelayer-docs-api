@@ -53,12 +53,6 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "sku": {
-        "data": {
-          "type": "skus",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

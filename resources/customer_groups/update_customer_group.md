@@ -45,12 +45,6 @@ curl -X PATCH \
       "name": ""
     },
     "relationships": {
-      "price_list": {
-        "data": {
-          "type": "price_lists",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

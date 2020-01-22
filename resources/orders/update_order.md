@@ -81,36 +81,6 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
-      "customer": {
-        "data": {
-          "type": "customers",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "shipping_address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "billing_address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "payment_method": {
-        "data": {
-          "type": "payment_methods",
-          "id": "QWERtyUpBa"
-        }
-      }
-      "payment_source": {
-        "data": {
-          "type": "payment_sources",
-          "id": "QWERtyUpBa"
-        }
-      }
     }
   }
 }'

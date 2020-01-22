@@ -49,7 +49,7 @@ curl -X POST \
           "type": "stock_locations",
           "id": "QWERtyUpBa"
         }
-      }
+      },
       "shipping_method": {
         "data": {
           "type": "shipping_methods",
