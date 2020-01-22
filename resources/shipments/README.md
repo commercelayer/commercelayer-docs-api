@@ -32,14 +32,14 @@ or [update](https://docs.commercelayer.io/api/resources/shipments/update_shipmen
 | attributes.**cost_amount_float** | `float` | The cost of this shipment from the selected carrier account, float. |
 | attributes.**formatted_cost_amount** | `string` | The cost of this shipment from the selected carrier account, formatted. |
 | attributes.**skus_count** | `integer` | The total number of skus in the shipment's line items. This can be useful to display a preview of the shipment content. |
-| attributes.**_on_hold** | `integer, value is '1'` | Send this attribute if you want to put this shipment on hold. |
-| attributes.**_picking** | `integer, value is '1'` | Send this attribute if you want to start picking this shipment. |
-| attributes.**_packing** | `integer, value is '1'` | Send this attribute if you want to start packing this shipment. |
-| attributes.**_ready_to_ship** | `integer, value is '1'` | Send this attribute if you want to mark this shipment as ready to ship. |
-| attributes.**_ship** | `integer, value is '1'` | Send this attribute if you want to mark this shipment as shipped. |
-| attributes.**_get_rates** | `integer, value is '1'` | Send this attribute if you want get the shipping rates from the associated carrier accounts. |
+| attributes.**_on_hold** | `boolean, value is 'true'` | Send this attribute if you want to put this shipment on hold. |
+| attributes.**_picking** | `boolean, value is 'true'` | Send this attribute if you want to start picking this shipment. |
+| attributes.**_packing** | `boolean, value is 'true'` | Send this attribute if you want to start packing this shipment. |
+| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Send this attribute if you want to mark this shipment as ready to ship. |
+| attributes.**_ship** | `boolean, value is 'true'` | Send this attribute if you want to mark this shipment as shipped. |
+| attributes.**_get_rates** | `boolean, value is 'true'` | Send this attribute if you want get the shipping rates from the associated carrier accounts. |
 | attributes.**selected_rate_id** | `string` | The selected purchase rate from the available shipping rates. |
-| attributes.**_purchase** | `integer, value is '1'` | Send this attribute if you want to purchase this shipment with the selected rate. |
+| attributes.**_purchase** | `boolean, value is 'true'` | Send this attribute if you want to purchase this shipment with the selected rate. |
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |

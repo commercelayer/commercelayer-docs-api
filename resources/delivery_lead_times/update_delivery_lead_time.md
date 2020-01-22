@@ -53,6 +53,12 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
+      "shipping_method": {
+        "data": {
+          "type": "shipping_methods",
+          "id": "QWERtyUpBa"
+        }
+      }
     }
   }
 }'

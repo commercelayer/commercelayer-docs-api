@@ -44,7 +44,7 @@ curl -X PATCH \
     "type": "line_item_options",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Embossing"
+      "quantity": "2"
     },
     "relationships": {
       "sku_option": {

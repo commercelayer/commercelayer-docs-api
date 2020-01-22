@@ -117,21 +117,21 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | attributes.**terms_url** | `string` | The terms and conditions url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**privacy_url** | `string` | The privacy polivy url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**checkout_url** | `string` | The checkout url that was automatically generated for the order. Send the customers to this url to let them checkout the order securely on our hosted checkout application. |
-| attributes.**_place** | `integer, value is '1'` | Send this attribute if you want to place the order. |
-| attributes.**_cancel** | `integer, value is '1'` | Send this attribute if you want to cancel a placed order. The order's authorization will be automatically voided. |
-| attributes.**_approve** | `integer, value is '1'` | Send this attribute if you want to approve a placed order. |
-| attributes.**_capture** | `integer, value is '1'` | Send this attribute if you want to capture an approved order. |
-| attributes.**_refund** | `integer, value is '1'` | Send this attribute if you want to refund a captured order. |
-| attributes.**_update_taxes** | `integer, value is '1'` | Send this attribute if you want to calculate taxes for this order (a tax calculator must be associated to the order's market). |
-| attributes.**_billing_address_clone_id** | `integer` | The id of the address that you want to clone to create the order's billing address. |
-| attributes.**_shipping_address_clone_id** | `integer` | The id of the address that you want to clone to create the order's shipping address. |
-| attributes.**_customer_payment_source_id** | `integer` | The id of the customer payment source (i.e. credit card) that you want to use as the order's payment source. |
-| attributes.**_shipping_address_same_as_billing** | `integer, value is '1'` | Send this attribute if you want the shipping address to be cloned from the order's billing address. |
-| attributes.**_billing_address_same_as_shipping** | `integer, value is '1'` | Send this attribute if you want the billing address to be cloned from the order's shipping address. |
-| attributes.**_save_payment_source_to_customer_wallet** | `integer, value is '1'` | Send this attribute if you want the order's payment source to be saved in the customer's wallet as a customer payment source. |
-| attributes.**_save_shipping_address_to_customer_address_book** | `integer, value is '1'` | Send this attribute if you want the order's shipping address to saved in the customer's address book as a customer address. |
-| attributes.**_save_billing_address_to_customer_address_book** | `integer, value is '1'` | Send this attribute if you want the order's billing address to saved in the customer's address book as a customer address. |
-| attributes.**_refresh** | `integer, value is '1'` | Send this attribute if you want to refresh an order. |
+| attributes.**_place** | `boolean, value is 'true'` | Send this attribute if you want to place the order. |
+| attributes.**_cancel** | `boolean, value is 'true'` | Send this attribute if you want to cancel a placed order. The order's authorization will be automatically voided. |
+| attributes.**_approve** | `boolean, value is 'true'` | Send this attribute if you want to approve a placed order. |
+| attributes.**_capture** | `boolean, value is 'true'` | Send this attribute if you want to capture an approved order. |
+| attributes.**_refund** | `boolean, value is 'true'` | Send this attribute if you want to refund a captured order. |
+| attributes.**_update_taxes** | `boolean, value is 'true'` | Send this attribute if you want to calculate taxes for this order (a tax calculator must be associated to the order's market). |
+| attributes.**_billing_address_clone_id** | `string` | The id of the address that you want to clone to create the order's billing address. |
+| attributes.**_shipping_address_clone_id** | `string` | The id of the address that you want to clone to create the order's shipping address. |
+| attributes.**_customer_payment_source_id** | `string` | The id of the customer payment source (i.e. credit card) that you want to use as the order's payment source. |
+| attributes.**_shipping_address_same_as_billing** | `boolean, value is 'true'` | Send this attribute if you want the shipping address to be cloned from the order's billing address. |
+| attributes.**_billing_address_same_as_shipping** | `boolean, value is 'true'` | Send this attribute if you want the billing address to be cloned from the order's shipping address. |
+| attributes.**_save_payment_source_to_customer_wallet** | `boolean, value is 'true'` | Send this attribute if you want the order's payment source to be saved in the customer's wallet as a customer payment source. |
+| attributes.**_save_shipping_address_to_customer_address_book** | `boolean, value is 'true'` | Send this attribute if you want the order's shipping address to saved in the customer's address book as a customer address. |
+| attributes.**_save_billing_address_to_customer_address_book** | `boolean, value is 'true'` | Send this attribute if you want the order's billing address to saved in the customer's address book as a customer address. |
+| attributes.**_refresh** | `boolean, value is 'true'` | Send this attribute if you want to refresh an order. |
 | attributes.**placed_at** | `datetime` | Time at which the order was placed. |
 | attributes.**approved_at** | `datetime` | Time at which the order was approved. |
 | attributes.**cancelled_at** | `datetime` | Time at which the order was cancelled. |

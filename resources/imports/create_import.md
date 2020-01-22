@@ -18,7 +18,7 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**resource_type** | `string` | Required |
-| attributes.**parent_resource_id** | `integer` | Required |
+| attributes.**parent_resource_id** | `string` | Required |
 | attributes.**inputs** | `object` | Required |
 | attributes.**cleanup_records** | `boolean` |  |
 | attributes.**reference** | `string` | Optional |
@@ -40,8 +40,8 @@ curl -X POST \
   "data": {
     "type": "imports",
     "attributes": {
-      "resource_type": "skus"
-      "parent_resource_id": "1234"
+      "resource_type": "skus",
+      "parent_resource_id": "1234",
       "inputs": "[{:code=>"ABC", :name=>"Foo"}, {:code=>"DEF", :name=>"Bar"}]"
     },
   }

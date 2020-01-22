@@ -44,7 +44,7 @@ curl -X PATCH \
     "type": "line_items",
     "id": "xYZkjABcde",
     "attributes": {
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX"
+      "quantity": "2"
     },
   }
 }'

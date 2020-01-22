@@ -42,7 +42,6 @@ curl -X PATCH \
     "type": "paypal_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "paypal_payer_id": "ABCDEFGHG123456"
     },
     "relationships": {
       "order": {

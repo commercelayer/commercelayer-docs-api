@@ -29,9 +29,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**expires_at** | `datetime` | Optional, default is 'null' |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**recipient_email** | `string` | Optional |
-| attributes.**_purchase** | `integer, value is '1'` |  |
-| attributes.**_activate** | `integer, value is '1'` |  |
-| attributes.**_deactivate** | `integer, value is '1'` |  |
+| attributes.**_purchase** | `boolean, value is 'true'` |  |
+| attributes.**_activate** | `boolean, value is 'true'` |  |
+| attributes.**_deactivate** | `boolean, value is 'true'` |  |
 | attributes.**_balance_change_cents** | `integer` |  |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -61,6 +61,12 @@ curl -X PATCH \
       "market": {
         "data": {
           "type": "markets",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "gift_card_recipient": {
+        "data": {
+          "type": "gift_card_recipients",
           "id": "QWERtyUpBa"
         }
       }

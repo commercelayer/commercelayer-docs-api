@@ -32,21 +32,21 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**return_url** | `string` | Optional |
 | attributes.**terms_url** | `string` | Optional |
 | attributes.**privacy_url** | `string` | Optional |
-| attributes.**_place** | `integer, value is '1'` |  |
-| attributes.**_cancel** | `integer, value is '1'` |  |
-| attributes.**_approve** | `integer, value is '1'` |  |
-| attributes.**_capture** | `integer, value is '1'` |  |
-| attributes.**_refund** | `integer, value is '1'` |  |
-| attributes.**_update_taxes** | `integer, value is '1'` |  |
-| attributes.**_billing_address_clone_id** | `integer` |  |
-| attributes.**_shipping_address_clone_id** | `integer` |  |
-| attributes.**_customer_payment_source_id** | `integer` | Optional |
-| attributes.**_shipping_address_same_as_billing** | `integer, value is '1'` | Optional |
-| attributes.**_billing_address_same_as_shipping** | `integer, value is '1'` | Optional |
-| attributes.**_save_payment_source_to_customer_wallet** | `integer, value is '1'` | Optional |
-| attributes.**_save_shipping_address_to_customer_address_book** | `integer, value is '1'` | Optional |
-| attributes.**_save_billing_address_to_customer_address_book** | `integer, value is '1'` | Optional |
-| attributes.**_refresh** | `integer, value is '1'` | Optional |
+| attributes.**_place** | `boolean, value is 'true'` |  |
+| attributes.**_cancel** | `boolean, value is 'true'` |  |
+| attributes.**_approve** | `boolean, value is 'true'` |  |
+| attributes.**_capture** | `boolean, value is 'true'` |  |
+| attributes.**_refund** | `boolean, value is 'true'` |  |
+| attributes.**_update_taxes** | `boolean, value is 'true'` |  |
+| attributes.**_billing_address_clone_id** | `string` |  |
+| attributes.**_shipping_address_clone_id** | `string` |  |
+| attributes.**_customer_payment_source_id** | `string` | Optional |
+| attributes.**_shipping_address_same_as_billing** | `boolean, value is 'true'` | Optional |
+| attributes.**_billing_address_same_as_shipping** | `boolean, value is 'true'` | Optional |
+| attributes.**_save_payment_source_to_customer_wallet** | `boolean, value is 'true'` | Optional |
+| attributes.**_save_shipping_address_to_customer_address_book** | `boolean, value is 'true'` | Optional |
+| attributes.**_save_billing_address_to_customer_address_book** | `boolean, value is 'true'` | Optional |
+| attributes.**_refresh** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
@@ -73,12 +73,41 @@ curl -X PATCH \
     "type": "orders",
     "id": "xYZkjABcde",
     "attributes": {
-      "guest": "true"
     },
     "relationships": {
       "market": {
         "data": {
           "type": "markets",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "customer": {
+        "data": {
+          "type": "customers",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "shipping_address": {
+        "data": {
+          "type": "addresses",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "billing_address": {
+        "data": {
+          "type": "addresses",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "payment_method": {
+        "data": {
+          "type": "payment_methods",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "payment_source": {
+        "data": {
+          "type": "payment_sources",
           "id": "QWERtyUpBa"
         }
       }

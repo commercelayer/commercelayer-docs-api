@@ -45,7 +45,7 @@ curl -X POST \
   "data": {
     "type": "skus",
     "attributes": {
-      "code": "TSHIRTMM000000FFFFFFXLXX"
+      "code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)"
     },
     "relationships": {

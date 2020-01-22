@@ -42,12 +42,17 @@ curl -X PATCH \
     "type": "customer_addresses",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
     "relationships": {
       "customer": {
         "data": {
           "type": "customers",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "address": {
+        "data": {
+          "type": "addresses",
           "id": "QWERtyUpBa"
         }
       }

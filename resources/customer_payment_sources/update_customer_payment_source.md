@@ -42,12 +42,17 @@ curl -X PATCH \
     "type": "customer_payment_sources",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
     "relationships": {
       "customer": {
         "data": {
           "type": "customers",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "payment_source": {
+        "data": {
+          "type": "payment_sources",
           "id": "QWERtyUpBa"
         }
       }

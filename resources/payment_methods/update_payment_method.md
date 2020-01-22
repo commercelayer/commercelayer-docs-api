@@ -53,6 +53,12 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
+      "payment_gateway": {
+        "data": {
+          "type": "payment_gateways",
+          "id": "QWERtyUpBa"
+        }
+      }
     }
   }
 }'

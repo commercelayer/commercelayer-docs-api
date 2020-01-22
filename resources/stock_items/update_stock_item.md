@@ -44,12 +44,18 @@ curl -X PATCH \
     "type": "stock_items",
     "id": "xYZkjABcde",
     "attributes": {
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX"
+      "quantity": "100"
     },
     "relationships": {
       "stock_location": {
         "data": {
           "type": "stock_locations",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "sku": {
+        "data": {
+          "type": "skus",
           "id": "QWERtyUpBa"
         }
       }

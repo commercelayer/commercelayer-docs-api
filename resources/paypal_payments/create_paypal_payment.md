@@ -40,7 +40,7 @@ curl -X POST \
   "data": {
     "type": "paypal_payments",
     "attributes": {
-      "return_url": "https://yourdomain.com/thankyou"
+      "return_url": "https://yourdomain.com/thankyou",
       "cancel_url": "https://yourdomain.com/checkout/payment"
     },
     "relationships": {

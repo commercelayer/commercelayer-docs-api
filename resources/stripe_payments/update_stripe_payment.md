@@ -41,7 +41,6 @@ curl -X PATCH \
     "type": "stripe_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
     "relationships": {
       "order": {

@@ -41,7 +41,6 @@ curl -X PATCH \
     "type": "wire_transfers",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
     "relationships": {
       "order": {

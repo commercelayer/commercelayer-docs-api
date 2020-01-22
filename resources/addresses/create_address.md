@@ -53,11 +53,11 @@ curl -X POST \
   "data": {
     "type": "addresses",
     "attributes": {
-      "line_1": "2883 Geraldine Lane"
-      "city": "New York"
-      "zip_code": "10013"
-      "state_code": "NY"
-      "country_code": "US"
+      "line_1": "2883 Geraldine Lane",
+      "city": "New York",
+      "zip_code": "10013",
+      "state_code": "NY",
+      "country_code": "US",
       "phone": "(212) 646-338-1228"
     },
     "relationships": {

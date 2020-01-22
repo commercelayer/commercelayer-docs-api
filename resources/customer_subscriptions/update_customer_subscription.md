@@ -40,7 +40,6 @@ curl -X PATCH \
     "type": "customer_subscriptions",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
   }
 }'

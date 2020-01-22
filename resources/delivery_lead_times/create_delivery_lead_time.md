@@ -40,7 +40,7 @@ curl -X POST \
   "data": {
     "type": "delivery_lead_times",
     "attributes": {
-      "min_hours": "48"
+      "min_hours": "48",
       "max_hours": "72"
     },
     "relationships": {

@@ -39,7 +39,7 @@ curl -X POST \
   "data": {
     "type": "webhooks",
     "attributes": {
-      "topic": "orders.place"
+      "topic": "orders.place",
       "callback_url": "https://yourapp.com/webhooks"
     },
   }

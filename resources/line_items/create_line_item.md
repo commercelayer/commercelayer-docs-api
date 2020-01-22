@@ -19,7 +19,7 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 | **type** | `string` | Required |
 | attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**_update_quantity** | `integer, value is '1'` | Optional |
+| attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
 | attributes.**name** | `string` | Optional |
 | attributes.**image_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |

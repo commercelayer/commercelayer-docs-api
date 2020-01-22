@@ -40,7 +40,6 @@ curl -X PATCH \
     "type": "imports",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
   }
 }'

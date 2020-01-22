@@ -39,7 +39,7 @@ curl -X POST \
   "data": {
     "type": "price_lists",
     "attributes": {
-      "name": "EU Price list"
+      "name": "EU Price list",
       "currency_code": "EUR"
     },
   }

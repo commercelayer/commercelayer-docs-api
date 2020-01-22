@@ -41,7 +41,6 @@ curl -X PATCH \
     "type": "billing_info_validation_rules",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
     },
     "relationships": {
       "market": {

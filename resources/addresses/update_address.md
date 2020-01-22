@@ -57,7 +57,7 @@ curl -X PATCH \
     "type": "addresses",
     "id": "xYZkjABcde",
     "attributes": {
-      "business": "false"
+      "line_1": "2883 Geraldine Lane"
     },
     "relationships": {
       "geocoder": {

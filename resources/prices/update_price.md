@@ -45,12 +45,18 @@ curl -X PATCH \
     "type": "prices",
     "id": "xYZkjABcde",
     "attributes": {
-      "sku_code": "TSHIRTMM000000FFFFFFXLXX"
+      "amount_cents": "10000"
     },
     "relationships": {
       "price_list": {
         "data": {
           "type": "price_lists",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "sku": {
+        "data": {
+          "type": "skus",
           "id": "QWERtyUpBa"
         }
       }

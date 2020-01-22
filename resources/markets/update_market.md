@@ -55,6 +55,18 @@ curl -X PATCH \
           "id": "QWERtyUpBa"
         }
       }
+      "price_list": {
+        "data": {
+          "type": "price_lists",
+          "id": "QWERtyUpBa"
+        }
+      }
+      "inventory_model": {
+        "data": {
+          "type": "inventory_models",
+          "id": "QWERtyUpBa"
+        }
+      }
     }
   }
 }'

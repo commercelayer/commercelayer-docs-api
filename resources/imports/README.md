@@ -25,7 +25,7 @@ or [update](https://docs.commercelayer.io/api/resources/imports/update_import) A
 | **id** | `string` | The import unique identifier |
 | links.**self** | `string` | The import endpoint URL |
 | attributes.**resource_type** | `string` | The type of resource being imported. One of 'skus', 'prices', or 'stock_items' |
-| attributes.**parent_resource_id** | `integer` | The ID of the parent resource. It can be the 'shipping_category_id' for 'skus', the 'price_list_id' for 'prices', or the 'stock_location_id' for 'stock_items' |
+| attributes.**parent_resource_id** | `string` | The ID of the parent resource. It can be the 'shipping_category_id' for 'skus', the 'price_list_id' for 'prices', or the 'stock_location_id' for 'stock_items' |
 | attributes.**status** | `string` | The import job status. One of 'pending' (default), 'started', or 'completed' |
 | attributes.**started_at** | `datetime` | Time at which the import was started. |
 | attributes.**completed_at** | `datetime` | Time at which the import was completed. |

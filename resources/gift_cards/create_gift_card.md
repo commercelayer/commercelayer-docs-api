@@ -48,7 +48,7 @@ curl -X POST \
   "data": {
     "type": "gift_cards",
     "attributes": {
-      "currency_code": "EUR"
+      "currency_code": "EUR",
       "balance_cents": "15000"
     },
     "relationships": {

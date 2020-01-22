@@ -40,7 +40,7 @@ curl -X POST \
   "data": {
     "type": "payment_methods",
     "attributes": {
-      "payment_source_type": "CreditCard"
+      "payment_source_type": "CreditCard",
       "price_amount_cents": "0"
     },
     "relationships": {

@@ -20,14 +20,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**_on_hold** | `integer, value is '1'` | Optional |
-| attributes.**_picking** | `integer, value is '1'` | Optional |
-| attributes.**_packing** | `integer, value is '1'` | Optional |
-| attributes.**_ready_to_ship** | `integer, value is '1'` | Optional |
-| attributes.**_ship** | `integer, value is '1'` | Optional |
-| attributes.**_get_rates** | `integer, value is '1'` | Optional |
+| attributes.**_on_hold** | `boolean, value is 'true'` | Optional |
+| attributes.**_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**_packing** | `boolean, value is 'true'` | Optional |
+| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_get_rates** | `boolean, value is 'true'` | Optional |
 | attributes.**selected_rate_id** | `string` | Optional |
-| attributes.**_purchase** | `integer, value is '1'` | Optional |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipping_method** | `object` | Optional |
@@ -49,7 +49,6 @@ curl -X PATCH \
     "type": "shipments",
     "id": "xYZkjABcde",
     "attributes": {
-      "_on_hold": ""
     },
     "relationships": {
       "shipping_method": {

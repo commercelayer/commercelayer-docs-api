@@ -43,11 +43,11 @@ curl -X POST \
   "data": {
     "type": "credit_cards",
     "attributes": {
-      "first_name": "John"
-      "last_name": "Smith"
-      "number": "4111111111111111"
-      "month": "10"
-      "year": "2023"
+      "first_name": "John",
+      "last_name": "Smith",
+      "number": "4111111111111111",
+      "month": "10",
+      "year": "2023",
       "verification_value": "123"
     },
     "relationships": {

@@ -42,7 +42,7 @@ curl -X POST \
   "data": {
     "type": "shipping_methods",
     "attributes": {
-      "name": "Standard shipping"
+      "name": "Standard shipping",
       "price_amount_cents": "1000"
     },
     "relationships": {

@@ -38,9 +38,9 @@ or [update](https://docs.commercelayer.io/api/resources/gift_cards/update_gift_c
 | attributes.**expires_at** | `datetime` | Time at which the gift card will expire. |
 | attributes.**reference_origin** | `string` | A string that you can use to specify the origin of the resource reference. This can be useful for integrating this resource type to more external systems. |
 | attributes.**recipient_email** | `string` | The email address of the associated recipient. When creating or updating a gift card, this is a shortcut to find or create the associated recipient by email. |
-| attributes.**_purchase** | `integer, value is '1'` | Send this attribute if you want to confirm a draft gift card. The gift card becomes 'inactive', waiting to be activated. |
-| attributes.**_activate** | `integer, value is '1'` | Send this attribute if you want to activate a gift card. |
-| attributes.**_deactivate** | `integer, value is '1'` | Send this attribute if you want to deactivate a gift card. |
+| attributes.**_purchase** | `boolean, value is 'true'` | Send this attribute if you want to confirm a draft gift card. The gift card becomes 'inactive', waiting to be activated. |
+| attributes.**_activate** | `boolean, value is 'true'` | Send this attribute if you want to activate a gift card. |
+| attributes.**_deactivate** | `boolean, value is 'true'` | Send this attribute if you want to deactivate a gift card. |
 | attributes.**_balance_change_cents** | `integer` | The balance change, in cents. Send a negative value to reduces the card balance by the specified amount. Send a positive value to recharge the gift card (if rechargeable). |
 | attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |

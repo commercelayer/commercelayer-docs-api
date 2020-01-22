@@ -39,8 +39,8 @@ curl -X POST \
   "data": {
     "type": "adjustments",
     "attributes": {
-      "name": "Additional service"
-      "currency_code": "EUR"
+      "name": "Additional service",
+      "currency_code": "EUR",
       "amount_cents": "1500"
     },
   }

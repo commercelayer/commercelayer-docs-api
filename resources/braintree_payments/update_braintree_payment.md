@@ -43,7 +43,6 @@ curl -X PATCH \
     "type": "braintree_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "payment_method_nonce": "xxxx.yyyy.zzzz"
     },
     "relationships": {
       "order": {
