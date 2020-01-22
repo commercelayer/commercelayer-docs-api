@@ -45,8 +45,6 @@ curl -X PATCH \
   "data": {
     "type": "adyen_payments",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

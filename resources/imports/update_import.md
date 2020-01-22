@@ -39,8 +39,6 @@ curl -X PATCH \
   "data": {
     "type": "imports",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
   }
 }'
 ```

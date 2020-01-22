@@ -39,8 +39,6 @@ curl -X PATCH \
   "data": {
     "type": "customer_subscriptions",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
   }
 }'
 ```

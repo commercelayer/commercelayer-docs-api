@@ -41,8 +41,6 @@ curl -X PATCH \
   "data": {
     "type": "customer_payment_sources",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "customer": {
         "data": {

@@ -51,8 +51,6 @@ curl -X PATCH \
   "data": {
     "type": "parcels",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "shipment": {
         "data": {

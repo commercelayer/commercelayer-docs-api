@@ -53,8 +53,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "orders",
-    "attributes": {
-    },
     "relationships": {
       "market": {
         "data": {

@@ -48,10 +48,6 @@ curl -X PATCH \
   "data": {
     "type": "shipments",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
-    "relationships": {
-    }
   }
 }'
 ```

@@ -59,8 +59,6 @@ curl -X PATCH \
     "attributes": {
       "line_1": "2883 Geraldine Lane"
     },
-    "relationships": {
-    }
   }
 }'
 ```

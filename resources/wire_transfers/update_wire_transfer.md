@@ -40,8 +40,6 @@ curl -X PATCH \
   "data": {
     "type": "wire_transfers",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

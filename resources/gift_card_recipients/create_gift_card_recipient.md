@@ -43,8 +43,6 @@ curl -X POST \
     "attributes": {
       "email": "john@example.com"
     },
-    "relationships": {
-    }
   }
 }'
 ```

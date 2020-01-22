@@ -37,8 +37,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "customer_addresses",
-    "attributes": {
-    },
     "relationships": {
       "customer": {
         "data": {

@@ -36,8 +36,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "billing_info_validation_rules",
-    "attributes": {
-    },
     "relationships": {
       "market": {
         "data": {

@@ -36,8 +36,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "wire_transfers",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

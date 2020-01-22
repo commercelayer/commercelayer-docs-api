@@ -37,8 +37,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "braintree_payments",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

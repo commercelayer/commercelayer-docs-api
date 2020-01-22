@@ -36,8 +36,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "adyen_payments",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

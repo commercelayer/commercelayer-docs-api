@@ -37,8 +37,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "stripe_payments",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

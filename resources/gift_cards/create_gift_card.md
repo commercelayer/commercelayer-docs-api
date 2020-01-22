@@ -51,8 +51,6 @@ curl -X POST \
       "currency_code": "EUR",
       "balance_cents": "15000"
     },
-    "relationships": {
-    }
   }
 }'
 ```

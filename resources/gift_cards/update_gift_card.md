@@ -57,8 +57,6 @@ curl -X PATCH \
     "attributes": {
       "currency_code": "EUR"
     },
-    "relationships": {
-    }
   }
 }'
 ```

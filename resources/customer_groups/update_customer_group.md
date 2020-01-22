@@ -44,8 +44,6 @@ curl -X PATCH \
     "attributes": {
       "name": ""
     },
-    "relationships": {
-    }
   }
 }'
 ```

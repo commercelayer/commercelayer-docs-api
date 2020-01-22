@@ -72,8 +72,6 @@ curl -X PATCH \
   "data": {
     "type": "orders",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "market": {
         "data": {

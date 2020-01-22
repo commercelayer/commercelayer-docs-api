@@ -40,8 +40,6 @@ curl -X PATCH \
   "data": {
     "type": "billing_info_validation_rules",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "market": {
         "data": {

@@ -45,8 +45,6 @@ curl -X PATCH \
     "attributes": {
       "email": "john@example.com"
     },
-    "relationships": {
-    }
   }
 }'
 ```

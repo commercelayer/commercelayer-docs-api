@@ -41,8 +41,6 @@ curl -X PATCH \
   "data": {
     "type": "customer_password_resets",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
   }
 }'
 ```

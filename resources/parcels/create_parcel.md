@@ -47,8 +47,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "parcels",
-    "attributes": {
-    },
     "relationships": {
       "shipment": {
         "data": {

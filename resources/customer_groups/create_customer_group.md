@@ -40,8 +40,6 @@ curl -X POST \
     "attributes": {
       "name": ""
     },
-    "relationships": {
-    }
   }
 }'
 ```

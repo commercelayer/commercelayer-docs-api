@@ -60,8 +60,6 @@ curl -X POST \
       "country_code": "US",
       "phone": "(212) 646-338-1228"
     },
-    "relationships": {
-    }
   }
 }'
 ```

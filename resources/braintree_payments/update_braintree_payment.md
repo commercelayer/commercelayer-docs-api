@@ -42,8 +42,6 @@ curl -X PATCH \
   "data": {
     "type": "braintree_payments",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

@@ -36,8 +36,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "shipments",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

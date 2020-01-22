@@ -40,8 +40,6 @@ curl -X PATCH \
   "data": {
     "type": "stripe_payments",
     "id": "xYZkjABcde",
-    "attributes": {
-    },
     "relationships": {
       "order": {
         "data": {

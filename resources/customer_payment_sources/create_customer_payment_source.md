@@ -37,8 +37,6 @@ curl -X POST \
   -d '{
   "data": {
     "type": "customer_payment_sources",
-    "attributes": {
-    },
     "relationships": {
       "customer": {
         "data": {
