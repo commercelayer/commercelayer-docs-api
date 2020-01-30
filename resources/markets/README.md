@@ -34,6 +34,6 @@ or [update](https://docs.commercelayer.io/api/resources/markets/update_market) A
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**merchant** | `object` | The associated merchant. |
 | relationships.**price_list** | `object` | The associated price list. |
-| relationships.**inventory_model** | `object` | The associated inventoty model. |
+| relationships.**inventory_model** | `object` | The associated inventory model. |
 | relationships.**customer_group** | `object` | The associated customer group. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
