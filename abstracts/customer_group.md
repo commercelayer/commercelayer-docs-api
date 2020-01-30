@@ -1,3 +1,2 @@
 A customer group is a resource that can be used to organize customers into groups.
-When you associate a price list to a customer group, all the customers belonging to that group get its price list, overridining the one defined at market level.
-You can use customer groups to manage B2B customers, B2C loyalty programs, and more.
+When you associate a customer group to a market, that market becomes private and can be accessed only by the customers belonging to the group. You can use customer groups to manage B2B customers, B2C loyalty programs, private sales, and more.
