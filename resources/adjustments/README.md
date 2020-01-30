@@ -4,6 +4,7 @@ description: The adjustment object and its fields
 
 # Adjustments
 
+Adjustments are arbitrary objects that can be used to change the total amount of an order by any value, either greater or lower than zero. To add an adjustment to an order, you first need to create the adjustment and then create a line item that references it.
 
 
 ### The adjustment object

@@ -5,7 +5,7 @@ description: The shipping category object and its fields
 # Shipping categories
 
 Shipping categories determine which shipping methods are available for the associated SKUs.
-An order is split into more shipments if it contains line items belonging to more than one shipping category ([learn more](https://commercelayer.io/glossary/shipping_category/)).
+An order is split into more shipments if it contains line items belonging to more than one shipping category.
 
 
 ### The shipping category object
