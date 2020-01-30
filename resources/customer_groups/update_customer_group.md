@@ -23,7 +23,6 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price_list** | `object` | Optional |
 
 ### Example
 
@@ -70,16 +69,16 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       }
     },
     "relationships": {
-      "price_list": {
-        "links": {
-          "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/price_list",
-          "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/price_list"
-        }
-      },
       "customers": {
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/customers",
           "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/customers"
+        }
+      },
+      "markets": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/markets",
+          "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/markets"
         }
       }
     },

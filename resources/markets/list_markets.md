@@ -43,6 +43,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "name": "EU Market",
         "facebook_pixel_id": "1234567890",
         "checkout_url": "https://checkout.yourbrand.com/:order_id",
+        "private": "true",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -67,6 +68,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
             "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
+          }
+        },
+        "customer_group": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/customer_group",
+            "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/customer_group"
           }
         }
       },

@@ -28,6 +28,6 @@ or [update](https://docs.commercelayer.io/api/resources/customer_groups/update_c
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**price_list** | `object` | The associated price list. |
 | relationships.**customers** | `array` | The customers belonging to this group. |
+| relationships.**markets** | `array` | The markets belonging to this group. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
