@@ -4,7 +4,7 @@ description: The attachment object and its fields
 
 # Attachments
 
-Attachments can be associated to any resource as a reference to any external document, through the `url` attribute.
+Attachments can be associated with any resource as a reference to any external document, through the `url` attribute.
 
 
 ### The attachment object
