@@ -24,7 +24,7 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | **type** | `string` | `orders` |
 | **id** | `string` | The order unique identifier |
 | links.**self** | `string` | The order endpoint URL |
-| attributes.**number** | `integer` | Unique identified for the order (numeric) |
+| attributes.**number** | `integer` | Unique identifier for the order (numeric) |
 | attributes.**status** | `string` | The order status. One of 'draft' (default), 'pending', 'placed', 'approved', or 'cancelled' |
 | attributes.**payment_status** | `string` | The order's payment status. One of 'unpaid' (default), 'authorized', 'paid', 'voided', or 'refunded' |
 | attributes.**fulfillment_status** | `string` | The order's fulfillment status. One of 'unfulfilled' (default), 'in_progress', or 'fulfilled' |

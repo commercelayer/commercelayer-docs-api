@@ -22,7 +22,7 @@ or [update](https://docs.commercelayer.io/api/resources/markets/update_market) A
 | **type** | `string` | `markets` |
 | **id** | `string` | The market unique identifier |
 | links.**self** | `string` | The market endpoint URL |
-| attributes.**number** | `integer` | Unique identified for the market (numeric) |
+| attributes.**number** | `integer` | Unique identifier for the market (numeric) |
 | attributes.**name** | `string` | The market's internal name |
 | attributes.**facebook_pixel_id** | `string` | The Facebook Pixed ID |
 | attributes.**checkout_url** | `string` | The checkout URL for this market |

@@ -67,6 +67,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
     },
     "attributes": {
+      "number": 1234,
       "name": "Primary warehouse",
       "label_format": "PDF",
       "suppress_etd": "false",

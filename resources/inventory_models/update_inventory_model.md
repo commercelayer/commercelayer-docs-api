@@ -21,6 +21,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Required |
+| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -61,6 +62,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     },
     "attributes": {
       "name": "EU Inventory Model",
+      "stock_locations_cutoff": "3",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -25,7 +25,7 @@ or [update](https://docs.commercelayer.io/api/resources/shipments/update_shipmen
 | **type** | `string` | `shipments` |
 | **id** | `string` | The shipment unique identifier |
 | links.**self** | `string` | The shipment endpoint URL |
-| attributes.**number** | `string` | Unique identified for the shipment |
+| attributes.**number** | `string` | Unique identifier for the shipment |
 | attributes.**status** | `string` | The shipment status, one of 'draft', 'upcoming', 'cancelled', 'on_hold', 'picking', 'packing', 'ready_to_ship', or 'shipped' |
 | attributes.**currency_code** | `string` | The international 3-letter currency code as defined by the ISO 4217 standard, automatically inherited from the associated order. |
 | attributes.**cost_amount_cents** | `integer` | The cost of this shipment from the selected carrier account, in cents. |

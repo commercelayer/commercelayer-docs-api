@@ -39,6 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde"
       },
       "attributes": {
+        "number": 1234,
         "name": "Primary warehouse",
         "label_format": "PDF",
         "suppress_etd": "false",

@@ -21,6 +21,7 @@ or [update](https://docs.commercelayer.io/api/resources/stock_locations/update_s
 | **type** | `string` | `stock_locations` |
 | **id** | `string` | The stock location unique identifier |
 | links.**self** | `string` | The stock location endpoint URL |
+| attributes.**number** | `integer` | Unique identifier for the stock location (numeric) |
 | attributes.**name** | `string` | The stock location's internal name. |
 | attributes.**label_format** | `string` | The shipping label format for this stock location. Can be one of 'PDF', 'ZPL', 'EPL2', or 'PNG' |
 | attributes.**suppress_etd** | `boolean` | Flag it if you want to skip the electronic invoice creation when generating the customs info for this stock location shipments. |

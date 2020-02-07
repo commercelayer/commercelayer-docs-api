@@ -18,6 +18,7 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
+| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -57,6 +58,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     },
     "attributes": {
       "name": "EU Inventory Model",
+      "stock_locations_cutoff": "3",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -22,7 +22,7 @@ or [update](https://docs.commercelayer.io/api/resources/parcels/update_parcel) A
 | **type** | `string` | `parcels` |
 | **id** | `string` | The parcel unique identifier |
 | links.**self** | `string` | The parcel endpoint URL |
-| attributes.**number** | `string` | Unique identified for the parcel |
+| attributes.**number** | `string` | Unique identifier for the parcel |
 | attributes.**weight** | `float` | The parcel weight, used to automatically calculate the tax rates from the available carrier accounts. |
 | attributes.**unit_of_weight** | `string` | The unit of weight. Can be one of 'gr', or 'oz'. |
 | attributes.**eel_pfc** | `string` | When shipping outside the US, you need to provide either an Exemption and Exclusion Legend (EEL) code or a Proof of Filing Citation (PFC). Which you need is based on the value of the goods being shipped. Value can be one of "EEL" o "PFC". |
