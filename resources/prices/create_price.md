@@ -19,7 +19,7 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 | **type** | `string` | Required |
 | attributes.**sku_code** | `string` | Optional |
 | attributes.**amount_cents** | `integer` | Required |
-| attributes.**compare_at_amount_cents** | `integer` | Required |
+| attributes.**compare_at_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**price_list** | `object` | Required |
@@ -41,8 +41,7 @@ curl -X POST \
   "data": {
     "type": "prices",
     "attributes": {
-      "amount_cents": "10000",
-      "compare_at_amount_cents": "13000"
+      "amount_cents": "10000"
     },
     "relationships": {
       "price_list": {
