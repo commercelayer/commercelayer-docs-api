@@ -100,7 +100,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
     "access_token": "your-access-token",
     "token_type": "bearer",
     "expires_in": 7200,
-    "scope": "market:1234",
+    "scope": "market:all",
     "created_at": 123456789
 }
 ```
