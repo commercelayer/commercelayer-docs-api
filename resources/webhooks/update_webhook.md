@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**topic** | `string` | Required |
-| attributes.**callback_url** | `string` | Required |
+| attributes.**topic** | `string` | Optional |
+| attributes.**callback_url** | `string` | Optional |
 | attributes.**include_resources** | `array` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |

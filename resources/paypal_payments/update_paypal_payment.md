@@ -23,7 +23,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**paypal_payer_id** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**order** | `object` | Required |
+| relationships.**order** | `object` | Optional |
 
 ### Example
 

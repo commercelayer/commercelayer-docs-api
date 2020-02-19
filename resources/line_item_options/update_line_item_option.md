@@ -21,11 +21,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**quantity** | `integer` | Required |
-| attributes.**options** | `object` | Required |
+| attributes.**quantity** | `integer` | Optional |
+| attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**sku_option** | `object` | Required |
+| relationships.**sku_option** | `object` | Optional |
 
 ### Example
 

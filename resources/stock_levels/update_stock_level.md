@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**priority** | `integer` | Required |
+| attributes.**priority** | `integer` | Optional |
 | attributes.**on_hold** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**inventory_model** | `object` | Required |
+| relationships.**stock_location** | `object` | Optional |
+| relationships.**inventory_model** | `object` | Optional |
 
 ### Example
 

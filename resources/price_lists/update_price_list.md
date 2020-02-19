@@ -20,9 +20,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**name** | `string` | Required |
-| attributes.**currency_code** | `string` | Required |
-| attributes.**tax_included** | `boolean` | Optional, default is 'true' |
+| attributes.**name** | `string` | Optional |
+| attributes.**currency_code** | `string` | Optional |
+| attributes.**tax_included** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 

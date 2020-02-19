@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment_source_type** | `string` | Required |
-| attributes.**price_amount_cents** | `integer` | Required |
+| attributes.**payment_source_type** | `string` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**market** | `object` | Required |
-| relationships.**payment_gateway** | `object` | Required |
+| relationships.**market** | `object` | Optional |
+| relationships.**payment_gateway** | `object` | Optional |
 
 ### Example
 

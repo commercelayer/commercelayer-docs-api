@@ -30,10 +30,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**non_delivery_option** | `string` | Optional |
 | attributes.**restriction_type** | `string` | Optional |
 | attributes.**restriction_comments** | `string` | Optional |
-| attributes.**customs_info_required** | `boolean` | Optional, default 'false' |
+| attributes.**customs_info_required** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipment** | `object` | Required |
+| relationships.**shipment** | `object` | Optional |
 
 ### Example
 

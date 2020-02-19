@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**code** | `string` | Required |
-| attributes.**name** | `string` | Required |
+| attributes.**code** | `string` | Optional |
+| attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
 | attributes.**image_url** | `string` | Optional |
 | attributes.**tag_names** | `string` | Optional |
@@ -30,7 +30,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping_category** | `object` | Required |
+| relationships.**shipping_category** | `object` | Optional |
 
 ### Example
 

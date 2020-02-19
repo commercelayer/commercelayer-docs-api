@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**min_hours** | `integer` | Required |
-| attributes.**max_hours** | `integer` | Required |
+| attributes.**min_hours** | `integer` | Optional |
+| attributes.**max_hours** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**shipping_method** | `object` | Required |
+| relationships.**stock_location** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 

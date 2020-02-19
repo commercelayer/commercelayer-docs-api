@@ -23,7 +23,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**guest** | `boolean` | Optional |
 | attributes.**customer_email** | `string` | Optional |
 | attributes.**customer_password** | `string` | Optional |
-| attributes.**language_code** | `string` | Optional, default is 'en' |
+| attributes.**language_code** | `string` | Optional |
 | attributes.**shipping_country_code_lock** | `string` | Optional |
 | attributes.**coupon_code** | `string` | Optional |
 | attributes.**gift_card_code** | `string` | Optional |
@@ -49,7 +49,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**_refresh** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**market** | `object` | Required |
+| relationships.**market** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |
 | relationships.**shipping_address** | `object` | Optional |
 | relationships.**billing_address** | `object` | Optional |

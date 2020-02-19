@@ -20,22 +20,22 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**business** | `boolean` | Optional, default is 'false' |
-| attributes.**first_name** | `string` | Required if 'business' is 'false' |
-| attributes.**last_name** | `string` | Required if 'business' is 'false' |
-| attributes.**company** | `string` | Required if 'business' is 'true' |
-| attributes.**line_1** | `string` | Required |
+| attributes.**business** | `boolean` | Optional |
+| attributes.**first_name** | `string` | Optional |
+| attributes.**last_name** | `string` | Optional |
+| attributes.**company** | `string` | Optional |
+| attributes.**line_1** | `string` | Optional |
 | attributes.**line_2** | `string` | Optional |
-| attributes.**city** | `string` | Required |
-| attributes.**zip_code** | `string` | Required |
-| attributes.**state_code** | `string` | Required |
-| attributes.**country_code** | `string` | Required |
-| attributes.**phone** | `string` | Required |
+| attributes.**city** | `string` | Optional |
+| attributes.**zip_code** | `string` | Optional |
+| attributes.**state_code** | `string` | Optional |
+| attributes.**country_code** | `string` | Optional |
+| attributes.**phone** | `string` | Optional |
 | attributes.**email** | `string` | Optional |
 | attributes.**notes** | `string` | Optional |
 | attributes.**lat** | `float` | Optional |
 | attributes.**lng** | `float` | Optional |
-| attributes.**billing_info** | `string` | Configurable |
+| attributes.**billing_info** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |

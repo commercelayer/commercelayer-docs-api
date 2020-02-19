@@ -20,14 +20,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**name** | `string` | Required |
+| attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay_hours** | `integer` | Optional, default is '0' |
+| attributes.**price_amount_cents** | `integer` | Optional |
+| attributes.**delay_hours** | `integer` | Optional |
 | attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**market** | `object` | Required |
+| relationships.**market** | `object` | Optional |
 
 ### Example
 

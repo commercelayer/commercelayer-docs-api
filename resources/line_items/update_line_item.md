@@ -21,7 +21,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**sku_code** | `string` | Optional |
-| attributes.**quantity** | `integer` | Required |
+| attributes.**quantity** | `integer` | Optional |
 | attributes.**name** | `string` | Optional |
 | attributes.**image_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |

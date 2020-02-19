@@ -22,8 +22,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**customer** | `object` | Required |
-| relationships.**address** | `object` | Required |
+| relationships.**customer** | `object` | Optional |
+| relationships.**address** | `object` | Optional |
 
 ### Example
 

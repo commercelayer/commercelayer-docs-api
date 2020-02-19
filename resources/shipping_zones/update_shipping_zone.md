@@ -20,7 +20,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**name** | `string` | Required |
+| attributes.**name** | `string` | Optional |
 | attributes.**country_code_regex** | `string` | Optional |
 | attributes.**not_country_code_regex** | `string` | Optional |
 | attributes.**state_code_regex** | `string` | Optional |

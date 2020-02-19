@@ -20,13 +20,13 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**currency_code** | `string` | Required |
-| attributes.**balance_cents** | `integer` | Required |
+| attributes.**currency_code** | `string` | Optional |
+| attributes.**balance_cents** | `integer` | Optional |
 | attributes.**balance_max_cents** | `string` | Optional |
-| attributes.**single_use** | `boolean` | Optional, default is 'false' |
-| attributes.**rechargeable** | `boolean` | Optional, default is 'true' |
+| attributes.**single_use** | `boolean` | Optional |
+| attributes.**rechargeable** | `boolean` | Optional |
 | attributes.**image_url** | `string` | Optional |
-| attributes.**expires_at** | `datetime` | Optional, default is 'null' |
+| attributes.**expires_at** | `datetime` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**recipient_email** | `string` | Optional |
 | attributes.**_purchase** | `boolean, value is 'true'` | Optional |

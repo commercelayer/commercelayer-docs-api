@@ -20,8 +20,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**name** | `string` | Required |
-| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
+| attributes.**name** | `string` | Optional |
+| attributes.**stock_locations_cutoff** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
