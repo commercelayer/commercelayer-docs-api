@@ -29,10 +29,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**expires_at** | `datetime` | Optional, default is 'null' |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**recipient_email** | `string` | Optional |
-| attributes.**_purchase** | `boolean, value is 'true'` |  |
-| attributes.**_activate** | `boolean, value is 'true'` |  |
-| attributes.**_deactivate** | `boolean, value is 'true'` |  |
-| attributes.**_balance_change_cents** | `integer` |  |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**_activate** | `boolean, value is 'true'` | Optional |
+| attributes.**_deactivate** | `boolean, value is 'true'` | Optional |
+| attributes.**_balance_change_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |

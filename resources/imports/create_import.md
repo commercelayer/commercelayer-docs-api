@@ -20,7 +20,7 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 | attributes.**resource_type** | `string` | Required |
 | attributes.**parent_resource_id** | `string` | Required |
 | attributes.**inputs** | `object` | Required |
-| attributes.**cleanup_records** | `boolean` |  |
+| attributes.**cleanup_records** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 

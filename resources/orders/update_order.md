@@ -32,14 +32,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**return_url** | `string` | Optional |
 | attributes.**terms_url** | `string` | Optional |
 | attributes.**privacy_url** | `string` | Optional |
-| attributes.**_place** | `boolean, value is 'true'` |  |
-| attributes.**_cancel** | `boolean, value is 'true'` |  |
-| attributes.**_approve** | `boolean, value is 'true'` |  |
-| attributes.**_capture** | `boolean, value is 'true'` |  |
-| attributes.**_refund** | `boolean, value is 'true'` |  |
-| attributes.**_update_taxes** | `boolean, value is 'true'` |  |
-| attributes.**_billing_address_clone_id** | `string` |  |
-| attributes.**_shipping_address_clone_id** | `string` |  |
+| attributes.**_place** | `boolean, value is 'true'` | Optional |
+| attributes.**_cancel** | `boolean, value is 'true'` | Optional |
+| attributes.**_approve** | `boolean, value is 'true'` | Optional |
+| attributes.**_capture** | `boolean, value is 'true'` | Optional |
+| attributes.**_refund** | `boolean, value is 'true'` | Optional |
+| attributes.**_update_taxes** | `boolean, value is 'true'` | Optional |
+| attributes.**_billing_address_clone_id** | `string` | Optional |
+| attributes.**_shipping_address_clone_id** | `string` | Optional |
 | attributes.**_customer_payment_source_id** | `string` | Optional |
 | attributes.**_shipping_address_same_as_billing** | `boolean, value is 'true'` | Optional |
 | attributes.**_billing_address_same_as_shipping** | `boolean, value is 'true'` | Optional |

@@ -21,7 +21,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**customer_password** | `string` | Optional |
-| attributes.**_reset_password_token** | `string` |  |
+| attributes.**_reset_password_token** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 

@@ -23,8 +23,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**payment_request_data** | `object` | Optional |
 | attributes.**payment_request_details** | `object` | Optional |
 | attributes.**payment_response** | `object` | Optional |
-| attributes.**_authorize** | `boolean, value is 'true'` |  |
-| attributes.**_details** | `boolean, value is 'true'` |  |
+| attributes.**_authorize** | `boolean, value is 'true'` | Optional |
+| attributes.**_details** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |

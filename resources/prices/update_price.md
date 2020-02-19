@@ -22,7 +22,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**sku_code** | `string` | Optional |
 | attributes.**amount_cents** | `integer` | Required |
-| attributes.**compare_at_amount_cents** | `integer` | Optional |
+| attributes.**compare_at_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**price_list** | `object` | Required |

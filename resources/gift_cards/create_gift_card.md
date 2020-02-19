@@ -17,7 +17,7 @@ To create a new gift card, send a `POST` request to the `/api/gift_cards` endpoi
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**code** | `string` |  |
+| attributes.**code** | `string` | Optional |
 | attributes.**currency_code** | `string` | Required |
 | attributes.**balance_cents** | `integer` | Required |
 | attributes.**balance_max_cents** | `string` | Optional |
