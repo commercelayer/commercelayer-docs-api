@@ -10,7 +10,7 @@ To create a new adyen payment, send a `POST` request to the `/api/adyen_payments
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments**
+**POST** https://yourdomain.commercelayer.io**/api/adyen\_payments**
 
 ### Arguments
 
@@ -88,3 +88,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To fetch a single braintree payment, send a `GET` request to the `/api/braintree
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments/:id**
+**GET** https://yourdomain.commercelayer.io**/api/braintree\_payments/:id**
 
 ### **Example**
 
@@ -66,3 +66,4 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
+

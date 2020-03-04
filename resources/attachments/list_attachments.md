@@ -10,7 +10,7 @@ To fetch a collection of attachments, send a `GET` request to the `/api/attachme
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
+**GET** https://yourdomain.commercelayer.io**/api/attachments**
 
 ### **Example**
 
@@ -91,3 +91,4 @@ The list of attachments can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

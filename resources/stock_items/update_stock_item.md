@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
 
 ### Arguments
 
@@ -20,11 +20,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Optional |
+| relationships.**stock\_location** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -102,3 +102,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

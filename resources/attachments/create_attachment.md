@@ -10,7 +10,7 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
+**POST** https://yourdomain.commercelayer.io**/api/attachments**
 
 ### Arguments
 
@@ -93,3 +93,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

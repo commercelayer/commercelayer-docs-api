@@ -10,7 +10,7 @@ To fetch a single address, send a `GET` request to the `/api/addresses/:id` endp
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
+**GET** https://yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### **Example**
 
@@ -85,3 +85,4 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
+

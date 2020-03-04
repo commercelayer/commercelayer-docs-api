@@ -10,7 +10,7 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
+**POST** https://yourdomain.commercelayer.io**/api/shipments**
 
 ### Arguments
 
@@ -139,3 +139,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

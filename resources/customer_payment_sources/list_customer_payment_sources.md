@@ -10,7 +10,7 @@ To fetch a collection of customer payment sources, send a `GET` request to the `
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources**
 
 ### **Example**
 
@@ -97,3 +97,4 @@ The list of customer payment sources can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

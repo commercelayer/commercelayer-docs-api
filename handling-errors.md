@@ -35,6 +35,38 @@ A correct error handling is important. We recommend writing code that gracefully
 
 ### Examples
 
+#### 401 Unauthorized
+
+{% tabs %}
+{% tab title="Request" %}
+The following request tries to retrieve \(with a sales channel application\) an SKU that's not _sellable_ in the market the app has in scope \(i.e. an SKU that doesn't have a price in one of the market's price list and at least one stock item in one of the market's stock location\):
+
+```javascript
+curl -X GET \
+  https://yourdomain.commercelayer.io/api/skus/BjwqSyPrKn \
+  -H 'Accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer your-access-token'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+The API responds with a `401 Unauthorized` status code and returns a `UNAHUTORIZED` error:
+
+```javascript
+{
+  "errors": [
+    {
+      "title": "Access denied",
+      "detail": "You are not authorized to perform this action on the requested resource.",
+      "code": "UNAUTHORIZED",
+      "status": "401"
+    }
+  ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
 #### 422 Unprocessable Entity
 
 {% tabs %}

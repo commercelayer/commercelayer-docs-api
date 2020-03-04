@@ -10,7 +10,7 @@ To create a new billing info validation rule, send a `POST` request to the `/api
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/billing_info_validation_rules**
+**POST** https://yourdomain.commercelayer.io**/api/billing\_info\_validation\_rules**
 
 ### Arguments
 
@@ -84,3 +84,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

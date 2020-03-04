@@ -10,7 +10,7 @@ To fetch a collection of stock items, send a `GET` request to the `/api/stock_it
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_items**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_items**
 
 ### **Example**
 
@@ -97,3 +97,4 @@ The list of stock items can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

@@ -10,7 +10,7 @@ To fetch a collection of price lists, send a `GET` request to the `/api/price_li
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/price_lists**
+**GET** https://yourdomain.commercelayer.io**/api/price\_lists**
 
 ### **Example**
 
@@ -93,3 +93,4 @@ The list of price lists can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

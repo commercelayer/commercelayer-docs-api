@@ -10,7 +10,7 @@ To fetch a single billing info validation rule, send a `GET` request to the `/ap
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/billing_info_validation_rules/:id**
+**GET** https://yourdomain.commercelayer.io**/api/billing\_info\_validation\_rules/:id**
 
 ### **Example**
 
@@ -61,3 +61,4 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
+

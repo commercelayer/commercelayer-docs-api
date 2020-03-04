@@ -10,7 +10,7 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
+**POST** https://yourdomain.commercelayer.io**/api/inventory\_models**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
+| attributes.**stock\_locations\_cutoff** | `integer` | Optional, default is 2 |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -82,3 +82,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

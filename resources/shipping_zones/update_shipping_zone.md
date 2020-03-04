@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/shipping\_zones/:id**
 
 ### Arguments
 
@@ -21,12 +21,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**country_code_regex** | `string` | Optional |
-| attributes.**not_country_code_regex** | `string` | Optional |
-| attributes.**state_code_regex** | `string` | Optional |
-| attributes.**not_state_code_regex** | `string` | Optional |
-| attributes.**zip_code_regex** | `string` | Optional |
-| attributes.**not_zip_code_regex** | `string` | Optional |
+| attributes.**country\_code\_regex** | `string` | Optional |
+| attributes.**not\_country\_code\_regex** | `string` | Optional |
+| attributes.**state\_code\_regex** | `string` | Optional |
+| attributes.**not\_state\_code\_regex** | `string` | Optional |
+| attributes.**zip\_code\_regex** | `string` | Optional |
+| attributes.**not\_zip\_code\_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
@@ -90,3 +90,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

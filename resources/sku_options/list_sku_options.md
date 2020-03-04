@@ -10,7 +10,7 @@ To fetch a collection of SKU options, send a `GET` request to the `/api/sku_opti
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
+**GET** https://yourdomain.commercelayer.io**/api/sku\_options**
 
 ### **Example**
 
@@ -99,3 +99,4 @@ The list of SKU options can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

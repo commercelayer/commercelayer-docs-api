@@ -18,9 +18,9 @@ The authorization flow depends on the [grant type](https://oauth.net/2/grant-typ
 
 | Grant type | Sales channel | Integration | Webapp |
 | :--- | :--- | :--- | :--- |
-| **Client credentials** | ✅ | ✅ |  |
+| **Client credentials** | \*\*\*\*✅ | ✅ |  |
 | **Password** | ✅ |  |  |
-| **Refresh token** | ✅ |  | ✅ |
+| **Refresh token** | \*\*\*\*✅ |  | ✅ |
 | **Authorization code** | \*\*\*\* |  | ✅ |
 
 {% hint style="warning" %}

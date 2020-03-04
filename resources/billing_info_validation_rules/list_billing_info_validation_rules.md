@@ -10,7 +10,7 @@ To fetch a collection of billing info validation rules, send a `GET` request to 
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/billing_info_validation_rules**
+**GET** https://yourdomain.commercelayer.io**/api/billing\_info\_validation\_rules**
 
 ### **Example**
 
@@ -88,3 +88,4 @@ The list of billing info validation rules can be sorted by the following attribu
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

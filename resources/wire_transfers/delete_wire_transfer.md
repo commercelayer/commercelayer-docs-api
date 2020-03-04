@@ -10,7 +10,7 @@ To delete a wire transfer, send a `DELETE` request to the `/api/wire_transfers/:
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/wire\_transfers/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

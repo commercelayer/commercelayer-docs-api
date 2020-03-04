@@ -24,7 +24,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **SKU options** |  | ✅ |  |  |  |
 | **Prices** |  | ✅ |  |  | Prices associated to the market price list. |
 | **Orders** | ✅ | ✅ |  ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
-| **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Line items** | \*\*\*\*✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Addresses** | ✅  | ✅ | ✅ | ✅ | Single resource only. |
 | **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated to "draft", "pending" or "placed" orders \(single resource only\). |
@@ -32,7 +32,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **Payment methods** |  | ✅ |  |  | Single resource or as order available payment methods. |
 | **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Customers** | ✅ |  |  |  |  |
-| **Customer subscriptions** | ✅ |  |  |  |  |
+| **Customer subscriptions** | \*\*\*\*✅ |  |  |  |  |
 | **Customer password resets** | ✅ | ✅ | ✅ |  | Single resource only. |
 
 #### Password

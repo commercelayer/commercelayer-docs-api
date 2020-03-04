@@ -10,7 +10,7 @@ To fetch a collection of paypal payments, send a `GET` request to the `/api/payp
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
+**GET** https://yourdomain.commercelayer.io**/api/paypal\_payments**
 
 ### **Example**
 
@@ -96,3 +96,4 @@ The list of paypal payments can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

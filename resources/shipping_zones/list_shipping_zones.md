@@ -10,7 +10,7 @@ To fetch a collection of shipping zones, send a `GET` request to the `/api/shipp
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones**
+**GET** https://yourdomain.commercelayer.io**/api/shipping\_zones**
 
 ### **Example**
 
@@ -90,3 +90,4 @@ The list of shipping zones can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+
