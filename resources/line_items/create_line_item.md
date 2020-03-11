@@ -10,20 +10,19 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
+**POST** https://yourdomain.commercelayer.io**/api/line\_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
+| attributes.**\_update\_quantity** | `boolean, value is 'true'` | Optional |
 | attributes.**name** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
+| attributes.**image\_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 | relationships.**item** | `object` | Optional |
@@ -108,7 +107,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -141,3 +139,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

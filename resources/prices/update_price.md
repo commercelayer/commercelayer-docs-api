@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/prices/:id**
 
 ### Arguments
 
@@ -20,13 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
-| attributes.**amount_cents** | `integer` | Optional |
-| attributes.**compare_at_amount_cents** | `integer` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
+| attributes.**amount\_cents** | `integer` | Optional |
+| attributes.**compare\_at\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price_list** | `object` | Optional |
+| relationships.**price\_list** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -46,8 +45,7 @@ curl -X PATCH \
     "type": "prices",
     "id": "xYZkjABcde",
     "attributes": {
-      "amount_cents": "10000",
-      "compare_at_amount_cents": "13000"
+      "amount_cents": "10000"
     },
     "relationships": {
       "price_list": {
@@ -85,7 +83,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -112,3 +109,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

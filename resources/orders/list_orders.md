@@ -10,7 +10,7 @@ To fetch a collection of orders, send a `GET` request to the `/api/orders` endpo
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
+**GET** https://yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 
@@ -139,7 +139,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
-        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -240,6 +239,6 @@ The list of orders can be sorted by the following attributes:
 * `created_at`
 * `updated_at`
 * `reference`
-* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
+

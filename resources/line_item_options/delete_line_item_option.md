@@ -10,7 +10,7 @@ To delete a line item option, send a `DELETE` request to the `/api/line_item_opt
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/line\_item\_options/:id**
 
 ### Example
 
@@ -30,3 +30,4 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
+

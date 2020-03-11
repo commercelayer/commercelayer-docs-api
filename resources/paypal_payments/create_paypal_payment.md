@@ -10,18 +10,17 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
+**POST** https://yourdomain.commercelayer.io**/api/paypal\_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**return_url** | `string` | Required |
-| attributes.**cancel_url** | `string` | Required |
-| attributes.**note_to_payer** | `string` | Optional |
+| attributes.**return\_url** | `string` | Required |
+| attributes.**cancel\_url** | `string` | Required |
+| attributes.**note\_to\_payer** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -80,7 +79,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -101,3 +99,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

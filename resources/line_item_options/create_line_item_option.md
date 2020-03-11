@@ -10,7 +10,7 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
+**POST** https://yourdomain.commercelayer.io**/api/line\_item\_options**
 
 ### Arguments
 
@@ -21,10 +21,9 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | attributes.**quantity** | `integer` | Required |
 | attributes.**options** | `object` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**line_item** | `object` | Required |
-| relationships.**sku_option** | `object` | Required |
+| relationships.**line\_item** | `object` | Required |
+| relationships.**sku\_option** | `object` | Required |
 
 ### Example
 
@@ -43,9 +42,7 @@ curl -X POST \
     "type": "line_item_options",
     "attributes": {
       "quantity": "2",
-      "options": {
-        "embossing_text": "Happy Birthday!"
-      }
+      "options": "{:embossing_text=>"Happy Birthday!"}"
     },
     "relationships": {
       "line_item": {
@@ -95,7 +92,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -122,3 +118,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

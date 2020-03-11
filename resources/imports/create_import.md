@@ -10,19 +10,18 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/imports**
+**POST** https://yourdomain.commercelayer.io**/api/imports**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource_type** | `string` | Required |
-| attributes.**parent_resource_id** | `string` | Required |
+| attributes.**resource\_type** | `string` | Required |
+| attributes.**parent\_resource\_id** | `string` | Required |
 | attributes.**inputs** | `object` | Required |
-| attributes.**cleanup_records** | `boolean` | Optional |
+| attributes.**cleanup\_records** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -43,17 +42,8 @@ curl -X POST \
     "attributes": {
       "resource_type": "skus",
       "parent_resource_id": "1234",
-      "inputs": [
-        {
-          "code": "ABC",
-          "name": "Foo"
-        },
-        {
-          "code": "DEF",
-          "name": "Bar"
-        }
-      ]
-    }
+      "inputs": "[{:code=>"ABC", :name=>"Foo"}, {:code=>"DEF", :name=>"Bar"}]"
+    },
   }
 }'
 ```
@@ -109,7 +99,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -124,3 +113,4 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
+

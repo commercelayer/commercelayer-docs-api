@@ -10,7 +10,7 @@ To fetch a collection of gift cards, send a `GET` request to the `/api/gift_card
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/gift_cards**
+**GET** https://yourdomain.commercelayer.io**/api/gift\_cards**
 
 ### **Example**
 
@@ -128,3 +128,4 @@ The list of gift cards can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
+

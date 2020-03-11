@@ -10,7 +10,7 @@ To fetch a collection of stock items, send a `GET` request to the `/api/stock_it
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_items**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_items**
 
 ### **Example**
 
@@ -44,7 +44,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
-        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -96,6 +95,6 @@ The list of stock items can be sorted by the following attributes:
 * `created_at`
 * `updated_at`
 * `reference`
-* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
+

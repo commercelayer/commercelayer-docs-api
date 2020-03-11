@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/markets/:id**
 
 ### Arguments
 
@@ -21,15 +21,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**facebook_pixel_id** | `string` | Optional |
-| attributes.**checkout_url** | `string` | Optional |
+| attributes.**facebook\_pixel\_id** | `string` | Optional |
+| attributes.**checkout\_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**merchant** | `object` | Optional |
-| relationships.**price_list** | `object` | Optional |
-| relationships.**inventory_model** | `object` | Optional |
-| relationships.**customer_group** | `object` | Optional |
+| relationships.**price\_list** | `object` | Optional |
+| relationships.**inventory\_model** | `object` | Optional |
+| relationships.**customer\_group** | `object` | Optional |
 
 ### Example
 
@@ -95,7 +94,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -134,3 +132,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

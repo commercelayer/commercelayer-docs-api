@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,18 +20,17 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**_on_hold** | `boolean, value is 'true'` | Optional |
-| attributes.**_picking** | `boolean, value is 'true'` | Optional |
-| attributes.**_packing** | `boolean, value is 'true'` | Optional |
-| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**_get_rates** | `boolean, value is 'true'` | Optional |
-| attributes.**selected_rate_id** | `string` | Optional |
-| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**\_on\_hold** | `boolean, value is 'true'` | Optional |
+| attributes.**\_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**\_packing** | `boolean, value is 'true'` | Optional |
+| attributes.**\_ready\_to\_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**\_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**\_get\_rates** | `boolean, value is 'true'` | Optional |
+| attributes.**selected\_rate\_id** | `string` | Optional |
+| attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping_method** | `object` | Optional |
+| relationships.**shipping\_method** | `object` | Optional |
 
 ### Example
 
@@ -48,7 +47,7 @@ curl -X PATCH \
   -d '{
   "data": {
     "type": "shipments",
-    "id": "xYZkjABcde"
+    "id": "xYZkjABcde",
   }
 }'
 ```
@@ -76,7 +75,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -145,3 +143,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

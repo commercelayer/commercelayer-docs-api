@@ -10,7 +10,7 @@ To fetch a single shipping zone, send a `GET` request to the `/api/shipping_zone
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**GET** https://yourdomain.commercelayer.io**/api/shipping\_zones/:id**
 
 ### **Example**
 
@@ -48,7 +48,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -63,3 +62,4 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
 
 ### Arguments
 
@@ -20,13 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**min_hours** | `integer` | Optional |
-| attributes.**max_hours** | `integer` | Optional |
+| attributes.**min\_hours** | `integer` | Optional |
+| attributes.**max\_hours** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Optional |
-| relationships.**shipping_method** | `object` | Optional |
+| relationships.**stock\_location** | `object` | Optional |
+| relationships.**shipping\_method** | `object` | Optional |
 
 ### Example
 
@@ -45,8 +44,7 @@ curl -X PATCH \
     "type": "delivery_lead_times",
     "id": "xYZkjABcde",
     "attributes": {
-      "min_hours": "48",
-      "max_hours": "72"
+      "min_hours": "48"
     },
     "relationships": {
       "stock_location": {
@@ -86,7 +84,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -113,3 +110,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+

@@ -10,7 +10,7 @@ To fetch a collection of customer addresses, send a `GET` request to the `/api/c
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_addresses**
 
 ### **Example**
 
@@ -43,7 +43,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
-        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -94,6 +93,6 @@ The list of customer addresses can be sorted by the following attributes:
 * `created_at`
 * `updated_at`
 * `reference`
-* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
+

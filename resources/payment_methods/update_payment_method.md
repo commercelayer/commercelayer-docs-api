@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
 
 ### Arguments
 
@@ -20,13 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment_source_type** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Optional |
+| attributes.**payment\_source\_type** | `string` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
-| relationships.**payment_gateway** | `object` | Optional |
+| relationships.**payment\_gateway** | `object` | Optional |
 
 ### Example
 
@@ -45,8 +44,7 @@ curl -X PATCH \
     "type": "payment_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "payment_source_type": "CreditCard",
-      "price_amount_cents": "0"
+      "payment_source_type": "CreditCard"
     },
     "relationships": {
       "market": {
@@ -88,7 +86,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
-      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -115,3 +112,4 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
+
