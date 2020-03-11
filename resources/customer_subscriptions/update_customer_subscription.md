@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer\_subscriptions/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
 
 ### Arguments
 
@@ -21,6 +21,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -38,7 +39,7 @@ curl -X PATCH \
   -d '{
   "data": {
     "type": "customer_subscriptions",
-    "id": "xYZkjABcde",
+    "id": "xYZkjABcde"
   }
 }'
 ```
@@ -60,6 +61,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -80,4 +82,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

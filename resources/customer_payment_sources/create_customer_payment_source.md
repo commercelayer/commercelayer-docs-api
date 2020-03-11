@@ -10,7 +10,7 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources**
 
 ### Arguments
 
@@ -18,9 +18,10 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Required |
-| relationships.**payment\_source** | `object` | Required |
+| relationships.**payment_source** | `object` | Required |
 
 ### Example
 
@@ -74,6 +75,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -100,4 +102,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

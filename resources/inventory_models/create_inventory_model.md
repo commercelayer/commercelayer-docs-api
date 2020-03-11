@@ -10,7 +10,7 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/inventory\_models**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
 
 ### Arguments
 
@@ -18,8 +18,9 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**stock\_locations\_cutoff** | `integer` | Optional, default is 2 |
+| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -39,7 +40,7 @@ curl -X POST \
     "type": "inventory_models",
     "attributes": {
       "name": "EU Inventory Model"
-    },
+    }
   }
 }'
 ```
@@ -62,6 +63,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -82,4 +84,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

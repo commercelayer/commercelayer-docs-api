@@ -10,7 +10,7 @@ To delete a paypal payment, send a `DELETE` request to the `/api/paypal_payments
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/paypal\_payments/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments/:id**
 
 ### Example
 
@@ -30,4 +30,3 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
-

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/gift\_cards/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/gift_cards/:id**
 
 ### Arguments
 
@@ -20,23 +20,23 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**currency\_code** | `string` | Optional |
-| attributes.**balance\_cents** | `integer` | Optional |
-| attributes.**balance\_max\_cents** | `string` | Optional |
-| attributes.**single\_use** | `boolean` | Optional |
+| attributes.**currency_code** | `string` | Optional |
+| attributes.**balance_cents** | `integer` | Optional |
+| attributes.**balance_max_cents** | `string` | Optional |
+| attributes.**single_use** | `boolean` | Optional |
 | attributes.**rechargeable** | `boolean` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**expires\_at** | `datetime` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
-| attributes.**recipient\_email** | `string` | Optional |
-| attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
-| attributes.**\_activate** | `boolean, value is 'true'` | Optional |
-| attributes.**\_deactivate** | `boolean, value is 'true'` | Optional |
-| attributes.**\_balance\_change\_cents** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**expires_at** | `datetime` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
+| attributes.**recipient_email** | `string` | Optional |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**_activate** | `boolean, value is 'true'` | Optional |
+| attributes.**_deactivate** | `boolean, value is 'true'` | Optional |
+| attributes.**_balance_change_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
-| relationships.**gift\_card\_recipient** | `object` | Optional |
+| relationships.**gift_card_recipient** | `object` | Optional |
 
 ### Example
 
@@ -55,8 +55,9 @@ curl -X PATCH \
     "type": "gift_cards",
     "id": "xYZkjABcde",
     "attributes": {
-      "currency_code": "EUR"
-    },
+      "currency_code": "EUR",
+      "balance_cents": "15000"
+    }
   }
 }'
 ```
@@ -132,4 +133,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

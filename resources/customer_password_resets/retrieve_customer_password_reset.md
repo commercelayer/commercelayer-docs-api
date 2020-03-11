@@ -10,7 +10,7 @@ To fetch a single customer password reset, send a `GET` request to the `/api/cus
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_password\_resets/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
 
 ### **Example**
 
@@ -44,6 +44,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -64,4 +65,3 @@ On success, the API responds with a `200 OK` status code, returning a single res
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To delete a payment method, send a `DELETE` request to the `/api/payment_methods
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
 
 ### Example
 
@@ -30,4 +30,3 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To fetch a collection of gift card recipients, send a `GET` request to the `/api
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/gift_card_recipients**
 
 ### **Example**
 
@@ -93,4 +93,3 @@ The list of gift card recipients can be sorted by the following attributes:
 * `reference`
 
 {% page-ref page="../../sorting-results.md" %}
-

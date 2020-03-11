@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/adjustments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/adjustments/:id**
 
 ### Arguments
 
@@ -21,9 +21,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**currency\_code** | `string` | Optional |
-| attributes.**amount\_cents** | `integer` | Optional |
+| attributes.**currency_code** | `string` | Optional |
+| attributes.**amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -43,8 +44,10 @@ curl -X PATCH \
     "type": "adjustments",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Additional service"
-    },
+      "name": "Additional service",
+      "currency_code": "EUR",
+      "amount_cents": "1500"
+    }
   }
 }'
 ```
@@ -70,6 +73,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -84,4 +88,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -10,7 +10,7 @@ To delete an adyen payment, send a `DELETE` request to the `/api/adyen_payments/
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/adyen\_payments/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments/:id**
 
 ### Example
 
@@ -30,4 +30,3 @@ curl -X DELETE \
 On success, the API responds with a `204 No Content` status code.
 {% endtab %}
 {% endtabs %}
-

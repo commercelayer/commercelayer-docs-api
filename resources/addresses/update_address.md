@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/addresses/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### Arguments
 
@@ -21,22 +21,23 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**business** | `boolean` | Optional |
-| attributes.**first\_name** | `string` | Optional |
-| attributes.**last\_name** | `string` | Optional |
+| attributes.**first_name** | `string` | Optional |
+| attributes.**last_name** | `string` | Optional |
 | attributes.**company** | `string` | Optional |
-| attributes.**line\_1** | `string` | Optional |
-| attributes.**line\_2** | `string` | Optional |
+| attributes.**line_1** | `string` | Optional |
+| attributes.**line_2** | `string` | Optional |
 | attributes.**city** | `string` | Optional |
-| attributes.**zip\_code** | `string` | Optional |
-| attributes.**state\_code** | `string` | Optional |
-| attributes.**country\_code** | `string` | Optional |
+| attributes.**zip_code** | `string` | Optional |
+| attributes.**state_code** | `string` | Optional |
+| attributes.**country_code** | `string` | Optional |
 | attributes.**phone** | `string` | Optional |
 | attributes.**email** | `string` | Optional |
 | attributes.**notes** | `string` | Optional |
 | attributes.**lat** | `float` | Optional |
 | attributes.**lng** | `float` | Optional |
-| attributes.**billing\_info** | `string` | Optional |
+| attributes.**billing_info** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |
 
@@ -57,8 +58,13 @@ curl -X PATCH \
     "type": "addresses",
     "id": "xYZkjABcde",
     "attributes": {
-      "line_1": "2883 Geraldine Lane"
-    },
+      "line_1": "2883 Geraldine Lane",
+      "city": "New York",
+      "zip_code": "10013",
+      "state_code": "NY",
+      "country_code": "US",
+      "phone": "(212) 646-338-1228"
+    }
   }
 }'
 ```
@@ -103,6 +109,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -123,4 +130,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

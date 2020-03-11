@@ -10,7 +10,7 @@ To create a new adjustment, send a `POST` request to the `/api/adjustments` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/adjustments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/adjustments**
 
 ### Arguments
 
@@ -18,9 +18,10 @@ To create a new adjustment, send a `POST` request to the `/api/adjustments` endp
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**currency\_code** | `string` | Required |
-| attributes.**amount\_cents** | `integer` | Required |
+| attributes.**currency_code** | `string` | Required |
+| attributes.**amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -42,7 +43,7 @@ curl -X POST \
       "name": "Additional service",
       "currency_code": "EUR",
       "amount_cents": "1500"
-    },
+    }
   }
 }'
 ```
@@ -68,6 +69,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -82,4 +84,3 @@ On success, the API responds with a `201 Created` status code, returning the cre
 ```
 {% endtab %}
 {% endtabs %}
-

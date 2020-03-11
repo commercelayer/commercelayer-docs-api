@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/parcels/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### Arguments
 
@@ -21,17 +21,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
-| attributes.**eel\_pfc** | `string` | Optional |
-| attributes.**contents\_type** | `string` | Optional |
-| attributes.**contents\_explanation** | `string` | Optional |
-| attributes.**customs\_certify** | `boolean` | Optional |
-| attributes.**customs\_signer** | `string` | Optional |
-| attributes.**non\_delivery\_option** | `string` | Optional |
-| attributes.**restriction\_type** | `string` | Optional |
-| attributes.**restriction\_comments** | `string` | Optional |
-| attributes.**customs\_info\_required** | `boolean` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
+| attributes.**eel_pfc** | `string` | Optional |
+| attributes.**contents_type** | `string` | Optional |
+| attributes.**contents_explanation** | `string` | Optional |
+| attributes.**customs_certify** | `boolean` | Optional |
+| attributes.**customs_signer** | `string` | Optional |
+| attributes.**non_delivery_option** | `string` | Optional |
+| attributes.**restriction_type** | `string` | Optional |
+| attributes.**restriction_comments** | `string` | Optional |
+| attributes.**customs_info_required** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipment** | `object` | Optional |
 
@@ -102,6 +103,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
@@ -128,4 +130,3 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 ```
 {% endtab %}
 {% endtabs %}
-

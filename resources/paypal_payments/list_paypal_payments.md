@@ -10,7 +10,7 @@ To fetch a collection of paypal payments, send a `GET` request to the `/api/payp
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/paypal\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
 
 ### **Example**
 
@@ -50,6 +50,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
+        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -94,6 +95,6 @@ The list of paypal payments can be sorted by the following attributes:
 * `created_at`
 * `updated_at`
 * `reference`
+* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
-
