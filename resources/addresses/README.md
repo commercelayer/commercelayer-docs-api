@@ -46,7 +46,6 @@ or [update](https://docs.commercelayer.io/api/resources/addresses/update_address
 | attributes.**map_url** | `string` | The map url of the geocoded address (if geocoded) |
 | attributes.**static_map_url** | `string` | The static map image url of the geocoded address (if geocoded) |
 | attributes.**billing_info** | `string` | Customer's billing information (i.e. VAT number, codice fiscale) |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

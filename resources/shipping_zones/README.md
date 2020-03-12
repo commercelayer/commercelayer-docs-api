@@ -28,7 +28,6 @@ or [update](https://docs.commercelayer.io/api/resources/shipping_zones/update_sh
 | attributes.**not_state_code_regex** | `string` | The regex that will be evaluated as negative match for the shipping address state code. |
 | attributes.**zip_code_regex** | `string` | The regex that will be evaluated to match the shipping address zip code. |
 | attributes.**not_zip_code_regex** | `string` | The regex that will be evaluated as negative match for the shipping zip country code. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

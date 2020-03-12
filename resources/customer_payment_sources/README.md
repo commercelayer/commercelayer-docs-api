@@ -24,7 +24,6 @@ or [update](https://docs.commercelayer.io/api/resources/customer_payment_sources
 | attributes.**name** | `string` | Returns the associated payment source's name |
 | attributes.**customer_token** | `string` | Returns the customer gateway token stored in the gateway |
 | attributes.**payment_source_token** | `string` | Returns the payment source token stored in the gateway |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

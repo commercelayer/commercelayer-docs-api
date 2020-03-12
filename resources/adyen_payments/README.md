@@ -26,7 +26,6 @@ or [update](https://docs.commercelayer.io/api/resources/adyen_payments/update_ad
 | attributes.**payment_response** | `object` | The Adyen payment response, used by client (includes 'resultCode' and 'action'). |
 | attributes.**_authorize** | `boolean, value is 'true'` | Send this attribute if you want to authorize the payment. |
 | attributes.**_details** | `boolean, value is 'true'` | Send this attribute if you want to send additional details the payment request. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

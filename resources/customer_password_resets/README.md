@@ -32,7 +32,6 @@ or [update](https://docs.commercelayer.io/api/resources/customer_password_resets
 | attributes.**customer_password** | `string` | The customer new password. This will be accepted only if a valid '_reset_password_token' is sent with the request. |
 | attributes.**_reset_password_token** | `string` | Send the 'reset_password_token' that you got on create when updating the customer password. |
 | attributes.**reset_password_at** | `datetime` | Time at which the password was reset. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

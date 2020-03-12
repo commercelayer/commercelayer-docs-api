@@ -43,7 +43,6 @@ or [update](https://docs.commercelayer.io/api/resources/gift_cards/update_gift_c
 | attributes.**_activate** | `boolean, value is 'true'` | Send this attribute if you want to activate a gift card. |
 | attributes.**_deactivate** | `boolean, value is 'true'` | Send this attribute if you want to deactivate a gift card. |
 | attributes.**_balance_change_cents** | `integer` | The balance change, in cents. Send a negative value to reduces the card balance by the specified amount. Send a positive value to recharge the gift card (if rechargeable). |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

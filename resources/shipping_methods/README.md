@@ -33,7 +33,6 @@ or [update](https://docs.commercelayer.io/api/resources/shipping_methods/update_
 | attributes.**price_amount_for_shipment_cents** | `integer` | The calculated price (zero or price amount) when associated to a shipment, in cents. |
 | attributes.**price_amount_for_shipment_float** | `float` | The calculated price (zero or price amount) when associated to a shipment, float. |
 | attributes.**formatted_price_amount_for_shipment** | `string` | The calculated price (zero or price amount) when associated to a shipment, formatted. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

@@ -29,7 +29,6 @@ or [update](https://docs.commercelayer.io/api/resources/sku_options/update_sku_o
 | attributes.**delay_hours** | `integer` | The delay time (in hours) that should be added to the delivery lead time when this option is purchased. |
 | attributes.**delay_days** | `integer` | The delay time, in days (rounded) |
 | attributes.**sku_code_regex** | `string` | The regex that will be evaluated to match the sku codes. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

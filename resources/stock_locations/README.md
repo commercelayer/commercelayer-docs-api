@@ -25,7 +25,6 @@ or [update](https://docs.commercelayer.io/api/resources/stock_locations/update_s
 | attributes.**name** | `string` | The stock location's internal name. |
 | attributes.**label_format** | `string` | The shipping label format for this stock location. Can be one of 'PDF', 'ZPL', 'EPL2', or 'PNG' |
 | attributes.**suppress_etd** | `boolean` | Flag it if you want to skip the electronic invoice creation when generating the customs info for this stock location shipments. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

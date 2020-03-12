@@ -29,7 +29,6 @@ or [update](https://docs.commercelayer.io/api/resources/skus/update_sku) API cal
 | attributes.**weight** | `float` | The weight of the SKU. If present, it will be used to calculate the shipping rates. |
 | attributes.**unit_of_weight** | `string` | Can be one of 'gr', or 'oz' |
 | attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

@@ -24,7 +24,6 @@ or [update](https://docs.commercelayer.io/api/resources/price_lists/update_price
 | attributes.**name** | `string` | The market's internal name |
 | attributes.**currency_code** | `string` | The international 3-letter currency code as defined by the ISO 4217 standard. |
 | attributes.**tax_included** | `boolean` | Indicates if the associated prices include taxes. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

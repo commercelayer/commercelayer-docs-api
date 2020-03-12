@@ -25,7 +25,6 @@ or [update](https://docs.commercelayer.io/api/resources/webhooks/update_webhook)
 | attributes.**topic** | `string` | The identifier of the resource/event that will trigger the webhook. |
 | attributes.**callback_url** | `string` | URI where the webhook subscription should send the POST request when the event occurs. |
 | attributes.**include_resources** | `array` | List of related resources that should be included in the webhook body. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

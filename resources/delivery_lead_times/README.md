@@ -25,7 +25,6 @@ or [update](https://docs.commercelayer.io/api/resources/delivery_lead_times/upda
 | attributes.**max_hours** | `integer` | The delivery lead maximun time (in hours) when shipping from the associated stock location with the associated shipping method. |
 | attributes.**min_days** | `integer` | The delivery lead minimum time, in days (rounded) |
 | attributes.**max_days** | `integer` | The delivery lead maximun time, in days (rounded) |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

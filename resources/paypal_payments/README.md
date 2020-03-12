@@ -36,7 +36,6 @@ or [update](https://docs.commercelayer.io/api/resources/paypal_payments/update_p
 | attributes.**paypal_id** | `string` | The id of the PayPal payment object. |
 | attributes.**status** | `string` | The PayPal payment status. One of 'created' (default) or 'approved'. |
 | attributes.**approval_url** | `string` | The URL the customer should be redirected to approve the payment. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

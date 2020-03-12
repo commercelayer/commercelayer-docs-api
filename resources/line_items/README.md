@@ -38,7 +38,6 @@ or [update](https://docs.commercelayer.io/api/resources/line_items/update_line_i
 | attributes.**tax_rate** | `float` | The tax rate for this line item (if calculated). |
 | attributes.**tax_breakdown** | `object` | The tax breakdown for this line item (if calculated). |
 | attributes.**item_type** | `string` | The type of the associate item. Can be one of 'sku', 'shipment', 'payment_method', or 'promotion' |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

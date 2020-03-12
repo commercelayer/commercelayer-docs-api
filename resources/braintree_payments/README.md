@@ -23,7 +23,6 @@ or [update](https://docs.commercelayer.io/api/resources/braintree_payments/updat
 | attributes.**client_token** | `string` | The Braintree payment client token. Required by the Braintree JS SDK. |
 | attributes.**payment_method_nonce** | `string` | The Braintree payment method nonce. Sent by the Braintree JS SDK. |
 | attributes.**options** | `object` | Braintree payment options: 'customer_id' and 'payment_method_token' |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

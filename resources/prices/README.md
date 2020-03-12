@@ -28,7 +28,6 @@ or [update](https://docs.commercelayer.io/api/resources/prices/update_price) API
 | attributes.**compare_at_amount_cents** | `integer` | The compared price amount, in cents. Useful to display a percentage discount. |
 | attributes.**compare_at_amount_float** | `float` | The compared price amount, float. |
 | attributes.**formatted_compare_at_amount** | `string` | The compared price amount, formatted. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

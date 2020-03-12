@@ -22,7 +22,6 @@ or [update](https://docs.commercelayer.io/api/resources/stripe_payments/update_s
 | links.**self** | `string` | The stripe payment endpoint URL |
 | attributes.**client_secret** | `string` | The Stripe payment intent client secret. Required to create a charge through Stripe.js. |
 | attributes.**options** | `object` | Stripe payment options: 'setup_future_usage', 'customer', and 'payment_method' |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

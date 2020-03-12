@@ -40,7 +40,6 @@ or [update](https://docs.commercelayer.io/api/resources/shipments/update_shipmen
 | attributes.**_get_rates** | `boolean, value is 'true'` | Send this attribute if you want get the shipping rates from the associated carrier accounts. |
 | attributes.**selected_rate_id** | `string` | The selected purchase rate from the available shipping rates. |
 | attributes.**_purchase** | `boolean, value is 'true'` | Send this attribute if you want to purchase this shipment with the selected rate. |
-| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
