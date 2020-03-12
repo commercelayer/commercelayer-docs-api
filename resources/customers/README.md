@@ -22,21 +22,14 @@ or [update](https://docs.commercelayer.io/api/resources/customers/update_custome
 | **type** | `string` | `customers` |
 | **id** | `string` | The customer unique identifier |
 | links.**self** | `string` | The customer endpoint URL |
-
 | attributes.**email** | `string` | The customer's email address |
-
 | attributes.**password** | `string` | The customer's password. Initiate a customer password reset flow if you need to change it. |
-
 | attributes.**status** | `string` | The customer's status, one of 'prospect', 'acquired', or 'repeat'. |
-
+| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
-
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
-
 | attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
-
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer_group** | `object` | The group to which this customer belongs (optional). |
 | relationships.**customer_addresses** | `array` | The customer's saved addresses, i.e. their address book. |

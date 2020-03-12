@@ -21,27 +21,17 @@ or [update](https://docs.commercelayer.io/api/resources/payment_methods/update_p
 | **type** | `string` | `payment_methods` |
 | **id** | `string` | The payment method unique identifier |
 | links.**self** | `string` | The payment method endpoint URL |
-
 | attributes.**payment_source_type** | `string` | Can be one of 'PaypalPayment', or 'CreditCard' |
-
 | attributes.**name** | `string` | Payment source type, titleized |
-
 | attributes.**disabled_at** | `datetime` | Time at which the payment method was disabled. |
-
 | attributes.**price_amount_cents** | `integer` | The payment method's price, in cents |
-
 | attributes.**price_amount_float** | `float` | The payment method's price, number |
-
 | attributes.**formatted_price_amount** | `string` | The payment method's price, formatted |
-
+| attributes.**id** | `string` | Unique identifier for the resource (hash). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
-
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
-
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
-
 | attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
-
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**market** | `object` | The associated market. |
 | relationships.**payment_gateway** | `object` | The associated payment gateway. |
