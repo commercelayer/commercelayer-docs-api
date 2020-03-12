@@ -10,7 +10,7 @@ To delete a customer subscription, send a `DELETE` request to the `/api/customer
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions/:id**
 
 ### Example
 

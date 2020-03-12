@@ -10,7 +10,7 @@ To fetch a single line item option, send a `GET` request to the `/api/line_item_
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line_item_options/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options/:id**
 
 ### **Example**
 

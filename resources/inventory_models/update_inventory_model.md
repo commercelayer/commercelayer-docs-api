@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/inventory_models/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### Arguments
 
@@ -43,7 +43,7 @@ curl -X PATCH \
     "type": "inventory_models",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "EU Inventory Model"
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

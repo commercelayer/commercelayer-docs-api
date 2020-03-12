@@ -10,7 +10,7 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/skus**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/skus**
 
 ### Arguments
 

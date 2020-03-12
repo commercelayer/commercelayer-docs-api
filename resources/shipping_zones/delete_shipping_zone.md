@@ -10,7 +10,7 @@ To delete a shipping zone, send a `DELETE` request to the `/api/shipping_zones/:
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
 
 ### Example
 

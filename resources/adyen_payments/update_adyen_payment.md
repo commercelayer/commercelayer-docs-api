@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/adyen_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments/:id**
 
 ### Arguments
 
@@ -46,13 +46,8 @@ curl -X PATCH \
   "data": {
     "type": "adyen_payments",
     "id": "xYZkjABcde",
-    "relationships": {
-      "order": {
-        "data": {
-          "type": "orders",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "payment_request_data": "See Adyen official documentation"
     }
   }
 }'

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer_groups/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups/:id**
 
 ### Arguments
 
@@ -42,7 +42,7 @@ curl -X PATCH \
     "type": "customer_groups",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": null
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

@@ -10,7 +10,7 @@ To fetch a collection of customer subscriptions, send a `GET` request to the `/a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer_subscriptions**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions**
 
 ### **Example**
 

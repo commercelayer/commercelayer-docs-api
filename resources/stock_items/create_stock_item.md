@@ -10,7 +10,7 @@ To create a new stock item, send a `POST` request to the `/api/stock_items` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_items**
 
 ### Arguments
 

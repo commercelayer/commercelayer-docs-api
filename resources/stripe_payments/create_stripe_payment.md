@@ -10,7 +10,7 @@ To create a new stripe payment, send a `POST` request to the `/api/stripe_paymen
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stripe_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments**
 
 ### Arguments
 

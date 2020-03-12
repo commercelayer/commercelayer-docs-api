@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/skus/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Arguments
 
@@ -50,16 +50,7 @@ curl -X PATCH \
     "type": "skus",
     "id": "xYZkjABcde",
     "attributes": {
-      "code": "TSHIRTMM000000FFFFFFXLXX",
-      "name": "Black Men T-shirt with White Logo (XL)"
-    },
-    "relationships": {
-      "shipping_category": {
-        "data": {
-          "type": "shipping_categories",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   }
 }'

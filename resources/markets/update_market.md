@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/markets/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### Arguments
 
@@ -48,27 +48,7 @@ curl -X PATCH \
     "type": "markets",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "EU Market"
-    },
-    "relationships": {
-      "merchant": {
-        "data": {
-          "type": "merchants",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "price_list": {
-        "data": {
-          "type": "price_lists",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "inventory_model": {
-        "data": {
-          "type": "inventory_models",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "facebook_pixel_id": "1234567890"
     }
   }
 }'

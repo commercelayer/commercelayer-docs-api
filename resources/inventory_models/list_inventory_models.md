@@ -10,7 +10,7 @@ To fetch a collection of inventory models, send a `GET` request to the `/api/inv
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory_models**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
 
 ### **Example**
 

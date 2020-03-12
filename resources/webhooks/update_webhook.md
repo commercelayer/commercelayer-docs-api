@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/webhooks/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/webhooks/:id**
 
 ### Arguments
 
@@ -44,8 +44,7 @@ curl -X PATCH \
     "type": "webhooks",
     "id": "xYZkjABcde",
     "attributes": {
-      "topic": "orders.place",
-      "callback_url": "https://yourapp.com/webhooks"
+      "include_resources": "[customer, shipping_address, billing_address]"
     }
   }
 }'

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer_password_resets/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
 
 ### Arguments
 
@@ -41,7 +41,10 @@ curl -X PATCH \
   -d '{
   "data": {
     "type": "customer_password_resets",
-    "id": "xYZkjABcde"
+    "id": "xYZkjABcde",
+    "attributes": {
+      "customer_password": "secret"
+    }
   }
 }'
 ```

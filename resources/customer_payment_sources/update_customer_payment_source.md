@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/customer_payment_sources/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources/:id**
 
 ### Arguments
 
@@ -42,19 +42,8 @@ curl -X PATCH \
   "data": {
     "type": "customer_payment_sources",
     "id": "xYZkjABcde",
-    "relationships": {
-      "customer": {
-        "data": {
-          "type": "customers",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "payment_source": {
-        "data": {
-          "type": "payment_sources",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

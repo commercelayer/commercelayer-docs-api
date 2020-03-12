@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/addresses/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### Arguments
 
@@ -58,12 +58,7 @@ curl -X PATCH \
     "type": "addresses",
     "id": "xYZkjABcde",
     "attributes": {
-      "line_1": "2883 Geraldine Lane",
-      "city": "New York",
-      "zip_code": "10013",
-      "state_code": "NY",
-      "country_code": "US",
-      "phone": "(212) 646-338-1228"
+      "line_2": "Apt.23"
     }
   }
 }'

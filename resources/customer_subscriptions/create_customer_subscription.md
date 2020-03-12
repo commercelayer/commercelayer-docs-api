@@ -10,7 +10,7 @@ To create a new customer subscription, send a `POST` request to the `/api/custom
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/customer_subscriptions**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_subscriptions**
 
 ### Arguments
 

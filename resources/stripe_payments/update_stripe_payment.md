@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/stripe_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments/:id**
 
 ### Arguments
 
@@ -41,12 +41,10 @@ curl -X PATCH \
   "data": {
     "type": "stripe_payments",
     "id": "xYZkjABcde",
-    "relationships": {
-      "order": {
-        "data": {
-          "type": "orders",
-          "id": "QWERtyUpBa"
-        }
+    "attributes": {
+      "options": {
+        "customer": "cus_xxx",
+        "payment_method": "pm_xxx"
       }
     }
   }

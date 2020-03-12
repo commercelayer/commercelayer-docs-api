@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/stock_locations/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations/:id**
 
 ### Arguments
 
@@ -45,15 +45,7 @@ curl -X PATCH \
     "type": "stock_locations",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Primary warehouse"
-    },
-    "relationships": {
-      "address": {
-        "data": {
-          "type": "addresses",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "suppress_etd": "false"
     }
   }
 }'

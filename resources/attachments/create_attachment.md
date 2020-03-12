@@ -10,7 +10,7 @@ To create a new attachment, send a `POST` request to the `/api/attachments` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/attachments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/attachments**
 
 ### Arguments
 

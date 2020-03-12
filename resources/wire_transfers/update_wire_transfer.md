@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/wire_transfers/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers/:id**
 
 ### Arguments
 
@@ -41,13 +41,8 @@ curl -X PATCH \
   "data": {
     "type": "wire_transfers",
     "id": "xYZkjABcde",
-    "relationships": {
-      "order": {
-        "data": {
-          "type": "orders",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

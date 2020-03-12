@@ -10,7 +10,7 @@ To create a new payment method, send a `POST` request to the `/api/payment_metho
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/payment_methods**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### Arguments
 

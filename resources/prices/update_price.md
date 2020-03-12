@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/prices/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
 
 ### Arguments
 
@@ -46,16 +46,7 @@ curl -X PATCH \
     "type": "prices",
     "id": "xYZkjABcde",
     "attributes": {
-      "amount_cents": "10000",
-      "compare_at_amount_cents": "13000"
-    },
-    "relationships": {
-      "price_list": {
-        "data": {
-          "type": "price_lists",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "sku_code": "TSHIRTMM000000FFFFFFXLXX"
     }
   }
 }'

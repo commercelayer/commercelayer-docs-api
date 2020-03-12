@@ -10,7 +10,7 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/delivery_lead_times**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### Arguments
 

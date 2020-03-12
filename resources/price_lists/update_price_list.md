@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/price_lists/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/price_lists/:id**
 
 ### Arguments
 
@@ -44,8 +44,7 @@ curl -X PATCH \
     "type": "price_lists",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "EU Price list",
-      "currency_code": "EUR"
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

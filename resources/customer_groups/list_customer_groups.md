@@ -10,7 +10,7 @@ To fetch a collection of customer groups, send a `GET` request to the `/api/cust
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer_groups**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups**
 
 ### **Example**
 

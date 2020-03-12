@@ -10,7 +10,7 @@ To delete an adjustment, send a `DELETE` request to the `/api/adjustments/:id` e
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/adjustments/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/adjustments/:id**
 
 ### Example
 

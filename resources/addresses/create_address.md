@@ -10,7 +10,7 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/addresses**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/addresses**
 
 ### Arguments
 

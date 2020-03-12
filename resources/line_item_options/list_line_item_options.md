@@ -10,7 +10,7 @@ To fetch a collection of line item options, send a `GET` request to the `/api/li
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line_item_options**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
 
 ### **Example**
 

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipping_methods/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods/:id**
 
 ### Arguments
 
@@ -47,28 +47,7 @@ curl -X PATCH \
     "type": "shipping_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Standard shipping",
-      "price_amount_cents": "1000"
-    },
-    "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "shipping_zone": {
-        "data": {
-          "type": "shipping_zones",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "shipping_category": {
-        "data": {
-          "type": "shipping_categories",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "disabled_at": "2018-01-01T12:00:00.000Z"
     }
   }
 }'

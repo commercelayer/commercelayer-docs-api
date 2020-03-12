@@ -10,7 +10,7 @@ To create a new adjustment, send a `POST` request to the `/api/adjustments` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/adjustments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/adjustments**
 
 ### Arguments
 

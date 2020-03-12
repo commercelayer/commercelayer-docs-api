@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/attachments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/attachments/:id**
 
 ### Arguments
 
@@ -45,15 +45,7 @@ curl -X PATCH \
     "type": "attachments",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "DDT transport document"
-    },
-    "relationships": {
-      "attachable": {
-        "data": {
-          "type": "attachables",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   }
 }'

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/paypal_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments/:id**
 
 ### Arguments
 
@@ -42,13 +42,8 @@ curl -X PATCH \
   "data": {
     "type": "paypal_payments",
     "id": "xYZkjABcde",
-    "relationships": {
-      "order": {
-        "data": {
-          "type": "orders",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "note_to_payer": "Thank you for shopping with us!"
     }
   }
 }'

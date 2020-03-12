@@ -10,7 +10,7 @@ To delete a delivery lead time, send a `DELETE` request to the `/api/delivery_le
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### Example
 

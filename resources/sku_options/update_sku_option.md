@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku_options/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### Arguments
 
@@ -47,15 +47,7 @@ curl -X PATCH \
     "type": "sku_options",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Embossing"
-    },
-    "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   }
 }'

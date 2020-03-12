@@ -10,7 +10,7 @@ To create a new gift card, send a `POST` request to the `/api/gift_cards` endpoi
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/gift_cards**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/gift_cards**
 
 ### Arguments
 

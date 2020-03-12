@@ -10,7 +10,7 @@ To fetch a collection of stock locations, send a `GET` request to the `/api/stoc
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock_locations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### **Example**
 

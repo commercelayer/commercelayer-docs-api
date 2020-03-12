@@ -10,7 +10,7 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock_levels**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels**
 
 ### Arguments
 

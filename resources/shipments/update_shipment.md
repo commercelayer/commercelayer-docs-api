@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -48,7 +48,10 @@ curl -X PATCH \
   -d '{
   "data": {
     "type": "shipments",
-    "id": "xYZkjABcde"
+    "id": "xYZkjABcde",
+    "attributes": {
+      "_on_hold": "true"
+    }
   }
 }'
 ```

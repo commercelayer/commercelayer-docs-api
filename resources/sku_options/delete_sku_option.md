@@ -10,7 +10,7 @@ To delete a SKU option, send a `DELETE` request to the `/api/sku_options/:id` en
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/sku_options/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### Example
 

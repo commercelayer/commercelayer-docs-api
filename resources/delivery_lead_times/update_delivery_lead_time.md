@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### Arguments
 
@@ -45,22 +45,7 @@ curl -X PATCH \
     "type": "delivery_lead_times",
     "id": "xYZkjABcde",
     "attributes": {
-      "min_hours": "48",
-      "max_hours": "72"
-    },
-    "relationships": {
-      "stock_location": {
-        "data": {
-          "type": "stock_locations",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "shipping_method": {
-        "data": {
-          "type": "shipping_methods",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

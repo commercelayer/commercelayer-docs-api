@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipping_zones/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones/:id**
 
 ### Arguments
 
@@ -48,7 +48,7 @@ curl -X PATCH \
     "type": "shipping_zones",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Europe (main countries)"
+      "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT"
     }
   }
 }'

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/gift_card_recipients/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/gift_card_recipients/:id**
 
 ### Arguments
 
@@ -45,7 +45,7 @@ curl -X PATCH \
     "type": "gift_card_recipients",
     "id": "xYZkjABcde",
     "attributes": {
-      "email": "john@example.com"
+      "first_name": "John"
     }
   }
 }'

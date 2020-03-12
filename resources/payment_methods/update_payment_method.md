@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/payment_methods/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
 
 ### Arguments
 
@@ -45,22 +45,7 @@ curl -X PATCH \
     "type": "payment_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "payment_source_type": "CreditCard",
-      "price_amount_cents": "0"
-    },
-    "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      },
-      "payment_gateway": {
-        "data": {
-          "type": "payment_gateways",
-          "id": "QWERtyUpBa"
-        }
-      }
+      "disabled_at": "2018-01-01T12:00:00.000Z"
     }
   }
 }'

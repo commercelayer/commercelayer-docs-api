@@ -10,7 +10,7 @@ To fetch a collection of paypal payments, send a `GET` request to the `/api/payp
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/paypal_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments**
 
 ### **Example**
 
