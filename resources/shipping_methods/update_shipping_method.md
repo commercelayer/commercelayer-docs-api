@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipping\_methods/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/shipping_methods/:id**
 
 ### Arguments
 
@@ -24,6 +24,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**price\_amount\_cents** | `integer` | Optional |
 | attributes.**free\_over\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
 | relationships.**shipping\_zone** | `object` | Optional |
@@ -46,7 +47,8 @@ curl -X PATCH \
     "type": "shipping_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "Standard shipping"
+      "name": "Standard shipping",
+      "price_amount_cents": "1000"
     },
     "relationships": {
       "market": {
@@ -100,6 +102,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

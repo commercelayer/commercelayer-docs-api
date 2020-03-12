@@ -48,6 +48,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**\_save\_billing\_address\_to\_customer\_address\_book** | `boolean, value is 'true'` | Optional |
 | attributes.**\_refresh** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |
@@ -72,13 +73,8 @@ curl -X PATCH \
   "data": {
     "type": "orders",
     "id": "xYZkjABcde",
-    "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "customer_email": "john@example.com"
     }
   }
 }'
@@ -197,6 +193,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

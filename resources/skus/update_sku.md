@@ -29,6 +29,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**weight** | `float` | Optional |
 | attributes.**unit\_of\_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipping\_category** | `object` | Optional |
 
@@ -49,7 +50,8 @@ curl -X PATCH \
     "type": "skus",
     "id": "xYZkjABcde",
     "attributes": {
-      "code": "TSHIRTMM000000FFFFFFXLXX"
+      "code": "TSHIRTMM000000FFFFFFXLXX",
+      "name": "Black Men T-shirt with White Logo (XL)"
     },
     "relationships": {
       "shipping_category": {
@@ -175,6 +177,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

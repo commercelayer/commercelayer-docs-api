@@ -10,7 +10,7 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/shipping\_methods**
+**POST** https://yourdomain.commercelayer.io**/api/shipping_methods**
 
 ### Arguments
 
@@ -21,6 +21,7 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | attributes.**price\_amount\_cents** | `integer` | Required |
 | attributes.**free\_over\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 | relationships.**shipping\_zone** | `object` | Required |
@@ -97,6 +98,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

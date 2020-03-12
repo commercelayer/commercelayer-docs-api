@@ -10,7 +10,7 @@ To delete a stripe payment, send a `DELETE` request to the `/api/stripe_payments
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/stripe\_payments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/stripe_payments/:id**
 
 ### Example
 

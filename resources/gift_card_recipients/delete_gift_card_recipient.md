@@ -10,7 +10,7 @@ To delete a gift card recipient, send a `DELETE` request to the `/api/gift_card_
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/gift_card_recipients/:id**
 
 ### Example
 

@@ -20,6 +20,7 @@ To create a new customer, send a `POST` request to the `/api/customers` endpoint
 | attributes.**email** | `string` | Required |
 | attributes.**password** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer\_group** | `object` | Optional |
 
@@ -40,7 +41,7 @@ curl -X POST \
     "type": "customers",
     "attributes": {
       "email": "john@example.com"
-    },
+    }
   }
 }'
 ```
@@ -63,6 +64,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

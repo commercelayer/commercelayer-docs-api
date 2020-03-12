@@ -10,7 +10,7 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
+**POST** https://yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### Arguments
 
@@ -20,6 +20,7 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 | attributes.**min\_hours** | `integer` | Required |
 | attributes.**max\_hours** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**stock\_location** | `object` | Required |
 | relationships.**shipping\_method** | `object` | Required |
@@ -81,6 +82,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

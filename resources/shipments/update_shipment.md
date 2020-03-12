@@ -29,6 +29,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**selected\_rate\_id** | `string` | Optional |
 | attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipping\_method** | `object` | Optional |
 
@@ -47,7 +48,7 @@ curl -X PATCH \
   -d '{
   "data": {
     "type": "shipments",
-    "id": "xYZkjABcde",
+    "id": "xYZkjABcde"
   }
 }'
 ```
@@ -75,6 +76,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

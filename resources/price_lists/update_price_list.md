@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/price\_lists/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/price_lists/:id**
 
 ### Arguments
 
@@ -24,6 +24,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**currency\_code** | `string` | Optional |
 | attributes.**tax\_included** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -43,8 +44,9 @@ curl -X PATCH \
     "type": "price_lists",
     "id": "xYZkjABcde",
     "attributes": {
-      "name": "EU Price list"
-    },
+      "name": "EU Price list",
+      "currency_code": "EUR"
+    }
   }
 }'
 ```
@@ -68,6 +70,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

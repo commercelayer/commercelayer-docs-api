@@ -37,6 +37,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**lng** | `float` | Optional |
 | attributes.**billing\_info** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |
 
@@ -57,8 +58,13 @@ curl -X PATCH \
     "type": "addresses",
     "id": "xYZkjABcde",
     "attributes": {
-      "line_1": "2883 Geraldine Lane"
-    },
+      "line_1": "2883 Geraldine Lane",
+      "city": "New York",
+      "zip_code": "10013",
+      "state_code": "NY",
+      "country_code": "US",
+      "phone": "(212) 646-338-1228"
+    }
   }
 }'
 ```
@@ -103,6 +109,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

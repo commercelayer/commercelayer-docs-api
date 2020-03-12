@@ -10,7 +10,7 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/paypal\_payments**
+**POST** https://yourdomain.commercelayer.io**/api/paypal_payments**
 
 ### Arguments
 
@@ -21,6 +21,7 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 | attributes.**cancel\_url** | `string` | Required |
 | attributes.**note\_to\_payer** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -79,6 +80,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

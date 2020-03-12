@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku\_options/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/sku_options/:id**
 
 ### Arguments
 
@@ -26,6 +26,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**delay\_hours** | `integer` | Optional |
 | attributes.**sku\_code\_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
 
@@ -84,6 +85,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

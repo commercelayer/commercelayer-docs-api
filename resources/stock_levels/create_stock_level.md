@@ -10,7 +10,7 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock\_levels**
+**POST** https://yourdomain.commercelayer.io**/api/stock_levels**
 
 ### Arguments
 
@@ -20,6 +20,7 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 | attributes.**priority** | `integer` | Required |
 | attributes.**on\_hold** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**stock\_location** | `object` | Required |
 | relationships.**inventory\_model** | `object` | Required |
@@ -78,6 +79,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

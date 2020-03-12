@@ -10,7 +10,7 @@ To fetch a single gift card, send a `GET` request to the `/api/gift_cards/:id` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/gift\_cards/:id**
+**GET** https://yourdomain.commercelayer.io**/api/gift_cards/:id**
 
 ### **Example**
 

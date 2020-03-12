@@ -30,6 +30,7 @@ To create a new order, send a `POST` request to the `/api/orders` endpoint, pass
 | attributes.**terms\_url** | `string` | Optional |
 | attributes.**privacy\_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 | relationships.**customer** | `object` | Optional |
@@ -53,13 +54,8 @@ curl -X POST \
   -d '{
   "data": {
     "type": "orders",
-    "relationships": {
-      "market": {
-        "data": {
-          "type": "markets",
-          "id": "QWERtyUpBa"
-        }
-      }
+    "attributes": {
+      "language_code": "it"
     }
   }
 }'
@@ -178,6 +174,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

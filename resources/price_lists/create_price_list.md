@@ -10,7 +10,7 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/price\_lists**
+**POST** https://yourdomain.commercelayer.io**/api/price_lists**
 
 ### Arguments
 
@@ -21,6 +21,7 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 | attributes.**currency\_code** | `string` | Required |
 | attributes.**tax\_included** | `boolean` | Optional, default is 'true' |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -41,7 +42,7 @@ curl -X POST \
     "attributes": {
       "name": "EU Price list",
       "currency_code": "EUR"
-    },
+    }
   }
 }'
 ```
@@ -65,6 +66,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

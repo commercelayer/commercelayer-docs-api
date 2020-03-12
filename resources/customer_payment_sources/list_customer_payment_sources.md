@@ -10,7 +10,7 @@ To fetch a collection of customer payment sources, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources**
+**GET** https://yourdomain.commercelayer.io**/api/customer_payment_sources**
 
 ### **Example**
 
@@ -45,6 +45,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
+        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -95,6 +96,7 @@ The list of customer payment sources can be sorted by the following attributes:
 * `created_at`
 * `updated_at`
 * `reference`
+* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
 

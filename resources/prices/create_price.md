@@ -21,6 +21,7 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 | attributes.**amount\_cents** | `integer` | Required |
 | attributes.**compare\_at\_amount\_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**price\_list** | `object` | Required |
 | relationships.**sku** | `object` | Optional |
@@ -80,6 +81,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

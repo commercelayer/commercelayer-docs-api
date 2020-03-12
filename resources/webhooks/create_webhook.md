@@ -21,6 +21,7 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 | attributes.**callback\_url** | `string` | Required |
 | attributes.**include\_resources** | `array` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -41,7 +42,7 @@ curl -X POST \
     "attributes": {
       "topic": "orders.place",
       "callback_url": "https://yourapp.com/webhooks"
-    },
+    }
   }
 }'
 ```
@@ -65,6 +66,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

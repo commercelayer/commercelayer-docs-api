@@ -24,6 +24,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**amount\_cents** | `integer` | Optional |
 | attributes.**compare\_at\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**price\_list** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
@@ -45,7 +46,8 @@ curl -X PATCH \
     "type": "prices",
     "id": "xYZkjABcde",
     "attributes": {
-      "amount_cents": "10000"
+      "amount_cents": "10000",
+      "compare_at_amount_cents": "13000"
     },
     "relationships": {
       "price_list": {
@@ -83,6 +85,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

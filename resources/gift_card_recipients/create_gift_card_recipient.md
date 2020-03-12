@@ -10,7 +10,7 @@ To create a new gift card recipient, send a `POST` request to the `/api/gift_car
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients**
+**POST** https://yourdomain.commercelayer.io**/api/gift_card_recipients**
 
 ### Arguments
 
@@ -42,7 +42,7 @@ curl -X POST \
     "type": "gift_card_recipients",
     "attributes": {
       "email": "john@example.com"
-    },
+    }
   }
 }'
 ```

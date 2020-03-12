@@ -10,7 +10,7 @@ To fetch a collection of billing info validation rules, send a `GET` request to 
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/billing\_info\_validation\_rules**
+**GET** https://yourdomain.commercelayer.io**/api/billing_info_validation_rules**
 
 ### **Example**
 
@@ -42,6 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
+        "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
         "metadata": {
           "foo": "bar"
         }
@@ -86,6 +87,7 @@ The list of billing info validation rules can be sorted by the following attribu
 * `created_at`
 * `updated_at`
 * `reference`
+* `reference_origin`
 
 {% page-ref page="../../sorting-results.md" %}
 

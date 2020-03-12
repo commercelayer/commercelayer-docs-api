@@ -10,7 +10,7 @@ To fetch a single gift card recipient, send a `GET` request to the `/api/gift_ca
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients/:id**
+**GET** https://yourdomain.commercelayer.io**/api/gift_card_recipients/:id**
 
 ### **Example**
 

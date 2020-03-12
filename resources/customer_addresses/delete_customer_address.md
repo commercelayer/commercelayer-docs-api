@@ -10,7 +10,7 @@ To delete a customer address, send a `DELETE` request to the `/api/customer_addr
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/customer\_addresses/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/customer_addresses/:id**
 
 ### Example
 

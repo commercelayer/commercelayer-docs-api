@@ -34,6 +34,7 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | attributes.**lng** | `float` | Optional |
 | attributes.**billing\_info** | `string` | Configurable |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |
 
@@ -59,7 +60,7 @@ curl -X POST \
       "state_code": "NY",
       "country_code": "US",
       "phone": "(212) 646-338-1228"
-    },
+    }
   }
 }'
 ```
@@ -104,6 +105,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }

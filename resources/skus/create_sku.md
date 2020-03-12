@@ -26,6 +26,7 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**weight** | `float` | Optional |
 | attributes.**unit\_of\_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**shipping\_category** | `object` | Required |
 
@@ -172,6 +173,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
+      "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
       }
