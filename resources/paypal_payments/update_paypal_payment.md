@@ -43,7 +43,7 @@ curl -X PATCH \
     "type": "paypal_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "note_to_payer": "Thank you for shopping with us!"
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

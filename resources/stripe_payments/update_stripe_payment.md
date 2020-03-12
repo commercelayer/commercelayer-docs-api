@@ -42,10 +42,7 @@ curl -X PATCH \
     "type": "stripe_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "options": {
-        "customer": "cus_xxx",
-        "payment_method": "pm_xxx"
-      }
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'

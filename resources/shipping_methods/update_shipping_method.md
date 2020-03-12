@@ -47,7 +47,7 @@ curl -X PATCH \
     "type": "shipping_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "disabled_at": "2018-01-01T12:00:00.000Z"
+      "free_over_amount_cents": "9900"
     }
   }
 }'

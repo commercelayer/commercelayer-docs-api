@@ -45,7 +45,7 @@ curl -X PATCH \
     "type": "payment_methods",
     "id": "xYZkjABcde",
     "attributes": {
-      "disabled_at": "2018-01-01T12:00:00.000Z"
+      "reference": "ANY-EXTERNAL-REFEFERNCE"
     }
   }
 }'
