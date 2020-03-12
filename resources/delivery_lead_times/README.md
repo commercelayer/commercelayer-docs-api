@@ -22,24 +22,24 @@ or [update](https://docs.commercelayer.io/api/resources/delivery_lead_times/upda
 | **id** | `string` | The delivery lead time unique identifier |
 | links.**self** | `string` | The delivery lead time endpoint URL |
 
-| attributes.**min\_hours** | `integer` | The delivery lead minimum time (in hours) when shipping from the associated stock location with the associated shipping method. |
+| attributes.**min_hours** | `integer` | The delivery lead minimum time (in hours) when shipping from the associated stock location with the associated shipping method. |
 
-| attributes.**max\_hours** | `integer` | The delivery lead maximun time (in hours) when shipping from the associated stock location with the associated shipping method. |
+| attributes.**max_hours** | `integer` | The delivery lead maximun time (in hours) when shipping from the associated stock location with the associated shipping method. |
 
-| attributes.**min\_days** | `integer` | The delivery lead minimum time, in days (rounded) |
+| attributes.**min_days** | `integer` | The delivery lead minimum time, in days (rounded) |
 
-| attributes.**max\_days** | `integer` | The delivery lead maximun time, in days (rounded) |
+| attributes.**max_days** | `integer` | The delivery lead maximun time, in days (rounded) |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**stock\_location** | `object` | The associated stock location. |
-| relationships.**shipping\_method** | `object` | The associated shipping method. |
+| relationships.**stock_location** | `object` | The associated stock location. |
+| relationships.**shipping_method** | `object` | The associated shipping method. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

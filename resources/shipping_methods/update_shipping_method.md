@@ -21,14 +21,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**price\_amount\_cents** | `integer` | Optional |
-| attributes.**free\_over\_amount\_cents** | `integer` | Optional |
+| attributes.**price_amount_cents** | `integer` | Optional |
+| attributes.**free_over_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
-| relationships.**shipping\_zone** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Optional |
+| relationships.**shipping_zone** | `object` | Optional |
+| relationships.**shipping_category** | `object` | Optional |
 
 ### Example
 

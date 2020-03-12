@@ -18,9 +18,9 @@ To create a new inventory model, send a `POST` request to the `/api/inventory_mo
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**stock\_locations\_cutoff** | `integer` | Optional, default is 2 |
+| attributes.**stock_locations_cutoff** | `integer` | Optional, default is 2 |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

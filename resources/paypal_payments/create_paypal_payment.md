@@ -17,11 +17,11 @@ To create a new paypal payment, send a `POST` request to the `/api/paypal_paymen
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**return\_url** | `string` | Required |
-| attributes.**cancel\_url** | `string` | Required |
-| attributes.**note\_to\_payer** | `string` | Optional |
+| attributes.**return_url** | `string` | Required |
+| attributes.**cancel_url** | `string` | Required |
+| attributes.**note_to_payer** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 

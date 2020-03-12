@@ -24,20 +24,20 @@ or [update](https://docs.commercelayer.io/api/resources/stock_items/update_stock
 | **id** | `string` | The stock item unique identifier |
 | links.**self** | `string` | The stock item endpoint URL |
 
-| attributes.**sku\_code** | `string` | The code of the associated sku. |
+| attributes.**sku_code** | `string` | The code of the associated sku. |
 
 | attributes.**quantity** | `integer` | The stock item quantity. |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**stock\_location** | `object` | The associated stock location. |
+| relationships.**stock_location** | `object` | The associated stock location. |
 | relationships.**sku** | `object` | The associated stock sku. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

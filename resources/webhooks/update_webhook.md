@@ -21,10 +21,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**topic** | `string` | Optional |
-| attributes.**callback\_url** | `string` | Optional |
-| attributes.**include\_resources** | `array` | Optional |
+| attributes.**callback_url** | `string` | Optional |
+| attributes.**include_resources** | `array` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

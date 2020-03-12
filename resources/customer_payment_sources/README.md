@@ -24,20 +24,20 @@ or [update](https://docs.commercelayer.io/api/resources/customer_payment_sources
 
 | attributes.**name** | `string` | Returns the associated payment source's name |
 
-| attributes.**customer\_token** | `string` | Returns the customer gateway token stored in the gateway |
+| attributes.**customer_token** | `string` | Returns the customer gateway token stored in the gateway |
 
-| attributes.**payment\_source\_token** | `string` | Returns the payment source token stored in the gateway |
+| attributes.**payment_source_token** | `string` | Returns the payment source token stored in the gateway |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | relationships.**customer** | `object` | The associated customer. |
-| relationships.**payment\_source** | `object` | The associated payment source (i.e. credit card). |
+| relationships.**payment_source** | `object` | The associated payment source (i.e. credit card). |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

@@ -18,10 +18,10 @@ To create a new price list, send a `POST` request to the `/api/price_lists` endp
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**currency\_code** | `string` | Required |
-| attributes.**tax\_included** | `boolean` | Optional, default is 'true' |
+| attributes.**currency_code** | `string` | Required |
+| attributes.**tax_included** | `boolean` | Optional, default is 'true' |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

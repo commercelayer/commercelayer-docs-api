@@ -19,7 +19,7 @@ To create a new merchant, send a `POST` request to the `/api/merchants` endpoint
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**address** | `object` | Required |
 

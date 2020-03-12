@@ -25,17 +25,17 @@ or [update](https://docs.commercelayer.io/api/resources/webhooks/update_webhook)
 
 | attributes.**topic** | `string` | The identifier of the resource/event that will trigger the webhook. |
 
-| attributes.**callback\_url** | `string` | URI where the webhook subscription should send the POST request when the event occurs. |
+| attributes.**callback_url** | `string` | URI where the webhook subscription should send the POST request when the event occurs. |
 
-| attributes.**include\_resources** | `array` | List of related resources that should be included in the webhook body. |
+| attributes.**include_resources** | `array` | List of related resources that should be included in the webhook body. |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |

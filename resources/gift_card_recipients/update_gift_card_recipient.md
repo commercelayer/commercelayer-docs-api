@@ -21,9 +21,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**email** | `string` | Optional |
-| attributes.**first\_name** | `string` | Optional |
-| attributes.**last\_name** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**first_name** | `string` | Optional |
+| attributes.**last_name** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |

@@ -20,13 +20,13 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
-| attributes.**amount\_cents** | `integer` | Optional |
-| attributes.**compare\_at\_amount\_cents** | `integer` | Optional |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**amount_cents** | `integer` | Optional |
+| attributes.**compare_at_amount_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price\_list** | `object` | Optional |
+| relationships.**price_list** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
 
 ### Example

@@ -23,15 +23,15 @@ or [update](https://docs.commercelayer.io/api/resources/gift_card_recipients/upd
 
 | attributes.**email** | `string` | The gift card recipient email address |
 
-| attributes.**first\_name** | `string` | The gift card recipient first name |
+| attributes.**first_name** | `string` | The gift card recipient first name |
 
-| attributes.**last\_name** | `string` | The gift card recipient last name |
+| attributes.**last_name** | `string` | The gift card recipient last name |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 

@@ -18,10 +18,10 @@ To create a new customer payment source, send a `POST` request to the `/api/cust
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Required |
-| relationships.**payment\_source** | `object` | Required |
+| relationships.**payment_source** | `object` | Required |
 
 ### Example
 

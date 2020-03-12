@@ -18,9 +18,9 @@ To create a new gift card recipient, send a `POST` request to the `/api/gift_car
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**email** | `string` | Required |
-| attributes.**first\_name** | `string` | Optional |
-| attributes.**last\_name** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**first_name** | `string` | Optional |
+| attributes.**last_name** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |

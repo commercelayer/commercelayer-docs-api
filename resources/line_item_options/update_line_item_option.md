@@ -24,9 +24,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**quantity** | `integer` | Optional |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**sku\_option** | `object` | Optional |
+| relationships.**sku_option** | `object` | Optional |
 
 ### Example
 

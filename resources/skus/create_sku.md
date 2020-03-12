@@ -20,15 +20,15 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**tag\_names** | `string` | Optional |
-| attributes.**pieces\_per\_pack** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**tag_names** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 

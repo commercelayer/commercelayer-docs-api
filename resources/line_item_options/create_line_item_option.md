@@ -21,10 +21,10 @@ To create a new line item option, send a `POST` request to the `/api/line_item_o
 | attributes.**quantity** | `integer` | Required |
 | attributes.**options** | `object` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**line\_item** | `object` | Required |
-| relationships.**sku\_option** | `object` | Required |
+| relationships.**line_item** | `object` | Required |
+| relationships.**sku_option** | `object` | Required |
 
 ### Example
 

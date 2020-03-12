@@ -17,13 +17,13 @@ To create a new delivery lead time, send a `POST` request to the `/api/delivery_
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**min\_hours** | `integer` | Required |
-| attributes.**max\_hours** | `integer` | Required |
+| attributes.**min_hours** | `integer` | Required |
+| attributes.**max_hours** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Required |
-| relationships.**shipping\_method** | `object` | Required |
+| relationships.**stock_location** | `object` | Required |
+| relationships.**shipping_method** | `object` | Required |
 
 ### Example
 

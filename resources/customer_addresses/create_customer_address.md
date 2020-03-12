@@ -18,7 +18,7 @@ To create a new customer address, send a `POST` request to the `/api/customer_ad
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Required |
 | relationships.**address** | `object` | Required |

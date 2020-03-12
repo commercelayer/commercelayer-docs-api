@@ -29,19 +29,19 @@ or [update](https://docs.commercelayer.io/api/resources/customers/update_custome
 
 | attributes.**status** | `string` | The customer's status, one of 'prospect', 'acquired', or 'repeat'. |
 
-| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
 
-| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 
-| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**customer\_group** | `object` | The group to which this customer belongs (optional). |
-| relationships.**customer\_addresses** | `array` | The customer's saved addresses, i.e. their address book. |
-| relationships.**customer\_payment\_sources** | `array` | The customer's saved creadit cards, i.e. their wallet. |
-| relationships.**customer\_subscriptions** | `array` | The customer's subscriptions. |
+| relationships.**customer_group** | `object` | The group to which this customer belongs (optional). |
+| relationships.**customer_addresses** | `array` | The customer's saved addresses, i.e. their address book. |
+| relationships.**customer_payment_sources** | `array` | The customer's saved creadit cards, i.e. their wallet. |
+| relationships.**customer_subscriptions** | `array` | The customer's subscriptions. |
 | relationships.**orders** | `array` | The customer's orders, either pending or placed. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

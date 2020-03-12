@@ -17,12 +17,12 @@ To create a new stock item, send a `POST` request to the `/api/stock_items` endp
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Required |
+| relationships.**stock_location** | `object` | Required |
 | relationships.**sku** | `object` | Required, if not set through the sku_code attribute |
 
 ### Example
