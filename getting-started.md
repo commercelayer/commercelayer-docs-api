@@ -8,7 +8,7 @@ Commerce Layer is free for developers, and it will be forever. So the best way t
 
 These are the basic four steps to get started:
 
-1. [Create a test environment](https://app.gitbook.com/@commercelayer/s/api/getting-started#create-a-test-environment)
+1. [Create a test environment](getting-started.md#create-a-test-environment)
 2. [Get your credentials](https://docs.commercelayer.io/api/getting-started#get-your-credentials)
 3. [Get an access token](https://docs.commercelayer.io/api/getting-started#get-an-access-token)
 4. [Make your first API call](https://docs.commercelayer.io/api/getting-started#make-your-first-api-call)

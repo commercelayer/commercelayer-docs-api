@@ -10,7 +10,7 @@ To delete a shipment, send a `DELETE` request to the `/api/shipments/:id` endpoi
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Example
 
