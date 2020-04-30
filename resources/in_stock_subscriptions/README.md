@@ -21,8 +21,8 @@ or [update](https://docs.commercelayer.io/api/resources/in_stock_subscriptions/u
 | **id** | `string` | The in stock subscription unique identifier |
 | links.**self** | `string` | The in stock subscription endpoint URL |
 | attributes.**status** | `string` | The subscription status. One of 'active' (default), 'inactive', or 'notified' |
-| attributes.**customer_email** | `string` | The email of the customer that owns the subscription |
-| attributes.**sku_code** | `string` | The code of the associated sku |
+| attributes.**customer_email** | `string` | The email of the associated customer, replace the relationship |
+| attributes.**sku_code** | `string` | The code of the associated sku, replace the relationship |
 | attributes.**_activate** | `boolean, value is 'true'` | Send this attribute if you want to activate an inactive subscription. |
 | attributes.**_deactivate** | `boolean, value is 'true'` | Send this attribute if you want to dactivate an active subscription. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |

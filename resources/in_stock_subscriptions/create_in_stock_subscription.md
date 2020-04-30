@@ -17,14 +17,14 @@ To create a new in stock subscription, send a `POST` request to the `/api/in_sto
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer_email** | `string` | Required |
+| attributes.**customer_email** | `string` | Optional |
 | attributes.**sku_code** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**customer** | `object` | Optional |
-| relationships.**sku** | `object` | Optional |
+| relationships.**customer** | `object` | Required |
+| relationships.**sku** | `object` | Required |
 
 ### Example
 
@@ -41,13 +41,22 @@ curl -X POST \
   -d '{
   "data": {
     "type": "in_stock_subscriptions",
-    "attributes": {
-      "customer_email": "john@example.com"
-    },
     "relationships": {
       "market": {
         "data": {
           "type": "markets",
+          "id": "QWERtyUpBa"
+        }
+      },
+      "customer": {
+        "data": {
+          "type": "customers",
+          "id": "QWERtyUpBa"
+        }
+      },
+      "sku": {
+        "data": {
+          "type": "skus",
           "id": "QWERtyUpBa"
         }
       }
