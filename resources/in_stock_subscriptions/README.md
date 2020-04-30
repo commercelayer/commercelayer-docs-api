@@ -1,0 +1,36 @@
+---
+description: The in stock subscription object and its fields
+---
+
+# In stock subscriptions
+
+
+
+### The in stock subscription object
+
+An **in stock subscription** object is returned as part of the response body of each successful
+[create](https://docs.commercelayer.io/api/resources/in_stock_subscriptions/create_in_stock_subscription),
+[list](https://docs.commercelayer.io/api/resources/in_stock_subscriptions/list_in_stock_subscriptions),
+[retrieve](https://docs.commercelayer.io/api/resources/in_stock_subscriptions/retrieve_in_stock_subscription),
+or [update](https://docs.commercelayer.io/api/resources/in_stock_subscriptions/update_in_stock_subscription) API call.
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| **type** | `string` | `in_stock_subscriptions` |
+| **id** | `string` | The in stock subscription unique identifier |
+| links.**self** | `string` | The in stock subscription endpoint URL |
+| attributes.**status** | `string` | The subscription status. One of 'active' (default), 'inactive', or 'notified' |
+| attributes.**customer_email** | `string` | The email of the customer that owns the subscription |
+| attributes.**sku_code** | `string` | The code of the associated sku |
+| attributes.**_activate** | `boolean, value is 'true'` | Send this attribute if you want to activate an inactive subscription. |
+| attributes.**_deactivate** | `boolean, value is 'true'` | Send this attribute if you want to dactivate an active subscription. |
+| attributes.**created_at** | `datetime` | Time at which the resource was created. |
+| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
+| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
+| relationships.**market** | `object` | The associated market. |
+| relationships.**customer** | `object` | The associated customer. |
+| relationships.**sku** | `object` | The associated sku. |
+| meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
+

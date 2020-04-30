@@ -10,7 +10,7 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/skus**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/skus**
 
 ### Arguments
 
@@ -20,15 +20,14 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**tag\_names** | `string` | Optional |
-| attributes.**pieces\_per\_pack** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Required |
+| relationships.**shipping_category** | `object` | Required |
 
 ### Example
 
@@ -78,7 +77,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
-      "tag_names": "Men, Black, XL",
       "pieces_per_pack": "6",
       "weight": "300",
       "unit_of_weight": "gr",

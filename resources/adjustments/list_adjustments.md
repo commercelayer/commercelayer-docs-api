@@ -10,7 +10,7 @@ To fetch a collection of adjustments, send a `GET` request to the `/api/adjustme
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/adjustments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/adjustments**
 
 ### **Example**
 
@@ -52,8 +52,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "foo": "bar"
         }
       },
-      "relationships": {
-      },
+      "relationships": {},
       "meta": {
         "mode": "test"
       }

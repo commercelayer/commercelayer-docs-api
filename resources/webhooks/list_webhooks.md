@@ -10,7 +10,7 @@ To fetch a collection of webhooks, send a `GET` request to the `/api/webhooks` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/webhooks**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
 
 ### **Example**
 
@@ -50,8 +50,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "foo": "bar"
         }
       },
-      "relationships": {
-      },
+      "relationships": {},
       "meta": {
         "mode": "test"
       }

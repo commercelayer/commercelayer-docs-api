@@ -10,7 +10,7 @@ To fetch a single SKU, send a `GET` request to the `/api/skus/:id` endpoint, whe
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### **Example**
 
@@ -42,7 +42,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
-      "tag_names": "Men, Black, XL",
       "pieces_per_pack": "6",
       "weight": "300",
       "unit_of_weight": "gr",
