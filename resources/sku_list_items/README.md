@@ -4,6 +4,7 @@ description: The SKU list item object and its fields
 
 # Sku list items
 
+SKU list items are used to manually populate an SKU list. The position determines the order of the SKU within the associated list.
 
 
 ### The SKU list item object
