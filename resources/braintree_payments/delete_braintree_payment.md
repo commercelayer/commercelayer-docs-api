@@ -10,7 +10,7 @@ To delete a braintree payment, send a `DELETE` request to the `/api/braintree_pa
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/braintree\_payments/:id**
 
 ### Example
 

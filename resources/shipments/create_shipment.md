@@ -10,7 +10,7 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
+**POST** https://yourdomain.commercelayer.io**/api/shipments**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new shipment, send a `POST` request to the `/api/shipments` endpoint
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 

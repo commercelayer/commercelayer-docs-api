@@ -10,7 +10,7 @@ To delete a SKU list item, send a `DELETE` request to the `/api/sku_list_items/:
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_items/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/sku\_list\_items/:id**
 
 ### Example
 

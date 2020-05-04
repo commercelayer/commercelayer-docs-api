@@ -18,10 +18,10 @@ The authorization flow depends on the [grant type](https://oauth.net/2/grant-typ
 
 | Grant type | Sales channel | Integration | Webapp |
 | :--- | :--- | :--- | :--- |
-| **Client credentials** | \*\*\*\*✅ | ✅ |  |
-| **Password** | ✅ |  |  |
-| **Refresh token** | \*\*\*\*✅ |  | ✅ |
-| **Authorization code** | \*\*\*\* |  | ✅ |
+| **Client credentials** | **✅** | **✅** |  |
+| **Password** | **✅** |  |  |
+| **Refresh token** | **✅** |  | **✅** |
+| **Authorization code** | \*\*\*\* |  | **✅** |
 
 {% hint style="warning" %}
 For security reasons, access tokens expire after **2 hours**.

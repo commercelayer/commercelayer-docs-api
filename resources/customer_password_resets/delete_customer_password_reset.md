@@ -10,7 +10,7 @@ To delete a customer password reset, send a `DELETE` request to the `/api/custom
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/customer\_password\_resets/:id**
 
 ### Example
 

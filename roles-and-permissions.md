@@ -20,20 +20,25 @@ For security reasons **sales channel** applications can read resource lists only
 
 |  | Create | Read | Update | Delete | Restrictions |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **SKUs** |  | ✅  |  |  | SKUs with stock items in the market inventory model and a price in the market price list. |
-| **SKU options** |  | ✅ |  |  |  |
-| **Prices** |  | ✅ |  |  | Prices associated to the market price list. |
-| **Orders** | ✅ | ✅ |  ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
-| **Line items** | \*\*\*\*✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
-| **Addresses** | ✅  | ✅ | ✅ | ✅ | Single resource only. |
-| **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
-| **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated to "draft", "pending" or "placed" orders \(single resource only\). |
-| **Shipping methods** |  | ✅ |  |  | Single resource or as shipment available shipping methods. |
+| **Addresses** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Customers** | ✅ |  |  |  |  |
+| **Customer password resets** | ✅ | ✅ | ✅ |  | Single resource only. |
+| **Customer subscriptions** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Gift cards** | ✅ | ✅ | ✅ | ✅ | If "draft" \(single resource only\). |
+| **Gift card recipients** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Orders** | ✅ | ✅ | ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
+| **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Line item options** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging line items associated with "draft", "pending" or "placed" orders and updated/deleted if belonging to line items associated with "draft" or "pending" orders \(single resource only\). |
 | **Payment methods** |  | ✅ |  |  | Single resource or as order available payment methods. |
 | **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
-| **Customers** | ✅ |  |  |  |  |
-| **Customer subscriptions** | \*\*\*\*✅ |  |  |  |  |
-| **Customer password resets** | ✅ | ✅ | ✅ |  | Single resource only. |
+| **Prices** |  | ✅ |  |  | Prices associated with the market price list. |
+| **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
+| **Shipping methods** |  | ✅ |  |  | Single resource or as shipment available shipping methods. |
+| **SKUs** |  | ✅ |  |  | SKUs with stock items in the market inventory model and a price in the market price list. |
+| **SKU options** |  | ✅ |  |  | SKU options associated with the market in scope. |
+| **SKU lists** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **SKU list items** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 
 #### Password
 
@@ -43,9 +48,13 @@ For security reasons **sales channel** applications can read resource lists only
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Customers** |  | ✅ | ✅ | ✅ | The customer must be the authenticated resource owner. |
 | **Customer addresses** | ✅ | ✅ | ✅ | ✅ | The customer must be the authenticated resource owner. |
+| **Customer payment sources** |  | ✅ | ✅ | ✅ | The customer must be the authenticated resource owner. |
 | **Customer subscriptions** | ✅ | ✅ | ✅ | ✅ | The customer must be the authenticated resource owner. |
+| **Line items** | ✅ | ✅ | ✅ | ✅ | The line items must belong to one of the customer's orders. |
+| **Line item options** | ✅ | ✅ | ✅ | ✅ | The line item options must belong to one of the line items associated with one of the customer's orders. |
 | **Orders** | ✅ | ✅ | ✅ |  | The customer must be the authenticated resource owner. |
 | **Parcels** | ✅ |  |  |  | The parcels must belong to one of the customer's orders. |
+| **Shipments** |  | ✅ | ✅ |  | The shipments must belong to one of the customer's orders. |
 
 #### Refresh token
 

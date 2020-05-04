@@ -10,7 +10,7 @@ To delete a stock item, send a `DELETE` request to the `/api/stock_items/:id` en
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
 
 ### Example
 
