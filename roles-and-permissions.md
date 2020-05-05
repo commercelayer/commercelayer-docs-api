@@ -29,7 +29,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **Orders** | ✅ | ✅ | ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
 | **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Line item options** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging line items associated with "draft", "pending" or "placed" orders and updated/deleted if belonging to line items associated with "draft" or "pending" orders \(single resource only\). |
-| **Payment methods** |  | ✅ |  |  | Single resource or as order available payment methods. |
+| **Payment methods** |  | ✅ |  |  | Payment methods associated with the market in scope. |
 | **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Prices** |  | ✅ |  |  | Prices associated with the market price list. |
 | **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
