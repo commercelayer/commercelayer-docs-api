@@ -34,7 +34,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **Prices** |  | ✅ |  |  | Prices associated with the market price list. |
 | **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
-| **Shipping methods** |  | ✅ |  |  | Single resource or as shipment available shipping methods. |
+| **Shipping methods** |  | ✅ |  |  | Shipping methods associated with the market in scope. |
 | **SKUs** |  | ✅ |  |  | SKUs with stock items in the market inventory model and a price in the market price list. |
 | **SKU options** |  | ✅ |  |  | SKU options associated with the market in scope. |
 | **SKU lists** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
