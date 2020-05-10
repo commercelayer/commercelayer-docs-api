@@ -24,6 +24,6 @@ The authorization flow depends on the [grant type](https://oauth.net/2/grant-typ
 | **Authorization code** | \*\*\*\* |  | **✅** |
 
 {% hint style="warning" %}
-For security reasons, access tokens expire after **2 hours**.
+For security reasons, access tokens expire after **2 hours**. Refresh tokens expire after **2 weeks**.
 {% endhint %}
 

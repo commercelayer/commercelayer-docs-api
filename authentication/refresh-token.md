@@ -8,6 +8,10 @@ The `refresh_token` grant type is used by clients to exchange a refresh token fo
 
 **Sales channel** applications can use the `refresh_token` grant type to refresh a customer's access token with a "remember me" option.
 
+{% hint style="info" %}
+A refresh token can be revoked before its natural expiration date.
+{% endhint %}
+
 ## Getting an access token
 
 To get an access token using the `refresh_token` grant type, send a `POST` request to the `/oauth/token` endpoint, passing the application credentials in the request body.
@@ -64,6 +68,44 @@ On success, the API responds with a `200 OK` status code, returning the requeste
 {% hint style="info" %}
 The returned `scope` is the same passed in the request you made to get `your-refresh-token`.
 {% endhint %}
+{% endtab %}
+{% endtabs %}
+
+## Revoking a refresh token
+
+To revoke a refresh token, send a `POST` request to the `/oauth/revoke` endpoint, passing the required parameters in the request body.
+
+### Request
+
+**POST** https://yourdomain.commercelayer.io**/oauth/revoke**
+
+### Arguments
+
+| Body parameter | Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| **client\_id** | `string` | Required | Your application `client_id` |
+| **token** | `string` | Required | A valid `refresh_token` |
+
+### Example
+
+{% tabs %}
+{% tab title="Request" %}
+The following request revokes a refresh token, before its natural expiration date:
+
+```javascript
+curl -X POST \
+  'https://yourdomain.commercelayer.io/oauth/revoke' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "client_id": "your-client-id",
+  "token": "your-refresh-token"
+}'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+On success, the API responds with a `200 OK` status code, returning an empty object.
 {% endtab %}
 {% endtabs %}
 
