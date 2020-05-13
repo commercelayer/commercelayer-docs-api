@@ -14,7 +14,7 @@ Commerce Layer uses [HTTP response codes](https://www.w3.org/Protocols/rfc2616/r
 | :--- | :--- | :--- |
 | **`200`** | `OK` | The request was successfully processed and everything worked as expected. |
 | **`201`** | `Created` | The request was successfully processed and a new resource was created. |
-| **`400`** | `Bad request` | The request was unacceptable, often due to sending an unsupported parameter \([see example](handling-errors.md)\). |
+| **`400`** | `Bad request` | The request was unacceptable, often due to sending an unsupported parameter \([see example](handling-errors.md#400-bad-request)\). |
 | **`401`** | `Unauthorized` | The access token was not present in the request, was expired or didn't have enough permissions. |
 | **`404`** | `Not found` | The requested resource was not found, often due to a wrong resource's ID \([see example](handling-errors.md#404-not-found)\). |
 | **`405`** | `Method not allowed` | The request method is known by the server but has been disabled and cannot be used. |
