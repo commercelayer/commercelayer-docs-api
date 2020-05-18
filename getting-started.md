@@ -17,7 +17,7 @@ These are the basic four steps to get started:
 
 After signup, you are prompted to create a sample organization with test data. This is the fastest way to get your feet wet and start playing with the API in test mode.
 
-![](.gitbook/assets/onboarding-v3b.jpg)
+![](.gitbook/assets/onboarding.jpg)
 
 Your sample organization gets populated with everything you need to place your first test order. Take a look at SKUs, inventory, prices, and settings to get a better idea of how it works.
 
@@ -25,7 +25,7 @@ Your sample organization gets populated with everything you need to place your f
 
 Once your sample organization is ready, go to _Settings → Applications_ and take note of your **sales channel** API credentials.
 
-![](.gitbook/assets/sales-channel.jpg)
+![](.gitbook/assets/sales-channel%20%281%29.jpg)
 
 The base endpoint is unique for your organization. The `client_id` and `scope` can be used to authenticate your application and get an access token. 
 
