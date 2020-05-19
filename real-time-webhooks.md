@@ -59,9 +59,9 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 | shipments.**ship** | An existing shipment status is set to `shipped` |
 | shipments.**destroy** | An existing `shipments` object is deleted |
 
-{% hint style="info" %}
-The endpoint listening for webhooks has **5 seconds** to respond with a `2xx` response \(usually `204` or `200` \) and acknowledge successful delivery. If the request times out \(or the target application or API responds with an HTTP status code other than `2xx`\) we consider the request as failed.
-{% endhint %}
+### Responding to webhook callbacks
+
+The endpoint listening for webhooks has **5 seconds** to respond with a **`2xx`** \(usually `200` \) response code,  acknowledging a successful delivery. If the request times out or gets a response with a status code other than `2xx`, it is considered failed.
 
 ### Verifying the callback authenticity
 
