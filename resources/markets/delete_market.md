@@ -10,7 +10,7 @@ To delete a market, send a `DELETE` request to the `/api/markets/:id` endpoint, 
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/markets/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### Example
 

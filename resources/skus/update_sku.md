@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/skus/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Arguments
 
@@ -23,14 +23,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**code** | `string` | Optional |
 | attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**pieces\_per\_pack** | `integer` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**pieces_per_pack** | `integer` | Optional |
 | attributes.**weight** | `float` | Optional |
-| attributes.**unit\_of\_weight** | `string` | Optional |
+| attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_category** | `object` | Optional |
+| relationships.**shipping_category** | `object` | Optional |
 
 ### Example
 

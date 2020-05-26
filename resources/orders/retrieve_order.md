@@ -10,7 +10,7 @@ To fetch a single order, send a `GET` request to the `/api/orders/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
 
 ### **Example**
 
@@ -87,9 +87,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "payment_method_tax_amount_cents": "0",
       "payment_method_tax_amount_float": "0.0",
       "formatted_payment_method_tax_amount": "€0,00",
-      "discount_tax_amount_cents": "-90",
-      "discount_tax_amount_float": "-0.9",
-      "formatted_discount_tax_amount": "-€0,90",
       "adjustment_tax_amount_cents": "900",
       "adjustment_tax_amount_float": "9.0",
       "formatted_adjustment_tax_amount": "€9,00",
@@ -108,9 +105,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "payment_method_taxable_amount_cents": "0",
       "payment_method_taxable_amount_float": "0.0",
       "formatted_payment_method_taxable_amount": "€0,00",
-      "discount_taxable_amount_cents": "-410",
-      "discount_taxable_amount_float": "-4.10",
-      "formatted_discount_taxable_amount": "-€4,10",
       "adjustment_taxable_amount_cents": "120",
       "adjustment_taxable_amount_float": "1.20",
       "formatted_adjustment_taxable_amount": "€1,20",

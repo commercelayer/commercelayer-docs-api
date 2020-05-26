@@ -10,7 +10,7 @@ To fetch a collection of in stock subscriptions, send a `GET` request to the `/a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/in\_stock\_subscriptions**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/in_stock_subscriptions**
 
 ### **Example**
 

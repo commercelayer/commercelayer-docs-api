@@ -10,7 +10,7 @@ To fetch a single parcel, send a `GET` request to the `/api/parcels/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/parcels/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### **Example**
 
@@ -74,6 +74,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/shipment",
           "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/shipment"
+        }
+      },
+      "package": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/package",
+          "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/package"
         }
       },
       "parcel_line_items": {

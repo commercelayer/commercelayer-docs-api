@@ -10,7 +10,7 @@ To create a new shipping zone, send a `POST` request to the `/api/shipping_zones
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/shipping\_zones**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones**
 
 ### Arguments
 
@@ -18,14 +18,14 @@ To create a new shipping zone, send a `POST` request to the `/api/shipping_zones
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**country\_code\_regex** | `string` | Optional |
-| attributes.**not\_country\_code\_regex** | `string` | Optional |
-| attributes.**state\_code\_regex** | `string` | Optional |
-| attributes.**not\_state\_code\_regex** | `string` | Optional |
-| attributes.**zip\_code\_regex** | `string` | Optional |
-| attributes.**not\_zip\_code\_regex** | `string` | Optional |
+| attributes.**country_code_regex** | `string` | Optional |
+| attributes.**not_country_code_regex** | `string` | Optional |
+| attributes.**state_code_regex** | `string` | Optional |
+| attributes.**not_state_code_regex** | `string` | Optional |
+| attributes.**zip_code_regex** | `string` | Optional |
+| attributes.**not_zip_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

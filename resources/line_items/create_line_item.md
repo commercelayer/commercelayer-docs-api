@@ -10,20 +10,20 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/line\_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**\_update\_quantity** | `boolean, value is 'true'` | Optional |
+| attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
 | attributes.**name** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 | relationships.**item** | `object` | Optional |
@@ -80,11 +80,23 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "options_amount_cents": "990",
       "options_amount_float": "9.9",
       "formatted_options_amount": "€9,90",
+      "discount_cents": "-900",
+      "discount_float": "9.0",
+      "formatted_discount": "€9,00",
       "total_amount_cents": "18800",
       "total_amount_float": "188.0",
       "formatted_total_amount": "€188,00",
+      "tax_amount_cents": "1880",
+      "tax_amount_float": "18.8",
+      "formatted_tax_amount": "€18,80",
       "name": "Black Men T-shirt with White Logo (XL)",
       "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
+      "discount_breakdown": {
+        "41": {
+          "cents": -900,
+          "weight": 0.416
+        }
+      },
       "tax_rate": "0.22",
       "tax_breakdown": {
         "id": "1234",

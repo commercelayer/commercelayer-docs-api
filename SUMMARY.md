@@ -166,6 +166,12 @@
   * [Retrieve an order](resources/orders/retrieve_order.md)
   * [Update an order](resources/orders/update_order.md)
   * [Delete an order](resources/orders/delete_order.md)
+* [Packages](resources/packages/README.md)
+  * [Create a package](resources/packages/create_package.md)
+  * [List all packages](resources/packages/list_packages.md)
+  * [Retrieve a package](resources/packages/retrieve_package.md)
+  * [Update a package](resources/packages/update_package.md)
+  * [Delete a package](resources/packages/delete_package.md)
 * [Parcels](resources/parcels/README.md)
   * [Create a parcel](resources/parcels/create_parcel.md)
   * [List all parcels](resources/parcels/list_parcels.md)
@@ -280,4 +286,3 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
-
