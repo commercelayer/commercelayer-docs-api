@@ -22,6 +22,7 @@ or [update](https://docs.commercelayer.io/api/resources/line_items/update_line_i
 | links.**self** | `string` | The line item endpoint URL |
 | attributes.**sku_code** | `string` | The code of the associated sku |
 | attributes.**quantity** | `integer` | The line item quantity |
+| attributes.**_external_price** | `boolean, value is 'false'` | When creating a new line item, set this attribute to '1' if you want to inject the unit_amount_cents price from an external source. |
 | attributes.**_update_quantity** | `boolean, value is 'true'` | When creating a new line item, set this attribute to '1' if you want to update the line item quantity (if present) instead of creating a new line item for the same sku. |
 | attributes.**currency_code** | `string` | The international 3-letter currency code as defined by the ISO 4217 standard, automatically inherited from the order's market. |
 | attributes.**unit_amount_cents** | `integer` | The unit amount of the line item, in cents. When you add a line item to an order, this is automatically populated from the price list associated to the order's market. |

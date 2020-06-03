@@ -27,6 +27,7 @@ or [update](https://docs.commercelayer.io/api/resources/skus/update_sku) API cal
 | attributes.**pieces_per_pack** | `integer` | The number of pieces that compose the SKU. This is useful to describe sets and bundles. |
 | attributes.**weight** | `float` | The weight of the SKU. If present, it will be used to calculate the shipping rates. |
 | attributes.**unit_of_weight** | `string` | Can be one of 'gr', or 'oz' |
+| attributes.**hs_tariff_number** | `string` | The Harmonized System Code used by customs to identify the products shipped across international borders. |
 | attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |

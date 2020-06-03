@@ -23,6 +23,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**name** | `string` | Optional |
 | attributes.**facebook_pixel_id** | `string` | Optional |
 | attributes.**checkout_url** | `string` | Optional |
+| attributes.**external_prices_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -71,6 +72,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "name": "EU Market",
       "facebook_pixel_id": "1234567890",
       "checkout_url": "https://checkout.yourbrand.com/:order_id",
+      "external_prices_url": "https://external_prices.yourbrand.com",
       "private": "true",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",

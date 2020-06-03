@@ -26,6 +26,7 @@ or [update](https://docs.commercelayer.io/api/resources/markets/update_market) A
 | attributes.**name** | `string` | The market's internal name |
 | attributes.**facebook_pixel_id** | `string` | The Facebook Pixed ID |
 | attributes.**checkout_url** | `string` | The checkout URL for this market |
+| attributes.**external_prices_url** | `string` | The URL used to fetch prices from an external source |
 | attributes.**private** | `boolean` | Indicates if market belongs to a customer_group. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |

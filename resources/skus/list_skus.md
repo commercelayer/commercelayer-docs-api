@@ -46,6 +46,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "pieces_per_pack": "6",
         "weight": "300",
         "unit_of_weight": "gr",
+        "hs_tariff_number": "4901.91.0020",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -45,6 +45,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "pieces_per_pack": "6",
       "weight": "300",
       "unit_of_weight": "gr",
+      "hs_tariff_number": "4901.91.0020",
       "inventory": {
         "available": true,
         "quantity": 10,
