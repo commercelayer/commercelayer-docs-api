@@ -35,6 +35,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**_place** | `boolean, value is 'true'` | Optional |
 | attributes.**_cancel** | `boolean, value is 'true'` | Optional |
 | attributes.**_approve** | `boolean, value is 'true'` | Optional |
+| attributes.**_authorize** | `boolean, value is 'true'` | Optional |
+| attributes.**_authorization_amount_cents** | `integer` | Optional |
 | attributes.**_capture** | `boolean, value is 'true'` | Optional |
 | attributes.**_refund** | `boolean, value is 'true'` | Optional |
 | attributes.**_update_taxes** | `boolean, value is 'true'` | Optional |
@@ -179,6 +181,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "terms_url": "https://yourdomain.com/terms",
       "privacy_url": "https://yourdomain.com/privacy",
       "checkout_url": "https://yourdomain.commercelayer.io/checkout/1c0994cc4e996e8c6ee56a2198f66f3c",
+      "authorization_amount_cents": "500",
+      "authorization_amount_float": "5.0",
+      "formatted_authorization_amount": "€5,00",
+      "authorization_balance_cents": "5200",
+      "authorization_balance_float": "52.0",
+      "formatted_authorization_balance": "€52,00",
       "placed_at": "2018-01-01T12:00:00.000Z",
       "approved_at": "2018-01-01T12:00:00.000Z",
       "cancelled_at": "2018-01-01T12:00:00.000Z",
@@ -245,6 +253,30 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/shipments",
           "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/shipments"
+        }
+      },
+      "authorizations": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/authorizations",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/authorizations"
+        }
+      },
+      "captures": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/captures",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/captures"
+        }
+      },
+      "voids": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/voids",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/voids"
+        }
+      },
+      "refunds": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/refunds",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/refunds"
         }
       }
     },

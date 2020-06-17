@@ -21,7 +21,7 @@ or [update](https://docs.commercelayer.io/api/resources/skus/update_sku) API cal
 | **id** | `string` | The SKU unique identifier |
 | links.**self** | `string` | The SKU endpoint URL |
 | attributes.**code** | `string` | The SKU code, that uniquely identifies the SKU within the organization. |
-| attributes.**name** | `string` | The internal name of the . |
+| attributes.**name** | `string` | The internal name of the SKU. |
 | attributes.**description** | `string` | An internal description of the SKU. |
 | attributes.**image_url** | `string` | The URL of an image that represents the SKU. |
 | attributes.**pieces_per_pack** | `integer` | The number of pieces that compose the SKU. This is useful to describe sets and bundles. |

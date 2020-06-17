@@ -114,6 +114,14 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | attributes.**_place** | `boolean, value is 'true'` | Send this attribute if you want to place the order. |
 | attributes.**_cancel** | `boolean, value is 'true'` | Send this attribute if you want to cancel a placed order. The order's authorization will be automatically voided. |
 | attributes.**_approve** | `boolean, value is 'true'` | Send this attribute if you want to approve a placed order. |
+| attributes.**_authorize** | `boolean, value is 'true'` | Send this attribute if you want to authorize the order's payment source. |
+| attributes.**_authorization_amount_cents** | `integer` | The authorization amount, in cents. |
+| attributes.**authorization_amount_cents** | `integer` | The amount to be authorized, in cents. |
+| attributes.**authorization_amount_float** | `float` | The amount to be authorized, float. |
+| attributes.**formatted_authorization_amount** | `string` | The amount to be authorized, formatted. |
+| attributes.**authorization_balance_cents** | `integer` | The balance to be authorized, in cents. |
+| attributes.**authorization_balance_float** | `float` | The balance to be authorized, float. |
+| attributes.**formatted_authorization_balance** | `string` | The balance to be authorized, formatted. |
 | attributes.**_capture** | `boolean, value is 'true'` | Send this attribute if you want to capture an approved order. |
 | attributes.**_refund** | `boolean, value is 'true'` | Send this attribute if you want to refund a captured order. |
 | attributes.**_update_taxes** | `boolean, value is 'true'` | Send this attribute if you want to calculate taxes for this order (a tax calculator must be associated to the order's market). |
@@ -145,5 +153,9 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | relationships.**payment_source** | `object` | The associated payment source (one stripe payment, braintree payment, adyen payment, paypal payment, or wire transfer). |
 | relationships.**line_items** | `array` | The associated line items. |
 | relationships.**shipments** | `array` | The associated shipments (automatically generated based on the inventory model). |
+| relationships.**authorizations** | `array` | The associated authorizations |
+| relationships.**captures** | `array` | The associated captures |
+| relationships.**voids** | `array` | The associated voids |
+| relationships.**refunds** | `array` | The associated refunds |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 
