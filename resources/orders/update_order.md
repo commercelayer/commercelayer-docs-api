@@ -32,6 +32,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**return_url** | `string` | Optional |
 | attributes.**terms_url** | `string` | Optional |
 | attributes.**privacy_url** | `string` | Optional |
+| attributes.**_archive** | `boolean, value is 'true'` | Optional |
 | attributes.**_place** | `boolean, value is 'true'` | Optional |
 | attributes.**_cancel** | `boolean, value is 'true'` | Optional |
 | attributes.**_approve** | `boolean, value is 'true'` | Optional |
@@ -171,6 +172,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "fees_amount_cents": "0",
       "fees_amount_float": "0.0",
       "formatted_fees_amount": "€0,00",
+      "authorization_amount_cents": "500",
+      "authorization_amount_float": "5.0",
+      "formatted_authorization_amount": "€5,00",
+      "authorization_balance_cents": "5200",
+      "authorization_balance_float": "52.0",
+      "formatted_authorization_balance": "€52,00",
       "skus_count": "2",
       "line_item_options_count": "1",
       "shipments_count": "1",
@@ -181,12 +188,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "terms_url": "https://yourdomain.com/terms",
       "privacy_url": "https://yourdomain.com/privacy",
       "checkout_url": "https://yourdomain.commercelayer.io/checkout/1c0994cc4e996e8c6ee56a2198f66f3c",
-      "authorization_amount_cents": "500",
-      "authorization_amount_float": "5.0",
-      "formatted_authorization_amount": "€5,00",
-      "authorization_balance_cents": "5200",
-      "authorization_balance_float": "52.0",
-      "formatted_authorization_balance": "€52,00",
       "placed_at": "2018-01-01T12:00:00.000Z",
       "approved_at": "2018-01-01T12:00:00.000Z",
       "cancelled_at": "2018-01-01T12:00:00.000Z",

@@ -62,6 +62,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "tracking_details": "",
         "carrier_weight_oz": "42.32",
         "signed_by": "John Smith",
+        "incoterm": "EXW",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

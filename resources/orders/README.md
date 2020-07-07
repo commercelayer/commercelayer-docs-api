@@ -101,6 +101,12 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | attributes.**fees_amount_cents** | `integer` | The fees amount that is applied by Commerce Layer, in cents. |
 | attributes.**fees_amount_float** | `float` | The fees amount that is applied by Commerce Layer, float. |
 | attributes.**formatted_fees_amount** | `string` | The fees amount that is applied by Commerce Layer, formatted. |
+| attributes.**authorization_amount_cents** | `integer` | The amount to be authorized, in cents. |
+| attributes.**authorization_amount_float** | `float` | The amount to be authorized, float. |
+| attributes.**formatted_authorization_amount** | `string` | The amount to be authorized, formatted. |
+| attributes.**authorization_balance_cents** | `integer` | The balance to be authorized, in cents. |
+| attributes.**authorization_balance_float** | `float` | The balance to be authorized, float. |
+| attributes.**formatted_authorization_balance** | `string` | The balance to be authorized, formatted. |
 | attributes.**skus_count** | `integer` | The total number of skus in the order's line items. This can be useful to display a preview of the customer shopping cart content. |
 | attributes.**line_item_options_count** | `integer` | The total number of line item options. This can be useful to display a preview of the customer shopping cart content. |
 | attributes.**shipments_count** | `integer` | The total number of shipments. This can be useful to manage the shipping method(s) selection during checkout. |
@@ -111,17 +117,12 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | attributes.**terms_url** | `string` | The terms and conditions url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**privacy_url** | `string` | The privacy polivy url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**checkout_url** | `string` | The checkout url that was automatically generated for the order. Send the customers to this url to let them checkout the order securely on our hosted checkout application. |
+| attributes.**_archive** | `boolean, value is 'true'` | Send this attribute if you want to import an order in archived state. |
 | attributes.**_place** | `boolean, value is 'true'` | Send this attribute if you want to place the order. |
 | attributes.**_cancel** | `boolean, value is 'true'` | Send this attribute if you want to cancel a placed order. The order's authorization will be automatically voided. |
 | attributes.**_approve** | `boolean, value is 'true'` | Send this attribute if you want to approve a placed order. |
 | attributes.**_authorize** | `boolean, value is 'true'` | Send this attribute if you want to authorize the order's payment source. |
 | attributes.**_authorization_amount_cents** | `integer` | The authorization amount, in cents. |
-| attributes.**authorization_amount_cents** | `integer` | The amount to be authorized, in cents. |
-| attributes.**authorization_amount_float** | `float` | The amount to be authorized, float. |
-| attributes.**formatted_authorization_amount** | `string` | The amount to be authorized, formatted. |
-| attributes.**authorization_balance_cents** | `integer` | The balance to be authorized, in cents. |
-| attributes.**authorization_balance_float** | `float` | The balance to be authorized, float. |
-| attributes.**formatted_authorization_balance** | `string` | The balance to be authorized, formatted. |
 | attributes.**_capture** | `boolean, value is 'true'` | Send this attribute if you want to capture an approved order. |
 | attributes.**_refund** | `boolean, value is 'true'` | Send this attribute if you want to refund a captured order. |
 | attributes.**_update_taxes** | `boolean, value is 'true'` | Send this attribute if you want to calculate taxes for this order (a tax calculator must be associated to the order's market). |

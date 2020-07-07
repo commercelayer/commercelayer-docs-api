@@ -26,6 +26,6 @@ or [update](https://docs.commercelayer.io/api/resources/wire_transfers/update_wi
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
 | attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**order** | `object` | The order associated to the paypal payment, that is set as its payment source. |
+| relationships.**order** | `object` | The order associated to the wiretransfer payment, that is set as its payment source. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

@@ -20,7 +20,7 @@ or [update](https://docs.commercelayer.io/api/resources/sku_list_items/update_sk
 | **type** | `string` | `sku_list_items` |
 | **id** | `string` | The SKU list item unique identifier |
 | links.**self** | `string` | The SKU list item endpoint URL |
-| attributes.**position** | `integer` | The sku list item's position |
+| attributes.**position** | `integer` | The sku list item's position. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

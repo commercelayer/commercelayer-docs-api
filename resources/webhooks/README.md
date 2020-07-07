@@ -25,6 +25,9 @@ or [update](https://docs.commercelayer.io/api/resources/webhooks/update_webhook)
 | attributes.**topic** | `string` | The identifier of the resource/event that will trigger the webhook. |
 | attributes.**callback_url** | `string` | URI where the webhook subscription should send the POST request when the event occurs. |
 | attributes.**include_resources** | `array` | List of related resources that should be included in the webhook body. |
+| attributes.**circuit_state** | `string` | The circuit breaker state, by default it is 'closed'. It can become 'open' once the number of consecutive failures overlaps the specified threshold, in such case no further calls to the failing webhook are made. |
+| attributes.**circuit_failure_count** | `integer` | The number of consecutive failures recorded by the circuit breaker associated to this webhook, will be reset on first successful call. |
+| attributes.**_reset_circuit** | `boolean, value is 'true'` | Send this attribute if you want to reset the circuit breaker associated to this webhook to 'closed' state and zero failures count. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

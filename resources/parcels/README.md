@@ -45,6 +45,7 @@ or [update](https://docs.commercelayer.io/api/resources/parcels/update_parcel) A
 | attributes.**tracking_details** | `string` | The parcel's full tracking history, automatically updated in real time by the shipping carrier. |
 | attributes.**carrier_weight_oz** | `string` | The weight of the parcel as measured by the carrier in ounces (if available) |
 | attributes.**signed_by** | `string` | The name of the person who signed for the parcel (if available) |
+| attributes.**incoterm** | `string` | The type of Incoterm (if available). |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

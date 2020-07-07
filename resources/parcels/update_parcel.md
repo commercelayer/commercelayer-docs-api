@@ -38,6 +38,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**tracking_details** | `string` | Optional |
 | attributes.**carrier_weight_oz** | `string` | Optional |
 | attributes.**signed_by** | `string` | Optional |
+| attributes.**incoterm** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -103,6 +104,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "tracking_details": "",
       "carrier_weight_oz": "42.32",
       "signed_by": "John Smith",
+      "incoterm": "EXW",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

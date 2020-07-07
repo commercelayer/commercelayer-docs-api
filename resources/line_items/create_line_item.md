@@ -21,8 +21,10 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 | attributes.**quantity** | `integer` | Required |
 | attributes.**_external_price** | `boolean, value is 'false'` | Optional |
 | attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
+| attributes.**unit_amount_cents** | `integer` | Optional |
 | attributes.**name** | `string` | Optional |
 | attributes.**image_url** | `string` | Optional |
+| attributes.**item_type** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
