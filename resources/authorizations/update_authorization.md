@@ -44,6 +44,7 @@ curl -X PATCH \
     "type": "authorizations",
     "id": "xYZkjABcde",
     "attributes": {
+      "_capture": "true",
       "_capture_amount_cents": "500"
     }
   }

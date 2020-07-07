@@ -43,6 +43,7 @@ curl -X PATCH \
     "type": "captures",
     "id": "xYZkjABcde",
     "attributes": {
+      "_refund": "true",
       "_refund_amount_cents": "500"
     }
   }
