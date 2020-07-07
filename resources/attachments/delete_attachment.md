@@ -10,7 +10,7 @@ To delete an attachment, send a `DELETE` request to the `/api/attachments/:id` e
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/attachments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/attachments/:id**
 
 ### Example
 

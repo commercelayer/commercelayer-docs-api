@@ -10,17 +10,17 @@ To create a new in stock subscription, send a `POST` request to the `/api/in_sto
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/in_stock_subscriptions**
+**POST** https://yourdomain.commercelayer.io**/api/in\_stock\_subscriptions**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer_email** | `string` | Optional |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**customer\_email** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 | relationships.**customer** | `object` | Required |

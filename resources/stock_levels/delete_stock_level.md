@@ -10,7 +10,7 @@ To delete a stock level, send a `DELETE` request to the `/api/stock_levels/:id` 
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/stock_levels/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/stock\_levels/:id**
 
 ### Example
 

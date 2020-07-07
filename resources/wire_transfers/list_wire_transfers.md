@@ -10,7 +10,7 @@ To fetch a collection of wire transfers, send a `GET` request to the `/api/wire_
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/wire_transfers**
+**GET** https://yourdomain.commercelayer.io**/api/wire\_transfers**
 
 ### **Example**
 

@@ -63,6 +63,14 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 
 The endpoint listening for webhooks has **5 seconds** to respond with a **`2xx`** \(usually `200` \) response code,  acknowledging a successful delivery. If the request times out or gets a response with a status code other than `2xx`, it is considered failed.
 
+### Handling webhook failures
+
+If a webhook fails \(whatever the reason\) Commerce Layer tries to fire it again up to **10 times**. After **30 consecutive failures** \(retry failures included\) no further calls to the related endpoint are made and the webhook has to be reset.
+
+{% hint style="info" %}
+To let you properly handle this scenario and inspect the reasons for the failure,  after **5** consecutive non-successful attempts a communication is sent to the owner of the organization.
+{% endhint %}
+
 ### Verifying the callback authenticity
 
 For security reasons, we recommend verifying the callback authenticity by signing the payload with the shared secret \([SHA256 HMAC](https://en.wikipedia.org/wiki/HMAC)\) and comparing the result with the **X-CommerceLayer-Signature** callback header. In details:

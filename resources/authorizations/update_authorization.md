@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/authorizations/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/authorizations/:id**
 
 ### Arguments
 
@@ -20,11 +20,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**_capture** | `boolean, value is 'true'` | Optional |
-| attributes.**_capture_amount_cents** | `integer` | Optional |
-| attributes.**_void** | `boolean, value is 'true'` | Optional |
+| attributes.**\_capture** | `boolean, value is 'true'` | Optional |
+| attributes.**\_capture\_amount\_cents** | `integer` | Optional |
+| attributes.**\_void** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

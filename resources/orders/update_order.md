@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/orders/:id**
 
 ### Arguments
 
@@ -21,44 +21,44 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**guest** | `boolean` | Optional |
-| attributes.**customer_email** | `string` | Optional |
-| attributes.**customer_password** | `string` | Optional |
-| attributes.**language_code** | `string` | Optional |
-| attributes.**shipping_country_code_lock** | `string` | Optional |
-| attributes.**coupon_code** | `string` | Optional |
-| attributes.**gift_card_code** | `string` | Optional |
-| attributes.**gift_card_or_coupon_code** | `string` | Optional |
-| attributes.**cart_url** | `string` | Optional |
-| attributes.**return_url** | `string` | Optional |
-| attributes.**terms_url** | `string` | Optional |
-| attributes.**privacy_url** | `string` | Optional |
-| attributes.**_archive** | `boolean, value is 'true'` | Optional |
-| attributes.**_place** | `boolean, value is 'true'` | Optional |
-| attributes.**_cancel** | `boolean, value is 'true'` | Optional |
-| attributes.**_approve** | `boolean, value is 'true'` | Optional |
-| attributes.**_authorize** | `boolean, value is 'true'` | Optional |
-| attributes.**_authorization_amount_cents** | `integer` | Optional |
-| attributes.**_capture** | `boolean, value is 'true'` | Optional |
-| attributes.**_refund** | `boolean, value is 'true'` | Optional |
-| attributes.**_update_taxes** | `boolean, value is 'true'` | Optional |
-| attributes.**_billing_address_clone_id** | `string` | Optional |
-| attributes.**_shipping_address_clone_id** | `string` | Optional |
-| attributes.**_customer_payment_source_id** | `string` | Optional |
-| attributes.**_shipping_address_same_as_billing** | `boolean, value is 'true'` | Optional |
-| attributes.**_billing_address_same_as_shipping** | `boolean, value is 'true'` | Optional |
-| attributes.**_save_payment_source_to_customer_wallet** | `boolean, value is 'true'` | Optional |
-| attributes.**_save_shipping_address_to_customer_address_book** | `boolean, value is 'true'` | Optional |
-| attributes.**_save_billing_address_to_customer_address_book** | `boolean, value is 'true'` | Optional |
-| attributes.**_refresh** | `boolean, value is 'true'` | Optional |
+| attributes.**customer\_email** | `string` | Optional |
+| attributes.**customer\_password** | `string` | Optional |
+| attributes.**language\_code** | `string` | Optional |
+| attributes.**shipping\_country\_code\_lock** | `string` | Optional |
+| attributes.**coupon\_code** | `string` | Optional |
+| attributes.**gift\_card\_code** | `string` | Optional |
+| attributes.**gift\_card\_or\_coupon\_code** | `string` | Optional |
+| attributes.**cart\_url** | `string` | Optional |
+| attributes.**return\_url** | `string` | Optional |
+| attributes.**terms\_url** | `string` | Optional |
+| attributes.**privacy\_url** | `string` | Optional |
+| attributes.**\_archive** | `boolean, value is 'true'` | Optional |
+| attributes.**\_place** | `boolean, value is 'true'` | Optional |
+| attributes.**\_cancel** | `boolean, value is 'true'` | Optional |
+| attributes.**\_approve** | `boolean, value is 'true'` | Optional |
+| attributes.**\_authorize** | `boolean, value is 'true'` | Optional |
+| attributes.**\_authorization\_amount\_cents** | `integer` | Optional |
+| attributes.**\_capture** | `boolean, value is 'true'` | Optional |
+| attributes.**\_refund** | `boolean, value is 'true'` | Optional |
+| attributes.**\_update\_taxes** | `boolean, value is 'true'` | Optional |
+| attributes.**\_billing\_address\_clone\_id** | `string` | Optional |
+| attributes.**\_shipping\_address\_clone\_id** | `string` | Optional |
+| attributes.**\_customer\_payment\_source\_id** | `string` | Optional |
+| attributes.**\_shipping\_address\_same\_as\_billing** | `boolean, value is 'true'` | Optional |
+| attributes.**\_billing\_address\_same\_as\_shipping** | `boolean, value is 'true'` | Optional |
+| attributes.**\_save\_payment\_source\_to\_customer\_wallet** | `boolean, value is 'true'` | Optional |
+| attributes.**\_save\_shipping\_address\_to\_customer\_address\_book** | `boolean, value is 'true'` | Optional |
+| attributes.**\_save\_billing\_address\_to\_customer\_address\_book** | `boolean, value is 'true'` | Optional |
+| attributes.**\_refresh** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |
-| relationships.**shipping_address** | `object` | Optional |
-| relationships.**billing_address** | `object` | Optional |
-| relationships.**payment_method** | `object` | Optional |
-| relationships.**payment_source** | `object` | Optional |
+| relationships.**shipping\_address** | `object` | Optional |
+| relationships.**billing\_address** | `object` | Optional |
+| relationships.**payment\_method** | `object` | Optional |
+| relationships.**payment\_source** | `object` | Optional |
 
 ### Example
 
