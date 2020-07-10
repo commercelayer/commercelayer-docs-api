@@ -10,7 +10,7 @@ To fetch a collection of price lists, send a `GET` request to the `/api/price_li
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/price\_lists**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/price_lists**
 
 ### **Example**
 

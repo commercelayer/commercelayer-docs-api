@@ -10,7 +10,7 @@ To fetch a collection of customers, send a `GET` request to the `/api/customers`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customers**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers**
 
 ### **Example**
 
