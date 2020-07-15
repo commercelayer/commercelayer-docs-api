@@ -9,7 +9,6 @@ description: The authorization object and its fields
 ### The authorization object
 
 An **authorization** object is returned as part of the response body of each successful
-[create](https://docs.commercelayer.io/api/resources/authorizations/create_authorization),
 [list](https://docs.commercelayer.io/api/resources/authorizations/list_authorizations),
 [retrieve](https://docs.commercelayer.io/api/resources/authorizations/retrieve_authorization),
 or [update](https://docs.commercelayer.io/api/resources/authorizations/update_authorization) API call.
