@@ -19,17 +19,17 @@ or [update](https://docs.commercelayer.io/api/resources/voids/update_void) API c
 | **type** | `string` | `voids` |
 | **id** | `string` | The void unique identifier |
 | links.**self** | `string` | The void endpoint URL |
-| attributes.**number** | `string` | The void number, auto generated |
-| attributes.**currency_code** | `string` | The international 3-letter currency code as defined by the ISO 4217 standard, inherited from the associated reference authorization. |
-| attributes.**amount_cents** | `integer` | The void amount, in cents. |
-| attributes.**amount_float** | `float` | The void amount, float. |
-| attributes.**formatted_amount** | `string` | The void amount, formatted. |
-| attributes.**succeeded** | `boolean` | Indicates if the void is successful |
+| attributes.**number** | `string` | The transaction number, auto generated |
+| attributes.**currency_code** | `string` | The international 3-letter currency code as defined by the ISO 4217 standard, inherited from the associated order. |
+| attributes.**amount_cents** | `integer` | The transaction amount, in cents. |
+| attributes.**amount_float** | `float` | The transaction amount, float. |
+| attributes.**formatted_amount** | `string` | The transaction amount, formatted. |
+| attributes.**succeeded** | `boolean` | Indicates if the transaction is successful |
 | attributes.**message** | `string` | The message returned by the payment gateway |
 | attributes.**error_code** | `string` | The error code, if any, returned by the payment gateway |
 | attributes.**error_detail** | `string` | The error detail, if any, returned by the payment gateway |
-| attributes.**token** | `string` | The token identifying the void, returned by the payment gateway |
-| attributes.**gateway_transaction_id** | `string` | The ID identifying the void, returned by the payment gateway |
+| attributes.**token** | `string` | The token identifying the transaction, returned by the payment gateway |
+| attributes.**gateway_transaction_id** | `string` | The ID identifying the transaction, returned by the payment gateway |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

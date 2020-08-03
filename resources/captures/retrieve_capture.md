@@ -49,19 +49,19 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "error_detail": null,
       "token": null,
       "gateway_transaction_id": null,
-      "refund_amount_cents": "500",
-      "refund_amount_float": "5.0",
-      "formatted_refund_amount": "€5,00",
-      "refund_balance_cents": "1000",
-      "refund_balance_float": "10.0",
-      "formatted_refund_balance": "€10,00",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
       "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
-      }
+      },
+      "refund_amount_cents": "500",
+      "refund_amount_float": "5.0",
+      "formatted_refund_amount": "€5,00",
+      "refund_balance_cents": "1000",
+      "refund_balance_float": "10.0",
+      "formatted_refund_balance": "€10,00"
     },
     "relationships": {
       "order": {

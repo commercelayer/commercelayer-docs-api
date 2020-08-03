@@ -25,7 +25,7 @@ or [update](https://docs.commercelayer.io/api/resources/payment_methods/update_p
 | attributes.**name** | `string` | Payment source type, titleized |
 | attributes.**disabled_at** | `datetime` | Time at which the payment method was disabled. |
 | attributes.**price_amount_cents** | `integer` | The payment method's price, in cents |
-| attributes.**price_amount_float** | `float` | The payment method's price, number |
+| attributes.**price_amount_float** | `float` | The payment method's price, float |
 | attributes.**formatted_price_amount** | `string` | The payment method's price, formatted |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
