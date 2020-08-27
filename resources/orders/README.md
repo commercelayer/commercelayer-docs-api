@@ -38,7 +38,7 @@ or [update](https://docs.commercelayer.io/api/resources/orders/update_order) API
 | attributes.**tax_included** | `boolean` | Indicates if taxes are included in the order amounts, automatically inherited from the order's price list. |
 | attributes.**tax_rate** | `float` | The tax rate for this order (if calculated). |
 | attributes.**freight_taxable** | `boolean` | Indicates if taxes are applied to shipping costs. |
-| attributes.**requires_billing_info** | `boolean` | Indicates if the billing address associated to thi sorder requires billing info to be present. |
+| attributes.**requires_billing_info** | `boolean` | Indicates if the billing address associated to this order requires billing info to be present. |
 | attributes.**country_code** | `string` | The international 2-letter country code as defined by the ISO 3166-1 standard, automatically inherited from the order's shipping address. |
 | attributes.**shipping_country_code_lock** | `string` | The country code that you want the shipping address to be locked to. This can be useful to make sure the shipping address belongs to a given shipping country, e.g. the one selected in a country selector page. |
 | attributes.**coupon_code** | `string` | The coupon code to be used for the order. If valid, it triggers a promotion adding a discount line item to the order. |

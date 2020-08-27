@@ -25,6 +25,7 @@ or [update](https://docs.commercelayer.io/api/resources/customers/update_custome
 | attributes.**email** | `string` | The customer's email address |
 | attributes.**password** | `string` | The customer's password. Initiate a customer password reset flow if you need to change it. |
 | attributes.**status** | `string` | The customer's status, one of 'prospect', 'acquired', or 'repeat'. |
+| attributes.**has_password** | `boolean` | Indicates if the customer has a password. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |

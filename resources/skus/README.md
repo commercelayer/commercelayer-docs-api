@@ -39,6 +39,5 @@ or [update](https://docs.commercelayer.io/api/resources/skus/update_sku) API cal
 | relationships.**stock_items** | `array` | The list of stock items associated with the SKU. |
 | relationships.**delivery_lead_times** | `array` | The list of delivery lead times associated with the SKU. |
 | relationships.**sku_options** | `array` | The list of SKU options available for the SKU. |
-| relationships.**available_promotions** | `array` | The list of percentage discount promotions active for the SKU. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

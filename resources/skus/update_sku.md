@@ -203,12 +203,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
           "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
           "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
         }
-      },
-      "available_promotions": {
-        "links": {
-          "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/available_promotions",
-          "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/available_promotions"
-        }
       }
     },
     "meta": {
