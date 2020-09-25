@@ -10,7 +10,7 @@ To create a new SKU list promotion rule, send a `POST` request to the `/api/sku_
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_promotion_rules**
+**POST** https://yourdomain.commercelayer.io**/api/sku\_list\_promotion\_rules**
 
 ### Arguments
 
@@ -18,10 +18,10 @@ To create a new SKU list promotion rule, send a `POST` request to the `/api/sku_
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**promotion** | `object` | Required |
-| relationships.**sku_list** | `object` | Optional |
+| relationships.**sku\_list** | `object` | Optional |
 
 ### Example
 

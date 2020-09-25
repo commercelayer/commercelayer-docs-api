@@ -10,7 +10,7 @@ To delete an in stock subscription, send a `DELETE` request to the `/api/in_stoc
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/in_stock_subscriptions/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/in\_stock\_subscriptions/:id**
 
 ### Example
 

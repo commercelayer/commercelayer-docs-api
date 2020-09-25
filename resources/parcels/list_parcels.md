@@ -10,7 +10,7 @@ To fetch a collection of parcels, send a `GET` request to the `/api/parcels` end
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels**
+**GET** https://yourdomain.commercelayer.io**/api/parcels**
 
 ### **Example**
 

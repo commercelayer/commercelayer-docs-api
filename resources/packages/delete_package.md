@@ -10,7 +10,7 @@ To delete a package, send a `DELETE` request to the `/api/packages/:id` endpoint
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/packages/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/packages/:id**
 
 ### Example
 

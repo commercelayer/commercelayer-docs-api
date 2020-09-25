@@ -10,7 +10,7 @@ To delete a percentage discount promotion, send a `DELETE` request to the `/api/
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/percentage_discount_promotions/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/percentage\_discount\_promotions/:id**
 
 ### Example
 

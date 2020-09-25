@@ -10,7 +10,7 @@ To delete a customer, send a `DELETE` request to the `/api/customers/:id` endpoi
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/customers/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/customers/:id**
 
 ### Example
 

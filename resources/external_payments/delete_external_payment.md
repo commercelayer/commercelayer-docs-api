@@ -10,7 +10,7 @@ To delete an external payment, send a `DELETE` request to the `/api/external_pay
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/external_payments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/external\_payments/:id**
 
 ### Example
 
