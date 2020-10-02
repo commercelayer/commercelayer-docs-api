@@ -7,7 +7,7 @@ description: The complete list of response codes
 Commerce Layer uses [HTTP response codes](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) to show the success or failure of an API request. 
 
 * Codes in the `2xx` range indicate success.
-* Codes in the `4xx` range indicate an error that failed given the information provided \(e.g. bad request, failed validation or authentication\).
+* Codes in the `4xx` range indicate an error that failed given the information provided \(e.g. bad request, failed validation, or authentication\).
 * Codes in the `5xx` range indicate an unhandled error \(these are rare and should never happen\).
 
 | Code |  | Description |
@@ -15,23 +15,45 @@ Commerce Layer uses [HTTP response codes](https://www.w3.org/Protocols/rfc2616/r
 | **`200`** | `OK` | The request was successfully processed and everything worked as expected. |
 | **`201`** | `Created` | The request was successfully processed and a new resource was created. |
 | **`400`** | `Bad request` | The request was unacceptable, often due to sending an unsupported parameter \([see example](handling-errors.md#400-bad-request)\). |
-| **`401`** | `Unauthorized` | The access token was not present in the request, was expired or didn't have enough permissions. |
+| **`401`** | `Unauthorized` | The access token was not present in the request, was expired, or didn't have enough permissions. |
 | **`404`** | `Not found` | The requested resource was not found, often due to a wrong resource's ID \([see example](handling-errors.md#404-not-found)\). |
 | **`405`** | `Method not allowed` | The request method is known by the server but has been disabled and cannot be used. |
 | **`406`** | `Not acceptable` | The **Accept** header was not correctly set to `application/vnd.api+json` |
 | **`415`** | `Unsupported media type` | The **Content-type** header was not correctly set to `application/vnd.api+json` |
 | **`422`**  | `Unprocessable entity` | The request body was well-formed but contains semantical errors, often due to validation constraints \([see example](handling-errors.md#422-unprocessable-entity)\). |
 | **`423`** | `Locked` | The resource could not be deleted due to integrity constraints. |
-| **`429`** | `Too many requests` | The request was not accepted because you hit the rate limit \(600 reqs / 5 mins\). |
+| **`429`** | `Too many requests` | The request was not accepted because you hit the [rate limit](handling-errors.md#rate-limit) \(600 reqs / 5 mins\). |
 | **`500`** | `Internal server error` | Something went wrong on our end and is being investigated by our engineers. |
 
 ### The error object
 
-All the `4xx` responses include an error object in the response body. The object contains the list of `errors` with extra information. 
+All the `4xx` responses include an error object in the response body. The object contains the list of `errors` with some extra information. 
 
 {% hint style="warning" %}
-A correct error handling is important. We recommend writing code that gracefully handles all possible API exceptions.
+Correct error handling is important. We recommend writing code that gracefully handles all possible API exceptions.
 {% endhint %}
+
+### Rate limit
+
+{% hint style="info" %}
+A rate limit of **max 600 reqs / 5 mins** is applied to the IP with which you perform the calls for most of the API request. 
+{% endhint %}
+
+Please note that it does not apply to all the resources. This is the list of the ones **not subjected to any rate limit**:
+
+* [External promotions](resources/external_promotions/)
+* [Fixed amount promotions](resources/fixed_amount_promotions/)
+* [Free shipping promotions](resources/free_shipping_promotions/)
+* [Inventory models](resources/inventory_models/)
+* [Markets](resources/markets/)
+* [Percentage discount promotions](resources/percentage_discount_promotions/)
+* [Price lists](resources/price_lists/)
+* [Prices](resources/prices/)
+* [SKU lists](resources/sku_lists/)
+* [SKU options](resources/sku_options/)
+* [SKUs](resources/skus/)
+* [Stock items](resources/stock_items/)
+* [Stock locations](resources/stock_locations/)
 
 ### Examples
 
@@ -163,7 +185,7 @@ The API responds with a `400 Bad Request` status code and returns a `KEY_NOT_INC
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to fetch a non existing SKU:
+The following request tries to fetch a non-existing SKU:
 
 ```javascript
 curl -X GET \
