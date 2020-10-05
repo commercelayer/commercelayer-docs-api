@@ -10,7 +10,7 @@ To create a new SKU list promotion rule, send a `POST` request to the `/api/sku_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/sku\_list\_promotion\_rules**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_promotion_rules**
 
 ### Arguments
 
@@ -18,10 +18,11 @@ To create a new SKU list promotion rule, send a `POST` request to the `/api/sku_
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
+| attributes.**all_skus** | `boolean` | Optional, default is 'false' |
 | relationships.**promotion** | `object` | Required |
-| relationships.**sku\_list** | `object` | Optional |
+| relationships.**sku_list** | `object` | Optional |
 
 ### Example
 
@@ -69,7 +70,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "reference_origin": "ANY-EXTERNAL-REFEFERNCE-ORIGIN",
       "metadata": {
         "foo": "bar"
-      }
+      },
+      "all_skus": "true"
     },
     "relationships": {
       "promotion": {

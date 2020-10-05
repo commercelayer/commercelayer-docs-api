@@ -10,7 +10,7 @@ To delete an address, send a `DELETE` request to the `/api/addresses/:id` endpoi
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/addresses/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### Example
 

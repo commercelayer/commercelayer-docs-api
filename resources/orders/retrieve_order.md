@@ -10,7 +10,7 @@ To fetch a single order, send a `GET` request to the `/api/orders/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
 
 ### **Example**
 
@@ -135,6 +135,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "cancelled_at": "2018-01-01T12:00:00.000Z",
       "payment_updated_at": "2018-01-01T12:00:00.000Z",
       "fulfillment_updated_at": "2018-01-01T12:00:00.000Z",
+      "archived_at": "2018-01-01T12:00:00.000Z",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
