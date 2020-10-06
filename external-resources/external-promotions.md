@@ -1,14 +1,16 @@
 ---
-description: How to manage custom promotions via serverless functions
+description: How to manage custom promotions via eternal services
 ---
 
 # External promotions
 
-Commerce Layer lets you build your own outside lambda function to calculate complete custom promotions, based on the order information.
+Commerce Layer lets you leverage an external service or code your own outside serverless function to calculate complete custom promotions, based on the order information.
+
+To do that, just create an external promotion and fill the related `promotion_url` field with your external service endpoint.
 
 {% page-ref page="../resources/external\_promotions/" %}
 
-Whenever the external promotion is fired — according to the activation rules you set up when you created it — a `POST` request is triggered to the endpoint that you specified in the `promotion_url` field. 
+When its activation rules are met and the external promotion applies, Commerce Layer triggers a `POST` request to the specified `promotion_url` endpoint, sending the order payload \(including its line items\) in the request body. Your service response \(or error\) must match the format described in the example below.
 
 ### Example
 
@@ -80,6 +82,14 @@ On error, the response must be a JSON object containing an error code and an err
 ```
 {% endtab %}
 {% endtabs %}
+
+### Security
+
+When you create a new external promotion, a **shared secret** is generated. We recommend verifying the callback authenticity by signing the payload with that shared secret and comparing the result with the callback signature header.
+
+{% page-ref page="../callbacks-security.md" %}
+
+
 
 #### 
 

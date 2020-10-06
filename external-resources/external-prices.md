@@ -1,26 +1,16 @@
 ---
-description: How to manage prices via serverless functions
+description: How to manage prices via external services
 ---
 
 # External prices
 
-You can decide not to manage your product prices within Commerce Layer and use an external service of your choice \(or build your own\) to take advantage of any price calculation logic you need for your business. 
+Sometimes, you can decide not to manage prices within Commerce Layer but use an external service instead. The reason can be to support more dynamic pricing or just leverage an existing service that you want to keep as your system of records.
 
-All we require is the URL of the endpoint that will calculate the unit price of the SKU when it's added to an order and the related line item is created. You can set the `external_price_url` by filling the related field when you create/edit a market. 
+If you want to support external prices in a market, fill in the market's `external_price_url` field with your external service endpoint and make sure your service supports the specification described below.
 
-{% page-ref page="../resources/markets/" %}
+### Fetching external prices
 
-{% hint style="info" %}
-If the `external_price_url` field is not empty, having a price defined in one of the market price lists is no more mandatory for an SKU to be _sellable_ in that specific market.
-{% endhint %}
-
-###  Invoking the external price calculation for an SKU
-
-If an application has in scope a market where the `external_price_url` is set, when a line item of type `skus` is added to an order you can require the unit price to be calculated by your external service at the moment of the related line item creation. 
-
-{% page-ref page="../resources/line\_items/create\_line\_item.md" %}
-
-To do that and trigger a `POST` request to the external price endpoint, just specify the `sku_code` and set the `_external_price` attribute to `true`:
+When you add a line item to an order, set the `_external_price` attribute to `true` if you want the line item price to be provided by your external service, instead of Commerce Layer:
 
 ```javascript
 curl -X POST \
@@ -48,7 +38,9 @@ curl -X POST \
 }'
 ```
 
-### Example
+Upon line item creation, Commerce Layer will make a `POST` request to the specified `external_price_url` endpoint, sending the line item payload \(including the order\) in the request body. Your service response \(or error\) must match the format described in the example below.
+
+#### Example
 
 {% tabs %}
 {% tab title="Payload" %}
@@ -60,7 +52,11 @@ The request payload contains the line item and includes the associated order:
     id: 'xYZkjABcde',
     type: 'line_items',
     links: { ... },
-    attributes: { ... },
+    attributes: {
+      "quantity": "2",
+      "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "_external_price": "true"
+    },
     relationships: { ... },
     meta: { ... }
   },
@@ -110,7 +106,17 @@ On error, the response must be a JSON object containing an error code and an err
 {% endtab %}
 {% endtabs %}
 
-#### 
+### SKUs availability
 
+When you fetch a list of SKUs with a sales channel application, you only get those SKUs that have a price defined in the market's price list and at least a stock item in one of the market stock locations. 
 
+{% hint style="info" %}
+In case you manage prices externally, the price filter is not considered.
+{% endhint %}
+
+### Security
+
+When you activate external prices support for a market, a **shared secret** is generated. We recommend verifying the callback authenticity by signing the payload with that shared secret and comparing the result with the callback signature header.
+
+{% page-ref page="../callbacks-security.md" %}
 

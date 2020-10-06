@@ -405,3 +405,9 @@ On error, the response must be a JSON object containing a transaction token \(e.
 {% endtab %}
 {% endtabs %}
 
+### Security
+
+When you create a new external payment gateway, a **shared secret** is generated. We recommend verifying the callback authenticity by signing the payload with that shared secret and comparing the result with the callback signature header.
+
+{% page-ref page="../callbacks-security.md" %}
+
