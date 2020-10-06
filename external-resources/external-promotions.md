@@ -1,5 +1,5 @@
 ---
-description: How to manage custom promotions via eternal services
+description: How to manage custom promotions via external services
 ---
 
 # External promotions
