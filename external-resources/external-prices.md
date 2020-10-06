@@ -40,7 +40,7 @@ curl -X POST \
 
 Upon line item creation, Commerce Layer will make a `POST` request to the specified `external_price_url` endpoint, sending the line item payload \(including the order\) in the request body. Your service response \(or error\) must match the format described in the example below.
 
-#### Example
+### Example
 
 {% tabs %}
 {% tab title="Payload" %}
