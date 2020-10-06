@@ -4,13 +4,11 @@ description: How to manage custom promotions via eternal services
 
 # External promotions
 
-Commerce Layer lets you leverage an external service or code your own outside serverless function to calculate complete custom promotions, based on the order information.
-
-To do that, just create an external promotion and fill the related `promotion_url` field with your external service endpoint.
+Besides the promotion types that are supported out-of-the-box \(percentage discount, fixed amount, free shipping, etc.\) Commerce Layer lets you integrate any kind of promotional engine as an external promotion.
 
 {% page-ref page="../resources/external\_promotions/" %}
 
-When its activation rules are met and the external promotion applies, Commerce Layer triggers a `POST` request to the specified `promotion_url` endpoint, sending the order payload \(including its line items\) in the request body. Your service response \(or error\) must match the format described in the example below.
+When an external promotion activates — i.e. its activation rules are met — Commerce Layer triggers a `POST` request to the `promotion_url` endpoint, sending the order payload \(including its line items\) in the request body. Your service response \(or error\) must match the format described in the example below.
 
 ### Example
 
