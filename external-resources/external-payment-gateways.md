@@ -1,5 +1,5 @@
 ---
-description: How to manage payments and transactions via external functions
+description: How to manage payments and transactions via external services
 ---
 
 # External payment gateways
