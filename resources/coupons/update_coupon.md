@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/coupons/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/coupons/:id**
 
 ### Arguments
 
@@ -21,11 +21,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**code** | `string` | Optional |
-| attributes.**usage_limit** | `integer` | Optional |
+| attributes.**usage\_limit** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**promotion_rule** | `object` | Optional |
+| relationships.**promotion\_rule** | `object` | Optional |
 
 ### Example
 

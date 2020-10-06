@@ -10,7 +10,7 @@ To fetch a collection of order amount promotion rules, send a `GET` request to t
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/order_amount_promotion_rules**
+**GET** https://yourdomain.commercelayer.io**/api/order\_amount\_promotion\_rules**
 
 ### **Example**
 

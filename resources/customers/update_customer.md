@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/customers/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/customers/:id**
 
 ### Arguments
 
@@ -23,9 +23,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**email** | `string` | Optional |
 | attributes.**password** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**customer_group** | `object` | Optional |
+| relationships.**customer\_group** | `object` | Optional |
 
 ### Example
 

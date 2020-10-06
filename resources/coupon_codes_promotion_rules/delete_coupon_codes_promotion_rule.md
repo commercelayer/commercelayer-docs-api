@@ -10,7 +10,7 @@ To delete a coupon codes promotion rule, send a `DELETE` request to the `/api/co
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/coupon_codes_promotion_rules/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/coupon\_codes\_promotion\_rules/:id**
 
 ### Example
 

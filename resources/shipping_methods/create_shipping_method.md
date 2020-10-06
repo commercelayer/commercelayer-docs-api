@@ -10,7 +10,7 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods**
+**POST** https://yourdomain.commercelayer.io**/api/shipping\_methods**
 
 ### Arguments
 
@@ -18,14 +18,14 @@ To create a new shipping method, send a `POST` request to the `/api/shipping_met
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**price_amount_cents** | `integer` | Required |
-| attributes.**free_over_amount_cents** | `integer` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Required |
+| attributes.**free\_over\_amount\_cents** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
-| relationships.**shipping_zone** | `object` | Required |
-| relationships.**shipping_category** | `object` | Required |
+| relationships.**shipping\_zone** | `object` | Required |
+| relationships.**shipping\_category** | `object` | Required |
 
 ### Example
 

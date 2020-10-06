@@ -10,16 +10,16 @@ To create a new customer password reset, send a `POST` request to the `/api/cust
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets**
+**POST** https://yourdomain.commercelayer.io**/api/customer\_password\_resets**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer_email** | `string` | Required |
+| attributes.**customer\_email** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
