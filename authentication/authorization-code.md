@@ -34,7 +34,7 @@ The response type must be `code`.
 | **client\_id** | `string` | Required | Your application `client_id` |
 | **redirect\_uri** | `string` | Required | Your application `redirect_uri` |
 | **scope** | `string` | Optional | Your access token scope \(market\) |
-| **request\_type** | string | Required | `code` |
+| **response\_type** | `string` | Required | `code` |
 
 ### Example
 
