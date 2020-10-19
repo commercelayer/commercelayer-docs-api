@@ -4,8 +4,7 @@ description: The shipping method object and its fields
 
 # Shipping methods
 
-Shipping methods are used to provide customers with more delivery options.
-Each shipping method can have a price and can be free over a specific order's amount.
+Shipping methods are used to provide customers with more delivery options. Each shipping method can have a price and can be free over a specific order's amount.
 
 
 ### The shipping method object

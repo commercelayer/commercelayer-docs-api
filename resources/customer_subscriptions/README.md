@@ -4,10 +4,7 @@ description: The customer subscription object and its fields
 
 # Customer subscriptions
 
-Customer subscriptions are simple resources that you can use to track newsletter registrations.
-Populate the reference with any key that makes sense to your business domain.
-Send the subscriptions to any third party tool or CRM for marketing and segmentation.
-Let the customers manage their active subscriptions through their reserved area.
+Customer subscriptions are simple resources that you can use to track newsletter registrations. Populate the reference with any key that makes sense to your business domain. Send the subscriptions to any third party tool or CRM for marketing and segmentation. Let the customers manage their active subscriptions through their reserved area.
 
 
 ### The customer subscription object

@@ -4,8 +4,7 @@ description: The merchant object and its fields
 
 # Merchants
 
-A merchant is the fiscal representative that is selling in a specific market.
-Tax calculators use the merchant's address (and the shipping address) to determine the tax rate for an order.
+A merchant is the fiscal representative that is selling in a specific market. Tax calculators use the merchant's address (and the shipping address) to determine the tax rate for an order.
 
 
 ### The merchant object
