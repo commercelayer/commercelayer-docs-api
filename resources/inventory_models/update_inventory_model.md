@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### Arguments
 
@@ -21,9 +21,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**stock\_locations\_cutoff** | `integer` | Optional |
+| attributes.**stock_locations_cutoff** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -73,10 +73,16 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       }
     },
     "relationships": {
-      "stock_levels": {
+      "inventory_stock_locations": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
-          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_stock_locations",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_stock_locations"
+        }
+      },
+      "inventory_return_locations": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_return_locations",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_return_locations"
         }
       }
     },

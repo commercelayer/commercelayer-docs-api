@@ -10,7 +10,7 @@ To fetch a collection of orders, send a `GET` request to the `/api/orders` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 

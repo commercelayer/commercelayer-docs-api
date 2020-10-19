@@ -1,10 +1,10 @@
 ---
-description: How to update an existing stock level via API
+description: How to update an existing inventory stock location via API
 ---
 
-# Update a stock level
+# Update an inventory stock location
 
-To update an existing stock level, send a `PATCH` request to the `/api/stock_levels/:id` endpoint, where `id` is the ID of the resource that you want to update.
+To update an existing inventory stock location, send a `PATCH` request to the `/api/inventory_stock_locations/:id` endpoint, where `id` is the ID of the resource that you want to update.
 
 Here below the list of all the possible arguments that you can pass with the request body.
 
@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/stock\_levels/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_stock_locations/:id**
 
 ### Arguments
 
@@ -21,28 +21,28 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**priority** | `integer` | Optional |
-| attributes.**on\_hold** | `boolean` | Optional |
+| attributes.**on_hold** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Optional |
-| relationships.**inventory\_model** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
+| relationships.**inventory_model** | `object` | Optional |
 
 ### Example
 
 {% tabs %}
 {% tab title="Request" %}
-The following request updates the stock level identified by the ID "xYZkjABcde":
+The following request updates the inventory stock location identified by the ID "xYZkjABcde":
 
 ```javascript
 curl -X PATCH \
-  https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde \
+  https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
   -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
-    "type": "stock_levels",
+    "type": "inventory_stock_locations",
     "id": "xYZkjABcde",
     "attributes": {
       "on_hold": "false"
@@ -59,9 +59,9 @@ On success, the API responds with a `200 OK` status code, returning the updated 
 {
   "data": {
     "id": "xYZkjABcde",
-    "type": "stock_levels",
+    "type": "inventory_stock_locations",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde"
     },
     "attributes": {
       "priority": "1",
@@ -77,14 +77,14 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "relationships": {
       "stock_location": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
-          "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde/relationships/stock_location",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde/stock_location"
         }
       },
       "inventory_model": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
-          "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde/relationships/inventory_model",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde/inventory_model"
         }
       }
     },

@@ -10,7 +10,7 @@ To fetch a collection of inventory models, send a `GET` request to the `/api/inv
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_models**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
 
 ### **Example**
 
@@ -50,10 +50,16 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         }
       },
       "relationships": {
-        "stock_levels": {
+        "inventory_stock_locations": {
           "links": {
-            "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
-            "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
+            "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_stock_locations",
+            "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_stock_locations"
+          }
+        },
+        "inventory_return_locations": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_return_locations",
+            "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_return_locations"
           }
         }
       },

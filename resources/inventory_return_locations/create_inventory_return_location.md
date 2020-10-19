@@ -1,16 +1,16 @@
 ---
-description: How to create a stock level via API
+description: How to create an inventory return location via API
 ---
 
-# Create a stock level
+# Create an inventory return location
 
-To create a new stock level, send a `POST` request to the `/api/stock_levels` endpoint, passing the resource arguments in the request body.
+To create a new inventory return location, send a `POST` request to the `/api/inventory_return_locations` endpoint, passing the resource arguments in the request body.
 
 {% page-ref page="../../creating-resources.md" %}
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock\_levels**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations**
 
 ### Arguments
 
@@ -18,28 +18,27 @@ To create a new stock level, send a `POST` request to the `/api/stock_levels` en
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**priority** | `integer` | Required |
-| attributes.**on\_hold** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Required |
-| relationships.**inventory\_model** | `object` | Required |
+| relationships.**stock_location** | `object` | Required |
+| relationships.**inventory_model** | `object` | Required |
 
 ### Example
 
 {% tabs %}
 {% tab title="Request" %}
-The following request creates a new stock level:
+The following request creates a new inventory return location:
 
 ```javascript
 curl -X POST \
-  https://yourdomain.commercelayer.io/api/stock_levels \
+  https://yourdomain.commercelayer.io/api/inventory_return_locations \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token' \
   -H 'Content-Type: application/vnd.api+json' \
   -d '{
   "data": {
-    "type": "stock_levels",
+    "type": "inventory_return_locations",
     "attributes": {
       "priority": "1"
     },
@@ -69,13 +68,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
 {
   "data": {
     "id": "xYZkjABcde",
-    "type": "stock_levels",
+    "type": "inventory_return_locations",
     "links": {
-      "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde"
+      "self": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde"
     },
     "attributes": {
       "priority": "1",
-      "on_hold": "false",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -87,14 +85,14 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "relationships": {
       "stock_location": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/stock_location",
-          "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/stock_location"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde/relationships/stock_location",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde/stock_location"
         }
       },
       "inventory_model": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/relationships/inventory_model",
-          "related": "https://yourdomain.commercelayer.io/api/stock_levels/xYZkjABcde/inventory_model"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde/relationships/inventory_model",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde/inventory_model"
         }
       }
     },

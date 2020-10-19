@@ -10,7 +10,7 @@ To create a new external promotion, send a `POST` request to the `/api/external_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/external\_promotions**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/external_promotions**
 
 ### Arguments
 
@@ -18,18 +18,18 @@ To create a new external promotion, send a `POST` request to the `/api/external_
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**starts\_at** | `datetime` | Required |
-| attributes.**expires\_at** | `datetime` | Required |
-| attributes.**total\_usage\_limit** | `integer` | Required |
+| attributes.**starts_at** | `datetime` | Required |
+| attributes.**expires_at** | `datetime` | Required |
+| attributes.**total_usage_limit** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**promotion\_url** | `string` | Required |
+| attributes.**promotion_url** | `string` | Required |
 | relationships.**market** | `object` | Required, unless in scope |
-| relationships.**promotion\_rules** | `array` | Optional |
-| relationships.**order\_amount\_promotion\_rule** | `object` | Optional |
-| relationships.**sku\_list\_promotion\_rule** | `object` | Optional |
-| relationships.**coupon\_codes\_promotion\_rule** | `object` | Optional |
+| relationships.**promotion_rules** | `array` | Optional |
+| relationships.**order_amount_promotion_rule** | `object` | Optional |
+| relationships.**sku_list_promotion_rule** | `object` | Optional |
+| relationships.**coupon_codes_promotion_rule** | `object` | Optional |
 
 ### Example
 

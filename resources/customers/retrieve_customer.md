@@ -10,7 +10,7 @@ To fetch a single customer, send a `GET` request to the `/api/customers/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customers/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers/:id**
 
 ### **Example**
 
@@ -78,6 +78,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/orders",
           "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/orders"
+        }
+      },
+      "returns": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/returns",
+          "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/returns"
         }
       }
     },

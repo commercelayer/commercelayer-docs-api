@@ -10,7 +10,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stock\_locations**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### Arguments
 
@@ -18,10 +18,10 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**label\_format** | `string` | Optional, default is 'pdf' |
-| attributes.**suppress\_etd** | `boolean` | Optional |
+| attributes.**label_format** | `string` | Optional, default is 'pdf' |
+| attributes.**suppress_etd** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**address** | `object` | Required |
 
@@ -87,10 +87,16 @@ On success, the API responds with a `201 Created` status code, returning the cre
           "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
         }
       },
-      "stock_levels": {
+      "inventory_stock_locations": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
-          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
+          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/inventory_stock_locations",
+          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/inventory_stock_locations"
+        }
+      },
+      "inventory_return_locations": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/inventory_return_locations",
+          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/inventory_return_locations"
         }
       },
       "stock_items": {

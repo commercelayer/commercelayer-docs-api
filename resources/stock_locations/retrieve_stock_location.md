@@ -10,7 +10,7 @@ To fetch a single stock location, send a `GET` request to the `/api/stock_locati
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_locations/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations/:id**
 
 ### **Example**
 
@@ -57,10 +57,16 @@ On success, the API responds with a `200 OK` status code, returning a single res
           "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/address"
         }
       },
-      "stock_levels": {
+      "inventory_stock_locations": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/stock_levels",
-          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/stock_levels"
+          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/inventory_stock_locations",
+          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/inventory_stock_locations"
+        }
+      },
+      "inventory_return_locations": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/relationships/inventory_return_locations",
+          "related": "https://yourdomain.commercelayer.io/api/stock_locations/xYZkjABcde/inventory_return_locations"
         }
       },
       "stock_items": {

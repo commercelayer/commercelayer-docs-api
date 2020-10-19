@@ -10,7 +10,7 @@ To fetch a collection of delivery lead times, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To fetch a single inventory model, send a `GET` request to the `/api/inventory_m
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### **Example**
 
@@ -49,10 +49,16 @@ On success, the API responds with a `200 OK` status code, returning a single res
       }
     },
     "relationships": {
-      "stock_levels": {
+      "inventory_stock_locations": {
         "links": {
-          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/stock_levels",
-          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/stock_levels"
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_stock_locations",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_stock_locations"
+        }
+      },
+      "inventory_return_locations": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_return_locations",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_return_locations"
         }
       }
     },

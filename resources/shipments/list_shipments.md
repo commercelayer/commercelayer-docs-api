@@ -10,7 +10,7 @@ To fetch a collection of shipments, send a `GET` request to the `/api/shipments`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
 
 ### **Example**
 
@@ -71,6 +71,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_location",
             "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_location"
+          }
+        },
+        "origin_address": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/origin_address",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/origin_address"
           }
         },
         "shipping_address": {
