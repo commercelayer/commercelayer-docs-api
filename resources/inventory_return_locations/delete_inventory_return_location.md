@@ -10,7 +10,7 @@ To delete an inventory return location, send a `DELETE` request to the `/api/inv
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations/:id**
 
 ### Example
 

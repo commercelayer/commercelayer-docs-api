@@ -2,12 +2,11 @@
 description: The SKU object and its fields
 ---
 
-# Skus
+# SKUs
 
-SKUs describe specific product variations that are being sold. A unique code identifies each SKU, which can be either the EAN code, the UPC, or any other code format. The SKU name, description, and image URL are best suited for internal usage (Commerce Layer is not a CMS).
+SKUs describe specific product variations that are being sold. A unique code identifies each SKU, which can be either the EAN code, the UPC, or any other code format. The SKU name, description, and image URL are best suited for internal usage \(Commerce Layer is not a CMS\).
 
-
-### The SKU object
+## The SKU object
 
 A **SKU** object is returned as part of the response body of each successful create, list, retrieve, or update API call.
 
@@ -19,21 +18,21 @@ A **SKU** object is returned as part of the response body of each successful cre
 | attributes.**code** | `string` | The SKU code, that uniquely identifies the SKU within the organization. |
 | attributes.**name** | `string` | The internal name of the SKU. |
 | attributes.**description** | `string` | An internal description of the SKU. |
-| attributes.**image_url** | `string` | The URL of an image that represents the SKU. |
-| attributes.**pieces_per_pack** | `integer` | The number of pieces that compose the SKU. This is useful to describe sets and bundles. |
+| attributes.**image\_url** | `string` | The URL of an image that represents the SKU. |
+| attributes.**pieces\_per\_pack** | `integer` | The number of pieces that compose the SKU. This is useful to describe sets and bundles. |
 | attributes.**weight** | `float` | The weight of the SKU. If present, it will be used to calculate the shipping rates. |
-| attributes.**unit_of_weight** | `string` | Can be one of 'gr', or 'oz' |
-| attributes.**hs_tariff_number** | `string` | The Harmonized System Code used by customs to identify the products shipped across international borders. |
+| attributes.**unit\_of\_weight** | `string` | Can be one of 'gr', or 'oz' |
+| attributes.**hs\_tariff\_number** | `string` | The Harmonized System Code used by customs to identify the products shipped across international borders. |
 | attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU. |
-| attributes.**created_at** | `datetime` | Time at which the resource was created. |
-| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
-| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
-| relationships.**shipping_category** | `object` | The SKU's shipping category |
+| relationships.**shipping\_category** | `object` | The SKU's shipping category |
 | relationships.**prices** | `array` | The list of prices associated with the SKU. |
-| relationships.**stock_items** | `array` | The list of stock items associated with the SKU. |
-| relationships.**delivery_lead_times** | `array` | The list of delivery lead times associated with the SKU. |
-| relationships.**sku_options** | `array` | The list of SKU options available for the SKU. |
+| relationships.**stock\_items** | `array` | The list of stock items associated with the SKU. |
+| relationships.**delivery\_lead\_times** | `array` | The list of delivery lead times associated with the SKU. |
+| relationships.**sku\_options** | `array` | The list of SKU options available for the SKU. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

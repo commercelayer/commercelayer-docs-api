@@ -77,7 +77,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to get an access token for an integration application, using the `client_credentials` grant type and putting in scope the market identified by the number "1234":
+The following request tries to get an access token for an integration application, using the `client_credentials` grant type:
 
 ```javascript
 curl -X POST \

@@ -10,7 +10,7 @@ To fetch a single return, send a `GET` request to the `/api/returns/:id` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns/:id**
+**GET** https://yourdomain.commercelayer.io**/api/returns/:id**
 
 ### **Example**
 

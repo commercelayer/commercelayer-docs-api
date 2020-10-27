@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/percentage_discount_promotions/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/percentage\_discount\_promotions/:id**
 
 ### Arguments
 
@@ -21,19 +21,19 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**starts_at** | `datetime` | Optional |
-| attributes.**expires_at** | `datetime` | Optional |
-| attributes.**total_usage_limit** | `integer` | Optional |
+| attributes.**starts\_at** | `datetime` | Optional |
+| attributes.**expires\_at** | `datetime` | Optional |
+| attributes.**total\_usage\_limit** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | attributes.**percentage** | `integer` | Optional |
 | relationships.**market** | `object` | Optional |
-| relationships.**promotion_rules** | `array` | Optional |
-| relationships.**order_amount_promotion_rule** | `object` | Optional |
-| relationships.**sku_list_promotion_rule** | `object` | Optional |
-| relationships.**coupon_codes_promotion_rule** | `object` | Optional |
-| relationships.**sku_list** | `object` | Optional |
+| relationships.**promotion\_rules** | `array` | Optional |
+| relationships.**order\_amount\_promotion\_rule** | `object` | Optional |
+| relationships.**sku\_list\_promotion\_rule** | `object` | Optional |
+| relationships.**coupon\_codes\_promotion\_rule** | `object` | Optional |
+| relationships.**sku\_list** | `object` | Optional |
 
 ### Example
 

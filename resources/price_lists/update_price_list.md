@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/price_lists/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/price\_lists/:id**
 
 ### Arguments
 
@@ -21,10 +21,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**currency_code** | `string` | Optional |
-| attributes.**tax_included** | `boolean` | Optional |
+| attributes.**currency\_code** | `string` | Optional |
+| attributes.**tax\_included** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
