@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/braintree\_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments/:id**
 
 ### Arguments
 
@@ -20,10 +20,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment\_method\_nonce** | `string` | Optional |
+| attributes.**payment_method_nonce** | `string` | Optional |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Optional |
 

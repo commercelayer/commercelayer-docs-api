@@ -10,18 +10,18 @@ To create a new return, send a `POST` request to the `/api/returns` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/returns**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/returns**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**customer\_email** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
+| relationships.**stock_location** | `object` | Optional |
 
 ### Example
 
@@ -91,12 +91,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/customer",
           "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/customer"
-        }
-      },
-      "inventory_return_location": {
-        "links": {
-          "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/inventory_return_location",
-          "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/inventory_return_location"
         }
       },
       "stock_location": {

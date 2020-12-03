@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/returns/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/returns/:id**
 
 ### Arguments
 
@@ -20,18 +20,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**customer\_email** | `string` | Optional |
-| attributes.**\_request** | `boolean, value is 'true'` | Optional |
-| attributes.**\_approve** | `boolean, value is 'true'` | Optional |
-| attributes.**\_reject** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_receive** | `boolean, value is 'true'` | Optional |
-| attributes.**\_restock** | `boolean, value is 'true'` | Optional |
-| attributes.**\_archive** | `boolean, value is 'true'` | Optional |
-| attributes.**\_unarchive** | `boolean, value is 'true'` | Optional |
+| attributes.**_request** | `boolean, value is 'true'` | Optional |
+| attributes.**_approve** | `boolean, value is 'true'` | Optional |
+| attributes.**_reject** | `boolean, value is 'true'` | Optional |
+| attributes.**_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_receive** | `boolean, value is 'true'` | Optional |
+| attributes.**_restock** | `boolean, value is 'true'` | Optional |
+| attributes.**_archive** | `boolean, value is 'true'` | Optional |
+| attributes.**_unarchive** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
 
 ### Example
 
@@ -50,7 +50,7 @@ curl -X PATCH \
     "type": "returns",
     "id": "xYZkjABcde",
     "attributes": {
-      "customer_email": "john@example.com"
+      "_request": "true"
     }
   }
 }'
@@ -97,12 +97,6 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/customer",
           "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/customer"
-        }
-      },
-      "inventory_return_location": {
-        "links": {
-          "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/inventory_return_location",
-          "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/inventory_return_location"
         }
       },
       "stock_location": {

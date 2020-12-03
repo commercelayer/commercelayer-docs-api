@@ -10,7 +10,7 @@ To fetch a collection of packages, send a `GET` request to the `/api/packages` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/packages**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/packages**
 
 ### **Example**
 

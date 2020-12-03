@@ -10,7 +10,7 @@ To fetch a collection of merchants, send a `GET` request to the `/api/merchants`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/merchants**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/merchants**
 
 ### **Example**
 

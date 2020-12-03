@@ -10,7 +10,7 @@ To fetch a collection of orders, send a `GET` request to the `/api/orders` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 
@@ -137,6 +137,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "payment_updated_at": "2018-01-01T12:00:00.000Z",
         "fulfillment_updated_at": "2018-01-01T12:00:00.000Z",
         "archived_at": "2018-01-01T12:00:00.000Z",
+        "expires_at": "2018-01-01T12:00:00.000Z",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -262,6 +263,7 @@ The list of orders can be sorted by the following attributes:
 * `payment_updated_at`
 * `fulfillment_updated_at`
 * `archived_at`
+* `expires_at`
 * `id`
 * `created_at`
 * `updated_at`

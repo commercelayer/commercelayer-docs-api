@@ -10,7 +10,7 @@ To fetch a single return, send a `GET` request to the `/api/returns/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/returns/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns/:id**
 
 ### **Example**
 
@@ -66,12 +66,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/customer",
           "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/customer"
-        }
-      },
-      "inventory_return_location": {
-        "links": {
-          "self": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/relationships/inventory_return_location",
-          "related": "https://yourdomain.commercelayer.io/api/returns/xYZkjABcde/inventory_return_location"
         }
       },
       "stock_location": {
