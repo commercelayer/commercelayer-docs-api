@@ -93,6 +93,9 @@ An **order** object is returned as part of the response body of each successful 
 | attributes.**fees_amount_cents** | `integer` | The fees amount that is applied by Commerce Layer, in cents. |
 | attributes.**fees_amount_float** | `float` | The fees amount that is applied by Commerce Layer, float. |
 | attributes.**formatted_fees_amount** | `string` | The fees amount that is applied by Commerce Layer, formatted. |
+| attributes.**duty_amount_cents** | `integer` | The duty amount that is calculated by external services, in cents. |
+| attributes.**duty_amount_float** | `float` | The duty amount that is calculated by external services, float. |
+| attributes.**formatted_duty_amount** | `string` | The duty amount that is calculated by external services, formatted. |
 | attributes.**authorization_amount_cents** | `integer` | The amount to be authorized, in cents. |
 | attributes.**authorization_amount_float** | `float` | The amount to be authorized, float. |
 | attributes.**formatted_authorization_amount** | `string` | The amount to be authorized, formatted. |
