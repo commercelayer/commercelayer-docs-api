@@ -4,7 +4,7 @@ description: The tax category object and its fields
 
 # Tax categories
 
-Create a tax category for a SKU that has a special taxation. Specify a valid tax code for the associated tax calculator (currently supported by Avalara and Taxjar).
+Create a tax category for an SKU that has special taxation. Specify a valid tax code for the associated tax calculator (currently supported by Avalara and Taxjar).
 
 
 ### The tax category object
