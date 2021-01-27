@@ -10,7 +10,7 @@ To fetch a collection of fixed amount promotions, send a `GET` request to the `/
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/fixed_amount_promotions**
+**GET** https://yourdomain.commercelayer.io**/api/fixed\_amount\_promotions**
 
 ### **Example**
 

@@ -9,7 +9,7 @@ description: How to execute the authorization flow and get your access token
 **Integration** applications use the `client_credentials` grant type to get an access token for themselves. 
 
 {% hint style="info" %}
-By including a market `scope` in the access token request, all the resources \(e.g. SKUs, prices, stock items\) that you fetch are automatically filtered.
+By [including a scope](./#authorization-scopes) in the access token request, all the resources that you fetch are automatically filtered.
 {% endhint %}
 
 ## Getting an access token
@@ -27,14 +27,10 @@ To get an access token using the `client_credentials` grant type, send a `POST` 
 | **grant\_type** | `string` | Required | `client_credentials` |
 | **client\_id** | `string` | Required | Your application `client_id` |
 | **client\_secret** | `string` | Optional | Your application `client_secret` |
-| **scope** | `string` | Optional | Your access token scope \(market\) |
-
-{% hint style="info" %}
-The access token scope is a string composed by `"market:{{market_number}}"`, where `market_number` is the number of the market you want to put in scope.
-{% endhint %}
+| **scope** | `string` | Optional | Your access token scope \(market, stock location\) |
 
 {% hint style="warning" %}
-**Sales channel** applications don't require the `client_secret` argument.
+**Sales channel** applications require a market in `scope` when requesting their access token to perform the [permitted CRUD actions](../roles-and-permissions.md#sales-channel). On the other hand, they don't require the `client_secret` argument. That lets you use them safely client-side.
 {% endhint %}
 
 ### Examples

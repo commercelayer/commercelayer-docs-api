@@ -10,7 +10,7 @@ To fetch a collection of avalara accounts, send a `GET` request to the `/api/ava
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts**
+**GET** https://yourdomain.commercelayer.io**/api/avalara\_accounts**
 
 ### **Example**
 

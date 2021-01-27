@@ -7,7 +7,7 @@ description: How to execute the authorization flow and get your access token
 The `password` grant type is used by **Sales channel** applications to exchange a customer credentials for an access token \(i.e. to get a "logged" access token\).
 
 {% hint style="info" %}
-By including a market `scope` in the access token request, all the resources \(e.g. SKUs, prices, stock items\) that you fetch are automatically filtered.
+By [including a scope](./#authorization-scopes) in the access token request, all the resources that you fetch are automatically filtered.
 {% endhint %}
 
 ## Getting an access token
@@ -26,7 +26,7 @@ To get an access token using the `password` grant type, send a `POST` request to
 | **username** | `string` | Required | The customer email address |
 | **password** | `string` | Required | The customer password |
 | **client\_id** | `string` | Required | Your application `client_id` |
-| **scope** | `string` | Optional | Your access token scope \(market\) |
+| **scope** | `string` | Optional | Your access token scope \(market, stock location\) |
 
 {% hint style="info" %}
 The access token scope is a string composed by `"market:{{market_number}}"`, where `market_number` is the number of the market you want to put in scope.

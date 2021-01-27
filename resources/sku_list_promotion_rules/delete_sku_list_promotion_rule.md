@@ -10,7 +10,7 @@ To delete a SKU list promotion rule, send a `DELETE` request to the `/api/sku_li
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_promotion_rules/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/sku\_list\_promotion\_rules/:id**
 
 ### Example
 

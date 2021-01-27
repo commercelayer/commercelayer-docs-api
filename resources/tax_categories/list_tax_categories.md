@@ -10,7 +10,7 @@ To fetch a collection of tax categories, send a `GET` request to the `/api/tax_c
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/tax_categories**
+**GET** https://yourdomain.commercelayer.io**/api/tax\_categories**
 
 ### **Example**
 

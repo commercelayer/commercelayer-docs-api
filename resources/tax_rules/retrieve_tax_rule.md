@@ -10,7 +10,7 @@ To fetch a single tax rule, send a `GET` request to the `/api/tax_rules/:id` end
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/tax_rules/:id**
+**GET** https://yourdomain.commercelayer.io**/api/tax\_rules/:id**
 
 ### **Example**
 
