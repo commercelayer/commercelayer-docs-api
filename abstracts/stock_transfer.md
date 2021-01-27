@@ -1,0 +1,5 @@
+An order can be configured to ship from a single stock location (i.e. primary).  
+In this scenario the number of shipments is minimized by creating one or more stock transfers from the stock location where the items are available to the primary one.  
+Shipping categories are still honored, by creating different shipments.
+
+Stock transfers can also be created outside of the order scope, in such case they have no relationships with shipments and line items.
