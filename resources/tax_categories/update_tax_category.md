@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/tax\_categories/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/tax_categories/:id**
 
 ### Arguments
 
@@ -21,9 +21,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**code** | `string` | Optional |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
 
@@ -84,6 +84,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/tax_calculator",
           "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/tax_calculator"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/attachments"
         }
       }
     },

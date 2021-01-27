@@ -10,7 +10,7 @@ To fetch a single shipment, send a `GET` request to the `/api/shipments/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### **Example**
 
@@ -90,10 +90,22 @@ On success, the API responds with a `200 OK` status code, returning a single res
           "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_method"
         }
       },
+      "delivery_lead_time": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/delivery_lead_time",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/delivery_lead_time"
+        }
+      },
       "shipment_line_items": {
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipment_line_items",
           "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipment_line_items"
+        }
+      },
+      "stock_transfers": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_transfers",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_transfers"
         }
       },
       "available_shipping_methods": {

@@ -10,7 +10,7 @@ To fetch a single inventory model, send a `GET` request to the `/api/inventory_m
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### **Example**
 
@@ -39,6 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "name": "EU Inventory Model",
+      "strategy": "split_shipments",
       "stock_locations_cutoff": "3",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
@@ -59,6 +60,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_return_locations",
           "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_return_locations"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/attachments"
         }
       }
     },

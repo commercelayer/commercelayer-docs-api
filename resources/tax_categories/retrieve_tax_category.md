@@ -10,7 +10,7 @@ To fetch a single tax category, send a `GET` request to the `/api/tax_categories
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/tax\_categories/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/tax_categories/:id**
 
 ### **Example**
 
@@ -59,6 +59,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/tax_calculator",
           "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/tax_calculator"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/attachments"
         }
       }
     },

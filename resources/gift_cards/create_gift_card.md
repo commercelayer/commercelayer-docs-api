@@ -10,7 +10,7 @@ To create a new gift card, send a `POST` request to the `/api/gift_cards` endpoi
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/gift\_cards**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/gift_cards**
 
 ### Arguments
 
@@ -18,19 +18,19 @@ To create a new gift card, send a `POST` request to the `/api/gift_cards` endpoi
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**code** | `string` | Optional |
-| attributes.**currency\_code** | `string` | Required |
-| attributes.**balance\_cents** | `integer` | Required |
-| attributes.**balance\_max\_cents** | `string` | Optional |
-| attributes.**single\_use** | `boolean` | Optional, default is 'false' |
+| attributes.**currency_code** | `string` | Required |
+| attributes.**balance_cents** | `integer` | Required |
+| attributes.**balance_max_cents** | `string` | Optional |
+| attributes.**single_use** | `boolean` | Optional, default is 'false' |
 | attributes.**rechargeable** | `boolean` | Optional, default is 'true' |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**expires\_at** | `datetime` | Optional, default is 'null' |
-| attributes.**reference\_origin** | `string` | Optional |
-| attributes.**recipient\_email** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**expires_at** | `datetime` | Optional, default is 'null' |
+| attributes.**reference_origin** | `string` | Optional |
+| attributes.**recipient_email** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
-| relationships.**gift\_card\_recipient** | `object` | Optional |
+| relationships.**gift_card_recipient** | `object` | Optional |
 
 ### Example
 
@@ -68,7 +68,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde"
     },
     "attributes": {
-      "status": "active",
+      "status": "draft",
       "code": "32db311a-75d9-4c17-9e34-2be220137ad6",
       "currency_code": "EUR",
       "initial_balance_cents": "15000",
@@ -115,6 +115,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/relationships/gift_card_recipient",
           "related": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/gift_card_recipient"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/attachments"
         }
       }
     },

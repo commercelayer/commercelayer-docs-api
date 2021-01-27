@@ -10,7 +10,7 @@ To fetch a single market, send a `GET` request to the `/api/markets/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### **Example**
 
@@ -75,6 +75,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/customer_group",
           "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/customer_group"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/attachments"
         }
       }
     },

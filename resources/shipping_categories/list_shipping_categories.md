@@ -10,7 +10,7 @@ To fetch a collection of shipping categories, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_categories**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories**
 
 ### **Example**
 
@@ -53,6 +53,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/skus",
             "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/skus"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/shipping_categories/xYZkjABcde/attachments"
           }
         }
       },

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/inventory\_models/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models/:id**
 
 ### Arguments
 
@@ -21,9 +21,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**stock\_locations\_cutoff** | `integer` | Optional |
+| attributes.**strategy** | `string` | Optional |
+| attributes.**stock_locations_cutoff** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -63,6 +64,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     },
     "attributes": {
       "name": "EU Inventory Model",
+      "strategy": "split_shipments",
       "stock_locations_cutoff": "3",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
@@ -83,6 +85,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/inventory_return_locations",
           "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/inventory_return_locations"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/inventory_models/xYZkjABcde/attachments"
         }
       }
     },

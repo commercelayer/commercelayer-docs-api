@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/tax\_rules/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/tax_rules/:id**
 
 ### Arguments
 
@@ -21,21 +21,21 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**tax\_rate** | `float` | Optional |
-| attributes.**country\_code\_regex** | `string` | Optional |
-| attributes.**not\_country\_code\_regex** | `string` | Optional |
-| attributes.**state\_code\_regex** | `string` | Optional |
-| attributes.**not\_state\_code\_regex** | `string` | Optional |
-| attributes.**zip\_code\_regex** | `string` | Optional |
-| attributes.**not\_zip\_code\_regex** | `string` | Optional |
-| attributes.**freight\_taxable** | `boolean` | Optional |
-| attributes.**payment\_method\_taxable** | `boolean` | Optional |
-| attributes.**gift\_card\_taxable** | `boolean` | Optional |
-| attributes.**adjustment\_taxable** | `boolean` | Optional |
+| attributes.**tax_rate** | `float` | Optional |
+| attributes.**country_code_regex** | `string` | Optional |
+| attributes.**not_country_code_regex** | `string` | Optional |
+| attributes.**state_code_regex** | `string` | Optional |
+| attributes.**not_state_code_regex** | `string` | Optional |
+| attributes.**zip_code_regex** | `string` | Optional |
+| attributes.**not_zip_code_regex** | `string` | Optional |
+| attributes.**freight_taxable** | `boolean` | Optional |
+| attributes.**payment_method_taxable** | `boolean` | Optional |
+| attributes.**gift_card_taxable** | `boolean` | Optional |
+| attributes.**adjustment_taxable** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**manual\_tax\_calculator** | `object` | Optional |
+| relationships.**manual_tax_calculator** | `object` | Optional |
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a single delivery lead time, send a `GET` request to the `/api/delivery
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### **Example**
 
@@ -61,6 +61,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/shipping_method",
           "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/shipping_method"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/attachments"
         }
       }
     },

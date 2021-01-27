@@ -10,7 +10,7 @@ To fetch a single payment method, send a `GET` request to the `/api/payment_meth
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/payment\_methods/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods/:id**
 
 ### **Example**
 
@@ -63,6 +63,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/payment_gateway",
           "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/payment_gateway"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/attachments"
         }
       }
     },

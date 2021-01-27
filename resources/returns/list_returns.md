@@ -10,7 +10,7 @@ To fetch a collection of returns, send a `GET` request to the `/api/returns` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/returns**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns**
 
 ### **Example**
 

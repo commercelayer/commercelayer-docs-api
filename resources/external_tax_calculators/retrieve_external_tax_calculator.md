@@ -10,7 +10,7 @@ To fetch a single external tax calculator, send a `GET` request to the `/api/ext
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators/:id**
 
 ### **Example**
 
@@ -53,6 +53,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/relationships/tax_categories",
           "related": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/tax_categories"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/attachments"
         }
       }
     },

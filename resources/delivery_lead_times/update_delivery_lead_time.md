@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times/:id**
 
 ### Arguments
 
@@ -20,13 +20,13 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**min\_hours** | `integer` | Optional |
-| attributes.**max\_hours** | `integer` | Optional |
+| attributes.**min_hours** | `integer` | Optional |
+| attributes.**max_hours** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Optional |
-| relationships.**shipping\_method** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 
@@ -87,6 +87,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/shipping_method",
           "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/shipping_method"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/delivery_lead_times/xYZkjABcde/attachments"
         }
       }
     },

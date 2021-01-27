@@ -10,7 +10,7 @@ To fetch a collection of customers, send a `GET` request to the `/api/customers`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customers**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers**
 
 ### **Example**
 
@@ -85,6 +85,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/returns",
             "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/returns"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/customers/xYZkjABcde/attachments"
           }
         }
       },

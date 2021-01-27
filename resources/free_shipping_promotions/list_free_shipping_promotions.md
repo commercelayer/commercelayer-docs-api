@@ -10,7 +10,7 @@ To fetch a collection of free shipping promotions, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/free\_shipping\_promotions**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/free_shipping_promotions**
 
 ### **Example**
 
@@ -82,6 +82,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/free_shipping_promotions/xYZkjABcde/relationships/coupon_codes_promotion_rule",
             "related": "https://yourdomain.commercelayer.io/api/free_shipping_promotions/xYZkjABcde/coupon_codes_promotion_rule"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/free_shipping_promotions/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/free_shipping_promotions/xYZkjABcde/attachments"
           }
         }
       },

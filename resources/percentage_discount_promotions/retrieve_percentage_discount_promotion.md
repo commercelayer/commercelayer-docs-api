@@ -10,7 +10,7 @@ To fetch a single percentage discount promotion, send a `GET` request to the `/a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/percentage\_discount\_promotions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/percentage_discount_promotions/:id**
 
 ### **Example**
 
@@ -82,6 +82,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/percentage_discount_promotions/xYZkjABcde/relationships/coupon_codes_promotion_rule",
           "related": "https://yourdomain.commercelayer.io/api/percentage_discount_promotions/xYZkjABcde/coupon_codes_promotion_rule"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/percentage_discount_promotions/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/percentage_discount_promotions/xYZkjABcde/attachments"
         }
       },
       "sku_list": {

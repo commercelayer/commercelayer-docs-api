@@ -10,7 +10,7 @@ To fetch a single manual tax calculator, send a `GET` request to the `/api/manua
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/manual\_tax\_calculators/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/manual_tax_calculators/:id**
 
 ### **Example**
 
@@ -52,6 +52,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/relationships/tax_categories",
           "related": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/tax_categories"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/attachments"
         }
       },
       "tax_rules": {

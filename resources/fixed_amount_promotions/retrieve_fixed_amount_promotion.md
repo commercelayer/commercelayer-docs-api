@@ -10,7 +10,7 @@ To fetch a single fixed amount promotion, send a `GET` request to the `/api/fixe
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/fixed\_amount\_promotions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/fixed_amount_promotions/:id**
 
 ### **Example**
 
@@ -84,6 +84,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/fixed_amount_promotions/xYZkjABcde/relationships/coupon_codes_promotion_rule",
           "related": "https://yourdomain.commercelayer.io/api/fixed_amount_promotions/xYZkjABcde/coupon_codes_promotion_rule"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/fixed_amount_promotions/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/fixed_amount_promotions/xYZkjABcde/attachments"
         }
       }
     },

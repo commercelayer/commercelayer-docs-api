@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,18 +20,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**\_on\_hold** | `boolean, value is 'true'` | Optional |
-| attributes.**\_picking** | `boolean, value is 'true'` | Optional |
-| attributes.**\_packing** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ready\_to\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_get\_rates** | `boolean, value is 'true'` | Optional |
-| attributes.**selected\_rate\_id** | `string` | Optional |
-| attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**_on_hold** | `boolean, value is 'true'` | Optional |
+| attributes.**_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**_packing** | `boolean, value is 'true'` | Optional |
+| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_get_rates** | `boolean, value is 'true'` | Optional |
+| attributes.**selected_rate_id** | `string` | Optional |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_method** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 
@@ -121,10 +121,22 @@ On success, the API responds with a `200 OK` status code, returning the updated 
           "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipping_method"
         }
       },
+      "delivery_lead_time": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/delivery_lead_time",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/delivery_lead_time"
+        }
+      },
       "shipment_line_items": {
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/shipment_line_items",
           "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipment_line_items"
+        }
+      },
+      "stock_transfers": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_transfers",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_transfers"
         }
       },
       "available_shipping_methods": {

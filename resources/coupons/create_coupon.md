@@ -10,7 +10,7 @@ To create a new coupon, send a `POST` request to the `/api/coupons` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/coupons**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/coupons**
 
 ### Arguments
 
@@ -18,11 +18,11 @@ To create a new coupon, send a `POST` request to the `/api/coupons` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**code** | `string` | Required |
-| attributes.**usage\_limit** | `integer` | Required |
+| attributes.**usage_limit** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**promotion\_rule** | `object` | Required |
+| relationships.**promotion_rule** | `object` | Required |
 
 ### Example
 

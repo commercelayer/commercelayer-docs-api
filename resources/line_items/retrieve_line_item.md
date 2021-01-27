@@ -10,7 +10,7 @@ To fetch a single line item, send a `GET` request to the `/api/line_items/:id` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_items/:id**
 
 ### **Example**
 
@@ -109,6 +109,18 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/line_item_options",
           "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/line_item_options"
+        }
+      },
+      "shipment_line_items": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/shipment_line_items",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/shipment_line_items"
+        }
+      },
+      "stock_transfers": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/stock_transfers",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/stock_transfers"
         }
       }
     },

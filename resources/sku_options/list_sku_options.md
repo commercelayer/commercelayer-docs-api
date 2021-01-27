@@ -10,7 +10,7 @@ To fetch a collection of SKU options, send a `GET` request to the `/api/sku_opti
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_options**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
 
 ### **Example**
 
@@ -60,6 +60,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/market",
             "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/market"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/sku_options/xYZkjABcde/attachments"
           }
         }
       },

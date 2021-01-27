@@ -10,7 +10,7 @@ To fetch a collection of merchants, send a `GET` request to the `/api/merchants`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/merchants**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/merchants**
 
 ### **Example**
 
@@ -53,6 +53,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/address",
             "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/address"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/attachments"
           }
         }
       },

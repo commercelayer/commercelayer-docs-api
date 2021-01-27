@@ -10,7 +10,7 @@ To fetch a collection of avalara accounts, send a `GET` request to the `/api/ava
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/avalara\_accounts**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts**
 
 ### **Example**
 
@@ -56,6 +56,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/relationships/tax_categories",
             "related": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/tax_categories"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/attachments"
           }
         }
       },

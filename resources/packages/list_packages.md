@@ -10,7 +10,7 @@ To fetch a collection of packages, send a `GET` request to the `/api/packages` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/packages**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/packages**
 
 ### **Example**
 
@@ -64,6 +64,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/parcels",
             "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/parcels"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/attachments"
           }
         }
       },

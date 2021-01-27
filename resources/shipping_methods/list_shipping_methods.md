@@ -10,7 +10,7 @@ To fetch a collection of shipping methods, send a `GET` request to the `/api/shi
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipping\_methods**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods**
 
 ### **Example**
 
@@ -82,6 +82,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/delivery_lead_time_for_shipment",
             "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/delivery_lead_time_for_shipment"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/shipping_methods/xYZkjABcde/attachments"
           }
         }
       },

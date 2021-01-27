@@ -10,7 +10,7 @@ To fetch a collection of SKUs, send a `GET` request to the `/api/skus` endpoint.
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus**
 
 ### **Example**
 
@@ -84,6 +84,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
             "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/attachments"
           }
         }
       },

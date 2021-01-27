@@ -10,7 +10,7 @@ To fetch a single SKU, send a `GET` request to the `/api/skus/:id` endpoint, whe
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
 
 ### **Example**
 
@@ -171,6 +171,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/sku_options",
           "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/sku_options"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/skus/xYZkjABcde/attachments"
         }
       }
     },

@@ -10,7 +10,7 @@ To fetch a collection of customer password resets, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_password\_resets**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_password_resets**
 
 ### **Example**
 

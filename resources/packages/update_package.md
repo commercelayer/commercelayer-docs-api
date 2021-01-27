@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/packages/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/packages/:id**
 
 ### Arguments
 
@@ -25,11 +25,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**length** | `float` | Optional |
 | attributes.**width** | `float` | Optional |
 | attributes.**height** | `float` | Optional |
-| attributes.**unit\_of\_length** | `string` | Optional |
+| attributes.**unit_of_length** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
 
 ### Example
 
@@ -92,6 +92,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/parcels",
           "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/parcels"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/attachments"
         }
       }
     },

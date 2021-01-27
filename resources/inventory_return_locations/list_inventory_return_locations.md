@@ -10,7 +10,7 @@ To fetch a collection of inventory return locations, send a `GET` request to the
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations**
 
 ### **Example**
 

@@ -10,20 +10,20 @@ To create a new price, send a `POST` request to the `/api/prices` endpoint, pass
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/prices**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/prices**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
-| attributes.**amount\_cents** | `integer` | Required |
-| attributes.**compare\_at\_amount\_cents** | `integer` | Required |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**amount_cents** | `integer` | Required |
+| attributes.**compare_at_amount_cents** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**price\_list** | `object` | Required |
+| relationships.**price_list** | `object` | Required |
 | relationships.**sku** | `object` | Optional |
 
 ### Example
@@ -97,6 +97,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/sku",
           "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/sku"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/prices/xYZkjABcde/attachments"
         }
       }
     },

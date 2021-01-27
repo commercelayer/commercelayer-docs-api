@@ -10,7 +10,7 @@ To fetch a single stock item, send a `GET` request to the `/api/stock_items/:id`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
 
 ### **Example**
 
@@ -59,6 +59,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/sku",
           "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/sku"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/stock_items/xYZkjABcde/attachments"
         }
       }
     },

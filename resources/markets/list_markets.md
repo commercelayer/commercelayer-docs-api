@@ -10,7 +10,7 @@ To fetch a collection of markets, send a `GET` request to the `/api/markets` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets**
 
 ### **Example**
 
@@ -76,6 +76,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/customer_group",
             "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/customer_group"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/attachments"
           }
         }
       },

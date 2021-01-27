@@ -10,7 +10,7 @@ To fetch a collection of payment methods, send a `GET` request to the `/api/paym
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/payment\_methods**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_methods**
 
 ### **Example**
 
@@ -64,6 +64,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/payment_gateway",
             "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/payment_gateway"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/payment_methods/xYZkjABcde/attachments"
           }
         }
       },

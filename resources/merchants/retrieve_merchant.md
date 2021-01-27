@@ -10,7 +10,7 @@ To fetch a single merchant, send a `GET` request to the `/api/merchants/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/merchants/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/merchants/:id**
 
 ### **Example**
 
@@ -52,6 +52,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/address",
           "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/address"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/merchants/xYZkjABcde/attachments"
         }
       }
     },

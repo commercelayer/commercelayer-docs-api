@@ -10,7 +10,7 @@ To fetch a collection of parcels, send a `GET` request to the `/api/parcels` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/parcels**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels**
 
 ### **Example**
 
@@ -88,6 +88,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/parcel_line_items",
             "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/parcel_line_items"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/parcels/xYZkjABcde/attachments"
           }
         }
       },

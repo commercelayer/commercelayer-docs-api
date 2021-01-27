@@ -10,7 +10,7 @@ To fetch a single package, send a `GET` request to the `/api/packages/:id` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/packages/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/packages/:id**
 
 ### **Example**
 
@@ -63,6 +63,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/parcels",
           "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/parcels"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/packages/xYZkjABcde/attachments"
         }
       }
     },

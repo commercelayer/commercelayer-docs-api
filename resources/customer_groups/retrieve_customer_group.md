@@ -10,7 +10,7 @@ To fetch a single customer group, send a `GET` request to the `/api/customer_gro
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customer\_groups/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_groups/:id**
 
 ### **Example**
 
@@ -58,6 +58,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/markets",
           "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/markets"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/customer_groups/xYZkjABcde/attachments"
         }
       }
     },

@@ -10,7 +10,7 @@ To fetch a collection of gift cards, send a `GET` request to the `/api/gift_card
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/gift\_cards**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/gift_cards**
 
 ### **Example**
 
@@ -39,7 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde"
       },
       "attributes": {
-        "status": "active",
+        "status": "draft",
         "code": "32db311a-75d9-4c17-9e34-2be220137ad6",
         "currency_code": "EUR",
         "initial_balance_cents": "15000",
@@ -86,6 +86,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/relationships/gift_card_recipient",
             "related": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/gift_card_recipient"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/gift_cards/xYZkjABcde/attachments"
           }
         }
       },

@@ -10,7 +10,7 @@ To fetch a collection of orders, send a `GET` request to the `/api/orders` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 
@@ -226,6 +226,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/refunds",
             "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/refunds"
+          }
+        },
+        "attachments": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/attachments",
+            "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/attachments"
           }
         }
       },

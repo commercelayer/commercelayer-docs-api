@@ -10,7 +10,7 @@ To fetch a collection of shipment line items, send a `GET` request to the `/api/
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipment\_line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipment_line_items**
 
 ### **Example**
 

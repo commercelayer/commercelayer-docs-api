@@ -10,23 +10,23 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/line\_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**\_external\_price** | `boolean, value is 'false'` | Optional |
-| attributes.**\_update\_quantity** | `boolean, value is 'true'` | Optional |
-| attributes.**unit\_amount\_cents** | `integer` | Optional |
+| attributes.**_external_price** | `boolean, value is 'false'` | Optional |
+| attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
+| attributes.**unit_amount_cents** | `integer` | Optional |
 | attributes.**name** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
-| attributes.**item\_type** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
+| attributes.**item_type** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 | relationships.**item** | `object` | Optional |
@@ -145,6 +145,18 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/line_item_options",
           "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/line_item_options"
+        }
+      },
+      "shipment_line_items": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/shipment_line_items",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/shipment_line_items"
+        }
+      },
+      "stock_transfers": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/relationships/stock_transfers",
+          "related": "https://yourdomain.commercelayer.io/api/line_items/xYZkjABcde/stock_transfers"
         }
       }
     },

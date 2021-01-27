@@ -10,7 +10,7 @@ To create a new gift card recipient, send a `POST` request to the `/api/gift_car
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/gift_card_recipients**
 
 ### Arguments
 
@@ -18,9 +18,9 @@ To create a new gift card recipient, send a `POST` request to the `/api/gift_car
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**email** | `string` | Required |
-| attributes.**first\_name** | `string` | Optional |
-| attributes.**last\_name** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**first_name** | `string` | Optional |
+| attributes.**last_name** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |
@@ -76,6 +76,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/gift_card_recipients/xYZkjABcde/relationships/customer",
           "related": "https://yourdomain.commercelayer.io/api/gift_card_recipients/xYZkjABcde/customer"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/gift_card_recipients/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/gift_card_recipients/xYZkjABcde/attachments"
         }
       }
     },

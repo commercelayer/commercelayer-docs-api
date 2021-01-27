@@ -10,7 +10,7 @@ To create a new tax category, send a `POST` request to the `/api/tax_categories`
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/tax\_categories**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/tax_categories**
 
 ### Arguments
 
@@ -18,12 +18,12 @@ To create a new tax category, send a `POST` request to the `/api/tax_categories`
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**code** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**sku** | `object` | Required |
-| relationships.**tax\_calculator** | `object` | Required |
+| relationships.**tax_calculator** | `object` | Required |
 
 ### Example
 
@@ -95,6 +95,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/tax_calculator",
           "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/tax_calculator"
+        }
+      },
+      "attachments": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/relationships/attachments",
+          "related": "https://yourdomain.commercelayer.io/api/tax_categories/xYZkjABcde/attachments"
         }
       }
     },
