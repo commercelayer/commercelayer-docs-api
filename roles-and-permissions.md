@@ -26,20 +26,21 @@ For security reasons **sales channel** applications can read resource lists only
 | **Gift cards** | ✅ | ✅ | ✅ | ✅ | If "draft" \(single resource only\). |
 | **Gift card recipients** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **Orders** | ✅ | ✅ | ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
-| **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
-| **Line item options** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging line items associated with "draft", "pending" or "placed" orders and updated/deleted if belonging to line items associated with "draft" or "pending" orders \(single resource only\). |
+| **Line items** | ✅ | ✅ | ✅ | ✅ | Can be read if belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Line item options** | ✅ | ✅ | ✅ | ✅ | Can be read if belonging line items associated with "draft", "pending" or "placed" orders and updated/deleted if belonging to line items associated with "draft" or "pending" orders \(single resource only\). |
 | **Payment methods** |  | ✅ |  |  | Enabled payment methods associated with the market in scope. |
-| **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if  belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Payment sources** | ✅ | ✅ | ✅ | ✅ | Can be read if belonging to "draft", "pending" or "placed" orders and updated/deleted if belonging to "draft" or "pending" orders \(single resource only\). |
 | **Prices** |  | ✅ |  |  | Prices associated with the market price list. |
 | **Returns** | ✅ | ✅ | ✅ |  | Can be created for orders associated with the market in scope and updated if in "draft" status \(single resource only\). |
 | **Return Line Items** | ✅ | ✅ |  |  | Single resource only. |
-| **Shipments** |  | ✅ | ✅ |  | Can be read if  belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
-| **Shipment line items** |  | ✅ |  |  | Can be read if  belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
+| **Shipments** |  | ✅ | ✅ |  | Can be read if belonging to "draft", "pending" or "placed" orders and updated if belonging to "draft" or "pending" orders \(single resource only\). |
+| **Shipment line items** |  | ✅ |  |  | Can be read if belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
 | **Shipping methods** |  | ✅ |  |  | Enabled shipping methods associated with the market in scope. |
 | **SKUs** |  | ✅ |  |  | SKUs with stock items in the market inventory model and a price in the market price list. |
 | **SKU options** |  | ✅ |  |  | SKU options associated with the market in scope. |
 | **SKU lists** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **SKU list items** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Stock transfers** |  | ✅ |  |  | Can be read if belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
 
 #### Password
 

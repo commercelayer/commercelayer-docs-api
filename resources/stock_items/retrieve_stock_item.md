@@ -10,7 +10,7 @@ To fetch a single stock item, send a `GET` request to the `/api/stock_items/:id`
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_items/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_items/:id**
 
 ### **Example**
 

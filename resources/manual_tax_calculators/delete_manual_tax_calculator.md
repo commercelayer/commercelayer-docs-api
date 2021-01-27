@@ -10,7 +10,7 @@ To delete a manual tax calculator, send a `DELETE` request to the `/api/manual_t
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/manual_tax_calculators/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/manual\_tax\_calculators/:id**
 
 ### Example
 

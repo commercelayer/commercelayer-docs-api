@@ -10,7 +10,7 @@ To fetch a single stock transfer, send a `GET` request to the `/api/stock_transf
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_transfers/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stock\_transfers/:id**
 
 ### **Example**
 

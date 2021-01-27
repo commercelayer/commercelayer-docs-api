@@ -10,7 +10,7 @@ To delete an order, send a `DELETE` request to the `/api/orders/:id` endpoint, w
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/orders/:id**
 
 ### Example
 

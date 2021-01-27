@@ -10,7 +10,7 @@ To fetch a single parcel, send a `GET` request to the `/api/parcels/:id` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels/:id**
+**GET** https://yourdomain.commercelayer.io**/api/parcels/:id**
 
 ### **Example**
 

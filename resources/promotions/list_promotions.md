@@ -10,7 +10,7 @@ To fetch a collection of promotions, send a `GET` request to the `/api/promotion
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/promotions**
+**GET** https://yourdomain.commercelayer.io**/api/promotions**
 
 ### **Example**
 

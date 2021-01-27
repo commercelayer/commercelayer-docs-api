@@ -10,7 +10,7 @@ To fetch a collection of coupon codes promotion rules, send a `GET` request to t
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/coupon_codes_promotion_rules**
+**GET** https://yourdomain.commercelayer.io**/api/coupon\_codes\_promotion\_rules**
 
 ### **Example**
 
