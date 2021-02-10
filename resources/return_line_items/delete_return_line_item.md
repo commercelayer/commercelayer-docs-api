@@ -10,7 +10,7 @@ To delete a return line item, send a `DELETE` request to the `/api/return_line_i
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/return\_line\_items/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items/:id**
 
 ### Example
 

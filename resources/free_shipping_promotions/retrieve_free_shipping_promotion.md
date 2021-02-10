@@ -10,7 +10,7 @@ To fetch a single free shipping promotion, send a `GET` request to the `/api/fre
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/free\_shipping\_promotions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/free_shipping_promotions/:id**
 
 ### **Example**
 

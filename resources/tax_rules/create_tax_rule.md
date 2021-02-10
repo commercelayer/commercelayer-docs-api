@@ -10,7 +10,7 @@ To create a new tax rule, send a `POST` request to the `/api/tax_rules` endpoint
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/tax\_rules**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/tax_rules**
 
 ### Arguments
 
@@ -18,21 +18,21 @@ To create a new tax rule, send a `POST` request to the `/api/tax_rules` endpoint
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**tax\_rate** | `float` | Optional |
-| attributes.**country\_code\_regex** | `string` | Optional |
-| attributes.**not\_country\_code\_regex** | `string` | Optional |
-| attributes.**state\_code\_regex** | `string` | Optional |
-| attributes.**not\_state\_code\_regex** | `string` | Optional |
-| attributes.**zip\_code\_regex** | `string` | Optional |
-| attributes.**not\_zip\_code\_regex** | `string` | Optional |
-| attributes.**freight\_taxable** | `boolean` | Optional, default is 'false' |
-| attributes.**payment\_method\_taxable** | `boolean` | Optional, default is 'false' |
-| attributes.**gift\_card\_taxable** | `boolean` | Optional, default is 'false' |
-| attributes.**adjustment\_taxable** | `boolean` | Optional, default is 'false' |
+| attributes.**tax_rate** | `float` | Optional |
+| attributes.**country_code_regex** | `string` | Optional |
+| attributes.**not_country_code_regex** | `string` | Optional |
+| attributes.**state_code_regex** | `string` | Optional |
+| attributes.**not_state_code_regex** | `string` | Optional |
+| attributes.**zip_code_regex** | `string` | Optional |
+| attributes.**not_zip_code_regex** | `string` | Optional |
+| attributes.**freight_taxable** | `boolean` | Optional, default is 'false' |
+| attributes.**payment_method_taxable** | `boolean` | Optional, default is 'false' |
+| attributes.**gift_card_taxable** | `boolean` | Optional, default is 'false' |
+| attributes.**adjustment_taxable** | `boolean` | Optional, default is 'false' |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**manual\_tax\_calculator** | `object` | Required |
+| relationships.**manual_tax_calculator** | `object` | Required |
 
 ### Example
 

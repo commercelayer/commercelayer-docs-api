@@ -10,7 +10,7 @@ To fetch a collection of refunds, send a `GET` request to the `/api/refunds` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/refunds**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/refunds**
 
 ### **Example**
 
@@ -100,6 +100,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 The list of refunds can be sorted by the following attributes:
 
+* `number`
 * `amount_cents`
 * `id`
 * `created_at`

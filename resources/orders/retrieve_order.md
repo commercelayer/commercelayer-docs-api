@@ -10,7 +10,7 @@ To fetch a single order, send a `GET` request to the `/api/orders/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
 
 ### **Example**
 
@@ -117,12 +117,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "duty_amount_cents": "0",
       "duty_amount_float": "0.0",
       "formatted_duty_amount": "€0,00",
-      "authorization_amount_cents": "500",
-      "authorization_amount_float": "5.0",
-      "formatted_authorization_amount": "€5,00",
-      "authorization_balance_cents": "5200",
-      "authorization_balance_float": "52.0",
-      "formatted_authorization_balance": "€52,00",
       "skus_count": "2",
       "line_item_options_count": "1",
       "shipments_count": "1",
@@ -201,6 +195,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/shipments",
           "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/shipments"
+        }
+      },
+      "transactions": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/transactions",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/transactions"
         }
       },
       "authorizations": {

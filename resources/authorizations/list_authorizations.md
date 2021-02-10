@@ -10,7 +10,7 @@ To fetch a collection of authorizations, send a `GET` request to the `/api/autho
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/authorizations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/authorizations**
 
 ### **Example**
 
@@ -120,6 +120,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 The list of authorizations can be sorted by the following attributes:
 
+* `number`
 * `amount_cents`
 * `id`
 * `created_at`

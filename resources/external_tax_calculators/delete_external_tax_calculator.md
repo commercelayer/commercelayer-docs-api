@@ -10,7 +10,7 @@ To delete an external tax calculator, send a `DELETE` request to the `/api/exter
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators/:id**
 
 ### Example
 

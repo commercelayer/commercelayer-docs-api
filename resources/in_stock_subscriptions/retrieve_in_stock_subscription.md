@@ -10,7 +10,7 @@ To fetch a single in stock subscription, send a `GET` request to the `/api/in_st
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/in\_stock\_subscriptions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/in_stock_subscriptions/:id**
 
 ### **Example**
 

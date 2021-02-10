@@ -10,7 +10,7 @@ To fetch a single stock location, send a `GET` request to the `/api/stock_locati
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_locations/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations/:id**
 
 ### **Example**
 

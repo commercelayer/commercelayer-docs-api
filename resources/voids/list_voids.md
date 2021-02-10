@@ -10,7 +10,7 @@ To fetch a collection of voids, send a `GET` request to the `/api/voids` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/voids**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/voids**
 
 ### **Example**
 
@@ -100,6 +100,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 The list of voids can be sorted by the following attributes:
 
+* `number`
 * `amount_cents`
 * `id`
 * `created_at`
