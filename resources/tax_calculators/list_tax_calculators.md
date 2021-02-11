@@ -10,7 +10,7 @@ To fetch a collection of tax calculators, send a `GET` request to the `/api/tax_
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/tax\_calculators**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/tax_calculators**
 
 ### **Example**
 

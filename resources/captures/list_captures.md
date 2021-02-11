@@ -10,7 +10,7 @@ To fetch a collection of captures, send a `GET` request to the `/api/captures` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/captures**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/captures**
 
 ### **Example**
 
@@ -112,6 +112,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 
 The list of captures can be sorted by the following attributes:
 
+* `number`
 * `amount_cents`
 * `id`
 * `created_at`

@@ -10,7 +10,7 @@ To fetch a single customer, send a `GET` request to the `/api/customers/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/customers/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers/:id**
 
 ### **Example**
 

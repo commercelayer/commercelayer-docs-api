@@ -10,7 +10,7 @@ To fetch a collection of stock transfers, send a `GET` request to the `/api/stoc
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_transfers**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_transfers**
 
 ### **Example**
 

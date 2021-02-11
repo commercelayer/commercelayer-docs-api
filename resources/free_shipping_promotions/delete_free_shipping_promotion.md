@@ -10,7 +10,7 @@ To delete a free shipping promotion, send a `DELETE` request to the `/api/free_s
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/free\_shipping\_promotions/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/free_shipping_promotions/:id**
 
 ### Example
 

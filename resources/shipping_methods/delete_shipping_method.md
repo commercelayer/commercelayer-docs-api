@@ -10,7 +10,7 @@ To delete a shipping method, send a `DELETE` request to the `/api/shipping_metho
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/shipping\_methods/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods/:id**
 
 ### Example
 
