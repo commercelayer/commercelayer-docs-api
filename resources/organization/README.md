@@ -2,18 +2,18 @@
 description: The organization object and its fields
 ---
 
-# Organizations
+# Organization
 
 Your business company is identified by the related organization. This is a singleton API, meaning only the organization within the current scope it’s retrieved. No need to specify the resource ID.
 
 
 ### The organization object
 
-An **organization** object is returned as part of the response body of each successful list API call.
+The **organization** object is returned as part of the response body of each successful retrieve API call.
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| **type** | `string` | `organizations` |
+| **type** | `string` | `organization` |
 | **id** | `string` | The organization unique identifier |
 | links.**self** | `string` | The organization endpoint URL |
 | attributes.**name** | `string` | The organization's internal name. |
@@ -22,8 +22,9 @@ An **organization** object is returned as part of the response body of each succ
 | attributes.**logo_url** | `string` | The URL to the organization's logo. |
 | attributes.**favicon_url** | `string` | The URL to the organization's favicon. |
 | attributes.**primary_color** | `string` | The organization's primary color. |
-| attributes.**ga_property_id** | `string` | The organization's Google Analytics ID. |
-| attributes.**ga_property_id_test** | `string` | The organization's Google Analytics ID for test. |
+| attributes.**contrast_color** | `string` | The organization's contrast color. |
+| attributes.**gtm_id** | `string` | The organization's Google Tag Manager ID. |
+| attributes.**gtm_id_test** | `string` | The organization's Google Tag Manager ID for test. |
 | attributes.**discount_disabled** | `boolean` | Indicates if organization has discount disabled. |
 | attributes.**account_disabled** | `boolean` | Indicates if organization has account disabled. |
 | attributes.**acceptance_disabled** | `boolean` | Indicates if organization has acceptance disabled. |

@@ -2,7 +2,7 @@
 description: The SKU list promotion rule object and its fields
 ---
 
-# Sku list promotion rules
+# SKU list promotion rules
 
 
 

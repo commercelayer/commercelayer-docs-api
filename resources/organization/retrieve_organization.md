@@ -4,13 +4,13 @@ description: How to fetch the organization via API
 
 # Retrieve the organization
 
-To fetch the organization, send a `GET` request to the `/api/organizations` endpoint.
+To fetch the organization, send a `GET` request to the `/api/organization` endpoint.
 
 {% page-ref page="../../fetching-resources.md" %}
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/organizations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/organization**
 
 ### **Example**
 
@@ -20,7 +20,7 @@ The following request fetches the organization in scope:
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/api/organizations/ \
+  https://yourdomain.commercelayer.io/api/organization/ \
   -H 'Accept: application/vnd.api+json' \
   -H 'Authorization: Bearer your-access-token'
 ```
@@ -34,9 +34,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
   "data": {
     "id": "xYZkjABcde",
     "type": "organizations",
-    "links": {
-      "self": "https://yourdomain.commercelayer.io/api/organizations/xYZkjABcde"
-    },
     "attributes": {
       "name": "The Blue Brand",
       "slug": "the-blue-brand",
@@ -44,8 +41,9 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "logo_url": "https://bluebrand.com/img/logo.svg",
       "favicon_url": "https://bluebrand.com/img/favicon.ico",
       "primary_color": "#C8984E",
-      "ga_property_id": "UA-10876-1",
-      "ga_property_id_test": "UA-10876-1",
+      "contrast_color": "#FFFFCC",
+      "gtm_id": "UA-10876-1",
+      "gtm_id_test": "UA-10876-1",
       "discount_disabled": "false",
       "account_disabled": "false",
       "acceptance_disabled": "false",
