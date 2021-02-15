@@ -1,0 +1,3 @@
+Commerce Layer provides a promotional engine built on top of two main resources: [promotions](https://docs.commercelayer.io/api/resources/promotions) and promotion rules. If one or more promotion rules are defined, the promotion is triggered only when it matches all of them. Otherwise, if no promotion rule is associated with an active promotion, the related discount is applied to all the orders of the market in scope.
+
+At the moment [order amount](https://docs.commercelayer.io/api/resources/order_amount_promotion_rules), [SKU list](https://docs.commercelayer.io/api/resources/sku_list_promotion_rules), and [coupon code](https://docs.commercelayer.io/api/resources/coupon_codes_promotion_rules) promotion rules are available (more to come).
