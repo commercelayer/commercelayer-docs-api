@@ -4,6 +4,7 @@ description: The SKU list promotion rule object and its fields
 
 # SKU list promotion rules
 
+Commerce Layer provides a promotional engine built on top of two main resources: [promotions](https://docs.commercelayer.io/api/resources/promotions) and [promotion rules](https://docs.commercelayer.io/api/resources/promotion_rules). SKU list promotions rules are used to trigger the associated promotion only if an order contains any (default) or all (set the `all_skus` attribute to `true`) of the SKUs within the specified list.
 
 
 ### The SKU list promotion rule object
