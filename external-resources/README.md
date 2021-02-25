@@ -49,7 +49,7 @@ In case of success, you can add additional info by populating the response`metad
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
 	"data": {
 	  ...
 	  "metadata": {
@@ -65,7 +65,7 @@ In case of error, you can populate the error object with any relevant `code` and
 
 ```bash
 {
-  "success": "false",
+  "success": false,
   ...
   "error": {
     "code": "YOUR-ERROR-CODE",

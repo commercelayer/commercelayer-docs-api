@@ -83,7 +83,7 @@ The successful response must be a JSON object, returning a transaction token \(e
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -100,7 +100,7 @@ On error, the response must be a JSON object containing a transaction token \(e.
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -180,7 +180,7 @@ The successful response must be a JSON object, returning a transaction token \(e
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -197,7 +197,7 @@ On error, the response must be a JSON object containing a transaction token \(e.
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -277,7 +277,7 @@ The successful response must be a JSON object, returning a transaction token \(e
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -294,7 +294,7 @@ On error, the response must be a JSON object containing a transaction token \(e.
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 12900,
@@ -374,7 +374,7 @@ The successful response must be a JSON object, returning a transaction token \(e
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 9900,
@@ -391,7 +391,7 @@ On error, the response must be a JSON object containing a transaction token \(e.
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "data": {
     "transaction_token": "your-external-transaction-token",
     "amount_cents": 9900,

@@ -54,7 +54,7 @@ The successful response must be a JSON object, returning the discount computed b
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "name": "My External Promotion",
     "discount_cents": 1500,
@@ -71,7 +71,7 @@ On error, the response must be a JSON object containing an error code and an err
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "error": {
     "code": "YOUR-ERROR-CODE",
     "message": "Your error message"

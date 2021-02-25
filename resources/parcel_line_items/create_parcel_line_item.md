@@ -10,20 +10,20 @@ To create a new parcel line item, send a `POST` request to the `/api/parcel_line
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items**
+**POST** https://yourdomain.commercelayer.io**/api/parcel\_line\_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**parcel** | `object` | Required |
-| relationships.**shipment_line_item** | `object` | Required |
+| relationships.**shipment\_line\_item** | `object` | Required |
 
 ### Example
 

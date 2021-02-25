@@ -79,7 +79,7 @@ The successful response must be a JSON object, returning the unit price computed
 
 ```javascript
 {
-  "success": "true",
+  "success": true,
   "data": {
     "sku_code": "TSHIRTMM000000FFFFFFXLXX",
     "unit_amount_cents": 4900,
@@ -96,7 +96,7 @@ On error, the response must be a JSON object containing an error code and an err
 
 ```javascript
 {
-  "success": "false",
+  "success": false,
   "error": {
     "code": "YOUR-ERROR-CODE",
     "message": "Your error message"

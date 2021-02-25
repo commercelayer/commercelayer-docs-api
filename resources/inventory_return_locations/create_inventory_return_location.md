@@ -10,7 +10,7 @@ To create a new inventory return location, send a `POST` request to the `/api/in
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations**
+**POST** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations**
 
 ### Arguments
 
@@ -19,10 +19,10 @@ To create a new inventory return location, send a `POST` request to the `/api/in
 | **type** | `string` | Required |
 | attributes.**priority** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock_location** | `object` | Required |
-| relationships.**inventory_model** | `object` | Required |
+| relationships.**stock\_location** | `object` | Required |
+| relationships.**inventory\_model** | `object` | Required |
 
 ### Example
 

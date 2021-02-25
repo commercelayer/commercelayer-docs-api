@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/in_stock_subscriptions/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/in\_stock\_subscriptions/:id**
 
 ### Arguments
 
@@ -20,11 +20,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
-| attributes.**_activate** | `boolean, value is 'true'` | Optional |
-| attributes.**_deactivate** | `boolean, value is 'true'` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
+| attributes.**\_activate** | `boolean, value is 'true'` | Optional |
+| attributes.**\_deactivate** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Optional |
 | relationships.**customer** | `object` | Optional |

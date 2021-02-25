@@ -429,3 +429,4 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
+
