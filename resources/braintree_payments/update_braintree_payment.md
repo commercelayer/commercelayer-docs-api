@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/braintree\_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments/:id**
 
 ### Arguments
 
@@ -20,10 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment\_method\_nonce** | `string` | Optional |
+| attributes.**payment_method_nonce** | `string` | Optional |
+| attributes.**payment_id** | `string` | Optional |
+| attributes.**local** | `boolean` | Optional |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Optional |
 
@@ -65,6 +67,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     "attributes": {
       "client_token": "xxxx.yyyy.zzzz",
       "payment_method_nonce": "xxxx.yyyy.zzzz",
+      "payment_id": "xxxx.yyyy.zzzz",
+      "local": "true",
       "options": {
         "customer_id": "1234567890"
       },
@@ -81,6 +85,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/order",
           "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/order"
+        }
+      },
+      "payment_gateway": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/payment_gateway",
+          "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/payment_gateway"
         }
       }
     },

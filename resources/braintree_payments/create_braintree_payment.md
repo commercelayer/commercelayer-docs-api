@@ -10,16 +10,18 @@ To create a new braintree payment, send a `POST` request to the `/api/braintree_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/braintree\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
+| attributes.**payment_id** | `string` | Optional |
+| attributes.**local** | `boolean` | Optional |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -65,6 +67,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "attributes": {
       "client_token": "xxxx.yyyy.zzzz",
       "payment_method_nonce": "xxxx.yyyy.zzzz",
+      "payment_id": "xxxx.yyyy.zzzz",
+      "local": "true",
       "options": {
         "customer_id": "1234567890"
       },
@@ -81,6 +85,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/order",
           "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/order"
+        }
+      },
+      "payment_gateway": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/payment_gateway",
+          "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/payment_gateway"
         }
       }
     },

@@ -10,7 +10,7 @@ To fetch a single paypal payment, send a `GET` request to the `/api/paypal_payme
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/paypal\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_payments/:id**
 
 ### **Example**
 
@@ -59,6 +59,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/order",
           "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/order"
+        }
+      },
+      "payment_gateway": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/relationships/payment_gateway",
+          "related": "https://yourdomain.commercelayer.io/api/paypal_payments/xYZkjABcde/payment_gateway"
         }
       }
     },

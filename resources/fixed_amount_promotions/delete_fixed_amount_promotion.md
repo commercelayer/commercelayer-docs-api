@@ -10,7 +10,7 @@ To delete a fixed amount promotion, send a `DELETE` request to the `/api/fixed_a
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/fixed\_amount\_promotions/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/fixed_amount_promotions/:id**
 
 ### Example
 

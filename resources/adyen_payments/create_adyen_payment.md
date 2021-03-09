@@ -10,7 +10,7 @@ To create a new adyen payment, send a `POST` request to the `/api/adyen_payments
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/adyen\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new adyen payment, send a `POST` request to the `/api/adyen_payments
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -79,6 +79,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde/relationships/order",
           "related": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde/order"
+        }
+      },
+      "payment_gateway": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde/relationships/payment_gateway",
+          "related": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde/payment_gateway"
         }
       }
     },

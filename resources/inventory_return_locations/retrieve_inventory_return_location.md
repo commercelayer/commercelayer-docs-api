@@ -10,7 +10,7 @@ To fetch a single inventory return location, send a `GET` request to the `/api/i
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations/:id**
 
 ### **Example**
 

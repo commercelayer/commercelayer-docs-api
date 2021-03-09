@@ -10,7 +10,7 @@ To fetch a collection of stripe payments, send a `GET` request to the `/api/stri
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stripe\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments**
 
 ### **Example**
 
@@ -57,6 +57,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/relationships/order",
             "related": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/order"
+          }
+        },
+        "payment_gateway": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/relationships/payment_gateway",
+            "related": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/payment_gateway"
           }
         }
       },

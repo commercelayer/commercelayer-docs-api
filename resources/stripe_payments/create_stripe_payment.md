@@ -10,7 +10,7 @@ To create a new stripe payment, send a `POST` request to the `/api/stripe_paymen
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/stripe\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments**
 
 ### Arguments
 
@@ -19,7 +19,7 @@ To create a new stripe payment, send a `POST` request to the `/api/stripe_paymen
 | **type** | `string` | Required |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -81,6 +81,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/relationships/order",
           "related": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/order"
+        }
+      },
+      "payment_gateway": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/relationships/payment_gateway",
+          "related": "https://yourdomain.commercelayer.io/api/stripe_payments/xYZkjABcde/payment_gateway"
         }
       }
     },

@@ -10,7 +10,7 @@ To fetch a collection of tax rules, send a `GET` request to the `/api/tax_rules`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/tax\_rules**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/tax_rules**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To fetch the organization, send a `GET` request to the `/api/organization` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/organization**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/organization**
 
 ### **Example**
 
@@ -42,8 +42,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "favicon_url": "https://bluebrand.com/img/favicon.ico",
       "primary_color": "#C8984E",
       "contrast_color": "#FFFFCC",
-      "gtm_id": "UA-10876-1",
-      "gtm_id_test": "UA-10876-1",
+      "gtm_id": "GTM-5FJXX6",
+      "gtm_id_test": "GTM-5FJXX7",
       "discount_disabled": "false",
       "account_disabled": "false",
       "acceptance_disabled": "false",

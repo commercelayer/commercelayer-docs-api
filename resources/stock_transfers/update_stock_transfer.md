@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/stock\_transfers/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/stock_transfers/:id**
 
 ### Arguments
 
@@ -20,18 +20,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
-| attributes.**\_upcoming** | `boolean, value is 'true'` | Optional |
-| attributes.**\_picking** | `boolean, value is 'true'` | Optional |
-| attributes.**\_in\_transit** | `boolean, value is 'true'` | Optional |
-| attributes.**\_complete** | `boolean, value is 'true'` | Optional |
-| attributes.**\_cancel** | `boolean, value is 'true'` | Optional |
+| attributes.**sku_code** | `string` | Optional |
+| attributes.**_upcoming** | `boolean, value is 'true'` | Optional |
+| attributes.**_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**_in_transit** | `boolean, value is 'true'` | Optional |
+| attributes.**_complete** | `boolean, value is 'true'` | Optional |
+| attributes.**_cancel** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**sku** | `object` | Optional |
-| relationships.**origin\_stock\_location** | `object` | Optional |
-| relationships.**destination\_stock\_location** | `object` | Optional |
+| relationships.**origin_stock_location** | `object` | Optional |
+| relationships.**destination_stock_location** | `object` | Optional |
 
 ### Example
 

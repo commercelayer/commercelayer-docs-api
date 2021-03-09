@@ -10,7 +10,7 @@ To fetch a collection of returns, send a `GET` request to the `/api/returns` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/returns**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns**
 
 ### **Example**
 
@@ -44,8 +44,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "customer_email": "john@example.com",
         "skus_count": "2",
         "approved_at": "2018-01-01T12:00:00.000Z",
-        "rejected_at": "2018-01-01T12:00:00.000Z",
+        "cancelled_at": "2018-01-01T12:00:00.000Z",
         "shipped_at": "2018-01-01T12:00:00.000Z",
+        "rejected_at": "2018-01-01T12:00:00.000Z",
         "received_at": "2018-01-01T12:00:00.000Z",
         "archived_at": "2018-01-01T12:00:00.000Z",
         "created_at": "2018-01-01T12:00:00.000Z",
@@ -130,8 +131,9 @@ The list of returns can be sorted by the following attributes:
 
 * `status`
 * `approved_at`
-* `rejected_at`
+* `cancelled_at`
 * `shipped_at`
+* `rejected_at`
 * `received_at`
 * `archived_at`
 * `id`

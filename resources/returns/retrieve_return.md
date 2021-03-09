@@ -10,7 +10,7 @@ To fetch a single return, send a `GET` request to the `/api/returns/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/returns/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns/:id**
 
 ### **Example**
 
@@ -43,8 +43,9 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "customer_email": "john@example.com",
       "skus_count": "2",
       "approved_at": "2018-01-01T12:00:00.000Z",
-      "rejected_at": "2018-01-01T12:00:00.000Z",
+      "cancelled_at": "2018-01-01T12:00:00.000Z",
       "shipped_at": "2018-01-01T12:00:00.000Z",
+      "rejected_at": "2018-01-01T12:00:00.000Z",
       "received_at": "2018-01-01T12:00:00.000Z",
       "archived_at": "2018-01-01T12:00:00.000Z",
       "created_at": "2018-01-01T12:00:00.000Z",

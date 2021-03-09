@@ -10,7 +10,7 @@ To fetch a collection of braintree payments, send a `GET` request to the `/api/b
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/braintree\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments**
 
 ### **Example**
 
@@ -41,6 +41,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "attributes": {
         "client_token": "xxxx.yyyy.zzzz",
         "payment_method_nonce": "xxxx.yyyy.zzzz",
+        "payment_id": "xxxx.yyyy.zzzz",
+        "local": "true",
         "options": {
           "customer_id": "1234567890"
         },
@@ -57,6 +59,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/order",
             "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/order"
+          }
+        },
+        "payment_gateway": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/relationships/payment_gateway",
+            "related": "https://yourdomain.commercelayer.io/api/braintree_payments/xYZkjABcde/payment_gateway"
           }
         }
       },
