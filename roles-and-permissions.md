@@ -40,6 +40,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **SKU options** |  | ✅ |  |  | SKU options associated with the market in scope. |
 | **SKU lists** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **SKU list items** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Stock items** |  | ✅ |  |  | SKU items belonging to the stock locations associated with the market in scope. |
 | **Stock transfers** |  | ✅ |  |  | Can be read if belonging to shipments associated with "draft", "pending" or "placed" orders \(single resource only\). |
 
 #### Password
