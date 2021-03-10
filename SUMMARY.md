@@ -51,6 +51,8 @@
   * [Retrieve an adyen payment](resources/adyen_payments/retrieve_adyen_payment.md)
   * [Update an adyen payment](resources/adyen_payments/update_adyen_payment.md)
   * [Delete an adyen payment](resources/adyen_payments/delete_adyen_payment.md)
+* [Applications](resources/application/README.md)
+  * [Retrieve the application](resources/application/retrieve_application.md)
 * [Attachments](resources/attachments/README.md)
   * [Create an attachment](resources/attachments/create_attachment.md)
   * [List all attachments](resources/attachments/list_attachments.md)
