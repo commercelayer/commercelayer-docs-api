@@ -40,7 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
       "status": "draft",
-      "quantity": "2",
+      "quantity": 2,
       "completed_at": "2018-01-01T12:00:00.000Z",
       "cancelled_at": "2018-01-01T12:00:00.000Z",
       "created_at": "2018-01-01T12:00:00.000Z",

@@ -70,7 +70,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "metadata": {
         "foo": "bar"
       },
-      "require_capture": "true"
+      "require_capture": true
     },
     "relationships": {
       "payment_methods": {

@@ -89,7 +89,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "facebook_pixel_id": "1234567890",
       "checkout_url": "https://checkout.yourbrand.com/:order_id",
       "external_prices_url": "https://external_prices.yourbrand.com",
-      "private": "true",
+      "private": true,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

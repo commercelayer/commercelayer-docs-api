@@ -54,9 +54,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             "name": "Bar"
           }
         ],
-        "errors_count": "3",
-        "warnings_count": "1",
-        "destroyed_count": "99",
+        "errors_count": 3,
+        "warnings_count": 1,
+        "destroyed_count": 99,
         "errors_log": [
           {
             "code:ABC": {
@@ -73,7 +73,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             ]
           }
         ],
-        "cleanup_records": "true",
+        "cleanup_records": true,
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

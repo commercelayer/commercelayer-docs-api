@@ -64,8 +64,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "self": "https://yourdomain.commercelayer.io/api/inventory_stock_locations/xYZkjABcde"
     },
     "attributes": {
-      "priority": "1",
-      "on_hold": "false",
+      "priority": 1,
+      "on_hold": false,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

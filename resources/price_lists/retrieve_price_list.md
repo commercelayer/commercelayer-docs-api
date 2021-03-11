@@ -40,7 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "attributes": {
       "name": "EU Price list",
       "currency_code": "EUR",
-      "tax_included": "true",
+      "tax_included": true,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

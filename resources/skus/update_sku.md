@@ -73,8 +73,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "name": "Black Men T-shirt with White Logo (XL)",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
-      "pieces_per_pack": "6",
-      "weight": "300",
+      "pieces_per_pack": 6,
+      "weight": 300.0,
       "unit_of_weight": "gr",
       "hs_tariff_number": "4901.91.0020",
       "inventory": {

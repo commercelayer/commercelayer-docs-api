@@ -71,7 +71,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "number": 1234,
       "name": "Primary warehouse",
       "label_format": "PDF",
-      "suppress_etd": "false",
+      "suppress_etd": false,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

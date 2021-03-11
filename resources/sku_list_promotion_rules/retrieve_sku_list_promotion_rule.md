@@ -45,7 +45,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "metadata": {
         "foo": "bar"
       },
-      "all_skus": "true"
+      "all_skus": true
     },
     "relationships": {
       "promotion": {

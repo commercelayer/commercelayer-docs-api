@@ -42,7 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "callback_url": "https://yourapp.com/webhooks",
       "include_resources": "[customer, shipping_address, billing_address]",
       "circuit_state": "closed",
-      "circuit_failure_count": "5",
+      "circuit_failure_count": 5,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -39,17 +39,17 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "name": "Fixed 22%",
-      "tax_rate": "0.22",
+      "tax_rate": 0.22,
       "country_code_regex": "AT|BE|BG|CZ|DK|EE|DE|HU|LV|LT",
       "not_country_code_regex": "AT|BE|BG|CZ|DK|EE|DE",
       "state_code_regex": "A[KLRZ]|C[AOT]|D[CE]|FL",
       "not_state_code_regex": "A[KLRZ]|C[AOT]",
       "zip_code_regex": "(?i)(JE1|JE2|JE3|JE4|JE5)",
       "not_zip_code_regex": "(?i)(JE1|JE2|JE3)",
-      "freight_taxable": "false",
-      "payment_method_taxable": "false",
-      "gift_card_taxable": "false",
-      "adjustment_taxable": "false",
+      "freight_taxable": false,
+      "payment_method_taxable": false,
+      "gift_card_taxable": false,
+      "adjustment_taxable": false,
       "breakdown": {
         "41": {
           "tax_rate": 0.22

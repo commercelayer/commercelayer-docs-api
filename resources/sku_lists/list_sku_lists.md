@@ -42,7 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "name": "Personal list",
         "slug": "personal-list-1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "manual": "false",
+        "manual": false,
         "sku_code_regex": "^(A|B).*$",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",

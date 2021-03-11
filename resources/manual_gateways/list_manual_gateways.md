@@ -47,7 +47,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "metadata": {
           "foo": "bar"
         },
-        "require_capture": "true"
+        "require_capture": true
       },
       "relationships": {
         "payment_methods": {

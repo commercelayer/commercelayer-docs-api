@@ -82,9 +82,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "name": "Personal promotion",
       "starts_at": "2018-01-01T12:00:00.000Z",
       "expires_at": "2018-01-02T12:00:00.000Z",
-      "total_usage_limit": "5",
-      "total_usage_count": "2",
-      "active": "true",
+      "total_usage_limit": 5,
+      "total_usage_count": 2,
+      "active": true,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -92,7 +92,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "metadata": {
         "foo": "bar"
       },
-      "percentage": "10"
+      "percentage": 10
     },
     "relationships": {
       "market": {

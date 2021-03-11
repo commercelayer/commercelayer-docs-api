@@ -76,7 +76,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
-      "quantity": null,
+      "quantity": 0,
       "return_reason": {
         "size": "was wrong"
       },

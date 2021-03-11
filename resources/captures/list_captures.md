@@ -41,10 +41,10 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "attributes": {
         "number": null,
         "currency_code": "EUR",
-        "amount_cents": "1500",
-        "amount_float": "15.0",
+        "amount_cents": 1500,
+        "amount_float": 15.0,
         "formatted_amount": "€15,00",
-        "succeeded": "false",
+        "succeeded": false,
         "message": null,
         "error_code": null,
         "error_detail": null,
@@ -57,11 +57,11 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "metadata": {
           "foo": "bar"
         },
-        "refund_amount_cents": "500",
-        "refund_amount_float": "5.0",
+        "refund_amount_cents": 500,
+        "refund_amount_float": 5.0,
         "formatted_refund_amount": "€5,00",
-        "refund_balance_cents": "1000",
-        "refund_balance_float": "10.0",
+        "refund_balance_cents": 1000,
+        "refund_balance_float": 10.0,
         "formatted_refund_balance": "€10,00"
       },
       "relationships": {

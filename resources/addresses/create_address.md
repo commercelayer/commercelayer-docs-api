@@ -81,7 +81,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/addresses/xYZkjABcde"
     },
     "attributes": {
-      "business": "false",
+      "business": false,
       "first_name": "John",
       "last_name": "Smith",
       "company": "The Red Brand Inc.",
@@ -97,10 +97,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "name": "John Smith, 2883 Geraldine Lane Apt.23, 10013 New York NY (US) (212) 646-338-1228",
       "email": "john@example.com",
       "notes": "Please ring the bell twice",
-      "lat": "40.6971494",
-      "lng": "-74.2598672",
-      "is_localized": "true",
-      "is_geocoded": "true",
+      "lat": 40.6971494,
+      "lng": -74.2598672,
+      "is_localized": true,
+      "is_geocoded": true,
       "provider_name": "google",
       "map_url": "https://www.google.com/maps/search/?api=1&query=40.6971494,-74.2598672",
       "static_map_url": "https://maps.googleapis.com/maps/api/staticmap?center=40.6971494,-74.2598672&size=640x320&zoom=15",

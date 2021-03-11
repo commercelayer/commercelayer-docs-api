@@ -66,7 +66,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "metadata": {
         "foo": "bar"
       },
-      "require_capture": "true"
+      "require_capture": true
     },
     "relationships": {
       "payment_methods": {

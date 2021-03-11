@@ -66,7 +66,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "number": "#1234/R/001",
       "status": "draft",
       "customer_email": "john@example.com",
-      "skus_count": "2",
+      "skus_count": 2,
       "approved_at": "2018-01-01T12:00:00.000Z",
       "cancelled_at": "2018-01-01T12:00:00.000Z",
       "shipped_at": "2018-01-01T12:00:00.000Z",

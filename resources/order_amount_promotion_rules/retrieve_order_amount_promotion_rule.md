@@ -45,8 +45,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "metadata": {
         "foo": "bar"
       },
-      "order_amount_cents": "1000",
-      "order_amount_float": "10.0",
+      "order_amount_cents": 1000,
+      "order_amount_float": 10.0,
       "formatted_order_amount": "€10,00"
     },
     "relationships": {

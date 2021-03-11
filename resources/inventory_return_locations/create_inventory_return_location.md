@@ -73,7 +73,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/inventory_return_locations/xYZkjABcde"
     },
     "attributes": {
-      "priority": "1",
+      "priority": 1,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -68,7 +68,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "client_token": "xxxx.yyyy.zzzz",
       "payment_method_nonce": "xxxx.yyyy.zzzz",
       "payment_id": "xxxx.yyyy.zzzz",
-      "local": "true",
+      "local": true,
       "options": {
         "customer_id": "1234567890"
       },

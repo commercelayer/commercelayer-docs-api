@@ -79,16 +79,16 @@ On success, the API responds with a `201 Created` status code, returning the cre
     },
     "attributes": {
       "name": "Embossing",
-      "quantity": "2",
+      "quantity": 2,
       "currency_code": "EUR",
-      "unit_amount_cents": "990",
-      "unit_amount_float": "9.9",
+      "unit_amount_cents": 990,
+      "unit_amount_float": 9.9,
       "formatted_unit_amount": "€9,90",
-      "total_amount_cents": "1880",
-      "total_amount_float": "18.8",
+      "total_amount_cents": 1880,
+      "total_amount_float": 18.8,
       "formatted_total_amount": "€18,80",
-      "delay_hours": "48",
-      "delay_days": "2",
+      "delay_hours": 48,
+      "delay_days": 2,
       "options": {
         "embossing_text": "Happy Birthday!"
       },

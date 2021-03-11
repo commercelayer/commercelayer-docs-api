@@ -41,8 +41,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       "attributes": {
         "name": "Additional service",
         "currency_code": "EUR",
-        "amount_cents": "1500",
-        "amount_float": "15.0",
+        "amount_cents": 1500,
+        "amount_float": 15.0,
         "formatted_amount": "€15,00",
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",

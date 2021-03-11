@@ -71,7 +71,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "metadata": {
         "foo": "bar"
       },
-      "all_skus": "true"
+      "all_skus": true
     },
     "relationships": {
       "promotion": {

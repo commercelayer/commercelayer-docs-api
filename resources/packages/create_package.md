@@ -70,9 +70,9 @@ On success, the API responds with a `201 Created` status code, returning the cre
     "attributes": {
       "name": "Large (60x40x30)",
       "code": "YYYY 2000",
-      "length": "40.0",
-      "width": "40.0",
-      "height": "25.0",
+      "length": 40.0,
+      "width": 40.0,
+      "height": 25.0,
       "unit_of_length": "gr",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",

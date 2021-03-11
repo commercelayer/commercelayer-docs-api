@@ -39,8 +39,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "code": "04371af2-70b3-48d7-8f4e-316b374224c3",
-      "usage_limit": "50",
-      "usage_count": "20",
+      "usage_limit": 50,
+      "usage_count": 20,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
