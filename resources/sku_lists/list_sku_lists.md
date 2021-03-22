@@ -6,11 +6,9 @@ description: How to fetch a collection of SKU lists via API
 
 To fetch a collection of SKU lists, send a `GET` request to the `/api/sku_lists` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_lists**
+**GET** https://yourdomain.commercelayer.io**/api/sku\_lists**
 
 ### **Example**
 
@@ -87,8 +85,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

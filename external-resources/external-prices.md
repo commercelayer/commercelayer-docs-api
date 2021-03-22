@@ -22,9 +22,9 @@ curl -X POST \
   "data": {
     "type": "line_items",
     "attributes": {
-      "quantity": "2",
+      "quantity": 2,
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "_external_price": "true"
+      "_external_price": true
     },
     "relationships": {
       "order": {
@@ -49,21 +49,21 @@ The request payload contains the line item and includes the associated order:
 ```javascript
 {
   data: {
-    id: 'xYZkjABcde',
-    type: 'line_items',
+    id: "xYZkjABcde",
+    type: "line_items",
     links: { ... },
     attributes: {
-      "quantity": "2",
+      "quantity": 2,
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "_external_price": "true"
+      "_external_price": true
     },
     relationships: { ... },
     meta: { ... }
   },
   included: [
     {
-      id: 'wBXVhKzrnq',
-      type: 'orders',
+      id: "wBXVhKzrnq",
+      type: "orders",
       links: { ... },
       attributes: { ... },
       relationships: { ... },

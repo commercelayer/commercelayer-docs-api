@@ -10,7 +10,7 @@ To fetch a single adyen gateway, send a `GET` request to the `/api/adyen_gateway
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/adyen_gateways/:id**
+**GET** https://yourdomain.commercelayer.io**/api/adyen\_gateways/:id**
 
 ### **Example**
 

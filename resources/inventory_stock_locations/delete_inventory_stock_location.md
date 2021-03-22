@@ -10,7 +10,7 @@ To delete an inventory stock location, send a `DELETE` request to the `/api/inve
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/inventory_stock_locations/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/inventory\_stock\_locations/:id**
 
 ### Example
 

@@ -6,11 +6,9 @@ description: How to fetch a collection of customer payment sources via API
 
 To fetch a collection of customer payment sources, send a `GET` request to the `/api/customer_payment_sources` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_payment_sources**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_payment\_sources**
 
 ### **Example**
 
@@ -85,8 +83,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

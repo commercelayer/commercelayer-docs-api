@@ -6,11 +6,9 @@ description: How to fetch a collection of shipping zones via API
 
 To fetch a collection of shipping zones, send a `GET` request to the `/api/shipping_zones` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_zones**
+**GET** https://yourdomain.commercelayer.io**/api/shipping\_zones**
 
 ### **Example**
 
@@ -83,8 +81,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

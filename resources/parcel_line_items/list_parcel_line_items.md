@@ -6,11 +6,9 @@ description: How to fetch a collection of parcel line items via API
 
 To fetch a collection of parcel line items, send a `GET` request to the `/api/parcel_line_items` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items**
+**GET** https://yourdomain.commercelayer.io**/api/parcel\_line\_items**
 
 ### **Example**
 
@@ -84,8 +82,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

@@ -10,18 +10,18 @@ To create a new braintree payment, send a `POST` request to the `/api/braintree_
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments**
+**POST** https://yourdomain.commercelayer.io**/api/braintree\_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment_id** | `string` | Optional |
+| attributes.**payment\_id** | `string` | Optional |
 | attributes.**local** | `boolean` | Optional |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 

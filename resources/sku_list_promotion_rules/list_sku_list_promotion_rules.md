@@ -6,11 +6,9 @@ description: How to fetch a collection of SKU list promotion rules via API
 
 To fetch a collection of SKU list promotion rules, send a `GET` request to the `/api/sku_list_promotion_rules` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_promotion_rules**
+**GET** https://yourdomain.commercelayer.io**/api/sku\_list\_promotion\_rules**
 
 ### **Example**
 
@@ -89,8 +87,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

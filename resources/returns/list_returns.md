@@ -6,11 +6,9 @@ description: How to fetch a collection of returns via API
 
 To fetch a collection of returns, send a `GET` request to the `/api/returns` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/returns**
+**GET** https://yourdomain.commercelayer.io**/api/returns**
 
 ### **Example**
 
@@ -122,8 +120,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

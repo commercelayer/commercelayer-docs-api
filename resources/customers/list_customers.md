@@ -6,11 +6,9 @@ description: How to fetch a collection of customers via API
 
 To fetch a collection of customers, send a `GET` request to the `/api/customers` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customers**
+**GET** https://yourdomain.commercelayer.io**/api/customers**
 
 ### **Example**
 
@@ -115,8 +113,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

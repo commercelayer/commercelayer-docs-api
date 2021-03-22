@@ -10,7 +10,7 @@ To fetch the application, send a `GET` request to the `/api/application` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/application**
+**GET** https://yourdomain.commercelayer.io**/api/application**
 
 ### **Example**
 

@@ -6,11 +6,9 @@ description: How to fetch a collection of orders via API
 
 To fetch a collection of orders, send a `GET` request to the `/api/orders` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
+**GET** https://yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 
@@ -256,8 +254,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

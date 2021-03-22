@@ -10,7 +10,7 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
+**POST** https://yourdomain.commercelayer.io**/api/stock\_locations**
 
 ### Arguments
 
@@ -18,10 +18,10 @@ To create a new stock location, send a `POST` request to the `/api/stock_locatio
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
-| attributes.**label_format** | `string` | Optional, default is 'pdf' |
-| attributes.**suppress_etd** | `boolean` | Optional |
+| attributes.**label\_format** | `string` | Optional, default is 'pdf' |
+| attributes.**suppress\_etd** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**address** | `object` | Required |
 

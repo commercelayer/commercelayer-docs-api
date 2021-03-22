@@ -6,11 +6,9 @@ description: How to fetch a collection of customer addresses via API
 
 To fetch a collection of customer addresses, send a `GET` request to the `/api/customer_addresses` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_addresses**
 
 ### **Example**
 
@@ -83,8 +81,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

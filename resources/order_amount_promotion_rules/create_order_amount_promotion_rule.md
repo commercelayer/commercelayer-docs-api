@@ -10,7 +10,7 @@ To create a new order amount promotion rule, send a `POST` request to the `/api/
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/order_amount_promotion_rules**
+**POST** https://yourdomain.commercelayer.io**/api/order\_amount\_promotion\_rules**
 
 ### Arguments
 
@@ -18,9 +18,9 @@ To create a new order amount promotion rule, send a `POST` request to the `/api/
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**order_amount_cents** | `integer` | Optional |
+| attributes.**order\_amount\_cents** | `integer` | Optional |
 | relationships.**promotion** | `object` | Required |
 
 ### Example

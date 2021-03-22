@@ -6,11 +6,9 @@ description: How to fetch a collection of line item options via API
 
 To fetch a collection of line item options, send a `GET` request to the `/api/line_item_options` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_item_options**
+**GET** https://yourdomain.commercelayer.io**/api/line\_item\_options**
 
 ### **Example**
 
@@ -96,8 +94,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

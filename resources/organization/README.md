@@ -2,12 +2,11 @@
 description: The organization object and its fields
 ---
 
-# Organization
+# Organizations
 
 Your business company is identified by the related organization. This is a singleton API, meaning only the organization within the current scope it’s retrieved. No need to specify the resource id.
 
-
-### The organization object
+## The organization object
 
 The **organization** object is returned as part of the response body of each successful retrieve API call.
 
@@ -19,19 +18,19 @@ The **organization** object is returned as part of the response body of each suc
 | attributes.**name** | `string` | The organization's internal name. |
 | attributes.**slug** | `string` | The organization's slug name. |
 | attributes.**domain** | `string` | The organization's domain. |
-| attributes.**logo_url** | `string` | The URL to the organization's logo. |
-| attributes.**favicon_url** | `string` | The URL to the organization's favicon. |
-| attributes.**primary_color** | `string` | The organization's primary color. |
-| attributes.**contrast_color** | `string` | The organization's contrast color. |
-| attributes.**gtm_id** | `string` | The organization's Google Tag Manager ID. |
-| attributes.**gtm_id_test** | `string` | The organization's Google Tag Manager ID for test. |
-| attributes.**discount_disabled** | `boolean` | Indicates if organization has discount disabled. |
-| attributes.**account_disabled** | `boolean` | Indicates if organization has account disabled. |
-| attributes.**acceptance_disabled** | `boolean` | Indicates if organization has acceptance disabled. |
-| attributes.**created_at** | `datetime` | Time at which the resource was created. |
-| attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |
+| attributes.**logo\_url** | `string` | The URL to the organization's logo. |
+| attributes.**favicon\_url** | `string` | The URL to the organization's favicon. |
+| attributes.**primary\_color** | `string` | The organization's primary color. |
+| attributes.**contrast\_color** | `string` | The organization's contrast color. |
+| attributes.**gtm\_id** | `string` | The organization's Google Tag Manager ID. |
+| attributes.**gtm\_id\_test** | `string` | The organization's Google Tag Manager ID for test. |
+| attributes.**discount\_disabled** | `boolean` | Indicates if organization has discount disabled. |
+| attributes.**account\_disabled** | `boolean` | Indicates if organization has account disabled. |
+| attributes.**acceptance\_disabled** | `boolean` | Indicates if organization has acceptance disabled. |
+| attributes.**created\_at** | `datetime` | Time at which the resource was created. |
+| attributes.**updated\_at** | `datetime` | Time at which the resource was last updated. |
 | attributes.**reference** | `string` | A string that you can use to add any external identifier to the resource. This can be useful for integrating the resource to an external system, like an ERP, a marketing tool, a CRM, or whatever. |
-| attributes.**reference_origin** | `string` | Any identifier of the third party system that defines the reference code |
+| attributes.**reference\_origin** | `string` | Any identifier of the third party system that defines the reference code |
 | attributes.**metadata** | `object` | Set of key-value pairs that you can attach to the resource. This can be useful for storing additional information about the resource in a structured format. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

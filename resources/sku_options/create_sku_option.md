@@ -10,7 +10,7 @@ To create a new SKU option, send a `POST` request to the `/api/sku_options` endp
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_options**
+**POST** https://yourdomain.commercelayer.io**/api/sku\_options**
 
 ### Arguments
 
@@ -19,11 +19,11 @@ To create a new SKU option, send a `POST` request to the `/api/sku_options` endp
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Optional, default is '0' |
-| attributes.**delay_hours** | `integer` | Optional, default is '0' |
-| attributes.**sku_code_regex** | `string` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Optional, default is '0' |
+| attributes.**delay\_hours** | `integer` | Optional, default is '0' |
+| attributes.**sku\_code\_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required |
 

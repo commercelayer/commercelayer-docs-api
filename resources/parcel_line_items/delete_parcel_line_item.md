@@ -10,7 +10,7 @@ To delete a parcel line item, send a `DELETE` request to the `/api/parcel_line_i
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/parcel\_line\_items/:id**
 
 ### Example
 

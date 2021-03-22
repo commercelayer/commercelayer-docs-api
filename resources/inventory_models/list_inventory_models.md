@@ -6,11 +6,9 @@ description: How to fetch a collection of inventory models via API
 
 To fetch a collection of inventory models, send a `GET` request to the `/api/inventory_models` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_models**
+**GET** https://yourdomain.commercelayer.io**/api/inventory\_models**
 
 ### **Example**
 
@@ -91,8 +89,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

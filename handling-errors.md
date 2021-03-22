@@ -126,7 +126,7 @@ The API responds with a `422 Unprocessable Entity` status code and returns a `VA
       "source": {
         "pointer": "/data/attributes/quantity"
       },
-      "status"=>"422",
+      "status": "422",
       "meta": {
         "error": "less_than_or_equal_to",
         "value": 100,

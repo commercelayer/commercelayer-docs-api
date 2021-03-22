@@ -63,7 +63,7 @@ In case of success, you can add additional info by populating the response`metad
 {% tab title="Error" %}
 In case of error, you can populate the error object with any relevant `code` and `message`:
 
-```bash
+```javascript
 {
   "success": false,
   ...

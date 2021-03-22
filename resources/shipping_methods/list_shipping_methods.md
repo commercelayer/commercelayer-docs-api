@@ -6,11 +6,9 @@ description: How to fetch a collection of shipping methods via API
 
 To fetch a collection of shipping methods, send a `GET` request to the `/api/shipping_methods` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipping_methods**
+**GET** https://yourdomain.commercelayer.io**/api/shipping\_methods**
 
 ### **Example**
 
@@ -112,8 +110,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

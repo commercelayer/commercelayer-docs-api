@@ -6,11 +6,9 @@ description: How to fetch a collection of free shipping promotions via API
 
 To fetch a collection of free shipping promotions, send a `GET` request to the `/api/free_shipping_promotions` endpoint.
 
-{% page-ref page="../../fetching-resources.md" %}
-
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/free_shipping_promotions**
+**GET** https://yourdomain.commercelayer.io**/api/free\_shipping\_promotions**
 
 ### **Example**
 
@@ -112,8 +110,6 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
-
-{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 
