@@ -66,6 +66,6 @@ By including a stock location scope in the access token request — `stock_locat
 ```
 
 {% hint style="warning" %}
-When putting a stock location in scope, adding the associated market in the access token request is **mandatory**. If the market scope is missing or the stock location doens't belong the market in scope the API responds with a `400 Bad Request` error code.
+When putting a stock location in scope, adding the associated market in the access token request is **mandatory**. If the market scope is missing or the stock location doesn't belong to the market in scope the API responds with a `400 Bad Request` error code.
 {% endhint %}
 

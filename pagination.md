@@ -22,7 +22,7 @@ When you fetch a collection of resources, you get paginated results. The respons
 ```
 
 {% hint style="info" %}
-The default page number is **1** \(consequently, the link to the `prev` page is missing\), and the default page size is **10**. The maximum page size allowed is **25**, but we recommend to use a lower value unless strictly necessary.
+The default page number is **1** \(consequently, the link to the `prev` page is missing\), and the default page size is **10**. The maximum page size allowed is **25**, but we recommend using a lower value unless strictly necessary.
 {% endhint %}
 
 If you need to modify these default settings, use the `page` query parameter in your request.
@@ -42,7 +42,7 @@ curl -X GET \
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `200 OK` status code, returning the five resource objects listed in the third page \(from the 6th object to the 10th\), together with the record and page counts and the links to the `first`, `prev`, `next` and `last` page.
+On success, the API responds with a `200 OK` status code, returning the five resource objects listed on the third page \(from the 6th object to the 10th\), together with the record and page counts and the links to the `first`, `prev`, `next,` and `last` page.
 
 ```javascript
 {

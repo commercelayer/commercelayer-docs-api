@@ -217,7 +217,7 @@ On success, the API responds with a `200 OK` status code, returning the resource
         "currency_code": "USD",
         "sku_code": "TSHIRTMM000000FFFFFFMXXX",
         "amount_cents": 3480,
-        "amount_float": 34.8,
+        "amount_float": 34.80,
         "formatted_amount": "$34.80",
         "compare_at_amount_cents": 4524,
         "compare_at_amount_float": 45.24,

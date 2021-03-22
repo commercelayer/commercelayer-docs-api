@@ -15,7 +15,7 @@ Commerce Layer supports a granular access control system on a resource level. Ea
 **Sales channel** applications that authenticate through `client_credentials` get the following permissions.
 
 {% hint style="danger" %}
-For security reasons **sales channel** applications can read resource lists only for `skus`, `sku_options` and `prices`. Getting a list for all the other resources is not allowed. For example, a sales channel is authorized to get `/api/orders/xYZkjABcde` but not `/api/orders` endpoint.
+For security reasons **sales channel** applications can read resource lists only for `skus`, `sku_options` and `prices`. Getting a list is not allowed for all the other resources. For example, a sales channel is authorized to get `/api/orders/xYZkjABcde` but not `/api/orders` endpoint.
 {% endhint %}
 
 |  | Create | Read | Update | Delete | Restrictions |
@@ -61,7 +61,7 @@ For security reasons **sales channel** applications can read resource lists only
 
 #### Refresh token
 
-An access token obtained through a `refresh_token` inherit the same set of permissions of the one that expired.
+An access token obtained through a `refresh_token` inherit the same set of permissions as the one that expired.
 
 ### Integration
 
@@ -69,11 +69,11 @@ An access token obtained through a `refresh_token` inherit the same set of permi
 
 ### Webapp
 
-**Webapp** applications support `authorization_code` and `refresh_token` grant types. They don't bring any grants to the access tokens, and get the set of permissions of to the authenticated user's role. Access tokens obtained through a `refresh_token` inherit the same set of permissions of the one that expired.
+**Webapp** applications support `authorization_code` and `refresh_token` grant types. They don't bring any grants to the access tokens, and get the set of permissions of to the authenticated user's role. Access tokens obtained through a `refresh_token` inherit the same set of permissions as the one that expired.
 
 ### Other application types
 
-Other application types \(such as [Zapier](https://zapier.com/), [Contentful](https://www.contentful.com/), [DatoCMS](https://www.datocms.com/) etc.\) have more straightforward authorization rules and get the right amount of permissions that are required by the relevant tool.
+Other application types \(such as [Zapier](https://zapier.com/), [Contentful](https://www.contentful.com/), [DatoCMS](https://www.datocms.com/), etc.\) have more straightforward authorization rules and get the right amount of permissions that are required by the relevant tool.
 
 {% hint style="warning" %}
 Commerce Layer Zapier app is currently private. Feel free to [accept this invitation](https://zapier.com/developer/public-invite/1418/4068b989bdb97d852a4e199b1d1adf46/) and start building your zaps!
