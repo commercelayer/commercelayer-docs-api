@@ -10,7 +10,7 @@ To fetch a single percentage discount promotion, send a `GET` request to the `/a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/percentage\_discount\_promotions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/percentage_discount_promotions/:id**
 
 ### **Example**
 

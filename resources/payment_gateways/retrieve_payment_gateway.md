@@ -10,7 +10,7 @@ To fetch a single payment gateway, send a `GET` request to the `/api/payment_gat
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/payment\_gateways/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/payment_gateways/:id**
 
 ### **Example**
 

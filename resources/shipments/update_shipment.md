@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,18 +20,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**\_on\_hold** | `boolean, value is 'true'` | Optional |
-| attributes.**\_picking** | `boolean, value is 'true'` | Optional |
-| attributes.**\_packing** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ready\_to\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_get\_rates** | `boolean, value is 'true'` | Optional |
-| attributes.**selected\_rate\_id** | `string` | Optional |
-| attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**_on_hold** | `boolean, value is 'true'` | Optional |
+| attributes.**_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**_packing** | `boolean, value is 'true'` | Optional |
+| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_get_rates** | `boolean, value is 'true'` | Optional |
+| attributes.**selected_rate_id** | `string` | Optional |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_method** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 
@@ -76,6 +76,23 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "cost_amount_float": 10.0,
       "formatted_cost_amount": "€10,00",
       "skus_count": 2,
+      "rates": [
+        {
+          "id": "rate_df8c9d4c5c0c4453b928d88faebafca1",
+          "rate": "45.59",
+          "object": "Rate",
+          "carrier": "DHLExpress",
+          "service": "MedicalExpress",
+          "currency": "EUR",
+          "shipment_id": "shp_636540b2ceb54ceebc657a9c97d75227",
+          "delivery_days": 1,
+          "list_currency": null,
+          "retail_currency": null,
+          "est_delivery_days": 1,
+          "carrier_account_id": "ca_b9c106c1242141b4b412ac79b07cb819",
+          "delivery_date_guaranteed": null
+        }
+      ],
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -143,6 +160,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/available_shipping_methods",
           "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/available_shipping_methods"
+        }
+      },
+      "carrier_accounts": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/carrier_accounts",
+          "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/carrier_accounts"
         }
       },
       "parcels": {

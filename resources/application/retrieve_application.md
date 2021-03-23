@@ -10,7 +10,7 @@ To fetch the application, send a `GET` request to the `/api/application` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/application**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/application**
 
 ### **Example**
 
@@ -39,8 +39,6 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "kind": "sales-channel",
       "public_access": "true",
       "redirect_uri": "https://bluebrand.com/img/logo.svg",
-      "uid": "xxxx-yyyy-zzzz",
-      "secret": "xxxx-yyyy-zzzz",
       "scopes": "market:all market:9 market:122 market:6 stock_location:6 stock_location:33",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",

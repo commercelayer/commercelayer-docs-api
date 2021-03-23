@@ -6,9 +6,11 @@ description: How to fetch a collection of gift card recipients via API
 
 To fetch a collection of gift card recipients, send a `GET` request to the `/api/gift_card_recipients` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/gift\_card\_recipients**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/gift_card_recipients**
 
 ### **Example**
 
@@ -83,6 +85,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

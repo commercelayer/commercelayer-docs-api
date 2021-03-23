@@ -10,7 +10,7 @@ To delete a tax category, send a `DELETE` request to the `/api/tax_categories/:i
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/tax\_categories/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/tax_categories/:id**
 
 ### Example
 

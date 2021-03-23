@@ -6,9 +6,11 @@ description: How to fetch a collection of delivery lead times via API
 
 To fetch a collection of delivery lead times, send a `GET` request to the `/api/delivery_lead_times` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/delivery\_lead\_times**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/delivery_lead_times**
 
 ### **Example**
 
@@ -90,6 +92,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

@@ -6,9 +6,11 @@ description: How to fetch a collection of price lists via API
 
 To fetch a collection of price lists, send a `GET` request to the `/api/price_lists` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/price\_lists**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/price_lists**
 
 ### **Example**
 
@@ -83,6 +85,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

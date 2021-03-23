@@ -10,7 +10,7 @@ To fetch a single shipment line item, send a `GET` request to the `/api/shipment
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipment\_line\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipment_line_items/:id**
 
 ### **Example**
 

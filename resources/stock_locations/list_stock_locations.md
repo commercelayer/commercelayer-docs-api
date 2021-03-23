@@ -6,9 +6,11 @@ description: How to fetch a collection of stock locations via API
 
 To fetch a collection of stock locations, send a `GET` request to the `/api/stock_locations` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_locations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_locations**
 
 ### **Example**
 
@@ -108,6 +110,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

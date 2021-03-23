@@ -6,9 +6,11 @@ description: How to fetch a collection of parcels via API
 
 To fetch a collection of parcels, send a `GET` request to the `/api/parcels` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/parcels**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcels**
 
 ### **Example**
 
@@ -116,6 +118,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

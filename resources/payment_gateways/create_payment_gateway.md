@@ -10,7 +10,7 @@ To create a new payment gateway, send a `POST` request to the `/api/payment_gate
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/payment\_gateways**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/payment_gateways**
 
 ### Arguments
 
@@ -19,7 +19,7 @@ To create a new payment gateway, send a `POST` request to the `/api/payment_gate
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

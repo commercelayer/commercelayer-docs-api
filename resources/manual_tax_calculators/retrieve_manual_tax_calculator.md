@@ -10,7 +10,7 @@ To fetch a single manual tax calculator, send a `GET` request to the `/api/manua
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/manual\_tax\_calculators/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/manual_tax_calculators/:id**
 
 ### **Example**
 

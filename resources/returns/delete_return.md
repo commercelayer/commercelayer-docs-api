@@ -10,7 +10,7 @@ To delete a return, send a `DELETE` request to the `/api/returns/:id` endpoint, 
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/returns/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/returns/:id**
 
 ### Example
 

@@ -6,9 +6,11 @@ description: How to fetch a collection of shipments via API
 
 To fetch a collection of shipments, send a `GET` request to the `/api/shipments` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
 
 ### **Example**
 
@@ -44,6 +46,23 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "cost_amount_float": 10.0,
         "formatted_cost_amount": "€10,00",
         "skus_count": 2,
+        "rates": [
+          {
+            "id": "rate_df8c9d4c5c0c4453b928d88faebafca1",
+            "rate": "45.59",
+            "object": "Rate",
+            "carrier": "DHLExpress",
+            "service": "MedicalExpress",
+            "currency": "EUR",
+            "shipment_id": "shp_636540b2ceb54ceebc657a9c97d75227",
+            "delivery_days": 1,
+            "list_currency": null,
+            "retail_currency": null,
+            "est_delivery_days": 1,
+            "carrier_account_id": "ca_b9c106c1242141b4b412ac79b07cb819",
+            "delivery_date_guaranteed": null
+          }
+        ],
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -113,6 +132,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/available_shipping_methods"
           }
         },
+        "carrier_accounts": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/carrier_accounts",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/carrier_accounts"
+          }
+        },
         "parcels": {
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/parcels",
@@ -147,6 +172,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

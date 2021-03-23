@@ -6,9 +6,11 @@ description: How to fetch a collection of external payments via API
 
 To fetch a collection of external payments, send a `GET` request to the `/api/external_payments` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_payments**
 
 ### **Example**
 
@@ -82,6 +84,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

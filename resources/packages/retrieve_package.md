@@ -10,7 +10,7 @@ To fetch a single package, send a `GET` request to the `/api/packages/:id` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/packages/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/packages/:id**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To create a new external tax calculator, send a `POST` request to the `/api/exte
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators**
 
 ### Arguments
 
@@ -19,10 +19,10 @@ To create a new external tax calculator, send a `POST` request to the `/api/exte
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**tax\_calculator\_url** | `string` | Required |
-| relationships.**tax\_categories** | `array` | Optional |
+| attributes.**tax_calculator_url** | `string` | Required |
+| relationships.**tax_categories** | `array` | Optional |
 
 ### Example
 

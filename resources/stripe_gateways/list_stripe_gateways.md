@@ -6,9 +6,11 @@ description: How to fetch a collection of stripe gateways via API
 
 To fetch a collection of stripe gateways, send a `GET` request to the `/api/stripe_gateways` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stripe\_gateways**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_gateways**
 
 ### **Example**
 
@@ -84,6 +86,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

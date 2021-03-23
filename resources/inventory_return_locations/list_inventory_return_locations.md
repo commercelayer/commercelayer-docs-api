@@ -6,9 +6,11 @@ description: How to fetch a collection of inventory return locations via API
 
 To fetch a collection of inventory return locations, send a `GET` request to the `/api/inventory_return_locations` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations**
 
 ### **Example**
 
@@ -81,6 +83,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

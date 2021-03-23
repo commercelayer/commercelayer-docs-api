@@ -6,9 +6,11 @@ description: How to fetch a collection of fixed amount promotions via API
 
 To fetch a collection of fixed amount promotions, send a `GET` request to the `/api/fixed_amount_promotions` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/fixed\_amount\_promotions**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/fixed_amount_promotions**
 
 ### **Example**
 
@@ -113,6 +115,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

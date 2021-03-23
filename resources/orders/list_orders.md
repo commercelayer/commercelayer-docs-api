@@ -6,9 +6,11 @@ description: How to fetch a collection of orders via API
 
 To fetch a collection of orders, send a `GET` request to the `/api/orders` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders**
 
 ### **Example**
 
@@ -172,6 +174,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/available_payment_methods"
           }
         },
+        "available_customer_payment_sources": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/available_customer_payment_sources",
+            "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/available_customer_payment_sources"
+          }
+        },
         "payment_method": {
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/payment_method",
@@ -255,10 +263,13 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 {% endtab %}
 {% endtabs %}
 
+{% page-ref page="../../pagination.md" %}
+
 ### Sortable attributes
 
 The list of orders can be sorted by the following attributes:
 
+* `number`
 * `status`
 * `payment_status`
 * `fulfillment_status`

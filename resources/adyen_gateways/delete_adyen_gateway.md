@@ -10,7 +10,7 @@ To delete an adyen gateway, send a `DELETE` request to the `/api/adyen_gateways/
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/adyen\_gateways/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/adyen_gateways/:id**
 
 ### Example
 

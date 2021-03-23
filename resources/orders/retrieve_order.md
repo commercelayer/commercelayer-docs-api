@@ -10,7 +10,7 @@ To fetch a single order, send a `GET` request to the `/api/orders/:id` endpoint,
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/orders/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/orders/:id**
 
 ### **Example**
 
@@ -171,6 +171,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/available_payment_methods",
           "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/available_payment_methods"
+        }
+      },
+      "available_customer_payment_sources": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/relationships/available_customer_payment_sources",
+          "related": "https://yourdomain.commercelayer.io/api/orders/xYZkjABcde/available_customer_payment_sources"
         }
       },
       "payment_method": {

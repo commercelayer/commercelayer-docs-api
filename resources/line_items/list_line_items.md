@@ -6,9 +6,11 @@ description: How to fetch a collection of line items via API
 
 To fetch a collection of line items, send a `GET` request to the `/api/line_items` endpoint.
 
+{% page-ref page="../../fetching-resources.md" %}
+
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
 
 ### **Example**
 
@@ -144,6 +146,8 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
 ```
 {% endtab %}
 {% endtabs %}
+
+{% page-ref page="../../pagination.md" %}
 
 ### Sortable attributes
 

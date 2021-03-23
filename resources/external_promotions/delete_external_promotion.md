@@ -10,7 +10,7 @@ To delete an external promotion, send a `DELETE` request to the `/api/external_p
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/external\_promotions/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/external_promotions/:id**
 
 ### Example
 

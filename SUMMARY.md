@@ -91,6 +91,9 @@
   * [List all captures](resources/captures/list_captures.md)
   * [Retrieve a capture](resources/captures/retrieve_capture.md)
   * [Update a capture](resources/captures/update_capture.md)
+* [Carrier accounts](resources/carrier_accounts/README.md)
+  * [List all carrier accounts](resources/carrier_accounts/list_carrier_accounts.md)
+  * [Retrieve a carrier account](resources/carrier_accounts/retrieve_carrier_account.md)
 * [Coupon codes promotion rules](resources/coupon_codes_promotion_rules/README.md)
   * [Create a coupon codes promotion rule](resources/coupon_codes_promotion_rules/create_coupon_codes_promotion_rule.md)
   * [List all coupon codes promotion rules](resources/coupon_codes_promotion_rules/list_coupon_codes_promotion_rules.md)
@@ -473,4 +476,3 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
-
