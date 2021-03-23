@@ -23,6 +23,7 @@ For security reasons **sales channel** applications can read resource lists only
 | **Addresses** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **Customers** | ✅ |  |  |  |  |
 | **Customer subscriptions** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Delivery lead times** |  | ✅ |  |  | Delivery lead times associated with the shipping methods enabled for the market in scope. |
 | **Gift cards** | ✅ | ✅ | ✅ | ✅ | If "draft" \(single resource only\). |
 | **Gift card recipients** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **Orders** | ✅ | ✅ | ✅ |  | Can be read if "draft", "pending" or "placed" and updated if "draft" or "pending" \(single resource only\). |
