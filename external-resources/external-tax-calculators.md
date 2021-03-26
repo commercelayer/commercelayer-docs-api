@@ -39,7 +39,7 @@ If the `tax_collectable` is missing for a line item, the line item `tax_amount_c
 
 #### 3. Global tax rate
 
-If both the line item `tax_collectable` and `tax_rate` are missing, the line item `tax_amount_cent` is computed using the `tax_rate` specified at the `data` level. If the line items array is missing, that tax rate is applied to the whole order.
+If both the line item `tax_collectable` and `tax_rate` are missing, the line item `tax_amount_cents` is computed using the `tax_rate` specified at the `data` level. If the line items array is missing, that tax rate is applied to the whole order.
 
 ### Examples
 
