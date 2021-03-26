@@ -10,7 +10,7 @@ To delete a taxjar account, send a `DELETE` request to the `/api/taxjar_accounts
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/taxjar_accounts/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/taxjar\_accounts/:id**
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a single avalara account, send a `GET` request to the `/api/avalara_acc
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts/:id**
+**GET** https://yourdomain.commercelayer.io**/api/avalara\_accounts/:id**
 
 ### **Example**
 

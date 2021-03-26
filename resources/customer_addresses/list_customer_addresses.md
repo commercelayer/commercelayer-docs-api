@@ -10,7 +10,7 @@ To fetch a collection of customer addresses, send a `GET` request to the `/api/c
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/customer_addresses**
+**GET** https://yourdomain.commercelayer.io**/api/customer\_addresses**
 
 ### **Example**
 

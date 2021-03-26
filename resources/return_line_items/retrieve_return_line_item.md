@@ -10,7 +10,7 @@ To fetch a single return line item, send a `GET` request to the `/api/return_lin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items/:id**
+**GET** https://yourdomain.commercelayer.io**/api/return\_line\_items/:id**
 
 ### **Example**
 

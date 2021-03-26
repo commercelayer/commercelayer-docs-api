@@ -14,7 +14,7 @@ When an external promotion activates — i.e. its activation rules are met — C
 
 {% tabs %}
 {% tab title="Payload" %}
-The request payload contains the order and includes its line items
+The request payload contains the order and includes its line items:
 
 ```javascript
 {

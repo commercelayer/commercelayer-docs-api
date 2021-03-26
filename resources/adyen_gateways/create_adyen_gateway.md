@@ -10,7 +10,7 @@ To create a new adyen gateway, send a `POST` request to the `/api/adyen_gateways
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/adyen_gateways**
+**POST** https://yourdomain.commercelayer.io**/api/adyen\_gateways**
 
 ### Arguments
 
@@ -19,12 +19,12 @@ To create a new adyen gateway, send a `POST` request to the `/api/adyen_gateways
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**merchant_account** | `string` | Required |
-| attributes.**api_key** | `string` | Required |
-| attributes.**live_url_prefix** | `string` | Required |
-| relationships.**adyen_payments** | `array` | Optional |
+| attributes.**merchant\_account** | `string` | Required |
+| attributes.**api\_key** | `string` | Required |
+| attributes.**live\_url\_prefix** | `string` | Required |
+| relationships.**adyen\_payments** | `array` | Optional |
 
 ### Example
 

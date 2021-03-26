@@ -21,6 +21,7 @@
   * [External payment gateways](external-resources/external-payment-gateways.md)
   * [External prices](external-resources/external-prices.md)
   * [External promotions](external-resources/external-promotions.md)
+  * [External tax calculators](external-resources/external-tax-calculators.md)
 * [Handling errors](handling-errors.md)
 * [Real-time webhooks](real-time-webhooks.md)
 * [Callbacks security](callbacks-security.md)
@@ -476,3 +477,4 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
+
