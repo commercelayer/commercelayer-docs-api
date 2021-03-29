@@ -4,7 +4,7 @@ description: How to manage resources via external serverless functions
 
 # External resources
 
-Commerce Layer lets you manage some resources \(i.e. prices, promotions, payment gateways, and more to come\) from the outside of the platform itself, using an external service of your choice or a serverless function.
+Commerce Layer lets you manage some resources \(i.e. prices, promotions, payment gateways, tax calculators, and more to come\) from the outside of the platform itself, using an external service of your choice or a serverless function.
 
 In order to get the data from the external source, when needed, we trigger a `POST` request to the endpoint that you specified. The request contains a JSON payload that will be detailed case by case, along with the successful response \(or error\) format we expect to receive back. 
 
