@@ -424,7 +424,7 @@ A payment is marked as asynchronous when the following conditions on the respons
 `action_id` uniqueness is mandatory for the [webhook](external-payment-gateways.md#webhook-endpoint) to detect the transaction later.
 {% endhint %}
 
-In this case, the external payment gateway creates the transaction setting its `succeded` attribute to `false`, but considering it as pending. This way, the order can be placed without errors, but the order payment status doesn't change yet \(even if the order is not editable anymore\).
+In this case, the external payment gateway creates the transaction setting the `succeeded` attribute to `false`, but considering it as pending. This way, the order can be placed without errors, but the order payment status doesn't change yet \(even if the order is not editable anymore\).
 
 #### Example
 
