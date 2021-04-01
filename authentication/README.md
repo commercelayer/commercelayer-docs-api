@@ -49,7 +49,7 @@ By including a market scope in the access token request — `market:1234` — al
 ```
 
 {% hint style="warning" %}
-**Sales channel** applications require a market in scope when requesting their access token to perform the [permitted CRUD actions](../roles-and-permissions.md#sales-channel).
+**Sales channel** applications require a market in scope when requesting their access token to perform the [permitted CRUD actions](../roles-and-permissions.md#sales-channel). If the market in scope is associated with a customer group, it becomes private and can be accessed only by the customers belonging to the group — in that case, to get your token you must use the [password flow](password.md).
 {% endhint %}
 
 #### Putting a stock location in scope
