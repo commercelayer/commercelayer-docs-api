@@ -34,7 +34,7 @@ To get an access token using the `refresh_token` grant type, send a `POST` reque
 
 {% tabs %}
 {% tab title="Request" %}
-The following request tries to exchange a valid refresh token for an expired access token:
+The following request tries to exchange [a valid refresh token](password.md#sales-channel) for an expired access token:
 
 ```javascript
 curl -X POST \

@@ -56,7 +56,7 @@ curl -X POST \
 {% endtab %}
 
 {% tab title="Response" %}
-On success, the API responds with a `200 OK` status code, returning the requested access token and customer info, along with a refresh token:
+On success, the API responds with a `200 OK` status code, returning the requested access token and customer info, along with a [refresh token](refresh-token.md#sales-channel):
 
 ```javascript
 {
