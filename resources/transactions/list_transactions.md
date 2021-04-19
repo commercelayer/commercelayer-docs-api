@@ -10,7 +10,7 @@ To fetch a collection of transactions, send a `GET` request to the `/api/transac
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/transactions**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/transactions**
 
 ### **Example**
 

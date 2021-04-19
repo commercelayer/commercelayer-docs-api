@@ -10,7 +10,7 @@ To create a new return, send a `POST` request to the `/api/returns` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/returns**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/returns**
 
 ### Arguments
 
@@ -18,10 +18,10 @@ To create a new return, send a `POST` request to the `/api/returns` endpoint, pa
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
-| relationships.**stock\_location** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
 
 ### Example
 

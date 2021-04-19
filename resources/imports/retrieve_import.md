@@ -10,7 +10,7 @@ To fetch a single import, send a `GET` request to the `/api/imports/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/imports/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/imports/:id**
 
 ### **Example**
 
@@ -43,6 +43,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "status": "started",
       "started_at": "2018-01-01T12:00:00.000Z",
       "completed_at": "2018-01-01T12:00:00.000Z",
+      "interrupted_at": "2018-01-01T12:00:00.000Z",
       "inputs": [
         {
           "code": "ABC",
@@ -53,9 +54,11 @@ On success, the API responds with a `200 OK` status code, returning a single res
           "name": "Bar"
         }
       ],
-      "errors_count": 3,
+      "inputs_size": 300,
+      "errors_count": 30,
       "warnings_count": 1,
       "destroyed_count": 99,
+      "processed_count": 270,
       "errors_log": [
         {
           "code:ABC": {

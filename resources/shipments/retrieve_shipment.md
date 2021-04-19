@@ -10,7 +10,7 @@ To fetch a single shipment, send a `GET` request to the `/api/shipments/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### **Example**
 
@@ -45,6 +45,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "cost_amount_float": 10.0,
       "formatted_cost_amount": "€10,00",
       "skus_count": 2,
+      "selected_rate_id": "rate_f89e4663c3ed47ee94d37763f6d21d54",
       "rates": [
         {
           "id": "rate_df8c9d4c5c0c4453b928d88faebafca1",
@@ -62,6 +63,13 @@ On success, the API responds with a `200 OK` status code, returning a single res
           "delivery_date_guaranteed": null
         }
       ],
+      "purchase_error_code": "SHIPMENT.POSTAGE.FAILURE",
+      "purchase_error_message": "Account not allowed for this service.",
+      "get_rates_started_at": "2018-01-01T12:00:00.000Z",
+      "get_rates_completed_at": "2018-01-01T12:00:00.000Z",
+      "purchase_started_at": "2018-01-01T12:00:00.000Z",
+      "purchase_completed_at": "2018-01-01T12:00:00.000Z",
+      "purchase_failed_at": "2018-01-01T12:00:00.000Z",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

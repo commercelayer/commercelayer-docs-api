@@ -10,7 +10,7 @@ To fetch a collection of stripe payments, send a `GET` request to the `/api/stri
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stripe\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments**
 
 ### **Example**
 
@@ -43,6 +43,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "options": {
           "customer": "cus_xxx",
           "payment_method": "pm_xxx"
+        },
+        "payment_method": {
+          "id": "pm_xxx"
         },
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",

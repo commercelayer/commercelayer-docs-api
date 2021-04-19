@@ -10,19 +10,19 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/imports**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/imports**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource\_type** | `string` | Required |
-| attributes.**parent\_resource\_id** | `string` | Required |
+| attributes.**resource_type** | `string` | Required |
+| attributes.**parent_resource_id** | `string` | Required |
 | attributes.**inputs** | `object` | Required |
-| attributes.**cleanup\_records** | `boolean` | Optional |
+| attributes.**cleanup_records** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -76,6 +76,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "status": "started",
       "started_at": "2018-01-01T12:00:00.000Z",
       "completed_at": "2018-01-01T12:00:00.000Z",
+      "interrupted_at": "2018-01-01T12:00:00.000Z",
       "inputs": [
         {
           "code": "ABC",
@@ -86,9 +87,11 @@ On success, the API responds with a `201 Created` status code, returning the cre
           "name": "Bar"
         }
       ],
-      "errors_count": 3,
+      "inputs_size": 300,
+      "errors_count": 30,
       "warnings_count": 1,
       "destroyed_count": 99,
+      "processed_count": 270,
       "errors_log": [
         {
           "code:ABC": {

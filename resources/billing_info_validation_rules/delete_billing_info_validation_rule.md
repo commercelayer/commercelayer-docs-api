@@ -10,7 +10,7 @@ To delete a billing info validation rule, send a `DELETE` request to the `/api/b
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/billing\_info\_validation\_rules/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/billing_info_validation_rules/:id**
 
 ### Example
 

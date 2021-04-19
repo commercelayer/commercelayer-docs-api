@@ -10,7 +10,7 @@ To fetch a collection of imports, send a `GET` request to the `/api/imports` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/imports**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/imports**
 
 ### **Example**
 
@@ -44,6 +44,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "status": "started",
         "started_at": "2018-01-01T12:00:00.000Z",
         "completed_at": "2018-01-01T12:00:00.000Z",
+        "interrupted_at": "2018-01-01T12:00:00.000Z",
         "inputs": [
           {
             "code": "ABC",
@@ -54,9 +55,11 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             "name": "Bar"
           }
         ],
-        "errors_count": 3,
+        "inputs_size": 300,
+        "errors_count": 30,
         "warnings_count": 1,
         "destroyed_count": 99,
+        "processed_count": 270,
         "errors_log": [
           {
             "code:ABC": {
@@ -116,9 +119,12 @@ The list of imports can be sorted by the following attributes:
 * `status`
 * `started_at`
 * `completed_at`
+* `interrupted_at`
+* `inputs_size`
 * `errors_count`
 * `warnings_count`
 * `destroyed_count`
+* `processed_count`
 * `id`
 * `created_at`
 * `updated_at`
