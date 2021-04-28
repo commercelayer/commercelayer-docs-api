@@ -10,7 +10,7 @@ To fetch a single manual gateway, send a `GET` request to the `/api/manual_gatew
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/manual\_gateways/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/manual_gateways/:id**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To fetch a collection of return line items, send a `GET` request to the `/api/re
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/return\_line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items**
 
 ### **Example**
 

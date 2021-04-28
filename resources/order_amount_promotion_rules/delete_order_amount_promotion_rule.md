@@ -10,7 +10,7 @@ To delete an order amount promotion rule, send a `DELETE` request to the `/api/o
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/order\_amount\_promotion\_rules/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/order_amount_promotion_rules/:id**
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a collection of external payments, send a `GET` request to the `/api/ex
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_payments**
 
 ### **Example**
 

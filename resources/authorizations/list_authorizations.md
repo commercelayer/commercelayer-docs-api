@@ -10,7 +10,7 @@ To fetch a collection of authorizations, send a `GET` request to the `/api/autho
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/authorizations**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/authorizations**
 
 ### **Example**
 

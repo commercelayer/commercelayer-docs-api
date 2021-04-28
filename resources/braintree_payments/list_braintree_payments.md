@@ -10,7 +10,7 @@ To fetch a collection of braintree payments, send a `GET` request to the `/api/b
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/braintree\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/braintree_payments**
 
 ### **Example**
 

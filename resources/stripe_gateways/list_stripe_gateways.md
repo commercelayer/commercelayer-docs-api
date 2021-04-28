@@ -10,7 +10,7 @@ To fetch a collection of stripe gateways, send a `GET` request to the `/api/stri
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stripe\_gateways**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_gateways**
 
 ### **Example**
 
