@@ -10,7 +10,7 @@ To create a new external gateway, send a `POST` request to the `/api/external_ga
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/external_gateways**
+**POST** https://yourdomain.commercelayer.io**/api/external\_gateways**
 
 ### Arguments
 
@@ -19,12 +19,12 @@ To create a new external gateway, send a `POST` request to the `/api/external_ga
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**authorize_url** | `string` | Optional |
-| attributes.**capture_url** | `string` | Optional |
-| attributes.**void_url** | `string` | Optional |
-| attributes.**refund_url** | `string` | Optional |
+| attributes.**authorize\_url** | `string` | Optional |
+| attributes.**capture\_url** | `string` | Optional |
+| attributes.**void\_url** | `string` | Optional |
+| attributes.**refund\_url** | `string` | Optional |
 
 ### Example
 

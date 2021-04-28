@@ -10,7 +10,7 @@ To delete a tax rule, send a `DELETE` request to the `/api/tax_rules/:id` endpoi
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/tax_rules/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/tax\_rules/:id**
 
 ### Example
 

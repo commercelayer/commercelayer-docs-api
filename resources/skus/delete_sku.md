@@ -10,7 +10,7 @@ To delete a SKU, send a `DELETE` request to the `/api/skus/:id` endpoint, where 
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/skus/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/skus/:id**
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a single stripe gateway, send a `GET` request to the `/api/stripe_gatew
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_gateways/:id**
+**GET** https://yourdomain.commercelayer.io**/api/stripe\_gateways/:id**
 
 ### **Example**
 

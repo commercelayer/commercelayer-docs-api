@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/addresses/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/addresses/:id**
 
 ### Arguments
 
@@ -21,23 +21,23 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**business** | `boolean` | Optional |
-| attributes.**first_name** | `string` | Optional |
-| attributes.**last_name** | `string` | Optional |
+| attributes.**first\_name** | `string` | Optional |
+| attributes.**last\_name** | `string` | Optional |
 | attributes.**company** | `string` | Optional |
-| attributes.**line_1** | `string` | Optional |
-| attributes.**line_2** | `string` | Optional |
+| attributes.**line\_1** | `string` | Optional |
+| attributes.**line\_2** | `string` | Optional |
 | attributes.**city** | `string` | Optional |
-| attributes.**zip_code** | `string` | Optional |
-| attributes.**state_code** | `string` | Optional |
-| attributes.**country_code** | `string` | Optional |
+| attributes.**zip\_code** | `string` | Optional |
+| attributes.**state\_code** | `string` | Optional |
+| attributes.**country\_code** | `string` | Optional |
 | attributes.**phone** | `string` | Optional |
 | attributes.**email** | `string` | Optional |
 | attributes.**notes** | `string` | Optional |
 | attributes.**lat** | `float` | Optional |
 | attributes.**lng** | `float` | Optional |
-| attributes.**billing_info** | `string` | Optional |
+| attributes.**billing\_info** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |
 
