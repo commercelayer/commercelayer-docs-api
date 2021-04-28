@@ -20,6 +20,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
+| attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -42,7 +43,10 @@ curl -X PATCH \
     "type": "stripe_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
+      "options": {
+        "customer": "cus_xxx",
+        "payment_method": "pm_xxx"
+      }
     }
   }
 }'

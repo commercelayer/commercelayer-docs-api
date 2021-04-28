@@ -104,7 +104,7 @@ An **order** object is returned as part of the response body of each successful 
 | attributes.**cart_url** | `string` | The cart url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**return_url** | `string` | The return url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**terms_url** | `string` | The terms and conditions url on your site. If present, it will be used on our hosted checkout application. |
-| attributes.**privacy_url** | `string` | The privacy polivy url on your site. If present, it will be used on our hosted checkout application. |
+| attributes.**privacy_url** | `string` | The privacy policy url on your site. If present, it will be used on our hosted checkout application. |
 | attributes.**checkout_url** | `string` | The checkout url that was automatically generated for the order. Send the customers to this url to let them checkout the order securely on our hosted checkout application. |
 | attributes.**_archive** | `boolean, value is 'true'` | Send this attribute if you want to archive the order. |
 | attributes.**_unarchive** | `boolean, value is 'true'` | Send this attribute if you want to unarchive the order. |

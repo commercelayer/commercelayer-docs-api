@@ -57,6 +57,7 @@ A **shipment** object is returned as part of the response body of each successfu
 | relationships.**shipping_method** | `object` | The shipping method selected by the customer. |
 | relationships.**delivery_lead_time** | `object` | The delivery lead time for the shipment. Equals the one associated with the shipping method selected by the customer. |
 | relationships.**shipment_line_items** | `array` | The order line items assigned to the shipment. |
+| relationships.**stock_line_items** | `array` | The associated stock line items. |
 | relationships.**stock_transfers** | `array` | The associated stock transfers. |
 | relationships.**available_shipping_methods** | `array` | The available shipping methods for the shipment. Useful to present the customer with a list of choices during the checkout. Only enabled shipping methods are included in the list. |
 | relationships.**carrier_accounts** | `array` | The carrier accounts available for the order's market. |

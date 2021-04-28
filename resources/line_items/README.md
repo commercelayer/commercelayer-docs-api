@@ -51,6 +51,7 @@ A **line item** object is returned as part of the response body of each successf
 | relationships.**item** | `object` | The polymorphic item associated to the line item. Can be a 'sku', a 'shipment', a 'payment_method', an 'adjustment', a 'gift_card', or a valid promotion type. |
 | relationships.**line_item_options** | `array` | The associated line item options. |
 | relationships.**shipment_line_items** | `array` | The associated shipment line items. |
+| relationships.**stock_line_items** | `array` | The associated stock line items. |
 | relationships.**stock_transfers** | `array` | The associated stock transfers. |
 | meta.**mode** | `string` | The resource environment \(can be one of `test` or `live`\) |
 

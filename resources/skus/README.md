@@ -4,7 +4,8 @@ description: The SKU object and its fields
 
 # SKUs
 
-SKUs describe specific product variations that are being sold. A unique code identifies each SKU, which can be either the EAN code, the UPC, or any other code format. The SKU name, description, and image URL are best suited for internal usage (Commerce Layer is not a CMS).
+SKUs describe specific product variations that are being sold. A unique code identifies each SKU, which can be either the EAN code, the UPC, or any other code format. The SKU name, description, and image URL are best suited for internal usage (Commerce Layer is not a CMS). 
+By marking an SKU with the "do not ship" and "do not track" combinable flags, is possible to manage different scenarios, such as intangible products which generate no shipments, or products with a virtual infinite stock.
 
 
 ### The SKU object
@@ -24,6 +25,8 @@ A **SKU** object is returned as part of the response body of each successful lis
 | attributes.**weight** | `float` | The weight of the SKU. If present, it will be used to calculate the shipping rates. |
 | attributes.**unit_of_weight** | `string` | Can be one of 'gr', or 'oz' |
 | attributes.**hs_tariff_number** | `string` | The Harmonized System Code used by customs to identify the products shipped across international borders. |
+| attributes.**do_not_ship** | `boolean` | Indicates if the SKU doesn't generate shipments. |
+| attributes.**do_not_track** | `boolean` | Indicates if the SKU doesn't track the stock inventory. |
 | attributes.**inventory** | `object` | Aggregated information about the SKU's inventory. Returned only when retrieving a single SKU. |
 | attributes.**created_at** | `datetime` | Time at which the resource was created. |
 | attributes.**updated_at** | `datetime` | Time at which the resource was last updated. |

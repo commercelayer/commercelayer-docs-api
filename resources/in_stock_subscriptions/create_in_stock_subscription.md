@@ -19,6 +19,7 @@ To create a new in stock subscription, send a `POST` request to the `/api/in_sto
 | **type** | `string` | Required |
 | attributes.**customer_email** | `string` | Optional |
 | attributes.**sku_code** | `string` | Optional |
+| attributes.**stock_threshold** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -81,6 +82,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "status": "active",
       "customer_email": "john@example.com",
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "stock_threshold": 3,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

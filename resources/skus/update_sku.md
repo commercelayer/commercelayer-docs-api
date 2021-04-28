@@ -28,6 +28,8 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**weight** | `float` | Optional |
 | attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**hs_tariff_number** | `string` | Optional |
+| attributes.**do_not_ship** | `boolean` | Optional |
+| attributes.**do_not_track** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -77,6 +79,8 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "weight": 300.0,
       "unit_of_weight": "gr",
       "hs_tariff_number": "4901.91.0020",
+      "do_not_ship": false,
+      "do_not_track": false,
       "inventory": {
         "available": true,
         "quantity": 10,

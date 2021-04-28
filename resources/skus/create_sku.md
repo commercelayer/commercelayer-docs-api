@@ -25,6 +25,8 @@ To create a new SKU, send a `POST` request to the `/api/skus` endpoint, passing 
 | attributes.**weight** | `float` | Optional |
 | attributes.**unit_of_weight** | `string` | Optional |
 | attributes.**hs_tariff_number** | `string` | Optional |
+| attributes.**do_not_ship** | `boolean` | Optional |
+| attributes.**do_not_track** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
@@ -82,6 +84,8 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "weight": 300.0,
       "unit_of_weight": "gr",
       "hs_tariff_number": "4901.91.0020",
+      "do_not_ship": false,
+      "do_not_track": false,
       "inventory": {
         "available": true,
         "quantity": 10,

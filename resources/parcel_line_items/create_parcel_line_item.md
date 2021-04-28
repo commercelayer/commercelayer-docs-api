@@ -23,6 +23,7 @@ To create a new parcel line item, send a `POST` request to the `/api/parcel_line
 | attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**parcel** | `object` | Required |
+| relationships.**stock_line_item** | `object` | Required |
 | relationships.**shipment_line_item** | `object` | Required |
 
 ### Example
@@ -47,6 +48,12 @@ curl -X POST \
       "parcel": {
         "data": {
           "type": "parcels",
+          "id": "QWERtyUpBa"
+        }
+      },
+      "stock_line_item": {
+        "data": {
+          "type": "stock_line_items",
           "id": "QWERtyUpBa"
         }
       },
@@ -89,6 +96,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/parcel_line_items/xYZkjABcde/relationships/parcel",
           "related": "https://yourdomain.commercelayer.io/api/parcel_line_items/xYZkjABcde/parcel"
+        }
+      },
+      "stock_line_item": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/parcel_line_items/xYZkjABcde/relationships/stock_line_item",
+          "related": "https://yourdomain.commercelayer.io/api/parcel_line_items/xYZkjABcde/stock_line_item"
         }
       },
       "shipment_line_item": {

@@ -128,6 +128,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
             "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/shipment_line_items"
           }
         },
+        "stock_line_items": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_line_items",
+            "related": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/stock_line_items"
+          }
+        },
         "stock_transfers": {
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/shipments/xYZkjABcde/relationships/stock_transfers",

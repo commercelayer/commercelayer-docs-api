@@ -21,6 +21,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**sku_code** | `string` | Optional |
+| attributes.**stock_threshold** | `integer` | Optional |
 | attributes.**_activate** | `boolean, value is 'true'` | Optional |
 | attributes.**_deactivate** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
@@ -69,6 +70,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "status": "active",
       "customer_email": "john@example.com",
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "stock_threshold": 3,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
