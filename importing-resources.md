@@ -11,7 +11,7 @@ Commerce Layer lets you import multiple resources in batches. To do that, you ne
 The process is **asynchronous** and you can poll its `status` attribute to [check the import progress](importing-resources.md#checking-the-import-status). At the end of the import the `processed_count` attribute will indicate the number of imported items. In case of [validation errors](importing-resources.md#handling-import-errors), the `errors_count` and `errors_log`attributes are populated.
 
 {% hint style="info" %}
-Resource relationships can be specified by using their IDs. To to that you need to append the `_id` suffix to the name of the related resource \(e.g. `price_list_id`\). Some relationships can also be specified as a nested array of objects \(e.g. order line items\).
+Resource relationships can be specified by using their IDs. To do that, you need to append the `_id` suffix to the name of the related resource \(e.g. `price_list_id`\). Some relationships can also be specified as a nested array of objects \(e.g. order line items\).
 {% endhint %}
 
 ### Import limits
@@ -67,7 +67,7 @@ If the resources you're importing refers to the same parent resource \(e.g. pric
 * Gift cards — `market_id`
 * Tax categories — `tax_calculator_id`
 
-### Cleaning up records
+### Cleaning-up records
 
 Set the `cleanup_records` attribute as `true` if you want all the resources that are not present in the `inputs` list to be deleted at the end of the import. You can monitor the number of destroyed records once the import has completed by inspecting the `destroyed_count` attribute.
 
@@ -186,7 +186,7 @@ For a list of all the required attributes you need to create an order, refer to 
 
 {% tabs %}
 {% tab title="Request" %}
-The following request creates an import with a list of coupons and cleanup the ones existing for the same promotion rule:
+The following request creates an import with a list of coupons and clean-up the ones existing for the same promotion rule:
 
 ```javascript
 curl -X POST \
@@ -907,7 +907,7 @@ You can also leverage Commerce Layer real-time webhooks mechanism, listen to `im
 
 ### Handling import errors
 
-When an import is completed or interrupted, import errors and warnings \(related to [cleanup](importing-resources.md#cleaning-up-records)\) are reported through the `errors_count`, `errors_log`, `warnings_count`, and `warnings_log` attributes:
+When an import is completed or interrupted, import errors and warnings \(related to [clean-up](importing-resources.md#cleaning-up-records)\) are reported through the `errors_count`, `errors_log`, `warnings_count`, and `warnings_log` attributes:
 
 ```javascript
 ...
