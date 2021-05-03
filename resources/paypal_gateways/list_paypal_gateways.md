@@ -10,7 +10,7 @@ To fetch a collection of paypal gateways, send a `GET` request to the `/api/payp
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_gateways**
+**GET** https://yourdomain.commercelayer.io**/api/paypal\_gateways**
 
 ### **Example**
 

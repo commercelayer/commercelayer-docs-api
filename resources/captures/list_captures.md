@@ -10,7 +10,7 @@ To fetch a collection of captures, send a `GET` request to the `/api/captures` e
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/captures**
+**GET** https://yourdomain.commercelayer.io**/api/captures**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To fetch a collection of webhooks, send a `GET` request to the `/api/webhooks` e
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
+**GET** https://yourdomain.commercelayer.io**/api/webhooks**
 
 ### **Example**
 

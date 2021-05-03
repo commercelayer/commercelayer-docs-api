@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/braintree_gateways/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/braintree\_gateways/:id**
 
 ### Arguments
 
@@ -22,16 +22,16 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**merchant_account_id** | `string` | Optional |
-| attributes.**merchant_id** | `string` | Optional |
-| attributes.**public_key** | `string` | Optional |
-| attributes.**private_key** | `string` | Optional |
-| attributes.**descriptor_name** | `string` | Optional |
-| attributes.**descriptor_phone** | `string` | Optional |
-| attributes.**descriptor_url** | `string` | Optional |
-| relationships.**braintree_payments** | `array` | Optional |
+| attributes.**merchant\_account\_id** | `string` | Optional |
+| attributes.**merchant\_id** | `string` | Optional |
+| attributes.**public\_key** | `string` | Optional |
+| attributes.**private\_key** | `string` | Optional |
+| attributes.**descriptor\_name** | `string` | Optional |
+| attributes.**descriptor\_phone** | `string` | Optional |
+| attributes.**descriptor\_url** | `string` | Optional |
+| relationships.**braintree\_payments** | `array` | Optional |
 
 ### Example
 

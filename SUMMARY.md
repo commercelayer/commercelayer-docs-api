@@ -17,6 +17,7 @@
 * [Creating resources](creating-resources.md)
 * [Updating resources](updating-resources.md)
 * [Deleting resources](deleting-resources.md)
+* [Importing resources](importing-resources.md)
 * [External resources](external-resources/README.md)
   * [External payment gateways](external-resources/external-payment-gateways.md)
   * [External prices](external-resources/external-prices.md)
@@ -477,3 +478,4 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
+

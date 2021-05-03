@@ -10,23 +10,23 @@ To create a new stock transfer, send a `POST` request to the `/api/stock_transfe
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/stock_transfers**
+**POST** https://yourdomain.commercelayer.io**/api/stock\_transfers**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**sku** | `object` | Required |
-| relationships.**origin_stock_location** | `object` | Optional |
-| relationships.**destination_stock_location** | `object` | Optional |
+| relationships.**origin\_stock\_location** | `object` | Optional |
+| relationships.**destination\_stock\_location** | `object` | Optional |
 | relationships.**shipment** | `object` | Optional |
-| relationships.**line_item** | `object` | Optional |
+| relationships.**line\_item** | `object` | Optional |
 
 ### Example
 

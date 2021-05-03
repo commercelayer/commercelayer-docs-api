@@ -10,7 +10,7 @@ To fetch a collection of parcel line items, send a `GET` request to the `/api/pa
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items**
+**GET** https://yourdomain.commercelayer.io**/api/parcel\_line\_items**
 
 ### **Example**
 

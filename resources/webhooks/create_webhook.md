@@ -10,7 +10,7 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/webhooks**
+**POST** https://yourdomain.commercelayer.io**/api/webhooks**
 
 ### Arguments
 
@@ -18,10 +18,10 @@ To create a new webhook, send a `POST` request to the `/api/webhooks` endpoint, 
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**topic** | `string` | Required |
-| attributes.**callback_url** | `string` | Required |
-| attributes.**include_resources** | `array` | Optional |
+| attributes.**callback\_url** | `string` | Required |
+| attributes.**include\_resources** | `array` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
