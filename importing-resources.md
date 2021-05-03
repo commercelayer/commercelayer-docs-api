@@ -14,7 +14,7 @@ The process is **asynchronous** and you can poll its `status` attribute to [chec
 Resource relationships can be specified by using their IDs. To to that you need to append the `_id` suffix to the name of the related resource \(e.g. `price_list_id`\). Some relationships can also be specified as a nested array of objects \(e.g. order line items\).
 {% endhint %}
 
-### Imports limits
+### Import limits
 
 #### Maximum import size
 
@@ -259,6 +259,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 {% hint style="warning" %}
 Please note that in this case — since the `cleanup_records` attribute is set as `true` — all of the coupons for the specified promotion rule that aren't included in the `inputs` list will be destroyed.
 {% endhint %}
+
+For a list of all the required attributes you need to create a coupon, refer to the related section of this API reference:
+
+{% page-ref page="resources/coupons/create\_coupon.md" %}
 
 #### Importing a list of SKUs
 
@@ -836,6 +840,10 @@ On success, the API responds with a `201 Created` status code, returning the cre
 {% hint style="info" %}
 To create an import of tax categories for the same **promotion rule**, remember to specify its ID as the`parent_resource_id` attribute.
 {% endhint %}
+
+For a list of all the required attributes you need to create a tax category, refer to the related section of this API reference:
+
+{% page-ref page="resources/tax\_categories/create\_tax\_category.md" %}
 
 ### Checking the import status
 
