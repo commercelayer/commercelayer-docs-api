@@ -10,7 +10,7 @@ Commerce Layer supports automatic tax calculation thanks to the out-of-the-box i
 
 Whenever the tax calculation is fired, Commerce Layer triggers a `POST` request to the `tax_calculator_url` endpoint, sending the order payload \(including its line items and their items\) in the request body. To trigger the tax update, the order must be not archived and have the following attributes:
 
-* a valid `shipping_address`
+* a valid `shipping_address` or a valid `billing_address`
 * an `external_tax_calculator` associated with the market in scope
 * a positive `total_amount_cent`
 * at least one SKU among its line item \(gift card are not taxed\)
