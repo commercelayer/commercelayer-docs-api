@@ -10,7 +10,7 @@ To fetch a collection of stock line items, send a `GET` request to the `/api/sto
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_line_items**
 
 ### **Example**
 

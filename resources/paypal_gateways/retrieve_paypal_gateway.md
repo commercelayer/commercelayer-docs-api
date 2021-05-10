@@ -10,7 +10,7 @@ To fetch a single paypal gateway, send a `GET` request to the `/api/paypal_gatew
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/paypal\_gateways/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/paypal_gateways/:id**
 
 ### **Example**
 

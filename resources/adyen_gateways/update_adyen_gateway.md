@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/adyen\_gateways/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/adyen_gateways/:id**
 
 ### Arguments
 
@@ -22,12 +22,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**merchant\_account** | `string` | Optional |
-| attributes.**api\_key** | `string` | Optional |
-| attributes.**live\_url\_prefix** | `string` | Optional |
-| relationships.**adyen\_payments** | `array` | Optional |
+| attributes.**merchant_account** | `string` | Optional |
+| attributes.**api_key** | `string` | Optional |
+| attributes.**live_url_prefix** | `string` | Optional |
+| relationships.**adyen_payments** | `array` | Optional |
 
 ### Example
 

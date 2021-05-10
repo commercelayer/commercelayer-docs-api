@@ -10,7 +10,7 @@ To delete a stock transfer, send a `DELETE` request to the `/api/stock_transfers
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/stock\_transfers/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/stock_transfers/:id**
 
 ### Example
 

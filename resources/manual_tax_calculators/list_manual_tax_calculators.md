@@ -10,7 +10,7 @@ To fetch a collection of manual tax calculators, send a `GET` request to the `/a
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/manual\_tax\_calculators**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/manual_tax_calculators**
 
 ### **Example**
 

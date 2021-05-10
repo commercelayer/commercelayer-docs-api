@@ -10,7 +10,7 @@ To delete a price, send a `DELETE` request to the `/api/prices/:id` endpoint, wh
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/prices/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/prices/:id**
 
 ### Example
 

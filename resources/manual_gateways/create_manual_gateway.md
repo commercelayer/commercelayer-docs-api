@@ -10,7 +10,7 @@ To create a new manual gateway, send a `POST` request to the `/api/manual_gatewa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/manual\_gateways**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/manual_gateways**
 
 ### Arguments
 
@@ -19,9 +19,9 @@ To create a new manual gateway, send a `POST` request to the `/api/manual_gatewa
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**require\_capture** | `boolean` | Optional |
+| attributes.**require_capture** | `boolean` | Optional |
 
 ### Example
 

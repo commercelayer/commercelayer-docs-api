@@ -10,7 +10,7 @@ To create a new paypal gateway, send a `POST` request to the `/api/paypal_gatewa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/paypal\_gateways**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/paypal_gateways**
 
 ### Arguments
 
@@ -19,10 +19,10 @@ To create a new paypal gateway, send a `POST` request to the `/api/paypal_gatewa
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**client\_id** | `string` | Required |
-| attributes.**client\_secret** | `string` | Required |
+| attributes.**client_id** | `string` | Required |
+| attributes.**client_secret** | `string` | Required |
 | attributes.**mode** | `string` | Required |
 
 ### Example
