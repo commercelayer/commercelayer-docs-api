@@ -16,7 +16,7 @@ When you create a new external resource, a **shared secret** is generated. It wi
 
 The request payload sent to an external endpoint has the same format that you get when fetching a resource through the REST API, with some relevant resources included.
 
-```bash
+```javascript
   "data": {
     "id": "resource-id",
     "type": "resource-type",
@@ -33,7 +33,7 @@ The request payload sent to an external endpoint has the same format that you ge
       "attributes": { ... },
       "relationships": { ... },
       "meta": { ... }
-    }
+    },
     { ... }
   ]
 }

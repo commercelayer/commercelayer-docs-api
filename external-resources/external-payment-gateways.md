@@ -21,6 +21,76 @@ Your external endpoint will be responsible for the actual integration with the p
 External gateways process payments **synchronously** by default. If you need your gateway to behave differently, check the [asynchronous payments section](external-payment-gateways.md#asynchronous-payments).
 {% endhint %}
 
+### Request
+
+The request payload is a [JSON:API](https://jsonapi.org/) compliant object you can query to perform your own computation. Aside from the **target resource** — which depends on the kind of gateway's transaction — some **relationships** are also included to avoid useless API roundtrips:
+
+* `order`
+* `order.market`
+* `order.line_items`
+* `order.line_items.item`
+* `order.shipping_address`
+* `order.billing_address`
+
+```javascript
+{
+  "data": {
+    ...
+  },
+  "included": [
+    {
+      "id": "wBXVhKzrnq",
+      "type": "orders",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "DvlGRmhdgX",
+      "type": "markets",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "kdPgtRXOKL",
+      "type": "line_items",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "XGZwpOSrWL",
+      "type": "skus",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    }
+    {
+      "id": "BgnguJvXmb",
+      "type": "addresses",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": 'AlrkugwyVW',
+      "type": 'addresses',
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    { ... }
+  ]
+}
+```
+
 ### Authorization
 
 When you place an order, Commerce Layer triggers a `POST` request to the endpoint that you specified in the `authorize_url` field and creates an authorization.
@@ -31,51 +101,19 @@ When you place an order, Commerce Layer triggers a `POST` request to the endpoin
 
 {% tabs %}
 {% tab title="Payload" %}
-The request payload contains the external payment source and includes the associated `order`, `order.line_items`, `order.shipping_address`, and `order.billing_address`:
+The request payload contains the external payment resource and includes the [above-mentioned](external-payment-gateways.md#request) relationships:
 
 ```javascript
 {
-  data: {
-    id: 'ZNKjeUYepv',
-    type: 'external_payments',
-    links: { ... },
-    attributes: { ... },
-    relationships: { ... },
-    meta: { ... }
+  "data": {
+    "id": "ZNKjeUYepv",
+    "type": "external_payments",
+    "links": { ... },
+    "attributes": { ... },
+    "relationships": { ... },
+    "meta": { ... }
   },
-  included: [
-    {
-      id: 'wBXVhKzrnq',
-      type: 'orders',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'BgnguJvXmb',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'AlrkugwyVW',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'kdPgtRXOKL',
-      type: 'line_items',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
+  "included": [
     { ... }
   ]
 }
@@ -128,51 +166,19 @@ When you try to capture an authorization, Commerce Layer triggers a `POST` reque
 
 {% tabs %}
 {% tab title="Payload" %}
-The request payload contains the authorization and includes the associated `order`, `order.line_items`, `order.shipping_address`, and `order.billing_address`:
+The request payload contains the authorization resource and includes the [above-mentioned](external-payment-gateways.md#request) relationships:
 
 ```javascript
 {
-  data: {
-    id: 'yGzeUJxRJj',
-    type: 'authorizations',
-    links: { ... },
-    attributes: { ... },
-    relationships: { ... },
-    meta: { ... }
+  "data": {
+    "id": "yGzeUJxRJj",
+    "type": "authorizations",
+    "links": { ... },
+    "attributes": { ... },
+    "relationships": { ... },
+    "meta": { ... }
   },
-  included: [
-    {
-      id: 'wBXVhKzrnq',
-      type: 'orders',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'BgnguJvXmb',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'AlrkugwyVW',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'kdPgtRXOKL',
-      type: 'line_items',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
+  "included": [
     { ... }
   ]
 }
@@ -225,51 +231,19 @@ When you try to void an authorization, Commerce Layer triggers a `POST` request 
 
 {% tabs %}
 {% tab title="Payload" %}
-The request payload contains the authorization and includes the associated `order`, `order.line_items`, `order.shipping_address`, and `order.billing_address`:
+The request payload contains the authorization resource and includes the [above-mentioned](external-payment-gateways.md#request) relationships:
 
 ```javascript
 {
-  data: {
-    id: 'yGzeUJxRJj',
-    type: 'authorizations',
-    links: { ... },
-    attributes: { ... },
-    relationships: { ... },
-    meta: { ... }
+  "data": {
+    "id": "yGzeUJxRJj",
+    "type": "authorizations",
+    "links": { ... },
+    "attributes": { ... },
+    "relationships": { ... },
+    "meta": { ... }
   },
-  included: [
-    {
-      id: 'wBXVhKzrnq',
-      type: 'orders',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'BgnguJvXmb',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'AlrkugwyVW',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'kdPgtRXOKL',
-      type: 'line_items',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
+  "included": [
     { ... }
   ]
 }
@@ -322,51 +296,19 @@ When you try to void a capture, Commerce Layer triggers a `POST` request to the 
 
 {% tabs %}
 {% tab title="Payload" %}
-The request payload contains the capture and includes the associated `order`, `order.line_items`, `order.shipping_address`, and `order.billing_address`:
+The request payload contains the capture resource and includes the [above-mentioned](external-payment-gateways.md#request) relationships:
 
 ```javascript
 {
-  data: {
-    id: 'yJQDUVndWj',
-    type: 'captures',
-    links: { ... },
-    attributes: { ... },
-    relationships: { ... },
-    meta: { ... }
+  "data": {
+    "id": "yJQDUVndWj",
+    "type": "captures",
+    "links": { ... },
+    "attributes": { ... },
+    "relationships": { ... },
+    "meta": { ... }
   },
-  included: [
-    {
-      id: 'wBXVhKzrnq',
-      type: 'orders',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'BgnguJvXmb',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'AlrkugwyVW',
-      type: 'addresses',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
-    {
-      id: 'kdPgtRXOKL',
-      type: 'line_items',
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
-    },
+  "included": [
     { ... }
   ]
 }

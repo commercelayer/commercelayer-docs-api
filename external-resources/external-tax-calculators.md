@@ -15,8 +15,6 @@ Whenever the tax calculation is fired, Commerce Layer triggers a `POST` request 
 * a positive `total_amount_cent`
 * at least one SKU among its line item \(gift card are not taxed\)
 
-Your service response \(or error\) must match the format described in the [examples](external-tax-calculators.md#examples) below.
-
 ### Taxes data granularity
 
 External taxes can be applied either to the whole order or to specific line items, depending on how granular your response is. If you need to pass tax values at line item level and set tax breakdown attributes, you need to include in the response an array containing the line items you want to be affected by the tax update and specify each line item ID, as the payload passed in the request to your external calculator.
@@ -41,65 +39,79 @@ If the `tax_collectable` is missing for a line item, the line item `tax_amount_c
 
 If both the line item `tax_collectable` and `tax_rate` are missing, the line item `tax_amount_cents` is computed using the `tax_rate` specified at the `data` level. If the line items array is missing, that tax rate is applied to the whole order.
 
-### Examples
+### Request
 
-#### Applying the same tax rate to the whole order
+The request payload is a [JSON:API](https://jsonapi.org/) compliant object you can query to perform your own computation. Aside from the **target resource** — `orders` in the specific case — some **relationships** are also included to avoid useless API roundtrips:
 
-{% tabs %}
-{% tab title="Payload" %}
-The request payload contains the order and includes its line items and their items:
+* `market`
+* `line_items`
+* `line_items.item`
+* `shipping_address`
+* `billing_address`
 
 ```javascript
 {
   "data": {
-    "id": "qLmohvnMrE",
+    "id": "wBXVhKzrnq",
     "type": "orders",
-    "links": {...},
-    "attributes": {...},
-    "relationships": {...},
-    "meta": {...}
+    "links": { ... },
+    "attributes": { ... },
+    "relationships": { ... },
+    "meta": { ... }
   },
   "included": [
     {
-      "id": "kxnXtEaGxo",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...},
-    {
-      "id": "kXBqtrgARW",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...}
-    },
-    { ... },
-    {
-      "id": "ZDklSXVMvn",
-      "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
+      "id": "DvlGRmhdgX",
+      "type": "markets",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
     },
     {
-      "id": "ZmDzSXLJYn",
+      "id": "kdPgtRXOKL",
+      "type": "line_items",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "XGZwpOSrWL",
       "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
     }
+    {
+      "id": "BgnguJvXmb",
+      "type": "addresses",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "AlrkugwyVW",
+      "type": "addresses",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
     { ... }
   ]
 }
 ```
-{% endtab %}
 
+### Response
+
+Your service response \(or error\) must match the format described in the examples below.
+
+#### Applying the same tax rate to the whole order
+
+{% tabs %}
 {% tab title="Response" %}
 The successful response must be a JSON object, returning the tax rate to be applied to the whole order, along with some additional information and metadata:
 
@@ -134,62 +146,8 @@ On error, the response must be a JSON object containing an error code and an err
 #### Applying different tax rates for some line items
 
 {% tabs %}
-{% tab title="Payload" %}
-The request payload contains the order and includes its line items and their items:
-
-```javascript
-{
-  "data": {
-    "id": "qLmohvnMrE",
-    "type": "orders",
-    "links": {...},
-    "attributes": {...},
-    "relationships": {...},
-    "meta": {...}
-  },
-  "included": [
-    {
-      "id": "kxnXtEaGxo",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...},
-    {
-      "id": "kXBqtrgARW",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...}
-    },
-    { ... },
-    {
-      "id": "ZDklSXVMvn",
-      "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
-    },
-    {
-      "id": "ZmDzSXLJYn",
-      "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
-    }
-    { ... }
-  ]
-}
-```
-{% endtab %}
-
 {% tab title="Response" %}
-The successful response must be a JSON object, returning the tax rate to be applied to the line items, along with some additional information and metadata:
+The successful response must be a JSON object, returning the specific tax rate to be applied to the line items, along with some additional information and metadata:
 
 ```javascript
 {
@@ -232,62 +190,8 @@ On error, the response must be a JSON object containing an error code and an err
 #### More complex external tax calculation affecting the tax breakdown
 
 {% tabs %}
-{% tab title="Payload" %}
-The request payload contains the order and includes its line items and their items:
-
-```javascript
-{
-  "data": {
-    "id": "qLmohvnMrE",
-    "type": "orders",
-    "links": {...},
-    "attributes": {...},
-    "relationships": {...},
-    "meta": {...}
-  },
-  "included": [
-    {
-      "id": "kxnXtEaGxo",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...},
-    {
-      "id": "kXBqtrgARW",
-      "type": "line_items",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...},
-      "meta": {...}
-    },
-    { ... },
-    {
-      "id": "ZDklSXVMvn",
-      "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
-    },
-    {
-      "id": "ZmDzSXLJYn",
-      "type": "skus",
-      "links": {...},
-      "attributes": {...},
-      "relationships": {...}
-      },
-      "meta": {...}
-    }
-    { ... }
-  ]
-}
-```
-{% endtab %}
-
 {% tab title="Response" %}
-The successful response must be a JSON object, returning all the attribute you want to set through the external service, along with some additional information and metadata:
+The successful response must be a JSON object, returning specific tax collectable and tax rate values to be applied to the line items, some attributes you want to set in the line items tax breakdown, along with some additional information and metadata:
 
 ```javascript
 {

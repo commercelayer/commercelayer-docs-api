@@ -38,42 +38,66 @@ curl -X POST \
 }'
 ```
 
-Upon line item creation, Commerce Layer triggers a `POST` request to the specified `external_price_url` endpoint, sending the line item payload \(including the order\) in the request body. Your service response \(or error\) must match the format described in the example below.
+Upon line item creation, Commerce Layer triggers a `POST` request to the specified `external_price_url` endpoint, sending the line item payload \(including the order\) in the request body. 
 
-### Example
+### Request
 
-{% tabs %}
-{% tab title="Payload" %}
-The request payload contains the line item and includes the associated order:
+The request payload is a [JSON:API](https://jsonapi.org/) compliant object you can query to perform your own computation. Aside from the **target resource** — `line_items` in the specific case — some **relationships** are also included to avoid useless API roundtrips:
+
+* `order`
+* `order.market`
+* `item`
 
 ```javascript
 {
-  data: {
-    id: "xYZkjABcde",
-    type: "line_items",
-    links: { ... },
-    attributes: {
+  "data": {
+    "id": "xYZkjABcde",
+    "type": "line_items",
+    "links": { ... },
+    "attributes": {
       "quantity": 2,
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
       "_external_price": true
     },
-    relationships: { ... },
-    meta: { ... }
+    "relationships": { ... },
+    "meta": { ... }
   },
-  included: [
+  "included": [
     {
-      id: "wBXVhKzrnq",
-      type: "orders",
-      links: { ... },
-      attributes: { ... },
-      relationships: { ... },
-      meta: { ... }
+      "id": "wBXVhKzrnq",
+      "type": "orders",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "DvlGRmhdgX",
+      "type": "markets",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
+    },
+    {
+      "id": "XGZwpOSrWL",
+      "type": "skus",
+      "links": { ... },
+      "attributes": { ... },
+      "relationships": { ... },
+      "meta": { ... }
     }
   ]
 }
 ```
-{% endtab %}
 
+### Response
+
+Your service response \(or error\) must match the format described in the example below.
+
+#### Example
+
+{% tabs %}
 {% tab title="Response" %}
 The successful response must be a JSON object, returning the unit price computed by the external logic and the SKU code of the related product, along with some additional information and metadata:
 
