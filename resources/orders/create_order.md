@@ -80,7 +80,6 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "fulfillment_status": "unfulfilled",
       "guest": true,
       "editable": true,
-      "placeable": false,
       "customer_email": "john@example.com",
       "language_code": "it",
       "currency_code": "EUR",

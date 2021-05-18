@@ -22,7 +22,6 @@ An **order** object is returned as part of the response body of each successful 
 | attributes.**fulfillment_status** | `string` | The order's fulfillment status. One of 'unfulfilled' (default), 'in_progress', or 'fulfilled' |
 | attributes.**guest** | `boolean` | Indicates if the order has been placed as guest. |
 | attributes.**editable** | `boolean` | Indicates if the order can be edited. |
-| attributes.**placeable** | `boolean` | Indicates if the order can be placed. |
 | attributes.**customer_email** | `string` | The email address of the associated customer. When creating or updating an order, this is a shortcut to find or create the associated customer by email. |
 | attributes.**customer_password** | `string` | The password of the associated customer. When creating or updating an order, this is a shortcut to sign up the associated customer. |
 | attributes.**language_code** | `string` | The preferred language code (ISO 639-1) to be used when communicating with the customer. This can be useful when sending the order to 3rd party marketing tools and CRMs. If the language is supported, the hosted checkout will be localized accordingly. |
