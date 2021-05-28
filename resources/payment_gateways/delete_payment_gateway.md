@@ -10,7 +10,7 @@ To delete a payment gateway, send a `DELETE` request to the `/api/payment_gatewa
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/payment_gateways/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/payment\_gateways/:id**
 
 ### Example
 

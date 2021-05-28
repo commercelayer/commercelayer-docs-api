@@ -10,7 +10,7 @@ To delete a stripe gateway, send a `DELETE` request to the `/api/stripe_gateways
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/stripe_gateways/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/stripe\_gateways/:id**
 
 ### Example
 

@@ -10,7 +10,7 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/addresses**
+**POST** https://yourdomain.commercelayer.io**/api/addresses**
 
 ### Arguments
 
@@ -18,23 +18,23 @@ To create a new address, send a `POST` request to the `/api/addresses` endpoint,
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**business** | `boolean` | Optional, default is 'false' |
-| attributes.**first_name** | `string` | Required if 'business' is 'false' |
-| attributes.**last_name** | `string` | Required if 'business' is 'false' |
+| attributes.**first\_name** | `string` | Required if 'business' is 'false' |
+| attributes.**last\_name** | `string` | Required if 'business' is 'false' |
 | attributes.**company** | `string` | Required if 'business' is 'true' |
-| attributes.**line_1** | `string` | Required |
-| attributes.**line_2** | `string` | Optional |
+| attributes.**line\_1** | `string` | Required |
+| attributes.**line\_2** | `string` | Optional |
 | attributes.**city** | `string` | Required |
-| attributes.**zip_code** | `string` | Required, but for some countries |
-| attributes.**state_code** | `string` | Required |
-| attributes.**country_code** | `string` | Required |
+| attributes.**zip\_code** | `string` | Required, but for some countries |
+| attributes.**state\_code** | `string` | Required |
+| attributes.**country\_code** | `string` | Required |
 | attributes.**phone** | `string` | Required |
 | attributes.**email** | `string` | Optional |
 | attributes.**notes** | `string` | Optional |
 | attributes.**lat** | `float` | Optional |
 | attributes.**lng** | `float` | Optional |
-| attributes.**billing_info** | `string` | Configurable |
+| attributes.**billing\_info** | `string` | Configurable |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**geocoder** | `object` | Optional |
 
