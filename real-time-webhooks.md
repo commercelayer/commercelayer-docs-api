@@ -98,13 +98,13 @@ You can find here below the complete list of all the topics `{{resource}}.{{even
 | shipments.**ready\_to\_ship** | An existing shipment status is set to `ready_to_ship` |
 | shipments.**ship** | An existing shipment status is set to `shipped` |
 | shipments.**destroy** | An existing `shipments` object is deleted |
-| stock\_transfer.**create** | A new stock transfer is created |
-| stock\_transfer.**upcoming** | An existing stock transfer status is set to `upcoming` |
-| stock\_transfer.**picking** | An existing stock transfer status is set to `picking` |
-| stock\_transfer.**in\_transit** | An existing stock transfer status is set to `in_transit` |
-| stock\_transfer.**complete** | An existing stock transfer status is set to `completed` |
-| stock\_transfer.**cancel** | An existing stock transfer status is set to `cancelled` |
-| stock\_transfer.**destroy** | An existing `stock_transfers` object is deleted |
+| stock\_transfers.**create** | A new stock transfer is created |
+| stock\_transfers.**upcoming** | An existing stock transfer status is set to `upcoming` |
+| stock\_transfers.**picking** | An existing stock transfer status is set to `picking` |
+| stock\_transfers.**in\_transit** | An existing stock transfer status is set to `in_transit` |
+| stock\_transfers.**complete** | An existing stock transfer status is set to `completed` |
+| stock\_transfers.**cancel** | An existing stock transfer status is set to `cancelled` |
+| stock\_transfers.**destroy** | An existing `stock_transfers` object is deleted |
 | voids.**create** | A new void transaction is created |
 
 ### Responding to webhook callbacks
