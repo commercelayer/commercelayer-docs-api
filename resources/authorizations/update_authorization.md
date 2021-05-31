@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/authorizations/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/authorizations/:id**
 
 ### Arguments
 
@@ -21,11 +21,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**\_capture** | `boolean, value is 'true'` | Optional |
-| attributes.**\_capture\_amount\_cents** | `integer` | Optional |
-| attributes.**\_void** | `boolean, value is 'true'` | Optional |
+| attributes.**_capture** | `boolean, value is 'true'` | Optional |
+| attributes.**_capture_amount_cents** | `integer` | Optional |
+| attributes.**_void** | `boolean, value is 'true'` | Optional |
 
 ### Example
 
@@ -64,17 +64,17 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "self": "https://yourdomain.commercelayer.io/api/authorizations/xYZkjABcde"
     },
     "attributes": {
-      "number": null,
+      "number": "42/T/001",
       "currency_code": "EUR",
       "amount_cents": 1500,
       "amount_float": 15.0,
       "formatted_amount": "€15,00",
       "succeeded": false,
-      "message": null,
-      "error_code": null,
-      "error_detail": null,
-      "token": null,
-      "gateway_transaction_id": null,
+      "message": "Accepted",
+      "error_code": "00001",
+      "error_detail": "Already settled",
+      "token": "xxxx-yyyy-zzzz",
+      "gateway_transaction_id": "xxxx-yyyy-zzzz",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -82,11 +82,11 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "metadata": {
         "foo": "bar"
       },
-      "cvv_code": null,
-      "cvv_message": null,
-      "avs_code": null,
-      "avs_message": null,
-      "fraud_review": null,
+      "cvv_code": "000",
+      "cvv_message": "validated",
+      "avs_code": "000",
+      "avs_message": "validated",
+      "fraud_review": "passed",
       "capture_amount_cents": 500,
       "capture_amount_float": 5.0,
       "formatted_capture_amount": "€5,00",

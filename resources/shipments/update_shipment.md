@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### Arguments
 
@@ -20,18 +20,18 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**\_on\_hold** | `boolean, value is 'true'` | Optional |
-| attributes.**\_picking** | `boolean, value is 'true'` | Optional |
-| attributes.**\_packing** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ready\_to\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_ship** | `boolean, value is 'true'` | Optional |
-| attributes.**\_get\_rates** | `boolean, value is 'true'` | Optional |
-| attributes.**selected\_rate\_id** | `string` | Optional |
-| attributes.**\_purchase** | `boolean, value is 'true'` | Optional |
+| attributes.**_on_hold** | `boolean, value is 'true'` | Optional |
+| attributes.**_picking** | `boolean, value is 'true'` | Optional |
+| attributes.**_packing** | `boolean, value is 'true'` | Optional |
+| attributes.**_ready_to_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_ship** | `boolean, value is 'true'` | Optional |
+| attributes.**_get_rates** | `boolean, value is 'true'` | Optional |
+| attributes.**selected_rate_id** | `string` | Optional |
+| attributes.**_purchase** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**shipping\_method** | `object` | Optional |
+| relationships.**shipping_method** | `object` | Optional |
 
 ### Example
 
@@ -79,19 +79,10 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "selected_rate_id": "rate_f89e4663c3ed47ee94d37763f6d21d54",
       "rates": [
         {
-          "id": "rate_df8c9d4c5c0c4453b928d88faebafca1",
+          "id": "rate_f89e4663c3ed47ee94d37763f6d21d54",
           "rate": "45.59",
-          "object": "Rate",
           "carrier": "DHLExpress",
-          "service": "MedicalExpress",
-          "currency": "EUR",
-          "shipment_id": "shp_636540b2ceb54ceebc657a9c97d75227",
-          "delivery_days": 1,
-          "list_currency": null,
-          "retail_currency": null,
-          "est_delivery_days": 1,
-          "carrier_account_id": "ca_b9c106c1242141b4b412ac79b07cb819",
-          "delivery_date_guaranteed": null
+          "service": "MedicalExpress"
         }
       ],
       "purchase_error_code": "SHIPMENT.POSTAGE.FAILURE",

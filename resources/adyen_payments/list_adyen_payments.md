@@ -10,7 +10,7 @@ To fetch a collection of adyen payments, send a `GET` request to the `/api/adyen
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/adyen\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments**
 
 ### **Example**
 
@@ -39,10 +39,18 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "self": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde"
       },
       "attributes": {
-        "payment_methods": "See Adyen official documentation",
-        "payment_request_data": "See Adyen official documentation",
-        "payment_request_details": "See Adyen official documentation",
-        "payment_response": "See Adyen official documentation",
+        "payment_methods": {
+          "foo": "bar"
+        },
+        "payment_request_data": {
+          "foo": "bar"
+        },
+        "payment_request_details": {
+          "foo": "bar"
+        },
+        "payment_response": {
+          "foo": "bar"
+        },
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

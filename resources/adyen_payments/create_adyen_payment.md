@@ -10,7 +10,7 @@ To create a new adyen payment, send a `POST` request to the `/api/adyen_payments
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/adyen\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new adyen payment, send a `POST` request to the `/api/adyen_payments
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 
@@ -62,10 +62,18 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "self": "https://yourdomain.commercelayer.io/api/adyen_payments/xYZkjABcde"
     },
     "attributes": {
-      "payment_methods": "See Adyen official documentation",
-      "payment_request_data": "See Adyen official documentation",
-      "payment_request_details": "See Adyen official documentation",
-      "payment_response": "See Adyen official documentation",
+      "payment_methods": {
+        "foo": "bar"
+      },
+      "payment_request_data": {
+        "foo": "bar"
+      },
+      "payment_request_details": {
+        "foo": "bar"
+      },
+      "payment_response": {
+        "foo": "bar"
+      },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

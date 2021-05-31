@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/captures/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/captures/:id**
 
 ### Arguments
 
@@ -21,10 +21,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**\_refund** | `boolean, value is 'true'` | Optional |
-| attributes.**\_refund\_amount\_cents** | `integer` | Optional |
+| attributes.**_refund** | `boolean, value is 'true'` | Optional |
+| attributes.**_refund_amount_cents** | `integer` | Optional |
 
 ### Example
 
@@ -63,17 +63,17 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "self": "https://yourdomain.commercelayer.io/api/captures/xYZkjABcde"
     },
     "attributes": {
-      "number": null,
+      "number": "42/T/001",
       "currency_code": "EUR",
       "amount_cents": 1500,
       "amount_float": 15.0,
       "formatted_amount": "€15,00",
       "succeeded": false,
-      "message": null,
-      "error_code": null,
-      "error_detail": null,
-      "token": null,
-      "gateway_transaction_id": null,
+      "message": "Accepted",
+      "error_code": "00001",
+      "error_detail": "Already settled",
+      "token": "xxxx-yyyy-zzzz",
+      "gateway_transaction_id": "xxxx-yyyy-zzzz",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

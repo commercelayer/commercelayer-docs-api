@@ -10,7 +10,7 @@ To delete an avalara account, send a `DELETE` request to the `/api/avalara_accou
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/avalara\_accounts/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts/:id**
 
 ### Example
 

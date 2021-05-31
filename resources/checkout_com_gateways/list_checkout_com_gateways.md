@@ -10,7 +10,7 @@ To fetch a collection of checkout com gateways, send a `GET` request to the `/ap
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/checkout\_com\_gateways**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_gateways**
 
 ### **Example**
 

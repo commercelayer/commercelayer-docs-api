@@ -10,7 +10,7 @@ To delete a coupon, send a `DELETE` request to the `/api/coupons/:id` endpoint, 
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/coupons/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/coupons/:id**
 
 ### Example
 

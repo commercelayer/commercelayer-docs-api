@@ -10,7 +10,7 @@ To fetch the organization, send a `GET` request to the `/api/organization` endpo
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/organization**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/organization**
 
 ### **Example**
 
@@ -38,6 +38,8 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "name": "The Blue Brand",
       "slug": "the-blue-brand",
       "domain": "the-blue-brand.commercelayer.io",
+      "support_phone": "+01 30800857",
+      "support_email": "support@bluebrand.com",
       "logo_url": "https://bluebrand.com/img/logo.svg",
       "favicon_url": "https://bluebrand.com/img/favicon.ico",
       "primary_color": "#C8984E",

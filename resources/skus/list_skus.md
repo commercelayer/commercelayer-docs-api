@@ -10,7 +10,7 @@ To fetch a collection of SKUs, send a `GET` request to the `/api/skus` endpoint.
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/skus**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/skus**
 
 ### **Example**
 

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/line\_items/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/line_items/:id**
 
 ### Arguments
 
@@ -20,12 +20,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Optional |
 | attributes.**name** | `string` | Optional |
-| attributes.**image\_url** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -65,7 +65,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "quantity": 2,
+      "quantity": 4,
       "currency_code": "EUR",
       "unit_amount_cents": 9900,
       "unit_amount_float": 99.0,

@@ -10,7 +10,7 @@ To create a new taxjar account, send a `POST` request to the `/api/taxjar_accoun
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/taxjar\_accounts**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/taxjar_accounts**
 
 ### Arguments
 
@@ -19,10 +19,10 @@ To create a new taxjar account, send a `POST` request to the `/api/taxjar_accoun
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**api\_key** | `string` | Required |
-| relationships.**tax\_categories** | `array` | Optional |
+| attributes.**api_key** | `string` | Required |
+| relationships.**tax_categories** | `array` | Optional |
 
 ### Example
 

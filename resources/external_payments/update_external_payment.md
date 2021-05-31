@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/external\_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/external_payments/:id**
 
 ### Arguments
 
@@ -22,7 +22,7 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Optional |
 
@@ -43,7 +43,9 @@ curl -X PATCH \
     "type": "external_payments",
     "id": "xYZkjABcde",
     "attributes": {
-      "reference": "ANY-EXTERNAL-REFEFERNCE"
+      "options": {
+        "foo": "bar"
+      }
     }
   }
 }'
@@ -63,7 +65,9 @@ On success, the API responds with a `200 OK` status code, returning the updated 
     },
     "attributes": {
       "payment_source_token": "xxxx.yyyy.zzzz",
-      "options": null,
+      "options": {
+        "foo": "bar"
+      },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

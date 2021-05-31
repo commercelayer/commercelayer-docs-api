@@ -10,7 +10,7 @@ To fetch a collection of parcel line items, send a `GET` request to the `/api/pa
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/parcel\_line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items**
 
 ### **Example**
 
@@ -40,7 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       },
       "attributes": {
         "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-        "quantity": 0,
+        "quantity": 4,
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

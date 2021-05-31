@@ -10,7 +10,7 @@ To create a new braintree gateway, send a `POST` request to the `/api/braintree_
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/braintree\_gateways**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/braintree_gateways**
 
 ### Arguments
 
@@ -19,16 +19,16 @@ To create a new braintree gateway, send a `POST` request to the `/api/braintree_
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**merchant\_account\_id** | `string` | Required |
-| attributes.**merchant\_id** | `string` | Required |
-| attributes.**public\_key** | `string` | Required |
-| attributes.**private\_key** | `string` | Required |
-| attributes.**descriptor\_name** | `string` | Optional |
-| attributes.**descriptor\_phone** | `string` | Optional |
-| attributes.**descriptor\_url** | `string` | Optional |
-| relationships.**braintree\_payments** | `array` | Optional |
+| attributes.**merchant_account_id** | `string` | Required |
+| attributes.**merchant_id** | `string` | Required |
+| attributes.**public_key** | `string` | Required |
+| attributes.**private_key** | `string` | Required |
+| attributes.**descriptor_name** | `string` | Optional |
+| attributes.**descriptor_phone** | `string` | Optional |
+| attributes.**descriptor_url** | `string` | Optional |
+| relationships.**braintree_payments** | `array` | Optional |
 
 ### Example
 

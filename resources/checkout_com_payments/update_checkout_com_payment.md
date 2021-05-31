@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/checkout\_com\_payments/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_payments/:id**
 
 ### Arguments
 
@@ -20,14 +20,14 @@ Here below the list of all the possible arguments that you can pass with the req
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | **id** | `string` | Required |
-| attributes.**payment\_type** | `string` | Optional |
+| attributes.**payment_type** | `string` | Optional |
 | attributes.**token** | `string` | Optional |
-| attributes.**session\_id** | `string` | Optional |
-| attributes.**\_authorize** | `boolean, value is 'true'` | Optional |
-| attributes.**\_details** | `boolean, value is 'true'` | Optional |
-| attributes.**\_refresh** | `boolean, value is 'true'` | Optional |
+| attributes.**session_id** | `string` | Optional |
+| attributes.**_authorize** | `boolean, value is 'true'` | Optional |
+| attributes.**_details** | `boolean, value is 'true'` | Optional |
+| attributes.**_refresh** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Optional |
 
@@ -73,7 +73,9 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "source_id": "src_nwd3m4in3hkuddfpjsaevunhdy",
       "customer_token": "cus_udst2tfldj6upmye2reztkmm4i",
       "redirect_uri": "https://api.checkout.com/3ds/pay_mbabizu24mvu3mela5njyhpit4",
-      "payment_response": "See Checkout.com official documentation",
+      "payment_response": {
+        "foo": "bar"
+      },
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

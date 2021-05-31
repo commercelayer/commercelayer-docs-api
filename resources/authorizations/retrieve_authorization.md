@@ -10,7 +10,7 @@ To fetch a single authorization, send a `GET` request to the `/api/authorization
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/authorizations/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/authorizations/:id**
 
 ### **Example**
 
@@ -38,17 +38,17 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "self": "https://yourdomain.commercelayer.io/api/authorizations/xYZkjABcde"
     },
     "attributes": {
-      "number": null,
+      "number": "42/T/001",
       "currency_code": "EUR",
       "amount_cents": 1500,
       "amount_float": 15.0,
       "formatted_amount": "€15,00",
       "succeeded": false,
-      "message": null,
-      "error_code": null,
-      "error_detail": null,
-      "token": null,
-      "gateway_transaction_id": null,
+      "message": "Accepted",
+      "error_code": "00001",
+      "error_detail": "Already settled",
+      "token": "xxxx-yyyy-zzzz",
+      "gateway_transaction_id": "xxxx-yyyy-zzzz",
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
@@ -56,11 +56,11 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "metadata": {
         "foo": "bar"
       },
-      "cvv_code": null,
-      "cvv_message": null,
-      "avs_code": null,
-      "avs_message": null,
-      "fraud_review": null,
+      "cvv_code": "000",
+      "cvv_message": "validated",
+      "avs_code": "000",
+      "avs_message": "validated",
+      "fraud_review": "passed",
       "capture_amount_cents": 500,
       "capture_amount_float": 5.0,
       "formatted_capture_amount": "€5,00",

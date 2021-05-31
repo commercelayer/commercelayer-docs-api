@@ -10,7 +10,7 @@ To fetch a single line item, send a `GET` request to the `/api/line_items/:id` e
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_items/:id**
 
 ### **Example**
 
@@ -39,7 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "quantity": 2,
+      "quantity": 4,
       "currency_code": "EUR",
       "unit_amount_cents": 9900,
       "unit_amount_float": 99.0,

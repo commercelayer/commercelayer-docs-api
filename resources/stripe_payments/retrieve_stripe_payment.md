@@ -10,7 +10,7 @@ To fetch a single stripe payment, send a `GET` request to the `/api/stripe_payme
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stripe\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stripe_payments/:id**
 
 ### **Example**
 
@@ -39,6 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "client_secret": "pi_1234XXX_secret_5678YYY",
+      "publishable_key": "pk_live_xxxx-yyyy-zzzz",
       "options": {
         "customer": "cus_xxx",
         "payment_method": "pm_xxx"

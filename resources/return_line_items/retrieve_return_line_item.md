@@ -10,7 +10,7 @@ To fetch a single return line item, send a `GET` request to the `/api/return_lin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/return\_line\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items/:id**
 
 ### **Example**
 
@@ -40,7 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
-      "quantity": 0,
+      "quantity": 4,
       "return_reason": {
         "size": "was wrong"
       },

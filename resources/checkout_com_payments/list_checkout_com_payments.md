@@ -10,7 +10,7 @@ To fetch a collection of checkout com payments, send a `GET` request to the `/ap
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/checkout\_com\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_payments**
 
 ### **Example**
 
@@ -45,7 +45,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "source_id": "src_nwd3m4in3hkuddfpjsaevunhdy",
         "customer_token": "cus_udst2tfldj6upmye2reztkmm4i",
         "redirect_uri": "https://api.checkout.com/3ds/pay_mbabizu24mvu3mela5njyhpit4",
-        "payment_response": "See Checkout.com official documentation",
+        "payment_response": {
+          "foo": "bar"
+        },
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

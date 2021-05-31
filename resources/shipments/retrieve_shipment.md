@@ -10,7 +10,7 @@ To fetch a single shipment, send a `GET` request to the `/api/shipments/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments/:id**
 
 ### **Example**
 
@@ -48,19 +48,10 @@ On success, the API responds with a `200 OK` status code, returning a single res
       "selected_rate_id": "rate_f89e4663c3ed47ee94d37763f6d21d54",
       "rates": [
         {
-          "id": "rate_df8c9d4c5c0c4453b928d88faebafca1",
+          "id": "rate_f89e4663c3ed47ee94d37763f6d21d54",
           "rate": "45.59",
-          "object": "Rate",
           "carrier": "DHLExpress",
-          "service": "MedicalExpress",
-          "currency": "EUR",
-          "shipment_id": "shp_636540b2ceb54ceebc657a9c97d75227",
-          "delivery_days": 1,
-          "list_currency": null,
-          "retail_currency": null,
-          "est_delivery_days": 1,
-          "carrier_account_id": "ca_b9c106c1242141b4b412ac79b07cb819",
-          "delivery_date_guaranteed": null
+          "service": "MedicalExpress"
         }
       ],
       "purchase_error_code": "SHIPMENT.POSTAGE.FAILURE",

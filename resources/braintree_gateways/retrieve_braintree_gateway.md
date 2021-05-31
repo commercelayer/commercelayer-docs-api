@@ -10,7 +10,7 @@ To fetch a single braintree gateway, send a `GET` request to the `/api/braintree
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/braintree\_gateways/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/braintree_gateways/:id**
 
 ### **Example**
 

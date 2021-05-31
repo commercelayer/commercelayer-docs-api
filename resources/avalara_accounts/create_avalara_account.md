@@ -10,7 +10,7 @@ To create a new avalara account, send a `POST` request to the `/api/avalara_acco
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/avalara\_accounts**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts**
 
 ### Arguments
 
@@ -19,13 +19,13 @@ To create a new avalara account, send a `POST` request to the `/api/avalara_acco
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | attributes.**username** | `string` | Required |
 | attributes.**password** | `string` | Required |
-| attributes.**company\_code** | `string` | Required |
+| attributes.**company_code** | `string` | Required |
 | attributes.**ddp** | `string` | Optional |
-| relationships.**tax\_categories** | `array` | Optional |
+| relationships.**tax_categories** | `array` | Optional |
 
 ### Example
 

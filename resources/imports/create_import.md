@@ -10,19 +10,19 @@ To create a new import, send a `POST` request to the `/api/imports` endpoint, pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/imports**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/imports**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**resource\_type** | `string` | Required |
-| attributes.**parent\_resource\_id** | `string` | Required |
-| attributes.**inputs** | `object` | Required |
-| attributes.**cleanup\_records** | `boolean` | Optional |
+| attributes.**resource_type** | `string` | Required |
+| attributes.**parent_resource_id** | `string` | Required |
+| attributes.**inputs** | `array` | Required |
+| attributes.**cleanup_records** | `boolean` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -94,7 +94,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       "processed_count": 270,
       "errors_log": [
         {
-          "code:ABC": {
+          "ABC": {
             "name": [
               "has already been taken"
             ]
@@ -103,7 +103,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
       ],
       "warnings_log": [
         {
-          "code:ABC": [
+          "ABC": [
             "could not be deleted"
           ]
         }

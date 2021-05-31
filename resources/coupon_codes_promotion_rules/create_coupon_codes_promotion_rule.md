@@ -10,7 +10,7 @@ To create a new coupon codes promotion rule, send a `POST` request to the `/api/
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/coupon\_codes\_promotion\_rules**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/coupon_codes_promotion_rules**
 
 ### Arguments
 
@@ -18,7 +18,7 @@ To create a new coupon codes promotion rule, send a `POST` request to the `/api/
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**promotion** | `object` | Required |
 | relationships.**coupons** | `array` | Optional |

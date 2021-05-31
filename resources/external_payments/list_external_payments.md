@@ -10,7 +10,7 @@ To fetch a collection of external payments, send a `GET` request to the `/api/ex
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_payments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_payments**
 
 ### **Example**
 
@@ -40,7 +40,9 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       },
       "attributes": {
         "payment_source_token": "xxxx.yyyy.zzzz",
-        "options": null,
+        "options": {
+          "foo": "bar"
+        },
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

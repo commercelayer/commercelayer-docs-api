@@ -10,21 +10,21 @@ To create a new parcel line item, send a `POST` request to the `/api/parcel_line
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/parcel\_line\_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/parcel_line_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku\_code** | `string` | Optional |
+| attributes.**sku_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**parcel** | `object` | Required |
-| relationships.**stock\_line\_item** | `object` | Required |
-| relationships.**shipment\_line\_item** | `object` | Required |
+| relationships.**stock_line_item** | `object` | Required |
+| relationships.**shipment_line_item** | `object` | Required |
 
 ### Example
 
@@ -42,7 +42,7 @@ curl -X POST \
   "data": {
     "type": "parcel_line_items",
     "attributes": {
-      "quantity": null
+      "quantity": 4
     },
     "relationships": {
       "parcel": {
@@ -82,7 +82,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
-      "quantity": 0,
+      "quantity": 4,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",
