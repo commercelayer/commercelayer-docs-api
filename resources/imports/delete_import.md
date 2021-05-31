@@ -10,7 +10,7 @@ To delete an import, send a `DELETE` request to the `/api/imports/:id` endpoint,
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/imports/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/imports/:id**
 
 ### Example
 

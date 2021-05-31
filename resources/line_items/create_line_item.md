@@ -10,23 +10,23 @@ To create a new line item, send a `POST` request to the `/api/line_items` endpoi
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
+**POST** https://yourdomain.commercelayer.io**/api/line\_items**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**sku_code** | `string` | Optional |
+| attributes.**sku\_code** | `string` | Optional |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**_external_price** | `boolean, value is 'false'` | Optional |
-| attributes.**_update_quantity** | `boolean, value is 'true'` | Optional |
-| attributes.**unit_amount_cents** | `integer` | Optional |
+| attributes.**\_external\_price** | `boolean, value is 'false'` | Optional |
+| attributes.**\_update\_quantity** | `boolean, value is 'true'` | Optional |
+| attributes.**unit\_amount\_cents** | `integer` | Optional |
 | attributes.**name** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
-| attributes.**item_type** | `string` | Optional |
+| attributes.**image\_url** | `string` | Optional |
+| attributes.**item\_type** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 | relationships.**item** | `object` | Optional |

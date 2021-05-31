@@ -10,7 +10,7 @@ To fetch a single authorization, send a `GET` request to the `/api/authorization
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/authorizations/:id**
+**GET** https://yourdomain.commercelayer.io**/api/authorizations/:id**
 
 ### **Example**
 

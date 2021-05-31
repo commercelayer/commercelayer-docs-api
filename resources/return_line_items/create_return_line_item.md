@@ -10,7 +10,7 @@ To create a new return line item, send a `POST` request to the `/api/return_line
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items**
+**POST** https://yourdomain.commercelayer.io**/api/return\_line\_items**
 
 ### Arguments
 
@@ -18,12 +18,12 @@ To create a new return line item, send a `POST` request to the `/api/return_line
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**return_reason** | `object` | Optional |
+| attributes.**return\_reason** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**return** | `object` | Required |
-| relationships.**line_item** | `object` | Required |
+| relationships.**line\_item** | `object` | Required |
 
 ### Example
 

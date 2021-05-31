@@ -10,7 +10,7 @@ To delete a checkout com payment, send a `DELETE` request to the `/api/checkout_
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_payments/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/checkout\_com\_payments/:id**
 
 ### Example
 

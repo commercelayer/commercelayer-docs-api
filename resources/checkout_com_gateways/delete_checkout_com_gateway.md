@@ -10,7 +10,7 @@ To delete a checkout com gateway, send a `DELETE` request to the `/api/checkout_
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_gateways/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/checkout\_com\_gateways/:id**
 
 ### Example
 

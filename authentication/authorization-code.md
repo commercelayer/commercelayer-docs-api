@@ -17,7 +17,7 @@ For security reasons, authorization codes expire after **10 minutes**.
 
 ## Getting an authorization code
 
-To get an authorization code, send a `GET` request to the `/oauth/authorize` endpoint ****with the application credentials and the response type as query parameters.
+To get an authorization code, send a `GET` request to the Commerce Layer dashboard `/oauth/authorize` endpoint ****with the application credentials and the response type as query parameters.
 
 {% hint style="info" %}
 The response type must be `code`.
@@ -25,7 +25,7 @@ The response type must be `code`.
 
 ### Request
 
-**GET** https://yourdomain.commercelayer.io**/oauth/authorize**
+**GET** https://dashboard.commercelayer.app**/oauth/authorize**
 
 ### Arguments
 
@@ -46,7 +46,7 @@ The following request tries to get an authorization code, putting in scope the m
 
 ```javascript
 curl -X GET \
-  https://yourdomain.commercelayer.io/oauth/authorize?client_id=your-client-id&redirect_uri=https://yourdomain.com/redirect&scope=market:1234&response_type=code \
+  https://dashboard.commercelayer.app/oauth/authorize?client_id=your-client-id&redirect_uri=https://yourdomain.com/redirect&scope=market:1234&response_type=code \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json'
 ```
@@ -61,7 +61,7 @@ If the `client_id` exists, the user is prompted to authorize the 3rd party appli
 
 ## Getting an access token
 
-To get an access token using the `authorization_code` grant type, send a `POST` request to the `/oauth/token` endpoint, passing the application credentials and the code you got from the previous step in the request body.
+To get an access token using the `authorization_code` grant type, send a `POST` request to your Commerce Layer subdomain `/oauth/token` endpoint, passing the application credentials and the code you got from the previous step in the request body.
 
 ### Request
 

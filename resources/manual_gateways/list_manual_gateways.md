@@ -10,7 +10,7 @@ To fetch a collection of manual gateways, send a `GET` request to the `/api/manu
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/manual_gateways**
+**GET** https://yourdomain.commercelayer.io**/api/manual\_gateways**
 
 ### **Example**
 
