@@ -109,7 +109,7 @@ On success, the API responds with a `200 OK` status code, returning the requeste
 ```
 
 {% hint style="info" %}
-The returned `scope` is the same passed \(if any\) in the [request](authorization-code.md#webapp-1) you made to get `your-refresh-token`.
+The returned `scope` is the same \(if any\) passed in the [request](authorization-code.md#webapp-1) you made to get `your-refresh-token`.
 {% endhint %}
 {% endtab %}
 {% endtabs %}
