@@ -10,18 +10,18 @@ To create a new checkout com payment, send a `POST` request to the `/api/checkou
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/checkout\_com\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment\_type** | `string` | Required |
+| attributes.**payment_type** | `string` | Required |
 | attributes.**token** | `string` | Required |
-| attributes.**session\_id** | `string` | Optional |
+| attributes.**session_id** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 

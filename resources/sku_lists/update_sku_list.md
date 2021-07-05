@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku\_lists/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/sku_lists/:id**
 
 ### Arguments
 
@@ -23,9 +23,9 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
 | attributes.**manual** | `boolean` | Optional |
-| attributes.**sku\_code\_regex** | `string` | Optional |
+| attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -88,6 +88,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/sku_lists/xYZkjABcde/relationships/sku_list_items",
           "related": "https://yourdomain.commercelayer.io/api/sku_lists/xYZkjABcde/sku_list_items"
+        }
+      },
+      "bundles": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/sku_lists/xYZkjABcde/relationships/bundles",
+          "related": "https://yourdomain.commercelayer.io/api/sku_lists/xYZkjABcde/bundles"
         }
       }
     },

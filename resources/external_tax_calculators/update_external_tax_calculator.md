@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators/:id**
 
 ### Arguments
 
@@ -22,10 +22,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**tax\_calculator\_url** | `string` | Optional |
-| relationships.**tax\_categories** | `array` | Optional |
+| attributes.**tax_calculator_url** | `string` | Optional |
+| relationships.**tax_categories** | `array` | Optional |
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a collection of markets, send a `GET` request to the `/api/markets` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets**
 
 ### **Example**
 

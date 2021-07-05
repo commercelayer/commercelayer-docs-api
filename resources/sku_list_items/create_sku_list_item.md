@@ -10,7 +10,7 @@ To create a new SKU list item, send a `POST` request to the `/api/sku_list_items
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/sku\_list\_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_items**
 
 ### Arguments
 
@@ -18,10 +18,11 @@ To create a new SKU list item, send a `POST` request to the `/api/sku_list_items
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**position** | `integer` | Required |
+| attributes.**quantity** | `integer` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**sku\_list** | `object` | Required |
+| relationships.**sku_list** | `object` | Required |
 | relationships.**sku** | `object` | Required |
 
 ### Example
@@ -40,7 +41,8 @@ curl -X POST \
   "data": {
     "type": "sku_list_items",
     "attributes": {
-      "position": "2"
+      "position": "2",
+      "quantity": "1"
     },
     "relationships": {
       "sku_list": {
@@ -74,6 +76,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     },
     "attributes": {
       "position": 2,
+      "quantity": 1,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",
       "reference": "ANY-EXTERNAL-REFEFERNCE",

@@ -10,7 +10,7 @@ To fetch a single stock line item, send a `GET` request to the `/api/stock_line_
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/stock\_line\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/stock_line_items/:id**
 
 ### **Example**
 
@@ -39,6 +39,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "bundle_code": "BUNDLEMM000000FFFFFFXLXX",
       "quantity": 4,
       "created_at": "2018-01-01T12:00:00.000Z",
       "updated_at": "2018-01-01T12:00:00.000Z",

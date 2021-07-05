@@ -10,17 +10,17 @@ To create a new external payment, send a `POST` request to the `/api/external_pa
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/external\_payments**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/external_payments**
 
 ### Arguments
 
 | Body Parameter | Type | Required |
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
-| attributes.**payment\_source\_token** | `string` | Required |
+| attributes.**payment_source_token** | `string` | Required |
 | attributes.**options** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**order** | `object` | Required |
 

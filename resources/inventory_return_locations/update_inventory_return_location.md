@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/inventory\_return\_locations/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/inventory_return_locations/:id**
 
 ### Arguments
 
@@ -22,10 +22,10 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**priority** | `integer` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**stock\_location** | `object` | Optional |
-| relationships.**inventory\_model** | `object` | Optional |
+| relationships.**stock_location** | `object` | Optional |
+| relationships.**inventory_model** | `object` | Optional |
 
 ### Example
 

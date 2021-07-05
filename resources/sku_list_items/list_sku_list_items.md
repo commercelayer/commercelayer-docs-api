@@ -10,7 +10,7 @@ To fetch a collection of SKU list items, send a `GET` request to the `/api/sku_l
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_list\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_items**
 
 ### **Example**
 
@@ -40,6 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       },
       "attributes": {
         "position": 2,
+        "quantity": 1,
         "created_at": "2018-01-01T12:00:00.000Z",
         "updated_at": "2018-01-01T12:00:00.000Z",
         "reference": "ANY-EXTERNAL-REFEFERNCE",

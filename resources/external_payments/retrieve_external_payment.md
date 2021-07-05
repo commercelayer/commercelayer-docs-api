@@ -10,7 +10,7 @@ To fetch a single external payment, send a `GET` request to the `/api/external_p
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_payments/:id**
 
 ### **Example**
 

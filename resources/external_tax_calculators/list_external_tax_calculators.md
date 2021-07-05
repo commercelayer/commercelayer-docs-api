@@ -10,7 +10,7 @@ To fetch a collection of external tax calculators, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators**
 
 ### **Example**
 

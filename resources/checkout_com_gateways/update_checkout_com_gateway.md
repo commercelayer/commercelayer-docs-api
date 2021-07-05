@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/checkout\_com\_gateways/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_gateways/:id**
 
 ### Arguments
 
@@ -22,11 +22,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**secret\_key** | `string` | Optional |
-| attributes.**public\_key** | `string` | Optional |
-| relationships.**checkout\_com\_payments** | `array` | Optional |
+| attributes.**secret_key** | `string` | Optional |
+| attributes.**public_key** | `string` | Optional |
+| relationships.**checkout_com_payments** | `array` | Optional |
 
 ### Example
 

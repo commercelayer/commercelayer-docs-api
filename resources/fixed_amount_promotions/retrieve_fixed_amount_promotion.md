@@ -10,7 +10,7 @@ To fetch a single fixed amount promotion, send a `GET` request to the `/api/fixe
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/fixed\_amount\_promotions/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/fixed_amount_promotions/:id**
 
 ### **Example**
 

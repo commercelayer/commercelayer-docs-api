@@ -10,7 +10,7 @@ To fetch a single SKU list promotion rule, send a `GET` request to the `/api/sku
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_list\_promotion\_rules/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_promotion_rules/:id**
 
 ### **Example**
 

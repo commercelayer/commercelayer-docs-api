@@ -10,7 +10,7 @@ To fetch a collection of line items, send a `GET` request to the `/api/line_item
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/line_items**
 
 ### **Example**
 
@@ -40,6 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       },
       "attributes": {
         "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+        "bundle_code": "BUNDLEMM000000FFFFFFXLXX",
         "quantity": 4,
         "currency_code": "EUR",
         "unit_amount_cents": 9900,

@@ -89,6 +89,12 @@
   * [Retrieve a braintree payment](resources/braintree_payments/retrieve_braintree_payment.md)
   * [Update a braintree payment](resources/braintree_payments/update_braintree_payment.md)
   * [Delete a braintree payment](resources/braintree_payments/delete_braintree_payment.md)
+* [Bundles](resources/bundles/README.md)
+  * [Create a bundle](resources/bundles/create_bundle.md)
+  * [List all bundles](resources/bundles/list_bundles.md)
+  * [Retrieve a bundle](resources/bundles/retrieve_bundle.md)
+  * [Update a bundle](resources/bundles/update_bundle.md)
+  * [Delete a bundle](resources/bundles/delete_bundle.md)
 * [Captures](resources/captures/README.md)
   * [List all captures](resources/captures/list_captures.md)
   * [Retrieve a capture](resources/captures/retrieve_capture.md)
@@ -490,4 +496,3 @@
   * [Retrieve a wire transfer](resources/wire_transfers/retrieve_wire_transfer.md)
   * [Update a wire transfer](resources/wire_transfers/update_wire_transfer.md)
   * [Delete a wire transfer](resources/wire_transfers/delete_wire_transfer.md)
-

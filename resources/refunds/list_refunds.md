@@ -10,7 +10,7 @@ To fetch a collection of refunds, send a `GET` request to the `/api/refunds` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/refunds**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/refunds**
 
 ### **Example**
 

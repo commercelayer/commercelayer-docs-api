@@ -10,7 +10,7 @@ To fetch a single merchant, send a `GET` request to the `/api/merchants/:id` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/merchants/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/merchants/:id**
 
 ### **Example**
 

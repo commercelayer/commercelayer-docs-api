@@ -10,7 +10,7 @@ To fetch a single import, send a `GET` request to the `/api/imports/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/imports/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/imports/:id**
 
 ### **Example**
 
@@ -40,7 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a single res
     "attributes": {
       "resource_type": "skus",
       "parent_resource_id": "1234",
-      "status": "started",
+      "status": "in_progress",
       "started_at": "2018-01-01T12:00:00.000Z",
       "completed_at": "2018-01-01T12:00:00.000Z",
       "interrupted_at": "2018-01-01T12:00:00.000Z",
