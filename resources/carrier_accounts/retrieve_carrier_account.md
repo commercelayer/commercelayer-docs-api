@@ -10,7 +10,7 @@ To fetch a single carrier account, send a `GET` request to the `/api/carrier_acc
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/carrier_accounts/:id**
+**GET** https://yourdomain.commercelayer.io**/api/carrier\_accounts/:id**
 
 ### **Example**
 

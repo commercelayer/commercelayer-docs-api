@@ -10,7 +10,7 @@ To fetch a single coupon, send a `GET` request to the `/api/coupons/:id` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/coupons/:id**
+**GET** https://yourdomain.commercelayer.io**/api/coupons/:id**
 
 ### **Example**
 

@@ -10,7 +10,7 @@ To create a new bundle, send a `POST` request to the `/api/bundles` endpoint, pa
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/bundles**
+**POST** https://yourdomain.commercelayer.io**/api/bundles**
 
 ### Arguments
 
@@ -20,15 +20,15 @@ To create a new bundle, send a `POST` request to the `/api/bundles` endpoint, pa
 | attributes.**code** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Required |
-| attributes.**compare_at_amount_cents** | `integer` | Required |
-| attributes.**_compute_compare_at_amount** | `boolean, value is 'true'` | Optional |
+| attributes.**image\_url** | `string` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Required |
+| attributes.**compare\_at\_amount\_cents** | `integer` | Required |
+| attributes.**\_compute\_compare\_at\_amount** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**market** | `object` | Required, unless in scope |
-| relationships.**sku_list** | `object` | Required |
+| relationships.**sku\_list** | `object` | Required |
 
 ### Example
 

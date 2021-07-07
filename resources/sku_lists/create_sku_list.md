@@ -10,7 +10,7 @@ To create a new SKU list, send a `POST` request to the `/api/sku_lists` endpoint
 
 ## Request
 
-**POST** https://<i></i>yourdomain.commercelayer.io**/api/sku_lists**
+**POST** https://yourdomain.commercelayer.io**/api/sku\_lists**
 
 ### Arguments
 
@@ -20,9 +20,9 @@ To create a new SKU list, send a `POST` request to the `/api/sku_lists` endpoint
 | attributes.**name** | `string` | Required |
 | attributes.**description** | `string` | Optional |
 | attributes.**manual** | `boolean` | Optional, default is 'true' |
-| attributes.**sku_code_regex** | `string` | Required, if manual is falsy |
+| attributes.**sku\_code\_regex** | `string` | Required, if manual is falsy |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

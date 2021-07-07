@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/bundles/:id**
+**PATCH** https://yourdomain.commercelayer.io**/api/bundles/:id**
 
 ### Arguments
 
@@ -23,12 +23,12 @@ Here below the list of all the possible arguments that you can pass with the req
 | attributes.**code** | `string` | Optional |
 | attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
-| attributes.**image_url** | `string` | Optional |
-| attributes.**price_amount_cents** | `integer` | Optional |
-| attributes.**compare_at_amount_cents** | `integer` | Optional |
-| attributes.**_compute_compare_at_amount** | `boolean, value is 'true'` | Optional |
+| attributes.**image\_url** | `string` | Optional |
+| attributes.**price\_amount\_cents** | `integer` | Optional |
+| attributes.**compare\_at\_amount\_cents** | `integer` | Optional |
+| attributes.**\_compute\_compare\_at\_amount** | `boolean, value is 'true'` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference_origin** | `string` | Optional |
+| attributes.**reference\_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example

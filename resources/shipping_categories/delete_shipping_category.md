@@ -10,7 +10,7 @@ To delete a shipping category, send a `DELETE` request to the `/api/shipping_cat
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/shipping_categories/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/shipping\_categories/:id**
 
 ### Example
 

@@ -10,7 +10,7 @@ To fetch a collection of free shipping promotions, send a `GET` request to the `
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/free_shipping_promotions**
+**GET** https://yourdomain.commercelayer.io**/api/free\_shipping\_promotions**
 
 ### **Example**
 

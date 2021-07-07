@@ -10,7 +10,7 @@ To fetch a collection of imports, send a `GET` request to the `/api/imports` end
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/imports**
+**GET** https://yourdomain.commercelayer.io**/api/imports**
 
 ### **Example**
 

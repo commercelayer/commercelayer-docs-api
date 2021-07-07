@@ -10,7 +10,7 @@ To delete a manual gateway, send a `DELETE` request to the `/api/manual_gateways
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/manual_gateways/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/manual\_gateways/:id**
 
 ### Example
 

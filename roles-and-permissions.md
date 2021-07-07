@@ -15,12 +15,13 @@ Commerce Layer supports a granular access control system on a resource level. Ea
 **Sales channel** applications that authenticate through `client_credentials` get the following permissions.
 
 {% hint style="danger" %}
-For security reasons **sales channel** applications can read resource lists only for `skus`, `sku_options` and `prices`. Getting a list is not allowed for all the other resources. For example, a sales channel is authorized to get `/api/orders/xYZkjABcde` but not `/api/orders` endpoint.
+For security reasons **sales channel** applications can read resource lists only for `skus`, `sku_options`, `prices`, and `bundles`. Getting a list is not allowed for all the other resources. For example, a sales channel is authorized to get `/api/orders/xYZkjABcde` but not `/api/orders` endpoint.
 {% endhint %}
 
 |  | Create | Read | Update | Delete | Restrictions |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Addresses** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
+| **Bundles** |  | ✅ |  |  | Bundles associated with the market in scope. |
 | **Customers** | ✅ |  |  |  |  |
 | **Customer subscriptions** | ✅ | ✅ | ✅ | ✅ | Single resource only. |
 | **Delivery lead times** |  | ✅ |  |  | Delivery lead times associated with the shipping methods enabled for the market in scope. |

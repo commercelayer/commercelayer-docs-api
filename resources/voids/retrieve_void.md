@@ -10,7 +10,7 @@ To fetch a single void, send a `GET` request to the `/api/voids/:id` endpoint, w
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/voids/:id**
+**GET** https://yourdomain.commercelayer.io**/api/voids/:id**
 
 ### **Example**
 

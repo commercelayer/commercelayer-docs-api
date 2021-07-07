@@ -10,7 +10,7 @@ To fetch a single bundle, send a `GET` request to the `/api/bundles/:id` endpoin
 
 ## Request
 
-**GET** https://<i></i>yourdomain.commercelayer.io**/api/bundles/:id**
+**GET** https://yourdomain.commercelayer.io**/api/bundles/:id**
 
 ### **Example**
 

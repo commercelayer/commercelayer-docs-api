@@ -10,7 +10,7 @@ To delete an external gateway, send a `DELETE` request to the `/api/external_gat
 
 ## Request
 
-**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/external_gateways/:id**
+**DELETE** https://yourdomain.commercelayer.io**/api/external\_gateways/:id**
 
 ### Example
 
