@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/avalara\_accounts/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/avalara_accounts/:id**
 
 ### Arguments
 
@@ -22,13 +22,13 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | attributes.**username** | `string` | Optional |
 | attributes.**password** | `string` | Optional |
-| attributes.**company\_code** | `string` | Optional |
+| attributes.**company_code** | `string` | Optional |
 | attributes.**ddp** | `string` | Optional |
-| relationships.**tax\_categories** | `array` | Optional |
+| relationships.**tax_categories** | `array` | Optional |
 
 ### Example
 
@@ -83,6 +83,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/relationships/tax_categories",
           "related": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/tax_categories"
+        }
+      },
+      "markets": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/relationships/markets",
+          "related": "https://yourdomain.commercelayer.io/api/avalara_accounts/xYZkjABcde/markets"
         }
       },
       "attachments": {

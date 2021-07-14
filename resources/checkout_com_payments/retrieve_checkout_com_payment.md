@@ -10,7 +10,7 @@ To fetch a single checkout com payment, send a `GET` request to the `/api/checko
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/checkout\_com\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_payments/:id**
 
 ### **Example**
 

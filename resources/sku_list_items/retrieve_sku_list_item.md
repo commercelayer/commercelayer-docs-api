@@ -10,7 +10,7 @@ To fetch a single SKU list item, send a `GET` request to the `/api/sku_list_item
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_list\_items/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_list_items/:id**
 
 ### **Example**
 

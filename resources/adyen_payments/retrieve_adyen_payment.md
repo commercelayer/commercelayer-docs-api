@@ -10,7 +10,7 @@ To fetch a single adyen payment, send a `GET` request to the `/api/adyen_payment
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/adyen\_payments/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/adyen_payments/:id**
 
 ### **Example**
 

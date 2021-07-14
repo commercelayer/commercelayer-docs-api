@@ -10,7 +10,7 @@ To create a new return line item, send a `POST` request to the `/api/return_line
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/return\_line\_items**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items**
 
 ### Arguments
 
@@ -18,12 +18,12 @@ To create a new return line item, send a `POST` request to the `/api/return_line
 | :--- | :--- | :--- |
 | **type** | `string` | Required |
 | attributes.**quantity** | `integer` | Required |
-| attributes.**return\_reason** | `object` | Optional |
+| attributes.**return_reason** | `object` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**return** | `object` | Required |
-| relationships.**line\_item** | `object` | Required |
+| relationships.**line_item** | `object` | Required |
 
 ### Example
 
@@ -75,6 +75,7 @@ On success, the API responds with a `201 Created` status code, returning the cre
     },
     "attributes": {
       "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+      "bundle_code": "BUNDLEMM000000FFFFFFXLXX",
       "name": "Black Men T-shirt with White Logo (XL)",
       "quantity": 4,
       "return_reason": {

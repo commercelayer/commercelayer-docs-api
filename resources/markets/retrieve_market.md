@@ -10,7 +10,7 @@ To fetch a single market, send a `GET` request to the `/api/markets/:id` endpoin
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/markets/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### **Example**
 
@@ -69,6 +69,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
           "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
+        }
+      },
+      "tax_calculator": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/tax_calculator",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/tax_calculator"
         }
       },
       "customer_group": {

@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/sku\_lists/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/sku_lists/:id**
 
 ### Arguments
 
@@ -22,10 +22,11 @@ Here below the list of all the possible arguments that you can pass with the req
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
 | attributes.**description** | `string` | Optional |
+| attributes.**image_url** | `string` | Optional |
 | attributes.**manual** | `boolean` | Optional |
-| attributes.**sku\_code\_regex** | `string` | Optional |
+| attributes.**sku_code_regex** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 
 ### Example
@@ -67,6 +68,7 @@ On success, the API responds with a `200 OK` status code, returning the updated 
       "name": "Personal list",
       "slug": "personal-list-1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
       "manual": false,
       "sku_code_regex": "^(A|B).*$",
       "created_at": "2018-01-01T12:00:00.000Z",

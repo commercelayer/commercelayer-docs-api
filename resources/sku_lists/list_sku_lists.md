@@ -10,7 +10,7 @@ To fetch a collection of SKU lists, send a `GET` request to the `/api/sku_lists`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/sku\_lists**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/sku_lists**
 
 ### **Example**
 
@@ -42,6 +42,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
         "name": "Personal list",
         "slug": "personal-list-1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image_url": "https://img.yourdomain.com/skus/xYZkjABcde.png",
         "manual": false,
         "sku_code_regex": "^(A|B).*$",
         "created_at": "2018-01-01T12:00:00.000Z",

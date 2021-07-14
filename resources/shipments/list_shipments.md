@@ -10,7 +10,7 @@ To fetch a collection of shipments, send a `GET` request to the `/api/shipments`
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/shipments**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/shipments**
 
 ### **Example**
 

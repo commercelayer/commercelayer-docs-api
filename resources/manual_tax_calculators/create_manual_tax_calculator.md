@@ -10,7 +10,7 @@ To create a new manual tax calculator, send a `POST` request to the `/api/manual
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/manual\_tax\_calculators**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/manual_tax_calculators**
 
 ### Arguments
 
@@ -19,10 +19,10 @@ To create a new manual tax calculator, send a `POST` request to the `/api/manual
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| relationships.**tax\_categories** | `array` | Optional |
-| relationships.**tax\_rules** | `array` | Optional |
+| relationships.**tax_categories** | `array` | Optional |
+| relationships.**tax_rules** | `array` | Optional |
 
 ### Example
 
@@ -73,6 +73,12 @@ On success, the API responds with a `201 Created` status code, returning the cre
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/relationships/tax_categories",
           "related": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/tax_categories"
+        }
+      },
+      "markets": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/relationships/markets",
+          "related": "https://yourdomain.commercelayer.io/api/manual_tax_calculators/xYZkjABcde/markets"
         }
       },
       "attachments": {

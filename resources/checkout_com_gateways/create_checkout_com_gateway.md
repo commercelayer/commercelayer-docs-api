@@ -10,7 +10,7 @@ To create a new checkout com gateway, send a `POST` request to the `/api/checkou
 
 ## Request
 
-**POST** https://yourdomain.commercelayer.io**/api/checkout\_com\_gateways**
+**POST** https://<i></i>yourdomain.commercelayer.io**/api/checkout_com_gateways**
 
 ### Arguments
 
@@ -19,11 +19,11 @@ To create a new checkout com gateway, send a `POST` request to the `/api/checkou
 | **type** | `string` | Required |
 | attributes.**name** | `string` | Required |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
-| attributes.**secret\_key** | `string` | Required |
-| attributes.**public\_key** | `string` | Required |
-| relationships.**checkout\_com\_payments** | `array` | Optional |
+| attributes.**secret_key** | `string` | Required |
+| attributes.**public_key** | `string` | Required |
+| relationships.**checkout_com_payments** | `array` | Optional |
 
 ### Example
 

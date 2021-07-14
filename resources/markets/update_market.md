@@ -12,7 +12,7 @@ Here below the list of all the possible arguments that you can pass with the req
 
 ## Request
 
-**PATCH** https://yourdomain.commercelayer.io**/api/markets/:id**
+**PATCH** https://<i></i>yourdomain.commercelayer.io**/api/markets/:id**
 
 ### Arguments
 
@@ -21,16 +21,17 @@ Here below the list of all the possible arguments that you can pass with the req
 | **type** | `string` | Required |
 | **id** | `string` | Required |
 | attributes.**name** | `string` | Optional |
-| attributes.**facebook\_pixel\_id** | `string` | Optional |
-| attributes.**checkout\_url** | `string` | Optional |
-| attributes.**external\_prices\_url** | `string` | Optional |
+| attributes.**facebook_pixel_id** | `string` | Optional |
+| attributes.**checkout_url** | `string` | Optional |
+| attributes.**external_prices_url** | `string` | Optional |
 | attributes.**reference** | `string` | Optional |
-| attributes.**reference\_origin** | `string` | Optional |
+| attributes.**reference_origin** | `string` | Optional |
 | attributes.**metadata** | `object` | Optional |
 | relationships.**merchant** | `object` | Optional |
-| relationships.**price\_list** | `object` | Optional |
-| relationships.**inventory\_model** | `object` | Optional |
-| relationships.**customer\_group** | `object` | Optional |
+| relationships.**price_list** | `object` | Optional |
+| relationships.**inventory_model** | `object` | Optional |
+| relationships.**tax_calculator** | `object` | Optional |
+| relationships.**customer_group** | `object` | Optional |
 
 ### Example
 
@@ -99,6 +100,12 @@ On success, the API responds with a `200 OK` status code, returning the updated 
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/inventory_model",
           "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/inventory_model"
+        }
+      },
+      "tax_calculator": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/relationships/tax_calculator",
+          "related": "https://yourdomain.commercelayer.io/api/markets/xYZkjABcde/tax_calculator"
         }
       },
       "customer_group": {

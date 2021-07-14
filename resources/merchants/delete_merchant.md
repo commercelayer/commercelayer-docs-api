@@ -10,7 +10,7 @@ To delete a merchant, send a `DELETE` request to the `/api/merchants/:id` endpoi
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/merchants/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/merchants/:id**
 
 ### Example
 

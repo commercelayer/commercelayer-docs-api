@@ -10,7 +10,7 @@ To fetch a collection of return line items, send a `GET` request to the `/api/re
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/return\_line\_items**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/return_line_items**
 
 ### **Example**
 
@@ -40,6 +40,7 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
       },
       "attributes": {
         "sku_code": "TSHIRTMM000000FFFFFFXLXX",
+        "bundle_code": "BUNDLEMM000000FFFFFFXLXX",
         "name": "Black Men T-shirt with White Logo (XL)",
         "quantity": 4,
         "return_reason": {

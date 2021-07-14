@@ -10,7 +10,7 @@ To delete a braintree gateway, send a `DELETE` request to the `/api/braintree_ga
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/braintree\_gateways/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/braintree_gateways/:id**
 
 ### Example
 

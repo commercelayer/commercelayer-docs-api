@@ -10,7 +10,7 @@ To delete a paypal gateway, send a `DELETE` request to the `/api/paypal_gateways
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/paypal\_gateways/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/paypal_gateways/:id**
 
 ### Example
 

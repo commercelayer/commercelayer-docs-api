@@ -10,7 +10,7 @@ To fetch a collection of external tax calculators, send a `GET` request to the `
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/external\_tax\_calculators**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/external_tax_calculators**
 
 ### **Example**
 
@@ -54,6 +54,12 @@ On success, the API responds with a `200 OK` status code, returning a paginated 
           "links": {
             "self": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/relationships/tax_categories",
             "related": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/tax_categories"
+          }
+        },
+        "markets": {
+          "links": {
+            "self": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/relationships/markets",
+            "related": "https://yourdomain.commercelayer.io/api/external_tax_calculators/xYZkjABcde/markets"
           }
         },
         "attachments": {

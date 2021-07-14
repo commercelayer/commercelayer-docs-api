@@ -10,7 +10,7 @@ To fetch a single taxjar account, send a `GET` request to the `/api/taxjar_accou
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/taxjar\_accounts/:id**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/taxjar_accounts/:id**
 
 ### **Example**
 
@@ -52,6 +52,12 @@ On success, the API responds with a `200 OK` status code, returning a single res
         "links": {
           "self": "https://yourdomain.commercelayer.io/api/taxjar_accounts/xYZkjABcde/relationships/tax_categories",
           "related": "https://yourdomain.commercelayer.io/api/taxjar_accounts/xYZkjABcde/tax_categories"
+        }
+      },
+      "markets": {
+        "links": {
+          "self": "https://yourdomain.commercelayer.io/api/taxjar_accounts/xYZkjABcde/relationships/markets",
+          "related": "https://yourdomain.commercelayer.io/api/taxjar_accounts/xYZkjABcde/markets"
         }
       },
       "attachments": {

@@ -10,7 +10,7 @@ To delete a bundle, send a `DELETE` request to the `/api/bundles/:id` endpoint, 
 
 ## Request
 
-**DELETE** https://yourdomain.commercelayer.io**/api/bundles/:id**
+**DELETE** https://<i></i>yourdomain.commercelayer.io**/api/bundles/:id**
 
 ### Example
 

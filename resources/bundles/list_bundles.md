@@ -10,7 +10,7 @@ To fetch a collection of bundles, send a `GET` request to the `/api/bundles` end
 
 ## Request
 
-**GET** https://yourdomain.commercelayer.io**/api/bundles**
+**GET** https://<i></i>yourdomain.commercelayer.io**/api/bundles**
 
 ### **Example**
 
